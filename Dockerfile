@@ -1,8 +1,9 @@
 FROM node:22-alpine AS builder
 WORKDIR /app
 
+COPY package.json .yarnrc.yml yarn.lock* ./
+
 RUN corepack enable
-COPY package.json yarn.lock* ./
 
 RUN --mount=type=secret,id=NPM_AUTH_TOKEN \
     NPM_AUTH_TOKEN=$(cat /run/secrets/NPM_AUTH_TOKEN) yarn install --immutable
