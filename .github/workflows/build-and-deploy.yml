@@ -23,9 +23,7 @@ jobs:
         with:
           target: runtime
           team: aap
-          project_id: ${{ vars.NAIS_MANAGEMENT_PROJECT_ID }}
-          identity_provider: ${{ secrets.NAIS_WORKLOAD_IDENTITY_PROVIDER }}
-          build_secrets: NODE_AUTH_TOKEN=${{ secrets.READER_TOKEN }}
+          build_secrets: NPM_AUTH_TOKEN=${{ secrets.READER_TOKEN }}
       - name: Deploy to nais
         uses: nais/deploy/actions/deploy@v2
         env:

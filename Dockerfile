@@ -1,19 +1,11 @@
-FROM node:22-alpine AS base
-
-RUN corepack enable
-
-FROM base AS builder
+FROM node:22-alpine AS builder
 
 WORKDIR /app
 
+RUN corepack enable
 COPY package.json yarn.lock* ./
 
-# Create .npmrc with token substitution
-RUN --mount=type=secret,id=GITHUB_TOKEN \
-    echo "@navikt:registry=https://npm.pkg.github.com" > .npmrc && \
-    echo "//npm.pkg.github.com/:_authToken=$(cat /run/secrets/GITHUB_TOKEN)" >> .npmrc && \
-    yarn install --immutable && \
-    rm -f .npmrc
+RUN yarn install --immutable
 
 COPY . .
 
