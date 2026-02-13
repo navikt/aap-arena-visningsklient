@@ -1,5 +1,5 @@
 FROM node:22-alpine AS builder
-
+ARG NPM_AUTH_TOKEN
 WORKDIR /app
 
 RUN corepack enable
