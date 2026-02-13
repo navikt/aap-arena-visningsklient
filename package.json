@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "run-prettier": "prettier --write ./app"
+    "run-prettier": "prettier --write ./app",
+    "test": "echo 'No tests yet' && exit 0"
   },
   "prettier": "@navikt/aap-felles-prettier",
   "dependencies": {
