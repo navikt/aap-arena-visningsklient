@@ -1,11 +1,11 @@
 FROM node:22-alpine AS builder
-ARG NPM_AUTH_TOKEN
 WORKDIR /app
 
 RUN corepack enable
 COPY package.json yarn.lock* ./
 
-RUN yarn install --immutable
+RUN --mount=type=secret,id=NPM_AUTH_TOKEN \
+    NPM_AUTH_TOKEN=$(cat /run/secrets/NPM_AUTH_TOKEN) yarn install --immutable
 
 COPY . .
 
