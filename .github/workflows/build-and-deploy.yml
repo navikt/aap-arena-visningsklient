@@ -1,63 +1,34 @@
-name: Bygg og deploy
-
+name: Build & Deploy
 on:
   workflow_dispatch:
   push:
     branches:
       - main
-    paths-ignore:
-      - '**.md'
-      - '.gitignore'
 
 jobs:
-  buildDev:
-    uses: navikt/aap-workflows/.github/workflows/frontend-next-build.yml@main
+  build:
+    name: build
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       id-token: write
       packages: write
-    secrets: inherit
-    with:
-      cluster: dev-gcp
-      appname: 'arenavisningsklient'
-      playwright: false
-      cdn: true
-  buildProd:
-    uses: navikt/aap-workflows/.github/workflows/frontend-next-build.yml@main
-    permissions:
-      contents: read
-      id-token: write
-      packages: write
-    if: github.ref == 'refs/heads/main'
-    secrets: inherit
-    with:
-      cluster: prod-gcp
-      appname: 'arenavisningsklient'
-      playwright: false
-      cdn: true
-
-  deployDev:
-    needs: buildDev
-    uses: navikt/aap-workflows/.github/workflows/deploy.yml@main
-    permissions:
-      contents: read
-      id-token: write
-    secrets: inherit
-    with:
-      cluster: dev-gcp
-      manifest: .nais/nais.yaml
-      imageSuffix: -dev-gcp
-      vars: .nais/dev.yaml
-  deployProd:
-    needs: [buildProd, deployDev]
-    uses: navikt/aap-workflows/.github/workflows/deploy.yml@main
-    permissions:
-      contents: read
-      id-token: write
-    if: github.ref == 'refs/heads/main'
-    secrets: inherit
-    with:
-      cluster: prod-gcp
-      manifest: .nais/nais.yaml
-      imageSuffix: -prod-gcp
-      vars: .nais/prod.yaml
+    steps:
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
+        with:
+          persist-credentials: false
+      - name: Build and push docker image to GAR
+        uses: nais/docker-build-push@main
+        id: docker-push
+        with:
+          target: runtime
+          team: aap
+          project_id: ${{ vars.NAIS_MANAGEMENT_PROJECT_ID }}
+          identity_provider: ${{ secrets.NAIS_WORKLOAD_IDENTITY_PROVIDER }}
+          build_secrets: NODE_AUTH_TOKEN=${{ secrets.READER_TOKEN }}
+      - name: Deploy to nais
+        uses: nais/deploy/actions/deploy@v2
+        env:
+          CLUSTER: dev-gcp
+          IMAGE: ${{ steps.docker-push.outputs.image }}
+          RESOURCE: nais.yml
