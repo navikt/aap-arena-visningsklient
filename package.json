@@ -1,5 +1,5 @@
 {
-  "name": "aap-arena-innsyn",
+  "name": "aap-arena-visningsklient",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -23,5 +23,6 @@
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
     "typescript": "^5"
-  }
+  },
+  "packageManager": "yarn@4.12.0"
 }

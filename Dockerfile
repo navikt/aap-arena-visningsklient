@@ -1,26 +1,22 @@
 FROM node:22-alpine AS base
 
-RUN corepack enable && corepack prepare pnpm@latest --activate
-
-ENV PNPM_HOME="/pnpm"
-ENV PATH="$PNPM_HOME:$PATH"
+RUN corepack enable
 
 FROM base AS builder
 
 WORKDIR /app
 
-COPY package.json pnpm-lock.yaml* ./
+COPY package.json yarn.lock* ./
 
 # Create .npmrc with token substitution
 RUN --mount=type=secret,id=GITHUB_TOKEN \
-    --mount=type=cache,id=pnpm,target=/pnpm/store \
     echo "@navikt:registry=https://npm.pkg.github.com" > .npmrc && \
     echo "//npm.pkg.github.com/:_authToken=$(cat /run/secrets/GITHUB_TOKEN)" >> .npmrc && \
-    pnpm install --frozen-lockfile && \
+    yarn install --immutable && \
     rm -f .npmrc
 
 COPY . .
-RUN pnpm run build
+RUN yarn run build
 
 FROM node:22-alpine AS runtime
 
