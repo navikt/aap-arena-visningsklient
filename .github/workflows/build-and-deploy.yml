@@ -24,9 +24,10 @@ jobs:
           target: runtime
           team: aap
           build_secrets: NPM_AUTH_TOKEN=${{ secrets.READER_TOKEN }}
-      - name: Deploy to nais
+      - name: Deploy to nais (dev)
         uses: nais/deploy/actions/deploy@v2
         env:
           CLUSTER: dev-gcp
           IMAGE: ${{ steps.docker-push.outputs.image }}
-          RESOURCE: nais.yml
+          RESOURCE: .nais/nais.yaml
+          vars: .nais/dev.yaml
