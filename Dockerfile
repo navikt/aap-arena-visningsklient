@@ -6,15 +6,20 @@ FROM base AS builder
 
 WORKDIR /app
 
-COPY package.json yarn.lock* .yarnrc.yml ./
+COPY package.json yarn.lock* ./
 
+# Create .npmrc with token substitution
 RUN --mount=type=secret,id=GITHUB_TOKEN \
-    NPM_AUTH_TOKEN=$(cat /run/secrets/GITHUB_TOKEN) yarn install --immutable
+    echo "@navikt:registry=https://npm.pkg.github.com" > .npmrc && \
+    echo "//npm.pkg.github.com/:_authToken=$(cat /run/secrets/GITHUB_TOKEN)" >> .npmrc && \
+    yarn install --immutable && \
+    rm -f .npmrc
 
 COPY . .
+
 RUN yarn run build
 
-FROM node:22-alpine AS runtime
+FROM europe-north1-docker.pkg.dev/cgr-nav/pull-through/nav.no/node:25-slim AS runtime
 
 WORKDIR /app
 
