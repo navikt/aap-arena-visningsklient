@@ -62,6 +62,7 @@ spec:
   envFrom:
     - secret: kelvin-unleash-api-token
   accessPolicy:
+    outbound:
       external:
         - host: cdn.nav.no
         - host: aap-unleash-api.nav.cloud.nais.io
