@@ -6,14 +6,10 @@ FROM base AS builder
 
 WORKDIR /app
 
-COPY package.json yarn.lock* ./
+COPY package.json yarn.lock* .yarnrc.yml ./
 
-# Create .npmrc with token substitution
 RUN --mount=type=secret,id=GITHUB_TOKEN \
-    echo "@navikt:registry=https://npm.pkg.github.com" > .npmrc && \
-    echo "//npm.pkg.github.com/:_authToken=$(cat /run/secrets/GITHUB_TOKEN)" >> .npmrc && \
-    yarn install --immutable && \
-    rm -f .npmrc
+    NPM_AUTH_TOKEN=$(cat /run/secrets/GITHUB_TOKEN) yarn install --immutable
 
 COPY . .
 RUN yarn run build
