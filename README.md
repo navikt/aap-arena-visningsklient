@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Visningklient for arena og arena-migrering
 
-## Getting Started
+Dette er en enkel visningsklient for Arena etter arena er skrudd av. Den har litt ulike ting den skal fungere for:
+* Innsyk i historiske data fra arena etter saker er migrert til Kelvin
+* Visning av diverse støtte-funksjonalitet i forbindelse med migrerinngen
 
-First, run the development server:
+## Førstegangsoppsett
+
+Dette oppsettet forutsetter at du har følgende programvare installert:
+
+- Node.js
+- Corepack (Kommer med Node.js og håndterer riktig versjon av yarn for deg, må aktiveres med `corepack enable`)
+- Docker med colima og docker-compose
+
+### Sett opp GitHub token
+
+1. Gå inn på GitHub under brukeren din på Settings -> Developer settings
+2. Velg Personal access tokens -> Tokens (classic) -> Generate new token (classic)
+3. Gi token et navn, sett utløpsdato og huk av for `read:packages`-rettighet
+4. Klikk Generate token og kopier tokenet (Det forsvinner fra siden)
+5. Klikk Configure SSO -> Authorize for navikt-organisasjonen
+6. Legg inn miljøvariabel med token i ~/.bashrc eller ~/.zshrc:
+   ```
+   export NPM_AUTH_TOKEN=<token-her>
+   ```
+   Husk å kjøre `source ~/.bashrc` eller `source ~/.zshrc` etterpå for å laste inn endringene, evt start terminal på nytt.
+
+### Prettier og linting
+
+Prosjektet bruker prettier og eslint. Skru gjerne på "Automatic configuration" for disse i din IDE.
+
+
+## Kjøre opp lokalt mot lokal backend
+
+1. Kopier `.env-template` til `.env.local`:
+   ```bash
+   cp .env-template .env.local
+   ```
+2. Installer avhengigheter og start applikasjonen:
+   ```bash
+   yarn install
+   yarn dev:local
+   ```
+   Applikasjonen skal nå være tilgjengelig i nettleseren på http://localhost:3000 \
+   **OBS:** Husk å starte backend-tjenestene lokalt også, etter egen oppskrift.
+
+## Kjøre opp lokalt mot devmiljø
+
+1. Hent secret (se: https://github.com/navikt/aap-cli)
+   ```bash
+   get-secret
+   ```
+2. Start Wonderwall:
+   ```bash
+   colima start
+   docker-compose up -d
+   ```
+3. Installer avhengigheter og start applikasjonen:
+   ```bash
+    yarn install
+    yarn dev:dev-gcp
+   ```
+   Applikasjonen skal nå være tilgjengelig i nettleseren på http://localhost:4000
+
+## Rydd opp før ny oppstart
+
+Dersom du opplever rare feilmeldinger kan det hende at ting er kjørt opp i feil rekkefølge eller at noe har hengt seg opp.
+Disse kommandoene kan hjelpe deg med å rydde opp før du prøver på nytt:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+    docker-compose down
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+    pkill -9 ^next-server
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Diverse nyttige kommandoer
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Kjøring av tester
 
-## Learn More
+For å kjøre tester lokalt, bruk følgende kommando:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+  yarn test
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Oppdatere avhengigheter
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+For å forhindre utilsiktede endringer i `yarn.lock` er man tvunget til å alltid kjøre følgende kommando når man vil oppdatere avhengigheter:
 
-## Deploy on Vercel
+```bash
+  yarn install --no-immutable
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Henvendelser
+
+Spørsmål knyttet til koden eller prosjektet kan stilles som issues her på GitHub.
+
+## For Nav-ansatte
+
+Interne henvendelser kan sendes via Slack i kanalen #team-aap-åpen

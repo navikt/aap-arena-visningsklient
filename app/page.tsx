@@ -1,7 +1,10 @@
+'use server';
+
 import styles from './page.module.css';
 import { BodyLong, Heading } from '@navikt/ds-react';
+import { TilgangTilBruker } from 'app/tilgang';
 
-export default function Home() {
+export default async function Home() {
   return (
     <main className={styles.main}>
       <section className={styles.content}>
@@ -11,6 +14,10 @@ export default function Home() {
           Her kommer en visningsklient som skal vise data fra Arena. Fokuset kommer til å være historiske data, og
           f.eks. vise hva som var lagt inn i en historisk sak i Arena etter brukeren er migrert til Kelvin.
         </BodyLong>
+        <div>
+          <TilgangTilBruker brukerIdent="123123123" />
+          <TilgangTilBruker brukerIdent="456456456" />
+        </div>
       </section>
     </main>
   );
