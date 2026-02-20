@@ -1,0 +1,27 @@
+name: Build PR
+on:
+  workflow_dispatch:
+  pull_request:
+    paths-ignore:
+      - '**.md'
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+      packages: write
+    steps:
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
+        with:
+          persist-credentials: false
+      - name: Build docker image
+        uses: nais/docker-build-push@main
+        id: docker-build
+        with:
+          target: runtime
+          team: aap
+          build_secrets: NPM_AUTH_TOKEN=${{ secrets.READER_TOKEN }}
+          push_image: false
