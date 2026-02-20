@@ -17,7 +17,9 @@ export async function harTilgangTilBruker(brukerIdent: string): Promise<boolean>
     return true;
   }
 
-  const response = await apiFetch<TilgangResponse>(`${baseUrl}/person`, scope, 'POST', { personIdent: brukerIdent });
+  const response = await apiFetch<TilgangResponse>(`${baseUrl}/tilgang/person`, scope, 'POST', {
+    personIdent: brukerIdent,
+  });
   if (isError(response)) {
     return false;
   }
