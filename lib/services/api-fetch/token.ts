@@ -36,16 +36,17 @@ export const getOboToken = async (audience: string, retries: number = 3): Promis
     return mockedOboToken;
   }
 
+  logger.info(`Henter OBO-token for audience: ${audience}`);
+
   const validatedToken = await getValidatedToken();
   const onBehalfOf = await requestAzureOboToken(validatedToken.token, audience);
 
-  logger.info('Hentet obo-token ok?', onBehalfOf.ok);
-
   if (onBehalfOf.ok) {
+    logger.info('Henting av OBO-token ser ut til å ha gått OK!');
     return onBehalfOf.token;
   }
 
-  logger.warning(`Henting av oboToken for ${audience} feilet`, onBehalfOf.error);
+  logger.warning(`Henting av oboToken for ${audience} feilet`, { error: onBehalfOf.error });
 
   if (retries === 0) {
     throw new Error(`Henting av oboToken for ${audience} feilet etter ${NUMBER_OF_RETRIES} forsøk`);
