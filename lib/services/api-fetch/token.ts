@@ -1,6 +1,6 @@
 import { requestAzureOboToken, validateToken, getToken } from '@navikt/oasis';
 import { getLogger } from 'lib/serverutlis/logger';
-import { isLocal, useMocks } from 'lib/utils/environment';
+import { isLocal, mocksEnabled } from 'lib/utils/environment';
 import { JWTPayload } from 'jose';
 import { headers } from 'next/headers';
 import { redirect } from 'next/navigation';
@@ -24,7 +24,7 @@ export const getMockedOboToken = async (audience: string): Promise<string | null
     }
   }
 
-  if (useMocks()) {
+  if (mocksEnabled()) {
     return 'dummy-obo-token';
   }
   return null;

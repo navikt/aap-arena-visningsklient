@@ -2,7 +2,7 @@
 
 import { apiFetch } from 'lib/services/api-fetch/apiFetch';
 import { isError } from 'lib/utils/api';
-import { useMocks } from 'lib/utils/environment';
+import { mocksEnabled } from 'lib/utils/environment';
 
 const baseUrl = process.env.TILGANG_API_BASE_URL || 'https://tilgang.aap';
 const scope = process.env.TILGANG_API_SCOPE || '';
@@ -13,7 +13,7 @@ export type TilgangResponse = {
 };
 
 export async function harTilgangTilBruker(brukerIdent: string): Promise<boolean> {
-  if (useMocks()) {
+  if (mocksEnabled()) {
     return true;
   }
 
