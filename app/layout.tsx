@@ -2,7 +2,7 @@ import './globals.css';
 import styles from './page.module.css';
 
 export const metadata = {
-  title: 'Kelvin',
+  title: 'Kelvin - Visningsklient for Arena',
   description: 'Arena-visningsklient',
 };
 
