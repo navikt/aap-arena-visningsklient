@@ -13,6 +13,8 @@ export default async function BrukerPage(props: { params: Promise<{ brukerId: st
     return <IkkeTilgang brukerId={brukerId} />;
   }
 
+  // Denne audit-loggen burde gjøres når man vet 100% at man viser denne dataen til bruker. Typisk etter man har hentet
+  // data om en bestemt bruker. Viktig at man sørger for at den ikke logged mange ganger.
   logAudit('Hentet oversikt over AAP-saker i Arena for bruker', 'audit:access', brukerId);
 
   return (
