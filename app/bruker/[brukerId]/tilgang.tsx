@@ -12,7 +12,7 @@ export async function TilgangTilBruker({ brukerIdent }: Props) {
   const harTilgang = await harTilgangTilBruker(brukerIdent);
 
   if (harTilgang) {
-    logAudit('Hentet ut liste over AAP saker i Arena for bruker', 'audit:access', brukerIdent);
+    logAudit('Hentet oversikt over AAP-saker i Arena for bruker', 'audit:access', brukerIdent);
   }
 
   return (
