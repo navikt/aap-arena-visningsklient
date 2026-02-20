@@ -1,4 +1,4 @@
-import prometheus from 'lib/prometheus';
+import prometheus from 'lib/services/prometheus';
 
 export async function GET() {
   return new Response(await prometheus.register.metrics(), {
