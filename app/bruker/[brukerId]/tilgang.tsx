@@ -9,14 +9,16 @@ type Props = {
 };
 
 export async function TilgangTilBruker({ brukerIdent }: Props) {
-  logAudit('Hentet ut liste over AAP saker i Arena for bruker', 'audit:access', brukerIdent);
-
   const harTilgang = await harTilgangTilBruker(brukerIdent);
+
+  if (harTilgang) {
+    logAudit('Hentet ut liste over AAP saker i Arena for bruker', 'audit:access', brukerIdent);
+  }
 
   return (
     <section>
       <BodyLong>
-        Har bruker tilgang til {brukerIdent}? {harTilgang ? 'Ja' : 'Nei'}{' '}
+        Har du tilgang til {brukerIdent}? {harTilgang ? 'Ja' : 'Nei'}
       </BodyLong>
     </section>
   );

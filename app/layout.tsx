@@ -1,4 +1,5 @@
 import './globals.css';
+import styles from './page.module.css';
 
 export const metadata = {
   title: 'Kelvin',
@@ -12,7 +13,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <main className={styles.main}>
+          <section className={styles.content}>{children}</section>
+        </main>
+      </body>
     </html>
   );
 }
