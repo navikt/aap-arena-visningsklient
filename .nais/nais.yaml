@@ -59,6 +59,11 @@ spec:
     - emptyDir:
         medium: Memory
       mountPath: /app/.next/cache
+  env:
+  {{#each env as |e|}}
+    - name: "{{e.name}}"
+      value: "{{e.value}}"
+  {{/each}}
   envFrom:
     - secret: kelvin-unleash-api-token
   accessPolicy:
