@@ -17,3 +17,13 @@ groups:
   - bc89623f-4624-4978-ac54-acd048c0f2a5
   # 0000-GA-AAP_PRODUKSJONSSTYRING
   - c75883f9-4cb2-42c7-b75c-3f0f29ee3ead
+
+env:
+  - name: NEXT_PUBLIC_ENVIRONMENT
+    value: dev
+  - name: ASSET_PREFIX
+    value: https://cdn.nav.no/aap/aap-arenavisningsklient
+  - name: TILGANG_API_BASE_URL
+    value: http://tilgang
+  - name: TILGANG_API_SCOPE
+    value: api://dev-gcp.aap.tilgang/.default
