@@ -63,6 +63,8 @@ spec:
     - secret: kelvin-unleash-api-token
   accessPolicy:
     outbound:
+      rules:
+        - application: tilgang
       external:
         - host: cdn.nav.no
         - host: aap-unleash-api.nav.cloud.nais.io
