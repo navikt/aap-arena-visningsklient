@@ -1,6 +1,6 @@
 .main {
   padding-inline: 1rem;
-  max-width: 100rem;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -12,6 +12,7 @@
   align-items: center;
   justify-self: center;
   max-width: 800px;
+  width: 80%
 }
 
 .logo {

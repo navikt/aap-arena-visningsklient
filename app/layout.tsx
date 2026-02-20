@@ -15,7 +15,10 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <main className={styles.main}>
-          <section className={styles.content}>{children}</section>
+          <div className={styles.content}>
+            <img className={styles.logo} src="/nav_logo.png" alt="NAV-logo" />
+            <section>{children}</section>
+          </div>
         </main>
       </body>
     </html>
