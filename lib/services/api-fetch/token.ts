@@ -3,6 +3,7 @@ import { getLogger } from 'lib/serverutlis/logger';
 import { isLocal, useMocks } from 'lib/utils/environment';
 import { JWTPayload } from 'jose';
 import { headers } from 'next/headers';
+import { redirect } from 'next/navigation';
 
 const NUMBER_OF_RETRIES = 3;
 const logger = getLogger('lib.services.api-fetch.token');
@@ -58,19 +59,19 @@ export const getValidatedToken = async (): Promise<TokenType> => {
   }
 
   const requestHeaders = await headers();
+  const redirectPath = requestHeaders.get('x-path');
 
   const token = getToken(requestHeaders);
 
-  logger.info('Hentet token:', token);
-
   if (!token) {
-    throw new Error('Token mangler (undefined, null eller tom)');
+    logger.info('Bruker har ikke token, redirect til login-page');
+    redirect(`/oauth2/login?redirect=${redirectPath}`);
   }
 
   const validation = await validateToken(token);
   if (!validation.ok) {
-    logger.error(`Token validerte ikke`);
-    throw new Error('Token validerte ikke');
+    logger.warn(`Token validerte ikke`);
+    redirect(`/oauth2/login?redirect=${redirectPath}`);
   }
 
   return { token, payload: validation.payload as NAVJWTPayload };
