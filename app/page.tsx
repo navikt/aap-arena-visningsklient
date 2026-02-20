@@ -4,7 +4,7 @@ import { BodyLong, Heading } from '@navikt/ds-react';
 import Link from 'next/link';
 
 export default async function Home() {
-  const brukere = ['123123123', '456456456', '30519220217'];
+  const brukere = ['123123123', '456456456', '30519220217', '16529436126'];
 
   return (
     <>

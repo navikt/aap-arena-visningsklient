@@ -36,13 +36,10 @@ export const getOboToken = async (audience: string, retries: number = 3): Promis
     return mockedOboToken;
   }
 
-  logger.info(`Henter OBO-token for audience: ${audience}`);
-
   const validatedToken = await getValidatedToken();
   const onBehalfOf = await requestAzureOboToken(validatedToken.token, audience);
 
   if (onBehalfOf.ok) {
-    logger.info('Henting av OBO-token ser ut til å ha gått OK!');
     return onBehalfOf.token;
   }
 
@@ -65,13 +62,11 @@ export const getValidatedToken = async (): Promise<TokenType> => {
   const token = getToken(requestHeaders);
 
   if (!token) {
-    logger.info('Bruker har ikke token, redirect til login-page');
     redirect(`/oauth2/login?redirect=${redirectPath}`);
   }
 
   const validation = await validateToken(token);
   if (!validation.ok) {
-    logger.warn(`Token validerte ikke`);
     redirect(`/oauth2/login?redirect=${redirectPath}`);
   }
 
