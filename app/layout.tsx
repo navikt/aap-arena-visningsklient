@@ -1,7 +1,9 @@
 import './globals.css';
 import styles from './page.module.css';
+import type { Metadata } from 'next';
+import { ClientHeader } from 'components/header';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Kelvin - Visningsklient for Arena',
   description: 'Arena-visningsklient',
 };
@@ -13,10 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <main className={styles.main}>
+
+
+    <body>
+    <ClientHeader/>
+    <main className={styles.main}>
           <div className={styles.content}>
-            <img className={styles.logo} src="/nav_logo.png" alt="NAV-logo" />
             <section>{children}</section>
           </div>
         </main>
