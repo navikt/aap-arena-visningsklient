@@ -3,9 +3,9 @@ import { isError } from 'lib/utils/api';
 import { isLocal } from 'lib/utils/environment';
 
 
-const arenaOppslagsBaseUrl = process.env.OPPTAK_BASE_URL || 'integrasjon.aap.intern.api.url"';
+const arenaOppslagsBaseUrl = process.env.ARENAOPPSLAG_API_BASE_URL;
 
-const arenaOpplagsBaseScoop = `integrasjon.aap.intern.api.scope"`;
+const arenaOpplagsBaseScope = process.env.ARENAOPPSLAG_API_SCOPE ? process.env.ARENAOPPSLAG_API_SCOPE : "null";
 
 
 interface PersonEksistererIAAPArena  {
@@ -15,11 +15,17 @@ interface PersonEksistererIAAPArena  {
 
 
 export const hentExistererPerson = async (fnr: string): Promise<boolean> => {
-  const url = `${arenaOppslagsBaseUrl}/api/v1/person/${fnr}/eksisterer`;
-  if (isLocal()) {
-    return true
-  }
-  const response = await apiFetch<PersonEksistererIAAPArena>(url, arenaOpplagsBaseScoop, 'POST');
+  const url = `${arenaOppslagsBaseUrl}/api/v1/person/eksisterer`;
+
+  console.log(arenaOpplagsBaseScope)
+
+  if (arenaOpplagsBaseScope) return false
+
+  const body = {
+     "personidentifikatorer":[fnr],
+  };
+
+  const response = await apiFetch<PersonEksistererIAAPArena>(url, arenaOpplagsBaseScope, 'POST' ,body);
 
   if (isError(response)) {
     return false;
