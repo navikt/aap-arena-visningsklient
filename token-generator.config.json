@@ -1,0 +1,6 @@
+[
+  {
+    "env": "TILGANG_MOCK_OBO_TOKEN",
+    "url": "https://azure-token-generator.intern.dev.nav.no/api/obo?aud=dev-gcp.aap.tilgang"
+  }
+]

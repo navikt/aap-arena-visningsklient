@@ -1,39 +1,31 @@
 import { requestAzureOboToken, validateToken, getToken } from '@navikt/oasis';
 import { getLogger } from 'lib/serverutlis/logger';
-import { isLocal, mocksEnabled } from 'lib/utils/environment';
-import { JWTPayload } from 'jose';
+import { loginMocked, usesLocalWonderwall } from 'lib/utils/environment';
 import { headers } from 'next/headers';
 import { redirect } from 'next/navigation';
+import { getMockedOboToken, getOboTokenForAudienceFromEnvironmentVariable } from 'lib/services/api-fetch/token-mock';
+import { NAVJWTPayload, TokenType } from 'lib/services/api-fetch/token-types';
 
 const NUMBER_OF_RETRIES = 3;
 const logger = getLogger('lib.services.api-fetch.token');
 
-type NAVJWTPayload = { NAVIdent: string; preferred_username: string } & JWTPayload;
-
-type TokenType = {
-  token: string;
-  payload: NAVJWTPayload;
-};
-
-export const getMockedOboToken = async (audience: string): Promise<string | null> => {
-  if (audience === process.env.TILGANG_API_SCOPE && process.env.TILGANG_MOCK_OBO_TOKEN_URL != null) {
-    const response = await fetch(process.env.TILGANG_MOCK_OBO_TOKEN_URL, { method: 'POST' });
-    if (response.ok) {
-      const token = await response.json();
-      return token['access_token'];
-    }
-  }
-
-  if (mocksEnabled()) {
-    return 'dummy-obo-token';
-  }
-  return null;
-};
-
 export const getOboToken = async (audience: string, retries: number = 3): Promise<string> => {
-  const mockedOboToken = await getMockedOboToken(audience);
-  if (mockedOboToken != null) {
-    return mockedOboToken;
+  if (usesLocalWonderwall()) {
+    const oboToken = getOboTokenForAudienceFromEnvironmentVariable(audience);
+    if (oboToken == null) {
+      throw new Error(
+        'Klarte ikke hente OBO-token fra miljøvariabel, miljøvariabel må være satt når man kjører med lokal winderwall'
+      );
+    }
+    return oboToken;
+  }
+
+  if (loginMocked()) {
+    const oboToken = await getMockedOboToken(audience);
+    if (oboToken == null) {
+      throw new Error('Klarte ikke hente mocket OBO-token fra lokal backend app.');
+    }
+    return oboToken;
   }
 
   const validatedToken = await getValidatedToken();
@@ -43,7 +35,7 @@ export const getOboToken = async (audience: string, retries: number = 3): Promis
     return onBehalfOf.token;
   }
 
-  logger.warning(`Henting av oboToken for ${audience} feilet`, { error: onBehalfOf.error });
+  logger.warn(`Henting av oboToken for ${audience} feilet`, { response: onBehalfOf });
 
   if (retries === 0) {
     throw new Error(`Henting av oboToken for ${audience} feilet etter ${NUMBER_OF_RETRIES} forsøk`);
@@ -52,8 +44,8 @@ export const getOboToken = async (audience: string, retries: number = 3): Promis
 };
 
 export const getValidatedToken = async (): Promise<TokenType> => {
-  if (isLocal()) {
-    return { token: 'dummy-token', payload: { NAVIdent: 'VEILEDER', preferred_username: 'Veileder Kontor' } };
+  if (loginMocked()) {
+    return { token: 'dummy-token', payload: { NAVident: 'VEILEDER', preferred_username: 'Veileder Kontor' } };
   }
 
   const requestHeaders = await headers();
