@@ -8,6 +8,18 @@ process.env.TZ = 'Europe/Oslo';
 
 export function getLogger(name: string): winston.Logger {
   const { NAIS_APP_NAME } = process.env;
+
+  const consoleFormat = isLocal()
+    ? winston.format.combine(
+        winston.format.colorize(),
+        winston.format.timestamp(),
+        winston.format.printf(({ timestamp, level, message, logger_name, app_name, ...metadata }) => {
+          const metaString = Object.keys(metadata).length ? JSON.stringify(metadata, null, 2) : '';
+          return `${timestamp} [${level}] [${logger_name}]: ${message} ${metaString}`;
+        })
+      )
+    : winston.format.combine(winston.format.timestamp(), winston.format.json());
+
   return winston.createLogger({
     defaultMeta: {
       logger_name: name,
@@ -17,7 +29,7 @@ export function getLogger(name: string): winston.Logger {
       new winston.transports.Console({
         level: 'debug',
         handleExceptions: true,
-        format: isLocal() ? winston.format.cli() : winston.format.json(),
+        format: consoleFormat,
       }),
     ],
     exitOnError: false,
@@ -54,5 +66,5 @@ const auditLogger = getSysLogger();
 
 export async function logAudit(message: string, type: AuditEventType, brukerId: string) {
   const token = await getValidatedToken();
-  auditLogger.info(message, { auditType: type, suid: token.payload.NAVIdent, duid: brukerId });
+  auditLogger.info(message, { auditType: type, suid: token.payload.NAVident, duid: brukerId });
 }

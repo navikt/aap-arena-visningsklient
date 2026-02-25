@@ -32,11 +32,7 @@ Prosjektet bruker prettier og eslint. Skru gjerne på "Automatic configuration" 
 
 ## Kjøre opp lokalt mot lokal backend
 
-1. Kopier `.env-template` til `.env.local`:
-   ```bash
-   cp .env-template .env.local
-   ```
-2. Installer avhengigheter og start applikasjonen:
+1. Installer avhengigheter og start applikasjonen:
    ```bash
    yarn install
    yarn dev:local
@@ -55,7 +51,13 @@ Prosjektet bruker prettier og eslint. Skru gjerne på "Automatic configuration" 
    colima start
    docker-compose up -d
    ```
-3. Installer avhengigheter og start applikasjonen:
+
+3. Hent ned OBO-tokens
+   ```bash
+   ./token-generator.sh
+   ```
+
+4. Installer avhengigheter og start applikasjonen:
    ```bash
     yarn install
     yarn dev:dev-gcp
