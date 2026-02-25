@@ -64,6 +64,18 @@ Prosjektet bruker prettier og eslint. Skru gjerne på "Automatic configuration" 
    ```
    Applikasjonen skal nå være tilgjengelig i nettleseren på http://localhost:4000
 
+
+## Legge til nye integrasjoner
+
+Om man legger til nye integrasjoner må man husle å oppdatere følgende
+* Legge til accessPolicy i `nais.yaml`
+* Legge til miljøviabler for baseUrl og Scope i `dev.yaml` og `prod.yaml`
+* Legg til URL for å hente ut mock-obo-token lokalt i `token-generator.config.json`
+* Legg til scope og base-url for tjenesten i dev i `.env.dev-gcp-extra`
+* Legg til scope, base-url og endepunkt for å hente ut mock-token lokalt i `.env.local-backend`
+* Lage en mock-implementasjon av service, som returnerer mock-data om `mocksEnabled()` er true
+
+
 ## Rydd opp før ny oppstart
 
 Dersom du opplever rare feilmeldinger kan det hende at ting er kjørt opp i feil rekkefølge eller at noe har hengt seg opp.
