@@ -2,9 +2,30 @@
 
 import { BodyLong, Heading } from '@navikt/ds-react';
 import Link from 'next/link';
+import { isLocal } from 'lib/utils/environment';
+
+type BrukerData = {
+  personIdent: string;
+  info: string;
+};
 
 export default async function Home() {
-  const brukere = ['123123123', '456456456', '30519220217', '16529436126'];
+  let brukere: BrukerData[] = [
+    { personIdent: '03508331575', info: 'FNR strengt-fortrolig' },
+    { personIdent: '24506504690', info: 'FNR Kode6' },
+    { personIdent: '07518515297', info: 'FNR Bosatt Trondheim' },
+    { personIdent: '2915150334208', info: 'AktørID Bosatt Trondheim' },
+    { personIdent: '08466912299', info: 'FNR Bosatt Bergen' },
+    { personIdent: '2904101399733', info: 'AktørID Bosatt Bergen' },
+  ];
+
+  if (isLocal()) {
+    brukere = [
+      { personIdent: '123', info: 'Ugyldig brukerident hvor tilgang-mock sier Nei' },
+      { personIdent: '456', info: 'Ugyldig brukerident hvor tilgang-mock sier ja' },
+      ...brukere,
+    ];
+  }
 
   return (
     <>
@@ -19,8 +40,10 @@ export default async function Home() {
       </BodyLong>
       <ul>
         {brukere.map((bruker) => (
-          <li key={bruker}>
-            <Link href={`/bruker/${bruker}`}>{bruker}</Link>
+          <li key={bruker.personIdent}>
+            <Link href={`/bruker/${bruker.personIdent}`}>
+              {bruker.personIdent} — {bruker.info}
+            </Link>
           </li>
         ))}
       </ul>

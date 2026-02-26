@@ -1,5 +1,6 @@
 import './globals.css';
 import styles from './page.module.css';
+import { Header } from 'components/header/Header';
 
 export const metadata = {
   title: 'Kelvin - Visningsklient for Arena',
@@ -14,9 +15,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Header />
         <main className={styles.main}>
           <div className={styles.content}>
-            <img className={styles.logo} src="/nav_logo.png" alt="NAV-logo" />
             <section>{children}</section>
           </div>
         </main>
