@@ -9,7 +9,7 @@ BPurple='\033[1;35m'      # Purple bold
 UGreen='\033[4;32m'       # Green underline
 
 # Env file
-envFile='.env.dev-gcp'
+envFile='.env.dev-gcp-obo-tokens'
 
 # json config
 jsonConfig='token-generator.config.json'
@@ -99,6 +99,7 @@ generateAndUpdateEnvFile() {
   env=$1
   url=$2 | tr -d '"'
   cookie=$3
+  touch "$envFile"
 
   # Add env key if not exits
   # Example: DP_SAKSBEHANDLING_TOKEN

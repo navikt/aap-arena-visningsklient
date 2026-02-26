@@ -6,7 +6,7 @@
     "dev": "yarn dev:mock",
     "dev:mock": "dotenv -e .env.mock -- next dev",
     "dev:local": "dotenv -e .env.local-backend -- next dev",
-    "dev:dev-gcp": "dotenv -e .env.dev-gcp-extra -e .env.dev-gcp -- next dev",
+    "dev:dev-gcp": "dotenv -e .env.dev-gcp-extra -e .env.dev-gcp-obo-tokens -e .env.dev-gcp -- next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
