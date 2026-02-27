@@ -13,7 +13,7 @@ export function getLogger(name: string): winston.Logger {
     ? winston.format.combine(
         winston.format.colorize(),
         winston.format.timestamp(),
-        winston.format.printf(({ timestamp, level, message, logger_name, app_name, ...metadata }) => {
+        winston.format.printf(({ timestamp, level, message, logger_name, ...metadata }) => {
           const metaString = Object.keys(metadata).length ? JSON.stringify(metadata, null, 2) : '';
           return `${timestamp} [${level}] [${logger_name}]: ${message} ${metaString}`;
         })
@@ -58,7 +58,7 @@ function getSysLogger(): winston.Logger {
   return winston.createLogger({
     levels: winston.config.syslog.levels,
     format: winston.format.combine(winston.format.timestamp({ format: () => Date.now().toString() }), cefFormat),
-    transports: [new winston.transports.Console()],
+    transports: [new winston.transports.Console(), transportSyslog],
   });
 }
 

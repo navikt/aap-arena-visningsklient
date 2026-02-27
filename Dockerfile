@@ -10,6 +10,8 @@ RUN --mount=type=secret,id=NPM_AUTH_TOKEN \
 
 COPY . .
 
+
+RUN yarn lint
 RUN yarn run build
 
 FROM europe-north1-docker.pkg.dev/cgr-nav/pull-through/nav.no/node:25-slim AS runtime

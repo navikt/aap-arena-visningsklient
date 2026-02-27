@@ -9,7 +9,7 @@ const scope = process.env.TILGANG_API_SCOPE || '';
 
 export type TilgangResponse = {
   tilgang: boolean;
-  tilgangIKontekst?: Record<string, Boolean>;
+  tilgangIKontekst?: Record<string, boolean>;
 };
 
 export async function harTilgangTilBruker(brukerIdent: string): Promise<boolean> {

@@ -1,6 +1,6 @@
 'use client';
 
-import { BodyShort, Dropdown, HStack, InternalHeader, Spacer } from '@navikt/ds-react';
+import { BodyShort, Dropdown, InternalHeader, Spacer } from '@navikt/ds-react';
 import Link from 'next/link';
 import { LeaveIcon } from '@navikt/aksel-icons';
 
