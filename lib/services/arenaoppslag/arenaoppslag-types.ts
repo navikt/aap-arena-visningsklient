@@ -1,5 +1,3 @@
-export type VedtakDTO = SakDTO[];
-
 type NIL = null | undefined;
 
 export type ArenaVedtakfaktaDTO = {
@@ -15,7 +13,7 @@ export type ArenaVedtakMedFaktaDTO = {
   fraOgMed: string | NIL;
   tilDato: string | NIL;
   rettighetkode: string;
-  tfallkode: string | NIL;
+  utfallkode: string | NIL;
   fakta: ArenaVedtakfaktaDTO[];
 };
 
