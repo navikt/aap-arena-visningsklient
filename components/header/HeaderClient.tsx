@@ -11,7 +11,7 @@ type Props = {
 export function HeaderClient({ visningsnavn }: Props): React.ReactElement {
   return (
     <InternalHeader>
-      <InternalHeader.Title as="h1">Kelvin — Arena visningsklient</InternalHeader.Title>
+      <InternalHeader.Title as="h1">Kelvin</InternalHeader.Title>
       <Spacer />
       <Dropdown>
         <InternalHeader.UserButton name={visningsnavn} as={Dropdown.Toggle} />
