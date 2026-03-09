@@ -31,7 +31,7 @@ export default async function SaksPage(props: { params: Promise<{ saksId: string
     <section>
       <Heading size="medium">AAP Arenasak {sak.sakId}</Heading>
       <BodyLong>
-        Saksnummer: {sak.aar}-{sak.lopenr}
+        Saksnummer: {sak.opprettetAar}-{sak.lopenr}
       </BodyLong>
       <BodyLong>Fødselsnummer på sak: {sak.fodselsnummer}</BodyLong>
       <BodyLong>Registrert dato: {sak.registrertDato}</BodyLong>

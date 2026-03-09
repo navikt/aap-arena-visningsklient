@@ -19,7 +19,7 @@ export type ArenaVedtakMedFaktaDTO = {
 
 export type SakDTO = {
   sakId: string;
-  aar: number;
+  opprettetAar: number;
   lopenr: number;
   fodselsnummer: string;
   statuskode: string;

@@ -1,10 +1,10 @@
 'use server';
 
 import { getLogger } from 'lib/serverutlis/logger';
-import { ApiException, FetchResponse } from 'lib/utils/api';
+import { FetchResponse } from 'lib/utils/api';
 import { getOboToken } from 'lib/services/api-fetch/token';
 
-const NUMBER_OF_RETRIES = 3;
+const NUMBER_OF_RETRIES = 1;
 const logger = getLogger('lib.services.api-fetch.apiFetch');
 
 export const apiFetch = async <ResponseType>(
@@ -15,6 +15,7 @@ export const apiFetch = async <ResponseType>(
   tags?: string[]
 ): Promise<FetchResponse<ResponseType>> => {
   const oboToken = await getOboToken(scope);
+
   const options = mapFetchOptions(method, oboToken, requestBody, tags);
 
   return await fetchWithRetry<ResponseType>(url, options, NUMBER_OF_RETRIES);
@@ -46,14 +47,13 @@ const fetchWithRetry = async <ResponseType>(
     }
 
     if (!response.ok) {
-      const responseJson: ApiException = await response.json();
-      const feilmelding = `klarte ikke å hente ${url}: ${responseJson.message} med status ${response.status}`;
+      const feilmelding = `klarte ikke å hente ${url}: status ${response.status}`;
       if (response.status >= 500) {
         logger.error(feilmelding);
       } else {
         logger.warn(feilmelding);
       }
-      return { type: 'ERROR', apiException: responseJson, status: response.status };
+      return { type: 'ERROR', status: response.status };
     }
 
     const contentType = response.headers.get('content-type');
@@ -77,7 +77,6 @@ const fetchWithRetry = async <ResponseType>(
     logger.warn(`For mange nettverksfeil (${options.method} ${url}): `, error);
     return {
       type: 'ERROR',
-      apiException: { message: `Fikk ikke svar fra tjenesten. Prøv igjen.` },
       status: 503, // Service Unavailable
     };
   }

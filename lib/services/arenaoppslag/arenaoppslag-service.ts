@@ -22,7 +22,7 @@ export async function hentSak(saksId: string): Promise<SakDTO | null> {
       return null;
     }
     logger.error('Noe gikk galt ved henting av sak fra arenaoppslag', { response });
-    throw Error('Noe gikk galt ved henting av sak fra arenaoppslag', { cause: response.apiException });
+    throw Error('Noe gikk galt ved henting av sak fra arenaoppslag', { cause: response });
   }
 
   return response.data;
