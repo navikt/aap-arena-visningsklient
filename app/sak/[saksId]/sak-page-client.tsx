@@ -3,7 +3,7 @@
 import styles from './sak.module.css';
 import { SakDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { PersonHeader } from 'components/header/PersonHeader';
-import { InfoCard, Tabs } from '@navikt/ds-react';
+import { Tabs } from '@navikt/ds-react';
 import { Sakogvedtakinfo } from 'components/sakogvedtakinfo/sakogvedtakinfo';
 import { Meldekortperioder } from 'components/meldekortperioder/meldekortperioder';
 import { Card } from 'components/felleskomponenter/card/Card';
