@@ -11,7 +11,7 @@
     "start": "next start",
     "lint": "oxlint app lib components && prettier --check app lib components",
     "lint:fix": "oxlint --fix app lib components",
-    "run-prettier": "prettier --write ./app",
+    "run-prettier": "prettier --write ./app ./lib ./components",
     "test": "echo 'No tests yet' && exit 0"
   },
   "dependencies": {
