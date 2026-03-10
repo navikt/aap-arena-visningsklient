@@ -1,0 +1,10 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 450px;
+    gap: var(--ax-space-32);
+    margin: var(--ax-space-24);
+}
+
+.tabcontent {
+    margin: var(--ax-space-16) 0;
+}

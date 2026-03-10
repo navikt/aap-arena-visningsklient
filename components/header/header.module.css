@@ -1,0 +1,12 @@
+.personheader {
+    border-bottom: 1px solid var(--ax-border-neutral);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: var(--ax-space-16) var(--ax-space-24);
+}
+
+.copybutton {
+    padding-left: var(--ax-space-1);
+    color: var(--ax-text-subtle);
+}
