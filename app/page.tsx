@@ -4,12 +4,23 @@ import { BodyLong, Heading } from '@navikt/ds-react';
 import Link from 'next/link';
 
 type SaksData = {
-  saksnummer: string;
+  sakId: string;
   info: string;
 };
 
 export default async function Home() {
-  const brukere: SaksData[] = [{ saksnummer: '2021-0332162', info: 'Sak i Q2 arena' }];
+  const brukere: SaksData[] = [
+    { sakId: '13721953', info: 'Ny sak med mange vedtak' },
+    { sakId: '13725526', info: 'Ny sak med mange vedtak' },
+    { sakId: '13322363', info: 'Medium gammel sak med mange vedtak' },
+    { sakId: '13361135', info: 'Medium gammel sak med mange vedtak' },
+    { sakId: '13397613', info: 'Gammel sak med mange vedtak' },
+    { sakId: '13409999', info: 'Gammel sak med mange vedtak' },
+    { sakId: '13697921', info: 'Gammel sak med gamle rettigheter' },
+    { sakId: '13469475', info: 'Gammel sak med gamle rettigheter' },
+    { sakId: '13335922', info: 'Sak uten vedtak' },
+    { sakId: '13339857', info: 'Sak uten vedtak' },
+  ];
 
   return (
     <>
@@ -23,9 +34,9 @@ export default async function Home() {
       </BodyLong>
       <ul>
         {brukere.map((sak) => (
-          <li key={sak.saksnummer}>
-            <Link href={`/sak/${sak.saksnummer}`}>
-              {sak.saksnummer} — {sak.info}
+          <li key={sak.sakId}>
+            <Link href={`/sak/${sak.sakId}`}>
+              {sak.sakId} — {sak.info}
             </Link>
           </li>
         ))}
