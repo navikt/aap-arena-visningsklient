@@ -1,6 +1,9 @@
 ingresses:
   - "https://arenavisningsklient.intern.nav.no"
 
+externalAccessPolicies:
+  - arenaoppslag.prod-fss-pub.nais.io
+
 groups:
   # 0000-GA-AAP_BESLUTTER
   - 5763b52f-f16a-483d-8f40-25be9de95c0a
@@ -26,3 +29,7 @@ env:
     value: http://tilgang
   - name: TILGANG_API_SCOPE
     value: api://prod-gcp.aap.tilgang/.default
+  - name: ARENAOPPSLAG_API_BASE_URL
+    value: https://arenaoppslag.prod-fss-pub.nais.io
+  - name: ARENAOPPSLAG_API_SCOPE
+    value: api://prod-fss.aap.arenaoppslag/.default

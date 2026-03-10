@@ -1,14 +1,8 @@
-export type FetchResponse<ResponseType> = SuccessResponseBody<ResponseType> | ErrorResponseBody<ApiException>;
+export type FetchResponse<ResponseType> = SuccessResponseBody<ResponseType> | ErrorResponseBody;
 
-export interface ApiException {
-  message: string;
-  code?: string;
-}
-
-export type ErrorResponseBody<T> = {
+export type ErrorResponseBody = {
   type: 'ERROR';
   status: number;
-  apiException: T;
 };
 
 type SuccessResponseBody<ResponseType> = {
@@ -17,8 +11,7 @@ type SuccessResponseBody<ResponseType> = {
   data: ResponseType;
 };
 
-export const isError = (res?: FetchResponse<unknown>): res is ErrorResponseBody<ApiException> =>
-  (res && res.type === 'ERROR')!!;
+export const isError = (res?: FetchResponse<unknown>): res is ErrorResponseBody => (res && res.type === 'ERROR')!!;
 
 export const isSuccess = <T>(res?: FetchResponse<T>): res is SuccessResponseBody<T> =>
   (res && res.type === 'SUCCESS')!!;

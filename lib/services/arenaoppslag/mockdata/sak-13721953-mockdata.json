@@ -1,0 +1,7283 @@
+{
+  "sakId": "13721953",
+  "opprettetAar": 2017,
+  "lopenr": 707799,
+  "fodselsnummer": "24915996937",
+  "statuskode": "AKTIV",
+  "registrertDato": "2025-05-14T01:00:11",
+  "avsluttetDato": null,
+  "vedtak": [
+    {
+      "statusKode": "IVERK",
+      "vedtaktypeKode": "S",
+      "fraOgMed": "2026-01-05",
+      "tilDato": null,
+      "rettighetkode": "AAP",
+      "utfallkode": "JA",
+      "fakta": [
+        {
+          "vedtakId": 37195054,
+          "kode": "AAPBERDATO",
+          "verdi": "10-05-2015",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "AAPBERREGL",
+          "verdi": "Før 2018",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "AAPFORSTD",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "AAPMANBER",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "AAPVARIGHT",
+          "verdi": "4",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "AAPVARIGKO",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "AAPVARIGUN",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "AAPVILKUNN",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "AGRLAGMAN",
+          "verdi": "N",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "ANTB",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "ARBPEOS",
+          "verdi": "N",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "ATIMTLTLON",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "ATIMUUTNIN",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "AUNGFOR",
+          "verdi": "N",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "AYRKESKADE",
+          "verdi": "N",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "BARNMSTON",
+          "verdi": "0",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "BARNTILL",
+          "verdi": "0",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "BARNUSTON",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "BEGRTILAAP",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "BEGRTILUNN",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "BEGRUNNTAK",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "BERBESKR",
+          "verdi": "Pensjonsgivende inntekt som er høyere enn seks ganger grunnbeløpet per kalenderår, blir ikke tatt med i beregningsgrunnlaget.\r Du har hatt inntekter som overstiger dette. Derfor har vi redusert grunnlaget ditt. Dette går fram av folketrygdloven § 11-19 andre ledd.\r\n\r\nGrunnbeløpet endres årlig, og du finner beløpet på nav.no/grunnbelop.",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "BERDAGS",
+          "verdi": "1982",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "BEREGNYS",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "BERREGEL",
+          "verdi": "ORDINAER_OVER_6G",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "BREVKLASSE",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "DAGS",
+          "verdi": "1982",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "DAGSFSAM",
+          "verdi": "1982",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "DAGSMBFSAM",
+          "verdi": "1982",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "DAGSMBT",
+          "verdi": "1982",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "ENDRTILAAP",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "ENDRTILUNN",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "ENDRUNNAAP",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "FDATO",
+          "verdi": "05-01-2026",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "GRSATS",
+          "verdi": "1982",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "GRUNN",
+          "verdi": "780960",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "INNVF",
+          "verdi": "05-01-2026",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "INSGRAD",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "INSTOPP",
+          "verdi": "N",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "INTARNESTS",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "INTARSISTE",
+          "verdi": "2014",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "INTARTREDS",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "INTNESTS",
+          "verdi": "0",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "INTSISTE",
+          "verdi": "686210",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "INTTREDS",
+          "verdi": "0",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "KODE115",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "MAXDATOAAP",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "MAXDATOUNT",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "MAXDTAAPK",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "MAXDTAAPKU",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "NORMARBT",
+          "verdi": "37.5",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "OPPRTDATO",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "OVERGTAT",
+          "verdi": "N",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "OVERGTRP",
+          "verdi": "N",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "OVERGTTU",
+          "verdi": "N",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "PR90REGEL",
+          "verdi": "N",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "SAM",
+          "verdi": "N",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "SAMKILDMAN",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "SAMUKESAND",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "SAMUKESRTV",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "STUDENTBES",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "TDATO",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "TERSKMKBER",
+          "verdi": "40",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "TPDATO",
+          "verdi": "23-04-2025 01:00",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "TPRESULTAT",
+          "verdi": "0",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "UKES",
+          "verdi": "9910",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "UKESFSAM",
+          "verdi": "9910",
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "VEDTAKSEND",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "YDATO",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "YINNT",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        },
+        {
+          "vedtakId": 37195054,
+          "kode": "YSKADEGRD",
+          "verdi": null,
+          "registrertDato": "2026-01-05"
+        }
+      ]
+    },
+    {
+      "statusKode": "AVSLU",
+      "vedtaktypeKode": "E",
+      "fraOgMed": "2025-05-01",
+      "tilDato": "2026-01-04",
+      "rettighetkode": "AAP",
+      "utfallkode": "JA",
+      "fakta": [
+        {
+          "vedtakId": 37104009,
+          "kode": "AAPVARIGHT",
+          "verdi": "4",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "AAPBERDATO",
+          "verdi": "10-05-2015",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "AAPBERREGL",
+          "verdi": "Før 2018",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "AAPMANBER",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "AAPVARIGKO",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "AAPVARIGUN",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "AAPVILKUNN",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "AGRLAGMAN",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "ANTB",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "ARBPEOS",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "ATIMTLTLON",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "ATIMUUTNIN",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "AUNGFOR",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "AVSPTSANK",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "AYRKESKADE",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "BARNMSTON",
+          "verdi": "0",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "BARNTILL",
+          "verdi": "0",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "BARNUSTON",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "BEGRTELLER",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "BEGRTILAAP",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "BEGRTILUNN",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "BEGRUNNTAK",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "BERBESKR",
+          "verdi": "Pensjonsgivende inntekt som er høyere enn seks ganger grunnbeløpet per kalenderår, blir ikke tatt med i beregningsgrunnlaget.\r Du har hatt inntekter som overstiger dette. Derfor har vi redusert grunnlaget ditt. Dette går fram av folketrygdloven § 11-19 andre ledd.\r\n\r\nGrunnbeløpet endres årlig, og du finner beløpet på nav.no/grunnbelop.",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "BERDAGS",
+          "verdi": "1982",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "BERREGEL",
+          "verdi": "ORDINAER_OVER_6G",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "BREVKLASSE",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "DAGS",
+          "verdi": "1982",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "DAGSFSAM",
+          "verdi": "1982",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "DAGSMBFSAM",
+          "verdi": "1982",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "DAGSMBT",
+          "verdi": "1982",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "ENDRPERAAP",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "ENDRTILAAP",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "ENDRTILUNN",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "ENDRUNNAAP",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "FASTARBTFS",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "FDATO",
+          "verdi": "01-05-2025",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "GRSATS",
+          "verdi": "1982",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "GRUNN",
+          "verdi": "780960",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "INNVF",
+          "verdi": "04-06-2025",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "INSGRAD",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "INSTOPP",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "INTARNESTS",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "INTARSISTE",
+          "verdi": "2014",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "INTARTREDS",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "INTNESTS",
+          "verdi": "0",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "INTSISTE",
+          "verdi": "686210",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "INTTREDS",
+          "verdi": "0",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "JUSTERTG",
+          "verdi": "NyG2025",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "KODE115",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "MASKVEDTAK",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "MAXDATOAAP",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "MAXDATOUNT",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "MAXDTAAPK",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "MAXDTAAPKU",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "NORMARBT",
+          "verdi": "37.5",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "OPPRTDATO",
+          "verdi": "04-01-2026",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "OVERGTAT",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "OVERGTRP",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "OVERGTTU",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "PR90REGEL",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "SAM",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "SAMKILDMAN",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "SAMUKESAND",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "SAMUKESRTV",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "STUDENTBES",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "TDATO",
+          "verdi": "04-01-2026",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "TERSKMKBER",
+          "verdi": "40",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "TPDATO",
+          "verdi": "23-04-2025 01:00",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "TPRESULTAT",
+          "verdi": "0",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "UKES",
+          "verdi": "9910",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "UKESFSAM",
+          "verdi": "9910",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "UNNTAKAAP",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "VEDTAKSEND",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "YDATO",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "YINNT",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "vedtakId": 37104009,
+          "kode": "YSKADEGRD",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        }
+      ]
+    },
+    {
+      "statusKode": "AVSLU",
+      "vedtaktypeKode": "E",
+      "fraOgMed": "2022-01-14",
+      "tilDato": "2023-01-11",
+      "rettighetkode": "AAP",
+      "utfallkode": "JA",
+      "fakta": [
+        {
+          "vedtakId": 37091484,
+          "kode": "AAPVARIGHT",
+          "verdi": "4",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "AAPBERDATO",
+          "verdi": "10-05-2015",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "AAPBERREGL",
+          "verdi": "Før 2018",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "AAPMANBER",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "AAPVARIGKO",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "AAPVARIGUN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "AAPVILKUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "AGRLAGMAN",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "ANTB",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "ARBPEOS",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "ATIMTLTLON",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "ATIMUUTNIN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "AUNGFOR",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "AVSPTSANK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "AYRKESKADE",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "BARNMSTON",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "BARNTILL",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "BARNUSTON",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "BEGRTELLER",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "BEGRTILAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "BEGRTILUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "BEGRUNNTAK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "BERBESKR",
+          "verdi": "Pensjonsgivende inntekt som er høyere enn seks ganger grunnbeløpet per kalenderår, blir ikke tatt med i beregningsgrunnlaget.\r Du har hatt inntekter som overstiger dette. Derfor har vi redusert grunnlaget ditt. Dette går fram av folketrygdloven § 11-19 andre ledd.\r\n\r\nGrunnbeløpet endres årlig, og du finner beløpet på nav.no/grunnbelop.\n",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "BERDAGS",
+          "verdi": "1621",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "BERREGEL",
+          "verdi": "ORDINAER_OVER_6G",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "BREVKLASSE",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "DAGS",
+          "verdi": "1621",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "DAGSFSAM",
+          "verdi": "1621",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "DAGSMBFSAM",
+          "verdi": "1621",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "DAGSMBT",
+          "verdi": "1621",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "ENDRPERAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "ENDVARIGHT",
+          "verdi": "N",
+          "registrertDato": "2022-01-07"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "ENDRTILAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "ENDRTILUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "ENDRUNNAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "FASTARBTFS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "FDATO",
+          "verdi": "14-01-2022",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "GRSATS",
+          "verdi": "1621",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "GRUNN",
+          "verdi": "638394",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "INNVF",
+          "verdi": "14-05-2025",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "INSGRAD",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "INSTOPP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "INTARNESTS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "INTARSISTE",
+          "verdi": "2014",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "INTARTREDS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "INTNESTS",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "INTSISTE",
+          "verdi": "686210",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "INTTREDS",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "JUSTERTG",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "KODE115",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "MASKVEDTAK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "MAXAAP",
+          "verdi": null,
+          "registrertDato": "2022-01-07"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "MAXDATOAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "MAXDATOUNT",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "MAXDTAAPK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "MAXDTAAPKU",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "MAXUNNTAAP",
+          "verdi": null,
+          "registrertDato": "2022-01-07"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "NORMARBT",
+          "verdi": "37.5",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "OPPRTDATO",
+          "verdi": "13-01-2023",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "OVERGTAT",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "OVERGTRP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "OVERGTTU",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "PR90REGEL",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "SAM",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "SAMKILDMAN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "SAMUKESAND",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "SAMUKESRTV",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "STUDENTBES",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "TDATO",
+          "verdi": "11-01-2023",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "TEKSTVAR",
+          "verdi": "E_VERDI",
+          "registrertDato": "2022-01-07"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "TERSKMKBER",
+          "verdi": "40",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "TPDATO",
+          "verdi": "07-01-2022 01:00",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "TPRESULTAT",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "UKES",
+          "verdi": "8105",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "UKESFSAM",
+          "verdi": "8105",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "UNNTAKAAP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "VEDTAKSEND",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "YDATO",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "YINNT",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091484,
+          "kode": "YSKADEGRD",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        }
+      ]
+    },
+    {
+      "statusKode": "AVSLU",
+      "vedtaktypeKode": "E",
+      "fraOgMed": "2022-01-06",
+      "tilDato": "2022-01-13",
+      "rettighetkode": "AAP",
+      "utfallkode": "JA",
+      "fakta": [
+        {
+          "vedtakId": 37091482,
+          "kode": "AAPVARIGHT",
+          "verdi": "4",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "AAPBERDATO",
+          "verdi": "10-05-2015",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "AAPBERREGL",
+          "verdi": "Før 2018",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "AAPMANBER",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "AAPVARIGKO",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "AAPVARIGUN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "AAPVILKUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "AGRLAGMAN",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "ANTB",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "ARBPEOS",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "ATIMTLTLON",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "ATIMUUTNIN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "AUNGFOR",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "AVSPTSANK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "AYRKESKADE",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "BARNMSTON",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "BARNTILL",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "BARNUSTON",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "BEGRTELLER",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "BEGRTILAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "BEGRTILUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "BEGRUNNTAK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "BERBESKR",
+          "verdi": "Pensjonsgivende inntekt som er høyere enn seks ganger grunnbeløpet per kalenderår, blir ikke tatt med i beregningsgrunnlaget.\r Du har hatt inntekter som overstiger dette. Derfor har vi redusert grunnlaget ditt. Dette går fram av folketrygdloven § 11-19 andre ledd.\r\n\r\nGrunnbeløpet endres årlig, og du finner beløpet på nav.no/grunnbelop.\n",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "BERDAGS",
+          "verdi": "1621",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "BERREGEL",
+          "verdi": "ORDINAER_OVER_6G",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "BREVKLASSE",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "DAGS",
+          "verdi": "1621",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "DAGSFSAM",
+          "verdi": "1621",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "DAGSMBFSAM",
+          "verdi": "1621",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "DAGSMBT",
+          "verdi": "1621",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "ENDRPERAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "ENDRTILAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "ENDRTILUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "ENDRUNNAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "ENDVARIGHT",
+          "verdi": "N",
+          "registrertDato": "2021-12-30"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "FASTARBTFS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "FDATO",
+          "verdi": "06-01-2022",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "GRSATS",
+          "verdi": "1621",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "GRUNN",
+          "verdi": "638394",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "INNVF",
+          "verdi": "14-05-2025",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "INSGRAD",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "INSTOPP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "INTARNESTS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "INTARSISTE",
+          "verdi": "2014",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "INTARTREDS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "INTNESTS",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "INTSISTE",
+          "verdi": "686210",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "INTTREDS",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "JUSTERTG",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "KODE115",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "MASKVEDTAK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "MAXAAP",
+          "verdi": null,
+          "registrertDato": "2021-12-30"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "MAXDATOAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "MAXDATOUNT",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "MAXDTAAPK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "MAXDTAAPKU",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "MAXUNNTAAP",
+          "verdi": null,
+          "registrertDato": "2021-12-30"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "NORMARBT",
+          "verdi": "37.5",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "OPPRTDATO",
+          "verdi": "15-01-2022",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "OVERGTAT",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "OVERGTRP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "OVERGTTU",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "PR90REGEL",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "SAM",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "SAMKILDMAN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "SAMUKESAND",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "SAMUKESRTV",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "STUDENTBES",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "TDATO",
+          "verdi": "13-01-2022",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "TEKSTVAR",
+          "verdi": "E_VERDI",
+          "registrertDato": "2021-12-30"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "TERSKMKBER",
+          "verdi": "40",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "TPDATO",
+          "verdi": "30-12-2021 01:00",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "TPRESULTAT",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "UKES",
+          "verdi": "8105",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "UKESFSAM",
+          "verdi": "8105",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "UNNTAKAAP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "VEDTAKSEND",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "YDATO",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "YINNT",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091482,
+          "kode": "YSKADEGRD",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        }
+      ]
+    },
+    {
+      "statusKode": "AVSLU",
+      "vedtaktypeKode": "E",
+      "fraOgMed": "2021-01-30",
+      "tilDato": "2021-12-28",
+      "rettighetkode": "AAP",
+      "utfallkode": "JA",
+      "fakta": [
+        {
+          "vedtakId": 37091479,
+          "kode": "AAPVARIGHT",
+          "verdi": "4",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "AAPBERDATO",
+          "verdi": "10-05-2015",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "AAPBERREGL",
+          "verdi": "Før 2018",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "AAPMANBER",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "AAPVARIGKO",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "AAPVARIGUN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "AAPVILKUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "AGRLAGMAN",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "ANTB",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "ARBPEOS",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "AVSPTSANK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "ATIMTLTLON",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "ATIMUUTNIN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "AUNGFOR",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "AYRKESKADE",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "BARNMSTON",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "BARNTILL",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "BARNUSTON",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "BEGRTELLER",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "BEGRTILAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "BEGRTILUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "BEGRUNNTAK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "BERBESKR",
+          "verdi": "Pensjonsgivende inntekt som er høyere enn seks ganger grunnbeløpet per kalenderår, blir ikke tatt med i beregningsgrunnlaget.\r Du har hatt inntekter som overstiger dette. Derfor har vi redusert grunnlaget ditt. Dette går fram av folketrygdloven § 11-19 andre ledd.\r\n\r\nGrunnbeløpet endres årlig, og du finner beløpet på nav.no/grunnbelop.\n",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "BERDAGS",
+          "verdi": "1544",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "BERREGEL",
+          "verdi": "ORDINAER_OVER_6G",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "BREVKLASSE",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "DAGS",
+          "verdi": "1544",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "DAGSFSAM",
+          "verdi": "1544",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "DAGSMBFSAM",
+          "verdi": "1544",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "DAGSMBT",
+          "verdi": "1544",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "ENDRPERAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "ENDRTILAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "ENDRTILUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "ENDRUNNAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "ENDVARIGHT",
+          "verdi": "N",
+          "registrertDato": "2021-01-23"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "FASTARBTFS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "FDATO",
+          "verdi": "30-01-2021",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "GRSATS",
+          "verdi": "1544",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "GRUNN",
+          "verdi": "608106",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "INNVF",
+          "verdi": "14-05-2025",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "INSGRAD",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "INSTOPP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "INTARNESTS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "INTARSISTE",
+          "verdi": "2014",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "INTARTREDS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "INTNESTS",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "INTSISTE",
+          "verdi": "686210",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "INTTREDS",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "JUSTERTG",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "KODE115",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "MASKVEDTAK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "MAXAAP",
+          "verdi": null,
+          "registrertDato": "2021-01-23"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "MAXDATOAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "MAXDATOUNT",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "MAXDTAAPK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "MAXDTAAPKU",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "MAXUNNTAAP",
+          "verdi": null,
+          "registrertDato": "2021-01-23"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "NORMARBT",
+          "verdi": "37.5",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "OPPRTDATO",
+          "verdi": "30-12-2021",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "OVERGTAT",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "OVERGTRP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "OVERGTTU",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "PR90REGEL",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "SAM",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "SAMKILDMAN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "SAMUKESAND",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "SAMUKESRTV",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "STUDENTBES",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "TDATO",
+          "verdi": "28-12-2021",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "TEKSTVAR",
+          "verdi": "E_VERDI",
+          "registrertDato": "2021-01-23"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "TERSKMKBER",
+          "verdi": "40",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "TPDATO",
+          "verdi": "23-01-2021 01:00",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "TPRESULTAT",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "UKES",
+          "verdi": "7720",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "UKESFSAM",
+          "verdi": "7720",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "UNNTAKAAP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "VEDTAKSEND",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "YDATO",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "YINNT",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091479,
+          "kode": "YSKADEGRD",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        }
+      ]
+    },
+    {
+      "statusKode": "AVSLU",
+      "vedtaktypeKode": "E",
+      "fraOgMed": "2020-03-03",
+      "tilDato": "2021-01-29",
+      "rettighetkode": "AAP",
+      "utfallkode": "JA",
+      "fakta": [
+        {
+          "vedtakId": 37091476,
+          "kode": "AAPVARIGHT",
+          "verdi": "4",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "AAPBERDATO",
+          "verdi": "10-05-2015",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "AAPBERREGL",
+          "verdi": "Før 2018",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "AAPMANBER",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "AAPVARIGKO",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "AAPVARIGUN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "AAPVILKUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "AGRLAGMAN",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "ANTB",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "ARBPEOS",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "ATIMTLTLON",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "ATIMUUTNIN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "AUNGFOR",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "AVSPTSANK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "AYRKESKADE",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "BARNMSTON",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "BARNTILL",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "BARNUSTON",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "BEGRTELLER",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "BEGRTILAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "BEGRTILUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "BEGRUNNTAK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "BERBESKR",
+          "verdi": "Pensjonsgivende inntekt som er høyere enn seks ganger grunnbeløpet per kalenderår, blir ikke tatt med i beregningsgrunnlaget.\r Du har hatt inntekter som overstiger dette. Derfor har vi redusert grunnlaget ditt. Dette går fram av folketrygdloven § 11-19 andre ledd.\r\n\r\nGrunnbeløpet endres årlig, og du finner beløpet på nav.no/grunnbelop.\n",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "BERDAGS",
+          "verdi": "1521",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "BERREGEL",
+          "verdi": "ORDINAER_OVER_6G",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "BREVKLASSE",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "DAGS",
+          "verdi": "1521",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "DAGSFSAM",
+          "verdi": "1521",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "DAGSMBFSAM",
+          "verdi": "1521",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "DAGSMBT",
+          "verdi": "1521",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "ENDRPERAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "ENDRTILAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "ENDRTILUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "ENDRUNNAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "ENDVARIGHT",
+          "verdi": "N",
+          "registrertDato": "2020-01-13"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "FASTARBTFS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "FDATO",
+          "verdi": "03-03-2020",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "GRSATS",
+          "verdi": "1521",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "GRUNN",
+          "verdi": "599148",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "INNVF",
+          "verdi": "14-05-2025",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "INSGRAD",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "INSTOPP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "INTARNESTS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "INTARSISTE",
+          "verdi": "2014",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "INTARTREDS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "INTNESTS",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "INTSISTE",
+          "verdi": "686210",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "INTTREDS",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "JUSTERTG",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "KODE115",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "MASKVEDTAK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "MAXAAP",
+          "verdi": null,
+          "registrertDato": "2020-01-13"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "MAXDATOAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "MAXDATOUNT",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "MAXDTAAPK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "MAXDTAAPKU",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "MAXUNNTAAP",
+          "verdi": null,
+          "registrertDato": "2020-01-13"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "NORMARBT",
+          "verdi": "37.5",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "OPPRTDATO",
+          "verdi": "31-01-2021",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "OVERGTAT",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "OVERGTRP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "OVERGTTU",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "PR90REGEL",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "SAM",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "SAMKILDMAN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "SAMUKESAND",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "SAMUKESRTV",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "STUDENTBES",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "TDATO",
+          "verdi": "29-01-2021",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "TEKSTVAR",
+          "verdi": "E_VERDI",
+          "registrertDato": "2020-01-13"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "TERSKMKBER",
+          "verdi": "40",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "TPDATO",
+          "verdi": "13-01-2020 01:00",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "TPRESULTAT",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "UKES",
+          "verdi": "7605",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "UKESFSAM",
+          "verdi": "7605",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "UNNTAKAAP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "VEDTAKSEND",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "YDATO",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "YINNT",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091476,
+          "kode": "YSKADEGRD",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        }
+      ]
+    },
+    {
+      "statusKode": "AVSLU",
+      "vedtaktypeKode": "E",
+      "fraOgMed": "2024-01-10",
+      "tilDato": "2024-05-21",
+      "rettighetkode": "AAP",
+      "utfallkode": "JA",
+      "fakta": [
+        {
+          "vedtakId": 37091486,
+          "kode": "AAPBERDATO",
+          "verdi": "10-05-2015",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "AAPBERREGL",
+          "verdi": "Før 2018",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "AAPMANBER",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "AAPVARIGHT",
+          "verdi": "4",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "AAPVARIGKO",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "AAPVARIGUN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "AAPVILKUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "AGRLAGMAN",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "ANTB",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "ARBPEOS",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "ATIMTLTLON",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "ATIMUUTNIN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "AUNGFOR",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "AVSPTSANK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "AYRKESKADE",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "BARNMSTON",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "BARNTILL",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "BARNUSTON",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "BEGRTELLER",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "BEGRTILAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "BEGRTILUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "BEGRUNNTAK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "BERBESKR",
+          "verdi": "Pensjonsgivende inntekt som er høyere enn seks ganger grunnbeløpet per kalenderår, blir ikke tatt med i beregningsgrunnlaget.\r Du har hatt inntekter som overstiger dette. Derfor har vi redusert grunnlaget ditt. Dette går fram av folketrygdloven § 11-19 andre ledd.\r\n\r\nGrunnbeløpet endres årlig, og du finner beløpet på nav.no/grunnbelop.\n",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "BERDAGS",
+          "verdi": "1807",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "BERREGEL",
+          "verdi": "ORDINAER_OVER_6G",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "BREVKLASSE",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "DAGS",
+          "verdi": "1807",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "DAGSFSAM",
+          "verdi": "1807",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "DAGSMBFSAM",
+          "verdi": "1807",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "DAGSMBT",
+          "verdi": "1807",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "ENDRPERAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "ENDRTILAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "ENDRTILUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "ENDRUNNAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "FASTARBTFS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "FDATO",
+          "verdi": "10-01-2024",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "GRSATS",
+          "verdi": "1807",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "INSGRAD",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "ENDVARIGHT",
+          "verdi": "N",
+          "registrertDato": "2024-01-03"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "GRUNN",
+          "verdi": "711720",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "INNVF",
+          "verdi": "14-05-2025",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "INSTOPP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "INTARNESTS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "INTARSISTE",
+          "verdi": "2014",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "INTARTREDS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "INTNESTS",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "INTSISTE",
+          "verdi": "686210",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "INTTREDS",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "JUSTERTG",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "KODE115",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "MASKVEDTAK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "MAXAAP",
+          "verdi": null,
+          "registrertDato": "2024-01-03"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "MAXDATOAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "MAXDATOUNT",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "MAXDTAAPK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "MAXDTAAPKU",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "MAXUNNTAAP",
+          "verdi": null,
+          "registrertDato": "2024-01-03"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "NORMARBT",
+          "verdi": "37.5",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "OPPRTDATO",
+          "verdi": "23-05-2024",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "OVERGTAT",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "OVERGTRP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "OVERGTTU",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "PR90REGEL",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "SAM",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "SAMKILDMAN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "SAMUKESAND",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "SAMUKESRTV",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "STUDENTBES",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "TDATO",
+          "verdi": "21-05-2024",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "TEKSTVAR",
+          "verdi": "E_VERDI",
+          "registrertDato": "2024-01-03"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "TERSKMKBER",
+          "verdi": "40",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "TPDATO",
+          "verdi": "03-01-2024 01:00",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "TPRESULTAT",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "UKES",
+          "verdi": "9035",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "UKESFSAM",
+          "verdi": "9035",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "UNNTAKAAP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "VEDTAKSEND",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "YDATO",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "YINNT",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091486,
+          "kode": "YSKADEGRD",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        }
+      ]
+    },
+    {
+      "statusKode": "AVSLU",
+      "vedtaktypeKode": "E",
+      "fraOgMed": "2018-03-08",
+      "tilDato": "2019-03-05",
+      "rettighetkode": "AAP",
+      "utfallkode": "JA",
+      "fakta": [
+        {
+          "vedtakId": 37091472,
+          "kode": "AAPVARIGHT",
+          "verdi": "4",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "AAPBERDATO",
+          "verdi": "10-05-2015",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "AAPBERREGL",
+          "verdi": "Før 2018",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "AAPMANBER",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "AAPVARIGKO",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "AAPVARIGUN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "AAPVILKUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "AGRLAGMAN",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "ANTB",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "ARBPEOS",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "ATIMTLTLON",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "ATIMUUTNIN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "AUNGFOR",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "AVSPTSANK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "AYRKESKADE",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "BARNMSTON",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "BARNTILL",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "BARNUSTON",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "BEGRTELLER",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "BEGRTILAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "BEGRTILUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "BEGRUNNTAK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "BERBESKR",
+          "verdi": "Pensjonsgivende inntekt som er høyere enn seks ganger grunnbeløpet per kalenderår, blir ikke tatt med i beregningsgrunnlaget.\r Du har hatt inntekter som overstiger dette. Derfor har vi redusert grunnlaget ditt. Dette går fram av folketrygdloven § 11-19 andre ledd.\r\n\r\nGrunnbeløpet endres årlig, og du finner beløpet på nav.no/grunnbelop.\n",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "BERDAGS",
+          "verdi": "1426",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "BERREGEL",
+          "verdi": "ORDINAER_OVER_6G",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "BREVKLASSE",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "DAGS",
+          "verdi": "1426",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "DAGSFSAM",
+          "verdi": "1426",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "DAGSMBFSAM",
+          "verdi": "1426",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "DAGSMBT",
+          "verdi": "1426",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "ENDRPERAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "ENDRTILAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "ENDRTILUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "ENDRUNNAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "FASTARBTFS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "GRUNN",
+          "verdi": "561804",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "ENDVARIGHT",
+          "verdi": "N",
+          "registrertDato": "2018-03-18"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "FDATO",
+          "verdi": "08-03-2018",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "GRSATS",
+          "verdi": "1426",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "INNVF",
+          "verdi": "14-05-2025",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "INSGRAD",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "INSTOPP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "INTARNESTS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "INTARSISTE",
+          "verdi": "2014",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "INTARTREDS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "INTNESTS",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "INTSISTE",
+          "verdi": "686210",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "INTTREDS",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "JUSTERTG",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "KODE115",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "MASKVEDTAK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "MAXAAP",
+          "verdi": null,
+          "registrertDato": "2018-03-18"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "MAXDATOAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "MAXDATOUNT",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "MAXDTAAPK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "MAXDTAAPKU",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "MAXUNNTAAP",
+          "verdi": null,
+          "registrertDato": "2018-03-18"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "NORMARBT",
+          "verdi": "37.5",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "OPPRTDATO",
+          "verdi": "07-03-2019",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "OVERGTAT",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "OVERGTRP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "OVERGTTU",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "PR90REGEL",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "SAM",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "SAMKILDMAN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "SAMUKESAND",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "SAMUKESRTV",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "STUDENTBES",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "TDATO",
+          "verdi": "05-03-2019",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "TEKSTVAR",
+          "verdi": "E_VERDI",
+          "registrertDato": "2018-03-18"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "TERSKMKBER",
+          "verdi": "40",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "TPDATO",
+          "verdi": "18-03-2018 01:00",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "TPRESULTAT",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "UKES",
+          "verdi": "7130",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "UKESFSAM",
+          "verdi": "7130",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "UNNTAKAAP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "VEDTAKSEND",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "YDATO",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "YINNT",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091472,
+          "kode": "YSKADEGRD",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        }
+      ]
+    },
+    {
+      "statusKode": "AVSLU",
+      "vedtaktypeKode": "E",
+      "fraOgMed": "2019-03-06",
+      "tilDato": "2020-03-02",
+      "rettighetkode": "AAP",
+      "utfallkode": "JA",
+      "fakta": [
+        {
+          "vedtakId": 37091475,
+          "kode": "AAPBERDATO",
+          "verdi": "10-05-2015",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "AAPBERREGL",
+          "verdi": "Før 2018",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "AAPMANBER",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "AAPVARIGHT",
+          "verdi": "4",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "AAPVARIGKO",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "AAPVARIGUN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "AAPVILKUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "AGRLAGMAN",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "ANTB",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "ARBPEOS",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "ATIMTLTLON",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "ATIMUUTNIN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "AUNGFOR",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "AVSPTSANK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "AYRKESKADE",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "BARNMSTON",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "BARNTILL",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "BARNUSTON",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "BEGRTELLER",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "BEGRTILAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "BEGRTILUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "BEGRUNNTAK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "BERBESKR",
+          "verdi": "Pensjonsgivende inntekt som er høyere enn seks ganger grunnbeløpet per kalenderår, blir ikke tatt med i beregningsgrunnlaget.\r Du har hatt inntekter som overstiger dette. Derfor har vi redusert grunnlaget ditt. Dette går fram av folketrygdloven § 11-19 andre ledd.\r\n\r\nGrunnbeløpet endres årlig, og du finner beløpet på nav.no/grunnbelop.\n",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "BERDAGS",
+          "verdi": "1476",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "BERREGEL",
+          "verdi": "ORDINAER_OVER_6G",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "BREVKLASSE",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "DAGS",
+          "verdi": "1476",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "DAGSFSAM",
+          "verdi": "1476",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "DAGSMBFSAM",
+          "verdi": "1476",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "DAGSMBT",
+          "verdi": "1476",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "ENDRPERAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "ENDRTILAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "ENDRTILUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "ENDRUNNAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "ENDVARIGHT",
+          "verdi": "N",
+          "registrertDato": "2018-12-21"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "FASTARBTFS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "FDATO",
+          "verdi": "06-03-2019",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "GRSATS",
+          "verdi": "1476",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "GRUNN",
+          "verdi": "581298",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "INNVF",
+          "verdi": "14-05-2025",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "INSGRAD",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "INSTOPP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "INTARNESTS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "INTARSISTE",
+          "verdi": "2014",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "INTARTREDS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "INTNESTS",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "INTSISTE",
+          "verdi": "686210",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "INTTREDS",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "JUSTERTG",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "KODE115",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "MASKVEDTAK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "MAXAAP",
+          "verdi": null,
+          "registrertDato": "2018-12-21"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "MAXDATOAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "MAXDATOUNT",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "MAXDTAAPK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "MAXDTAAPKU",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "MAXUNNTAAP",
+          "verdi": null,
+          "registrertDato": "2018-12-21"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "NORMARBT",
+          "verdi": "37.5",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "OPPRTDATO",
+          "verdi": "04-03-2020",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "OVERGTAT",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "OVERGTRP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "OVERGTTU",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "PR90REGEL",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "SAM",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "SAMKILDMAN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "SAMUKESAND",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "SAMUKESRTV",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "STUDENTBES",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "TDATO",
+          "verdi": "02-03-2020",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "TERSKMKBER",
+          "verdi": "40",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "TPDATO",
+          "verdi": "21-12-2018 01:00",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "TPRESULTAT",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "UKES",
+          "verdi": "7380",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "UKESFSAM",
+          "verdi": "7380",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "UNNTAKAAP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "VEDTAKSEND",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "YDATO",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "YINNT",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "YSKADEGRD",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091475,
+          "kode": "TEKSTVAR",
+          "verdi": "E_VERDI",
+          "registrertDato": "2018-12-21"
+        }
+      ]
+    },
+    {
+      "statusKode": "AVSLU",
+      "vedtaktypeKode": "E",
+      "fraOgMed": "2025-04-30",
+      "tilDato": "2025-04-30",
+      "rettighetkode": "AAP",
+      "utfallkode": "JA",
+      "fakta": [
+        {
+          "vedtakId": 37091488,
+          "kode": "AAPVARIGHT",
+          "verdi": "4",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "AAPBERDATO",
+          "verdi": "10-05-2015",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "AAPBERREGL",
+          "verdi": "Før 2018",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "AAPMANBER",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "AAPVARIGKO",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "AAPVARIGUN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "AAPVILKUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "AGRLAGMAN",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "ANTB",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "ARBPEOS",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "ATIMTLTLON",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "ATIMUUTNIN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "AUNGFOR",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "AVSPTSANK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "AYRKESKADE",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "BARNMSTON",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "BARNTILL",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "BARNUSTON",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "BEGRTELLER",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "BEGRTILAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "BEGRTILUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "BEGRUNNTAK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "BERBESKR",
+          "verdi": "Pensjonsgivende inntekt som er høyere enn seks ganger grunnbeløpet per kalenderår, blir ikke tatt med i beregningsgrunnlaget.\r Du har hatt inntekter som overstiger dette. Derfor har vi redusert grunnlaget ditt. Dette går fram av folketrygdloven § 11-19 andre ledd.\r\n\r\nGrunnbeløpet endres årlig, og du finner beløpet på nav.no/grunnbelop.\n",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "BERDAGS",
+          "verdi": "1889",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "BERREGEL",
+          "verdi": "ORDINAER_OVER_6G",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "BREVKLASSE",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "DAGS",
+          "verdi": "1889",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "DAGSFSAM",
+          "verdi": "1889",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "DAGSMBFSAM",
+          "verdi": "1889",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "DAGSMBT",
+          "verdi": "1889",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "ENDRPERAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "ENDRTILAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "ENDRTILUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "ENDRUNNAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "ENDVARIGHT",
+          "verdi": "N",
+          "registrertDato": "2025-04-23"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "FASTARBTFS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "FDATO",
+          "verdi": "30-04-2025",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "GRSATS",
+          "verdi": "1889",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "GRUNN",
+          "verdi": "744168",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "INNVF",
+          "verdi": "14-05-2025",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "INSGRAD",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "INSTOPP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "INTARNESTS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "INTARSISTE",
+          "verdi": "2014",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "INTARTREDS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "INTNESTS",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "INTSISTE",
+          "verdi": "686210",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "INTTREDS",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "JUSTERTG",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "KODE115",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "MASKVEDTAK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "MAXAAP",
+          "verdi": null,
+          "registrertDato": "2025-04-23"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "MAXDATOAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "MAXDATOUNT",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "MAXDTAAPK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "MAXDTAAPKU",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "MAXUNNTAAP",
+          "verdi": null,
+          "registrertDato": "2025-04-23"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "NORMARBT",
+          "verdi": "37.5",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "OPPRTDATO",
+          "verdi": "04-01-2026",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "OVERGTAT",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "OVERGTRP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "OVERGTTU",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "PR90REGEL",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "SAM",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "SAMKILDMAN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "SAMUKESAND",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "SAMUKESRTV",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "STUDENTBES",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "TDATO",
+          "verdi": "30-04-2025",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "TEKSTVAR",
+          "verdi": "E_VERDI",
+          "registrertDato": "2025-04-23"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "TERSKMKBER",
+          "verdi": "40",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "TPDATO",
+          "verdi": "23-04-2025 01:00",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "TPRESULTAT",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "UKES",
+          "verdi": "9445",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "UKESFSAM",
+          "verdi": "9445",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "UNNTAKAAP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "VEDTAKSEND",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "YDATO",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "YINNT",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091488,
+          "kode": "YSKADEGRD",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        }
+      ]
+    },
+    {
+      "statusKode": "AVSLU",
+      "vedtaktypeKode": "E",
+      "fraOgMed": "2024-05-22",
+      "tilDato": "2025-04-29",
+      "rettighetkode": "AAP",
+      "utfallkode": "JA",
+      "fakta": [
+        {
+          "vedtakId": 37091487,
+          "kode": "AAPVARIGHT",
+          "verdi": "4",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "AAPBERDATO",
+          "verdi": "10-05-2015",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "AAPBERREGL",
+          "verdi": "Før 2018",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "AAPMANBER",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "AAPVARIGKO",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "AAPVARIGUN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "AAPVILKUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "AGRLAGMAN",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "ANTB",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "ARBPEOS",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "ATIMTLTLON",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "ATIMUUTNIN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "AUNGFOR",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "AVSPTSANK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "AYRKESKADE",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "BARNMSTON",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "BARNTILL",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "BARNUSTON",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "BEGRTELLER",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "BEGRTILAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "BEGRTILUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "BEGRUNNTAK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "BERBESKR",
+          "verdi": "Pensjonsgivende inntekt som er høyere enn seks ganger grunnbeløpet per kalenderår, blir ikke tatt med i beregningsgrunnlaget.\r Du har hatt inntekter som overstiger dette. Derfor har vi redusert grunnlaget ditt. Dette går fram av folketrygdloven § 11-19 andre ledd.\r\n\r\nGrunnbeløpet endres årlig, og du finner beløpet på nav.no/grunnbelop.\n",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "BERDAGS",
+          "verdi": "1889",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "BERREGEL",
+          "verdi": "ORDINAER_OVER_6G",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "BREVKLASSE",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "DAGS",
+          "verdi": "1889",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "DAGSFSAM",
+          "verdi": "1889",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "DAGSMBFSAM",
+          "verdi": "1889",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "DAGSMBT",
+          "verdi": "1889",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "ENDRPERAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "ENDRTILAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "ENDRTILUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "ENDRUNNAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "ENDVARIGHT",
+          "verdi": "N",
+          "registrertDato": "2024-05-15"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "FASTARBTFS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "FDATO",
+          "verdi": "22-05-2024",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "GRSATS",
+          "verdi": "1889",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "GRUNN",
+          "verdi": "744168",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "INNVF",
+          "verdi": "14-05-2025",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "INSGRAD",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "INSTOPP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "INTARNESTS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "INTARSISTE",
+          "verdi": "2014",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "INTARTREDS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "INTNESTS",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "INTSISTE",
+          "verdi": "686210",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "INTTREDS",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "JUSTERTG",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "KODE115",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "MASKVEDTAK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "MAXAAP",
+          "verdi": null,
+          "registrertDato": "2024-05-15"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "MAXDATOAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "MAXDATOUNT",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "MAXDTAAPK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "MAXDTAAPKU",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "MAXUNNTAAP",
+          "verdi": null,
+          "registrertDato": "2024-05-15"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "NORMARBT",
+          "verdi": "37.5",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "OPPRTDATO",
+          "verdi": "01-05-2025",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "OVERGTAT",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "OVERGTRP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "OVERGTTU",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "PR90REGEL",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "SAM",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "SAMKILDMAN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "SAMUKESAND",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "SAMUKESRTV",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "STUDENTBES",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "TDATO",
+          "verdi": "29-04-2025",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "TEKSTVAR",
+          "verdi": "E_VERDI",
+          "registrertDato": "2024-05-15"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "TERSKMKBER",
+          "verdi": "40",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "TPDATO",
+          "verdi": "15-05-2024 01:00",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "TPRESULTAT",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "UKES",
+          "verdi": "9445",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "UKESFSAM",
+          "verdi": "9445",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "UNNTAKAAP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "VEDTAKSEND",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "YDATO",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "YINNT",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091487,
+          "kode": "YSKADEGRD",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        }
+      ]
+    },
+    {
+      "statusKode": "AVSLU",
+      "vedtaktypeKode": "O",
+      "fraOgMed": "2017-07-28",
+      "tilDato": "2018-03-07",
+      "rettighetkode": "AAP",
+      "utfallkode": "JA",
+      "fakta": [
+        {
+          "vedtakId": 37091470,
+          "kode": "AAPVARIGHT",
+          "verdi": "4",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "AAPBERDATO",
+          "verdi": "10-05-2015",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "AAPBERREGL",
+          "verdi": "Før 2018",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "AAPMANBER",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "AAPVARIGKO",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "AAPVARIGUN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "AAPVILKUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "AGRLAGMAN",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "ANTB",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "ARBPEOS",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "ATIMTLTLON",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "ATIMUUTNIN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "AUNGFOR",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "AVSPTSANK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "AYRKESKADE",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "BARNMSTON",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "BARNTILL",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "BARNUSTON",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "BEGRTELLER",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "BEGRTILAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "BEGRTILUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "BEGRUNNTAK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "BERBESKR",
+          "verdi": "Pensjonsgivende inntekt som er høyere enn seks ganger grunnbeløpet per kalenderår, blir ikke tatt med i beregningsgrunnlaget.\r Du har hatt inntekter som overstiger dette. Derfor har vi redusert grunnlaget ditt. Dette går fram av folketrygdloven § 11-19 andre ledd.\r\n\r\nGrunnbeløpet endres årlig, og du finner beløpet på nav.no/grunnbelop.\n",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "BERDAGS",
+          "verdi": "1426",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "BERREGEL",
+          "verdi": "ORDINAER_OVER_6G",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "BREVKLASSE",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "DAGS",
+          "verdi": "1426",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "DAGSFSAM",
+          "verdi": "1426",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "DAGSMBFSAM",
+          "verdi": "1426",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "DAGSMBT",
+          "verdi": "1426",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "ENDRPERAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "ENDRTILAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "ENDRTILUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "ENDRUNNAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "ENDVARIGHT",
+          "verdi": "N",
+          "registrertDato": "2017-08-02"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "FASTARBTFS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "FDATO",
+          "verdi": "28-07-2017",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "GRSATS",
+          "verdi": "1426",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "GRUNN",
+          "verdi": "561804",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "INNVF",
+          "verdi": "14-05-2025",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "INSGRAD",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "INSTOPP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "INTARNESTS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "INTARSISTE",
+          "verdi": "2014",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "INTARTREDS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "INTNESTS",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "INTSISTE",
+          "verdi": "686210",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "INTTREDS",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "KODE115",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "MAXAAP",
+          "verdi": "20900",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "MAXDATOAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "MAXDATOUNT",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "MAXDTAAPK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "MAXDTAAPKU",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "MAXUNNTAAP",
+          "verdi": "10460",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "NORMARBT",
+          "verdi": "37.5",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "NULLEAAP",
+          "verdi": "I",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "NULLEAAPUN",
+          "verdi": "I",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "OPPRTDATO",
+          "verdi": "09-03-2018",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "OVERGTAT",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "OVERGTRP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "OVERGTTU",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "PR90REGEL",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "SAM",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "SAMKILDMAN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "SAMUKESAND",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "SAMUKESRTV",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "STUDENTBES",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "TDATO",
+          "verdi": "07-03-2018",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "TEKSTVAR",
+          "verdi": "O_INNV_SOKNAD",
+          "registrertDato": "2017-08-02"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "TERSKMKBER",
+          "verdi": "40",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "TPDATO",
+          "verdi": "02-08-2017 01:00",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "TPRESULTAT",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "UKES",
+          "verdi": "7130",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "UKESFSAM",
+          "verdi": "7130",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "UNNTAKAAP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "VEDTAKSEND",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "YDATO",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "YINNT",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091470,
+          "kode": "YSKADEGRD",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        }
+      ]
+    },
+    {
+      "statusKode": "AVSLU",
+      "vedtaktypeKode": "E",
+      "fraOgMed": "2021-12-29",
+      "tilDato": "2022-01-05",
+      "rettighetkode": "AAP",
+      "utfallkode": "JA",
+      "fakta": [
+        {
+          "vedtakId": 37091481,
+          "kode": "AAPVARIGHT",
+          "verdi": "4",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "AAPBERDATO",
+          "verdi": "10-05-2015",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "AAPBERREGL",
+          "verdi": "Før 2018",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "AAPMANBER",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "AAPVARIGKO",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "AAPVARIGUN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "AAPVILKUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "AGRLAGMAN",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "ANTB",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "ARBPEOS",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "ATIMTLTLON",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "ATIMUUTNIN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "AUNGFOR",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "AVSPTSANK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "AYRKESKADE",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "BARNMSTON",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "BARNTILL",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "BARNUSTON",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "BEGRTELLER",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "BEGRTILAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "BEGRTILUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "BEGRUNNTAK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "BERBESKR",
+          "verdi": "Pensjonsgivende inntekt som er høyere enn seks ganger grunnbeløpet per kalenderår, blir ikke tatt med i beregningsgrunnlaget.\r Du har hatt inntekter som overstiger dette. Derfor har vi redusert grunnlaget ditt. Dette går fram av folketrygdloven § 11-19 andre ledd.\r\n\r\nGrunnbeløpet endres årlig, og du finner beløpet på nav.no/grunnbelop.\n",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "BERDAGS",
+          "verdi": "1621",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "BERREGEL",
+          "verdi": "ORDINAER_OVER_6G",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "BREVKLASSE",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "DAGS",
+          "verdi": "1621",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "DAGSFSAM",
+          "verdi": "1621",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "DAGSMBFSAM",
+          "verdi": "1621",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "DAGSMBT",
+          "verdi": "1621",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "ENDRPERAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "ENDRTILAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "ENDRTILUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "ENDRUNNAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "FASTARBTFS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "FDATO",
+          "verdi": "29-12-2021",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "GRSATS",
+          "verdi": "1621",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "GRUNN",
+          "verdi": "638394",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "INNVF",
+          "verdi": "14-05-2025",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "INSGRAD",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "INSTOPP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "INTARNESTS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "INTARSISTE",
+          "verdi": "2014",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "INTARTREDS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "INTNESTS",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "INTSISTE",
+          "verdi": "686210",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "INTTREDS",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "JUSTERTG",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "KODE115",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "MASKVEDTAK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "MAXDATOAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "MAXDATOUNT",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "MAXDTAAPK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "MAXDTAAPKU",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "NORMARBT",
+          "verdi": "37.5",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "OPPRTDATO",
+          "verdi": "07-01-2022",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "OVERGTAT",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "OVERGTRP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "ENDVARIGHT",
+          "verdi": "N",
+          "registrertDato": "2021-12-22"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "MAXAAP",
+          "verdi": null,
+          "registrertDato": "2021-12-22"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "MAXUNNTAAP",
+          "verdi": null,
+          "registrertDato": "2021-12-22"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "OVERGTTU",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "PR90REGEL",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "SAM",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "SAMKILDMAN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "SAMUKESAND",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "SAMUKESRTV",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "STUDENTBES",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "TDATO",
+          "verdi": "05-01-2022",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "TEKSTVAR",
+          "verdi": "E_VERDI",
+          "registrertDato": "2021-12-22"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "TERSKMKBER",
+          "verdi": "40",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "TPDATO",
+          "verdi": "22-12-2021 01:00",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "TPRESULTAT",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "UKES",
+          "verdi": "8105",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "UKESFSAM",
+          "verdi": "8105",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "UNNTAKAAP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "VEDTAKSEND",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "YDATO",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "YINNT",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091481,
+          "kode": "YSKADEGRD",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        }
+      ]
+    },
+    {
+      "statusKode": "AVSLU",
+      "vedtaktypeKode": "E",
+      "fraOgMed": "2023-01-12",
+      "tilDato": "2024-01-09",
+      "rettighetkode": "AAP",
+      "utfallkode": "JA",
+      "fakta": [
+        {
+          "vedtakId": 37091485,
+          "kode": "AAPMANBER",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "AAPBERDATO",
+          "verdi": "10-05-2015",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "AAPBERREGL",
+          "verdi": "Før 2018",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "AAPVARIGHT",
+          "verdi": "4",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "AAPVARIGKO",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "AAPVARIGUN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "AAPVILKUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "AGRLAGMAN",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "ANTB",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "ARBPEOS",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "ATIMTLTLON",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "ATIMUUTNIN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "AUNGFOR",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "AVSPTSANK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "AYRKESKADE",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "BARNMSTON",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "BARNTILL",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "BARNUSTON",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "BEGRTELLER",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "BEGRTILAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "BEGRTILUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "BEGRUNNTAK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "BERBESKR",
+          "verdi": "Pensjonsgivende inntekt som er høyere enn seks ganger grunnbeløpet per kalenderår, blir ikke tatt med i beregningsgrunnlaget.\r Du har hatt inntekter som overstiger dette. Derfor har vi redusert grunnlaget ditt. Dette går fram av folketrygdloven § 11-19 andre ledd.\r\n\r\nGrunnbeløpet endres årlig, og du finner beløpet på nav.no/grunnbelop.\n",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "BERDAGS",
+          "verdi": "1698",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "BERREGEL",
+          "verdi": "ORDINAER_OVER_6G",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "BREVKLASSE",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "DAGS",
+          "verdi": "1698",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "DAGSFSAM",
+          "verdi": "1698",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "DAGSMBFSAM",
+          "verdi": "1698",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "DAGSMBT",
+          "verdi": "1698",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "ENDRPERAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "ENDRTILAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "ENDRTILUNN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "ENDRUNNAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "FASTARBTFS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "FDATO",
+          "verdi": "12-01-2023",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "GRSATS",
+          "verdi": "1698",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "GRUNN",
+          "verdi": "668862",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "INNVF",
+          "verdi": "14-05-2025",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "INSGRAD",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "INSTOPP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "INTARNESTS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "INTARSISTE",
+          "verdi": "2014",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "INTARTREDS",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "INTNESTS",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "INTSISTE",
+          "verdi": "686210",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "INTTREDS",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "JUSTERTG",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "MAXAAP",
+          "verdi": null,
+          "registrertDato": "2023-01-05"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "ENDVARIGHT",
+          "verdi": "N",
+          "registrertDato": "2023-01-05"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "KODE115",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "MASKVEDTAK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "MAXDATOAAP",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "MAXDATOUNT",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "MAXDTAAPK",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "MAXDTAAPKU",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "MAXUNNTAAP",
+          "verdi": null,
+          "registrertDato": "2023-01-05"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "NORMARBT",
+          "verdi": "37.5",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "OPPRTDATO",
+          "verdi": "11-01-2024",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "OVERGTAT",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "OVERGTRP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "OVERGTTU",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "PR90REGEL",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "SAM",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "SAMKILDMAN",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "SAMUKESAND",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "SAMUKESRTV",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "STUDENTBES",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "TDATO",
+          "verdi": "09-01-2024",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "TEKSTVAR",
+          "verdi": "E_VERDI",
+          "registrertDato": "2023-01-05"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "TERSKMKBER",
+          "verdi": "40",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "TPDATO",
+          "verdi": "05-01-2023 01:00",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "TPRESULTAT",
+          "verdi": "0",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "UKES",
+          "verdi": "8490",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "UKESFSAM",
+          "verdi": "8490",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "UNNTAKAAP",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "VEDTAKSEND",
+          "verdi": "N",
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "YDATO",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "YINNT",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        },
+        {
+          "vedtakId": 37091485,
+          "kode": "YSKADEGRD",
+          "verdi": null,
+          "registrertDato": "2025-05-14"
+        }
+      ]
+    },
+    {
+      "statusKode": "MOTAT",
+      "vedtaktypeKode": "O",
+      "fraOgMed": null,
+      "tilDato": null,
+      "rettighetkode": "AAP",
+      "utfallkode": null,
+      "fakta": [
+        {
+          "vedtakId": 37091469,
+          "kode": "AAPVARIGKO",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "AAPBERDATO",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "AAPBERREGL",
+          "verdi": "Februar 2020",
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "AAPMANBER",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "AAPVARIGHT",
+          "verdi": "3",
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "AAPFORSTD",
+          "verdi": null,
+          "registrertDato": "2025-09-29"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "AAPVARIGUN",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "AAPVILKUNN",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "AGRLAGMAN",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "ANTB",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "ARBPEOS",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "ATIMTLTLON",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "ATIMUUTNIN",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "AUNGFOR",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "AVSPTSANK",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "AYRKESKADE",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "BARNMSTON",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "BARNTILL",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "BARNUSTON",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "BEGRTELLER",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "BEGRTILAAP",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "BEGRTILUNN",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "BEGRUNNTAK",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "BERBESKR",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "BERDAGS",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "BERREGEL",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "BREVKLASSE",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "DAGS",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "DAGSFSAM",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "DAGSMBFSAM",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "DAGSMBT",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "ENDRPERAAP",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "ENDRTILAAP",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "ENDRTILUNN",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "ENDRUNNAAP",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "FASTARBTFS",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "FDATO",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "GRSATS",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "GRUNN",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "INNVF",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "INSGRAD",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "INSTOPP",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "INTARNESTS",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "INTARSISTE",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "INTARTREDS",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "INTNESTS",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "INTSISTE",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "INTTREDS",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "KODE115",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "MAXAAP",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "MAXDATOAAP",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "MAXDATOUNT",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "MAXDTAAPK",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "MAXDTAAPKU",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "MAXUNNTAAP",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "NORMARBT",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "NULLEAAP",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "NULLEAAPUN",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "OPPRTDATO",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "OVERGTAT",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "OVERGTRP",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "OVERGTTU",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "PR90REGEL",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "SAM",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "SAMKILDMAN",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "SAMUKESAND",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "SAMUKESRTV",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "STUDENTBES",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "TDATO",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "TERSKMKBER",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "TPDATO",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "TPRESULTAT",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "UKES",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "UKESFSAM",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "UNNTAKAAP",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "VEDTAKSEND",
+          "verdi": "J",
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "YDATO",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "YINNT",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "YSKADEGRD",
+          "verdi": null,
+          "registrertDato": "2017-07-14"
+        },
+        {
+          "vedtakId": 37091469,
+          "kode": "BEREGNYS",
+          "verdi": null,
+          "registrertDato": "2025-11-20"
+        }
+      ]
+    }
+  ]
+}
