@@ -1,0 +1,938 @@
+{
+  "sakId": "13697921",
+  "opprettetAar": 2024,
+  "lopenr": 28531,
+  "person": {
+    "personId": 4938107,
+    "fodselsnummer": "22487805126",
+    "fornavn": "AKADEMISK",
+    "etternavn": "MANDARIN"
+  },
+  "statuskode": "AKTIV",
+  "registrertDato": "2024-09-05T11:52:12",
+  "avsluttetDato": null,
+  "vedtak": [
+    {
+      "vedtakId": 37060040,
+      "statusKode": "IVERK",
+      "vedtaktypeKode": "S",
+      "fraOgMed": "2025-01-01",
+      "tilDato": null,
+      "rettighetkode": "AAP",
+      "utfallkode": "JA",
+      "fakta": [
+        {
+          "kode": "AAPBERDATO",
+          "navn": "Beregningsdato",
+          "verdi": "01-09-2024",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "AAPBERREGL",
+          "navn": "Beregningsregelverk",
+          "verdi": "Februar 2020",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "AAPMANBER",
+          "navn": "AAP manuelt beregnet",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "AAPVARIGHT",
+          "navn": "Varighet AAP-periode",
+          "verdi": "3",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "AAPVARIGKO",
+          "navn": "Varighet Korona-periode",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "AAPVARIGUN",
+          "navn": "Varighet AAP unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "AAPVILKUNN",
+          "navn": "Unntaksvilkår gjelder fra",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "AGRLAGMAN",
+          "navn": "Grunnlag er beregnet manuelt",
+          "verdi": "N",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "ANTB",
+          "navn": "ANTALL BARN",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "ARBPEOS",
+          "navn": "Arbeidsperiode fra EØS/Norden",
+          "verdi": "N",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "ATIMTLTLON",
+          "navn": "Timer med tiltakslønn",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "ATIMUUTNIN",
+          "navn": "Timer uutnyttet inntekstevne",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "AUNGFOR",
+          "navn": "Ung ufør",
+          "verdi": "N",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "AYRKESKADE",
+          "navn": "Yrkesskade",
+          "verdi": "N",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "BARNMSTON",
+          "navn": "Antall barn med stønad",
+          "verdi": "0",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "BARNTILL",
+          "navn": "Barnetillegg per uke",
+          "verdi": "0",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "BARNUSTON",
+          "navn": "Antall barn uten stønad",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "BEGRTILAAP",
+          "navn": "Tellerjust ord begrunn tillegg",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "BEGRTILUNN",
+          "navn": "Tellerjust unntak begr tillegg",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "BEGRUNNTAK",
+          "navn": "Tellerjustering unnt begr AAP",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "BERBESKR",
+          "navn": "Beregningsgrunnlag beskrivelse",
+          "verdi": "Du hadde lav eller ingen inntekt de tre siste årene før arbeidsevnen din ble redusert. Derfor får du arbeidsavklaringspenger som er 2.041 ganger grunnbeløpet. Dette går frem av folketrygdloven §§ 11-19 og 11-20.\r\n\r\nGrunnbeløpet endres årlig, og du finner det oppdaterte beløpet på nav.no/grunnbelop.\n",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "BERDAGS",
+          "navn": "Beregnet dagsats",
+          "verdi": "974",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "BERREGEL",
+          "navn": "Beregningsregel",
+          "verdi": "ORDINAER_MINSTEYTELSE",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "BREVKLASSE",
+          "navn": "Klassifisering av type brev",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "DAGS",
+          "navn": "DAGSATS",
+          "verdi": "974",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "DAGSFSAM",
+          "navn": "Grunnsats før samordning",
+          "verdi": "974",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "DAGSMBFSAM",
+          "navn": "Dagsats m.b. før samordn.",
+          "verdi": "974",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "DAGSMBT",
+          "navn": "Dagsats med barnetillegg",
+          "verdi": "974",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "ENDRTILAAP",
+          "navn": "Tellerjust tilleggsperiode ord",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "ENDRTILUNN",
+          "navn": "Tellerjust tilleggsper unntak",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "ENDRUNNAAP",
+          "navn": "Tellerjustering unntak AAP",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "FDATO",
+          "navn": "Gjelder fra",
+          "verdi": "01-01-2025",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "GRSATS",
+          "navn": "Grunnsats",
+          "verdi": "974",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "GRUNN",
+          "navn": "Grunnlag for beregning",
+          "verdi": "383547",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "INNVF",
+          "navn": "VEDTAKSDATO",
+          "verdi": "01-01-2025",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "INSGRAD",
+          "navn": "Gradering institusjonsopphold",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "INSTOPP",
+          "navn": "Instutisjonsopphold",
+          "verdi": "N",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "INTARNESTS",
+          "navn": "Nest siste beregningsår",
+          "verdi": "2022",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "INTARSISTE",
+          "navn": "Siste beregningsår",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "INTARTREDS",
+          "navn": "Tredje siste beregningsår",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "INTNESTS",
+          "navn": "Inntekt nest siste år/periode",
+          "verdi": "400000",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "INTSISTE",
+          "navn": "Inntekt siste år/periode",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "INTTREDS",
+          "navn": "Inntekt tredj siste år/periode",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "KODE115",
+          "navn": "Relatert 11-5-vedtak",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "MAXDATOAAP",
+          "navn": "Maksdato ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "MAXDATOUNT",
+          "navn": "Maksdato AAP-unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "MAXDTAAPK",
+          "navn": "Skriptjust. maksdato AAP ord.",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "MAXDTAAPKU",
+          "navn": "Skriptjust. maksdato AAP unnt.",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "NORMARBT",
+          "navn": "Normalarbeidstid",
+          "verdi": "37.5",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "OPPRTDATO",
+          "navn": "Opprinnelig til-dato",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "OVERGTAT",
+          "navn": "Overgangstilfelle",
+          "verdi": "N",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "OVERGTRP",
+          "navn": "Overgangstilfelle",
+          "verdi": "N",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "OVERGTTU",
+          "navn": "Overgangstilfelle",
+          "verdi": "N",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "PR90REGEL",
+          "navn": "90% regel",
+          "verdi": "N",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "SAM",
+          "navn": "SAMORDNING",
+          "verdi": "N",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "SAMKILDMAN",
+          "navn": "Samordningskilde manuell",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "SAMUKESAND",
+          "navn": "Sum samordning andre",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "SAMUKESRTV",
+          "navn": "Sum samordning RTV",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "STUDENTBES",
+          "navn": "Studentbestemmelsen",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "TDATO",
+          "navn": "Gjelder til",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "TERSKMKBER",
+          "navn": "Terskelgrense Meldekortberegn",
+          "verdi": "40",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "TPDATO",
+          "navn": "TP-dato",
+          "verdi": "11-09-2024 11:15",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "TPRESULTAT",
+          "navn": "TP-nr(e)",
+          "verdi": "0",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "UKES",
+          "navn": "UKESATS",
+          "verdi": "4870",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "UKESFSAM",
+          "navn": "Ukesats før samordning",
+          "verdi": "4870",
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "VEDTAKSEND",
+          "navn": "Vedtaksbrev er sendt",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "YDATO",
+          "navn": "Yrkesskadetidspunkt",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "YINNT",
+          "navn": "Inntekt på skadetidspunkt",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        },
+        {
+          "kode": "YSKADEGRD",
+          "navn": "Yrkesskadegrad",
+          "verdi": null,
+          "registrertDato": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "vedtakId": 37054125,
+      "statusKode": "AVSLU",
+      "vedtaktypeKode": "O",
+      "fraOgMed": "2024-09-08",
+      "tilDato": "2024-12-31",
+      "rettighetkode": "AAP",
+      "utfallkode": "JA",
+      "fakta": [
+        {
+          "kode": "AAPBERDATO",
+          "navn": "Beregningsdato",
+          "verdi": "01-09-2024",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "AAPBERREGL",
+          "navn": "Beregningsregelverk",
+          "verdi": "Februar 2020",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "AAPMANBER",
+          "navn": "AAP manuelt beregnet",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "AAPVARIGHT",
+          "navn": "Varighet AAP-periode",
+          "verdi": "3",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "AAPVARIGKO",
+          "navn": "Varighet Korona-periode",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "AAPVARIGUN",
+          "navn": "Varighet AAP unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "AAPVILKUNN",
+          "navn": "Unntaksvilkår gjelder fra",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "AGRLAGMAN",
+          "navn": "Grunnlag er beregnet manuelt",
+          "verdi": "N",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "ANTB",
+          "navn": "ANTALL BARN",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "ARBPEOS",
+          "navn": "Arbeidsperiode fra EØS/Norden",
+          "verdi": "N",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "ATIMTLTLON",
+          "navn": "Timer med tiltakslønn",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "ATIMUUTNIN",
+          "navn": "Timer uutnyttet inntekstevne",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "AUNGFOR",
+          "navn": "Ung ufør",
+          "verdi": "N",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "AVSPTSANK",
+          "navn": "Tidligere sanksjon",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "AYRKESKADE",
+          "navn": "Yrkesskade",
+          "verdi": "N",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "BARNMSTON",
+          "navn": "Antall barn med stønad",
+          "verdi": "0",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "BARNTILL",
+          "navn": "Barnetillegg per uke",
+          "verdi": "0",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "BARNUSTON",
+          "navn": "Antall barn uten stønad",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "BEGRTELLER",
+          "navn": "Tellerjustering begrunnelse",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "BEGRTILAAP",
+          "navn": "Tellerjust ord begrunn tillegg",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "BEGRTILUNN",
+          "navn": "Tellerjust unntak begr tillegg",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "BEGRUNNTAK",
+          "navn": "Tellerjustering unnt begr AAP",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "BERBESKR",
+          "navn": "Beregningsgrunnlag beskrivelse",
+          "verdi": "Du hadde lav eller ingen inntekt de tre siste årene før arbeidsevnen din ble redusert. Derfor får du arbeidsavklaringspenger som er 2.041 ganger grunnbeløpet. Dette går frem av folketrygdloven §§ 11-19 og 11-20.\r\n\r\nGrunnbeløpet endres årlig, og du finner det oppdaterte beløpet på nav.no/grunnbelop.\n",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "BERDAGS",
+          "navn": "Beregnet dagsats",
+          "verdi": "974",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "BERREGEL",
+          "navn": "Beregningsregel",
+          "verdi": "ORDINAER_MINSTEYTELSE",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "BREVKLASSE",
+          "navn": "Klassifisering av type brev",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "DAGS",
+          "navn": "DAGSATS",
+          "verdi": "974",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "DAGSFSAM",
+          "navn": "Grunnsats før samordning",
+          "verdi": "974",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "DAGSMBFSAM",
+          "navn": "Dagsats m.b. før samordn.",
+          "verdi": "974",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "DAGSMBT",
+          "navn": "Dagsats med barnetillegg",
+          "verdi": "974",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "ENDRPERAAP",
+          "navn": "Tellerjustering AAP",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "ENDRTILAAP",
+          "navn": "Tellerjust tilleggsperiode ord",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "ENDRTILUNN",
+          "navn": "Tellerjust tilleggsper unntak",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "ENDRUNNAAP",
+          "navn": "Tellerjustering unntak AAP",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "ENDVARIGHT",
+          "navn": "Varighet endret",
+          "verdi": "N",
+          "registrertDato": "2024-09-11"
+        },
+        {
+          "kode": "FASTARBTFS",
+          "navn": "Fastsatt arbeidstid før samord",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "FDATO",
+          "navn": "Gjelder fra",
+          "verdi": "08-09-2024",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "GRSATS",
+          "navn": "Grunnsats",
+          "verdi": "974",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "GRUNN",
+          "navn": "Grunnlag for beregning",
+          "verdi": "383547",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "INNVF",
+          "navn": "VEDTAKSDATO",
+          "verdi": "11-09-2024",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "INSGRAD",
+          "navn": "Gradering institusjonsopphold",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "INSTOPP",
+          "navn": "Instutisjonsopphold",
+          "verdi": "N",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "INTARNESTS",
+          "navn": "Nest siste beregningsår",
+          "verdi": "2022",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "INTARSISTE",
+          "navn": "Siste beregningsår",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "INTARTREDS",
+          "navn": "Tredje siste beregningsår",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "INTNESTS",
+          "navn": "Inntekt nest siste år/periode",
+          "verdi": "400000",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "INTSISTE",
+          "navn": "Inntekt siste år/periode",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "INTTREDS",
+          "navn": "Inntekt tredj siste år/periode",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "KODE115",
+          "navn": "Relatert 11-5-vedtak",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "MAXAAP",
+          "navn": "Maks periodeteller AAP",
+          "verdi": "15680",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "MAXDATOAAP",
+          "navn": "Maksdato ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "MAXDATOUNT",
+          "navn": "Maksdato AAP-unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "MAXDTAAPK",
+          "navn": "Skriptjust. maksdato AAP ord.",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "MAXDTAAPKU",
+          "navn": "Skriptjust. maksdato AAP unnt.",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "MAXUNNTAAP",
+          "navn": "Max periodeteller unntak AAP",
+          "verdi": "10460",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "NORMARBT",
+          "navn": "Normalarbeidstid",
+          "verdi": "37.5",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "NULLEAAP",
+          "navn": "Nullstill periodeteller AAP",
+          "verdi": "I",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "NULLEAAPUN",
+          "navn": "Nullstilling unntakteller AAP",
+          "verdi": "I",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "OPPRTDATO",
+          "navn": "Opprinnelig til-dato",
+          "verdi": "31-12-2024",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "OVERGTAT",
+          "navn": "Overgangstilfelle",
+          "verdi": "N",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "OVERGTRP",
+          "navn": "Overgangstilfelle",
+          "verdi": "N",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "OVERGTTU",
+          "navn": "Overgangstilfelle",
+          "verdi": "N",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "PR90REGEL",
+          "navn": "90% regel",
+          "verdi": "N",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "REDBREV",
+          "navn": "Vedtaksbrev er redigert",
+          "verdi": "N",
+          "registrertDato": "2024-09-11"
+        },
+        {
+          "kode": "SAM",
+          "navn": "SAMORDNING",
+          "verdi": "N",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "SAMKILDMAN",
+          "navn": "Samordningskilde manuell",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "SAMUKESAND",
+          "navn": "Sum samordning andre",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "SAMUKESRTV",
+          "navn": "Sum samordning RTV",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "STUDENTBES",
+          "navn": "Studentbestemmelsen",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "TDATO",
+          "navn": "Gjelder til",
+          "verdi": "31-12-2024",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "TEKSTVAR",
+          "navn": "Brevtekstvariant",
+          "verdi": "O_INNV_SOKNAD",
+          "registrertDato": "2024-09-11"
+        },
+        {
+          "kode": "TERSKMKBER",
+          "navn": "Terskelgrense Meldekortberegn",
+          "verdi": "40",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "TPDATO",
+          "navn": "TP-dato",
+          "verdi": "11-09-2024 11:15",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "TPRESULTAT",
+          "navn": "TP-nr(e)",
+          "verdi": "0",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "UKES",
+          "navn": "UKESATS",
+          "verdi": "4870",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "UKESFSAM",
+          "navn": "Ukesats før samordning",
+          "verdi": "4870",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "UNNTAKAAP",
+          "navn": "Unntak maks stønadsperiode AA",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "VEDTAKSEND",
+          "navn": "Vedtaksbrev er sendt",
+          "verdi": "J",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "YDATO",
+          "navn": "Yrkesskadetidspunkt",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "YINNT",
+          "navn": "Inntekt på skadetidspunkt",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "YSKADEGRD",
+          "navn": "Yrkesskadegrad",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        }
+      ]
+    }
+  ]
+}

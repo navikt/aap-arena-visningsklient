@@ -17,15 +17,15 @@ export default async function SaksPage(props: { params: Promise<{ saksId: string
     return <SakIkkeFunnet saksId={saksId} />;
   }
 
-  const harTilgang = await harTilgangTilBruker(sak.fodselsnummer);
+  const harTilgang = await harTilgangTilBruker(sak.person.fodselsnummer);
 
   if (!harTilgang) {
-    return <IkkeTilgang brukerId={sak.fodselsnummer} />;
+    return <IkkeTilgang brukerId={sak.person.fodselsnummer} />;
   }
 
   // Denne audit-loggen burde gjøres når man vet 100% at man viser denne dataen til bruker. Typisk etter man har hentet
   // data om en bestemt bruker. Viktig at man sørger for at den ikke logged mange ganger.
-  logAudit(`Åpnet arenasak ${sak.sakId}`, 'audit:access', sak.fodselsnummer);
+  logAudit(`Åpnet arenasak ${sak.sakId}`, 'audit:access', sak.person.fodselsnummer);
 
   return (
     <section>
@@ -33,7 +33,9 @@ export default async function SaksPage(props: { params: Promise<{ saksId: string
       <BodyLong>
         Saksnummer: {sak.opprettetAar}-{sak.lopenr}
       </BodyLong>
-      <BodyLong>Fødselsnummer på sak: {sak.fodselsnummer}</BodyLong>
+      <BodyLong>Fornavn: {sak.person.fornavn}</BodyLong>
+      <BodyLong>Etternavn: {sak.person.etternavn}</BodyLong>
+      <BodyLong>Fødselsnummer: {sak.person.fodselsnummer}</BodyLong>
       <BodyLong>Registrert dato: {sak.registrertDato}</BodyLong>
       <BodyLong>Avsluttet dato: {sak.avsluttetDato ?? 'Ikke avsluttet'}</BodyLong>
       <BodyLong>Statuskode: {sak.statuskode}</BodyLong>
@@ -41,7 +43,7 @@ export default async function SaksPage(props: { params: Promise<{ saksId: string
 
       <VStack gap="space-2">
         {sak.vedtak.map((vedtak) => (
-          <SaksVedtak vedtak={vedtak} key={`${vedtak.fraOgMed}-${vedtak.rettighetkode}`} />
+          <SaksVedtak vedtak={vedtak} key={`${vedtak.vedtakId}-${vedtak.rettighetkode}`} />
         ))}
       </VStack>
     </section>

@@ -1,0 +1,15 @@
+{
+  "sakId": "13335922",
+  "opprettetAar": 2021,
+  "lopenr": 143265,
+  "person": {
+    "personId": 4807549,
+    "fodselsnummer": "03106910641",
+    "fornavn": "STOR",
+    "etternavn": "BOLLE"
+  },
+  "statuskode": "INAKT",
+  "registrertDato": "2021-05-03T12:41:25",
+  "avsluttetDato": null,
+  "vedtak": []
+}

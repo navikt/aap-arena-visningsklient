@@ -9,10 +9,12 @@ type Props = {
 };
 
 export function SaksVedtak({ vedtak, key }: Props): React.ReactElement {
+  const faktaToList = vedtak.fakta.filter((f) => f.verdi != null);
+
   return (
     <InfoCard key={key} data-color="info">
       <InfoCard.Header>
-        <InfoCard.Title>Vedtak {vedtak.fraOgMed}</InfoCard.Title>
+        <InfoCard.Title>Vedtak {vedtak.vedtakId}</InfoCard.Title>
       </InfoCard.Header>
       <InfoCard.Content>
         <BodyLong>Fra og med: {vedtak.fraOgMed}</BodyLong>
@@ -23,11 +25,12 @@ export function SaksVedtak({ vedtak, key }: Props): React.ReactElement {
         <BodyLong>Vedtaktypekode: {vedtak.vedtaktypeKode ?? '—'}</BodyLong>
         <BodyLong>Antall fakta: {vedtak.fakta.length}</BodyLong>
 
-        {vedtak.fakta.length > 0 && (
+        {faktaToList.length > 0 && (
           <List>
-            {vedtak.fakta.map((fakta) => (
+            {faktaToList.map((fakta) => (
               <List.Item key={fakta.kode}>
                 <BodyLong>Kode: {fakta.kode}</BodyLong>
+                <BodyLong>Navn: {fakta.navn}</BodyLong>
                 <BodyLong>Registrert dato: {fakta.registrertDato}</BodyLong>
                 <BodyLong>Verdi: {fakta.verdi}</BodyLong>
               </List.Item>

@@ -1,13 +1,14 @@
 type NIL = null | undefined;
 
 export type ArenaVedtakfaktaDTO = {
-  vedtakId: number;
   kode: string;
+  navn: string;
   verdi: string | NIL;
   registrertDato: string;
 };
 
 export type ArenaVedtakMedFaktaDTO = {
+  vedtakId: number;
   statusKode: string;
   vedtaktypeKode: string | NIL;
   fraOgMed: string | NIL;
@@ -17,11 +18,18 @@ export type ArenaVedtakMedFaktaDTO = {
   fakta: ArenaVedtakfaktaDTO[];
 };
 
+export type SakPersonDTO = {
+  personId: number;
+  fodselsnummer: string;
+  fornavn: string;
+  etternavn: string;
+};
+
 export type SakDTO = {
   sakId: string;
   opprettetAar: number;
   lopenr: number;
-  fodselsnummer: string;
+  person: SakPersonDTO;
   statuskode: string;
   registrertDato: string;
   avsluttetDato: string | NIL;
