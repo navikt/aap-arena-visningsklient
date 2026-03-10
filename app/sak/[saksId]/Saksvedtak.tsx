@@ -30,6 +30,7 @@ export function SaksVedtak({ vedtak, key }: Props): React.ReactElement {
             {faktaToList.map((fakta) => (
               <List.Item key={fakta.kode}>
                 <BodyLong>Kode: {fakta.kode}</BodyLong>
+                <BodyLong>Navn: {fakta.navn}</BodyLong>
                 <BodyLong>Registrert dato: {fakta.registrertDato}</BodyLong>
                 <BodyLong>Verdi: {fakta.verdi}</BodyLong>
               </List.Item>

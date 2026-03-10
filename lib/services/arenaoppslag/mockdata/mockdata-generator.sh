@@ -11,6 +11,9 @@ UGreen='\033[4;32m'       # Green underline
 # json config
 jsonConfig='mockdata.config.json'
 
+# Base URL for mockdata fetch
+baseUrl='https://arenaoppslag.dev-fss-pub.nais.io/api/intern/sak'
+
 # Main script
 init() {
   # Welcome text
@@ -20,7 +23,7 @@ init() {
   verifyJQ
 
   # Generate azure-token-generator token
-  startTokenGenerator
+  startMockdataGenerator
 
   # Finished
   sleep 1
@@ -56,22 +59,44 @@ verifyJQ() {
   fi
 }
 
-# Start token generation process
-start() {
-  url = "https://azure-token-generator.intern.dev.nav.no/api/obo?aud=dev-fss.aap.arenaoppslag"
+# Start mockdata generation process
+startMockdataGenerator() {
+  cookieUrl="https://azure-token-generator.intern.dev.nav.no/api/obo?aud=dev-fss.aap.arenaoppslag"
 
   # Show link to azureTokenGenerator to user
-  echo -e "${Cyan}Visit: ${UGreen}${url}\n"
-  echo -e "${Cyan}Find and copy ${Yellow}access-token${Cyan} that is shown in the browser"
+  echo -e "${Cyan}Visit: ${UGreen}${cookieUrl}\n"
+  echo -e "${Cyan}Find and copy ${Yellow}io.nais.wonderwall.session ${Cyan}cookie from ${Yellow}DevTools > Application > Cookies"
 
-  # Ask for wonderwall cookie,
-  echo -e "${Cyan}Paste in token: "
+  # Ask for bearer token
+  echo -e "${Cyan}Paste in cookie: "
   read cookie
   echo -e "\n"
 
-  configArray=$(jq -r '.[] | @base64' $jsonConfig)
+  # Store access token in variable
+  accessToken=$(curl -s -b "io.nais.wonderwall.session=${cookie}" ${cookieUrl}| jq -r ".access_token")
 
-  # TODO: Implement me!
+  # Resolve config path relative to this script
+  scriptDir=$(cd "$(dirname "$0")" && pwd)
+  configPath="${scriptDir}/${jsonConfig}"
+
+  # Loop through sak IDs and fetch mockdata
+  for sakId in $(jq -r '.[]' "${configPath}"); do
+    echo -e "${Cyan}Reading data for sak: ${UGreen}${sakId}"
+
+    outputFile="${scriptDir}/sak-${sakId}-mockdata.json"
+    response=$(curl -s -H "Authorization: Bearer ${accessToken}" "${baseUrl}/${sakId}")
+
+    if [[ -z "${response}" || "${response}" == "null" ]]; then
+      echo -e "❌ ${Yellow}sak-${sakId}${Red} error"
+      exit 1
+    fi
+
+    echo "${response}" | jq '.' > "${outputFile}"
+    echo -e "✅ ${Yellow}sak-${sakId}${Cyan} updated"
+  done
 
   echo -e "\n"
 }
+
+# Start script
+init
