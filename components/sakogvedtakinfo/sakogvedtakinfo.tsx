@@ -2,7 +2,7 @@
 
 import { SakDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { Card } from 'components/felleskomponenter/card/Card';
-import { BodyShort, Heading, VStack } from '@navikt/ds-react';
+import { Heading, VStack } from '@navikt/ds-react';
 import { VedtakTabell } from 'components/sakogvedtakinfo/vedtak-tabell';
 
 type Props = {

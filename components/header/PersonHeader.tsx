@@ -3,7 +3,6 @@
 import styles from './header.module.css';
 import { CopyButton, HStack, Label } from '@navikt/ds-react';
 import { storForbokstavIHvertOrd } from 'lib/utils/string';
-import Link from 'next/link';
 
 type Props = {
   fodselsnummer: string;
