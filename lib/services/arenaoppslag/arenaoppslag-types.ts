@@ -1,13 +1,13 @@
 type NIL = null | undefined;
 
 export type ArenaVedtakfaktaDTO = {
-  vedtakId: number;
   kode: string;
   verdi: string | NIL;
   registrertDato: string;
 };
 
 export type ArenaVedtakMedFaktaDTO = {
+  vedtakId: number;
   statusKode: string;
   vedtaktypeKode: string | NIL;
   fraOgMed: string | NIL;

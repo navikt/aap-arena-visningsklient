@@ -41,7 +41,7 @@ export default async function SaksPage(props: { params: Promise<{ saksId: string
 
       <VStack gap="space-2">
         {sak.vedtak.map((vedtak) => (
-          <SaksVedtak vedtak={vedtak} key={`${vedtak.fraOgMed}-${vedtak.rettighetkode}`} />
+          <SaksVedtak vedtak={vedtak} key={`${vedtak.vedtakId}-${vedtak.rettighetkode}`} />
         ))}
       </VStack>
     </section>
