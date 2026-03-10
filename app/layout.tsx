@@ -13,14 +13,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="light">
       <body>
         <Header />
-        <main className={styles.main}>
-          <div className={styles.content}>
-            <section>{children}</section>
-          </div>
-        </main>
+        <main className={styles.main}>{children}</main>
       </body>
     </html>
   );

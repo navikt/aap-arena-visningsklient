@@ -11,13 +11,14 @@
     "start": "next start",
     "lint": "oxlint app lib components && prettier --check app lib components",
     "lint:fix": "oxlint --fix app lib components",
-    "run-prettier": "prettier --write ./app",
+    "run-prettier": "prettier --write ./app ./lib ./components",
     "test": "echo 'No tests yet' && exit 0"
   },
   "dependencies": {
     "@navikt/ds-css": "8.3.0",
     "@navikt/ds-react": "8.3.0",
     "@navikt/oasis": "4.1.4",
+    "date-fns": "4.1.0",
     "graphql": "16.13.0",
     "graphql-request": "7.4.0",
     "jose": "6.1.3",

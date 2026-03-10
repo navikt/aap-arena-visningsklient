@@ -1,20 +1,5 @@
 .main {
-  padding-inline: 1rem;
   width: 100%;
+  min-height: 100%;
   margin: 0 auto;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 2rem;
-  align-items: center;
-  justify-self: center;
-  max-width: 800px;
-  width: 80%;
-}
-
-.logo {
-  width: 200px;
 }
