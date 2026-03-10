@@ -73,8 +73,6 @@ spec:
       external:
         - host: cdn.nav.no
         - host: aap-unleash-api.nav.cloud.nais.io
-        - host: pdl-api.dev-fss-pub.nais.io
-        - host: arenaoppslag.dev-fss-pub.nais.io
       {{#each externalAccessPolicies}}
         - host: {{this}}
       {{/each}}
