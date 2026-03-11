@@ -3,5 +3,5 @@
 html,
 body {
   min-height: 100%;
-  background-color: var(--ax-bg-sunken);
+  background-color: var(--ax-bg-default);
 }

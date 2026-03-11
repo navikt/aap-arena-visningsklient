@@ -6,7 +6,6 @@ import { PersonHeader } from 'components/header/PersonHeader';
 import { Tabs } from '@navikt/ds-react';
 import { Sakogvedtakinfo } from 'components/sakogvedtakinfo/sakogvedtakinfo';
 import { Meldekortperioder } from 'components/meldekortperioder/meldekortperioder';
-import { Card } from 'components/felleskomponenter/card/Card';
 
 type Props = {
   sak: SakDTO;
@@ -15,11 +14,7 @@ type Props = {
 export function SakPageClient({ sak }: Props): React.ReactElement {
   return (
     <>
-      <PersonHeader
-        fodselsnummer={sak.person.fodselsnummer}
-        fornavn={sak.person.fornavn}
-        etternavn={sak.person.etternavn}
-      />
+      <PersonHeader sak={sak} />
       <div className={styles.container}>
         <div>
           <Tabs defaultValue="sak">

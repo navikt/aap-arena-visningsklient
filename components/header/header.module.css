@@ -1,8 +1,6 @@
 .personheader {
   border-bottom: 1px solid var(--ax-border-neutral);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  background-color: var(--ax-bg-sunken);
   padding: var(--ax-space-16) var(--ax-space-24);
 }
 
