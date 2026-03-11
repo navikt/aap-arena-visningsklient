@@ -10,3 +10,13 @@
   padding-left: var(--ax-space-1);
   color: var(--ax-text-subtle);
 }
+
+.listElement {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.listElement * {
+  display: inline-block;
+}
