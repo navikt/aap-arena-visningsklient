@@ -14,7 +14,7 @@ export function Sakogvedtakinfo({ sak }: Props): React.ReactElement {
     <Card>
       <VStack gap="space-24">
         <Heading size="medium">
-          Arenasak {sak.opprettetAar} {sak.lopenr}
+          Arenasak {sak.opprettetAar} {sak.lopenr} {sak.statusnavn != null ? `(${sak.statusnavn})` : ''}
         </Heading>
         <VedtakTabell vedtak={sak.vedtak} />
       </VStack>

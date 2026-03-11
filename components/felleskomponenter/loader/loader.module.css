@@ -1,0 +1,5 @@
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--ax-space-16);
+}

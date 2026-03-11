@@ -9,13 +9,16 @@
     "etternavn": "KUTTE"
   },
   "statuskode": "AKTIV",
+  "statusnavn": "Aktiv",
   "registrertDato": "2025-05-29T06:00:15",
   "avsluttetDato": null,
   "vedtak": [
     {
       "vedtakId": 37099051,
       "statusKode": "MOTAT",
+      "statusNavn": "Mottatt",
       "vedtaktypeKode": "O",
+      "vedtaktypeNavn": "Ny rettighet",
       "fraOgMed": null,
       "tilDato": null,
       "rettighetkode": "AAP",
@@ -506,7 +509,9 @@
     {
       "vedtakId": 37099057,
       "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "E",
+      "vedtaktypeNavn": "Endring",
       "fraOgMed": "2016-12-03",
       "tilDato": "2017-06-01",
       "rettighetkode": "AAP",
@@ -997,7 +1002,9 @@
     {
       "vedtakId": 37099061,
       "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "E",
+      "vedtaktypeNavn": "Endring",
       "fraOgMed": "2018-07-12",
       "tilDato": "2018-08-03",
       "rettighetkode": "AAP",
@@ -1488,7 +1495,9 @@
     {
       "vedtakId": 37099062,
       "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "E",
+      "vedtaktypeNavn": "Endring",
       "fraOgMed": "2018-08-04",
       "tilDato": "2019-02-02",
       "rettighetkode": "AAP",
@@ -1979,7 +1988,9 @@
     {
       "vedtakId": 37099063,
       "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "E",
+      "vedtaktypeNavn": "Endring",
       "fraOgMed": "2019-02-03",
       "tilDato": "2019-08-01",
       "rettighetkode": "AAP",
@@ -2470,7 +2481,9 @@
     {
       "vedtakId": 37099066,
       "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "E",
+      "vedtaktypeNavn": "Endring",
       "fraOgMed": "2020-07-31",
       "tilDato": "2021-07-08",
       "rettighetkode": "AAP",
@@ -2961,7 +2974,9 @@
     {
       "vedtakId": 37099067,
       "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "S",
+      "vedtaktypeNavn": "Stans",
       "fraOgMed": "2021-07-09",
       "tilDato": "2021-07-09",
       "rettighetkode": "AAP",
@@ -3410,7 +3425,9 @@
     {
       "vedtakId": 37099069,
       "statusKode": "IVERK",
+      "statusNavn": "Iverksatt",
       "vedtaktypeKode": "S",
+      "vedtaktypeNavn": "Stans",
       "fraOgMed": "2021-07-28",
       "tilDato": null,
       "rettighetkode": "AAP",
@@ -3859,7 +3876,9 @@
     {
       "vedtakId": 37099064,
       "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "S",
+      "vedtaktypeNavn": "Stans",
       "fraOgMed": "2019-08-02",
       "tilDato": "2019-08-02",
       "rettighetkode": "AAP",
@@ -4308,7 +4327,9 @@
     {
       "vedtakId": 37099065,
       "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "G",
+      "vedtaktypeNavn": "Gjenopptak",
       "fraOgMed": "2019-08-03",
       "tilDato": "2020-07-30",
       "rettighetkode": "AAP",
@@ -4787,7 +4808,9 @@
     {
       "vedtakId": 37099068,
       "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "G",
+      "vedtaktypeNavn": "Gjenopptak",
       "fraOgMed": "2021-07-10",
       "tilDato": "2021-07-27",
       "rettighetkode": "AAP",
@@ -5266,7 +5289,9 @@
     {
       "vedtakId": 37099056,
       "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "E",
+      "vedtaktypeNavn": "Endring",
       "fraOgMed": "2016-06-08",
       "tilDato": "2016-12-02",
       "rettighetkode": "AAP",
@@ -5757,7 +5782,9 @@
     {
       "vedtakId": 37099058,
       "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "E",
+      "vedtaktypeNavn": "Endring",
       "fraOgMed": "2017-06-02",
       "tilDato": "2017-11-30",
       "rettighetkode": "AAP",
@@ -6248,7 +6275,9 @@
     {
       "vedtakId": 37099059,
       "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "E",
+      "vedtaktypeNavn": "Endring",
       "fraOgMed": "2017-12-01",
       "tilDato": "2018-01-12",
       "rettighetkode": "AAP",
@@ -6739,7 +6768,9 @@
     {
       "vedtakId": 37099060,
       "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "E",
+      "vedtaktypeNavn": "Endring",
       "fraOgMed": "2018-01-13",
       "tilDato": "2018-07-11",
       "rettighetkode": "AAP",
@@ -7230,7 +7261,9 @@
     {
       "vedtakId": 37099052,
       "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "O",
+      "vedtaktypeNavn": "Ny rettighet",
       "fraOgMed": "2015-12-13",
       "tilDato": "2016-06-07",
       "rettighetkode": "AAP",

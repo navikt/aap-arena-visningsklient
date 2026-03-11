@@ -9,6 +9,7 @@
     "etternavn": "BOLLE"
   },
   "statuskode": "INAKT",
+  "statusnavn": "Inaktiv",
   "registrertDato": "2021-05-03T12:41:25",
   "avsluttetDato": null,
   "vedtak": []

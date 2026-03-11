@@ -9,13 +9,16 @@
     "etternavn": "KOMPETANSE"
   },
   "statuskode": "INAKT",
+  "statusnavn": "Inaktiv",
   "registrertDato": "2021-09-23T04:51:31",
   "avsluttetDato": null,
   "vedtak": [
     {
       "vedtakId": 36682552,
       "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "E",
+      "vedtaktypeNavn": "Endring",
       "fraOgMed": "2015-12-08",
       "tilDato": "2016-02-28",
       "rettighetkode": "AAP",
@@ -488,7 +491,9 @@
     {
       "vedtakId": 36682548,
       "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "O",
+      "vedtaktypeNavn": "Ny rettighet",
       "fraOgMed": "2015-10-07",
       "tilDato": "2022-09-23",
       "rettighetkode": "AAP",
@@ -961,7 +966,9 @@
     {
       "vedtakId": 36682551,
       "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "O",
+      "vedtaktypeNavn": "Ny rettighet",
       "fraOgMed": "2015-10-21",
       "tilDato": "2015-12-07",
       "rettighetkode": "AAP",
@@ -1434,7 +1441,9 @@
     {
       "vedtakId": 36682558,
       "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "E",
+      "vedtaktypeNavn": "Endring",
       "fraOgMed": "2017-04-24",
       "tilDato": "2017-06-15",
       "rettighetkode": "AAP",
@@ -1907,7 +1916,9 @@
     {
       "vedtakId": 36682553,
       "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "E",
+      "vedtaktypeNavn": "Endring",
       "fraOgMed": "2016-02-29",
       "tilDato": "2016-05-21",
       "rettighetkode": "AAP",
@@ -2380,7 +2391,9 @@
     {
       "vedtakId": 36682554,
       "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "E",
+      "vedtaktypeNavn": "Endring",
       "fraOgMed": "2016-05-22",
       "tilDato": "2016-08-17",
       "rettighetkode": "AAP",
@@ -2853,7 +2866,9 @@
     {
       "vedtakId": 36682556,
       "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "E",
+      "vedtaktypeNavn": "Endring",
       "fraOgMed": "2016-09-05",
       "tilDato": "2017-03-01",
       "rettighetkode": "AAP",
@@ -3326,7 +3341,9 @@
     {
       "vedtakId": 36682557,
       "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "E",
+      "vedtaktypeNavn": "Endring",
       "fraOgMed": "2017-03-02",
       "tilDato": "2017-04-23",
       "rettighetkode": "AAP",
@@ -3799,7 +3816,9 @@
     {
       "vedtakId": 36682559,
       "statusKode": "IVERK",
+      "statusNavn": "Iverksatt",
       "vedtaktypeKode": "S",
+      "vedtaktypeNavn": "Stans",
       "fraOgMed": "2017-06-16",
       "tilDato": null,
       "rettighetkode": "AAP",
@@ -4230,7 +4249,9 @@
     {
       "vedtakId": 36682555,
       "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "E",
+      "vedtaktypeNavn": "Endring",
       "fraOgMed": "2016-08-18",
       "tilDato": "2016-09-04",
       "rettighetkode": "AAP",

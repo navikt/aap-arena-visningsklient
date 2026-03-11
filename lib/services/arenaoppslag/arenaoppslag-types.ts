@@ -10,7 +10,9 @@ export type ArenaVedtakfaktaDTO = {
 export type ArenaVedtakMedFaktaDTO = {
   vedtakId: number;
   statusKode: string;
-  vedtaktypeKode: string | NIL;
+  statusNavn: string;
+  vedtaktypeKode: string;
+  vedtaktypeNavn: string;
   fraOgMed: string | NIL;
   tilDato: string | NIL;
   rettighetkode: string;
@@ -31,6 +33,7 @@ export type SakDTO = {
   lopenr: number;
   person: SakPersonDTO;
   statuskode: string;
+  statusnavn: string;
   registrertDato: string;
   avsluttetDato: string | NIL;
   vedtak: ArenaVedtakMedFaktaDTO[];

@@ -1,9 +1,5 @@
-import { Loader } from '@navikt/ds-react';
+import StorLoader from 'components/felleskomponenter/loader/loader';
 
 export default function Loading() {
-  return (
-    <section>
-      <Loader size="3xlarge" title="Venter..." />
-    </section>
-  );
+  return <StorLoader />;
 }

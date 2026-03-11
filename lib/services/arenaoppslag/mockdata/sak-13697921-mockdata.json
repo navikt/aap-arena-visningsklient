@@ -9,13 +9,16 @@
     "etternavn": "MANDARIN"
   },
   "statuskode": "AKTIV",
+  "statusnavn": "Aktiv",
   "registrertDato": "2024-09-05T11:52:12",
   "avsluttetDato": null,
   "vedtak": [
     {
       "vedtakId": 37060040,
       "statusKode": "IVERK",
+      "statusNavn": "Iverksatt",
       "vedtaktypeKode": "S",
+      "vedtaktypeNavn": "Stans",
       "fraOgMed": "2025-01-01",
       "tilDato": null,
       "rettighetkode": "AAP",
@@ -440,7 +443,9 @@
     {
       "vedtakId": 37054125,
       "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "O",
+      "vedtaktypeNavn": "Ny rettighet",
       "fraOgMed": "2024-09-08",
       "tilDato": "2024-12-31",
       "rettighetkode": "AAP",
