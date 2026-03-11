@@ -9,6 +9,7 @@
     "etternavn": "KAFFI"
   },
   "statuskode": "INAKT",
+  "statusnavn": "Inaktiv",
   "registrertDato": "2021-05-11T10:36:44",
   "avsluttetDato": null,
   "vedtak": []

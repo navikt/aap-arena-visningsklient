@@ -36,7 +36,17 @@ export function VedtakTabell({ vedtak }: Props): React.ReactElement {
         </Table.Header>
         <Table.Body>
           {vedtak.map(
-            ({ rettighetkode, vedtaktypeKode, fraOgMed, tilDato, statusKode, utfallkode, vedtakId, fakta }) => {
+            ({
+              rettighetkode,
+              vedtaktypeNavn,
+              vedtaktypeKode,
+              fraOgMed,
+              tilDato,
+              statusNavn,
+              utfallkode,
+              vedtakId,
+              fakta,
+            }) => {
               return (
                 <Table.ExpandableRow
                   key={vedtakId}
@@ -44,10 +54,10 @@ export function VedtakTabell({ vedtak }: Props): React.ReactElement {
                   content={<Vedtakfakta vedtakfakta={fakta} />}
                 >
                   <Table.HeaderCell scope="row">{rettighetkode}</Table.HeaderCell>
-                  <Table.DataCell>{vedtaktypeKode}</Table.DataCell>
+                  <Table.DataCell>{`${vedtaktypeNavn} (${vedtaktypeKode})`}</Table.DataCell>
                   <Table.DataCell>{dateOrBlank(fraOgMed)}</Table.DataCell>
                   <Table.DataCell>{dateOrBlank(tilDato)}</Table.DataCell>
-                  <Table.DataCell>{statusKode}</Table.DataCell>
+                  <Table.DataCell>{statusNavn}</Table.DataCell>
                   <Table.DataCell>{utfallkode}</Table.DataCell>
                 </Table.ExpandableRow>
               );

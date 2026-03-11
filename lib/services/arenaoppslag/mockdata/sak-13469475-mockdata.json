@@ -9,13 +9,16 @@
     "etternavn": "HALE"
   },
   "statuskode": "INAKT",
+  "statusnavn": "Inaktiv",
   "registrertDato": "2021-12-05T20:10:40",
   "avsluttetDato": null,
   "vedtak": [
     {
       "vedtakId": 36754678,
       "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "O",
+      "vedtaktypeNavn": "Ny rettighet",
       "fraOgMed": "2019-09-21",
       "tilDato": "2022-12-05",
       "rettighetkode": "AAP",
@@ -488,7 +491,9 @@
     {
       "vedtakId": 36754676,
       "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "O",
+      "vedtaktypeNavn": "Ny rettighet",
       "fraOgMed": "2016-10-02",
       "tilDato": "2017-02-26",
       "rettighetkode": "AAP",
@@ -961,7 +966,9 @@
     {
       "vedtakId": 36754677,
       "statusKode": "IVERK",
+      "statusNavn": "Iverksatt",
       "vedtaktypeKode": "S",
+      "vedtaktypeNavn": "Stans",
       "fraOgMed": "2017-02-27",
       "tilDato": null,
       "rettighetkode": "AAP",
