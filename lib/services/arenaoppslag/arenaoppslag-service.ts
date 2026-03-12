@@ -16,7 +16,7 @@ export async function hentSak(saksId: string): Promise<SakDTO | null> {
     return getMockSakFraArena(saksId);
   }
 
-  const response = await apiFetch<SakDTO>(`${baseUrl}/api/intern/sak/${saksId}`, scope, 'GET');
+  const response = await apiFetch<SakDTO>(`${baseUrl}/api/intern/sak/${saksId}/detaljert`, scope, 'GET');
   if (isError(response)) {
     if (response.status === 404) {
       return null;

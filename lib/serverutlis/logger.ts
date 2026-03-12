@@ -58,7 +58,7 @@ function getSysLogger(): winston.Logger {
   return winston.createLogger({
     levels: winston.config.syslog.levels,
     format: winston.format.combine(winston.format.timestamp({ format: () => Date.now().toString() }), cefFormat),
-    transports: [new winston.transports.Console(), transportSyslog],
+    transports: isLocal() ? [new winston.transports.Console()] : [transportSyslog],
   });
 }
 
