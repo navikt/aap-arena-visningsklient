@@ -31,3 +31,10 @@ jobs:
           IMAGE: ${{ steps.docker-push.outputs.image }}
           RESOURCE: .nais/nais.yaml
           VARS: .nais/dev.yaml
+      - name: Deploy to nais (prod)
+        uses: nais/deploy/actions/deploy@v2
+        env:
+          CLUSTER: prod-gcp
+          IMAGE: ${{ steps.docker-push.outputs.image }}
+          RESOURCE: .nais/nais.yaml
+          VARS: .nais/prod.yaml
