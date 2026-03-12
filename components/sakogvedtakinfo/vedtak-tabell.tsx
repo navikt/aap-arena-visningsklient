@@ -4,6 +4,7 @@ import { ArenaVedtakMedFaktaDTO } from 'lib/services/arenaoppslag/arenaoppslag-t
 import { BodyShort, Heading, Table } from '@navikt/ds-react';
 import { format } from 'date-fns';
 import { Vedtakfakta } from 'components/sakogvedtakinfo/vedtakfakta';
+import { dateComperator, parseISOorNull } from 'lib/utils/date';
 
 type Props = {
   vedtak: ArenaVedtakMedFaktaDTO[];
@@ -18,6 +19,10 @@ export function VedtakTabell({ vedtak }: Props): React.ReactElement {
       </div>
     );
   }
+
+  const sortedVedtak = vedtak.sort((v1, v2) =>
+    dateComperator(parseISOorNull(v1.fraOgMed), parseISOorNull(v2.fraOgMed), 'DESC')
+  );
 
   return (
     <div>
@@ -35,7 +40,7 @@ export function VedtakTabell({ vedtak }: Props): React.ReactElement {
           </Table.Row>
         </Table.Header>
         <Table.Body>
-          {vedtak.map(
+          {sortedVedtak.map(
             ({
               rettighetkode,
               vedtaktypeNavn,
