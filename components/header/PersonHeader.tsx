@@ -1,10 +1,11 @@
 'use client';
 
 import styles from './header.module.css';
-import { BodyLong, Box, Button, CopyButton, Detail, HStack, Label, Spacer, VStack } from '@navikt/ds-react';
+import { Button, CopyButton, HStack, Label, Spacer } from '@navikt/ds-react';
 import { storForbokstavIHvertOrd } from 'lib/utils/string';
 import { SakDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { ClockDashedIcon } from '@navikt/aksel-icons';
+import { FieldValue } from 'components/felleskomponenter/field-value/field-value';
 
 type Props = {
   sak: SakDTO;
@@ -26,29 +27,13 @@ export function PersonHeader({ sak }: Props): React.ReactElement {
           className={styles.copybutton}
         />
         <Spacer />
-        <HeaderField label="Siste utbetaling" value="Ikke implementert" />
-        <HeaderField label="Maksdato" value="Ikke implementert" />
-        <HeaderField label="Gjenstående" value="Ikke implementert" />
+        <FieldValue label="Siste utbetaling" value="Ikke implementert" />
+        <FieldValue label="Maksdato" value="Ikke implementert" />
+        <FieldValue label="Gjenstående" value="Ikke implementert" />
         <Button variant="tertiary" size="small" iconPosition="left" icon={<ClockDashedIcon />}>
           Historikk
         </Button>
       </HStack>
     </section>
-  );
-}
-
-type HeaderFieldProps = {
-  label: string;
-  value: string;
-};
-
-function HeaderField({ label, value }: HeaderFieldProps): React.ReactElement {
-  return (
-    <Box>
-      <VStack>
-        <Detail>{label}</Detail>
-        <BodyLong size="small">{value}</BodyLong>
-      </VStack>
-    </Box>
   );
 }

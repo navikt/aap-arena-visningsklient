@@ -3,6 +3,7 @@
 import { SakDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { Heading, VStack } from '@navikt/ds-react';
 import { VedtakTabell } from 'components/sakogvedtakinfo/vedtak-tabell';
+import { Nokkeltall } from 'components/sakogvedtakinfo/nokkeltall';
 
 type Props = {
   sak: SakDTO;
@@ -14,6 +15,7 @@ export function Sakogvedtakinfo({ sak }: Props): React.ReactElement {
       <Heading size="medium">
         Arenasak {sak.opprettetAar} {sak.lopenr} {sak.statusnavn != null ? `(${sak.statusnavn})` : ''}
       </Heading>
+      <Nokkeltall sak={sak} />
       <VedtakTabell vedtak={sak.vedtak} />
     </VStack>
   );
