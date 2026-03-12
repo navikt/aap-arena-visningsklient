@@ -13,6 +13,8 @@ export type ArenaVedtakMedFaktaDTO = {
   statusNavn: string;
   vedtaktypeKode: string;
   vedtaktypeNavn: string;
+  aktivitetsfaseKode: string;
+  aktivitetsfaseNavn: string;
   fraOgMed: string | NIL;
   tilDato: string | NIL;
   rettighetkode: string;
