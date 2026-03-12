@@ -5,7 +5,6 @@ import { SakDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { PersonHeader } from 'components/header/PersonHeader';
 import { InfoCard, Tabs } from '@navikt/ds-react';
 import { Sakogvedtakinfo } from 'components/sakogvedtakinfo/sakogvedtakinfo';
-import { Meldekortperioder } from 'components/meldekortperioder/meldekortperioder';
 
 type Props = {
   sak: SakDTO;
