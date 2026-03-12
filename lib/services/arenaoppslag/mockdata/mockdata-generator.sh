@@ -81,10 +81,10 @@ startMockdataGenerator() {
 
   # Loop through sak IDs and fetch mockdata
   for sakId in $(jq -r '.[]' "${configPath}"); do
-    echo -e "${Cyan}Reading data for sak: ${UGreen}${sakId}"
+    echo -e "${Cyan}Henter data for sak: ${UGreen}${sakId}"
 
     outputFile="${scriptDir}/sak-${sakId}-mockdata.json"
-    response=$(curl -s -H "Authorization: Bearer ${accessToken}" "${baseUrl}/${sakId}")
+    response=$(curl -s -H "Authorization: Bearer ${accessToken}" "${baseUrl}/${sakId}/detaljert")
 
     if [[ -z "${response}" || "${response}" == "null" ]]; then
       echo -e "❌ ${Yellow}sak-${sakId}${Red} error"

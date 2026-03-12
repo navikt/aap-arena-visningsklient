@@ -38,7 +38,7 @@
         },
         {
           "kode": "AAPMANBER",
-          "navn": "AAP manuelt beregnet",
+          "navn": "Arbeidsavklaringspenger manuelt beregnet",
           "verdi": null,
           "registrertDato": "2015-11-12"
         },
@@ -68,13 +68,13 @@
         },
         {
           "kode": "ANTB",
-          "navn": "ANTALL BARN",
+          "navn": "Antall barn",
           "verdi": null,
           "registrertDato": "2015-11-12"
         },
         {
           "kode": "ARBPEOS",
-          "navn": "Arbeidsperiode fra EØS/Norden",
+          "navn": "Arbeidsperiode EØS/N i grunnlag",
           "verdi": "N",
           "registrertDato": "2015-11-12"
         },
@@ -98,7 +98,7 @@
         },
         {
           "kode": "AVSPTSANK",
-          "navn": "Tidligere sanksjon",
+          "navn": "Avspaser tidligere sanksjon",
           "verdi": null,
           "registrertDato": "2015-11-12"
         },
@@ -134,25 +134,25 @@
         },
         {
           "kode": "BEGRTILAAP",
-          "navn": "Tellerjust ord begrunn tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2015-11-12"
         },
         {
           "kode": "BEGRTILUNN",
-          "navn": "Tellerjust unntak begr tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2015-11-12"
         },
         {
           "kode": "BEGRUNNTAK",
-          "navn": "Tellerjustering unnt begr AAP",
+          "navn": "Tellerjustering unntak begrunnelse",
           "verdi": null,
           "registrertDato": "2015-11-12"
         },
         {
           "kode": "BERBESKR",
-          "navn": "Beregningsgrunnlag beskrivelse",
+          "navn": "Begrunnelse fra beregning",
           "verdi": "Du hadde lav eller ingen inntekt de tre siste årene før arbeidsevnen din ble redusert. Derfor får du arbeidsavklaringspenger som er to ganger grunnbeløpet. Dette går frem av folketrygdloven §§ 11-19 og 11-20.\r\n\r\nGrunnbeløpet endres årlig, og du finner det oppdaterte beløpet på nav.no/grunnbelop.\n",
           "registrertDato": "2015-11-12"
         },
@@ -164,13 +164,13 @@
         },
         {
           "kode": "BERREGEL",
-          "navn": "Beregningsregel",
+          "navn": "Kode for beregningsregel",
           "verdi": "ORDINAER_MINSTEYTELSE",
           "registrertDato": "2015-11-12"
         },
         {
           "kode": "DAGS",
-          "navn": "DAGSATS",
+          "navn": "Dagsats",
           "verdi": "693",
           "registrertDato": "2015-11-12"
         },
@@ -182,7 +182,7 @@
         },
         {
           "kode": "DAGSMBFSAM",
-          "navn": "Dagsats m.b. før samordn.",
+          "navn": "Dagsats med barnetillegg før samordning",
           "verdi": "693",
           "registrertDato": "2015-11-12"
         },
@@ -194,37 +194,37 @@
         },
         {
           "kode": "ENDRPERAAP",
-          "navn": "Tellerjustering AAP",
+          "navn": "Tellerjustering AAP periode",
           "verdi": null,
           "registrertDato": "2015-11-12"
         },
         {
           "kode": "ENDRTILAAP",
-          "navn": "Tellerjust tilleggsperiode ord",
+          "navn": "Tellerjustering tilleggsperiode i ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2015-11-12"
         },
         {
           "kode": "ENDRTILUNN",
-          "navn": "Tellerjust tilleggsper unntak",
+          "navn": "Tellerjustering tilleggsperiode i AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2015-11-12"
         },
         {
           "kode": "ENDRUNNAAP",
-          "navn": "Tellerjustering unntak AAP",
+          "navn": "Tellerjustering unntaksperiode AAP",
           "verdi": null,
           "registrertDato": "2015-11-12"
         },
         {
           "kode": "ENDVARIGHT",
-          "navn": "Varighet endret",
+          "navn": "Varighet endret fra tidligere periode",
           "verdi": "N",
           "registrertDato": "2015-11-12"
         },
         {
           "kode": "FASTARBTFS",
-          "navn": "Fastsatt arbeidstid før samord",
+          "navn": "Fastsatt arbeidstid før samordning",
           "verdi": null,
           "registrertDato": "2015-11-12"
         },
@@ -242,25 +242,25 @@
         },
         {
           "kode": "GRUNN",
-          "navn": "Grunnlag for beregning",
+          "navn": "Grunnlag",
           "verdi": "272933",
           "registrertDato": "2015-11-12"
         },
         {
           "kode": "INNVF",
-          "navn": "VEDTAKSDATO",
+          "navn": "Vedtaksdato",
           "verdi": "12-11-2015",
           "registrertDato": "2015-11-12"
         },
         {
           "kode": "INSGRAD",
-          "navn": "Gradering institusjonsopphold",
+          "navn": "Gradering pga institusjonsopphold",
           "verdi": null,
           "registrertDato": "2015-11-12"
         },
         {
           "kode": "INSTOPP",
-          "navn": "Instutisjonsopphold",
+          "navn": "Institusjonsopphold",
           "verdi": "N",
           "registrertDato": "2015-11-12"
         },
@@ -284,19 +284,19 @@
         },
         {
           "kode": "INTNESTS",
-          "navn": "Inntekt nest siste år/periode",
+          "navn": "Inntekt nest siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2015-11-12"
         },
         {
           "kode": "INTSISTE",
-          "navn": "Inntekt siste år/periode",
+          "navn": "Inntekt siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2015-11-12"
         },
         {
           "kode": "INTTREDS",
-          "navn": "Inntekt tredj siste år/periode",
+          "navn": "Inntekt tredje siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2015-11-12"
         },
@@ -320,7 +320,7 @@
         },
         {
           "kode": "MAXAAP",
-          "navn": "Maks periodeteller AAP",
+          "navn": "Info om periode for AAP",
           "verdi": null,
           "registrertDato": "2015-11-12"
         },
@@ -332,13 +332,13 @@
         },
         {
           "kode": "MAXDATOUNT",
-          "navn": "Maksdato AAP-unntaksperiode",
+          "navn": "Maksdato AAP unntaksperiode",
           "verdi": null,
           "registrertDato": "2015-11-12"
         },
         {
           "kode": "MAXUNNTAAP",
-          "navn": "Max periodeteller unntak AAP",
+          "navn": "Info om unntaksperiode for AAP",
           "verdi": null,
           "registrertDato": "2015-11-12"
         },
@@ -356,19 +356,19 @@
         },
         {
           "kode": "OVERGTAT",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle AT 2009",
           "verdi": "N",
           "registrertDato": "2015-11-12"
         },
         {
           "kode": "OVERGTRP",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle RP 2009",
           "verdi": "N",
           "registrertDato": "2015-11-12"
         },
         {
           "kode": "OVERGTTU",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle TU 2009",
           "verdi": "N",
           "registrertDato": "2015-11-12"
         },
@@ -380,31 +380,31 @@
         },
         {
           "kode": "SAM",
-          "navn": "SAMORDNING",
+          "navn": "Samordning er utført",
           "verdi": "N",
           "registrertDato": "2015-11-12"
         },
         {
           "kode": "SAMKILDMAN",
-          "navn": "Samordningskilde manuell",
+          "navn": "Samordningskilde manuelt lagt inn",
           "verdi": null,
           "registrertDato": "2015-11-12"
         },
         {
           "kode": "SAMUKESAND",
-          "navn": "Sum samordning andre",
+          "navn": "Sum samordning manuelt reg fra andre",
           "verdi": null,
           "registrertDato": "2015-11-12"
         },
         {
           "kode": "SAMUKESRTV",
-          "navn": "Sum samordning RTV",
+          "navn": "Sum samordning manuelt reg folketrygdytelser/AFP",
           "verdi": null,
           "registrertDato": "2015-11-12"
         },
         {
           "kode": "STUDENTBES",
-          "navn": "Studentbestemmelsen",
+          "navn": "Vurdert studentbestemmelsen",
           "verdi": null,
           "registrertDato": "2015-11-12"
         },
@@ -416,13 +416,13 @@
         },
         {
           "kode": "TEKSTVAR",
-          "navn": "Brevtekstvariant",
+          "navn": "Brev-/vedtaksvariant",
           "verdi": "E_VERDI",
           "registrertDato": "2015-11-12"
         },
         {
           "kode": "TERSKMKBER",
-          "navn": "Terskelgrense Meldekortberegn",
+          "navn": "Terskelgrense Meldekortberegning",
           "verdi": "40",
           "registrertDato": "2015-11-12"
         },
@@ -440,7 +440,7 @@
         },
         {
           "kode": "UKES",
-          "navn": "UKESATS",
+          "navn": "Ukesats",
           "verdi": "3465",
           "registrertDato": "2015-11-12"
         },
@@ -452,13 +452,13 @@
         },
         {
           "kode": "UNNTAKAAP",
-          "navn": "Unntak maks stønadsperiode AA",
+          "navn": "Unntak fra maksimal stønadsperiode AAP",
           "verdi": "N",
           "registrertDato": "2015-11-12"
         },
         {
           "kode": "VEDTAKSEND",
-          "navn": "Vedtaksbrev er sendt",
+          "navn": "Utskrift/sendt",
           "verdi": "N",
           "registrertDato": "2015-11-12"
         },
@@ -507,7 +507,7 @@
         },
         {
           "kode": "AAPMANBER",
-          "navn": "AAP manuelt beregnet",
+          "navn": "Arbeidsavklaringspenger manuelt beregnet",
           "verdi": null,
           "registrertDato": "2016-07-02"
         },
@@ -537,13 +537,13 @@
         },
         {
           "kode": "ANTB",
-          "navn": "ANTALL BARN",
+          "navn": "Antall barn",
           "verdi": null,
           "registrertDato": "2016-07-02"
         },
         {
           "kode": "ARBPEOS",
-          "navn": "Arbeidsperiode fra EØS/Norden",
+          "navn": "Arbeidsperiode EØS/N i grunnlag",
           "verdi": "N",
           "registrertDato": "2016-07-02"
         },
@@ -567,7 +567,7 @@
         },
         {
           "kode": "AVSPTSANK",
-          "navn": "Tidligere sanksjon",
+          "navn": "Avspaser tidligere sanksjon",
           "verdi": null,
           "registrertDato": "2016-07-02"
         },
@@ -603,25 +603,25 @@
         },
         {
           "kode": "BEGRTILAAP",
-          "navn": "Tellerjust ord begrunn tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2016-07-02"
         },
         {
           "kode": "BEGRTILUNN",
-          "navn": "Tellerjust unntak begr tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2016-07-02"
         },
         {
           "kode": "BEGRUNNTAK",
-          "navn": "Tellerjustering unnt begr AAP",
+          "navn": "Tellerjustering unntak begrunnelse",
           "verdi": null,
           "registrertDato": "2016-07-02"
         },
         {
           "kode": "BERBESKR",
-          "navn": "Beregningsgrunnlag beskrivelse",
+          "navn": "Begrunnelse fra beregning",
           "verdi": "Du hadde lav eller ingen inntekt de tre siste årene før arbeidsevnen din ble redusert. Derfor får du arbeidsavklaringspenger som er to ganger grunnbeløpet. Dette går frem av folketrygdloven §§ 11-19 og 11-20.\r\n\r\nGrunnbeløpet endres årlig, og du finner det oppdaterte beløpet på nav.no/grunnbelop.\n",
           "registrertDato": "2016-07-02"
         },
@@ -633,13 +633,13 @@
         },
         {
           "kode": "BERREGEL",
-          "navn": "Beregningsregel",
+          "navn": "Kode for beregningsregel",
           "verdi": "ORDINAER_MINSTEYTELSE",
           "registrertDato": "2016-07-02"
         },
         {
           "kode": "DAGS",
-          "navn": "DAGSATS",
+          "navn": "Dagsats",
           "verdi": "712",
           "registrertDato": "2016-07-02"
         },
@@ -651,7 +651,7 @@
         },
         {
           "kode": "DAGSMBFSAM",
-          "navn": "Dagsats m.b. før samordn.",
+          "navn": "Dagsats med barnetillegg før samordning",
           "verdi": "712",
           "registrertDato": "2016-07-02"
         },
@@ -663,37 +663,37 @@
         },
         {
           "kode": "ENDRPERAAP",
-          "navn": "Tellerjustering AAP",
+          "navn": "Tellerjustering AAP periode",
           "verdi": null,
           "registrertDato": "2016-07-02"
         },
         {
           "kode": "ENDRTILAAP",
-          "navn": "Tellerjust tilleggsperiode ord",
+          "navn": "Tellerjustering tilleggsperiode i ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2016-07-02"
         },
         {
           "kode": "ENDRTILUNN",
-          "navn": "Tellerjust tilleggsper unntak",
+          "navn": "Tellerjustering tilleggsperiode i AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2016-07-02"
         },
         {
           "kode": "ENDRUNNAAP",
-          "navn": "Tellerjustering unntak AAP",
+          "navn": "Tellerjustering unntaksperiode AAP",
           "verdi": null,
           "registrertDato": "2016-07-02"
         },
         {
           "kode": "ENDVARIGHT",
-          "navn": "Varighet endret",
+          "navn": "Varighet endret fra tidligere periode",
           "verdi": "N",
           "registrertDato": "2016-07-02"
         },
         {
           "kode": "FASTARBTFS",
-          "navn": "Fastsatt arbeidstid før samord",
+          "navn": "Fastsatt arbeidstid før samordning",
           "verdi": null,
           "registrertDato": "2016-07-02"
         },
@@ -711,25 +711,25 @@
         },
         {
           "kode": "GRUNN",
-          "navn": "Grunnlag for beregning",
+          "navn": "Grunnlag",
           "verdi": "280533",
           "registrertDato": "2016-07-02"
         },
         {
           "kode": "INNVF",
-          "navn": "VEDTAKSDATO",
+          "navn": "Vedtaksdato",
           "verdi": "02-07-2016",
           "registrertDato": "2016-07-02"
         },
         {
           "kode": "INSGRAD",
-          "navn": "Gradering institusjonsopphold",
+          "navn": "Gradering pga institusjonsopphold",
           "verdi": null,
           "registrertDato": "2016-07-02"
         },
         {
           "kode": "INSTOPP",
-          "navn": "Instutisjonsopphold",
+          "navn": "Institusjonsopphold",
           "verdi": "N",
           "registrertDato": "2016-07-02"
         },
@@ -753,19 +753,19 @@
         },
         {
           "kode": "INTNESTS",
-          "navn": "Inntekt nest siste år/periode",
+          "navn": "Inntekt nest siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2016-07-02"
         },
         {
           "kode": "INTSISTE",
-          "navn": "Inntekt siste år/periode",
+          "navn": "Inntekt siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2016-07-02"
         },
         {
           "kode": "INTTREDS",
-          "navn": "Inntekt tredj siste år/periode",
+          "navn": "Inntekt tredje siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2016-07-02"
         },
@@ -789,7 +789,7 @@
         },
         {
           "kode": "MAXAAP",
-          "navn": "Maks periodeteller AAP",
+          "navn": "Info om periode for AAP",
           "verdi": null,
           "registrertDato": "2016-07-02"
         },
@@ -801,13 +801,13 @@
         },
         {
           "kode": "MAXDATOUNT",
-          "navn": "Maksdato AAP-unntaksperiode",
+          "navn": "Maksdato AAP unntaksperiode",
           "verdi": null,
           "registrertDato": "2016-07-02"
         },
         {
           "kode": "MAXUNNTAAP",
-          "navn": "Max periodeteller unntak AAP",
+          "navn": "Info om unntaksperiode for AAP",
           "verdi": null,
           "registrertDato": "2016-07-02"
         },
@@ -825,19 +825,19 @@
         },
         {
           "kode": "OVERGTAT",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle AT 2009",
           "verdi": "N",
           "registrertDato": "2016-07-02"
         },
         {
           "kode": "OVERGTRP",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle RP 2009",
           "verdi": "N",
           "registrertDato": "2016-07-02"
         },
         {
           "kode": "OVERGTTU",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle TU 2009",
           "verdi": "N",
           "registrertDato": "2016-07-02"
         },
@@ -849,31 +849,31 @@
         },
         {
           "kode": "SAM",
-          "navn": "SAMORDNING",
+          "navn": "Samordning er utført",
           "verdi": "N",
           "registrertDato": "2016-07-02"
         },
         {
           "kode": "SAMKILDMAN",
-          "navn": "Samordningskilde manuell",
+          "navn": "Samordningskilde manuelt lagt inn",
           "verdi": null,
           "registrertDato": "2016-07-02"
         },
         {
           "kode": "SAMUKESAND",
-          "navn": "Sum samordning andre",
+          "navn": "Sum samordning manuelt reg fra andre",
           "verdi": null,
           "registrertDato": "2016-07-02"
         },
         {
           "kode": "SAMUKESRTV",
-          "navn": "Sum samordning RTV",
+          "navn": "Sum samordning manuelt reg folketrygdytelser/AFP",
           "verdi": null,
           "registrertDato": "2016-07-02"
         },
         {
           "kode": "STUDENTBES",
-          "navn": "Studentbestemmelsen",
+          "navn": "Vurdert studentbestemmelsen",
           "verdi": null,
           "registrertDato": "2016-07-02"
         },
@@ -885,13 +885,13 @@
         },
         {
           "kode": "TEKSTVAR",
-          "navn": "Brevtekstvariant",
+          "navn": "Brev-/vedtaksvariant",
           "verdi": "E_VERDI",
           "registrertDato": "2016-07-02"
         },
         {
           "kode": "TERSKMKBER",
-          "navn": "Terskelgrense Meldekortberegn",
+          "navn": "Terskelgrense Meldekortberegning",
           "verdi": "40",
           "registrertDato": "2016-07-02"
         },
@@ -909,7 +909,7 @@
         },
         {
           "kode": "UKES",
-          "navn": "UKESATS",
+          "navn": "Ukesats",
           "verdi": "3560",
           "registrertDato": "2016-07-02"
         },
@@ -921,13 +921,13 @@
         },
         {
           "kode": "UNNTAKAAP",
-          "navn": "Unntak maks stønadsperiode AA",
+          "navn": "Unntak fra maksimal stønadsperiode AAP",
           "verdi": "N",
           "registrertDato": "2016-07-02"
         },
         {
           "kode": "VEDTAKSEND",
-          "navn": "Vedtaksbrev er sendt",
+          "navn": "Utskrift/sendt",
           "verdi": "N",
           "registrertDato": "2016-07-02"
         },
@@ -976,7 +976,7 @@
         },
         {
           "kode": "AAPMANBER",
-          "navn": "AAP manuelt beregnet",
+          "navn": "Arbeidsavklaringspenger manuelt beregnet",
           "verdi": null,
           "registrertDato": "2018-09-12"
         },
@@ -1006,13 +1006,13 @@
         },
         {
           "kode": "ANTB",
-          "navn": "ANTALL BARN",
+          "navn": "Antall barn",
           "verdi": null,
           "registrertDato": "2018-09-12"
         },
         {
           "kode": "ARBPEOS",
-          "navn": "Arbeidsperiode fra EØS/Norden",
+          "navn": "Arbeidsperiode EØS/N i grunnlag",
           "verdi": "N",
           "registrertDato": "2018-09-12"
         },
@@ -1036,7 +1036,7 @@
         },
         {
           "kode": "AVSPTSANK",
-          "navn": "Tidligere sanksjon",
+          "navn": "Avspaser tidligere sanksjon",
           "verdi": null,
           "registrertDato": "2018-09-12"
         },
@@ -1072,25 +1072,25 @@
         },
         {
           "kode": "BEGRTILAAP",
-          "navn": "Tellerjust ord begrunn tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2018-09-12"
         },
         {
           "kode": "BEGRTILUNN",
-          "navn": "Tellerjust unntak begr tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2018-09-12"
         },
         {
           "kode": "BEGRUNNTAK",
-          "navn": "Tellerjustering unnt begr AAP",
+          "navn": "Tellerjustering unntak begrunnelse",
           "verdi": null,
           "registrertDato": "2018-09-12"
         },
         {
           "kode": "BERBESKR",
-          "navn": "Beregningsgrunnlag beskrivelse",
+          "navn": "Begrunnelse fra beregning",
           "verdi": "Du hadde lav eller ingen inntekt de tre siste årene før arbeidsevnen din ble redusert. Derfor får du arbeidsavklaringspenger som er to ganger grunnbeløpet. Dette går frem av folketrygdloven §§ 11-19 og 11-20.\r\n\r\nGrunnbeløpet endres årlig, og du finner det oppdaterte beløpet på nav.no/grunnbelop.\n",
           "registrertDato": "2018-09-12"
         },
@@ -1102,13 +1102,13 @@
         },
         {
           "kode": "BERREGEL",
-          "navn": "Beregningsregel",
+          "navn": "Kode for beregningsregel",
           "verdi": "ORDINAER_MINSTEYTELSE",
           "registrertDato": "2018-09-12"
         },
         {
           "kode": "DAGS",
-          "navn": "DAGSATS",
+          "navn": "Dagsats",
           "verdi": "745",
           "registrertDato": "2018-09-12"
         },
@@ -1120,7 +1120,7 @@
         },
         {
           "kode": "DAGSMBFSAM",
-          "navn": "Dagsats m.b. før samordn.",
+          "navn": "Dagsats med barnetillegg før samordning",
           "verdi": "745",
           "registrertDato": "2018-09-12"
         },
@@ -1132,37 +1132,37 @@
         },
         {
           "kode": "ENDRPERAAP",
-          "navn": "Tellerjustering AAP",
+          "navn": "Tellerjustering AAP periode",
           "verdi": null,
           "registrertDato": "2018-09-12"
         },
         {
           "kode": "ENDRTILAAP",
-          "navn": "Tellerjust tilleggsperiode ord",
+          "navn": "Tellerjustering tilleggsperiode i ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2018-09-12"
         },
         {
           "kode": "ENDRTILUNN",
-          "navn": "Tellerjust tilleggsper unntak",
+          "navn": "Tellerjustering tilleggsperiode i AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2018-09-12"
         },
         {
           "kode": "ENDRUNNAAP",
-          "navn": "Tellerjustering unntak AAP",
+          "navn": "Tellerjustering unntaksperiode AAP",
           "verdi": null,
           "registrertDato": "2018-09-12"
         },
         {
           "kode": "ENDVARIGHT",
-          "navn": "Varighet endret",
+          "navn": "Varighet endret fra tidligere periode",
           "verdi": "N",
           "registrertDato": "2018-09-12"
         },
         {
           "kode": "FASTARBTFS",
-          "navn": "Fastsatt arbeidstid før samord",
+          "navn": "Fastsatt arbeidstid før samordning",
           "verdi": null,
           "registrertDato": "2018-09-12"
         },
@@ -1180,25 +1180,25 @@
         },
         {
           "kode": "GRUNN",
-          "navn": "Grunnlag for beregning",
+          "navn": "Grunnlag",
           "verdi": "293585",
           "registrertDato": "2018-09-12"
         },
         {
           "kode": "INNVF",
-          "navn": "VEDTAKSDATO",
+          "navn": "Vedtaksdato",
           "verdi": "12-09-2018",
           "registrertDato": "2018-09-12"
         },
         {
           "kode": "INSGRAD",
-          "navn": "Gradering institusjonsopphold",
+          "navn": "Gradering pga institusjonsopphold",
           "verdi": null,
           "registrertDato": "2018-09-12"
         },
         {
           "kode": "INSTOPP",
-          "navn": "Instutisjonsopphold",
+          "navn": "Institusjonsopphold",
           "verdi": "N",
           "registrertDato": "2018-09-12"
         },
@@ -1222,19 +1222,19 @@
         },
         {
           "kode": "INTNESTS",
-          "navn": "Inntekt nest siste år/periode",
+          "navn": "Inntekt nest siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2018-09-12"
         },
         {
           "kode": "INTSISTE",
-          "navn": "Inntekt siste år/periode",
+          "navn": "Inntekt siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2018-09-12"
         },
         {
           "kode": "INTTREDS",
-          "navn": "Inntekt tredj siste år/periode",
+          "navn": "Inntekt tredje siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2018-09-12"
         },
@@ -1258,7 +1258,7 @@
         },
         {
           "kode": "MAXAAP",
-          "navn": "Maks periodeteller AAP",
+          "navn": "Info om periode for AAP",
           "verdi": null,
           "registrertDato": "2018-09-12"
         },
@@ -1270,13 +1270,13 @@
         },
         {
           "kode": "MAXDATOUNT",
-          "navn": "Maksdato AAP-unntaksperiode",
+          "navn": "Maksdato AAP unntaksperiode",
           "verdi": null,
           "registrertDato": "2018-09-12"
         },
         {
           "kode": "MAXUNNTAAP",
-          "navn": "Max periodeteller unntak AAP",
+          "navn": "Info om unntaksperiode for AAP",
           "verdi": null,
           "registrertDato": "2018-09-12"
         },
@@ -1294,19 +1294,19 @@
         },
         {
           "kode": "OVERGTAT",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle AT 2009",
           "verdi": "N",
           "registrertDato": "2018-09-12"
         },
         {
           "kode": "OVERGTRP",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle RP 2009",
           "verdi": "N",
           "registrertDato": "2018-09-12"
         },
         {
           "kode": "OVERGTTU",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle TU 2009",
           "verdi": "N",
           "registrertDato": "2018-09-12"
         },
@@ -1318,31 +1318,31 @@
         },
         {
           "kode": "SAM",
-          "navn": "SAMORDNING",
+          "navn": "Samordning er utført",
           "verdi": "N",
           "registrertDato": "2018-09-12"
         },
         {
           "kode": "SAMKILDMAN",
-          "navn": "Samordningskilde manuell",
+          "navn": "Samordningskilde manuelt lagt inn",
           "verdi": null,
           "registrertDato": "2018-09-12"
         },
         {
           "kode": "SAMUKESAND",
-          "navn": "Sum samordning andre",
+          "navn": "Sum samordning manuelt reg fra andre",
           "verdi": null,
           "registrertDato": "2018-09-12"
         },
         {
           "kode": "SAMUKESRTV",
-          "navn": "Sum samordning RTV",
+          "navn": "Sum samordning manuelt reg folketrygdytelser/AFP",
           "verdi": null,
           "registrertDato": "2018-09-12"
         },
         {
           "kode": "STUDENTBES",
-          "navn": "Studentbestemmelsen",
+          "navn": "Vurdert studentbestemmelsen",
           "verdi": null,
           "registrertDato": "2018-09-12"
         },
@@ -1354,13 +1354,13 @@
         },
         {
           "kode": "TEKSTVAR",
-          "navn": "Brevtekstvariant",
+          "navn": "Brev-/vedtaksvariant",
           "verdi": "E_VERDI",
           "registrertDato": "2018-09-12"
         },
         {
           "kode": "TERSKMKBER",
-          "navn": "Terskelgrense Meldekortberegn",
+          "navn": "Terskelgrense Meldekortberegning",
           "verdi": "40",
           "registrertDato": "2018-09-12"
         },
@@ -1378,7 +1378,7 @@
         },
         {
           "kode": "UKES",
-          "navn": "UKESATS",
+          "navn": "Ukesats",
           "verdi": "3725",
           "registrertDato": "2018-09-12"
         },
@@ -1390,13 +1390,13 @@
         },
         {
           "kode": "UNNTAKAAP",
-          "navn": "Unntak maks stønadsperiode AA",
+          "navn": "Unntak fra maksimal stønadsperiode AAP",
           "verdi": "N",
           "registrertDato": "2018-09-12"
         },
         {
           "kode": "VEDTAKSEND",
-          "navn": "Vedtaksbrev er sendt",
+          "navn": "Utskrift/sendt",
           "verdi": "N",
           "registrertDato": "2018-09-12"
         },
@@ -1445,7 +1445,7 @@
         },
         {
           "kode": "AAPMANBER",
-          "navn": "AAP manuelt beregnet",
+          "navn": "Arbeidsavklaringspenger manuelt beregnet",
           "verdi": null,
           "registrertDato": "2019-02-10"
         },
@@ -1475,13 +1475,13 @@
         },
         {
           "kode": "ANTB",
-          "navn": "ANTALL BARN",
+          "navn": "Antall barn",
           "verdi": null,
           "registrertDato": "2019-02-10"
         },
         {
           "kode": "ARBPEOS",
-          "navn": "Arbeidsperiode fra EØS/Norden",
+          "navn": "Arbeidsperiode EØS/N i grunnlag",
           "verdi": "N",
           "registrertDato": "2019-02-10"
         },
@@ -1505,7 +1505,7 @@
         },
         {
           "kode": "AVSPTSANK",
-          "navn": "Tidligere sanksjon",
+          "navn": "Avspaser tidligere sanksjon",
           "verdi": null,
           "registrertDato": "2019-02-10"
         },
@@ -1541,25 +1541,25 @@
         },
         {
           "kode": "BEGRTILAAP",
-          "navn": "Tellerjust ord begrunn tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2019-02-10"
         },
         {
           "kode": "BEGRTILUNN",
-          "navn": "Tellerjust unntak begr tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2019-02-10"
         },
         {
           "kode": "BEGRUNNTAK",
-          "navn": "Tellerjustering unnt begr AAP",
+          "navn": "Tellerjustering unntak begrunnelse",
           "verdi": null,
           "registrertDato": "2019-02-10"
         },
         {
           "kode": "BERBESKR",
-          "navn": "Beregningsgrunnlag beskrivelse",
+          "navn": "Begrunnelse fra beregning",
           "verdi": "Du hadde lav eller ingen inntekt de tre siste årene før arbeidsevnen din ble redusert. Derfor får du arbeidsavklaringspenger som er to ganger grunnbeløpet. Dette går frem av folketrygdloven §§ 11-19 og 11-20.\r\n\r\nGrunnbeløpet endres årlig, og du finner det oppdaterte beløpet på nav.no/grunnbelop.\n",
           "registrertDato": "2019-02-10"
         },
@@ -1571,13 +1571,13 @@
         },
         {
           "kode": "BERREGEL",
-          "navn": "Beregningsregel",
+          "navn": "Kode for beregningsregel",
           "verdi": "ORDINAER_MINSTEYTELSE",
           "registrertDato": "2019-02-10"
         },
         {
           "kode": "DAGS",
-          "navn": "DAGSATS",
+          "navn": "Dagsats",
           "verdi": "745",
           "registrertDato": "2019-02-10"
         },
@@ -1589,7 +1589,7 @@
         },
         {
           "kode": "DAGSMBFSAM",
-          "navn": "Dagsats m.b. før samordn.",
+          "navn": "Dagsats med barnetillegg før samordning",
           "verdi": "745",
           "registrertDato": "2019-02-10"
         },
@@ -1601,37 +1601,37 @@
         },
         {
           "kode": "ENDRPERAAP",
-          "navn": "Tellerjustering AAP",
+          "navn": "Tellerjustering AAP periode",
           "verdi": null,
           "registrertDato": "2019-02-10"
         },
         {
           "kode": "ENDRTILAAP",
-          "navn": "Tellerjust tilleggsperiode ord",
+          "navn": "Tellerjustering tilleggsperiode i ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2019-02-10"
         },
         {
           "kode": "ENDRTILUNN",
-          "navn": "Tellerjust tilleggsper unntak",
+          "navn": "Tellerjustering tilleggsperiode i AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2019-02-10"
         },
         {
           "kode": "ENDRUNNAAP",
-          "navn": "Tellerjustering unntak AAP",
+          "navn": "Tellerjustering unntaksperiode AAP",
           "verdi": null,
           "registrertDato": "2019-02-10"
         },
         {
           "kode": "ENDVARIGHT",
-          "navn": "Varighet endret",
+          "navn": "Varighet endret fra tidligere periode",
           "verdi": "N",
           "registrertDato": "2019-02-10"
         },
         {
           "kode": "FASTARBTFS",
-          "navn": "Fastsatt arbeidstid før samord",
+          "navn": "Fastsatt arbeidstid før samordning",
           "verdi": null,
           "registrertDato": "2019-02-10"
         },
@@ -1649,25 +1649,25 @@
         },
         {
           "kode": "GRUNN",
-          "navn": "Grunnlag for beregning",
+          "navn": "Grunnlag",
           "verdi": "293585",
           "registrertDato": "2019-02-10"
         },
         {
           "kode": "INNVF",
-          "navn": "VEDTAKSDATO",
+          "navn": "Vedtaksdato",
           "verdi": "10-02-2019",
           "registrertDato": "2019-02-10"
         },
         {
           "kode": "INSGRAD",
-          "navn": "Gradering institusjonsopphold",
+          "navn": "Gradering pga institusjonsopphold",
           "verdi": null,
           "registrertDato": "2019-02-10"
         },
         {
           "kode": "INSTOPP",
-          "navn": "Instutisjonsopphold",
+          "navn": "Institusjonsopphold",
           "verdi": "N",
           "registrertDato": "2019-02-10"
         },
@@ -1691,19 +1691,19 @@
         },
         {
           "kode": "INTNESTS",
-          "navn": "Inntekt nest siste år/periode",
+          "navn": "Inntekt nest siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2019-02-10"
         },
         {
           "kode": "INTSISTE",
-          "navn": "Inntekt siste år/periode",
+          "navn": "Inntekt siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2019-02-10"
         },
         {
           "kode": "INTTREDS",
-          "navn": "Inntekt tredj siste år/periode",
+          "navn": "Inntekt tredje siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2019-02-10"
         },
@@ -1727,7 +1727,7 @@
         },
         {
           "kode": "MAXAAP",
-          "navn": "Maks periodeteller AAP",
+          "navn": "Info om periode for AAP",
           "verdi": null,
           "registrertDato": "2019-02-10"
         },
@@ -1739,13 +1739,13 @@
         },
         {
           "kode": "MAXDATOUNT",
-          "navn": "Maksdato AAP-unntaksperiode",
+          "navn": "Maksdato AAP unntaksperiode",
           "verdi": null,
           "registrertDato": "2019-02-10"
         },
         {
           "kode": "MAXUNNTAAP",
-          "navn": "Max periodeteller unntak AAP",
+          "navn": "Info om unntaksperiode for AAP",
           "verdi": null,
           "registrertDato": "2019-02-10"
         },
@@ -1763,19 +1763,19 @@
         },
         {
           "kode": "OVERGTAT",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle AT 2009",
           "verdi": "N",
           "registrertDato": "2019-02-10"
         },
         {
           "kode": "OVERGTRP",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle RP 2009",
           "verdi": "N",
           "registrertDato": "2019-02-10"
         },
         {
           "kode": "OVERGTTU",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle TU 2009",
           "verdi": "N",
           "registrertDato": "2019-02-10"
         },
@@ -1787,31 +1787,31 @@
         },
         {
           "kode": "SAM",
-          "navn": "SAMORDNING",
+          "navn": "Samordning er utført",
           "verdi": "N",
           "registrertDato": "2019-02-10"
         },
         {
           "kode": "SAMKILDMAN",
-          "navn": "Samordningskilde manuell",
+          "navn": "Samordningskilde manuelt lagt inn",
           "verdi": null,
           "registrertDato": "2019-02-10"
         },
         {
           "kode": "SAMUKESAND",
-          "navn": "Sum samordning andre",
+          "navn": "Sum samordning manuelt reg fra andre",
           "verdi": null,
           "registrertDato": "2019-02-10"
         },
         {
           "kode": "SAMUKESRTV",
-          "navn": "Sum samordning RTV",
+          "navn": "Sum samordning manuelt reg folketrygdytelser/AFP",
           "verdi": null,
           "registrertDato": "2019-02-10"
         },
         {
           "kode": "STUDENTBES",
-          "navn": "Studentbestemmelsen",
+          "navn": "Vurdert studentbestemmelsen",
           "verdi": null,
           "registrertDato": "2019-02-10"
         },
@@ -1823,13 +1823,13 @@
         },
         {
           "kode": "TEKSTVAR",
-          "navn": "Brevtekstvariant",
+          "navn": "Brev-/vedtaksvariant",
           "verdi": "E_VERDI",
           "registrertDato": "2019-02-10"
         },
         {
           "kode": "TERSKMKBER",
-          "navn": "Terskelgrense Meldekortberegn",
+          "navn": "Terskelgrense Meldekortberegning",
           "verdi": "40",
           "registrertDato": "2019-02-10"
         },
@@ -1847,7 +1847,7 @@
         },
         {
           "kode": "UKES",
-          "navn": "UKESATS",
+          "navn": "Ukesats",
           "verdi": "3725",
           "registrertDato": "2019-02-10"
         },
@@ -1859,13 +1859,13 @@
         },
         {
           "kode": "UNNTAKAAP",
-          "navn": "Unntak maks stønadsperiode AA",
+          "navn": "Unntak fra maksimal stønadsperiode AAP",
           "verdi": "J",
           "registrertDato": "2019-02-10"
         },
         {
           "kode": "VEDTAKSEND",
-          "navn": "Vedtaksbrev er sendt",
+          "navn": "Utskrift/sendt",
           "verdi": "N",
           "registrertDato": "2019-02-10"
         },
@@ -1914,7 +1914,7 @@
         },
         {
           "kode": "AAPMANBER",
-          "navn": "AAP manuelt beregnet",
+          "navn": "Arbeidsavklaringspenger manuelt beregnet",
           "verdi": null,
           "registrertDato": "2019-08-25"
         },
@@ -1944,13 +1944,13 @@
         },
         {
           "kode": "ANTB",
-          "navn": "ANTALL BARN",
+          "navn": "Antall barn",
           "verdi": null,
           "registrertDato": "2019-08-25"
         },
         {
           "kode": "ARBPEOS",
-          "navn": "Arbeidsperiode fra EØS/Norden",
+          "navn": "Arbeidsperiode EØS/N i grunnlag",
           "verdi": "N",
           "registrertDato": "2019-08-25"
         },
@@ -1974,7 +1974,7 @@
         },
         {
           "kode": "AVSPTSANK",
-          "navn": "Tidligere sanksjon",
+          "navn": "Avspaser tidligere sanksjon",
           "verdi": null,
           "registrertDato": "2019-08-25"
         },
@@ -2010,25 +2010,25 @@
         },
         {
           "kode": "BEGRTILAAP",
-          "navn": "Tellerjust ord begrunn tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2019-08-25"
         },
         {
           "kode": "BEGRTILUNN",
-          "navn": "Tellerjust unntak begr tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2019-08-25"
         },
         {
           "kode": "BEGRUNNTAK",
-          "navn": "Tellerjustering unnt begr AAP",
+          "navn": "Tellerjustering unntak begrunnelse",
           "verdi": null,
           "registrertDato": "2019-08-25"
         },
         {
           "kode": "BERBESKR",
-          "navn": "Beregningsgrunnlag beskrivelse",
+          "navn": "Begrunnelse fra beregning",
           "verdi": "Du hadde lav eller ingen inntekt de tre siste årene før arbeidsevnen din ble redusert. Derfor får du arbeidsavklaringspenger som er to ganger grunnbeløpet. Dette går frem av folketrygdloven §§ 11-19 og 11-20.\r\n\r\nGrunnbeløpet endres årlig, og du finner det oppdaterte beløpet på nav.no/grunnbelop.\n",
           "registrertDato": "2019-08-25"
         },
@@ -2040,13 +2040,13 @@
         },
         {
           "kode": "BERREGEL",
-          "navn": "Beregningsregel",
+          "navn": "Kode for beregningsregel",
           "verdi": "ORDINAER_MINSTEYTELSE",
           "registrertDato": "2019-08-25"
         },
         {
           "kode": "DAGS",
-          "navn": "DAGSATS",
+          "navn": "Dagsats",
           "verdi": "768",
           "registrertDato": "2019-08-25"
         },
@@ -2058,7 +2058,7 @@
         },
         {
           "kode": "DAGSMBFSAM",
-          "navn": "Dagsats m.b. før samordn.",
+          "navn": "Dagsats med barnetillegg før samordning",
           "verdi": "768",
           "registrertDato": "2019-08-25"
         },
@@ -2070,37 +2070,37 @@
         },
         {
           "kode": "ENDRPERAAP",
-          "navn": "Tellerjustering AAP",
+          "navn": "Tellerjustering AAP periode",
           "verdi": null,
           "registrertDato": "2019-08-25"
         },
         {
           "kode": "ENDRTILAAP",
-          "navn": "Tellerjust tilleggsperiode ord",
+          "navn": "Tellerjustering tilleggsperiode i ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2019-08-25"
         },
         {
           "kode": "ENDRTILUNN",
-          "navn": "Tellerjust tilleggsper unntak",
+          "navn": "Tellerjustering tilleggsperiode i AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2019-08-25"
         },
         {
           "kode": "ENDRUNNAAP",
-          "navn": "Tellerjustering unntak AAP",
+          "navn": "Tellerjustering unntaksperiode AAP",
           "verdi": null,
           "registrertDato": "2019-08-25"
         },
         {
           "kode": "ENDVARIGHT",
-          "navn": "Varighet endret",
+          "navn": "Varighet endret fra tidligere periode",
           "verdi": "N",
           "registrertDato": "2019-08-25"
         },
         {
           "kode": "FASTARBTFS",
-          "navn": "Fastsatt arbeidstid før samord",
+          "navn": "Fastsatt arbeidstid før samordning",
           "verdi": null,
           "registrertDato": "2019-08-25"
         },
@@ -2118,25 +2118,25 @@
         },
         {
           "kode": "GRUNN",
-          "navn": "Grunnlag for beregning",
+          "navn": "Grunnlag",
           "verdi": "302600",
           "registrertDato": "2019-08-25"
         },
         {
           "kode": "INNVF",
-          "navn": "VEDTAKSDATO",
+          "navn": "Vedtaksdato",
           "verdi": "25-08-2019",
           "registrertDato": "2019-08-25"
         },
         {
           "kode": "INSGRAD",
-          "navn": "Gradering institusjonsopphold",
+          "navn": "Gradering pga institusjonsopphold",
           "verdi": null,
           "registrertDato": "2019-08-25"
         },
         {
           "kode": "INSTOPP",
-          "navn": "Instutisjonsopphold",
+          "navn": "Institusjonsopphold",
           "verdi": "N",
           "registrertDato": "2019-08-25"
         },
@@ -2160,19 +2160,19 @@
         },
         {
           "kode": "INTNESTS",
-          "navn": "Inntekt nest siste år/periode",
+          "navn": "Inntekt nest siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2019-08-25"
         },
         {
           "kode": "INTSISTE",
-          "navn": "Inntekt siste år/periode",
+          "navn": "Inntekt siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2019-08-25"
         },
         {
           "kode": "INTTREDS",
-          "navn": "Inntekt tredj siste år/periode",
+          "navn": "Inntekt tredje siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2019-08-25"
         },
@@ -2196,7 +2196,7 @@
         },
         {
           "kode": "MAXAAP",
-          "navn": "Maks periodeteller AAP",
+          "navn": "Info om periode for AAP",
           "verdi": null,
           "registrertDato": "2019-08-25"
         },
@@ -2208,13 +2208,13 @@
         },
         {
           "kode": "MAXDATOUNT",
-          "navn": "Maksdato AAP-unntaksperiode",
+          "navn": "Maksdato AAP unntaksperiode",
           "verdi": null,
           "registrertDato": "2019-08-25"
         },
         {
           "kode": "MAXUNNTAAP",
-          "navn": "Max periodeteller unntak AAP",
+          "navn": "Info om unntaksperiode for AAP",
           "verdi": null,
           "registrertDato": "2019-08-25"
         },
@@ -2232,19 +2232,19 @@
         },
         {
           "kode": "OVERGTAT",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle AT 2009",
           "verdi": "N",
           "registrertDato": "2019-08-25"
         },
         {
           "kode": "OVERGTRP",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle RP 2009",
           "verdi": "N",
           "registrertDato": "2019-08-25"
         },
         {
           "kode": "OVERGTTU",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle TU 2009",
           "verdi": "N",
           "registrertDato": "2019-08-25"
         },
@@ -2256,31 +2256,31 @@
         },
         {
           "kode": "SAM",
-          "navn": "SAMORDNING",
+          "navn": "Samordning er utført",
           "verdi": "N",
           "registrertDato": "2019-08-25"
         },
         {
           "kode": "SAMKILDMAN",
-          "navn": "Samordningskilde manuell",
+          "navn": "Samordningskilde manuelt lagt inn",
           "verdi": null,
           "registrertDato": "2019-08-25"
         },
         {
           "kode": "SAMUKESAND",
-          "navn": "Sum samordning andre",
+          "navn": "Sum samordning manuelt reg fra andre",
           "verdi": null,
           "registrertDato": "2019-08-25"
         },
         {
           "kode": "SAMUKESRTV",
-          "navn": "Sum samordning RTV",
+          "navn": "Sum samordning manuelt reg folketrygdytelser/AFP",
           "verdi": null,
           "registrertDato": "2019-08-25"
         },
         {
           "kode": "STUDENTBES",
-          "navn": "Studentbestemmelsen",
+          "navn": "Vurdert studentbestemmelsen",
           "verdi": null,
           "registrertDato": "2019-08-25"
         },
@@ -2292,13 +2292,13 @@
         },
         {
           "kode": "TEKSTVAR",
-          "navn": "Brevtekstvariant",
+          "navn": "Brev-/vedtaksvariant",
           "verdi": "E_VERDI",
           "registrertDato": "2019-08-25"
         },
         {
           "kode": "TERSKMKBER",
-          "navn": "Terskelgrense Meldekortberegn",
+          "navn": "Terskelgrense Meldekortberegning",
           "verdi": "40",
           "registrertDato": "2019-08-25"
         },
@@ -2316,7 +2316,7 @@
         },
         {
           "kode": "UKES",
-          "navn": "UKESATS",
+          "navn": "Ukesats",
           "verdi": "3840",
           "registrertDato": "2019-08-25"
         },
@@ -2328,13 +2328,13 @@
         },
         {
           "kode": "UNNTAKAAP",
-          "navn": "Unntak maks stønadsperiode AA",
+          "navn": "Unntak fra maksimal stønadsperiode AAP",
           "verdi": "J",
           "registrertDato": "2019-08-25"
         },
         {
           "kode": "VEDTAKSEND",
-          "navn": "Vedtaksbrev er sendt",
+          "navn": "Utskrift/sendt",
           "verdi": "N",
           "registrertDato": "2019-08-25"
         },
@@ -2383,7 +2383,7 @@
         },
         {
           "kode": "AAPMANBER",
-          "navn": "AAP manuelt beregnet",
+          "navn": "Arbeidsavklaringspenger manuelt beregnet",
           "verdi": null,
           "registrertDato": "2019-12-07"
         },
@@ -2413,13 +2413,13 @@
         },
         {
           "kode": "ANTB",
-          "navn": "ANTALL BARN",
+          "navn": "Antall barn",
           "verdi": null,
           "registrertDato": "2019-12-07"
         },
         {
           "kode": "ARBPEOS",
-          "navn": "Arbeidsperiode fra EØS/Norden",
+          "navn": "Arbeidsperiode EØS/N i grunnlag",
           "verdi": "N",
           "registrertDato": "2019-12-07"
         },
@@ -2443,7 +2443,7 @@
         },
         {
           "kode": "AVSPTSANK",
-          "navn": "Tidligere sanksjon",
+          "navn": "Avspaser tidligere sanksjon",
           "verdi": null,
           "registrertDato": "2019-12-07"
         },
@@ -2479,25 +2479,25 @@
         },
         {
           "kode": "BEGRTILAAP",
-          "navn": "Tellerjust ord begrunn tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2019-12-07"
         },
         {
           "kode": "BEGRTILUNN",
-          "navn": "Tellerjust unntak begr tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2019-12-07"
         },
         {
           "kode": "BEGRUNNTAK",
-          "navn": "Tellerjustering unnt begr AAP",
+          "navn": "Tellerjustering unntak begrunnelse",
           "verdi": null,
           "registrertDato": "2019-12-07"
         },
         {
           "kode": "BERBESKR",
-          "navn": "Beregningsgrunnlag beskrivelse",
+          "navn": "Begrunnelse fra beregning",
           "verdi": "Du hadde lav eller ingen inntekt de tre siste årene før arbeidsevnen din ble redusert. Derfor får du arbeidsavklaringspenger som er to ganger grunnbeløpet. Dette går frem av folketrygdloven §§ 11-19 og 11-20.\r\n\r\nGrunnbeløpet endres årlig, og du finner det oppdaterte beløpet på nav.no/grunnbelop.\n",
           "registrertDato": "2019-12-07"
         },
@@ -2509,13 +2509,13 @@
         },
         {
           "kode": "BERREGEL",
-          "navn": "Beregningsregel",
+          "navn": "Kode for beregningsregel",
           "verdi": "ORDINAER_MINSTEYTELSE",
           "registrertDato": "2019-12-07"
         },
         {
           "kode": "DAGS",
-          "navn": "DAGSATS",
+          "navn": "Dagsats",
           "verdi": "768",
           "registrertDato": "2019-12-07"
         },
@@ -2527,7 +2527,7 @@
         },
         {
           "kode": "DAGSMBFSAM",
-          "navn": "Dagsats m.b. før samordn.",
+          "navn": "Dagsats med barnetillegg før samordning",
           "verdi": "768",
           "registrertDato": "2019-12-07"
         },
@@ -2539,37 +2539,37 @@
         },
         {
           "kode": "ENDRPERAAP",
-          "navn": "Tellerjustering AAP",
+          "navn": "Tellerjustering AAP periode",
           "verdi": null,
           "registrertDato": "2019-12-07"
         },
         {
           "kode": "ENDRTILAAP",
-          "navn": "Tellerjust tilleggsperiode ord",
+          "navn": "Tellerjustering tilleggsperiode i ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2019-12-07"
         },
         {
           "kode": "ENDRTILUNN",
-          "navn": "Tellerjust tilleggsper unntak",
+          "navn": "Tellerjustering tilleggsperiode i AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2019-12-07"
         },
         {
           "kode": "ENDRUNNAAP",
-          "navn": "Tellerjustering unntak AAP",
+          "navn": "Tellerjustering unntaksperiode AAP",
           "verdi": null,
           "registrertDato": "2019-12-07"
         },
         {
           "kode": "ENDVARIGHT",
-          "navn": "Varighet endret",
+          "navn": "Varighet endret fra tidligere periode",
           "verdi": "N",
           "registrertDato": "2019-12-07"
         },
         {
           "kode": "FASTARBTFS",
-          "navn": "Fastsatt arbeidstid før samord",
+          "navn": "Fastsatt arbeidstid før samordning",
           "verdi": null,
           "registrertDato": "2019-12-07"
         },
@@ -2587,25 +2587,25 @@
         },
         {
           "kode": "GRUNN",
-          "navn": "Grunnlag for beregning",
+          "navn": "Grunnlag",
           "verdi": "302600",
           "registrertDato": "2019-12-07"
         },
         {
           "kode": "INNVF",
-          "navn": "VEDTAKSDATO",
+          "navn": "Vedtaksdato",
           "verdi": "07-12-2019",
           "registrertDato": "2019-12-07"
         },
         {
           "kode": "INSGRAD",
-          "navn": "Gradering institusjonsopphold",
+          "navn": "Gradering pga institusjonsopphold",
           "verdi": null,
           "registrertDato": "2019-12-07"
         },
         {
           "kode": "INSTOPP",
-          "navn": "Instutisjonsopphold",
+          "navn": "Institusjonsopphold",
           "verdi": "N",
           "registrertDato": "2019-12-07"
         },
@@ -2629,19 +2629,19 @@
         },
         {
           "kode": "INTNESTS",
-          "navn": "Inntekt nest siste år/periode",
+          "navn": "Inntekt nest siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2019-12-07"
         },
         {
           "kode": "INTSISTE",
-          "navn": "Inntekt siste år/periode",
+          "navn": "Inntekt siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2019-12-07"
         },
         {
           "kode": "INTTREDS",
-          "navn": "Inntekt tredj siste år/periode",
+          "navn": "Inntekt tredje siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2019-12-07"
         },
@@ -2665,7 +2665,7 @@
         },
         {
           "kode": "MAXAAP",
-          "navn": "Maks periodeteller AAP",
+          "navn": "Info om periode for AAP",
           "verdi": null,
           "registrertDato": "2019-12-07"
         },
@@ -2677,13 +2677,13 @@
         },
         {
           "kode": "MAXDATOUNT",
-          "navn": "Maksdato AAP-unntaksperiode",
+          "navn": "Maksdato AAP unntaksperiode",
           "verdi": null,
           "registrertDato": "2019-12-07"
         },
         {
           "kode": "MAXUNNTAAP",
-          "navn": "Max periodeteller unntak AAP",
+          "navn": "Info om unntaksperiode for AAP",
           "verdi": null,
           "registrertDato": "2019-12-07"
         },
@@ -2701,19 +2701,19 @@
         },
         {
           "kode": "OVERGTAT",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle AT 2009",
           "verdi": "N",
           "registrertDato": "2019-12-07"
         },
         {
           "kode": "OVERGTRP",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle RP 2009",
           "verdi": "N",
           "registrertDato": "2019-12-07"
         },
         {
           "kode": "OVERGTTU",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle TU 2009",
           "verdi": "N",
           "registrertDato": "2019-12-07"
         },
@@ -2725,31 +2725,31 @@
         },
         {
           "kode": "SAM",
-          "navn": "SAMORDNING",
+          "navn": "Samordning er utført",
           "verdi": "N",
           "registrertDato": "2019-12-07"
         },
         {
           "kode": "SAMKILDMAN",
-          "navn": "Samordningskilde manuell",
+          "navn": "Samordningskilde manuelt lagt inn",
           "verdi": null,
           "registrertDato": "2019-12-07"
         },
         {
           "kode": "SAMUKESAND",
-          "navn": "Sum samordning andre",
+          "navn": "Sum samordning manuelt reg fra andre",
           "verdi": null,
           "registrertDato": "2019-12-07"
         },
         {
           "kode": "SAMUKESRTV",
-          "navn": "Sum samordning RTV",
+          "navn": "Sum samordning manuelt reg folketrygdytelser/AFP",
           "verdi": null,
           "registrertDato": "2019-12-07"
         },
         {
           "kode": "STUDENTBES",
-          "navn": "Studentbestemmelsen",
+          "navn": "Vurdert studentbestemmelsen",
           "verdi": null,
           "registrertDato": "2019-12-07"
         },
@@ -2761,13 +2761,13 @@
         },
         {
           "kode": "TEKSTVAR",
-          "navn": "Brevtekstvariant",
+          "navn": "Brev-/vedtaksvariant",
           "verdi": "E_VERDI",
           "registrertDato": "2019-12-07"
         },
         {
           "kode": "TERSKMKBER",
-          "navn": "Terskelgrense Meldekortberegn",
+          "navn": "Terskelgrense Meldekortberegning",
           "verdi": "40",
           "registrertDato": "2019-12-07"
         },
@@ -2785,7 +2785,7 @@
         },
         {
           "kode": "UKES",
-          "navn": "UKESATS",
+          "navn": "Ukesats",
           "verdi": "3840",
           "registrertDato": "2019-12-07"
         },
@@ -2797,13 +2797,13 @@
         },
         {
           "kode": "UNNTAKAAP",
-          "navn": "Unntak maks stønadsperiode AA",
+          "navn": "Unntak fra maksimal stønadsperiode AAP",
           "verdi": "J",
           "registrertDato": "2019-12-07"
         },
         {
           "kode": "VEDTAKSEND",
-          "navn": "Vedtaksbrev er sendt",
+          "navn": "Utskrift/sendt",
           "verdi": "N",
           "registrertDato": "2019-12-07"
         },
@@ -2852,7 +2852,7 @@
         },
         {
           "kode": "AAPMANBER",
-          "navn": "AAP manuelt beregnet",
+          "navn": "Arbeidsavklaringspenger manuelt beregnet",
           "verdi": null,
           "registrertDato": "2019-12-15"
         },
@@ -2882,13 +2882,13 @@
         },
         {
           "kode": "ANTB",
-          "navn": "ANTALL BARN",
+          "navn": "Antall barn",
           "verdi": null,
           "registrertDato": "2019-12-15"
         },
         {
           "kode": "ARBPEOS",
-          "navn": "Arbeidsperiode fra EØS/Norden",
+          "navn": "Arbeidsperiode EØS/N i grunnlag",
           "verdi": "N",
           "registrertDato": "2019-12-15"
         },
@@ -2912,7 +2912,7 @@
         },
         {
           "kode": "AVSPTSANK",
-          "navn": "Tidligere sanksjon",
+          "navn": "Avspaser tidligere sanksjon",
           "verdi": null,
           "registrertDato": "2019-12-15"
         },
@@ -2948,25 +2948,25 @@
         },
         {
           "kode": "BEGRTILAAP",
-          "navn": "Tellerjust ord begrunn tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2019-12-15"
         },
         {
           "kode": "BEGRTILUNN",
-          "navn": "Tellerjust unntak begr tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2019-12-15"
         },
         {
           "kode": "BEGRUNNTAK",
-          "navn": "Tellerjustering unnt begr AAP",
+          "navn": "Tellerjustering unntak begrunnelse",
           "verdi": null,
           "registrertDato": "2019-12-15"
         },
         {
           "kode": "BERBESKR",
-          "navn": "Beregningsgrunnlag beskrivelse",
+          "navn": "Begrunnelse fra beregning",
           "verdi": "Du hadde lav eller ingen inntekt de tre siste årene før arbeidsevnen din ble redusert. Derfor får du arbeidsavklaringspenger som er to ganger grunnbeløpet. Dette går frem av folketrygdloven §§ 11-19 og 11-20.\r\n\r\nGrunnbeløpet endres årlig, og du finner det oppdaterte beløpet på nav.no/grunnbelop.\n",
           "registrertDato": "2019-12-15"
         },
@@ -2978,13 +2978,13 @@
         },
         {
           "kode": "BERREGEL",
-          "navn": "Beregningsregel",
+          "navn": "Kode for beregningsregel",
           "verdi": "ORDINAER_MINSTEYTELSE",
           "registrertDato": "2019-12-15"
         },
         {
           "kode": "DAGS",
-          "navn": "DAGSATS",
+          "navn": "Dagsats",
           "verdi": "768",
           "registrertDato": "2019-12-15"
         },
@@ -2996,7 +2996,7 @@
         },
         {
           "kode": "DAGSMBFSAM",
-          "navn": "Dagsats m.b. før samordn.",
+          "navn": "Dagsats med barnetillegg før samordning",
           "verdi": "768",
           "registrertDato": "2019-12-15"
         },
@@ -3008,37 +3008,37 @@
         },
         {
           "kode": "ENDRPERAAP",
-          "navn": "Tellerjustering AAP",
+          "navn": "Tellerjustering AAP periode",
           "verdi": null,
           "registrertDato": "2019-12-15"
         },
         {
           "kode": "ENDRTILAAP",
-          "navn": "Tellerjust tilleggsperiode ord",
+          "navn": "Tellerjustering tilleggsperiode i ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2019-12-15"
         },
         {
           "kode": "ENDRTILUNN",
-          "navn": "Tellerjust tilleggsper unntak",
+          "navn": "Tellerjustering tilleggsperiode i AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2019-12-15"
         },
         {
           "kode": "ENDRUNNAAP",
-          "navn": "Tellerjustering unntak AAP",
+          "navn": "Tellerjustering unntaksperiode AAP",
           "verdi": null,
           "registrertDato": "2019-12-15"
         },
         {
           "kode": "ENDVARIGHT",
-          "navn": "Varighet endret",
+          "navn": "Varighet endret fra tidligere periode",
           "verdi": "N",
           "registrertDato": "2019-12-15"
         },
         {
           "kode": "FASTARBTFS",
-          "navn": "Fastsatt arbeidstid før samord",
+          "navn": "Fastsatt arbeidstid før samordning",
           "verdi": null,
           "registrertDato": "2019-12-15"
         },
@@ -3056,25 +3056,25 @@
         },
         {
           "kode": "GRUNN",
-          "navn": "Grunnlag for beregning",
+          "navn": "Grunnlag",
           "verdi": "302600",
           "registrertDato": "2019-12-15"
         },
         {
           "kode": "INNVF",
-          "navn": "VEDTAKSDATO",
+          "navn": "Vedtaksdato",
           "verdi": "15-12-2019",
           "registrertDato": "2019-12-15"
         },
         {
           "kode": "INSGRAD",
-          "navn": "Gradering institusjonsopphold",
+          "navn": "Gradering pga institusjonsopphold",
           "verdi": null,
           "registrertDato": "2019-12-15"
         },
         {
           "kode": "INSTOPP",
-          "navn": "Instutisjonsopphold",
+          "navn": "Institusjonsopphold",
           "verdi": "N",
           "registrertDato": "2019-12-15"
         },
@@ -3098,19 +3098,19 @@
         },
         {
           "kode": "INTNESTS",
-          "navn": "Inntekt nest siste år/periode",
+          "navn": "Inntekt nest siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2019-12-15"
         },
         {
           "kode": "INTSISTE",
-          "navn": "Inntekt siste år/periode",
+          "navn": "Inntekt siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2019-12-15"
         },
         {
           "kode": "INTTREDS",
-          "navn": "Inntekt tredj siste år/periode",
+          "navn": "Inntekt tredje siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2019-12-15"
         },
@@ -3134,7 +3134,7 @@
         },
         {
           "kode": "MAXAAP",
-          "navn": "Maks periodeteller AAP",
+          "navn": "Info om periode for AAP",
           "verdi": null,
           "registrertDato": "2019-12-15"
         },
@@ -3146,13 +3146,13 @@
         },
         {
           "kode": "MAXDATOUNT",
-          "navn": "Maksdato AAP-unntaksperiode",
+          "navn": "Maksdato AAP unntaksperiode",
           "verdi": null,
           "registrertDato": "2019-12-15"
         },
         {
           "kode": "MAXUNNTAAP",
-          "navn": "Max periodeteller unntak AAP",
+          "navn": "Info om unntaksperiode for AAP",
           "verdi": null,
           "registrertDato": "2019-12-15"
         },
@@ -3170,19 +3170,19 @@
         },
         {
           "kode": "OVERGTAT",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle AT 2009",
           "verdi": "N",
           "registrertDato": "2019-12-15"
         },
         {
           "kode": "OVERGTRP",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle RP 2009",
           "verdi": "N",
           "registrertDato": "2019-12-15"
         },
         {
           "kode": "OVERGTTU",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle TU 2009",
           "verdi": "N",
           "registrertDato": "2019-12-15"
         },
@@ -3194,31 +3194,31 @@
         },
         {
           "kode": "SAM",
-          "navn": "SAMORDNING",
+          "navn": "Samordning er utført",
           "verdi": "N",
           "registrertDato": "2019-12-15"
         },
         {
           "kode": "SAMKILDMAN",
-          "navn": "Samordningskilde manuell",
+          "navn": "Samordningskilde manuelt lagt inn",
           "verdi": null,
           "registrertDato": "2019-12-15"
         },
         {
           "kode": "SAMUKESAND",
-          "navn": "Sum samordning andre",
+          "navn": "Sum samordning manuelt reg fra andre",
           "verdi": null,
           "registrertDato": "2019-12-15"
         },
         {
           "kode": "SAMUKESRTV",
-          "navn": "Sum samordning RTV",
+          "navn": "Sum samordning manuelt reg folketrygdytelser/AFP",
           "verdi": null,
           "registrertDato": "2019-12-15"
         },
         {
           "kode": "STUDENTBES",
-          "navn": "Studentbestemmelsen",
+          "navn": "Vurdert studentbestemmelsen",
           "verdi": null,
           "registrertDato": "2019-12-15"
         },
@@ -3230,13 +3230,13 @@
         },
         {
           "kode": "TEKSTVAR",
-          "navn": "Brevtekstvariant",
+          "navn": "Brev-/vedtaksvariant",
           "verdi": "E_VERDI",
           "registrertDato": "2019-12-15"
         },
         {
           "kode": "TERSKMKBER",
-          "navn": "Terskelgrense Meldekortberegn",
+          "navn": "Terskelgrense Meldekortberegning",
           "verdi": "40",
           "registrertDato": "2019-12-15"
         },
@@ -3254,7 +3254,7 @@
         },
         {
           "kode": "UKES",
-          "navn": "UKESATS",
+          "navn": "Ukesats",
           "verdi": "3840",
           "registrertDato": "2019-12-15"
         },
@@ -3266,13 +3266,13 @@
         },
         {
           "kode": "UNNTAKAAP",
-          "navn": "Unntak maks stønadsperiode AA",
+          "navn": "Unntak fra maksimal stønadsperiode AAP",
           "verdi": "J",
           "registrertDato": "2019-12-15"
         },
         {
           "kode": "VEDTAKSEND",
-          "navn": "Vedtaksbrev er sendt",
+          "navn": "Utskrift/sendt",
           "verdi": "N",
           "registrertDato": "2019-12-15"
         },
@@ -3321,7 +3321,7 @@
         },
         {
           "kode": "AAPMANBER",
-          "navn": "AAP manuelt beregnet",
+          "navn": "Arbeidsavklaringspenger manuelt beregnet",
           "verdi": null,
           "registrertDato": "2020-02-01"
         },
@@ -3351,13 +3351,13 @@
         },
         {
           "kode": "ANTB",
-          "navn": "ANTALL BARN",
+          "navn": "Antall barn",
           "verdi": null,
           "registrertDato": "2020-02-01"
         },
         {
           "kode": "ARBPEOS",
-          "navn": "Arbeidsperiode fra EØS/Norden",
+          "navn": "Arbeidsperiode EØS/N i grunnlag",
           "verdi": "N",
           "registrertDato": "2020-02-01"
         },
@@ -3381,7 +3381,7 @@
         },
         {
           "kode": "AVSPTSANK",
-          "navn": "Tidligere sanksjon",
+          "navn": "Avspaser tidligere sanksjon",
           "verdi": null,
           "registrertDato": "2020-02-01"
         },
@@ -3417,25 +3417,25 @@
         },
         {
           "kode": "BEGRTILAAP",
-          "navn": "Tellerjust ord begrunn tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2020-02-01"
         },
         {
           "kode": "BEGRTILUNN",
-          "navn": "Tellerjust unntak begr tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2020-02-01"
         },
         {
           "kode": "BEGRUNNTAK",
-          "navn": "Tellerjustering unnt begr AAP",
+          "navn": "Tellerjustering unntak begrunnelse",
           "verdi": null,
           "registrertDato": "2020-02-01"
         },
         {
           "kode": "BERBESKR",
-          "navn": "Beregningsgrunnlag beskrivelse",
+          "navn": "Begrunnelse fra beregning",
           "verdi": "Du hadde lav eller ingen inntekt de tre siste årene før arbeidsevnen din ble redusert. Derfor får du arbeidsavklaringspenger som er to ganger grunnbeløpet. Dette går frem av folketrygdloven §§ 11-19 og 11-20.\r\n\r\nGrunnbeløpet endres årlig, og du finner det oppdaterte beløpet på nav.no/grunnbelop.\n",
           "registrertDato": "2020-02-01"
         },
@@ -3447,13 +3447,13 @@
         },
         {
           "kode": "BERREGEL",
-          "navn": "Beregningsregel",
+          "navn": "Kode for beregningsregel",
           "verdi": "ORDINAER_MINSTEYTELSE",
           "registrertDato": "2020-02-01"
         },
         {
           "kode": "DAGS",
-          "navn": "DAGSATS",
+          "navn": "Dagsats",
           "verdi": "768",
           "registrertDato": "2020-02-01"
         },
@@ -3465,7 +3465,7 @@
         },
         {
           "kode": "DAGSMBFSAM",
-          "navn": "Dagsats m.b. før samordn.",
+          "navn": "Dagsats med barnetillegg før samordning",
           "verdi": "768",
           "registrertDato": "2020-02-01"
         },
@@ -3477,37 +3477,37 @@
         },
         {
           "kode": "ENDRPERAAP",
-          "navn": "Tellerjustering AAP",
+          "navn": "Tellerjustering AAP periode",
           "verdi": null,
           "registrertDato": "2020-02-01"
         },
         {
           "kode": "ENDRTILAAP",
-          "navn": "Tellerjust tilleggsperiode ord",
+          "navn": "Tellerjustering tilleggsperiode i ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2020-02-01"
         },
         {
           "kode": "ENDRTILUNN",
-          "navn": "Tellerjust tilleggsper unntak",
+          "navn": "Tellerjustering tilleggsperiode i AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2020-02-01"
         },
         {
           "kode": "ENDRUNNAAP",
-          "navn": "Tellerjustering unntak AAP",
+          "navn": "Tellerjustering unntaksperiode AAP",
           "verdi": null,
           "registrertDato": "2020-02-01"
         },
         {
           "kode": "ENDVARIGHT",
-          "navn": "Varighet endret",
+          "navn": "Varighet endret fra tidligere periode",
           "verdi": "N",
           "registrertDato": "2020-02-01"
         },
         {
           "kode": "FASTARBTFS",
-          "navn": "Fastsatt arbeidstid før samord",
+          "navn": "Fastsatt arbeidstid før samordning",
           "verdi": null,
           "registrertDato": "2020-02-01"
         },
@@ -3525,25 +3525,25 @@
         },
         {
           "kode": "GRUNN",
-          "navn": "Grunnlag for beregning",
+          "navn": "Grunnlag",
           "verdi": "302600",
           "registrertDato": "2020-02-01"
         },
         {
           "kode": "INNVF",
-          "navn": "VEDTAKSDATO",
+          "navn": "Vedtaksdato",
           "verdi": "01-02-2020",
           "registrertDato": "2020-02-01"
         },
         {
           "kode": "INSGRAD",
-          "navn": "Gradering institusjonsopphold",
+          "navn": "Gradering pga institusjonsopphold",
           "verdi": null,
           "registrertDato": "2020-02-01"
         },
         {
           "kode": "INSTOPP",
-          "navn": "Instutisjonsopphold",
+          "navn": "Institusjonsopphold",
           "verdi": "N",
           "registrertDato": "2020-02-01"
         },
@@ -3567,19 +3567,19 @@
         },
         {
           "kode": "INTNESTS",
-          "navn": "Inntekt nest siste år/periode",
+          "navn": "Inntekt nest siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2020-02-01"
         },
         {
           "kode": "INTSISTE",
-          "navn": "Inntekt siste år/periode",
+          "navn": "Inntekt siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2020-02-01"
         },
         {
           "kode": "INTTREDS",
-          "navn": "Inntekt tredj siste år/periode",
+          "navn": "Inntekt tredje siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2020-02-01"
         },
@@ -3603,7 +3603,7 @@
         },
         {
           "kode": "MAXAAP",
-          "navn": "Maks periodeteller AAP",
+          "navn": "Info om periode for AAP",
           "verdi": null,
           "registrertDato": "2020-02-01"
         },
@@ -3615,13 +3615,13 @@
         },
         {
           "kode": "MAXDATOUNT",
-          "navn": "Maksdato AAP-unntaksperiode",
+          "navn": "Maksdato AAP unntaksperiode",
           "verdi": null,
           "registrertDato": "2020-02-01"
         },
         {
           "kode": "MAXUNNTAAP",
-          "navn": "Max periodeteller unntak AAP",
+          "navn": "Info om unntaksperiode for AAP",
           "verdi": null,
           "registrertDato": "2020-02-01"
         },
@@ -3639,19 +3639,19 @@
         },
         {
           "kode": "OVERGTAT",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle AT 2009",
           "verdi": "N",
           "registrertDato": "2020-02-01"
         },
         {
           "kode": "OVERGTRP",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle RP 2009",
           "verdi": "N",
           "registrertDato": "2020-02-01"
         },
         {
           "kode": "OVERGTTU",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle TU 2009",
           "verdi": "N",
           "registrertDato": "2020-02-01"
         },
@@ -3663,31 +3663,31 @@
         },
         {
           "kode": "SAM",
-          "navn": "SAMORDNING",
+          "navn": "Samordning er utført",
           "verdi": "N",
           "registrertDato": "2020-02-01"
         },
         {
           "kode": "SAMKILDMAN",
-          "navn": "Samordningskilde manuell",
+          "navn": "Samordningskilde manuelt lagt inn",
           "verdi": null,
           "registrertDato": "2020-02-01"
         },
         {
           "kode": "SAMUKESAND",
-          "navn": "Sum samordning andre",
+          "navn": "Sum samordning manuelt reg fra andre",
           "verdi": null,
           "registrertDato": "2020-02-01"
         },
         {
           "kode": "SAMUKESRTV",
-          "navn": "Sum samordning RTV",
+          "navn": "Sum samordning manuelt reg folketrygdytelser/AFP",
           "verdi": null,
           "registrertDato": "2020-02-01"
         },
         {
           "kode": "STUDENTBES",
-          "navn": "Studentbestemmelsen",
+          "navn": "Vurdert studentbestemmelsen",
           "verdi": null,
           "registrertDato": "2020-02-01"
         },
@@ -3699,13 +3699,13 @@
         },
         {
           "kode": "TEKSTVAR",
-          "navn": "Brevtekstvariant",
+          "navn": "Brev-/vedtaksvariant",
           "verdi": "E_VERDI",
           "registrertDato": "2020-02-01"
         },
         {
           "kode": "TERSKMKBER",
-          "navn": "Terskelgrense Meldekortberegn",
+          "navn": "Terskelgrense Meldekortberegning",
           "verdi": "40",
           "registrertDato": "2020-02-01"
         },
@@ -3723,7 +3723,7 @@
         },
         {
           "kode": "UKES",
-          "navn": "UKESATS",
+          "navn": "Ukesats",
           "verdi": "3840",
           "registrertDato": "2020-02-01"
         },
@@ -3735,13 +3735,13 @@
         },
         {
           "kode": "UNNTAKAAP",
-          "navn": "Unntak maks stønadsperiode AA",
+          "navn": "Unntak fra maksimal stønadsperiode AAP",
           "verdi": "J",
           "registrertDato": "2020-02-01"
         },
         {
           "kode": "VEDTAKSEND",
-          "navn": "Vedtaksbrev er sendt",
+          "navn": "Utskrift/sendt",
           "verdi": "N",
           "registrertDato": "2020-02-01"
         },
@@ -3790,7 +3790,7 @@
         },
         {
           "kode": "AAPMANBER",
-          "navn": "AAP manuelt beregnet",
+          "navn": "Arbeidsavklaringspenger manuelt beregnet",
           "verdi": null,
           "registrertDato": "2019-07-03"
         },
@@ -3820,13 +3820,13 @@
         },
         {
           "kode": "ANTB",
-          "navn": "ANTALL BARN",
+          "navn": "Antall barn",
           "verdi": null,
           "registrertDato": "2019-07-03"
         },
         {
           "kode": "ARBPEOS",
-          "navn": "Arbeidsperiode fra EØS/Norden",
+          "navn": "Arbeidsperiode EØS/N i grunnlag",
           "verdi": "N",
           "registrertDato": "2019-07-03"
         },
@@ -3850,7 +3850,7 @@
         },
         {
           "kode": "AVSPTSANK",
-          "navn": "Tidligere sanksjon",
+          "navn": "Avspaser tidligere sanksjon",
           "verdi": null,
           "registrertDato": "2019-07-03"
         },
@@ -3886,25 +3886,25 @@
         },
         {
           "kode": "BEGRTILAAP",
-          "navn": "Tellerjust ord begrunn tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2019-07-03"
         },
         {
           "kode": "BEGRTILUNN",
-          "navn": "Tellerjust unntak begr tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2019-07-03"
         },
         {
           "kode": "BEGRUNNTAK",
-          "navn": "Tellerjustering unnt begr AAP",
+          "navn": "Tellerjustering unntak begrunnelse",
           "verdi": null,
           "registrertDato": "2019-07-03"
         },
         {
           "kode": "BERBESKR",
-          "navn": "Beregningsgrunnlag beskrivelse",
+          "navn": "Begrunnelse fra beregning",
           "verdi": "Du hadde lav eller ingen inntekt de tre siste årene før arbeidsevnen din ble redusert. Derfor får du arbeidsavklaringspenger som er to ganger grunnbeløpet. Dette går frem av folketrygdloven §§ 11-19 og 11-20.\r\n\r\nGrunnbeløpet endres årlig, og du finner det oppdaterte beløpet på nav.no/grunnbelop.\n",
           "registrertDato": "2019-07-03"
         },
@@ -3916,13 +3916,13 @@
         },
         {
           "kode": "BERREGEL",
-          "navn": "Beregningsregel",
+          "navn": "Kode for beregningsregel",
           "verdi": "ORDINAER_MINSTEYTELSE",
           "registrertDato": "2019-07-03"
         },
         {
           "kode": "DAGS",
-          "navn": "DAGSATS",
+          "navn": "Dagsats",
           "verdi": "768",
           "registrertDato": "2019-07-03"
         },
@@ -3934,7 +3934,7 @@
         },
         {
           "kode": "DAGSMBFSAM",
-          "navn": "Dagsats m.b. før samordn.",
+          "navn": "Dagsats med barnetillegg før samordning",
           "verdi": "768",
           "registrertDato": "2019-07-03"
         },
@@ -3946,37 +3946,37 @@
         },
         {
           "kode": "ENDRPERAAP",
-          "navn": "Tellerjustering AAP",
+          "navn": "Tellerjustering AAP periode",
           "verdi": null,
           "registrertDato": "2019-07-03"
         },
         {
           "kode": "ENDRTILAAP",
-          "navn": "Tellerjust tilleggsperiode ord",
+          "navn": "Tellerjustering tilleggsperiode i ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2019-07-03"
         },
         {
           "kode": "ENDRTILUNN",
-          "navn": "Tellerjust tilleggsper unntak",
+          "navn": "Tellerjustering tilleggsperiode i AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2019-07-03"
         },
         {
           "kode": "ENDRUNNAAP",
-          "navn": "Tellerjustering unntak AAP",
+          "navn": "Tellerjustering unntaksperiode AAP",
           "verdi": null,
           "registrertDato": "2019-07-03"
         },
         {
           "kode": "ENDVARIGHT",
-          "navn": "Varighet endret",
+          "navn": "Varighet endret fra tidligere periode",
           "verdi": "N",
           "registrertDato": "2019-07-03"
         },
         {
           "kode": "FASTARBTFS",
-          "navn": "Fastsatt arbeidstid før samord",
+          "navn": "Fastsatt arbeidstid før samordning",
           "verdi": null,
           "registrertDato": "2019-07-03"
         },
@@ -3994,25 +3994,25 @@
         },
         {
           "kode": "GRUNN",
-          "navn": "Grunnlag for beregning",
+          "navn": "Grunnlag",
           "verdi": "302600",
           "registrertDato": "2019-07-03"
         },
         {
           "kode": "INNVF",
-          "navn": "VEDTAKSDATO",
+          "navn": "Vedtaksdato",
           "verdi": "03-07-2019",
           "registrertDato": "2019-07-03"
         },
         {
           "kode": "INSGRAD",
-          "navn": "Gradering institusjonsopphold",
+          "navn": "Gradering pga institusjonsopphold",
           "verdi": null,
           "registrertDato": "2019-07-03"
         },
         {
           "kode": "INSTOPP",
-          "navn": "Instutisjonsopphold",
+          "navn": "Institusjonsopphold",
           "verdi": "N",
           "registrertDato": "2019-07-03"
         },
@@ -4036,19 +4036,19 @@
         },
         {
           "kode": "INTNESTS",
-          "navn": "Inntekt nest siste år/periode",
+          "navn": "Inntekt nest siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2019-07-03"
         },
         {
           "kode": "INTSISTE",
-          "navn": "Inntekt siste år/periode",
+          "navn": "Inntekt siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2019-07-03"
         },
         {
           "kode": "INTTREDS",
-          "navn": "Inntekt tredj siste år/periode",
+          "navn": "Inntekt tredje siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2019-07-03"
         },
@@ -4072,7 +4072,7 @@
         },
         {
           "kode": "MAXAAP",
-          "navn": "Maks periodeteller AAP",
+          "navn": "Info om periode for AAP",
           "verdi": null,
           "registrertDato": "2019-07-03"
         },
@@ -4084,13 +4084,13 @@
         },
         {
           "kode": "MAXDATOUNT",
-          "navn": "Maksdato AAP-unntaksperiode",
+          "navn": "Maksdato AAP unntaksperiode",
           "verdi": null,
           "registrertDato": "2019-07-03"
         },
         {
           "kode": "MAXUNNTAAP",
-          "navn": "Max periodeteller unntak AAP",
+          "navn": "Info om unntaksperiode for AAP",
           "verdi": null,
           "registrertDato": "2019-07-03"
         },
@@ -4108,19 +4108,19 @@
         },
         {
           "kode": "OVERGTAT",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle AT 2009",
           "verdi": "N",
           "registrertDato": "2019-07-03"
         },
         {
           "kode": "OVERGTRP",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle RP 2009",
           "verdi": "N",
           "registrertDato": "2019-07-03"
         },
         {
           "kode": "OVERGTTU",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle TU 2009",
           "verdi": "N",
           "registrertDato": "2019-07-03"
         },
@@ -4132,31 +4132,31 @@
         },
         {
           "kode": "SAM",
-          "navn": "SAMORDNING",
+          "navn": "Samordning er utført",
           "verdi": "N",
           "registrertDato": "2019-07-03"
         },
         {
           "kode": "SAMKILDMAN",
-          "navn": "Samordningskilde manuell",
+          "navn": "Samordningskilde manuelt lagt inn",
           "verdi": null,
           "registrertDato": "2019-07-03"
         },
         {
           "kode": "SAMUKESAND",
-          "navn": "Sum samordning andre",
+          "navn": "Sum samordning manuelt reg fra andre",
           "verdi": null,
           "registrertDato": "2019-07-03"
         },
         {
           "kode": "SAMUKESRTV",
-          "navn": "Sum samordning RTV",
+          "navn": "Sum samordning manuelt reg folketrygdytelser/AFP",
           "verdi": null,
           "registrertDato": "2019-07-03"
         },
         {
           "kode": "STUDENTBES",
-          "navn": "Studentbestemmelsen",
+          "navn": "Vurdert studentbestemmelsen",
           "verdi": null,
           "registrertDato": "2019-07-03"
         },
@@ -4168,13 +4168,13 @@
         },
         {
           "kode": "TEKSTVAR",
-          "navn": "Brevtekstvariant",
+          "navn": "Brev-/vedtaksvariant",
           "verdi": "E_VERDI",
           "registrertDato": "2019-07-03"
         },
         {
           "kode": "TERSKMKBER",
-          "navn": "Terskelgrense Meldekortberegn",
+          "navn": "Terskelgrense Meldekortberegning",
           "verdi": "40",
           "registrertDato": "2019-07-03"
         },
@@ -4192,7 +4192,7 @@
         },
         {
           "kode": "UKES",
-          "navn": "UKESATS",
+          "navn": "Ukesats",
           "verdi": "3840",
           "registrertDato": "2019-07-03"
         },
@@ -4204,13 +4204,13 @@
         },
         {
           "kode": "UNNTAKAAP",
-          "navn": "Unntak maks stønadsperiode AA",
+          "navn": "Unntak fra maksimal stønadsperiode AAP",
           "verdi": "J",
           "registrertDato": "2019-07-03"
         },
         {
           "kode": "VEDTAKSEND",
-          "navn": "Vedtaksbrev er sendt",
+          "navn": "Utskrift/sendt",
           "verdi": "N",
           "registrertDato": "2019-07-03"
         },
@@ -4259,7 +4259,7 @@
         },
         {
           "kode": "AAPMANBER",
-          "navn": "AAP manuelt beregnet",
+          "navn": "Arbeidsavklaringspenger manuelt beregnet",
           "verdi": null,
           "registrertDato": "2020-03-20"
         },
@@ -4289,13 +4289,13 @@
         },
         {
           "kode": "ANTB",
-          "navn": "ANTALL BARN",
+          "navn": "Antall barn",
           "verdi": null,
           "registrertDato": "2020-03-20"
         },
         {
           "kode": "ARBPEOS",
-          "navn": "Arbeidsperiode fra EØS/Norden",
+          "navn": "Arbeidsperiode EØS/N i grunnlag",
           "verdi": "N",
           "registrertDato": "2020-03-20"
         },
@@ -4343,25 +4343,25 @@
         },
         {
           "kode": "BEGRTILAAP",
-          "navn": "Tellerjust ord begrunn tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2020-03-20"
         },
         {
           "kode": "BEGRTILUNN",
-          "navn": "Tellerjust unntak begr tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2020-03-20"
         },
         {
           "kode": "BEGRUNNTAK",
-          "navn": "Tellerjustering unnt begr AAP",
+          "navn": "Tellerjustering unntak begrunnelse",
           "verdi": null,
           "registrertDato": "2020-03-20"
         },
         {
           "kode": "BERBESKR",
-          "navn": "Beregningsgrunnlag beskrivelse",
+          "navn": "Begrunnelse fra beregning",
           "verdi": "Du hadde lav eller ingen inntekt de tre siste årene før arbeidsevnen din ble redusert. Derfor får du arbeidsavklaringspenger som er to ganger grunnbeløpet. Dette går frem av folketrygdloven §§ 11-19 og 11-20.\r\n\r\nGrunnbeløpet endres årlig, og du finner det oppdaterte beløpet på nav.no/grunnbelop.\n",
           "registrertDato": "2020-03-20"
         },
@@ -4373,13 +4373,13 @@
         },
         {
           "kode": "BERREGEL",
-          "navn": "Beregningsregel",
+          "navn": "Kode for beregningsregel",
           "verdi": "ORDINAER_MINSTEYTELSE",
           "registrertDato": "2020-03-20"
         },
         {
           "kode": "DAGS",
-          "navn": "DAGSATS",
+          "navn": "Dagsats",
           "verdi": "768",
           "registrertDato": "2020-03-20"
         },
@@ -4391,7 +4391,7 @@
         },
         {
           "kode": "DAGSMBFSAM",
-          "navn": "Dagsats m.b. før samordn.",
+          "navn": "Dagsats med barnetillegg før samordning",
           "verdi": "768",
           "registrertDato": "2020-03-20"
         },
@@ -4403,25 +4403,25 @@
         },
         {
           "kode": "ENDRTILAAP",
-          "navn": "Tellerjust tilleggsperiode ord",
+          "navn": "Tellerjustering tilleggsperiode i ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2020-03-20"
         },
         {
           "kode": "ENDRTILUNN",
-          "navn": "Tellerjust tilleggsper unntak",
+          "navn": "Tellerjustering tilleggsperiode i AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2020-03-20"
         },
         {
           "kode": "ENDRUNNAAP",
-          "navn": "Tellerjustering unntak AAP",
+          "navn": "Tellerjustering unntaksperiode AAP",
           "verdi": null,
           "registrertDato": "2020-03-20"
         },
         {
           "kode": "ENDVARIGHT",
-          "navn": "Varighet endret",
+          "navn": "Varighet endret fra tidligere periode",
           "verdi": "N",
           "registrertDato": "2020-03-20"
         },
@@ -4439,25 +4439,25 @@
         },
         {
           "kode": "GRUNN",
-          "navn": "Grunnlag for beregning",
+          "navn": "Grunnlag",
           "verdi": "302600",
           "registrertDato": "2020-03-20"
         },
         {
           "kode": "INNVF",
-          "navn": "VEDTAKSDATO",
+          "navn": "Vedtaksdato",
           "verdi": "20-03-2020",
           "registrertDato": "2020-03-20"
         },
         {
           "kode": "INSGRAD",
-          "navn": "Gradering institusjonsopphold",
+          "navn": "Gradering pga institusjonsopphold",
           "verdi": null,
           "registrertDato": "2020-03-20"
         },
         {
           "kode": "INSTOPP",
-          "navn": "Instutisjonsopphold",
+          "navn": "Institusjonsopphold",
           "verdi": "N",
           "registrertDato": "2020-03-20"
         },
@@ -4481,19 +4481,19 @@
         },
         {
           "kode": "INTNESTS",
-          "navn": "Inntekt nest siste år/periode",
+          "navn": "Inntekt nest siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2020-03-20"
         },
         {
           "kode": "INTSISTE",
-          "navn": "Inntekt siste år/periode",
+          "navn": "Inntekt siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2020-03-20"
         },
         {
           "kode": "INTTREDS",
-          "navn": "Inntekt tredj siste år/periode",
+          "navn": "Inntekt tredje siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2020-03-20"
         },
@@ -4505,7 +4505,7 @@
         },
         {
           "kode": "MAXAAP",
-          "navn": "Maks periodeteller AAP",
+          "navn": "Info om periode for AAP",
           "verdi": null,
           "registrertDato": "2020-03-20"
         },
@@ -4517,13 +4517,13 @@
         },
         {
           "kode": "MAXDATOUNT",
-          "navn": "Maksdato AAP-unntaksperiode",
+          "navn": "Maksdato AAP unntaksperiode",
           "verdi": null,
           "registrertDato": "2020-03-20"
         },
         {
           "kode": "MAXUNNTAAP",
-          "navn": "Max periodeteller unntak AAP",
+          "navn": "Info om unntaksperiode for AAP",
           "verdi": null,
           "registrertDato": "2020-03-20"
         },
@@ -4541,19 +4541,19 @@
         },
         {
           "kode": "OVERGTAT",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle AT 2009",
           "verdi": "N",
           "registrertDato": "2020-03-20"
         },
         {
           "kode": "OVERGTRP",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle RP 2009",
           "verdi": "N",
           "registrertDato": "2020-03-20"
         },
         {
           "kode": "OVERGTTU",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle TU 2009",
           "verdi": "N",
           "registrertDato": "2020-03-20"
         },
@@ -4565,31 +4565,31 @@
         },
         {
           "kode": "SAM",
-          "navn": "SAMORDNING",
+          "navn": "Samordning er utført",
           "verdi": "N",
           "registrertDato": "2020-03-20"
         },
         {
           "kode": "SAMKILDMAN",
-          "navn": "Samordningskilde manuell",
+          "navn": "Samordningskilde manuelt lagt inn",
           "verdi": null,
           "registrertDato": "2020-03-20"
         },
         {
           "kode": "SAMUKESAND",
-          "navn": "Sum samordning andre",
+          "navn": "Sum samordning manuelt reg fra andre",
           "verdi": null,
           "registrertDato": "2020-03-20"
         },
         {
           "kode": "SAMUKESRTV",
-          "navn": "Sum samordning RTV",
+          "navn": "Sum samordning manuelt reg folketrygdytelser/AFP",
           "verdi": null,
           "registrertDato": "2020-03-20"
         },
         {
           "kode": "STUDENTBES",
-          "navn": "Studentbestemmelsen",
+          "navn": "Vurdert studentbestemmelsen",
           "verdi": null,
           "registrertDato": "2020-03-20"
         },
@@ -4601,13 +4601,13 @@
         },
         {
           "kode": "TEKSTVAR",
-          "navn": "Brevtekstvariant",
+          "navn": "Brev-/vedtaksvariant",
           "verdi": "S_STANS",
           "registrertDato": "2020-03-20"
         },
         {
           "kode": "TERSKMKBER",
-          "navn": "Terskelgrense Meldekortberegn",
+          "navn": "Terskelgrense Meldekortberegning",
           "verdi": "40",
           "registrertDato": "2020-03-20"
         },
@@ -4625,7 +4625,7 @@
         },
         {
           "kode": "UKES",
-          "navn": "UKESATS",
+          "navn": "Ukesats",
           "verdi": "3840",
           "registrertDato": "2020-03-20"
         },
@@ -4637,7 +4637,7 @@
         },
         {
           "kode": "VEDTAKSEND",
-          "navn": "Vedtaksbrev er sendt",
+          "navn": "Utskrift/sendt",
           "verdi": "N",
           "registrertDato": "2020-03-20"
         },
@@ -4686,7 +4686,7 @@
         },
         {
           "kode": "AAPMANBER",
-          "navn": "AAP manuelt beregnet",
+          "navn": "Arbeidsavklaringspenger manuelt beregnet",
           "verdi": null,
           "registrertDato": "2015-02-19"
         },
@@ -4716,13 +4716,13 @@
         },
         {
           "kode": "ANTB",
-          "navn": "ANTALL BARN",
+          "navn": "Antall barn",
           "verdi": null,
           "registrertDato": "2015-02-19"
         },
         {
           "kode": "ARBPEOS",
-          "navn": "Arbeidsperiode fra EØS/Norden",
+          "navn": "Arbeidsperiode EØS/N i grunnlag",
           "verdi": "N",
           "registrertDato": "2015-02-19"
         },
@@ -4746,7 +4746,7 @@
         },
         {
           "kode": "AVSPTSANK",
-          "navn": "Tidligere sanksjon",
+          "navn": "Avspaser tidligere sanksjon",
           "verdi": null,
           "registrertDato": "2015-02-19"
         },
@@ -4782,25 +4782,25 @@
         },
         {
           "kode": "BEGRTILAAP",
-          "navn": "Tellerjust ord begrunn tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2015-02-19"
         },
         {
           "kode": "BEGRTILUNN",
-          "navn": "Tellerjust unntak begr tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2015-02-19"
         },
         {
           "kode": "BEGRUNNTAK",
-          "navn": "Tellerjustering unnt begr AAP",
+          "navn": "Tellerjustering unntak begrunnelse",
           "verdi": null,
           "registrertDato": "2015-02-19"
         },
         {
           "kode": "BERBESKR",
-          "navn": "Beregningsgrunnlag beskrivelse",
+          "navn": "Begrunnelse fra beregning",
           "verdi": "Du hadde lav eller ingen inntekt de tre siste årene før arbeidsevnen din ble redusert. Derfor får du arbeidsavklaringspenger som er to ganger grunnbeløpet. Dette går frem av folketrygdloven §§ 11-19 og 11-20.\r\n\r\nGrunnbeløpet endres årlig, og du finner det oppdaterte beløpet på nav.no/grunnbelop.\n",
           "registrertDato": "2015-02-19"
         },
@@ -4812,13 +4812,13 @@
         },
         {
           "kode": "BERREGEL",
-          "navn": "Beregningsregel",
+          "navn": "Kode for beregningsregel",
           "verdi": "ORDINAER_MINSTEYTELSE",
           "registrertDato": "2015-02-19"
         },
         {
           "kode": "DAGS",
-          "navn": "DAGSATS",
+          "navn": "Dagsats",
           "verdi": "680",
           "registrertDato": "2015-02-19"
         },
@@ -4830,7 +4830,7 @@
         },
         {
           "kode": "DAGSMBFSAM",
-          "navn": "Dagsats m.b. før samordn.",
+          "navn": "Dagsats med barnetillegg før samordning",
           "verdi": "680",
           "registrertDato": "2015-02-19"
         },
@@ -4842,37 +4842,37 @@
         },
         {
           "kode": "ENDRPERAAP",
-          "navn": "Tellerjustering AAP",
+          "navn": "Tellerjustering AAP periode",
           "verdi": null,
           "registrertDato": "2015-02-19"
         },
         {
           "kode": "ENDRTILAAP",
-          "navn": "Tellerjust tilleggsperiode ord",
+          "navn": "Tellerjustering tilleggsperiode i ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2015-02-19"
         },
         {
           "kode": "ENDRTILUNN",
-          "navn": "Tellerjust tilleggsper unntak",
+          "navn": "Tellerjustering tilleggsperiode i AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2015-02-19"
         },
         {
           "kode": "ENDRUNNAAP",
-          "navn": "Tellerjustering unntak AAP",
+          "navn": "Tellerjustering unntaksperiode AAP",
           "verdi": null,
           "registrertDato": "2015-02-19"
         },
         {
           "kode": "ENDVARIGHT",
-          "navn": "Varighet endret",
+          "navn": "Varighet endret fra tidligere periode",
           "verdi": null,
           "registrertDato": "2021-05-13"
         },
         {
           "kode": "FASTARBTFS",
-          "navn": "Fastsatt arbeidstid før samord",
+          "navn": "Fastsatt arbeidstid før samordning",
           "verdi": null,
           "registrertDato": "2015-02-19"
         },
@@ -4890,25 +4890,25 @@
         },
         {
           "kode": "GRUNN",
-          "navn": "Grunnlag for beregning",
+          "navn": "Grunnlag",
           "verdi": "267788",
           "registrertDato": "2015-02-19"
         },
         {
           "kode": "INNVF",
-          "navn": "VEDTAKSDATO",
+          "navn": "Vedtaksdato",
           "verdi": "13-05-2021",
           "registrertDato": "2015-02-19"
         },
         {
           "kode": "INSGRAD",
-          "navn": "Gradering institusjonsopphold",
+          "navn": "Gradering pga institusjonsopphold",
           "verdi": null,
           "registrertDato": "2015-02-19"
         },
         {
           "kode": "INSTOPP",
-          "navn": "Instutisjonsopphold",
+          "navn": "Institusjonsopphold",
           "verdi": "N",
           "registrertDato": "2015-02-19"
         },
@@ -4932,19 +4932,19 @@
         },
         {
           "kode": "INTNESTS",
-          "navn": "Inntekt nest siste år/periode",
+          "navn": "Inntekt nest siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2015-02-19"
         },
         {
           "kode": "INTSISTE",
-          "navn": "Inntekt siste år/periode",
+          "navn": "Inntekt siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2015-02-19"
         },
         {
           "kode": "INTTREDS",
-          "navn": "Inntekt tredj siste år/periode",
+          "navn": "Inntekt tredje siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2015-02-19"
         },
@@ -4956,7 +4956,7 @@
         },
         {
           "kode": "MAXAAP",
-          "navn": "Maks periodeteller AAP",
+          "navn": "Info om periode for AAP",
           "verdi": "20900",
           "registrertDato": "2015-02-19"
         },
@@ -4968,13 +4968,13 @@
         },
         {
           "kode": "MAXDATOUNT",
-          "navn": "Maksdato AAP-unntaksperiode",
+          "navn": "Maksdato AAP unntaksperiode",
           "verdi": null,
           "registrertDato": "2015-02-19"
         },
         {
           "kode": "MAXUNNTAAP",
-          "navn": "Max periodeteller unntak AAP",
+          "navn": "Info om unntaksperiode for AAP",
           "verdi": "10460",
           "registrertDato": "2015-02-19"
         },
@@ -4986,13 +4986,13 @@
         },
         {
           "kode": "NULLEAAP",
-          "navn": "Nullstill periodeteller AAP",
+          "navn": "Nullstilling periodeteller for AAP",
           "verdi": "J",
           "registrertDato": "2015-02-19"
         },
         {
           "kode": "NULLEAAPUN",
-          "navn": "Nullstilling unntakteller AAP",
+          "navn": "Nullstilling periodeteller for unntak AAP",
           "verdi": "J",
           "registrertDato": "2015-02-19"
         },
@@ -5004,19 +5004,19 @@
         },
         {
           "kode": "OVERGTAT",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle AT 2009",
           "verdi": "N",
           "registrertDato": "2015-02-19"
         },
         {
           "kode": "OVERGTRP",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle RP 2009",
           "verdi": "N",
           "registrertDato": "2015-02-19"
         },
         {
           "kode": "OVERGTTU",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle TU 2009",
           "verdi": "N",
           "registrertDato": "2015-02-19"
         },
@@ -5028,31 +5028,31 @@
         },
         {
           "kode": "SAM",
-          "navn": "SAMORDNING",
+          "navn": "Samordning er utført",
           "verdi": "N",
           "registrertDato": "2015-02-19"
         },
         {
           "kode": "SAMKILDMAN",
-          "navn": "Samordningskilde manuell",
+          "navn": "Samordningskilde manuelt lagt inn",
           "verdi": null,
           "registrertDato": "2015-02-19"
         },
         {
           "kode": "SAMUKESAND",
-          "navn": "Sum samordning andre",
+          "navn": "Sum samordning manuelt reg fra andre",
           "verdi": null,
           "registrertDato": "2015-02-19"
         },
         {
           "kode": "SAMUKESRTV",
-          "navn": "Sum samordning RTV",
+          "navn": "Sum samordning manuelt reg folketrygdytelser/AFP",
           "verdi": null,
           "registrertDato": "2015-02-19"
         },
         {
           "kode": "STUDENTBES",
-          "navn": "Studentbestemmelsen",
+          "navn": "Vurdert studentbestemmelsen",
           "verdi": null,
           "registrertDato": "2015-02-19"
         },
@@ -5064,13 +5064,13 @@
         },
         {
           "kode": "TEKSTVAR",
-          "navn": "Brevtekstvariant",
+          "navn": "Brev-/vedtaksvariant",
           "verdi": "O_INNV_SOKNAD",
           "registrertDato": "2021-05-13"
         },
         {
           "kode": "TERSKMKBER",
-          "navn": "Terskelgrense Meldekortberegn",
+          "navn": "Terskelgrense Meldekortberegning",
           "verdi": "40",
           "registrertDato": "2015-02-19"
         },
@@ -5088,7 +5088,7 @@
         },
         {
           "kode": "UKES",
-          "navn": "UKESATS",
+          "navn": "Ukesats",
           "verdi": "3400",
           "registrertDato": "2015-02-19"
         },
@@ -5100,13 +5100,13 @@
         },
         {
           "kode": "UNNTAKAAP",
-          "navn": "Unntak maks stønadsperiode AA",
+          "navn": "Unntak fra maksimal stønadsperiode AAP",
           "verdi": "N",
           "registrertDato": "2015-02-19"
         },
         {
           "kode": "VEDTAKSEND",
-          "navn": "Vedtaksbrev er sendt",
+          "navn": "Utskrift/sendt",
           "verdi": "N",
           "registrertDato": "2015-02-19"
         },
@@ -5155,7 +5155,7 @@
         },
         {
           "kode": "AAPMANBER",
-          "navn": "AAP manuelt beregnet",
+          "navn": "Arbeidsavklaringspenger manuelt beregnet",
           "verdi": null,
           "registrertDato": "2019-10-17"
         },
@@ -5185,13 +5185,13 @@
         },
         {
           "kode": "ANTB",
-          "navn": "ANTALL BARN",
+          "navn": "Antall barn",
           "verdi": null,
           "registrertDato": "2019-10-17"
         },
         {
           "kode": "ARBPEOS",
-          "navn": "Arbeidsperiode fra EØS/Norden",
+          "navn": "Arbeidsperiode EØS/N i grunnlag",
           "verdi": "N",
           "registrertDato": "2019-10-17"
         },
@@ -5215,7 +5215,7 @@
         },
         {
           "kode": "AVSPTSANK",
-          "navn": "Tidligere sanksjon",
+          "navn": "Avspaser tidligere sanksjon",
           "verdi": null,
           "registrertDato": "2019-10-17"
         },
@@ -5251,25 +5251,25 @@
         },
         {
           "kode": "BEGRTILAAP",
-          "navn": "Tellerjust ord begrunn tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2019-10-17"
         },
         {
           "kode": "BEGRTILUNN",
-          "navn": "Tellerjust unntak begr tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2019-10-17"
         },
         {
           "kode": "BEGRUNNTAK",
-          "navn": "Tellerjustering unnt begr AAP",
+          "navn": "Tellerjustering unntak begrunnelse",
           "verdi": null,
           "registrertDato": "2019-10-17"
         },
         {
           "kode": "BERBESKR",
-          "navn": "Beregningsgrunnlag beskrivelse",
+          "navn": "Begrunnelse fra beregning",
           "verdi": "Du hadde lav eller ingen inntekt de tre siste årene før arbeidsevnen din ble redusert. Derfor får du arbeidsavklaringspenger som er to ganger grunnbeløpet. Dette går frem av folketrygdloven §§ 11-19 og 11-20.\r\n\r\nGrunnbeløpet endres årlig, og du finner det oppdaterte beløpet på nav.no/grunnbelop.\n",
           "registrertDato": "2019-10-17"
         },
@@ -5281,13 +5281,13 @@
         },
         {
           "kode": "BERREGEL",
-          "navn": "Beregningsregel",
+          "navn": "Kode for beregningsregel",
           "verdi": "ORDINAER_MINSTEYTELSE",
           "registrertDato": "2019-10-17"
         },
         {
           "kode": "DAGS",
-          "navn": "DAGSATS",
+          "navn": "Dagsats",
           "verdi": "768",
           "registrertDato": "2019-10-17"
         },
@@ -5299,7 +5299,7 @@
         },
         {
           "kode": "DAGSMBFSAM",
-          "navn": "Dagsats m.b. før samordn.",
+          "navn": "Dagsats med barnetillegg før samordning",
           "verdi": "768",
           "registrertDato": "2019-10-17"
         },
@@ -5311,37 +5311,37 @@
         },
         {
           "kode": "ENDRPERAAP",
-          "navn": "Tellerjustering AAP",
+          "navn": "Tellerjustering AAP periode",
           "verdi": null,
           "registrertDato": "2019-10-17"
         },
         {
           "kode": "ENDRTILAAP",
-          "navn": "Tellerjust tilleggsperiode ord",
+          "navn": "Tellerjustering tilleggsperiode i ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2019-10-17"
         },
         {
           "kode": "ENDRTILUNN",
-          "navn": "Tellerjust tilleggsper unntak",
+          "navn": "Tellerjustering tilleggsperiode i AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2019-10-17"
         },
         {
           "kode": "ENDRUNNAAP",
-          "navn": "Tellerjustering unntak AAP",
+          "navn": "Tellerjustering unntaksperiode AAP",
           "verdi": null,
           "registrertDato": "2019-10-17"
         },
         {
           "kode": "ENDVARIGHT",
-          "navn": "Varighet endret",
+          "navn": "Varighet endret fra tidligere periode",
           "verdi": "N",
           "registrertDato": "2019-10-17"
         },
         {
           "kode": "FASTARBTFS",
-          "navn": "Fastsatt arbeidstid før samord",
+          "navn": "Fastsatt arbeidstid før samordning",
           "verdi": null,
           "registrertDato": "2019-10-17"
         },
@@ -5359,25 +5359,25 @@
         },
         {
           "kode": "GRUNN",
-          "navn": "Grunnlag for beregning",
+          "navn": "Grunnlag",
           "verdi": "302600",
           "registrertDato": "2019-10-17"
         },
         {
           "kode": "INNVF",
-          "navn": "VEDTAKSDATO",
+          "navn": "Vedtaksdato",
           "verdi": "17-10-2019",
           "registrertDato": "2019-10-17"
         },
         {
           "kode": "INSGRAD",
-          "navn": "Gradering institusjonsopphold",
+          "navn": "Gradering pga institusjonsopphold",
           "verdi": null,
           "registrertDato": "2019-10-17"
         },
         {
           "kode": "INSTOPP",
-          "navn": "Instutisjonsopphold",
+          "navn": "Institusjonsopphold",
           "verdi": "N",
           "registrertDato": "2019-10-17"
         },
@@ -5401,19 +5401,19 @@
         },
         {
           "kode": "INTNESTS",
-          "navn": "Inntekt nest siste år/periode",
+          "navn": "Inntekt nest siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2019-10-17"
         },
         {
           "kode": "INTSISTE",
-          "navn": "Inntekt siste år/periode",
+          "navn": "Inntekt siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2019-10-17"
         },
         {
           "kode": "INTTREDS",
-          "navn": "Inntekt tredj siste år/periode",
+          "navn": "Inntekt tredje siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2019-10-17"
         },
@@ -5437,7 +5437,7 @@
         },
         {
           "kode": "MAXAAP",
-          "navn": "Maks periodeteller AAP",
+          "navn": "Info om periode for AAP",
           "verdi": null,
           "registrertDato": "2019-10-17"
         },
@@ -5449,13 +5449,13 @@
         },
         {
           "kode": "MAXDATOUNT",
-          "navn": "Maksdato AAP-unntaksperiode",
+          "navn": "Maksdato AAP unntaksperiode",
           "verdi": null,
           "registrertDato": "2019-10-17"
         },
         {
           "kode": "MAXUNNTAAP",
-          "navn": "Max periodeteller unntak AAP",
+          "navn": "Info om unntaksperiode for AAP",
           "verdi": null,
           "registrertDato": "2019-10-17"
         },
@@ -5473,19 +5473,19 @@
         },
         {
           "kode": "OVERGTAT",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle AT 2009",
           "verdi": "N",
           "registrertDato": "2019-10-17"
         },
         {
           "kode": "OVERGTRP",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle RP 2009",
           "verdi": "N",
           "registrertDato": "2019-10-17"
         },
         {
           "kode": "OVERGTTU",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle TU 2009",
           "verdi": "N",
           "registrertDato": "2019-10-17"
         },
@@ -5497,31 +5497,31 @@
         },
         {
           "kode": "SAM",
-          "navn": "SAMORDNING",
+          "navn": "Samordning er utført",
           "verdi": "N",
           "registrertDato": "2019-10-17"
         },
         {
           "kode": "SAMKILDMAN",
-          "navn": "Samordningskilde manuell",
+          "navn": "Samordningskilde manuelt lagt inn",
           "verdi": null,
           "registrertDato": "2019-10-17"
         },
         {
           "kode": "SAMUKESAND",
-          "navn": "Sum samordning andre",
+          "navn": "Sum samordning manuelt reg fra andre",
           "verdi": null,
           "registrertDato": "2019-10-17"
         },
         {
           "kode": "SAMUKESRTV",
-          "navn": "Sum samordning RTV",
+          "navn": "Sum samordning manuelt reg folketrygdytelser/AFP",
           "verdi": null,
           "registrertDato": "2019-10-17"
         },
         {
           "kode": "STUDENTBES",
-          "navn": "Studentbestemmelsen",
+          "navn": "Vurdert studentbestemmelsen",
           "verdi": null,
           "registrertDato": "2019-10-17"
         },
@@ -5533,13 +5533,13 @@
         },
         {
           "kode": "TEKSTVAR",
-          "navn": "Brevtekstvariant",
+          "navn": "Brev-/vedtaksvariant",
           "verdi": "E_VERDI",
           "registrertDato": "2019-10-17"
         },
         {
           "kode": "TERSKMKBER",
-          "navn": "Terskelgrense Meldekortberegn",
+          "navn": "Terskelgrense Meldekortberegning",
           "verdi": "40",
           "registrertDato": "2019-10-17"
         },
@@ -5557,7 +5557,7 @@
         },
         {
           "kode": "UKES",
-          "navn": "UKESATS",
+          "navn": "Ukesats",
           "verdi": "3840",
           "registrertDato": "2019-10-17"
         },
@@ -5569,13 +5569,13 @@
         },
         {
           "kode": "UNNTAKAAP",
-          "navn": "Unntak maks stønadsperiode AA",
+          "navn": "Unntak fra maksimal stønadsperiode AAP",
           "verdi": "J",
           "registrertDato": "2019-10-17"
         },
         {
           "kode": "VEDTAKSEND",
-          "navn": "Vedtaksbrev er sendt",
+          "navn": "Utskrift/sendt",
           "verdi": "N",
           "registrertDato": "2019-10-17"
         },
@@ -5624,7 +5624,7 @@
         },
         {
           "kode": "AAPMANBER",
-          "navn": "AAP manuelt beregnet",
+          "navn": "Arbeidsavklaringspenger manuelt beregnet",
           "verdi": null,
           "registrertDato": "2017-06-15"
         },
@@ -5654,13 +5654,13 @@
         },
         {
           "kode": "ANTB",
-          "navn": "ANTALL BARN",
+          "navn": "Antall barn",
           "verdi": null,
           "registrertDato": "2017-06-15"
         },
         {
           "kode": "ARBPEOS",
-          "navn": "Arbeidsperiode fra EØS/Norden",
+          "navn": "Arbeidsperiode EØS/N i grunnlag",
           "verdi": "N",
           "registrertDato": "2017-06-15"
         },
@@ -5684,7 +5684,7 @@
         },
         {
           "kode": "AVSPTSANK",
-          "navn": "Tidligere sanksjon",
+          "navn": "Avspaser tidligere sanksjon",
           "verdi": null,
           "registrertDato": "2017-06-15"
         },
@@ -5720,25 +5720,25 @@
         },
         {
           "kode": "BEGRTILAAP",
-          "navn": "Tellerjust ord begrunn tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2017-06-15"
         },
         {
           "kode": "BEGRTILUNN",
-          "navn": "Tellerjust unntak begr tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2017-06-15"
         },
         {
           "kode": "BEGRUNNTAK",
-          "navn": "Tellerjustering unnt begr AAP",
+          "navn": "Tellerjustering unntak begrunnelse",
           "verdi": null,
           "registrertDato": "2017-06-15"
         },
         {
           "kode": "BERBESKR",
-          "navn": "Beregningsgrunnlag beskrivelse",
+          "navn": "Begrunnelse fra beregning",
           "verdi": "Du hadde lav eller ingen inntekt de tre siste årene før arbeidsevnen din ble redusert. Derfor får du arbeidsavklaringspenger som er to ganger grunnbeløpet. Dette går frem av folketrygdloven §§ 11-19 og 11-20.\r\n\r\nGrunnbeløpet endres årlig, og du finner det oppdaterte beløpet på nav.no/grunnbelop.\n",
           "registrertDato": "2017-06-15"
         },
@@ -5750,13 +5750,13 @@
         },
         {
           "kode": "BERREGEL",
-          "navn": "Beregningsregel",
+          "navn": "Kode for beregningsregel",
           "verdi": "ORDINAER_MINSTEYTELSE",
           "registrertDato": "2017-06-15"
         },
         {
           "kode": "DAGS",
-          "navn": "DAGSATS",
+          "navn": "Dagsats",
           "verdi": "720",
           "registrertDato": "2017-06-15"
         },
@@ -5768,7 +5768,7 @@
         },
         {
           "kode": "DAGSMBFSAM",
-          "navn": "Dagsats m.b. før samordn.",
+          "navn": "Dagsats med barnetillegg før samordning",
           "verdi": "720",
           "registrertDato": "2017-06-15"
         },
@@ -5780,37 +5780,37 @@
         },
         {
           "kode": "ENDRPERAAP",
-          "navn": "Tellerjustering AAP",
+          "navn": "Tellerjustering AAP periode",
           "verdi": null,
           "registrertDato": "2017-06-15"
         },
         {
           "kode": "ENDRTILAAP",
-          "navn": "Tellerjust tilleggsperiode ord",
+          "navn": "Tellerjustering tilleggsperiode i ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2017-06-15"
         },
         {
           "kode": "ENDRTILUNN",
-          "navn": "Tellerjust tilleggsper unntak",
+          "navn": "Tellerjustering tilleggsperiode i AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2017-06-15"
         },
         {
           "kode": "ENDRUNNAAP",
-          "navn": "Tellerjustering unntak AAP",
+          "navn": "Tellerjustering unntaksperiode AAP",
           "verdi": null,
           "registrertDato": "2017-06-15"
         },
         {
           "kode": "ENDVARIGHT",
-          "navn": "Varighet endret",
+          "navn": "Varighet endret fra tidligere periode",
           "verdi": "N",
           "registrertDato": "2017-06-15"
         },
         {
           "kode": "FASTARBTFS",
-          "navn": "Fastsatt arbeidstid før samord",
+          "navn": "Fastsatt arbeidstid før samordning",
           "verdi": null,
           "registrertDato": "2017-06-15"
         },
@@ -5828,25 +5828,25 @@
         },
         {
           "kode": "GRUNN",
-          "navn": "Grunnlag for beregning",
+          "navn": "Grunnlag",
           "verdi": "283739",
           "registrertDato": "2017-06-15"
         },
         {
           "kode": "INNVF",
-          "navn": "VEDTAKSDATO",
+          "navn": "Vedtaksdato",
           "verdi": "15-06-2017",
           "registrertDato": "2017-06-15"
         },
         {
           "kode": "INSGRAD",
-          "navn": "Gradering institusjonsopphold",
+          "navn": "Gradering pga institusjonsopphold",
           "verdi": null,
           "registrertDato": "2017-06-15"
         },
         {
           "kode": "INSTOPP",
-          "navn": "Instutisjonsopphold",
+          "navn": "Institusjonsopphold",
           "verdi": "N",
           "registrertDato": "2017-06-15"
         },
@@ -5870,19 +5870,19 @@
         },
         {
           "kode": "INTNESTS",
-          "navn": "Inntekt nest siste år/periode",
+          "navn": "Inntekt nest siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2017-06-15"
         },
         {
           "kode": "INTSISTE",
-          "navn": "Inntekt siste år/periode",
+          "navn": "Inntekt siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2017-06-15"
         },
         {
           "kode": "INTTREDS",
-          "navn": "Inntekt tredj siste år/periode",
+          "navn": "Inntekt tredje siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2017-06-15"
         },
@@ -5906,7 +5906,7 @@
         },
         {
           "kode": "MAXAAP",
-          "navn": "Maks periodeteller AAP",
+          "navn": "Info om periode for AAP",
           "verdi": null,
           "registrertDato": "2017-06-15"
         },
@@ -5918,13 +5918,13 @@
         },
         {
           "kode": "MAXDATOUNT",
-          "navn": "Maksdato AAP-unntaksperiode",
+          "navn": "Maksdato AAP unntaksperiode",
           "verdi": null,
           "registrertDato": "2017-06-15"
         },
         {
           "kode": "MAXUNNTAAP",
-          "navn": "Max periodeteller unntak AAP",
+          "navn": "Info om unntaksperiode for AAP",
           "verdi": null,
           "registrertDato": "2017-06-15"
         },
@@ -5942,19 +5942,19 @@
         },
         {
           "kode": "OVERGTAT",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle AT 2009",
           "verdi": "N",
           "registrertDato": "2017-06-15"
         },
         {
           "kode": "OVERGTRP",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle RP 2009",
           "verdi": "N",
           "registrertDato": "2017-06-15"
         },
         {
           "kode": "OVERGTTU",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle TU 2009",
           "verdi": "N",
           "registrertDato": "2017-06-15"
         },
@@ -5966,31 +5966,31 @@
         },
         {
           "kode": "SAM",
-          "navn": "SAMORDNING",
+          "navn": "Samordning er utført",
           "verdi": "N",
           "registrertDato": "2017-06-15"
         },
         {
           "kode": "SAMKILDMAN",
-          "navn": "Samordningskilde manuell",
+          "navn": "Samordningskilde manuelt lagt inn",
           "verdi": null,
           "registrertDato": "2017-06-15"
         },
         {
           "kode": "SAMUKESAND",
-          "navn": "Sum samordning andre",
+          "navn": "Sum samordning manuelt reg fra andre",
           "verdi": null,
           "registrertDato": "2017-06-15"
         },
         {
           "kode": "SAMUKESRTV",
-          "navn": "Sum samordning RTV",
+          "navn": "Sum samordning manuelt reg folketrygdytelser/AFP",
           "verdi": null,
           "registrertDato": "2017-06-15"
         },
         {
           "kode": "STUDENTBES",
-          "navn": "Studentbestemmelsen",
+          "navn": "Vurdert studentbestemmelsen",
           "verdi": null,
           "registrertDato": "2017-06-15"
         },
@@ -6002,13 +6002,13 @@
         },
         {
           "kode": "TEKSTVAR",
-          "navn": "Brevtekstvariant",
+          "navn": "Brev-/vedtaksvariant",
           "verdi": "E_VERDI",
           "registrertDato": "2017-06-15"
         },
         {
           "kode": "TERSKMKBER",
-          "navn": "Terskelgrense Meldekortberegn",
+          "navn": "Terskelgrense Meldekortberegning",
           "verdi": "40",
           "registrertDato": "2017-06-15"
         },
@@ -6026,7 +6026,7 @@
         },
         {
           "kode": "UKES",
-          "navn": "UKESATS",
+          "navn": "Ukesats",
           "verdi": "3600",
           "registrertDato": "2017-06-15"
         },
@@ -6038,13 +6038,13 @@
         },
         {
           "kode": "UNNTAKAAP",
-          "navn": "Unntak maks stønadsperiode AA",
+          "navn": "Unntak fra maksimal stønadsperiode AAP",
           "verdi": "N",
           "registrertDato": "2017-06-15"
         },
         {
           "kode": "VEDTAKSEND",
-          "navn": "Vedtaksbrev er sendt",
+          "navn": "Utskrift/sendt",
           "verdi": "N",
           "registrertDato": "2017-06-15"
         },
@@ -6093,7 +6093,7 @@
         },
         {
           "kode": "AAPMANBER",
-          "navn": "AAP manuelt beregnet",
+          "navn": "Arbeidsavklaringspenger manuelt beregnet",
           "verdi": null,
           "registrertDato": "2017-10-26"
         },
@@ -6123,13 +6123,13 @@
         },
         {
           "kode": "ANTB",
-          "navn": "ANTALL BARN",
+          "navn": "Antall barn",
           "verdi": null,
           "registrertDato": "2017-10-26"
         },
         {
           "kode": "ARBPEOS",
-          "navn": "Arbeidsperiode fra EØS/Norden",
+          "navn": "Arbeidsperiode EØS/N i grunnlag",
           "verdi": "N",
           "registrertDato": "2017-10-26"
         },
@@ -6153,7 +6153,7 @@
         },
         {
           "kode": "AVSPTSANK",
-          "navn": "Tidligere sanksjon",
+          "navn": "Avspaser tidligere sanksjon",
           "verdi": null,
           "registrertDato": "2017-10-26"
         },
@@ -6189,25 +6189,25 @@
         },
         {
           "kode": "BEGRTILAAP",
-          "navn": "Tellerjust ord begrunn tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2017-10-26"
         },
         {
           "kode": "BEGRTILUNN",
-          "navn": "Tellerjust unntak begr tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2017-10-26"
         },
         {
           "kode": "BEGRUNNTAK",
-          "navn": "Tellerjustering unnt begr AAP",
+          "navn": "Tellerjustering unntak begrunnelse",
           "verdi": null,
           "registrertDato": "2017-10-26"
         },
         {
           "kode": "BERBESKR",
-          "navn": "Beregningsgrunnlag beskrivelse",
+          "navn": "Begrunnelse fra beregning",
           "verdi": "Du hadde lav eller ingen inntekt de tre siste årene før arbeidsevnen din ble redusert. Derfor får du arbeidsavklaringspenger som er to ganger grunnbeløpet. Dette går frem av folketrygdloven §§ 11-19 og 11-20.\r\n\r\nGrunnbeløpet endres årlig, og du finner det oppdaterte beløpet på nav.no/grunnbelop.\n",
           "registrertDato": "2017-10-26"
         },
@@ -6219,13 +6219,13 @@
         },
         {
           "kode": "BERREGEL",
-          "navn": "Beregningsregel",
+          "navn": "Kode for beregningsregel",
           "verdi": "ORDINAER_MINSTEYTELSE",
           "registrertDato": "2017-10-26"
         },
         {
           "kode": "DAGS",
-          "navn": "DAGSATS",
+          "navn": "Dagsats",
           "verdi": "720",
           "registrertDato": "2017-10-26"
         },
@@ -6237,7 +6237,7 @@
         },
         {
           "kode": "DAGSMBFSAM",
-          "navn": "Dagsats m.b. før samordn.",
+          "navn": "Dagsats med barnetillegg før samordning",
           "verdi": "720",
           "registrertDato": "2017-10-26"
         },
@@ -6249,37 +6249,37 @@
         },
         {
           "kode": "ENDRPERAAP",
-          "navn": "Tellerjustering AAP",
+          "navn": "Tellerjustering AAP periode",
           "verdi": null,
           "registrertDato": "2017-10-26"
         },
         {
           "kode": "ENDRTILAAP",
-          "navn": "Tellerjust tilleggsperiode ord",
+          "navn": "Tellerjustering tilleggsperiode i ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2017-10-26"
         },
         {
           "kode": "ENDRTILUNN",
-          "navn": "Tellerjust tilleggsper unntak",
+          "navn": "Tellerjustering tilleggsperiode i AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2017-10-26"
         },
         {
           "kode": "ENDRUNNAAP",
-          "navn": "Tellerjustering unntak AAP",
+          "navn": "Tellerjustering unntaksperiode AAP",
           "verdi": null,
           "registrertDato": "2017-10-26"
         },
         {
           "kode": "ENDVARIGHT",
-          "navn": "Varighet endret",
+          "navn": "Varighet endret fra tidligere periode",
           "verdi": "N",
           "registrertDato": "2017-10-26"
         },
         {
           "kode": "FASTARBTFS",
-          "navn": "Fastsatt arbeidstid før samord",
+          "navn": "Fastsatt arbeidstid før samordning",
           "verdi": null,
           "registrertDato": "2017-10-26"
         },
@@ -6297,25 +6297,25 @@
         },
         {
           "kode": "GRUNN",
-          "navn": "Grunnlag for beregning",
+          "navn": "Grunnlag",
           "verdi": "283739",
           "registrertDato": "2017-10-26"
         },
         {
           "kode": "INNVF",
-          "navn": "VEDTAKSDATO",
+          "navn": "Vedtaksdato",
           "verdi": "26-10-2017",
           "registrertDato": "2017-10-26"
         },
         {
           "kode": "INSGRAD",
-          "navn": "Gradering institusjonsopphold",
+          "navn": "Gradering pga institusjonsopphold",
           "verdi": null,
           "registrertDato": "2017-10-26"
         },
         {
           "kode": "INSTOPP",
-          "navn": "Instutisjonsopphold",
+          "navn": "Institusjonsopphold",
           "verdi": "N",
           "registrertDato": "2017-10-26"
         },
@@ -6339,19 +6339,19 @@
         },
         {
           "kode": "INTNESTS",
-          "navn": "Inntekt nest siste år/periode",
+          "navn": "Inntekt nest siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2017-10-26"
         },
         {
           "kode": "INTSISTE",
-          "navn": "Inntekt siste år/periode",
+          "navn": "Inntekt siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2017-10-26"
         },
         {
           "kode": "INTTREDS",
-          "navn": "Inntekt tredj siste år/periode",
+          "navn": "Inntekt tredje siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2017-10-26"
         },
@@ -6375,7 +6375,7 @@
         },
         {
           "kode": "MAXAAP",
-          "navn": "Maks periodeteller AAP",
+          "navn": "Info om periode for AAP",
           "verdi": null,
           "registrertDato": "2017-10-26"
         },
@@ -6387,13 +6387,13 @@
         },
         {
           "kode": "MAXDATOUNT",
-          "navn": "Maksdato AAP-unntaksperiode",
+          "navn": "Maksdato AAP unntaksperiode",
           "verdi": null,
           "registrertDato": "2017-10-26"
         },
         {
           "kode": "MAXUNNTAAP",
-          "navn": "Max periodeteller unntak AAP",
+          "navn": "Info om unntaksperiode for AAP",
           "verdi": null,
           "registrertDato": "2017-10-26"
         },
@@ -6411,19 +6411,19 @@
         },
         {
           "kode": "OVERGTAT",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle AT 2009",
           "verdi": "N",
           "registrertDato": "2017-10-26"
         },
         {
           "kode": "OVERGTRP",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle RP 2009",
           "verdi": "N",
           "registrertDato": "2017-10-26"
         },
         {
           "kode": "OVERGTTU",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle TU 2009",
           "verdi": "N",
           "registrertDato": "2017-10-26"
         },
@@ -6435,31 +6435,31 @@
         },
         {
           "kode": "SAM",
-          "navn": "SAMORDNING",
+          "navn": "Samordning er utført",
           "verdi": "N",
           "registrertDato": "2017-10-26"
         },
         {
           "kode": "SAMKILDMAN",
-          "navn": "Samordningskilde manuell",
+          "navn": "Samordningskilde manuelt lagt inn",
           "verdi": null,
           "registrertDato": "2017-10-26"
         },
         {
           "kode": "SAMUKESAND",
-          "navn": "Sum samordning andre",
+          "navn": "Sum samordning manuelt reg fra andre",
           "verdi": null,
           "registrertDato": "2017-10-26"
         },
         {
           "kode": "SAMUKESRTV",
-          "navn": "Sum samordning RTV",
+          "navn": "Sum samordning manuelt reg folketrygdytelser/AFP",
           "verdi": null,
           "registrertDato": "2017-10-26"
         },
         {
           "kode": "STUDENTBES",
-          "navn": "Studentbestemmelsen",
+          "navn": "Vurdert studentbestemmelsen",
           "verdi": null,
           "registrertDato": "2017-10-26"
         },
@@ -6471,13 +6471,13 @@
         },
         {
           "kode": "TEKSTVAR",
-          "navn": "Brevtekstvariant",
+          "navn": "Brev-/vedtaksvariant",
           "verdi": "E_VERDI",
           "registrertDato": "2017-10-26"
         },
         {
           "kode": "TERSKMKBER",
-          "navn": "Terskelgrense Meldekortberegn",
+          "navn": "Terskelgrense Meldekortberegning",
           "verdi": "40",
           "registrertDato": "2017-10-26"
         },
@@ -6495,7 +6495,7 @@
         },
         {
           "kode": "UKES",
-          "navn": "UKESATS",
+          "navn": "Ukesats",
           "verdi": "3600",
           "registrertDato": "2017-10-26"
         },
@@ -6507,13 +6507,13 @@
         },
         {
           "kode": "UNNTAKAAP",
-          "navn": "Unntak maks stønadsperiode AA",
+          "navn": "Unntak fra maksimal stønadsperiode AAP",
           "verdi": "N",
           "registrertDato": "2017-10-26"
         },
         {
           "kode": "VEDTAKSEND",
-          "navn": "Vedtaksbrev er sendt",
+          "navn": "Utskrift/sendt",
           "verdi": "N",
           "registrertDato": "2017-10-26"
         },
@@ -6562,7 +6562,7 @@
         },
         {
           "kode": "AAPMANBER",
-          "navn": "AAP manuelt beregnet",
+          "navn": "Arbeidsavklaringspenger manuelt beregnet",
           "verdi": null,
           "registrertDato": "2018-04-27"
         },
@@ -6592,13 +6592,13 @@
         },
         {
           "kode": "ANTB",
-          "navn": "ANTALL BARN",
+          "navn": "Antall barn",
           "verdi": null,
           "registrertDato": "2018-04-27"
         },
         {
           "kode": "ARBPEOS",
-          "navn": "Arbeidsperiode fra EØS/Norden",
+          "navn": "Arbeidsperiode EØS/N i grunnlag",
           "verdi": "N",
           "registrertDato": "2018-04-27"
         },
@@ -6622,7 +6622,7 @@
         },
         {
           "kode": "AVSPTSANK",
-          "navn": "Tidligere sanksjon",
+          "navn": "Avspaser tidligere sanksjon",
           "verdi": null,
           "registrertDato": "2018-04-27"
         },
@@ -6658,25 +6658,25 @@
         },
         {
           "kode": "BEGRTILAAP",
-          "navn": "Tellerjust ord begrunn tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2018-04-27"
         },
         {
           "kode": "BEGRTILUNN",
-          "navn": "Tellerjust unntak begr tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2018-04-27"
         },
         {
           "kode": "BEGRUNNTAK",
-          "navn": "Tellerjustering unnt begr AAP",
+          "navn": "Tellerjustering unntak begrunnelse",
           "verdi": null,
           "registrertDato": "2018-04-27"
         },
         {
           "kode": "BERBESKR",
-          "navn": "Beregningsgrunnlag beskrivelse",
+          "navn": "Begrunnelse fra beregning",
           "verdi": "Du hadde lav eller ingen inntekt de tre siste årene før arbeidsevnen din ble redusert. Derfor får du arbeidsavklaringspenger som er to ganger grunnbeløpet. Dette går frem av folketrygdloven §§ 11-19 og 11-20.\r\n\r\nGrunnbeløpet endres årlig, og du finner det oppdaterte beløpet på nav.no/grunnbelop.\n",
           "registrertDato": "2018-04-27"
         },
@@ -6688,13 +6688,13 @@
         },
         {
           "kode": "BERREGEL",
-          "navn": "Beregningsregel",
+          "navn": "Kode for beregningsregel",
           "verdi": "ORDINAER_MINSTEYTELSE",
           "registrertDato": "2018-04-27"
         },
         {
           "kode": "DAGS",
-          "navn": "DAGSATS",
+          "navn": "Dagsats",
           "verdi": "745",
           "registrertDato": "2018-04-27"
         },
@@ -6706,7 +6706,7 @@
         },
         {
           "kode": "DAGSMBFSAM",
-          "navn": "Dagsats m.b. før samordn.",
+          "navn": "Dagsats med barnetillegg før samordning",
           "verdi": "745",
           "registrertDato": "2018-04-27"
         },
@@ -6718,37 +6718,37 @@
         },
         {
           "kode": "ENDRPERAAP",
-          "navn": "Tellerjustering AAP",
+          "navn": "Tellerjustering AAP periode",
           "verdi": null,
           "registrertDato": "2018-04-27"
         },
         {
           "kode": "ENDRTILAAP",
-          "navn": "Tellerjust tilleggsperiode ord",
+          "navn": "Tellerjustering tilleggsperiode i ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2018-04-27"
         },
         {
           "kode": "ENDRTILUNN",
-          "navn": "Tellerjust tilleggsper unntak",
+          "navn": "Tellerjustering tilleggsperiode i AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2018-04-27"
         },
         {
           "kode": "ENDRUNNAAP",
-          "navn": "Tellerjustering unntak AAP",
+          "navn": "Tellerjustering unntaksperiode AAP",
           "verdi": null,
           "registrertDato": "2018-04-27"
         },
         {
           "kode": "ENDVARIGHT",
-          "navn": "Varighet endret",
+          "navn": "Varighet endret fra tidligere periode",
           "verdi": "N",
           "registrertDato": "2018-04-27"
         },
         {
           "kode": "FASTARBTFS",
-          "navn": "Fastsatt arbeidstid før samord",
+          "navn": "Fastsatt arbeidstid før samordning",
           "verdi": null,
           "registrertDato": "2018-04-27"
         },
@@ -6766,25 +6766,25 @@
         },
         {
           "kode": "GRUNN",
-          "navn": "Grunnlag for beregning",
+          "navn": "Grunnlag",
           "verdi": "293585",
           "registrertDato": "2018-04-27"
         },
         {
           "kode": "INNVF",
-          "navn": "VEDTAKSDATO",
+          "navn": "Vedtaksdato",
           "verdi": "27-04-2018",
           "registrertDato": "2018-04-27"
         },
         {
           "kode": "INSGRAD",
-          "navn": "Gradering institusjonsopphold",
+          "navn": "Gradering pga institusjonsopphold",
           "verdi": null,
           "registrertDato": "2018-04-27"
         },
         {
           "kode": "INSTOPP",
-          "navn": "Instutisjonsopphold",
+          "navn": "Institusjonsopphold",
           "verdi": "N",
           "registrertDato": "2018-04-27"
         },
@@ -6808,19 +6808,19 @@
         },
         {
           "kode": "INTNESTS",
-          "navn": "Inntekt nest siste år/periode",
+          "navn": "Inntekt nest siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2018-04-27"
         },
         {
           "kode": "INTSISTE",
-          "navn": "Inntekt siste år/periode",
+          "navn": "Inntekt siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2018-04-27"
         },
         {
           "kode": "INTTREDS",
-          "navn": "Inntekt tredj siste år/periode",
+          "navn": "Inntekt tredje siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2018-04-27"
         },
@@ -6844,7 +6844,7 @@
         },
         {
           "kode": "MAXAAP",
-          "navn": "Maks periodeteller AAP",
+          "navn": "Info om periode for AAP",
           "verdi": null,
           "registrertDato": "2018-04-27"
         },
@@ -6856,13 +6856,13 @@
         },
         {
           "kode": "MAXDATOUNT",
-          "navn": "Maksdato AAP-unntaksperiode",
+          "navn": "Maksdato AAP unntaksperiode",
           "verdi": null,
           "registrertDato": "2018-04-27"
         },
         {
           "kode": "MAXUNNTAAP",
-          "navn": "Max periodeteller unntak AAP",
+          "navn": "Info om unntaksperiode for AAP",
           "verdi": null,
           "registrertDato": "2018-04-27"
         },
@@ -6880,19 +6880,19 @@
         },
         {
           "kode": "OVERGTAT",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle AT 2009",
           "verdi": "N",
           "registrertDato": "2018-04-27"
         },
         {
           "kode": "OVERGTRP",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle RP 2009",
           "verdi": "N",
           "registrertDato": "2018-04-27"
         },
         {
           "kode": "OVERGTTU",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle TU 2009",
           "verdi": "N",
           "registrertDato": "2018-04-27"
         },
@@ -6904,31 +6904,31 @@
         },
         {
           "kode": "SAM",
-          "navn": "SAMORDNING",
+          "navn": "Samordning er utført",
           "verdi": "N",
           "registrertDato": "2018-04-27"
         },
         {
           "kode": "SAMKILDMAN",
-          "navn": "Samordningskilde manuell",
+          "navn": "Samordningskilde manuelt lagt inn",
           "verdi": null,
           "registrertDato": "2018-04-27"
         },
         {
           "kode": "SAMUKESAND",
-          "navn": "Sum samordning andre",
+          "navn": "Sum samordning manuelt reg fra andre",
           "verdi": null,
           "registrertDato": "2018-04-27"
         },
         {
           "kode": "SAMUKESRTV",
-          "navn": "Sum samordning RTV",
+          "navn": "Sum samordning manuelt reg folketrygdytelser/AFP",
           "verdi": null,
           "registrertDato": "2018-04-27"
         },
         {
           "kode": "STUDENTBES",
-          "navn": "Studentbestemmelsen",
+          "navn": "Vurdert studentbestemmelsen",
           "verdi": null,
           "registrertDato": "2018-04-27"
         },
@@ -6940,13 +6940,13 @@
         },
         {
           "kode": "TEKSTVAR",
-          "navn": "Brevtekstvariant",
+          "navn": "Brev-/vedtaksvariant",
           "verdi": "E_VERDI",
           "registrertDato": "2018-04-27"
         },
         {
           "kode": "TERSKMKBER",
-          "navn": "Terskelgrense Meldekortberegn",
+          "navn": "Terskelgrense Meldekortberegning",
           "verdi": "40",
           "registrertDato": "2018-04-27"
         },
@@ -6964,7 +6964,7 @@
         },
         {
           "kode": "UKES",
-          "navn": "UKESATS",
+          "navn": "Ukesats",
           "verdi": "3725",
           "registrertDato": "2018-04-27"
         },
@@ -6976,13 +6976,13 @@
         },
         {
           "kode": "UNNTAKAAP",
-          "navn": "Unntak maks stønadsperiode AA",
+          "navn": "Unntak fra maksimal stønadsperiode AAP",
           "verdi": "N",
           "registrertDato": "2018-04-27"
         },
         {
           "kode": "VEDTAKSEND",
-          "navn": "Vedtaksbrev er sendt",
+          "navn": "Utskrift/sendt",
           "verdi": "N",
           "registrertDato": "2018-04-27"
         },
@@ -7031,7 +7031,7 @@
         },
         {
           "kode": "AAPMANBER",
-          "navn": "AAP manuelt beregnet",
+          "navn": "Arbeidsavklaringspenger manuelt beregnet",
           "verdi": null,
           "registrertDato": "2019-11-29"
         },
@@ -7061,13 +7061,13 @@
         },
         {
           "kode": "ANTB",
-          "navn": "ANTALL BARN",
+          "navn": "Antall barn",
           "verdi": null,
           "registrertDato": "2019-11-29"
         },
         {
           "kode": "ARBPEOS",
-          "navn": "Arbeidsperiode fra EØS/Norden",
+          "navn": "Arbeidsperiode EØS/N i grunnlag",
           "verdi": "N",
           "registrertDato": "2019-11-29"
         },
@@ -7091,7 +7091,7 @@
         },
         {
           "kode": "AVSPTSANK",
-          "navn": "Tidligere sanksjon",
+          "navn": "Avspaser tidligere sanksjon",
           "verdi": null,
           "registrertDato": "2019-11-29"
         },
@@ -7127,25 +7127,25 @@
         },
         {
           "kode": "BEGRTILAAP",
-          "navn": "Tellerjust ord begrunn tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2019-11-29"
         },
         {
           "kode": "BEGRTILUNN",
-          "navn": "Tellerjust unntak begr tillegg",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2019-11-29"
         },
         {
           "kode": "BEGRUNNTAK",
-          "navn": "Tellerjustering unnt begr AAP",
+          "navn": "Tellerjustering unntak begrunnelse",
           "verdi": null,
           "registrertDato": "2019-11-29"
         },
         {
           "kode": "BERBESKR",
-          "navn": "Beregningsgrunnlag beskrivelse",
+          "navn": "Begrunnelse fra beregning",
           "verdi": "Du hadde lav eller ingen inntekt de tre siste årene før arbeidsevnen din ble redusert. Derfor får du arbeidsavklaringspenger som er to ganger grunnbeløpet. Dette går frem av folketrygdloven §§ 11-19 og 11-20.\r\n\r\nGrunnbeløpet endres årlig, og du finner det oppdaterte beløpet på nav.no/grunnbelop.\n",
           "registrertDato": "2019-11-29"
         },
@@ -7157,13 +7157,13 @@
         },
         {
           "kode": "BERREGEL",
-          "navn": "Beregningsregel",
+          "navn": "Kode for beregningsregel",
           "verdi": "ORDINAER_MINSTEYTELSE",
           "registrertDato": "2019-11-29"
         },
         {
           "kode": "DAGS",
-          "navn": "DAGSATS",
+          "navn": "Dagsats",
           "verdi": "768",
           "registrertDato": "2019-11-29"
         },
@@ -7175,7 +7175,7 @@
         },
         {
           "kode": "DAGSMBFSAM",
-          "navn": "Dagsats m.b. før samordn.",
+          "navn": "Dagsats med barnetillegg før samordning",
           "verdi": "768",
           "registrertDato": "2019-11-29"
         },
@@ -7187,37 +7187,37 @@
         },
         {
           "kode": "ENDRPERAAP",
-          "navn": "Tellerjustering AAP",
+          "navn": "Tellerjustering AAP periode",
           "verdi": null,
           "registrertDato": "2019-11-29"
         },
         {
           "kode": "ENDRTILAAP",
-          "navn": "Tellerjust tilleggsperiode ord",
+          "navn": "Tellerjustering tilleggsperiode i ordinær AAP-periode",
           "verdi": null,
           "registrertDato": "2019-11-29"
         },
         {
           "kode": "ENDRTILUNN",
-          "navn": "Tellerjust tilleggsper unntak",
+          "navn": "Tellerjustering tilleggsperiode i AAP-unntaksperiode",
           "verdi": null,
           "registrertDato": "2019-11-29"
         },
         {
           "kode": "ENDRUNNAAP",
-          "navn": "Tellerjustering unntak AAP",
+          "navn": "Tellerjustering unntaksperiode AAP",
           "verdi": null,
           "registrertDato": "2019-11-29"
         },
         {
           "kode": "ENDVARIGHT",
-          "navn": "Varighet endret",
+          "navn": "Varighet endret fra tidligere periode",
           "verdi": "N",
           "registrertDato": "2019-11-29"
         },
         {
           "kode": "FASTARBTFS",
-          "navn": "Fastsatt arbeidstid før samord",
+          "navn": "Fastsatt arbeidstid før samordning",
           "verdi": null,
           "registrertDato": "2019-11-29"
         },
@@ -7235,25 +7235,25 @@
         },
         {
           "kode": "GRUNN",
-          "navn": "Grunnlag for beregning",
+          "navn": "Grunnlag",
           "verdi": "302600",
           "registrertDato": "2019-11-29"
         },
         {
           "kode": "INNVF",
-          "navn": "VEDTAKSDATO",
+          "navn": "Vedtaksdato",
           "verdi": "29-11-2019",
           "registrertDato": "2019-11-29"
         },
         {
           "kode": "INSGRAD",
-          "navn": "Gradering institusjonsopphold",
+          "navn": "Gradering pga institusjonsopphold",
           "verdi": null,
           "registrertDato": "2019-11-29"
         },
         {
           "kode": "INSTOPP",
-          "navn": "Instutisjonsopphold",
+          "navn": "Institusjonsopphold",
           "verdi": "N",
           "registrertDato": "2019-11-29"
         },
@@ -7277,19 +7277,19 @@
         },
         {
           "kode": "INTNESTS",
-          "navn": "Inntekt nest siste år/periode",
+          "navn": "Inntekt nest siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2019-11-29"
         },
         {
           "kode": "INTSISTE",
-          "navn": "Inntekt siste år/periode",
+          "navn": "Inntekt siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2019-11-29"
         },
         {
           "kode": "INTTREDS",
-          "navn": "Inntekt tredj siste år/periode",
+          "navn": "Inntekt tredje siste beregningsår/periode",
           "verdi": "0",
           "registrertDato": "2019-11-29"
         },
@@ -7313,7 +7313,7 @@
         },
         {
           "kode": "MAXAAP",
-          "navn": "Maks periodeteller AAP",
+          "navn": "Info om periode for AAP",
           "verdi": null,
           "registrertDato": "2019-11-29"
         },
@@ -7325,13 +7325,13 @@
         },
         {
           "kode": "MAXDATOUNT",
-          "navn": "Maksdato AAP-unntaksperiode",
+          "navn": "Maksdato AAP unntaksperiode",
           "verdi": null,
           "registrertDato": "2019-11-29"
         },
         {
           "kode": "MAXUNNTAAP",
-          "navn": "Max periodeteller unntak AAP",
+          "navn": "Info om unntaksperiode for AAP",
           "verdi": null,
           "registrertDato": "2019-11-29"
         },
@@ -7349,19 +7349,19 @@
         },
         {
           "kode": "OVERGTAT",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle AT 2009",
           "verdi": "N",
           "registrertDato": "2019-11-29"
         },
         {
           "kode": "OVERGTRP",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle RP 2009",
           "verdi": "N",
           "registrertDato": "2019-11-29"
         },
         {
           "kode": "OVERGTTU",
-          "navn": "Overgangstilfelle",
+          "navn": "Overgangstilfelle TU 2009",
           "verdi": "N",
           "registrertDato": "2019-11-29"
         },
@@ -7373,31 +7373,31 @@
         },
         {
           "kode": "SAM",
-          "navn": "SAMORDNING",
+          "navn": "Samordning er utført",
           "verdi": "N",
           "registrertDato": "2019-11-29"
         },
         {
           "kode": "SAMKILDMAN",
-          "navn": "Samordningskilde manuell",
+          "navn": "Samordningskilde manuelt lagt inn",
           "verdi": null,
           "registrertDato": "2019-11-29"
         },
         {
           "kode": "SAMUKESAND",
-          "navn": "Sum samordning andre",
+          "navn": "Sum samordning manuelt reg fra andre",
           "verdi": null,
           "registrertDato": "2019-11-29"
         },
         {
           "kode": "SAMUKESRTV",
-          "navn": "Sum samordning RTV",
+          "navn": "Sum samordning manuelt reg folketrygdytelser/AFP",
           "verdi": null,
           "registrertDato": "2019-11-29"
         },
         {
           "kode": "STUDENTBES",
-          "navn": "Studentbestemmelsen",
+          "navn": "Vurdert studentbestemmelsen",
           "verdi": null,
           "registrertDato": "2019-11-29"
         },
@@ -7409,13 +7409,13 @@
         },
         {
           "kode": "TEKSTVAR",
-          "navn": "Brevtekstvariant",
+          "navn": "Brev-/vedtaksvariant",
           "verdi": "E_VERDI",
           "registrertDato": "2019-11-29"
         },
         {
           "kode": "TERSKMKBER",
-          "navn": "Terskelgrense Meldekortberegn",
+          "navn": "Terskelgrense Meldekortberegning",
           "verdi": "40",
           "registrertDato": "2019-11-29"
         },
@@ -7433,7 +7433,7 @@
         },
         {
           "kode": "UKES",
-          "navn": "UKESATS",
+          "navn": "Ukesats",
           "verdi": "3840",
           "registrertDato": "2019-11-29"
         },
@@ -7445,13 +7445,13 @@
         },
         {
           "kode": "UNNTAKAAP",
-          "navn": "Unntak maks stønadsperiode AA",
+          "navn": "Unntak fra maksimal stønadsperiode AAP",
           "verdi": "J",
           "registrertDato": "2019-11-29"
         },
         {
           "kode": "VEDTAKSEND",
-          "navn": "Vedtaksbrev er sendt",
+          "navn": "Utskrift/sendt",
           "verdi": "N",
           "registrertDato": "2019-11-29"
         },
@@ -7475,5 +7475,9 @@
         }
       ]
     }
-  ]
+  ],
+  "tellerverk": {
+    "ordineerAAPKvote": 4200,
+    "utvidetAAPKvote": 10460
+  }
 }
