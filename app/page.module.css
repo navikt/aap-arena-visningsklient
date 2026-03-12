@@ -3,3 +3,8 @@
   min-height: 100%;
   margin: 0 auto;
 }
+
+.content {
+  padding: var(--ax-space-32);
+  max-width: 1300px;
+}
