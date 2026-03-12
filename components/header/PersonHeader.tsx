@@ -12,6 +12,17 @@ type Props = {
 
 export function PersonHeader({ sak }: Props): React.ReactElement {
   const { fornavn, etternavn, fodselsnummer } = sak.person;
+  const ordineerAAPKvote = sak.tellerverk?.ordineerAAPKvote;
+  const utvidetAAPKvote = sak.tellerverk?.utvidetAAPKvote;
+
+  const telleverkTekst =
+    sak.tellerverk == null
+      ? '-'
+      : ordineerAAPKvote != null && ordineerAAPKvote > 0
+        ? `${ordineerAAPKvote} dager (Ordinær)`
+        : utvidetAAPKvote != null && utvidetAAPKvote > 0
+          ? `${utvidetAAPKvote} dager (Utvidet)`
+          : '0';
 
   return (
     <section className={styles.personheader}>
@@ -28,7 +39,7 @@ export function PersonHeader({ sak }: Props): React.ReactElement {
         <Spacer />
         <HeaderField label="Siste utbetaling" value="Ikke implementert" />
         <HeaderField label="Maksdato" value="Ikke implementert" />
-        <HeaderField label="Gjenstående" value="Ikke implementert" />
+        <HeaderField label="Gjenstående" value={telleverkTekst} />
         <Button variant="tertiary" size="small" iconPosition="left" icon={<ClockDashedIcon />}>
           Historikk
         </Button>
