@@ -3,7 +3,7 @@
 import styles from './sak.module.css';
 import { SakDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { PersonHeader } from 'components/header/PersonHeader';
-import { Tabs } from '@navikt/ds-react';
+import { InfoCard, Tabs } from '@navikt/ds-react';
 import { Sakogvedtakinfo } from 'components/sakogvedtakinfo/sakogvedtakinfo';
 import { Meldekortperioder } from 'components/meldekortperioder/meldekortperioder';
 
@@ -30,13 +30,31 @@ export function SakPageClient({ sak }: Props): React.ReactElement {
               </div>
             </Tabs.Panel>
             <Tabs.Panel value="tilkjent-ytelse">
-              <div className={styles.tabcontent}>
-                <Meldekortperioder />
-              </div>
+              <IkkeImplementertEnda />
+            </Tabs.Panel>
+            <Tabs.Panel value="spesialutbetaling">
+              <IkkeImplementertEnda />
+            </Tabs.Panel>
+            <Tabs.Panel value="notater">
+              <IkkeImplementertEnda />
             </Tabs.Panel>
           </Tabs>
         </div>
       </div>
     </>
+  );
+}
+
+function IkkeImplementertEnda(): React.ReactElement {
+  return (
+    <InfoCard data-color="warning">
+      <InfoCard.Header>
+        <InfoCard.Title>Ikke implementert enda</InfoCard.Title>
+      </InfoCard.Header>
+      <InfoCard.Content>
+        Denne informasjonen er ikke tilgjengelig fordi funksjonaliteten ikke er implementert helt enda. Denne
+        informasjonen er ikke tilgjengelig fordi funksjonaliteten ikke er implementert helt enda.
+      </InfoCard.Content>
+    </InfoCard>
   );
 }
