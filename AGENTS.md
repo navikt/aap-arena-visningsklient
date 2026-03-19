@@ -72,10 +72,7 @@ Avoid:
 - `app/`: Next.js server pages/routes. Do API/data fetching in server components and pass data down via props. Keep JSX/CSS here minimal, only for small page/layout-specific parts.
 - `components/`: Client components. Keep each component in its own folder. Put shared/reusable components in `components/felleskomponenter/`.
 - `lib/serverutlis/`: Server-only utilities (for example logger). Do not import these from client components. (Folder name is currently `serverutlis` in this repo.)
-- `lib/services/`: One service per subfolder. Services are server-side integrations to external systems.
-  - Read base URL/scope from environment variables.
-  - Return mock data when `mocksEnabled()` is `true`.
-  - Follow `lib/services/arenaoppslag/` as the reference pattern.
+- `lib/services/`: One service per subfolder. Services are server-side integrations to external systems. See `lib/services/AGENTS.md` for detailed conventions.
 - `lib/utils/`: General utilities usable by both server and client code. Add/update tests for shared logic here when relevant.
 
 ## Logging and errors
