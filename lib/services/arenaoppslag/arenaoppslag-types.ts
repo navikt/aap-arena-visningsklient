@@ -1,4 +1,4 @@
-type NIL = null | undefined;
+import { NIL } from 'lib/utils/types';
 
 export type ArenaVedtakfaktaDTO = {
   kode: string;

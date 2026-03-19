@@ -9,9 +9,9 @@
     "dev:dev-gcp": "dotenv -e .env.dev-gcp-extra -e .env.dev-gcp-obo-tokens -e .env.dev-gcp -- next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "oxlint app lib components && prettier --check app lib components",
+    "lint": "oxlint app lib components && oxfmt --check app lib components",
     "lint:fix": "oxlint --fix app lib components",
-    "run-prettier": "prettier --write ./app ./lib ./components",
+    "fmt": "oxfmt app lib components",
     "test": "vitest run"
   },
   "dependencies": {
@@ -30,8 +30,6 @@
     "winston-syslog": "2.7.1"
   },
   "devDependencies": {
-    "@navikt/aap-felles-prettier": "5.5.1",
-    "@trivago/prettier-plugin-sort-imports": "6.0.2",
     "@types/node": "25.2.3",
     "@types/react": "19.2.14",
     "@types/winston-syslog": "^2",
@@ -39,8 +37,8 @@
     "dotenv-cli": "8.0.0",
     "eslint": "10.0.0",
     "eslint-config-next": "16.1.6",
+    "oxfmt": "0.41.0",
     "oxlint": "1.50.0",
-    "prettier": "3.8.1",
     "typescript": "5.9.3",
     "vitest": "4.0.18"
   },
