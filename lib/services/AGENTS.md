@@ -67,10 +67,10 @@ export async function fetchThing(id: string): Promise<MyResponseDTO | null> {
 ## Rules for `{name}-types.ts`
 
 - Contains only TypeScript type and interface declarations — no runtime code.
-- Use a local `NIL` alias for nullable fields to keep types concise:
+- Import `NIL` from `lib/utils/types` for nullable fields instead of defining it locally:
 
 ```ts
-type NIL = null | undefined;
+import { NIL } from 'lib/utils/types';
 
 export type MyResponseDTO = {
   id: string;
@@ -80,7 +80,6 @@ export type MyResponseDTO = {
 ```
 
 - Suffix type names with `DTO` when they directly represent external API response shapes.
-- Do not import from service files or utils here — types only.
 
 ## Rules for `{name}-mock.ts`
 

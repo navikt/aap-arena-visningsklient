@@ -81,6 +81,13 @@ Avoid:
 - Log errors with contextual metadata, but never secrets or tokens.
 - Prefer structured logs over free-form string concatenation.
 
+## Comments
+
+- Write comments in Norwegian.
+- Strive to write code that does not need comments. Good naming is preferred over explanation.
+- Only add a comment when the code is genuinely hard to understand without it.
+- Comments must explain **why** the code does something, not **what** it does. The code itself shows what; the comment should explain the reason or intent that is not obvious from reading it.
+
 ## Testing expectations
 
 - Update/add Vitest tests for changed logic in `lib/utils` and other test-covered modules.
