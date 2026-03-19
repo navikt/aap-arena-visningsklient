@@ -18,7 +18,7 @@ If instructions conflict, follow the highest-priority source and explain trade-o
 - Styling: CSS Modules
 - Package manager: Yarn
 - Tests: Vitest
-- Linting/formatting: oxlint + Prettier
+- Linting/formatting: oxlint + oxfmt
 
 ## Repo goals for AI contributions
 
@@ -103,9 +103,11 @@ Use this when asking an AI agent to implement changes:
 
 ```md
 Task:
+
 - <what to change>
 
 Constraints:
+
 - Use Aksel components where possible.
 - If custom styles are needed, use CSS Modules and only Aksel CSS variables.
 - Avoid hardcoded design values.
@@ -113,7 +115,7 @@ Constraints:
 - Add/update tests.
 
 Validation:
+
 - Run lint + tests.
 - Explain what changed and why.
 ```
-
