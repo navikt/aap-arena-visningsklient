@@ -1,0 +1,20 @@
+{
+  "sakId": "13304506",
+  "opprettetAar": 2021,
+  "lopenr": 112540,
+  "person": {
+    "personId": 4784814,
+    "fodselsnummer": "17085820311",
+    "fornavn": "DYR HÅRSÅR",
+    "etternavn": "KRÅKE"
+  },
+  "statuskode": "AKTIV",
+  "statusnavn": "Aktiv",
+  "registrertDato": "2021-03-11T11:41:03",
+  "avsluttetDato": null,
+  "vedtak": [],
+  "tellerverk": {
+    "ordineerAAPKvote": 14480,
+    "utvidetAAPKvote": 10460
+  }
+}

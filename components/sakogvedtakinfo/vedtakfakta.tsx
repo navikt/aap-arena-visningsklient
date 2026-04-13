@@ -15,16 +15,18 @@ export function Vedtakfakta({ vedtakfakta }: Props): React.ReactElement {
       <Table size="small" zebraStripes>
         <Table.Header>
           <Table.Row>
+            <Table.HeaderCell scope="col">Kode</Table.HeaderCell>
             <Table.HeaderCell scope="col">Navn</Table.HeaderCell>
             <Table.HeaderCell scope="col">Verdi</Table.HeaderCell>
           </Table.Row>
         </Table.Header>
         <Table.Body>
-          {fakta.map(({ navn, verdi, kode }) => {
+          {vedtakfakta.map(({ navn, verdi, kode }) => {
             return (
               <Table.Row key={kode}>
+                <Table.HeaderCell scope="row">{kode}</Table.HeaderCell>
                 <Table.HeaderCell scope="row">{navn}</Table.HeaderCell>
-                <Table.DataCell>{verdi}</Table.DataCell>
+                <Table.DataCell>{verdi == null ? '----' : verdi}</Table.DataCell>
               </Table.Row>
             );
           })}
