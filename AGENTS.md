@@ -94,6 +94,19 @@ Avoid:
 - Keep tests deterministic and readable.
 - Include edge cases (null/undefined/empty values) when relevant.
 
+## Git workflow
+
+Before committing or pushing, always:
+
+1. Show the user a summary of the changes to be committed.
+2. Propose a commit message and wait for explicit approval before proceeding.
+3. Do not commit or push until the user has confirmed both the changes and the message.
+
+Before creating a pull request, always:
+
+1. Propose a PR title and description and present them to the user.
+2. Wait for explicit approval — including any requested edits — before creating it.
+
 ## Definition of done for AI PRs
 
 - Code builds and lint/tests pass locally or in CI.

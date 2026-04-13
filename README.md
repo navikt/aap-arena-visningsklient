@@ -25,9 +25,27 @@ Dette oppsettet forutsetter at du har følgende programvare installert:
    ```
    Husk å kjøre `source ~/.bashrc` eller `source ~/.zshrc` etterpå for å laste inn endringene, evt start terminal på nytt.
 
-### Prettier og linting
+### Linting og formattering
 
-Prosjektet bruker prettier og eslint. Skru gjerne på "Automatic configuration" for disse i din IDE.
+Prosjektet bruker oxlint og oxfmt. Skru gjerne på støtte for disse i din IDE.
+
+#### Autoformatering i IntelliJ med File Watchers
+
+For å kjøre oxfmt automatisk ved lagring, sett opp en File Watcher:
+
+1. Åpne **Settings → Tools → File Watchers** og klikk **+** for å legge til en ny.
+2. Fyll inn feltene:
+   - **Name:** `oxfmt`
+   - **File type:** `TypeScript` (legg til en watcher til for `TypeScript JSX` om ønskelig)
+   - **Scope:** `Current File`
+   - **Program:** `yarn`
+   - **Arguments:** `exec oxfmt "$FilePath$"`
+   - **Output paths to refresh:** `$FilePath$`
+   - **Working directory:** `$ProjectFileDir$`
+3. Huk av for **Auto-save edited files to trigger the watcher** og fjern haken for **Create output file from stdout**.
+4. Klikk **OK** og lagre innstillingene.
+
+oxfmt vil nå formatere filen automatisk hver gang du lagrer.
 
 
 ## Kjøre opp lokalt mot lokal backend
