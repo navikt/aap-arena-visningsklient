@@ -35,8 +35,6 @@
     "@types/winston-syslog": "^2",
     "babel-plugin-react-compiler": "1.0.0",
     "dotenv-cli": "11.0.0",
-    "eslint": "10.2.0",
-    "eslint-config-next": "16.2.3",
     "oxfmt": "0.44.0",
     "oxlint": "1.59.0",
     "typescript": "6.0.2",

@@ -25,9 +25,9 @@ Dette oppsettet forutsetter at du har følgende programvare installert:
    ```
    Husk å kjøre `source ~/.bashrc` eller `source ~/.zshrc` etterpå for å laste inn endringene, evt start terminal på nytt.
 
-### Prettier og linting
+### Linting og formattering
 
-Prosjektet bruker prettier og eslint. Skru gjerne på "Automatic configuration" for disse i din IDE.
+Prosjektet bruker oxlint og oxfmt. Skru gjerne på støtte for disse i din IDE.
 
 
 ## Kjøre opp lokalt mot lokal backend
