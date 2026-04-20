@@ -27,6 +27,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "KB4402",
+      "beslutter": "USH4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -697,6 +700,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "AHC4402",
+      "beslutter": "ER4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -1367,6 +1373,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "KHC4402",
+      "beslutter": "OSAK4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -2050,6 +2059,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "NB4402",
+      "beslutter": "AVA4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -2733,6 +2745,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "ADB4402",
+      "beslutter": "RR4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -3416,6 +3431,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "CMA4402",
+      "beslutter": "AFJ4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -4099,6 +4117,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "VWA4402",
+      "beslutter": "BWA4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -4782,6 +4803,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "MRAV4402",
+      "beslutter": "TSG4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -5465,6 +5489,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "EBO4402",
+      "beslutter": "XAAV4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -6148,6 +6175,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "GSC4402",
+      "beslutter": "CWA4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -6776,6 +6806,85 @@
       ]
     },
     {
+      "vedtakId": 36567083,
+      "lopenrvedtak": 1,
+      "statusKode": "IVERK",
+      "statusNavn": "Iverksatt",
+      "vedtaktypeKode": "O",
+      "vedtaktypeNavn": "Ny rettighet",
+      "aktivitetsfaseKode": "IKKE",
+      "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
+      "fraOgMed": "2015-02-24",
+      "tilDato": null,
+      "rettighetkode": "AA115",
+      "rettighetnavn": "§11-5 nedsatt arbeidsevne",
+      "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "1532",
+      "beslutter": "KN1532",
+      "fakta": [
+        {
+          "kode": "FDATO",
+          "navn": "Gjelder fra",
+          "verdi": "24-02-2015",
+          "registrertDato": "2015-02-19"
+        },
+        {
+          "kode": "INNVF",
+          "navn": "Vedtaksdato",
+          "verdi": "19-02-2015",
+          "registrertDato": "2015-02-19"
+        },
+        {
+          "kode": "TDATO",
+          "navn": "Gjelder til",
+          "verdi": null,
+          "registrertDato": "2015-02-19"
+        }
+      ],
+      "vilkårsvurderinger": [
+        {
+          "vilkårsvurderingId": 380415179,
+          "vilkårkode": "AA16-67AAR",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker er mellom 16 og 67 år",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 380415180,
+          "vilkårkode": "INNTNEDS",
+          "begrunnelse": null,
+          "vurdertAv": "1532",
+          "vilkårnavn": "Søkers evne til å utføre inntektsgivende arbeid er nedsatt",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 380415181,
+          "vilkårkode": "SYKSKADLYT",
+          "begrunnelse": null,
+          "vurdertAv": "1532",
+          "vilkårnavn": "Arbeidsevnen er nedsatt på grunn av sykdom, skade eller lyte",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        }
+      ]
+    },
+    {
       "vedtakId": 36567084,
       "lopenrvedtak": 2,
       "statusKode": "AVSLU",
@@ -6789,6 +6898,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "OSAV4402",
+      "beslutter": "KAL4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -7472,6 +7584,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "LIB4402",
+      "beslutter": "CFA4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -8155,6 +8270,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "CFA4402",
+      "beslutter": "RO4402B",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -8825,6 +8943,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "RFA4402",
+      "beslutter": "AT4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -9495,6 +9616,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "AH4402",
+      "beslutter": "CMA4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -10178,6 +10302,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "SM4402",
+      "beslutter": "NO4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -10844,82 +10971,6 @@
           "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-2+Forutg%C3%A5ende+medlemskap.232088.cms",
           "statuskode": "V",
           "statusnavn": "Ikke vurdert"
-        }
-      ]
-    },
-    {
-      "vedtakId": 36567083,
-      "lopenrvedtak": 1,
-      "statusKode": "IVERK",
-      "statusNavn": "Iverksatt",
-      "vedtaktypeKode": "O",
-      "vedtaktypeNavn": "Ny rettighet",
-      "aktivitetsfaseKode": "IKKE",
-      "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
-      "fraOgMed": "2015-02-24",
-      "tilDato": null,
-      "rettighetkode": "AA115",
-      "rettighetnavn": "§11-5 nedsatt arbeidsevne",
-      "utfallkode": "JA",
-      "fakta": [
-        {
-          "kode": "FDATO",
-          "navn": "Gjelder fra",
-          "verdi": "24-02-2015",
-          "registrertDato": "2015-02-19"
-        },
-        {
-          "kode": "INNVF",
-          "navn": "Vedtaksdato",
-          "verdi": "19-02-2015",
-          "registrertDato": "2015-02-19"
-        },
-        {
-          "kode": "TDATO",
-          "navn": "Gjelder til",
-          "verdi": null,
-          "registrertDato": "2015-02-19"
-        }
-      ],
-      "vilkårsvurderinger": [
-        {
-          "vilkårsvurderingId": 380415179,
-          "vilkårkode": "AA16-67AAR",
-          "begrunnelse": null,
-          "vurdertAv": null,
-          "vilkårnavn": "Søker er mellom 16 og 67 år",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "V",
-          "statusnavn": "Ikke vurdert"
-        },
-        {
-          "vilkårsvurderingId": 380415180,
-          "vilkårkode": "INNTNEDS",
-          "begrunnelse": null,
-          "vurdertAv": "1532",
-          "vilkårnavn": "Søkers evne til å utføre inntektsgivende arbeid er nedsatt",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
-        },
-        {
-          "vilkårsvurderingId": 380415181,
-          "vilkårkode": "SYKSKADLYT",
-          "begrunnelse": null,
-          "vurdertAv": "1532",
-          "vilkårnavn": "Arbeidsevnen er nedsatt på grunn av sykdom, skade eller lyte",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
         }
       ]
     }

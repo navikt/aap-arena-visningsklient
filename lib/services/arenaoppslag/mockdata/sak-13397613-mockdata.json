@@ -27,6 +27,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "KAB4402",
+      "beslutter": "JHH4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -703,6 +706,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "KHC4402",
+      "beslutter": "CEA4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -1337,6 +1343,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "SVS4402",
+      "beslutter": "KBL4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -2000,6 +2009,183 @@
       ]
     },
     {
+      "vedtakId": 36653677,
+      "lopenrvedtak": 13,
+      "statusKode": "IVERK",
+      "statusNavn": "Iverksatt",
+      "vedtaktypeKode": "O",
+      "vedtaktypeNavn": "Ny rettighet",
+      "aktivitetsfaseKode": "IKKE",
+      "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
+      "fraOgMed": "2019-08-30",
+      "tilDato": null,
+      "rettighetkode": "AAUNGUFOR",
+      "rettighetnavn": "Ung ufør",
+      "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "REA4402",
+      "beslutter": "KBL4402",
+      "fakta": [
+        {
+          "kode": "FDATO",
+          "navn": "Gjelder fra",
+          "verdi": "30-08-2019",
+          "registrertDato": "2020-04-20"
+        },
+        {
+          "kode": "INNVF",
+          "navn": "Vedtaksdato",
+          "verdi": "20-04-2020",
+          "registrertDato": "2020-04-20"
+        },
+        {
+          "kode": "TDATO",
+          "navn": "Gjelder til",
+          "verdi": null,
+          "registrertDato": "2020-04-20"
+        },
+        {
+          "kode": "VEDTAKSEND",
+          "navn": "Utskrift/sendt",
+          "verdi": "J",
+          "registrertDato": "2020-04-20"
+        }
+      ],
+      "vilkårsvurderinger": [
+        {
+          "vilkårsvurderingId": 381359017,
+          "vilkårkode": "AAFOR36",
+          "begrunnelse": null,
+          "vurdertAv": "REA4402",
+          "vilkårnavn": "Kravet er fremmet før fylte 36 år ved yrkesaktivitet i mer enn 50% stilling etter fylte 26 år",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 381359018,
+          "vilkårkode": "AANEDSSL",
+          "begrunnelse": null,
+          "vurdertAv": "REA4402",
+          "vilkårnavn": "Nedsatt arbeidsevne skyldes alvorlig og varig sykdom, skade eller lyte",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 381359019,
+          "vilkårkode": "AASSLDOK",
+          "begrunnelse": null,
+          "vurdertAv": "REA4402",
+          "vilkårnavn": "Sykdom, skade eller lyte er klart dokumentert",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 381359020,
+          "vilkårkode": "AAUNGNEDS",
+          "begrunnelse": null,
+          "vurdertAv": "REA4402",
+          "vilkårnavn": "Søker fikk nedsatt sin arbeidsevne før fylte 26 år",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        }
+      ]
+    },
+    {
+      "vedtakId": 36653620,
+      "lopenrvedtak": 1,
+      "statusKode": "IVERK",
+      "statusNavn": "Iverksatt",
+      "vedtaktypeKode": "O",
+      "vedtaktypeNavn": "Ny rettighet",
+      "aktivitetsfaseKode": "IKKE",
+      "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
+      "fraOgMed": "2016-03-11",
+      "tilDato": null,
+      "rettighetkode": "AA115",
+      "rettighetnavn": "§11-5 nedsatt arbeidsevne",
+      "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "HSK5303",
+      "beslutter": "GC5303",
+      "fakta": [
+        {
+          "kode": "FDATO",
+          "navn": "Gjelder fra",
+          "verdi": "11-03-2016",
+          "registrertDato": "2016-02-05"
+        },
+        {
+          "kode": "INNVF",
+          "navn": "Vedtaksdato",
+          "verdi": "05-02-2016",
+          "registrertDato": "2016-02-05"
+        },
+        {
+          "kode": "TDATO",
+          "navn": "Gjelder til",
+          "verdi": null,
+          "registrertDato": "2016-02-05"
+        }
+      ],
+      "vilkårsvurderinger": [
+        {
+          "vilkårsvurderingId": 381358326,
+          "vilkårkode": "INNTNEDS",
+          "begrunnelse": null,
+          "vurdertAv": "HSK5303",
+          "vilkårnavn": "Søkers evne til å utføre inntektsgivende arbeid er nedsatt",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 381358325,
+          "vilkårkode": "AA16-67AAR",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker er mellom 16 og 67 år",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 381358327,
+          "vilkårkode": "SYKSKADLYT",
+          "begrunnelse": null,
+          "vurdertAv": "HSK5303",
+          "vilkårnavn": "Arbeidsevnen er nedsatt på grunn av sykdom, skade eller lyte",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        }
+      ]
+    },
+    {
       "vedtakId": 36653621,
       "lopenrvedtak": 2,
       "statusKode": "AVSLU",
@@ -2013,6 +2199,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "JS4402",
+      "beslutter": "SVS4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -2702,6 +2891,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "VH4402",
+      "beslutter": "RR4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -3378,6 +3570,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "JI4402",
+      "beslutter": "ATB4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -4054,6 +4249,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "LO4402",
+      "beslutter": "ANA4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -4730,6 +4928,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "MRAO4402",
+      "beslutter": "JNA4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -5406,6 +5607,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "RO4402S",
+      "beslutter": "GRA4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -6082,6 +6286,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "RO4402B",
+      "beslutter": "KU4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -6758,6 +6965,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "NEI",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "DKA4402",
+      "beslutter": "KBA4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -7456,177 +7666,6 @@
           "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-2+Forutg%C3%A5ende+medlemskap.232088.cms",
           "statuskode": "V",
           "statusnavn": "Ikke vurdert"
-        }
-      ]
-    },
-    {
-      "vedtakId": 36653677,
-      "lopenrvedtak": 13,
-      "statusKode": "IVERK",
-      "statusNavn": "Iverksatt",
-      "vedtaktypeKode": "O",
-      "vedtaktypeNavn": "Ny rettighet",
-      "aktivitetsfaseKode": "IKKE",
-      "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
-      "fraOgMed": "2019-08-30",
-      "tilDato": null,
-      "rettighetkode": "AAUNGUFOR",
-      "rettighetnavn": "Ung ufør",
-      "utfallkode": "JA",
-      "fakta": [
-        {
-          "kode": "FDATO",
-          "navn": "Gjelder fra",
-          "verdi": "30-08-2019",
-          "registrertDato": "2020-04-20"
-        },
-        {
-          "kode": "INNVF",
-          "navn": "Vedtaksdato",
-          "verdi": "20-04-2020",
-          "registrertDato": "2020-04-20"
-        },
-        {
-          "kode": "TDATO",
-          "navn": "Gjelder til",
-          "verdi": null,
-          "registrertDato": "2020-04-20"
-        },
-        {
-          "kode": "VEDTAKSEND",
-          "navn": "Utskrift/sendt",
-          "verdi": "J",
-          "registrertDato": "2020-04-20"
-        }
-      ],
-      "vilkårsvurderinger": [
-        {
-          "vilkårsvurderingId": 381359017,
-          "vilkårkode": "AAFOR36",
-          "begrunnelse": null,
-          "vurdertAv": "REA4402",
-          "vilkårnavn": "Kravet er fremmet før fylte 36 år ved yrkesaktivitet i mer enn 50% stilling etter fylte 26 år",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "V",
-          "statusnavn": "Ikke vurdert"
-        },
-        {
-          "vilkårsvurderingId": 381359018,
-          "vilkårkode": "AANEDSSL",
-          "begrunnelse": null,
-          "vurdertAv": "REA4402",
-          "vilkårnavn": "Nedsatt arbeidsevne skyldes alvorlig og varig sykdom, skade eller lyte",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
-        },
-        {
-          "vilkårsvurderingId": 381359019,
-          "vilkårkode": "AASSLDOK",
-          "begrunnelse": null,
-          "vurdertAv": "REA4402",
-          "vilkårnavn": "Sykdom, skade eller lyte er klart dokumentert",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
-        },
-        {
-          "vilkårsvurderingId": 381359020,
-          "vilkårkode": "AAUNGNEDS",
-          "begrunnelse": null,
-          "vurdertAv": "REA4402",
-          "vilkårnavn": "Søker fikk nedsatt sin arbeidsevne før fylte 26 år",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
-        }
-      ]
-    },
-    {
-      "vedtakId": 36653620,
-      "lopenrvedtak": 1,
-      "statusKode": "IVERK",
-      "statusNavn": "Iverksatt",
-      "vedtaktypeKode": "O",
-      "vedtaktypeNavn": "Ny rettighet",
-      "aktivitetsfaseKode": "IKKE",
-      "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
-      "fraOgMed": "2016-03-11",
-      "tilDato": null,
-      "rettighetkode": "AA115",
-      "rettighetnavn": "§11-5 nedsatt arbeidsevne",
-      "utfallkode": "JA",
-      "fakta": [
-        {
-          "kode": "FDATO",
-          "navn": "Gjelder fra",
-          "verdi": "11-03-2016",
-          "registrertDato": "2016-02-05"
-        },
-        {
-          "kode": "INNVF",
-          "navn": "Vedtaksdato",
-          "verdi": "05-02-2016",
-          "registrertDato": "2016-02-05"
-        },
-        {
-          "kode": "TDATO",
-          "navn": "Gjelder til",
-          "verdi": null,
-          "registrertDato": "2016-02-05"
-        }
-      ],
-      "vilkårsvurderinger": [
-        {
-          "vilkårsvurderingId": 381358326,
-          "vilkårkode": "INNTNEDS",
-          "begrunnelse": null,
-          "vurdertAv": "HSK5303",
-          "vilkårnavn": "Søkers evne til å utføre inntektsgivende arbeid er nedsatt",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
-        },
-        {
-          "vilkårsvurderingId": 381358325,
-          "vilkårkode": "AA16-67AAR",
-          "begrunnelse": null,
-          "vurdertAv": null,
-          "vilkårnavn": "Søker er mellom 16 og 67 år",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "V",
-          "statusnavn": "Ikke vurdert"
-        },
-        {
-          "vilkårsvurderingId": 381358327,
-          "vilkårkode": "SYKSKADLYT",
-          "begrunnelse": null,
-          "vurdertAv": "HSK5303",
-          "vilkårnavn": "Arbeidsevnen er nedsatt på grunn av sykdom, skade eller lyte",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
         }
       ]
     }

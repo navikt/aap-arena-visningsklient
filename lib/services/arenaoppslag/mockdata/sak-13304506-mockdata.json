@@ -27,6 +27,9 @@
       "rettighetkode": "KLAG1",
       "rettighetnavn": "Klage underinstans",
       "utfallkode": "NEI",
+      "begrunnelse": null,
+      "saksbehandler": "AHF4405S",
+      "beslutter": "AHF4405B",
       "fakta": [
         {
           "kode": "BESLUTTER",
@@ -335,6 +338,9 @@
       "rettighetkode": "KLAG2",
       "rettighetnavn": "Klage klageinstans",
       "utfallkode": null,
+      "begrunnelse": null,
+      "saksbehandler": "4260",
+      "beslutter": null,
       "fakta": [
         {
           "kode": "BESLUTTER",

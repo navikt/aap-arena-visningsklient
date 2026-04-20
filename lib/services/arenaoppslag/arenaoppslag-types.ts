@@ -17,7 +17,7 @@ export type VilkårsvurderingDTO = {
   hjelpetekstUrl: string | NIL;
   lovtekstUrl: string | NIL;
   rundskrivUrl: string | NIL;
-  statuskode: string;
+  statuskode: 'J' | 'N' | 'V';
   statusnavn: string;
 };
 
@@ -34,6 +34,9 @@ export type ArenaVedtakMedFaktaDTO = {
   tilDato: string | NIL;
   rettighetkode: string;
   rettighetnavn: string;
+  begrunnelse: string | NIL;
+  saksbehandler: string | NIL;
+  beslutter: string | NIL;
   utfallkode: string | NIL;
   fakta: ArenaVedtakfaktaDTO[];
   vilkårsvurderinger: VilkårsvurderingDTO[];

@@ -27,6 +27,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Arbeidsavklaringspenger er stanset da til-dato for vedtaket er passert.",
+      "saksbehandler": "GRENSESN",
+      "beslutter": "GRENSESN",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -655,6 +658,271 @@
       ]
     },
     {
+      "vedtakId": 37054538,
+      "lopenrvedtak": 3,
+      "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
+      "vedtaktypeKode": "O",
+      "vedtaktypeNavn": "Ny rettighet",
+      "aktivitetsfaseKode": "AU",
+      "aktivitetsfaseNavn": "Arbeidsutprøving",
+      "fraOgMed": "2024-09-01",
+      "tilDato": "2024-10-01",
+      "rettighetkode": "ADAGR",
+      "rettighetnavn": "Daglige reiseutgifter ",
+      "utfallkode": "AVBRUTT",
+      "begrunnelse": "ok",
+      "saksbehandler": "BBU2930",
+      "beslutter": null,
+      "fakta": [
+        {
+          "kode": "EKSTID",
+          "navn": "Id til alternativ betalingsmottaker",
+          "verdi": null,
+          "registrertDato": "2024-09-11"
+        },
+        {
+          "kode": "FDATO",
+          "navn": "Gjelder fra",
+          "verdi": "01-09-2024",
+          "registrertDato": "2024-09-11"
+        },
+        {
+          "kode": "INNVF",
+          "navn": "Vedtaksdato",
+          "verdi": null,
+          "registrertDato": "2024-09-11"
+        },
+        {
+          "kode": "KODETILTAK",
+          "navn": "Kode til relatert tiltak",
+          "verdi": null,
+          "registrertDato": "2024-09-11"
+        },
+        {
+          "kode": "MNDSATS",
+          "navn": "Månedssats",
+          "verdi": null,
+          "registrertDato": "2024-09-11"
+        },
+        {
+          "kode": "OPPRTDATO",
+          "navn": "Opprinnelig til-dato",
+          "verdi": "01-10-2024",
+          "registrertDato": "2024-09-11"
+        },
+        {
+          "kode": "TDATO",
+          "navn": "Gjelder til",
+          "verdi": "01-10-2024",
+          "registrertDato": "2024-09-11"
+        },
+        {
+          "kode": "TILTAKNAVN",
+          "navn": "Knyttet til tiltak",
+          "verdi": null,
+          "registrertDato": "2024-09-11"
+        }
+      ],
+      "vilkårsvurderinger": [
+        {
+          "vilkårsvurderingId": 386097979,
+          "vilkårkode": "A11-5",
+          "begrunnelse": null,
+          "vurdertAv": "Arena",
+          "vilkårnavn": "Godkjent vedtak om nedsatt arbeidsevne foreligger",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-4#L19970228-19_P11-5",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-5+Nedsatt+arbeidsevne.232189.cms",
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 386097980,
+          "vilkårkode": "A11-5",
+          "begrunnelse": null,
+          "vurdertAv": "Arena",
+          "vilkårnavn": "Godkjent vedtak om nedsatt arbeidsevne foreligger",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-4#L19970228-19_P11-5",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-5+Nedsatt+arbeidsevne.232189.cms",
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 386097981,
+          "vilkårkode": "AA16-67AAR",
+          "begrunnelse": null,
+          "vurdertAv": "Arena",
+          "vilkårnavn": "Søker er mellom 16 og 67 år",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 386097982,
+          "vilkårkode": "AA16-67AAR",
+          "begrunnelse": null,
+          "vurdertAv": "Arena",
+          "vilkårnavn": "Søker er mellom 16 og 67 år",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 386097983,
+          "vilkårkode": "AAKTLPLAN",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Godkjent aktivitetsplan foreligger",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386097984,
+          "vilkårkode": "AANNENLOV",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har ikke rett til ytelser etter annen lovgivning",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386097985,
+          "vilkårkode": "AIKTLONSYK",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Ordinær lønn i tiltak eller mottar sykepenger",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386097986,
+          "vilkårkode": "ANODVUTG",
+          "begrunnelse": null,
+          "vurdertAv": "BBU2930",
+          "vilkårnavn": "Nødvendige utgifter til reise pga tiltak eller utredning",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 386097987,
+          "vilkårkode": "AOINORGE",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har opphold i Norge eller fyller vilkårene for unntak",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-3",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-3+Opphold+i+Norge.232089.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386097988,
+          "vilkårkode": "AOINORGE",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har opphold i Norge eller fyller vilkårene for unntak",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-3",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-3+Opphold+i+Norge.232089.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386097989,
+          "vilkårkode": "ASMIDVANLI",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker kan midlertidig ikke reise på vanlig måte",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386097990,
+          "vilkårkode": "ASNODVRUTG",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker kan bruke rutegående transportmiddel",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386097991,
+          "vilkårkode": "ASRETTPAAP",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har rett på arbeidsavklaringspenger",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386097992,
+          "vilkårkode": "MEDLSKAP1",
+          "begrunnelse": null,
+          "vurdertAv": "Arena",
+          "vilkårnavn": "Søker fyller vilkåret om forutgående medlemskap eller vilkår for unntak.",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-2",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-2+Forutg%C3%A5ende+medlemskap.232088.cms",
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 386097993,
+          "vilkårkode": "MEDLSKAP1",
+          "begrunnelse": null,
+          "vurdertAv": "Arena",
+          "vilkårnavn": "Søker fyller vilkåret om forutgående medlemskap eller vilkår for unntak.",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-2",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-2+Forutg%C3%A5ende+medlemskap.232088.cms",
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        }
+      ]
+    },
+    {
       "vedtakId": 37054539,
       "lopenrvedtak": 4,
       "statusKode": "AVSLU",
@@ -668,6 +936,9 @@
       "rettighetkode": "AUNDM",
       "rettighetnavn": "Bøker og undervisningsmatriell",
       "utfallkode": "AVBRUTT",
+      "begrunnelse": "test",
+      "saksbehandler": "BBU2930",
+      "beslutter": null,
       "fakta": [
         {
           "kode": "ANTALL",
@@ -903,6 +1174,9 @@
       "rettighetkode": "ATIO",
       "rettighetnavn": "Tilsyn - barn over 10 år",
       "utfallkode": "AVBRUTT",
+      "begrunnelse": "test",
+      "saksbehandler": "BBU2930",
+      "beslutter": null,
       "fakta": [
         {
           "kode": "ANTBHOY",
@@ -1144,6 +1418,189 @@
       ]
     },
     {
+      "vedtakId": 37054123,
+      "lopenrvedtak": 1,
+      "statusKode": "IVERK",
+      "statusNavn": "Iverksatt",
+      "vedtaktypeKode": "O",
+      "vedtaktypeNavn": "Ny rettighet",
+      "aktivitetsfaseKode": "IKKE",
+      "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
+      "fraOgMed": "2024-09-01",
+      "tilDato": null,
+      "rettighetkode": "AA115",
+      "rettighetnavn": "§11-5 nedsatt arbeidsevne",
+      "utfallkode": "JA",
+      "begrunnelse": "Dolly legger til grunn at du er arbeidsufør på grunn av sykdom.",
+      "saksbehandler": "HAK0315",
+      "beslutter": "FTZ0315",
+      "fakta": [
+        {
+          "kode": "FDATO",
+          "navn": "Gjelder fra",
+          "verdi": "01-09-2024",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "INNVF",
+          "navn": "Vedtaksdato",
+          "verdi": "05-09-2024",
+          "registrertDato": "2024-09-05"
+        },
+        {
+          "kode": "TDATO",
+          "navn": "Gjelder til",
+          "verdi": null,
+          "registrertDato": "2024-09-05"
+        }
+      ],
+      "vilkårsvurderinger": [
+        {
+          "vilkårsvurderingId": 386093848,
+          "vilkårkode": "18-67AAR",
+          "begrunnelse": null,
+          "vurdertAv": "HAK0315",
+          "vilkårnavn": "Søker er mellom 18 og 67 år",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-4#L19970228-19_P11-4",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-4++Alder.232187.cms",
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 386093849,
+          "vilkårkode": "AAARBEVNE",
+          "begrunnelse": null,
+          "vurdertAv": "HAK0315",
+          "vilkårnavn": "Søker har tapt minst halvparten av arbeidsevnen",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 386093850,
+          "vilkårkode": "AAMOTTSAMT",
+          "begrunnelse": null,
+          "vurdertAv": "HAK0315",
+          "vilkårnavn": "Søker har møtt til samtale",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 386093851,
+          "vilkårkode": "AANAAVJOBB",
+          "begrunnelse": null,
+          "vurdertAv": "HAK0315",
+          "vilkårnavn": "Søker har ikke mulighet til å fortsette i nåværende jobb",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 386093852,
+          "vilkårkode": "AANODVDOKU",
+          "begrunnelse": null,
+          "vurdertAv": "HAK0315",
+          "vilkårnavn": "Søker har sendt inn nødvendig dokumentasjon",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 386093853,
+          "vilkårkode": "AANORSKFER",
+          "begrunnelse": null,
+          "vurdertAv": "HAK0315",
+          "vilkårnavn": "Manglende norskferdigheter er ikke årsak til at søker ikke får jobb",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 386093854,
+          "vilkårkode": "AASNARARBG",
+          "begrunnelse": null,
+          "vurdertAv": "HAK0315",
+          "vilkårnavn": "Søker kan ikke snart begynne å arbeide igjen hos arbeidsgiveren",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 386093855,
+          "vilkårkode": "AASNARTARB",
+          "begrunnelse": null,
+          "vurdertAv": "HAK0315",
+          "vilkårnavn": "Søker kan ikke snart begynne å arbeide igjen",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 386093856,
+          "vilkårkode": "AATYPEJOBB",
+          "begrunnelse": null,
+          "vurdertAv": "HAK0315",
+          "vilkårnavn": "Søker kan ikke klare en annen type jobb",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 386093857,
+          "vilkårkode": "INNTNEDS",
+          "begrunnelse": null,
+          "vurdertAv": "HAK0315",
+          "vilkårnavn": "Søkers evne til å utføre inntektsgivende arbeid er nedsatt",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 386093858,
+          "vilkårkode": "SYKSKADLYT",
+          "begrunnelse": null,
+          "vurdertAv": "HAK0315",
+          "vilkårnavn": "Arbeidsevnen er nedsatt på grunn av sykdom, skade eller lyte",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        }
+      ]
+    },
+    {
       "vedtakId": 37054125,
       "lopenrvedtak": 2,
       "statusKode": "AVSLU",
@@ -1157,6 +1614,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Test",
+      "saksbehandler": "JSZ0219",
+      "beslutter": "BBU2930",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -1877,448 +2337,6 @@
           "hjelpetekstUrl": null,
           "lovtekstUrl": null,
           "rundskrivUrl": null,
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
-        }
-      ]
-    },
-    {
-      "vedtakId": 37054123,
-      "lopenrvedtak": 1,
-      "statusKode": "IVERK",
-      "statusNavn": "Iverksatt",
-      "vedtaktypeKode": "O",
-      "vedtaktypeNavn": "Ny rettighet",
-      "aktivitetsfaseKode": "IKKE",
-      "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
-      "fraOgMed": "2024-09-01",
-      "tilDato": null,
-      "rettighetkode": "AA115",
-      "rettighetnavn": "§11-5 nedsatt arbeidsevne",
-      "utfallkode": "JA",
-      "fakta": [
-        {
-          "kode": "FDATO",
-          "navn": "Gjelder fra",
-          "verdi": "01-09-2024",
-          "registrertDato": "2024-09-05"
-        },
-        {
-          "kode": "INNVF",
-          "navn": "Vedtaksdato",
-          "verdi": "05-09-2024",
-          "registrertDato": "2024-09-05"
-        },
-        {
-          "kode": "TDATO",
-          "navn": "Gjelder til",
-          "verdi": null,
-          "registrertDato": "2024-09-05"
-        }
-      ],
-      "vilkårsvurderinger": [
-        {
-          "vilkårsvurderingId": 386093848,
-          "vilkårkode": "18-67AAR",
-          "begrunnelse": null,
-          "vurdertAv": "HAK0315",
-          "vilkårnavn": "Søker er mellom 18 og 67 år",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-4#L19970228-19_P11-4",
-          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-4++Alder.232187.cms",
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
-        },
-        {
-          "vilkårsvurderingId": 386093849,
-          "vilkårkode": "AAARBEVNE",
-          "begrunnelse": null,
-          "vurdertAv": "HAK0315",
-          "vilkårnavn": "Søker har tapt minst halvparten av arbeidsevnen",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
-        },
-        {
-          "vilkårsvurderingId": 386093850,
-          "vilkårkode": "AAMOTTSAMT",
-          "begrunnelse": null,
-          "vurdertAv": "HAK0315",
-          "vilkårnavn": "Søker har møtt til samtale",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
-        },
-        {
-          "vilkårsvurderingId": 386093851,
-          "vilkårkode": "AANAAVJOBB",
-          "begrunnelse": null,
-          "vurdertAv": "HAK0315",
-          "vilkårnavn": "Søker har ikke mulighet til å fortsette i nåværende jobb",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
-        },
-        {
-          "vilkårsvurderingId": 386093852,
-          "vilkårkode": "AANODVDOKU",
-          "begrunnelse": null,
-          "vurdertAv": "HAK0315",
-          "vilkårnavn": "Søker har sendt inn nødvendig dokumentasjon",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
-        },
-        {
-          "vilkårsvurderingId": 386093853,
-          "vilkårkode": "AANORSKFER",
-          "begrunnelse": null,
-          "vurdertAv": "HAK0315",
-          "vilkårnavn": "Manglende norskferdigheter er ikke årsak til at søker ikke får jobb",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
-        },
-        {
-          "vilkårsvurderingId": 386093854,
-          "vilkårkode": "AASNARARBG",
-          "begrunnelse": null,
-          "vurdertAv": "HAK0315",
-          "vilkårnavn": "Søker kan ikke snart begynne å arbeide igjen hos arbeidsgiveren",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
-        },
-        {
-          "vilkårsvurderingId": 386093855,
-          "vilkårkode": "AASNARTARB",
-          "begrunnelse": null,
-          "vurdertAv": "HAK0315",
-          "vilkårnavn": "Søker kan ikke snart begynne å arbeide igjen",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
-        },
-        {
-          "vilkårsvurderingId": 386093856,
-          "vilkårkode": "AATYPEJOBB",
-          "begrunnelse": null,
-          "vurdertAv": "HAK0315",
-          "vilkårnavn": "Søker kan ikke klare en annen type jobb",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
-        },
-        {
-          "vilkårsvurderingId": 386093857,
-          "vilkårkode": "INNTNEDS",
-          "begrunnelse": null,
-          "vurdertAv": "HAK0315",
-          "vilkårnavn": "Søkers evne til å utføre inntektsgivende arbeid er nedsatt",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
-        },
-        {
-          "vilkårsvurderingId": 386093858,
-          "vilkårkode": "SYKSKADLYT",
-          "begrunnelse": null,
-          "vurdertAv": "HAK0315",
-          "vilkårnavn": "Arbeidsevnen er nedsatt på grunn av sykdom, skade eller lyte",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
-        }
-      ]
-    },
-    {
-      "vedtakId": 37054538,
-      "lopenrvedtak": 3,
-      "statusKode": "AVSLU",
-      "statusNavn": "Avsluttet",
-      "vedtaktypeKode": "O",
-      "vedtaktypeNavn": "Ny rettighet",
-      "aktivitetsfaseKode": "AU",
-      "aktivitetsfaseNavn": "Arbeidsutprøving",
-      "fraOgMed": "2024-09-01",
-      "tilDato": "2024-10-01",
-      "rettighetkode": "ADAGR",
-      "rettighetnavn": "Daglige reiseutgifter ",
-      "utfallkode": "AVBRUTT",
-      "fakta": [
-        {
-          "kode": "EKSTID",
-          "navn": "Id til alternativ betalingsmottaker",
-          "verdi": null,
-          "registrertDato": "2024-09-11"
-        },
-        {
-          "kode": "FDATO",
-          "navn": "Gjelder fra",
-          "verdi": "01-09-2024",
-          "registrertDato": "2024-09-11"
-        },
-        {
-          "kode": "INNVF",
-          "navn": "Vedtaksdato",
-          "verdi": null,
-          "registrertDato": "2024-09-11"
-        },
-        {
-          "kode": "KODETILTAK",
-          "navn": "Kode til relatert tiltak",
-          "verdi": null,
-          "registrertDato": "2024-09-11"
-        },
-        {
-          "kode": "MNDSATS",
-          "navn": "Månedssats",
-          "verdi": null,
-          "registrertDato": "2024-09-11"
-        },
-        {
-          "kode": "OPPRTDATO",
-          "navn": "Opprinnelig til-dato",
-          "verdi": "01-10-2024",
-          "registrertDato": "2024-09-11"
-        },
-        {
-          "kode": "TDATO",
-          "navn": "Gjelder til",
-          "verdi": "01-10-2024",
-          "registrertDato": "2024-09-11"
-        },
-        {
-          "kode": "TILTAKNAVN",
-          "navn": "Knyttet til tiltak",
-          "verdi": null,
-          "registrertDato": "2024-09-11"
-        }
-      ],
-      "vilkårsvurderinger": [
-        {
-          "vilkårsvurderingId": 386097979,
-          "vilkårkode": "A11-5",
-          "begrunnelse": null,
-          "vurdertAv": "Arena",
-          "vilkårnavn": "Godkjent vedtak om nedsatt arbeidsevne foreligger",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-4#L19970228-19_P11-5",
-          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-5+Nedsatt+arbeidsevne.232189.cms",
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
-        },
-        {
-          "vilkårsvurderingId": 386097980,
-          "vilkårkode": "A11-5",
-          "begrunnelse": null,
-          "vurdertAv": "Arena",
-          "vilkårnavn": "Godkjent vedtak om nedsatt arbeidsevne foreligger",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-4#L19970228-19_P11-5",
-          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-5+Nedsatt+arbeidsevne.232189.cms",
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
-        },
-        {
-          "vilkårsvurderingId": 386097981,
-          "vilkårkode": "AA16-67AAR",
-          "begrunnelse": null,
-          "vurdertAv": "Arena",
-          "vilkårnavn": "Søker er mellom 16 og 67 år",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
-        },
-        {
-          "vilkårsvurderingId": 386097982,
-          "vilkårkode": "AA16-67AAR",
-          "begrunnelse": null,
-          "vurdertAv": "Arena",
-          "vilkårnavn": "Søker er mellom 16 og 67 år",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
-        },
-        {
-          "vilkårsvurderingId": 386097983,
-          "vilkårkode": "AAKTLPLAN",
-          "begrunnelse": null,
-          "vurdertAv": null,
-          "vilkårnavn": "Godkjent aktivitetsplan foreligger",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "V",
-          "statusnavn": "Ikke vurdert"
-        },
-        {
-          "vilkårsvurderingId": 386097984,
-          "vilkårkode": "AANNENLOV",
-          "begrunnelse": null,
-          "vurdertAv": null,
-          "vilkårnavn": "Søker har ikke rett til ytelser etter annen lovgivning",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "V",
-          "statusnavn": "Ikke vurdert"
-        },
-        {
-          "vilkårsvurderingId": 386097985,
-          "vilkårkode": "AIKTLONSYK",
-          "begrunnelse": null,
-          "vurdertAv": null,
-          "vilkårnavn": "Ordinær lønn i tiltak eller mottar sykepenger",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "V",
-          "statusnavn": "Ikke vurdert"
-        },
-        {
-          "vilkårsvurderingId": 386097986,
-          "vilkårkode": "ANODVUTG",
-          "begrunnelse": null,
-          "vurdertAv": "BBU2930",
-          "vilkårnavn": "Nødvendige utgifter til reise pga tiltak eller utredning",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
-        },
-        {
-          "vilkårsvurderingId": 386097987,
-          "vilkårkode": "AOINORGE",
-          "begrunnelse": null,
-          "vurdertAv": null,
-          "vilkårnavn": "Søker har opphold i Norge eller fyller vilkårene for unntak",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-3",
-          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-3+Opphold+i+Norge.232089.cms",
-          "statuskode": "V",
-          "statusnavn": "Ikke vurdert"
-        },
-        {
-          "vilkårsvurderingId": 386097988,
-          "vilkårkode": "AOINORGE",
-          "begrunnelse": null,
-          "vurdertAv": null,
-          "vilkårnavn": "Søker har opphold i Norge eller fyller vilkårene for unntak",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-3",
-          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-3+Opphold+i+Norge.232089.cms",
-          "statuskode": "V",
-          "statusnavn": "Ikke vurdert"
-        },
-        {
-          "vilkårsvurderingId": 386097989,
-          "vilkårkode": "ASMIDVANLI",
-          "begrunnelse": null,
-          "vurdertAv": null,
-          "vilkårnavn": "Søker kan midlertidig ikke reise på vanlig måte",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "V",
-          "statusnavn": "Ikke vurdert"
-        },
-        {
-          "vilkårsvurderingId": 386097990,
-          "vilkårkode": "ASNODVRUTG",
-          "begrunnelse": null,
-          "vurdertAv": null,
-          "vilkårnavn": "Søker kan bruke rutegående transportmiddel",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "V",
-          "statusnavn": "Ikke vurdert"
-        },
-        {
-          "vilkårsvurderingId": 386097991,
-          "vilkårkode": "ASRETTPAAP",
-          "begrunnelse": null,
-          "vurdertAv": null,
-          "vilkårnavn": "Søker har rett på arbeidsavklaringspenger",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "V",
-          "statusnavn": "Ikke vurdert"
-        },
-        {
-          "vilkårsvurderingId": 386097992,
-          "vilkårkode": "MEDLSKAP1",
-          "begrunnelse": null,
-          "vurdertAv": "Arena",
-          "vilkårnavn": "Søker fyller vilkåret om forutgående medlemskap eller vilkår for unntak.",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-2",
-          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-2+Forutg%C3%A5ende+medlemskap.232088.cms",
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
-        },
-        {
-          "vilkårsvurderingId": 386097993,
-          "vilkårkode": "MEDLSKAP1",
-          "begrunnelse": null,
-          "vurdertAv": "Arena",
-          "vilkårnavn": "Søker fyller vilkåret om forutgående medlemskap eller vilkår for unntak.",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-2",
-          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-2+Forutg%C3%A5ende+medlemskap.232088.cms",
           "statuskode": "J",
           "statusnavn": "Oppfylt"
         }

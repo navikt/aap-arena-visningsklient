@@ -4,7 +4,7 @@ import styles from './sakogvedtak.module.css';
 import { ArenaVedtakMedFaktaDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { BodyShort, Heading, HStack, Table } from '@navikt/ds-react';
 import { format } from 'date-fns';
-import { Vedtakfakta } from 'components/sakogvedtakinfo/vedtakfakta';
+import { Vedtakdetaljer } from 'components/sakogvedtakinfo/vedtakdetaljer/vedtakdetaljer';
 import { CheckmarkCircleIcon } from '@navikt/aksel-icons';
 import { XMarkOctagonIcon } from '@navikt/aksel-icons';
 
@@ -27,7 +27,7 @@ export function VedtakTabell({ vedtak }: Props): React.ReactElement {
   return (
     <div>
       <Heading size="small">Vedtak på saken ({vedtak.length})</Heading>
-      <Table zebraStripes>
+      <Table>
         <Table.Header>
           <Table.Row>
             <Table.HeaderCell scope="col">Nr.</Table.HeaderCell>
@@ -42,8 +42,8 @@ export function VedtakTabell({ vedtak }: Props): React.ReactElement {
           </Table.Row>
         </Table.Header>
         <Table.Body>
-          {sortedVedtak.map(
-            ({
+          {sortedVedtak.map((vedtak) => {
+            const {
               rettighetnavn,
               vedtaktypeNavn,
               lopenrvedtak,
@@ -53,28 +53,22 @@ export function VedtakTabell({ vedtak }: Props): React.ReactElement {
               statusNavn,
               utfallkode,
               vedtakId,
-              fakta,
-            }) => {
-              return (
-                <Table.ExpandableRow
-                  key={vedtakId}
-                  togglePlacement="right"
-                  content={<Vedtakfakta vedtakfakta={fakta} />}
-                >
-                  <Table.DataCell>{lopenrvedtak}</Table.DataCell>
-                  <Table.HeaderCell scope="row">{rettighetnavn}</Table.HeaderCell>
-                  <Table.DataCell>{vedtaktypeNavn}</Table.DataCell>
-                  <Table.DataCell>{aktivitetsfaseNavn}</Table.DataCell>
-                  <Table.DataCell>{dateOrBlank(fraOgMed)}</Table.DataCell>
-                  <Table.DataCell>{dateOrBlank(tilDato)}</Table.DataCell>
-                  <Table.DataCell>{statusNavn}</Table.DataCell>
-                  <Table.DataCell>
-                    <JaNeiStatus status={utfallkode} />
-                  </Table.DataCell>
-                </Table.ExpandableRow>
-              );
-            }
-          )}
+            } = vedtak;
+            return (
+              <Table.ExpandableRow key={vedtakId} togglePlacement="right" content={<Vedtakdetaljer vedtak={vedtak} />}>
+                <Table.DataCell>{lopenrvedtak}</Table.DataCell>
+                <Table.HeaderCell scope="row">{rettighetnavn}</Table.HeaderCell>
+                <Table.DataCell>{vedtaktypeNavn}</Table.DataCell>
+                <Table.DataCell>{aktivitetsfaseNavn}</Table.DataCell>
+                <Table.DataCell>{dateOrBlank(fraOgMed)}</Table.DataCell>
+                <Table.DataCell>{dateOrBlank(tilDato)}</Table.DataCell>
+                <Table.DataCell>{statusNavn}</Table.DataCell>
+                <Table.DataCell>
+                  <JaNeiStatus status={utfallkode} />
+                </Table.DataCell>
+              </Table.ExpandableRow>
+            );
+          })}
         </Table.Body>
       </Table>
     </div>

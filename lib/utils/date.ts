@@ -1,4 +1,4 @@
-import { compareAsc, compareDesc, format, parseISO } from 'date-fns';
+import { compareAsc, compareDesc, format, parse, parseISO } from 'date-fns';
 
 export type SortOrder = 'ASC' | 'DESC';
 
@@ -31,4 +31,11 @@ export function parseISOorNull(dateString: string | null | undefined): Date | nu
 
 export function norsktDatoformat(date: Date): string {
   return format(date, 'dd.MM.yyyy');
+}
+
+export function parseFaktaDato(dateString: string | null | undefined): Date | null {
+  if (dateString == null) {
+    return null;
+  }
+  return parse(dateString, 'dd-MM-yyyy', new Date());
 }

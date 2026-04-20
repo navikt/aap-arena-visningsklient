@@ -14,6 +14,103 @@
   "avsluttetDato": null,
   "vedtak": [
     {
+      "vedtakId": 36768676,
+      "lopenrvedtak": 6,
+      "statusKode": "IVERK",
+      "statusNavn": "Iverksatt",
+      "vedtaktypeKode": "S",
+      "vedtaktypeNavn": "Stans",
+      "aktivitetsfaseKode": "IKKE",
+      "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
+      "fraOgMed": "2021-12-28",
+      "tilDato": null,
+      "rettighetkode": "AATFOR",
+      "rettighetnavn": "Tvungen forvaltning ",
+      "utfallkode": "JA",
+      "begrunnelse": "Ytelsen er stanset da du ikke har opprettholdt meldeplikten.",
+      "saksbehandler": "GRENSESN",
+      "beslutter": "GRENSESN",
+      "fakta": [
+        {
+          "kode": "EKSTID",
+          "navn": "Id til alternativ betalingsmottaker",
+          "verdi": null,
+          "registrertDato": "2021-12-28"
+        },
+        {
+          "kode": "FDATO",
+          "navn": "Gjelder fra",
+          "verdi": "28-12-2021",
+          "registrertDato": "2021-12-28"
+        },
+        {
+          "kode": "INNVF",
+          "navn": "Vedtaksdato",
+          "verdi": "28-12-2021",
+          "registrertDato": "2021-12-28"
+        },
+        {
+          "kode": "TBEGR",
+          "navn": "Begrunnelse for tvunget forvaltning",
+          "verdi": null,
+          "registrertDato": "2021-12-28"
+        },
+        {
+          "kode": "TDATO",
+          "navn": "Gjelder til",
+          "verdi": null,
+          "registrertDato": "2021-12-28"
+        },
+        {
+          "kode": "VEDTAKSEND",
+          "navn": "Utskrift/sendt",
+          "verdi": null,
+          "registrertDato": "2021-12-28"
+        }
+      ],
+      "vilkårsvurderinger": [
+        {
+          "vilkårsvurderingId": 382622269,
+          "vilkårkode": "MISBRUK",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Misbruk av berusende eller bedøvende midler",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 382622270,
+          "vilkårkode": "PSYK",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Sinnslidelse, psykisk utviklingshemming, alvorlig mental svekkelse eller hjerneskade",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 382622271,
+          "vilkårkode": "SKADE",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Ytelsen disponeres til skade for søker eller en person som han/hun forsørger/plikter å forsørge",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        }
+      ]
+    },
+    {
       "vedtakId": 36754678,
       "lopenrvedtak": 4,
       "statusKode": "AVSLU",
@@ -27,6 +124,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "NEI",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "JH4402",
+      "beslutter": "LS4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -729,6 +829,85 @@
       ]
     },
     {
+      "vedtakId": 36754675,
+      "lopenrvedtak": 1,
+      "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
+      "vedtaktypeKode": "O",
+      "vedtaktypeNavn": "Ny rettighet",
+      "aktivitetsfaseKode": "IKKE",
+      "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
+      "fraOgMed": "2016-09-29",
+      "tilDato": "2021-12-27",
+      "rettighetkode": "AA115",
+      "rettighetnavn": "§11-5 nedsatt arbeidsevne",
+      "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "BBU2930",
+      "beslutter": "BBU2930",
+      "fakta": [
+        {
+          "kode": "FDATO",
+          "navn": "Gjelder fra",
+          "verdi": "29-09-2016",
+          "registrertDato": "2016-09-29"
+        },
+        {
+          "kode": "INNVF",
+          "navn": "Vedtaksdato",
+          "verdi": "29-09-2016",
+          "registrertDato": "2016-09-29"
+        },
+        {
+          "kode": "TDATO",
+          "navn": "Gjelder til",
+          "verdi": "27-12-2021",
+          "registrertDato": "2016-09-29"
+        }
+      ],
+      "vilkårsvurderinger": [
+        {
+          "vilkårsvurderingId": 382463456,
+          "vilkårkode": "AA16-67AAR",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker er mellom 16 og 67 år",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 382463457,
+          "vilkårkode": "INNTNEDS",
+          "begrunnelse": null,
+          "vurdertAv": "BBU2930",
+          "vilkårnavn": "Søkers evne til å utføre inntektsgivende arbeid er nedsatt",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 382463458,
+          "vilkårkode": "SYKSKADLYT",
+          "begrunnelse": null,
+          "vurdertAv": "BBU2930",
+          "vilkårnavn": "Arbeidsevnen er nedsatt på grunn av sykdom, skade eller lyte",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        }
+      ]
+    },
+    {
       "vedtakId": 36754676,
       "lopenrvedtak": 2,
       "statusKode": "AVSLU",
@@ -742,6 +921,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "IKB4402",
+      "beslutter": "ACA4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -1418,6 +1600,103 @@
       ]
     },
     {
+      "vedtakId": 36754679,
+      "lopenrvedtak": 5,
+      "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
+      "vedtaktypeKode": "O",
+      "vedtaktypeNavn": "Ny rettighet",
+      "aktivitetsfaseKode": "IKKE",
+      "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
+      "fraOgMed": "2019-10-16",
+      "tilDato": "2021-12-27",
+      "rettighetkode": "AATFOR",
+      "rettighetnavn": "Tvungen forvaltning ",
+      "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "MAA4402",
+      "beslutter": "BPA4402",
+      "fakta": [
+        {
+          "kode": "EKSTID",
+          "navn": "Id til alternativ betalingsmottaker",
+          "verdi": null,
+          "registrertDato": "2019-11-10"
+        },
+        {
+          "kode": "FDATO",
+          "navn": "Gjelder fra",
+          "verdi": "16-10-2019",
+          "registrertDato": "2019-11-10"
+        },
+        {
+          "kode": "INNVF",
+          "navn": "Vedtaksdato",
+          "verdi": "10-11-2019",
+          "registrertDato": "2019-11-10"
+        },
+        {
+          "kode": "TBEGR",
+          "navn": "Begrunnelse for tvunget forvaltning",
+          "verdi": null,
+          "registrertDato": "2019-11-10"
+        },
+        {
+          "kode": "TDATO",
+          "navn": "Gjelder til",
+          "verdi": "27-12-2021",
+          "registrertDato": "2019-11-10"
+        },
+        {
+          "kode": "VEDTAKSEND",
+          "navn": "Utskrift/sendt",
+          "verdi": "J",
+          "registrertDato": "2019-11-10"
+        }
+      ],
+      "vilkårsvurderinger": [
+        {
+          "vilkårsvurderingId": 382463510,
+          "vilkårkode": "MISBRUK",
+          "begrunnelse": null,
+          "vurdertAv": "MAA4402",
+          "vilkårnavn": "Misbruk av berusende eller bedøvende midler",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 382463511,
+          "vilkårkode": "PSYK",
+          "begrunnelse": null,
+          "vurdertAv": "MAA4402",
+          "vilkårnavn": "Sinnslidelse, psykisk utviklingshemming, alvorlig mental svekkelse eller hjerneskade",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 382463512,
+          "vilkårkode": "SKADE",
+          "begrunnelse": null,
+          "vurdertAv": "MAA4402",
+          "vilkårnavn": "Ytelsen disponeres til skade for søker eller en person som han/hun forsørger/plikter å forsørge",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        }
+      ]
+    },
+    {
       "vedtakId": 36754677,
       "lopenrvedtak": 3,
       "statusKode": "IVERK",
@@ -1431,6 +1710,9 @@
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "ERD4402",
+      "beslutter": "CKB4402",
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -2048,270 +2330,6 @@
           "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-19+Reduksjon+av+arbeidsavklaringspenger+p%C3%A5+grunn+av+ytelser+fra+arbeidsgiver.232401.cms",
           "statuskode": "V",
           "statusnavn": "Ikke vurdert"
-        }
-      ]
-    },
-    {
-      "vedtakId": 36768676,
-      "lopenrvedtak": 6,
-      "statusKode": "IVERK",
-      "statusNavn": "Iverksatt",
-      "vedtaktypeKode": "S",
-      "vedtaktypeNavn": "Stans",
-      "aktivitetsfaseKode": "IKKE",
-      "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
-      "fraOgMed": "2021-12-28",
-      "tilDato": null,
-      "rettighetkode": "AATFOR",
-      "rettighetnavn": "Tvungen forvaltning ",
-      "utfallkode": "JA",
-      "fakta": [
-        {
-          "kode": "EKSTID",
-          "navn": "Id til alternativ betalingsmottaker",
-          "verdi": null,
-          "registrertDato": "2021-12-28"
-        },
-        {
-          "kode": "FDATO",
-          "navn": "Gjelder fra",
-          "verdi": "28-12-2021",
-          "registrertDato": "2021-12-28"
-        },
-        {
-          "kode": "INNVF",
-          "navn": "Vedtaksdato",
-          "verdi": "28-12-2021",
-          "registrertDato": "2021-12-28"
-        },
-        {
-          "kode": "TBEGR",
-          "navn": "Begrunnelse for tvunget forvaltning",
-          "verdi": null,
-          "registrertDato": "2021-12-28"
-        },
-        {
-          "kode": "TDATO",
-          "navn": "Gjelder til",
-          "verdi": null,
-          "registrertDato": "2021-12-28"
-        },
-        {
-          "kode": "VEDTAKSEND",
-          "navn": "Utskrift/sendt",
-          "verdi": null,
-          "registrertDato": "2021-12-28"
-        }
-      ],
-      "vilkårsvurderinger": [
-        {
-          "vilkårsvurderingId": 382622269,
-          "vilkårkode": "MISBRUK",
-          "begrunnelse": null,
-          "vurdertAv": null,
-          "vilkårnavn": "Misbruk av berusende eller bedøvende midler",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "V",
-          "statusnavn": "Ikke vurdert"
-        },
-        {
-          "vilkårsvurderingId": 382622270,
-          "vilkårkode": "PSYK",
-          "begrunnelse": null,
-          "vurdertAv": null,
-          "vilkårnavn": "Sinnslidelse, psykisk utviklingshemming, alvorlig mental svekkelse eller hjerneskade",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "V",
-          "statusnavn": "Ikke vurdert"
-        },
-        {
-          "vilkårsvurderingId": 382622271,
-          "vilkårkode": "SKADE",
-          "begrunnelse": null,
-          "vurdertAv": null,
-          "vilkårnavn": "Ytelsen disponeres til skade for søker eller en person som han/hun forsørger/plikter å forsørge",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "V",
-          "statusnavn": "Ikke vurdert"
-        }
-      ]
-    },
-    {
-      "vedtakId": 36754675,
-      "lopenrvedtak": 1,
-      "statusKode": "AVSLU",
-      "statusNavn": "Avsluttet",
-      "vedtaktypeKode": "O",
-      "vedtaktypeNavn": "Ny rettighet",
-      "aktivitetsfaseKode": "IKKE",
-      "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
-      "fraOgMed": "2016-09-29",
-      "tilDato": "2021-12-27",
-      "rettighetkode": "AA115",
-      "rettighetnavn": "§11-5 nedsatt arbeidsevne",
-      "utfallkode": "JA",
-      "fakta": [
-        {
-          "kode": "FDATO",
-          "navn": "Gjelder fra",
-          "verdi": "29-09-2016",
-          "registrertDato": "2016-09-29"
-        },
-        {
-          "kode": "INNVF",
-          "navn": "Vedtaksdato",
-          "verdi": "29-09-2016",
-          "registrertDato": "2016-09-29"
-        },
-        {
-          "kode": "TDATO",
-          "navn": "Gjelder til",
-          "verdi": "27-12-2021",
-          "registrertDato": "2016-09-29"
-        }
-      ],
-      "vilkårsvurderinger": [
-        {
-          "vilkårsvurderingId": 382463456,
-          "vilkårkode": "AA16-67AAR",
-          "begrunnelse": null,
-          "vurdertAv": null,
-          "vilkårnavn": "Søker er mellom 16 og 67 år",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "V",
-          "statusnavn": "Ikke vurdert"
-        },
-        {
-          "vilkårsvurderingId": 382463457,
-          "vilkårkode": "INNTNEDS",
-          "begrunnelse": null,
-          "vurdertAv": "BBU2930",
-          "vilkårnavn": "Søkers evne til å utføre inntektsgivende arbeid er nedsatt",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
-        },
-        {
-          "vilkårsvurderingId": 382463458,
-          "vilkårkode": "SYKSKADLYT",
-          "begrunnelse": null,
-          "vurdertAv": "BBU2930",
-          "vilkårnavn": "Arbeidsevnen er nedsatt på grunn av sykdom, skade eller lyte",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
-        }
-      ]
-    },
-    {
-      "vedtakId": 36754679,
-      "lopenrvedtak": 5,
-      "statusKode": "AVSLU",
-      "statusNavn": "Avsluttet",
-      "vedtaktypeKode": "O",
-      "vedtaktypeNavn": "Ny rettighet",
-      "aktivitetsfaseKode": "IKKE",
-      "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
-      "fraOgMed": "2019-10-16",
-      "tilDato": "2021-12-27",
-      "rettighetkode": "AATFOR",
-      "rettighetnavn": "Tvungen forvaltning ",
-      "utfallkode": "JA",
-      "fakta": [
-        {
-          "kode": "EKSTID",
-          "navn": "Id til alternativ betalingsmottaker",
-          "verdi": null,
-          "registrertDato": "2019-11-10"
-        },
-        {
-          "kode": "FDATO",
-          "navn": "Gjelder fra",
-          "verdi": "16-10-2019",
-          "registrertDato": "2019-11-10"
-        },
-        {
-          "kode": "INNVF",
-          "navn": "Vedtaksdato",
-          "verdi": "10-11-2019",
-          "registrertDato": "2019-11-10"
-        },
-        {
-          "kode": "TBEGR",
-          "navn": "Begrunnelse for tvunget forvaltning",
-          "verdi": null,
-          "registrertDato": "2019-11-10"
-        },
-        {
-          "kode": "TDATO",
-          "navn": "Gjelder til",
-          "verdi": "27-12-2021",
-          "registrertDato": "2019-11-10"
-        },
-        {
-          "kode": "VEDTAKSEND",
-          "navn": "Utskrift/sendt",
-          "verdi": "J",
-          "registrertDato": "2019-11-10"
-        }
-      ],
-      "vilkårsvurderinger": [
-        {
-          "vilkårsvurderingId": 382463510,
-          "vilkårkode": "MISBRUK",
-          "begrunnelse": null,
-          "vurdertAv": "MAA4402",
-          "vilkårnavn": "Misbruk av berusende eller bedøvende midler",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "V",
-          "statusnavn": "Ikke vurdert"
-        },
-        {
-          "vilkårsvurderingId": 382463511,
-          "vilkårkode": "PSYK",
-          "begrunnelse": null,
-          "vurdertAv": "MAA4402",
-          "vilkårnavn": "Sinnslidelse, psykisk utviklingshemming, alvorlig mental svekkelse eller hjerneskade",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "V",
-          "statusnavn": "Ikke vurdert"
-        },
-        {
-          "vilkårsvurderingId": 382463512,
-          "vilkårkode": "SKADE",
-          "begrunnelse": null,
-          "vurdertAv": "MAA4402",
-          "vilkårnavn": "Ytelsen disponeres til skade for søker eller en person som han/hun forsørger/plikter å forsørge",
-          "erObligatorisk": true,
-          "hjelpetekstUrl": null,
-          "lovtekstUrl": null,
-          "rundskrivUrl": null,
-          "statuskode": "J",
-          "statusnavn": "Oppfylt"
         }
       ]
     }
