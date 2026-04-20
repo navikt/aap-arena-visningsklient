@@ -1,6 +1,7 @@
 'use client';
 
 import { BodyLong, Detail, VStack } from '@navikt/ds-react';
+import styles from './fieldvalue.module.css';
 
 type Props = {
   label: string;
@@ -10,7 +11,7 @@ type Props = {
 export function FieldValue({ label, value }: Props): React.ReactElement {
   return (
     <VStack>
-      <Detail>{label}</Detail>
+      <Detail className={styles.header}>{label}</Detail>
       <BodyLong size="small">{value}</BodyLong>
     </VStack>
   );

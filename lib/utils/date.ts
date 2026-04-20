@@ -39,3 +39,8 @@ export function parseFaktaDato(dateString: string | null | undefined): Date | nu
   }
   return parse(dateString, 'dd-MM-yyyy', new Date());
 }
+
+export function formaterFaktaDato(dateString: string | null | undefined): string | null {
+  const parsed = parseFaktaDato(dateString);
+  return parsed != null ? norsktDatoformat(parsed) : null;
+}

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { dateComperator, norsktDatoformat, parseFaktaDato } from 'lib/utils/date';
+import { dateComperator, formaterFaktaDato, norsktDatoformat, parseFaktaDato } from 'lib/utils/date';
 
 const DEC_10_2024 = new Date('2024-12-10T00:00:00.000Z');
 const JAN_01_2025 = new Date('2025-01-01T00:00:00.000Z');
@@ -51,5 +51,19 @@ describe('parseFaktaDato', () => {
 
   it('skal returnere null for undefined', () => {
     expect(parseFaktaDato(undefined)).toBeNull();
+  });
+});
+
+describe('formaterFaktaDato', () => {
+  it('skal formatere dato på formatet dd-MM-yyyy til norsk format', () => {
+    expect(formaterFaktaDato('10-12-2024')).toBe('10.12.2024');
+  });
+
+  it('skal returnere null for null', () => {
+    expect(formaterFaktaDato(null)).toBeNull();
+  });
+
+  it('skal returnere null for undefined', () => {
+    expect(formaterFaktaDato(undefined)).toBeNull();
   });
 });
