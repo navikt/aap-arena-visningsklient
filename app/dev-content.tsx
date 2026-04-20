@@ -17,7 +17,7 @@ export function DevContent(): React.ReactElement {
     { sakId: '13397613', info: 'Gammel AAP-sak med mange vedtak' },
     { sakId: '13409999', info: 'Gammel AAP-sak med mange vedtak' },
     { sakId: '13697921', info: 'Gammel AAP-sak med gamle rettigheter' },
-    { sakId: '13469475', info: 'Gammel sAAP-ak med gamle rettigheter' },
+    { sakId: '13469475', info: 'Gammel AAP-sak med gamle rettigheter' },
     { sakId: '13335922', info: 'AAP-sak uten vedtak' },
     { sakId: '13339857', info: 'AAP-sak uten vedtak' },
     { sakId: '13676545', info: 'Sak med 11-5 vedtak' },

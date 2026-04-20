@@ -25,6 +25,7 @@
       "fraOgMed": "2026-01-01",
       "tilDato": "2026-10-06",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -725,6 +726,7 @@
       "fraOgMed": "2025-10-07",
       "tilDato": "2025-12-31",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -1413,6 +1415,7 @@
       "fraOgMed": "2025-05-01",
       "tilDato": "2025-10-06",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -2095,6 +2098,7 @@
       "fraOgMed": "2025-01-01",
       "tilDato": "2025-04-30",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -2783,6 +2787,7 @@
       "fraOgMed": "2024-05-01",
       "tilDato": "2024-10-06",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -3465,6 +3470,7 @@
       "fraOgMed": "2023-10-08",
       "tilDato": "2024-04-30",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -4197,6 +4203,7 @@
       "fraOgMed": "2024-10-07",
       "tilDato": "2024-12-31",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -4864,6 +4871,186 @@
           "rundskrivUrl": null,
           "statuskode": "V",
           "statusnavn": "Ikke vurdert"
+        }
+      ]
+    },
+    {
+      "vedtakId": 37031167,
+      "lopenrvedtak": 1,
+      "statusKode": "IVERK",
+      "statusNavn": "Iverksatt",
+      "vedtaktypeKode": "O",
+      "vedtaktypeNavn": "Ny rettighet",
+      "aktivitetsfaseKode": "IKKE",
+      "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
+      "fraOgMed": "2023-10-03",
+      "tilDato": null,
+      "rettighetkode": "AA115",
+      "rettighetnavn": "§11-5 nedsatt arbeidsevne",
+      "utfallkode": "JA",
+      "fakta": [
+        {
+          "kode": "FDATO",
+          "navn": "Gjelder fra",
+          "verdi": "03-10-2023",
+          "registrertDato": "2023-10-03"
+        },
+        {
+          "kode": "INNVF",
+          "navn": "Vedtaksdato",
+          "verdi": "03-10-2023",
+          "registrertDato": "2023-10-03"
+        },
+        {
+          "kode": "TDATO",
+          "navn": "Gjelder til",
+          "verdi": null,
+          "registrertDato": "2023-10-03"
+        }
+      ],
+      "vilkårsvurderinger": [
+        {
+          "vilkårsvurderingId": 385783596,
+          "vilkårkode": "18-67AAR",
+          "begrunnelse": null,
+          "vurdertAv": "DNB0331",
+          "vilkårnavn": "Søker er mellom 18 og 67 år",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-4#L19970228-19_P11-4",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-4++Alder.232187.cms",
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 385783597,
+          "vilkårkode": "AAARBEVNE",
+          "begrunnelse": null,
+          "vurdertAv": "DNB0331",
+          "vilkårnavn": "Søker har tapt minst halvparten av arbeidsevnen",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 385783598,
+          "vilkårkode": "AAMOTTSAMT",
+          "begrunnelse": null,
+          "vurdertAv": "DNB0331",
+          "vilkårnavn": "Søker har møtt til samtale",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385783599,
+          "vilkårkode": "AANAAVJOBB",
+          "begrunnelse": null,
+          "vurdertAv": "DNB0331",
+          "vilkårnavn": "Søker har ikke mulighet til å fortsette i nåværende jobb",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385783600,
+          "vilkårkode": "AANODVDOKU",
+          "begrunnelse": null,
+          "vurdertAv": "DNB0331",
+          "vilkårnavn": "Søker har sendt inn nødvendig dokumentasjon",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385783601,
+          "vilkårkode": "AANORSKFER",
+          "begrunnelse": null,
+          "vurdertAv": "DNB0331",
+          "vilkårnavn": "Manglende norskferdigheter er ikke årsak til at søker ikke får jobb",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385783602,
+          "vilkårkode": "AASNARARBG",
+          "begrunnelse": null,
+          "vurdertAv": "DNB0331",
+          "vilkårnavn": "Søker kan ikke snart begynne å arbeide igjen hos arbeidsgiveren",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385783603,
+          "vilkårkode": "AASNARTARB",
+          "begrunnelse": null,
+          "vurdertAv": "DNB0331",
+          "vilkårnavn": "Søker kan ikke snart begynne å arbeide igjen",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385783604,
+          "vilkårkode": "AATYPEJOBB",
+          "begrunnelse": null,
+          "vurdertAv": "DNB0331",
+          "vilkårnavn": "Søker kan ikke klare en annen type jobb",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385783605,
+          "vilkårkode": "INNTNEDS",
+          "begrunnelse": null,
+          "vurdertAv": "DNB0331",
+          "vilkårnavn": "Søkers evne til å utføre inntektsgivende arbeid er nedsatt",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 385783606,
+          "vilkårkode": "SYKSKADLYT",
+          "begrunnelse": null,
+          "vurdertAv": "DNB0331",
+          "vilkårnavn": "Arbeidsevnen er nedsatt på grunn av sykdom, skade eller lyte",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
         }
       ]
     }

@@ -33,6 +33,7 @@ export type ArenaVedtakMedFaktaDTO = {
   fraOgMed: string | NIL;
   tilDato: string | NIL;
   rettighetkode: string;
+  rettighetnavn: string;
   utfallkode: string | NIL;
   fakta: ArenaVedtakfaktaDTO[];
   vilkårsvurderinger: VilkårsvurderingDTO[];

@@ -25,6 +25,7 @@
       "fraOgMed": "2015-12-08",
       "tilDato": "2016-02-28",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -700,6 +701,7 @@
       "fraOgMed": "2015-10-07",
       "tilDato": "2022-09-23",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "NEI",
       "fakta": [
         {
@@ -1388,6 +1390,7 @@
       "fraOgMed": "2015-10-21",
       "tilDato": "2015-12-07",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -2076,6 +2079,7 @@
       "fraOgMed": "2017-04-24",
       "tilDato": "2017-06-15",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -2751,6 +2755,7 @@
       "fraOgMed": "2016-02-29",
       "tilDato": "2016-05-21",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -3426,6 +3431,7 @@
       "fraOgMed": "2016-05-22",
       "tilDato": "2016-08-17",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -4101,6 +4107,7 @@
       "fraOgMed": "2016-09-05",
       "tilDato": "2017-03-01",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -4776,6 +4783,7 @@
       "fraOgMed": "2017-03-02",
       "tilDato": "2017-04-23",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -5451,6 +5459,7 @@
       "fraOgMed": "2017-06-16",
       "tilDato": null,
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -6084,6 +6093,7 @@
       "fraOgMed": "2016-08-18",
       "tilDato": "2016-09-04",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -6744,6 +6754,82 @@
           "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-19+Reduksjon+av+arbeidsavklaringspenger+p%C3%A5+grunn+av+ytelser+fra+arbeidsgiver.232401.cms",
           "statuskode": "V",
           "statusnavn": "Ikke vurdert"
+        }
+      ]
+    },
+    {
+      "vedtakId": 36682547,
+      "lopenrvedtak": 1,
+      "statusKode": "IVERK",
+      "statusNavn": "Iverksatt",
+      "vedtaktypeKode": "O",
+      "vedtaktypeNavn": "Ny rettighet",
+      "aktivitetsfaseKode": "IKKE",
+      "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
+      "fraOgMed": "2015-09-19",
+      "tilDato": null,
+      "rettighetkode": "AA115",
+      "rettighetnavn": "§11-5 nedsatt arbeidsevne",
+      "utfallkode": "JA",
+      "fakta": [
+        {
+          "kode": "FDATO",
+          "navn": "Gjelder fra",
+          "verdi": "19-09-2015",
+          "registrertDato": "2015-08-15"
+        },
+        {
+          "kode": "INNVF",
+          "navn": "Vedtaksdato",
+          "verdi": "15-08-2015",
+          "registrertDato": "2015-08-15"
+        },
+        {
+          "kode": "TDATO",
+          "navn": "Gjelder til",
+          "verdi": null,
+          "registrertDato": "2015-08-15"
+        }
+      ],
+      "vilkårsvurderinger": [
+        {
+          "vilkårsvurderingId": 381669324,
+          "vilkårkode": "AA16-67AAR",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker er mellom 16 og 67 år",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 381669325,
+          "vilkårkode": "INNTNEDS",
+          "begrunnelse": null,
+          "vurdertAv": "ENG1805",
+          "vilkårnavn": "Søkers evne til å utføre inntektsgivende arbeid er nedsatt",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 381669326,
+          "vilkårkode": "SYKSKADLYT",
+          "begrunnelse": null,
+          "vurdertAv": "ENG1805",
+          "vilkårnavn": "Arbeidsevnen er nedsatt på grunn av sykdom, skade eller lyte",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
         }
       ]
     }

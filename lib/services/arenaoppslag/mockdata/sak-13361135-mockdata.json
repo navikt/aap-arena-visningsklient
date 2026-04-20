@@ -25,6 +25,7 @@
       "fraOgMed": "2015-11-12",
       "tilDato": "2016-07-26",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -694,6 +695,7 @@
       "fraOgMed": "2016-07-27",
       "tilDato": "2017-07-24",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -1363,6 +1365,7 @@
       "fraOgMed": "2018-09-27",
       "tilDato": "2019-02-16",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -2045,6 +2048,7 @@
       "fraOgMed": "2019-02-17",
       "tilDato": "2019-07-09",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -2727,6 +2731,7 @@
       "fraOgMed": "2019-09-01",
       "tilDato": "2019-10-23",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -3409,6 +3414,7 @@
       "fraOgMed": "2019-12-14",
       "tilDato": "2019-12-21",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -4091,6 +4097,7 @@
       "fraOgMed": "2019-12-22",
       "tilDato": "2020-02-07",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -4773,6 +4780,7 @@
       "fraOgMed": "2020-02-08",
       "tilDato": "2020-03-26",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -5455,6 +5463,7 @@
       "fraOgMed": "2019-07-10",
       "tilDato": "2019-08-31",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -6137,6 +6146,7 @@
       "fraOgMed": "2020-03-27",
       "tilDato": null,
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -6777,6 +6787,7 @@
       "fraOgMed": "2015-02-27",
       "tilDato": "2015-11-11",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -7459,6 +7470,7 @@
       "fraOgMed": "2019-10-24",
       "tilDato": "2019-12-05",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -8141,6 +8153,7 @@
       "fraOgMed": "2017-07-25",
       "tilDato": "2017-12-14",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -8810,6 +8823,7 @@
       "fraOgMed": "2017-12-15",
       "tilDato": "2018-05-06",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -9479,6 +9493,7 @@
       "fraOgMed": "2018-05-07",
       "tilDato": "2018-09-26",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -10161,6 +10176,7 @@
       "fraOgMed": "2019-12-06",
       "tilDato": "2019-12-13",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -10828,6 +10844,82 @@
           "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-2+Forutg%C3%A5ende+medlemskap.232088.cms",
           "statuskode": "V",
           "statusnavn": "Ikke vurdert"
+        }
+      ]
+    },
+    {
+      "vedtakId": 36567083,
+      "lopenrvedtak": 1,
+      "statusKode": "IVERK",
+      "statusNavn": "Iverksatt",
+      "vedtaktypeKode": "O",
+      "vedtaktypeNavn": "Ny rettighet",
+      "aktivitetsfaseKode": "IKKE",
+      "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
+      "fraOgMed": "2015-02-24",
+      "tilDato": null,
+      "rettighetkode": "AA115",
+      "rettighetnavn": "§11-5 nedsatt arbeidsevne",
+      "utfallkode": "JA",
+      "fakta": [
+        {
+          "kode": "FDATO",
+          "navn": "Gjelder fra",
+          "verdi": "24-02-2015",
+          "registrertDato": "2015-02-19"
+        },
+        {
+          "kode": "INNVF",
+          "navn": "Vedtaksdato",
+          "verdi": "19-02-2015",
+          "registrertDato": "2015-02-19"
+        },
+        {
+          "kode": "TDATO",
+          "navn": "Gjelder til",
+          "verdi": null,
+          "registrertDato": "2015-02-19"
+        }
+      ],
+      "vilkårsvurderinger": [
+        {
+          "vilkårsvurderingId": 380415179,
+          "vilkårkode": "AA16-67AAR",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker er mellom 16 og 67 år",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 380415180,
+          "vilkårkode": "INNTNEDS",
+          "begrunnelse": null,
+          "vurdertAv": "1532",
+          "vilkårnavn": "Søkers evne til å utføre inntektsgivende arbeid er nedsatt",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 380415181,
+          "vilkårkode": "SYKSKADLYT",
+          "begrunnelse": null,
+          "vurdertAv": "1532",
+          "vilkårnavn": "Arbeidsevnen er nedsatt på grunn av sykdom, skade eller lyte",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
         }
       ]
     }

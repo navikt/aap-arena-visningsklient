@@ -31,7 +31,7 @@ export function VedtakTabell({ vedtak }: Props): React.ReactElement {
         <Table.Header>
           <Table.Row>
             <Table.HeaderCell scope="col">Nr.</Table.HeaderCell>
-            <Table.HeaderCell scope="col">Rettighetskode</Table.HeaderCell>
+            <Table.HeaderCell scope="col">Rettighet</Table.HeaderCell>
             <Table.HeaderCell scope="col">Vedtakstype</Table.HeaderCell>
             <Table.HeaderCell scope="col">Aktivitetsfase</Table.HeaderCell>
             <Table.HeaderCell scope="col">Fra og med</Table.HeaderCell>
@@ -44,7 +44,7 @@ export function VedtakTabell({ vedtak }: Props): React.ReactElement {
         <Table.Body>
           {sortedVedtak.map(
             ({
-              rettighetkode,
+              rettighetnavn,
               vedtaktypeNavn,
               lopenrvedtak,
               aktivitetsfaseNavn,
@@ -62,7 +62,7 @@ export function VedtakTabell({ vedtak }: Props): React.ReactElement {
                   content={<Vedtakfakta vedtakfakta={fakta} />}
                 >
                   <Table.DataCell>{lopenrvedtak}</Table.DataCell>
-                  <Table.HeaderCell scope="row">{rettighetkode}</Table.HeaderCell>
+                  <Table.HeaderCell scope="row">{rettighetnavn}</Table.HeaderCell>
                   <Table.DataCell>{vedtaktypeNavn}</Table.DataCell>
                   <Table.DataCell>{aktivitetsfaseNavn}</Table.DataCell>
                   <Table.DataCell>{dateOrBlank(fraOgMed)}</Table.DataCell>

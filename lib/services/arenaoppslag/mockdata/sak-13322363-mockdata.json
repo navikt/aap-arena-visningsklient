@@ -25,6 +25,7 @@
       "fraOgMed": "2021-05-01",
       "tilDato": "2021-08-12",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -683,6 +684,7 @@
       "fraOgMed": "2015-06-01",
       "tilDato": "2015-06-08",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -1352,6 +1354,7 @@
       "fraOgMed": "2017-05-18",
       "tilDato": "2017-07-04",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -2034,6 +2037,7 @@
       "fraOgMed": "2017-10-09",
       "tilDato": "2017-12-25",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -2716,6 +2720,7 @@
       "fraOgMed": "2018-05-31",
       "tilDato": "2018-08-16",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -3398,6 +3403,7 @@
       "fraOgMed": "2020-08-12",
       "tilDato": "2020-08-12",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -4038,6 +4044,7 @@
       "fraOgMed": "2017-08-22",
       "tilDato": "2017-10-08",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -4707,6 +4714,7 @@
       "fraOgMed": "2017-12-26",
       "tilDato": "2018-03-13",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -5376,6 +5384,7 @@
       "fraOgMed": "2019-08-15",
       "tilDato": "2020-08-11",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -6058,6 +6067,7 @@
       "fraOgMed": "2017-07-05",
       "tilDato": "2017-08-21",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -6727,6 +6737,7 @@
       "fraOgMed": "2018-03-14",
       "tilDato": "2018-05-30",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -7409,6 +7420,7 @@
       "fraOgMed": "2018-08-17",
       "tilDato": "2019-08-14",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -8091,6 +8103,7 @@
       "fraOgMed": "2020-08-13",
       "tilDato": "2021-04-30",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -8735,6 +8748,7 @@
       "fraOgMed": "2015-06-09",
       "tilDato": "2016-09-01",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -9362,6 +9376,7 @@
       "fraOgMed": "2015-05-24",
       "tilDato": "2015-05-31",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -10044,6 +10059,7 @@
       "fraOgMed": "2021-10-01",
       "tilDato": null,
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -10666,6 +10682,7 @@
       "fraOgMed": "2021-08-13",
       "tilDato": "2021-09-30",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -11319,6 +11336,82 @@
       ]
     },
     {
+      "vedtakId": 36525732,
+      "lopenrvedtak": 1,
+      "statusKode": "IVERK",
+      "statusNavn": "Iverksatt",
+      "vedtaktypeKode": "O",
+      "vedtaktypeNavn": "Ny rettighet",
+      "aktivitetsfaseKode": "IKKE",
+      "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
+      "fraOgMed": "2015-05-07",
+      "tilDato": null,
+      "rettighetkode": "AA115",
+      "rettighetnavn": "§11-5 nedsatt arbeidsevne",
+      "utfallkode": "JA",
+      "fakta": [
+        {
+          "kode": "FDATO",
+          "navn": "Gjelder fra",
+          "verdi": "07-05-2015",
+          "registrertDato": "2015-03-18"
+        },
+        {
+          "kode": "INNVF",
+          "navn": "Vedtaksdato",
+          "verdi": "18-03-2015",
+          "registrertDato": "2015-03-18"
+        },
+        {
+          "kode": "TDATO",
+          "navn": "Gjelder til",
+          "verdi": null,
+          "registrertDato": "2015-03-18"
+        }
+      ],
+      "vilkårsvurderinger": [
+        {
+          "vilkårsvurderingId": 379982371,
+          "vilkårkode": "INNTNEDS",
+          "begrunnelse": null,
+          "vurdertAv": "LG0315",
+          "vilkårnavn": "Søkers evne til å utføre inntektsgivende arbeid er nedsatt",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 379982370,
+          "vilkårkode": "AA16-67AAR",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker er mellom 16 og 67 år",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 379982372,
+          "vilkårkode": "SYKSKADLYT",
+          "begrunnelse": null,
+          "vurdertAv": "LG0315",
+          "vilkårnavn": "Arbeidsevnen er nedsatt på grunn av sykdom, skade eller lyte",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        }
+      ]
+    },
+    {
       "vedtakId": 36525755,
       "lopenrvedtak": 6,
       "statusKode": "AVSLU",
@@ -11330,6 +11423,7 @@
       "fraOgMed": "2017-03-29",
       "tilDato": "2017-05-01",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -11921,6 +12015,7 @@
       "fraOgMed": "2017-05-02",
       "tilDato": null,
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
@@ -12470,6 +12565,7 @@
       "fraOgMed": "2016-09-02",
       "tilDato": "2017-03-28",
       "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
       "fakta": [
         {
