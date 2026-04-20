@@ -98,9 +98,10 @@ Avoid:
 
 Before committing or pushing, always:
 
-1. Show the user a summary of the changes to be committed.
-2. Propose a commit message and wait for explicit approval before proceeding.
-3. Do not commit or push until the user has confirmed both the changes and the message.
+1. Run `oxfmt` on all changed files to ensure correct formatting.
+2. Show the user a summary of the changes to be committed.
+3. Propose a commit message and wait for explicit approval before proceeding.
+4. Do not commit or push until the user has confirmed both the changes and the message.
 
 Before creating a pull request, always:
 
