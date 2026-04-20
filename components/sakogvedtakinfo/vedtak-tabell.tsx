@@ -5,7 +5,6 @@ import { ArenaVedtakMedFaktaDTO } from 'lib/services/arenaoppslag/arenaoppslag-t
 import { BodyShort, Heading, HStack, Table } from '@navikt/ds-react';
 import { format } from 'date-fns';
 import { Vedtakfakta } from 'components/sakogvedtakinfo/vedtakfakta';
-import { dateComperator, parseISOorNull } from 'lib/utils/date';
 import { CheckmarkCircleIcon } from '@navikt/aksel-icons';
 import { XMarkOctagonIcon } from '@navikt/aksel-icons';
 
@@ -23,9 +22,7 @@ export function VedtakTabell({ vedtak }: Props): React.ReactElement {
     );
   }
 
-  const sortedVedtak = vedtak.sort((v1, v2) =>
-    dateComperator(parseISOorNull(v1.fraOgMed), parseISOorNull(v2.fraOgMed), 'DESC')
-  );
+  const sortedVedtak = [...vedtak].sort((v1, v2) => v2.lopenrvedtak - v1.lopenrvedtak);
 
   return (
     <div>
@@ -33,6 +30,7 @@ export function VedtakTabell({ vedtak }: Props): React.ReactElement {
       <Table zebraStripes>
         <Table.Header>
           <Table.Row>
+            <Table.HeaderCell scope="col">Nr.</Table.HeaderCell>
             <Table.HeaderCell scope="col">Rettighetskode</Table.HeaderCell>
             <Table.HeaderCell scope="col">Vedtakstype</Table.HeaderCell>
             <Table.HeaderCell scope="col">Aktivitetsfase</Table.HeaderCell>
@@ -48,7 +46,7 @@ export function VedtakTabell({ vedtak }: Props): React.ReactElement {
             ({
               rettighetkode,
               vedtaktypeNavn,
-              vedtaktypeKode,
+              lopenrvedtak,
               aktivitetsfaseNavn,
               fraOgMed,
               tilDato,
@@ -63,8 +61,9 @@ export function VedtakTabell({ vedtak }: Props): React.ReactElement {
                   togglePlacement="right"
                   content={<Vedtakfakta vedtakfakta={fakta} />}
                 >
+                  <Table.DataCell>{lopenrvedtak}</Table.DataCell>
                   <Table.HeaderCell scope="row">{rettighetkode}</Table.HeaderCell>
-                  <Table.DataCell>{`${vedtaktypeNavn} (${vedtaktypeKode})`}</Table.DataCell>
+                  <Table.DataCell>{vedtaktypeNavn}</Table.DataCell>
                   <Table.DataCell>{aktivitetsfaseNavn}</Table.DataCell>
                   <Table.DataCell>{dateOrBlank(fraOgMed)}</Table.DataCell>
                   <Table.DataCell>{dateOrBlank(tilDato)}</Table.DataCell>
