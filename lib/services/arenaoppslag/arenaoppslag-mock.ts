@@ -9,6 +9,9 @@ import Sak13697921Mockdata from 'lib/services/arenaoppslag/mockdata/sak-13697921
 import Sak13469475Mockdata from 'lib/services/arenaoppslag/mockdata/sak-13469475-mockdata.json';
 import Sak13335922Mockdata from 'lib/services/arenaoppslag/mockdata/sak-13335922-mockdata.json';
 import Sak13339857Mockdata from 'lib/services/arenaoppslag/mockdata/sak-13339857-mockdata.json';
+import Sak13676545Mockdata from 'lib/services/arenaoppslag/mockdata/sak-13676545-mockdata.json';
+import Sak13691130Mockdata from 'lib/services/arenaoppslag/mockdata/sak-13691130-mockdata.json';
+import Sak13304506Mockdata from 'lib/services/arenaoppslag/mockdata/sak-13304506-mockdata.json';
 
 export function getMockSakFraArena(saksId: string): SakDTO | null {
   switch (saksId) {
@@ -32,6 +35,12 @@ export function getMockSakFraArena(saksId: string): SakDTO | null {
       return Sak13335922Mockdata;
     case '13339857':
       return Sak13339857Mockdata;
+    case '13676545':
+      return Sak13676545Mockdata;
+    case '13691130':
+      return Sak13691130Mockdata;
+    case '13304506':
+      return Sak13304506Mockdata;
     default:
       return null;
   }
