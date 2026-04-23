@@ -1,5 +1,12 @@
 import { describe, it, expect } from 'vitest';
-import { formaterTilG, formaterTilProsent, storForbokstav, storForbokstavIHvertOrd } from 'lib/utils/string';
+import {
+  formaterFaktaNok,
+  formaterTilG,
+  formaterTilProsent,
+  jaNeiEllerBlank,
+  storForbokstav,
+  storForbokstavIHvertOrd,
+} from 'lib/utils/string';
 
 describe('storForbokstav', () => {
   it('skal returnere en string med stor forbokstav dersom value er bare uppercase', () => {
@@ -50,5 +57,45 @@ describe('formaterTilProsent', () => {
 
   it('skal returnere en string med korrekt formatering med 80', () => {
     expect(formaterTilProsent(80)).toBe('80 %');
+  });
+});
+
+describe('formaterFaktaNok', () => {
+  it('skal formatere gyldig tallstreng til NOK', () => {
+    expect(formaterFaktaNok('500000')).toBe('500\u00a0000\u00a0kr');
+  });
+
+  it('skal returnere — for null', () => {
+    expect(formaterFaktaNok(null)).toBe('—');
+  });
+
+  it('skal returnere — for undefined', () => {
+    expect(formaterFaktaNok(undefined)).toBe('—');
+  });
+
+  it('skal returnere — for ikke-numerisk streng', () => {
+    expect(formaterFaktaNok('abc')).toBe('—');
+  });
+});
+
+describe('jaNeiEllerBlank', () => {
+  it('skal returnere Ja for J', () => {
+    expect(jaNeiEllerBlank('J')).toBe('Ja');
+  });
+
+  it('skal returnere Nei for N', () => {
+    expect(jaNeiEllerBlank('N')).toBe('Nei');
+  });
+
+  it('skal returnere — for null', () => {
+    expect(jaNeiEllerBlank(null)).toBe('—');
+  });
+
+  it('skal returnere — for undefined', () => {
+    expect(jaNeiEllerBlank(undefined)).toBe('—');
+  });
+
+  it('skal returnere — for ukjent verdi', () => {
+    expect(jaNeiEllerBlank('X')).toBe('—');
   });
 });

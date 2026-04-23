@@ -40,7 +40,10 @@ export function Nokkeltall({ sak }: Props): React.ReactElement | null {
         <FieldValue label="Beregningstidspunkt" value={formaterDato(beregningstidspunkt)} />
         <FieldValue label="Grunnlag" value={grunnlag != null ? formaterTilNok(parseInt(grunnlag)) : '—'} />
         <FieldValue label="Dagsats" value={dagsats != null ? formaterTilNok(parseInt(dagsats)) : '—'} />
-        <FieldValue label={`Barnetillegg (${antallBarn})`} value={barnetillegg} />
+        <FieldValue
+          label={`Barnetillegg (${antallBarn})`}
+          value={barnetillegg != null ? formaterTilNok(parseInt(barnetillegg)) : '—'}
+        />
       </HStack>
     </VStack>
   );

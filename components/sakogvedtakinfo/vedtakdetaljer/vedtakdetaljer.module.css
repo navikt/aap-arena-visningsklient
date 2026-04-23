@@ -10,7 +10,7 @@
   color: var(--ax-text-neutral-decoration);
 }
 
-.vilkårHeading {
+.seksjonstittel {
   display: block;
   width: 100%;
   padding: var(--ax-space-8) 0;

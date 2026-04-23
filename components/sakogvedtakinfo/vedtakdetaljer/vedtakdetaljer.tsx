@@ -6,6 +6,8 @@ import { ArenaVedtakMedFaktaDTO } from 'lib/services/arenaoppslag/arenaoppslag-t
 import { FieldValue } from 'components/felleskomponenter/field-value/field-value';
 import { formaterFaktaDato } from 'lib/utils/date';
 import { Vilkar } from 'components/sakogvedtakinfo/vedtakdetaljer/vilkar';
+import { SatsSeksjon } from 'components/sakogvedtakinfo/vedtakdetaljer/sats-seksjon';
+import { BeregningSeksjon } from 'components/sakogvedtakinfo/vedtakdetaljer/beregning-seksjon';
 
 type Props = {
   vedtak: ArenaVedtakMedFaktaDTO;
@@ -21,8 +23,8 @@ export function Vedtakdetaljer({ vedtak }: Props): React.ReactElement {
       <HStack gap="space-16">
         <Label size="medium">Vedtak {vedtak.rettighetnavn}</Label>
         {vedtaksdatoFormatert != null && <BodyShort size="medium">{vedtaksdatoFormatert}</BodyShort>}
-      </HStack> 
-      <HStack gap="space-32">
+      </HStack>
+      <HStack gap="space-32" wrap>
         {vedtak.rettighetkode === 'AAP' && (
           <>
             <FieldValue label="Gjelder fra" value={formaterFaktaDato(faktaMap.get('FDATO')?.verdi) ?? '—'} />
@@ -31,12 +33,18 @@ export function Vedtakdetaljer({ vedtak }: Props): React.ReactElement {
               label="Opprinnelig til-dato"
               value={formaterFaktaDato(faktaMap.get('OPPRTDATO')?.verdi) ?? '—'}
             />
-            <FieldValue label="Gjelder fra" value={formaterFaktaDato(faktaMap.get('TDATO')?.verdi) ?? '—'} />
+            <FieldValue label="Til-dato" value={formaterFaktaDato(faktaMap.get('TDATO')?.verdi) ?? '—'} />
           </>
         )}
         <FieldValue label="Saksbehandler" value={vedtak.saksbehandler ?? '—'} />
         <FieldValue label="Beslutter" value={vedtak.beslutter ?? '—'} />
       </HStack>
+      {vedtak.rettighetkode === 'AAP' && (
+        <>
+          <SatsSeksjon faktaMap={faktaMap} />
+          <BeregningSeksjon faktaMap={faktaMap} />
+        </>
+      )}
       <Vilkar vedtak={vedtak} />
     </VStack>
   );
