@@ -30,6 +30,7 @@
       "begrunnelse": "Endring på grunn av endret grunnbeløp",
       "saksbehandler": "GRENSESN",
       "beslutter": "GRENSESN",
+      "relatertVedtak": 36525771,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -692,6 +693,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "EGJ4402",
       "beslutter": "KU4402",
+      "relatertVedtak": 36525733,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -1365,6 +1367,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "JPH4402",
       "beslutter": "EAB4402",
+      "relatertVedtak": 36525753,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -1960,6 +1963,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "TSG4402",
       "beslutter": "USH4402",
+      "relatertVedtak": null,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -2646,6 +2650,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "ATR4402",
       "beslutter": "BKC4402",
+      "relatertVedtak": 36525763,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -3332,6 +3337,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "ANM4402",
       "beslutter": "JNA4402",
+      "relatertVedtak": 36525766,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -4018,6 +4024,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "KLA4402",
       "beslutter": "EAB4402",
+      "relatertVedtak": 36525769,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -4662,6 +4669,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "BB4402",
       "beslutter": "BKC4402",
+      "relatertVedtak": 36525755,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -5215,6 +5223,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "JHC4402",
       "beslutter": "EJ244",
+      "relatertVedtak": 36525762,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -5888,6 +5897,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "CFA4402",
       "beslutter": "RFA4402",
+      "relatertVedtak": 36525764,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -6561,6 +6571,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "BWA4402",
       "beslutter": "JHB4402",
+      "relatertVedtak": 36525768,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -7247,6 +7258,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "ACA4402",
       "beslutter": "ERA4402",
+      "relatertVedtak": 36525759,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -7920,6 +7932,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "BPA4402",
       "beslutter": "BNB4402",
+      "relatertVedtak": 36525749,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -8503,6 +8516,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "MRAK4402",
       "beslutter": "GS4402",
+      "relatertVedtak": 36525765,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -9189,6 +9203,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "MV4402",
       "beslutter": "CMA4402",
+      "relatertVedtak": 36525767,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -9875,6 +9890,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "JHH4402",
       "beslutter": "NOC4402",
+      "relatertVedtak": 36525770,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -10523,6 +10539,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "RWA4402",
       "beslutter": "JI4402",
+      "relatertVedtak": 36525745,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -11154,6 +11171,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "LG0315",
       "beslutter": "EKA0315",
+      "relatertVedtak": null,
       "fakta": [
         {
           "kode": "FDATO",
@@ -11233,6 +11251,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "KH4402",
       "beslutter": "BKC4402",
+      "relatertVedtak": null,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -11919,6 +11938,7 @@
       "begrunnelse": "Arbeidsavklaringspenger er stanset da til-dato for vedtaket er passert.",
       "saksbehandler": "GRENSESN",
       "beslutter": "GRENSESN",
+      "relatertVedtak": 36615755,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -12545,6 +12565,7 @@
       "begrunnelse": "Personer som mottar AAP etter folketrygdlovens § 11 - 12, og som når sin maksimale stønadsperiode 1. juli eller senere, får forlenget stønadsperioden frem til 30. september 2021 i tråd med den midlertidige forskriftens § 5 - 2.",
       "saksbehandler": "GRENSESN",
       "beslutter": "GRENSESN",
+      "relatertVedtak": 36582150,
       "fakta": [
         {
           "kode": "AAPBERDATO",

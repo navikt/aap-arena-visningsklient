@@ -30,6 +30,7 @@
       "begrunnelse": "Arbeidsavklaringspenger er stanset da til-dato for vedtaket er passert.",
       "saksbehandler": "GRENSESN",
       "beslutter": "GRENSESN",
+      "relatertVedtak": 37054125,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -674,6 +675,7 @@
       "begrunnelse": "ok",
       "saksbehandler": "BBU2930",
       "beslutter": null,
+      "relatertVedtak": null,
       "fakta": [
         {
           "kode": "EKSTID",
@@ -939,6 +941,7 @@
       "begrunnelse": "test",
       "saksbehandler": "BBU2930",
       "beslutter": null,
+      "relatertVedtak": null,
       "fakta": [
         {
           "kode": "ANTALL",
@@ -1177,6 +1180,7 @@
       "begrunnelse": "test",
       "saksbehandler": "BBU2930",
       "beslutter": null,
+      "relatertVedtak": null,
       "fakta": [
         {
           "kode": "ANTBHOY",
@@ -1434,6 +1438,7 @@
       "begrunnelse": "Dolly legger til grunn at du er arbeidsufør på grunn av sykdom.",
       "saksbehandler": "HAK0315",
       "beslutter": "FTZ0315",
+      "relatertVedtak": null,
       "fakta": [
         {
           "kode": "FDATO",
@@ -1617,6 +1622,7 @@
       "begrunnelse": "Test",
       "saksbehandler": "JSZ0219",
       "beslutter": "BBU2930",
+      "relatertVedtak": null,
       "fakta": [
         {
           "kode": "AAPBERDATO",

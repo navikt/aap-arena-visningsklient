@@ -30,6 +30,7 @@
       "begrunnelse": "Arbeidsavklaringspenger er stanset da til-dato for vedtaket er passert.",
       "saksbehandler": "GRENSESN",
       "beslutter": "GRENSESN",
+      "relatertVedtak": 37104009,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -582,6 +583,7 @@
       "begrunnelse": "Endring på grunn av endret grunnbeløp",
       "saksbehandler": "GRENSESN",
       "beslutter": "GRENSESN",
+      "relatertVedtak": 37091488,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -1164,6 +1166,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "RJA4416",
       "beslutter": "LEH4416",
+      "relatertVedtak": 37091482,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -1770,6 +1773,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "LHB4416",
       "beslutter": "IJ4416S",
+      "relatertVedtak": 37091481,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -2376,6 +2380,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "ISB4416",
       "beslutter": "UBA4416",
+      "relatertVedtak": 37091476,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -2982,6 +2987,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "PMA4416",
       "beslutter": "MSC4416",
+      "relatertVedtak": 37091475,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -3588,6 +3594,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "VAAO4416",
       "beslutter": "KWB4416",
+      "relatertVedtak": 37091485,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -4194,6 +4201,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "LEH4416",
       "beslutter": "IJ4416S",
+      "relatertVedtak": 37091470,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -4800,6 +4808,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "TBA4416",
       "beslutter": "CPA4416",
+      "relatertVedtak": 37091472,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -5406,6 +5415,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "PTA4416",
       "beslutter": "ALR4416",
+      "relatertVedtak": 37091487,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -6012,6 +6022,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "AFB4416",
       "beslutter": "JO4416",
+      "relatertVedtak": 37091486,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -6618,6 +6629,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "KJH4416",
       "beslutter": "MSS4416",
+      "relatertVedtak": null,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -7250,6 +7262,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "CKB4416",
       "beslutter": "LLJA4416",
+      "relatertVedtak": 37091479,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -7856,6 +7869,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "IO4416",
       "beslutter": "EG4416",
+      "relatertVedtak": 37091484,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -8462,6 +8476,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "CAB1805",
       "beslutter": "ALE1805",
+      "relatertVedtak": null,
       "fakta": [
         {
           "kode": "FDATO",
@@ -8645,6 +8660,7 @@
       "begrunnelse": null,
       "saksbehandler": "4491",
       "beslutter": null,
+      "relatertVedtak": null,
       "fakta": [
         {
           "kode": "AAPBERDATO",

@@ -30,6 +30,7 @@
       "begrunnelse": null,
       "saksbehandler": "AHF4405S",
       "beslutter": "AHF4405B",
+      "relatertVedtak": null,
       "fakta": [
         {
           "kode": "BESLUTTER",
@@ -341,6 +342,7 @@
       "begrunnelse": null,
       "saksbehandler": "4260",
       "beslutter": null,
+      "relatertVedtak": 36489423,
       "fakta": [
         {
           "kode": "BESLUTTER",

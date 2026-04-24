@@ -38,6 +38,7 @@ export type ArenaVedtakMedFaktaDTO = {
   saksbehandler: string | NIL;
   beslutter: string | NIL;
   utfallkode: string | NIL;
+  relatertVedtak: number | NIL;
   fakta: ArenaVedtakfaktaDTO[];
   vilkårsvurderinger: VilkårsvurderingDTO[];
 };

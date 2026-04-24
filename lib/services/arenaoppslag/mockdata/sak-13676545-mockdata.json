@@ -30,6 +30,7 @@
       "begrunnelse": "Barnetillegget til AAP øker fra 37 til 38 kroner per barn fra 1. januar 2026. Dette går frem av folketrygdloven § 11- 20 tredje ledd og forskrift om arbeidsavklaringspenger § 8.\n\nDerfor har vi endret vedtaket ditt.",
       "saksbehandler": "GRENSESN",
       "beslutter": "GRENSESN",
+      "relatertVedtak": 37103740,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -734,6 +735,7 @@
       "begrunnelse": null,
       "saksbehandler": "TG0331",
       "beslutter": null,
+      "relatertVedtak": 37194828,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -1432,6 +1434,7 @@
       "begrunnelse": "Endring på grunn av endret grunnbeløp",
       "saksbehandler": "GRENSESN",
       "beslutter": "GRENSESN",
+      "relatertVedtak": 37060494,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -2118,6 +2121,7 @@
       "begrunnelse": "Endring på grunn av endret grunnbeløp",
       "saksbehandler": "GRENSESN",
       "beslutter": "GRENSESN",
+      "relatertVedtak": 37090059,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -2804,6 +2808,7 @@
       "begrunnelse": "Barnetillegget til AAP øker fra 36 til 37 kroner per barn fra 1. januar 2025. Dette går frem av folketrygdloven § 11- 20 tredje ledd og forskrift om arbeidsavklaringspenger § 8.\n\nDerfor har vi endret vedtaket ditt.",
       "saksbehandler": "GRENSESN",
       "beslutter": "GRENSESN",
+      "relatertVedtak": 37041811,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -3496,6 +3501,7 @@
       "begrunnelse": "Endring på grunn av endret grunnbeløp",
       "saksbehandler": "GRENSESN",
       "beslutter": "GRENSESN",
+      "relatertVedtak": 36997909,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -4182,6 +4188,7 @@
       "begrunnelse": "Endring på grunn av endret grunnbeløp",
       "saksbehandler": "GRENSESN",
       "beslutter": "GRENSESN",
+      "relatertVedtak": 37025928,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -4868,6 +4875,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "FJX0331",
       "beslutter": "KRO0331",
+      "relatertVedtak": null,
       "fakta": [
         {
           "kode": "FDATO",
@@ -5051,6 +5059,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "KJH4416",
       "beslutter": "JI4416",
+      "relatertVedtak": null,
       "fakta": [
         {
           "kode": "AAPBERDATO",

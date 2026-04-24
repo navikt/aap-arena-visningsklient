@@ -30,6 +30,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "KAB4402",
       "beslutter": "JHH4402",
+      "relatertVedtak": 36653673,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -709,6 +710,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "KHC4402",
       "beslutter": "CEA4402",
+      "relatertVedtak": 36653674,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -1346,6 +1348,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "SVS4402",
       "beslutter": "KBL4402",
+      "relatertVedtak": 36653670,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -2025,6 +2028,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "REA4402",
       "beslutter": "KBL4402",
+      "relatertVedtak": null,
       "fakta": [
         {
           "kode": "FDATO",
@@ -2123,6 +2127,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "HSK5303",
       "beslutter": "GC5303",
+      "relatertVedtak": null,
       "fakta": [
         {
           "kode": "FDATO",
@@ -2202,6 +2207,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "JS4402",
       "beslutter": "SVS4402",
+      "relatertVedtak": null,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -2894,6 +2900,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "VH4402",
       "beslutter": "RR4402",
+      "relatertVedtak": 36653621,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -3573,6 +3580,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "JI4402",
       "beslutter": "ATB4402",
+      "relatertVedtak": 36653655,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -4252,6 +4260,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "LO4402",
       "beslutter": "ANA4402",
+      "relatertVedtak": 36653662,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -4931,6 +4940,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "MRAO4402",
       "beslutter": "JNA4402",
+      "relatertVedtak": 36653640,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -5610,6 +5620,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "RO4402S",
       "beslutter": "GRA4402",
+      "relatertVedtak": 36653648,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -6289,6 +6300,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "RO4402B",
       "beslutter": "KU4402",
+      "relatertVedtak": 36653667,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -6968,6 +6980,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "DKA4402",
       "beslutter": "KBA4402",
+      "relatertVedtak": null,
       "fakta": [
         {
           "kode": "AAPBERDATO",

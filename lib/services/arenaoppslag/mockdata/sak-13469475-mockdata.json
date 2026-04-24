@@ -30,6 +30,7 @@
       "begrunnelse": "Ytelsen er stanset da du ikke har opprettholdt meldeplikten.",
       "saksbehandler": "GRENSESN",
       "beslutter": "GRENSESN",
+      "relatertVedtak": 36754679,
       "fakta": [
         {
           "kode": "EKSTID",
@@ -127,6 +128,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "JH4402",
       "beslutter": "LS4402",
+      "relatertVedtak": null,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -845,6 +847,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "BBU2930",
       "beslutter": "BBU2930",
+      "relatertVedtak": null,
       "fakta": [
         {
           "kode": "FDATO",
@@ -924,6 +927,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "IKB4402",
       "beslutter": "ACA4402",
+      "relatertVedtak": null,
       "fakta": [
         {
           "kode": "AAPBERDATO",
@@ -1616,6 +1620,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "MAA4402",
       "beslutter": "BPA4402",
+      "relatertVedtak": null,
       "fakta": [
         {
           "kode": "EKSTID",
@@ -1713,6 +1718,7 @@
       "begrunnelse": "Syntetisert rettighet",
       "saksbehandler": "ERD4402",
       "beslutter": "CKB4402",
+      "relatertVedtak": 36754676,
       "fakta": [
         {
           "kode": "AAPBERDATO",
