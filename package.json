@@ -39,8 +39,8 @@
     "babel-plugin-react-compiler": "1.0.0",
     "dotenv-cli": "11.0.0",
     "happy-dom": "20.9.0",
-    "oxfmt": "0.44.0",
-    "oxlint": "1.59.0",
+    "oxfmt": "0.45.0",
+    "oxlint": "1.60.0",
     "typescript": "6.0.2",
     "vitest": "4.1.4"
   },
