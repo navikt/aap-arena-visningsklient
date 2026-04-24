@@ -4,6 +4,7 @@ import { BodyShort, HGrid, Label, VStack } from '@navikt/ds-react';
 import { CheckmarkCircleIcon, XMarkOctagonIcon } from '@navikt/aksel-icons';
 import { VilkårsvurderingDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import styles from './vedtakdetaljer.module.css';
+import { EndretMarkering } from 'components/felleskomponenter/endret/endret-markering';
 
 type Props = {
   vilkarsvurderinger: VilkårsvurderingDTO[];
@@ -33,13 +34,11 @@ export function VilkarListe({ vilkarsvurderinger }: Props): React.ReactElement {
               <XMarkOctagonIcon aria-hidden width={24} height={24} className={styles.errorIcon} />
             )}
           </div>
-          <VStack>
-            <Label size="small">{vilkar.vilkårnavn}</Label>
-            <BodyShort size="small">
-              {vilkar.statusnavn}
-              {vilkar.statuskode !== 'V' && ` – Vurdert av ${vilkar.vurdertAv}`}
-            </BodyShort>
-          </VStack>
+          <Label size="small">{vilkar.vilkårnavn}</Label>
+          <BodyShort size="small">
+            {vilkar.statusnavn}
+            {vilkar.statuskode !== 'V' && ` – Vurdert av ${vilkar.vurdertAv}`}
+          </BodyShort>
         </HGrid>
       ))}
     </VStack>
