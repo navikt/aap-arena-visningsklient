@@ -41,7 +41,7 @@
     "happy-dom": "20.9.0",
     "oxfmt": "0.45.0",
     "oxlint": "1.60.0",
-    "typescript": "6.0.2",
+    "typescript": "6.0.3",
     "vitest": "4.1.4"
   },
   "packageManager": "yarn@4.13.0"
