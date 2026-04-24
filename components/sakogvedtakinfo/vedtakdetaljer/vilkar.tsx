@@ -1,6 +1,6 @@
 'use client';
 
-import { BodyShort, HGrid, VStack } from '@navikt/ds-react';
+import { HGrid, VStack } from '@navikt/ds-react';
 import { ArenaVedtakMedFaktaDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { VilkarListe } from 'components/sakogvedtakinfo/vedtakdetaljer/vilkar-liste';
 import { SeksjonHeading } from 'components/sakogvedtakinfo/vedtakdetaljer/seksjon-heading';

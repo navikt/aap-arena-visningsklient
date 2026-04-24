@@ -99,9 +99,10 @@ Avoid:
 Before committing or pushing, always:
 
 1. Run `oxfmt` on all changed files to ensure correct formatting.
-2. Show the user a summary of the changes to be committed.
-3. Propose a commit message and wait for explicit approval before proceeding.
-4. **NEVER run `git commit` or `git push` until the user has explicitly confirmed both the changes and the commit message. No exceptions — even if the user says "commit this" without confirming a message, propose one and wait.**
+2. Run `yarn lint` and fix any errors before proceeding.
+3. Show the user a summary of the changes to be committed.
+4. Propose a commit message and wait for explicit approval before proceeding.
+5. **NEVER run `git commit` or `git push` until the user has explicitly confirmed both the changes and the commit message. No exceptions — even if the user says "commit this" without confirming a message, propose one and wait.**
 
 Before creating a pull request, always:
 
