@@ -46,3 +46,15 @@ export function formaterTilProsent(sum?: number | null): string {
   }
   return `${sum} %`;
 }
+
+export function formaterFaktaNok(verdi: string | null | undefined): string {
+  if (verdi == null) return '—';
+  const tall = parseInt(verdi, 10);
+  return isNaN(tall) ? '—' : formaterTilNok(tall);
+}
+
+export function jaNeiEllerBlank(verdi: string | null | undefined): string {
+  if (verdi === 'J') return 'Ja';
+  if (verdi === 'N') return 'Nei';
+  return '—';
+}

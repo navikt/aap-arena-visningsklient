@@ -98,14 +98,16 @@ Avoid:
 
 Before committing or pushing, always:
 
-1. Show the user a summary of the changes to be committed.
-2. Propose a commit message and wait for explicit approval before proceeding.
-3. Do not commit or push until the user has confirmed both the changes and the message.
+1. Run `oxfmt` on all changed files to ensure correct formatting.
+2. Run `yarn lint` and fix any errors before proceeding.
+3. Show the user a summary of the changes to be committed.
+4. Propose a commit message and wait for explicit approval before proceeding.
+5. **NEVER run `git commit` or `git push` until the user has explicitly confirmed both the changes and the commit message. No exceptions — even if the user says "commit this" without confirming a message, propose one and wait.**
 
 Before creating a pull request, always:
 
 1. Propose a PR title and description and present them to the user.
-2. Wait for explicit approval — including any requested edits — before creating it.
+2. **NEVER run `gh pr create` or any equivalent until the user has explicitly approved the title, description, and any other details. No exceptions.**
 
 ## Definition of done for AI PRs
 
