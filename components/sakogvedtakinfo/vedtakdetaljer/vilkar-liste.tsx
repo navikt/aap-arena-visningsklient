@@ -4,7 +4,6 @@ import { BodyShort, HGrid, Label, VStack } from '@navikt/ds-react';
 import { CheckmarkCircleIcon, XMarkOctagonIcon } from '@navikt/aksel-icons';
 import { VilkårsvurderingDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import styles from './vedtakdetaljer.module.css';
-import { EndretMarkering } from 'components/felleskomponenter/endret/endret-markering';
 
 type Props = {
   vilkarsvurderinger: VilkårsvurderingDTO[];
