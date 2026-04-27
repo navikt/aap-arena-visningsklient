@@ -106,8 +106,11 @@ Before committing or pushing, always:
 
 Before creating a pull request, always:
 
-1. Propose a PR title and description and present them to the user.
-2. **NEVER run `gh pr create` or any equivalent until the user has explicitly approved the title, description, and any other details. No exceptions.**
+1. Run `oxfmt` on all changed files to ensure correct formatting.
+2. Run `yarn lint` and fix any errors before proceeding.
+3. Run `yarn vitest run` and fix any failing tests before proceeding.
+4. Propose a PR title and description and present them to the user.
+5. **NEVER run `gh pr create` or any equivalent until the user has explicitly approved the title, description, and any other details. No exceptions.**
 
 ## Definition of done for AI PRs
 

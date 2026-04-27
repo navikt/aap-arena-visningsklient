@@ -1,7 +1,7 @@
 'use client';
 
-import { useMemo } from 'react';
-import { BodyShort, HStack, Label, VStack } from '@navikt/ds-react';
+import { useMemo, useState } from 'react';
+import { BodyShort, HStack, Label, Switch, VStack } from '@navikt/ds-react';
 import { ArenaVedtakMedFaktaDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { FieldValue } from 'components/felleskomponenter/field-value/field-value';
 import { formaterFaktaDato } from 'lib/utils/date';
@@ -11,10 +11,28 @@ import { BeregningSeksjon } from 'components/sakogvedtakinfo/vedtakdetaljer/bere
 
 type Props = {
   vedtak: ArenaVedtakMedFaktaDTO;
+  relatertVedtak: ArenaVedtakMedFaktaDTO | null;
 };
 
-export function Vedtakdetaljer({ vedtak }: Props): React.ReactElement {
+export function Vedtakdetaljer({ vedtak, relatertVedtak }: Props): React.ReactElement {
   const faktaMap = useMemo(() => new Map(vedtak.fakta.map((f) => [f.kode, f])), [vedtak.vedtakId]);
+
+  const relatertFaktaMap = useMemo(
+    () => (relatertVedtak != null ? new Map(relatertVedtak.fakta.map((f) => [f.kode, f])) : null),
+    [relatertVedtak]
+  );
+
+  const [visEndringer, setVisEndringer] = useState(false);
+
+  function erEndret(verdi: string | null | undefined, relatertVerdi: string | null | undefined): boolean {
+    if (relatertVedtak == null || !visEndringer) return false;
+    return verdi !== relatertVerdi;
+  }
+
+  function erFaktaEndret(kode: string): boolean {
+    if (relatertFaktaMap == null || !visEndringer) return false;
+    return faktaMap.get(kode)?.verdi !== relatertFaktaMap.get(kode)?.verdi;
+  }
 
   const vedtaksdatoFormatert = formaterFaktaDato(faktaMap.get('INNVF')?.verdi);
 
@@ -24,25 +42,54 @@ export function Vedtakdetaljer({ vedtak }: Props): React.ReactElement {
         <Label size="medium">Vedtak {vedtak.rettighetnavn}</Label>
         {vedtaksdatoFormatert != null && <BodyShort size="medium">{vedtaksdatoFormatert}</BodyShort>}
       </HStack>
+      {relatertVedtak != null && (
+        <HStack gap="space-32">
+          <FieldValue label="Endring av vedtak nr." value={relatertVedtak.lopenrvedtak.toString()} />
+          <Switch onClick={() => setVisEndringer(!visEndringer)} checked={visEndringer}>
+            Marker endringer
+          </Switch>
+        </HStack>
+      )}
       <HStack gap="space-32" wrap>
         {vedtak.rettighetkode === 'AAP' && (
           <>
-            <FieldValue label="Gjelder fra" value={formaterFaktaDato(faktaMap.get('FDATO')?.verdi) ?? '—'} />
-            <FieldValue label="Justert fra-dato" value={formaterFaktaDato(faktaMap.get('AAPJUSTFD')?.verdi) ?? '—'} />
+            <FieldValue
+              label="Gjelder fra"
+              value={formaterFaktaDato(faktaMap.get('FDATO')?.verdi) ?? '—'}
+              isChanged={erFaktaEndret('FDATO')}
+            />
+            <FieldValue
+              label="Justert fra-dato"
+              value={formaterFaktaDato(faktaMap.get('AAPJUSTFD')?.verdi) ?? '—'}
+              isChanged={erFaktaEndret('AAPJUSTFD')}
+            />
             <FieldValue
               label="Opprinnelig til-dato"
               value={formaterFaktaDato(faktaMap.get('OPPRTDATO')?.verdi) ?? '—'}
+              isChanged={erFaktaEndret('OPPRTDATO')}
             />
-            <FieldValue label="Til-dato" value={formaterFaktaDato(faktaMap.get('TDATO')?.verdi) ?? '—'} />
+            <FieldValue
+              label="Til-dato"
+              value={formaterFaktaDato(faktaMap.get('TDATO')?.verdi) ?? '—'}
+              isChanged={erFaktaEndret('TDATO')}
+            />
           </>
         )}
-        <FieldValue label="Saksbehandler" value={vedtak.saksbehandler ?? '—'} />
-        <FieldValue label="Beslutter" value={vedtak.beslutter ?? '—'} />
+        <FieldValue
+          label="Saksbehandler"
+          value={vedtak.saksbehandler ?? '—'}
+          isChanged={erEndret(vedtak.saksbehandler, relatertVedtak?.saksbehandler)}
+        />
+        <FieldValue
+          label="Beslutter"
+          value={vedtak.beslutter ?? '—'}
+          isChanged={erEndret(vedtak.beslutter, relatertVedtak?.beslutter)}
+        />
       </HStack>
       {vedtak.rettighetkode === 'AAP' && (
         <>
-          <SatsSeksjon faktaMap={faktaMap} />
-          <BeregningSeksjon faktaMap={faktaMap} />
+          <SatsSeksjon faktaMap={faktaMap} relatertFaktaMap={visEndringer ? relatertFaktaMap : null} />
+          <BeregningSeksjon faktaMap={faktaMap} relatertFaktaMap={visEndringer ? relatertFaktaMap : null} />
         </>
       )}
       <Vilkar vedtak={vedtak} />

@@ -33,13 +33,13 @@ export function VilkarListe({ vilkarsvurderinger }: Props): React.ReactElement {
               <XMarkOctagonIcon aria-hidden width={24} height={24} className={styles.errorIcon} />
             )}
           </div>
-          <VStack>
+          <div>
             <Label size="small">{vilkar.vilkårnavn}</Label>
             <BodyShort size="small">
               {vilkar.statusnavn}
               {vilkar.statuskode !== 'V' && ` – Vurdert av ${vilkar.vurdertAv}`}
             </BodyShort>
-          </VStack>
+          </div>
         </HGrid>
       ))}
     </VStack>

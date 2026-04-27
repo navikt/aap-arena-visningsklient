@@ -33,6 +33,8 @@ export function norsktDatoformat(date: Date): string {
   return format(date, 'dd.MM.yyyy');
 }
 
+export function parseFaktaDato(dateString: string): Date;
+export function parseFaktaDato(dateString: string | null | undefined): Date | null;
 export function parseFaktaDato(dateString: string | null | undefined): Date | null {
   if (dateString == null) {
     return null;

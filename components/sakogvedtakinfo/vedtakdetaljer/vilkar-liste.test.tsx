@@ -26,7 +26,7 @@ describe('VilkarListe', () => {
       lagVilkar(3, 'J', 'Innvilget vilkår'),
     ];
 
-    render(<VilkarListe vilkarsvurderinger={vilkar} />);
+    render(<VilkarListe vilkarsvurderinger={vilkar} relatertVilkarsvurderinger={null} />);
 
     const labels = screen.getAllByText(/vilkår/i);
     expect(labels[0]).toHaveTextContent('Innvilget vilkår');
@@ -37,7 +37,7 @@ describe('VilkarListe', () => {
   it('skal beholde rekkefølgen innad i samme statuskode', () => {
     const vilkar = [lagVilkar(1, 'J', 'Første J'), lagVilkar(2, 'V', 'Første V'), lagVilkar(3, 'J', 'Andre J')];
 
-    render(<VilkarListe vilkarsvurderinger={vilkar} />);
+    render(<VilkarListe vilkarsvurderinger={vilkar} relatertVilkarsvurderinger={null} />);
 
     const labels = screen.getAllByText(/J$|V$/);
     expect(labels[0]).toHaveTextContent('Første J');
@@ -46,7 +46,36 @@ describe('VilkarListe', () => {
   });
 
   it('skal rendre tom liste uten feil', () => {
-    const { container } = render(<VilkarListe vilkarsvurderinger={[]} />);
+    const { container } = render(<VilkarListe vilkarsvurderinger={[]} relatertVilkarsvurderinger={null} />);
     expect(container.firstChild).toBeEmptyDOMElement();
+  });
+
+  it('skal markere vilkår som endret når statuskode har endret seg fra relatert vedtak', () => {
+    const vilkar = [lagVilkar(1, 'N', 'Et vilkår')];
+    const relatert = [lagVilkar(1, 'J', 'Et vilkår')];
+
+    render(<VilkarListe vilkarsvurderinger={vilkar} relatertVilkarsvurderinger={relatert} />);
+
+    const tekstContainer = screen.getByText('Et vilkår').closest('div');
+    expect(tekstContainer?.className).toMatch(/_endret_/);
+  });
+
+  it('skal ikke markere vilkår som endret når statuskode er uendret', () => {
+    const vilkar = [lagVilkar(1, 'J', 'Et vilkår')];
+    const relatert = [lagVilkar(1, 'J', 'Et vilkår')];
+
+    render(<VilkarListe vilkarsvurderinger={vilkar} relatertVilkarsvurderinger={relatert} />);
+
+    const tekstContainer = screen.getByText('Et vilkår').closest('div');
+    expect(tekstContainer?.className).not.toMatch(/_endret_/);
+  });
+
+  it('skal ikke markere vilkår som endret når relatertVilkarsvurderinger er null', () => {
+    const vilkar = [lagVilkar(1, 'N', 'Et vilkår')];
+
+    render(<VilkarListe vilkarsvurderinger={vilkar} relatertVilkarsvurderinger={null} />);
+
+    const tekstContainer = screen.getByText('Et vilkår').closest('div');
+    expect(tekstContainer?.className).not.toMatch(/_endret_/);
   });
 });

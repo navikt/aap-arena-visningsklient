@@ -54,8 +54,16 @@ export function VedtakTabell({ vedtak }: Props): React.ReactElement {
               utfallkode,
               vedtakId,
             } = vedtak;
+            const relatertVedtak =
+              vedtak.relatertVedtak != null
+                ? (sortedVedtak.find((v) => v.vedtakId === vedtak.relatertVedtak) ?? null)
+                : null;
             return (
-              <Table.ExpandableRow key={vedtakId} togglePlacement="right" content={<Vedtakdetaljer vedtak={vedtak} />}>
+              <Table.ExpandableRow
+                key={vedtakId}
+                togglePlacement="right"
+                content={<Vedtakdetaljer vedtak={vedtak} relatertVedtak={relatertVedtak} />}
+              >
                 <Table.DataCell>{lopenrvedtak}</Table.DataCell>
                 <Table.HeaderCell scope="row">{rettighetnavn}</Table.HeaderCell>
                 <Table.DataCell>{vedtaktypeNavn}</Table.DataCell>
