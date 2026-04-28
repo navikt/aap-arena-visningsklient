@@ -15,8 +15,8 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@navikt/ds-css": "8.9.1",
-    "@navikt/ds-react": "8.9.1",
+    "@navikt/ds-css": "8.10.1",
+    "@navikt/ds-react": "8.10.1",
     "@navikt/oasis": "4.1.4",
     "date-fns": "4.1.0",
     "graphql": "16.13.2",
@@ -41,7 +41,7 @@
     "happy-dom": "20.9.0",
     "oxfmt": "0.45.0",
     "oxlint": "1.60.0",
-    "typescript": "6.0.2",
+    "typescript": "6.0.3",
     "vitest": "4.1.4"
   },
   "packageManager": "yarn@4.13.0"
