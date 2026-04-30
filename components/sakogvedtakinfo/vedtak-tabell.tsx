@@ -7,6 +7,7 @@ import { format } from 'date-fns';
 import { Vedtakdetaljer } from 'components/sakogvedtakinfo/vedtakdetaljer/vedtakdetaljer';
 import { CheckmarkCircleIcon } from '@navikt/aksel-icons';
 import { XMarkOctagonIcon } from '@navikt/aksel-icons';
+import { storForbokstav } from 'lib/utils/string';
 
 type Props = {
   vedtak: ArenaVedtakMedFaktaDTO[];
@@ -115,5 +116,5 @@ function JaNeiStatus({ status }: JaNeiStatusProps): React.ReactElement {
     );
   }
 
-  return <div>{status}</div>;
+  return <div>{storForbokstav(status)}</div>;
 }
