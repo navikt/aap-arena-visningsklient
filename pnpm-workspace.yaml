@@ -1,0 +1,7 @@
+allowBuilds:
+  sharp: false
+  unix-dgram: false
+settings:
+  ignoreScripts: true
+  saveExact: true
+  minimumReleaseAge: 2880
