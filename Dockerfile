@@ -1,19 +1,18 @@
 FROM node:24-alpine AS builder
 WORKDIR /app
 
-COPY package.json .yarnrc.yml yarn.lock* ./
+COPY package.json .npmrc pnpm-lock.yaml pnpm-workspace.yaml ./
 
 RUN corepack enable
 
 RUN --mount=type=secret,id=NPM_AUTH_TOKEN \
-    NPM_AUTH_TOKEN=$(cat /run/secrets/NPM_AUTH_TOKEN) yarn install --immutable
+    NPM_AUTH_TOKEN=$(cat /run/secrets/NPM_AUTH_TOKEN) pnpm install --frozen-lockfile
 
 COPY . .
 
-
-RUN yarn lint
-RUN yarn test
-RUN yarn run build
+RUN pnpm run lint
+RUN pnpm run test
+RUN pnpm run build
 
 FROM europe-north1-docker.pkg.dev/cgr-nav/pull-through/nav.no/node:25-slim AS runtime
 

@@ -22,7 +22,7 @@ export function Vedtakdetaljer({ vedtak, relatertVedtak }: Props): React.ReactEl
     [relatertVedtak]
   );
 
-  const [visEndringer, setVisEndringer] = useState(false);
+  const [visEndringer, setVisEndringer] = useState(true);
 
   function erEndret(verdi: string | null | undefined, relatertVerdi: string | null | undefined): boolean {
     if (relatertVedtak == null || !visEndringer) return false;

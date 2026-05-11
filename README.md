@@ -9,7 +9,7 @@ Dette er en enkel visningsklient for Arena etter arena er skrudd av. Den har lit
 Dette oppsettet forutsetter at du har følgende programvare installert:
 
 - Node.js
-- Corepack (Kommer med Node.js og håndterer riktig versjon av yarn for deg, må aktiveres med `corepack enable`)
+- Corepack (Kommer med Node.js og håndterer riktig versjon av pnpm for deg, må aktiveres med `corepack enable`)
 - Docker med colima og docker-compose
 
 ### Sett opp GitHub token
@@ -38,7 +38,7 @@ For å kjøre oxfmt automatisk ved lagring, sett opp en File Watcher:
    - **Name:** `oxfmt`
    - **File type:** `TypeScript` (legg til en watcher til for `TypeScript JSX` om ønskelig)
    - **Scope:** `Current File`
-   - **Program:** `yarn`
+   - **Program:** `pnpm`
    - **Arguments:** `exec oxfmt "$FilePath$"`
    - **Output paths to refresh:** `$FilePath$`
    - **Working directory:** `$ProjectFileDir$`
@@ -52,8 +52,8 @@ oxfmt vil nå formatere filen automatisk hver gang du lagrer.
 
 1. Installer avhengigheter og start applikasjonen:
    ```bash
-   yarn install
-   yarn dev:local
+   pnpm install
+   pnpm dev:local
    ```
    Applikasjonen skal nå være tilgjengelig i nettleseren på http://localhost:3000 \
    **OBS:** Husk å starte backend-tjenestene lokalt også, etter egen oppskrift.
@@ -77,8 +77,8 @@ oxfmt vil nå formatere filen automatisk hver gang du lagrer.
 
 4. Installer avhengigheter og start applikasjonen:
    ```bash
-    yarn install
-    yarn dev:dev-gcp
+    pnpm install
+    pnpm dev:dev-gcp
    ```
    Applikasjonen skal nå være tilgjengelig i nettleseren på http://localhost:4000
 
@@ -114,15 +114,15 @@ Disse kommandoene kan hjelpe deg med å rydde opp før du prøver på nytt:
 For å kjøre tester lokalt, bruk følgende kommando:
 
 ```bash
-  yarn test
+  pnpm test
 ```
 
 ### Oppdatere avhengigheter
 
-For å forhindre utilsiktede endringer i `yarn.lock` er man tvunget til å alltid kjøre følgende kommando når man vil oppdatere avhengigheter:
+For å forhindre utilsiktede endringer i `pnpm-lock.yaml` er man tvunget til å alltid kjøre følgende kommando når man vil oppdatere avhengigheter:
 
 ```bash
-  yarn install --no-immutable
+  pnpm install --no-frozen-lockfile
 ```
 
 ## Kode generert av GitHub Copilot

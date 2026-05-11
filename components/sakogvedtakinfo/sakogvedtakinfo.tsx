@@ -51,7 +51,7 @@ export function Sakogvedtakinfo({ sak }: Props): React.ReactElement {
     <VStack gap="space-24">
       <HStack gap="space-20" align="center">
         <Heading size="medium">
-          Arena {nyesteVedtak.rettighetnavn} {sak.opprettetAar} {sak.lopenr}
+          Arena {nyesteVedtak?.rettighetnavn ?? ''} {sak.opprettetAar} {sak.lopenr}
         </Heading>
         {startdato != null && (
           <BodyShort size="small" data-testid="sak-datoperiode">

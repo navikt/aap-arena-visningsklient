@@ -122,7 +122,7 @@ duplicate its logic. Use it as-is:
 
 ## Validation
 
-- `yarn lint` — must pass after any changes.
-- `yarn build` — must pass. Services are server-only; build failures often indicate missing env
+- `pnpm lint` — must pass after any changes.
+- `pnpm build` — must pass. Services are server-only; build failures often indicate missing env
   vars or type errors.
 - If logic changes, add or update tests in `lib/utils/` for any shared utilities touched.

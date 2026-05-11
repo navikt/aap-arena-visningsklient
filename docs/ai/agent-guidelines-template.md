@@ -48,7 +48,7 @@ Do not duplicate global rules from `AGENTS.md`.
 
 ## Validation for this scope
 
-- Required commands: `<e.g. yarn test lib/utils/date.test.ts>`
+- Required commands: `<e.g. pnpm test lib/utils/date.test.ts>`
 - Additional checks: `<e.g. accessibility manual checks for keyboard nav>`
 
 ## Notes for maintainers
