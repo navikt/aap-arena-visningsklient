@@ -12,6 +12,8 @@ import Sak13339857Mockdata from 'lib/services/arenaoppslag/mockdata/sak-13339857
 import Sak13676545Mockdata from 'lib/services/arenaoppslag/mockdata/sak-13676545-mockdata.json';
 import Sak13691130Mockdata from 'lib/services/arenaoppslag/mockdata/sak-13691130-mockdata.json';
 import Sak13304506Mockdata from 'lib/services/arenaoppslag/mockdata/sak-13304506-mockdata.json';
+import Sak13782028Mockdata from 'lib/services/arenaoppslag/mockdata/sak-13782028-mockdata.json';
+import Sak13781846Mockdata from 'lib/services/arenaoppslag/mockdata/sak-13781846-mockdata.json';
 
 export function getMockSakFraArena(saksId: string): SakDTO | null {
   switch (saksId) {
@@ -41,6 +43,10 @@ export function getMockSakFraArena(saksId: string): SakDTO | null {
       return Sak13691130Mockdata as SakDTO;
     case '13304506':
       return Sak13304506Mockdata as SakDTO;
+    case '13782028':
+      return Sak13782028Mockdata as SakDTO;
+    case '13781846':
+      return Sak13781846Mockdata as SakDTO;
     default:
       return null;
   }

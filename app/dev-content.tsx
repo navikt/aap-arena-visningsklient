@@ -23,6 +23,8 @@ export function DevContent(): React.ReactElement {
     { sakId: '13676545', info: 'Sak med 11-5 vedtak' },
     { sakId: '13691130', info: 'Sak med 11-5 vedtak' },
     { sakId: '13304506', info: 'Klagesak' },
+    { sakId: '13782028', info: 'Testsak med manuelt grunnlag' },
+    { sakId: '13781846', info: 'Testsak hvor Asle har lagt inn litt vedtak' },
   ];
 
   return (
