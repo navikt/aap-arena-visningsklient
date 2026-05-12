@@ -50,7 +50,7 @@ export type SakPersonDTO = {
   etternavn: string;
 };
 
-export type TellerverkDTO = {
+export type TelleverkDTO = {
   ordineerAAPKvote: number;
   utvidetAAPKvote: number;
 };
@@ -65,5 +65,5 @@ export type SakDTO = {
   registrertDato: string;
   avsluttetDato: string | NIL;
   vedtak: ArenaVedtakMedFaktaDTO[];
-  tellerverk: TellerverkDTO | NIL;
+  telleverkForPerson: TelleverkDTO | NIL;
 };
