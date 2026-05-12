@@ -20,7 +20,6 @@ export function SakPageClient({ sak }: Props): React.ReactElement {
             <Tabs.List>
               <Tabs.Tab value="sak" label={`Sak ${sak.opprettetAar} ${sak.lopenr}`} />
               <Tabs.Tab value="tilkjent-ytelse" label="Tilkjent ytelse" />
-              <Tabs.Tab value="spesialutbetaling" label="Spesialutbetaling" />
               <Tabs.Tab value="notater" label="Notater" />
             </Tabs.List>
             <Tabs.Panel value="sak">
@@ -29,9 +28,6 @@ export function SakPageClient({ sak }: Props): React.ReactElement {
               </div>
             </Tabs.Panel>
             <Tabs.Panel value="tilkjent-ytelse">
-              <IkkeImplementertEnda />
-            </Tabs.Panel>
-            <Tabs.Panel value="spesialutbetaling">
               <IkkeImplementertEnda />
             </Tabs.Panel>
             <Tabs.Panel value="notater">
