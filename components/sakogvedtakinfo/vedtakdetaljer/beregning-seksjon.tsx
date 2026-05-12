@@ -13,7 +13,7 @@ type Props = {
 };
 
 export function BeregningSeksjon({ faktaMap, relatertFaktaMap }: Props): React.ReactElement {
-  const erManueltBeregnet = faktaMap.get('GRLAGMAN')?.verdi === 'J';
+  const erManueltBeregnet = faktaMap.get('AGRLAGMAN')?.verdi === 'J';
   const harYrkesskade = faktaMap.get('AYRKESKADE')?.verdi === 'J';
 
   const overgangstilfeller = ['OVERGTAT', 'OVERGTRP', 'OVERGTTU']
@@ -40,7 +40,7 @@ export function BeregningSeksjon({ faktaMap, relatertFaktaMap }: Props): React.R
       <SeksjonHeading
         tittel="Beregning"
         action={
-          erManueltBeregnet ? <InlineMessage status="warning">Grunnlaget er beregnet manuelt</InlineMessage> : undefined
+          erManueltBeregnet ? <InlineMessage status="warning" size="small">Grunnlaget er beregnet manuelt</InlineMessage> : undefined
         }
       />
       <VStack gap="space-16">
