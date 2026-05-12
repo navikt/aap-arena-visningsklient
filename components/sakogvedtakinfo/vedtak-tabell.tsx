@@ -66,7 +66,7 @@ export function VedtakTabell({ vedtak }: Props): React.ReactElement {
                 content={<Vedtakdetaljer vedtak={vedtak} relatertVedtak={relatertVedtak} />}
               >
                 <Table.DataCell>{lopenrvedtak}</Table.DataCell>
-                <Table.HeaderCell scope="row">{rettighetnavn}</Table.HeaderCell>
+                <Table.DataCell scope="row">{rettighetnavn}</Table.DataCell>
                 <Table.DataCell>{vedtaktypeNavn}</Table.DataCell>
                 <Table.DataCell>{aktivitetsfaseNavn}</Table.DataCell>
                 <Table.DataCell>{dateOrBlank(fraOgMed)}</Table.DataCell>
