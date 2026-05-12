@@ -47,7 +47,7 @@ export function Vedtakdetaljer({ vedtak, relatertVedtak }: Props): React.ReactEl
   const vedtaksdatoFormatert = formaterFaktaDato(faktaMap.get('INNVF')?.verdi);
 
   return (
-    <VStack gap="space-32">
+    <VStack gap="space-32" marginInline="space-32" marginBlock="space-8">
       <HStack gap="space-16">
         <Label size="medium">Vedtak {vedtak.rettighetnavn}</Label>
         {vedtaksdatoFormatert != null && <BodyShort size="medium">{vedtaksdatoFormatert}</BodyShort>}
