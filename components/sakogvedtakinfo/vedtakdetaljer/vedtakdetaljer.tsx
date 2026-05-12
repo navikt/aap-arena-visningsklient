@@ -34,10 +34,20 @@ export function Vedtakdetaljer({ vedtak, relatertVedtak }: Props): React.ReactEl
     return faktaMap.get(kode)?.verdi !== relatertFaktaMap.get(kode)?.verdi;
   }
 
+  function getNavn(navn: string | null | undefined): string {
+    if (navn == null) {
+      return '—';
+    }
+    if (navn === 'GRENSESN') {
+      return 'Automatisk';
+    }
+    return navn;
+  }
+
   const vedtaksdatoFormatert = formaterFaktaDato(faktaMap.get('INNVF')?.verdi);
 
   return (
-    <VStack gap="space-32">
+    <VStack gap="space-32" marginInline="space-32" marginBlock="space-8">
       <HStack gap="space-16">
         <Label size="medium">Vedtak {vedtak.rettighetnavn}</Label>
         {vedtaksdatoFormatert != null && <BodyShort size="medium">{vedtaksdatoFormatert}</BodyShort>}
@@ -77,12 +87,12 @@ export function Vedtakdetaljer({ vedtak, relatertVedtak }: Props): React.ReactEl
         )}
         <FieldValue
           label="Saksbehandler"
-          value={vedtak.saksbehandler ?? '—'}
+          value={getNavn(vedtak.saksbehandler)}
           isChanged={erEndret(vedtak.saksbehandler, relatertVedtak?.saksbehandler)}
         />
         <FieldValue
           label="Beslutter"
-          value={vedtak.beslutter ?? '—'}
+          value={getNavn(vedtak.beslutter)}
           isChanged={erEndret(vedtak.beslutter, relatertVedtak?.beslutter)}
         />
       </HStack>

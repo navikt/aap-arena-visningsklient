@@ -10,7 +10,7 @@ type Props = {
 
 export function SeksjonHeading({ tittel, action }: Props): React.ReactElement {
   return (
-    <HStack align="center" justify="space-between" className={styles.seksjonstittel}>
+    <HStack align="start" gap="space-16" className={styles.seksjonstittel}>
       <Label size="medium">{tittel}</Label>
       {action}
     </HStack>
