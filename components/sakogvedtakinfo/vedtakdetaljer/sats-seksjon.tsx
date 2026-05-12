@@ -23,8 +23,8 @@ export function SatsSeksjon({ faktaMap, relatertFaktaMap }: Props): React.ReactE
       <HStack gap="space-32" wrap>
         <FieldValue
           label="Grunnsats"
-          value={formaterFaktaNok(faktaMap.get('GRSATS')?.verdi)}
-          isChanged={erEndret('GRSATS')}
+          value={formaterFaktaNok(faktaMap.get('DAGSFSAM')?.verdi)}
+          isChanged={erEndret('DAGSFSAM')}
         />
         <FieldValue
           label="Ant. barn med stønad"
