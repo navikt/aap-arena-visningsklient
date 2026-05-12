@@ -129,11 +129,9 @@ export function BeregningSeksjon({ faktaMap, relatertFaktaMap }: Props): React.R
                 isChanged={relatertFaktaMap != null && overgangstilfeller !== relatertOvergangstilfeller}
               />
             )}
-            <FieldValue
-              label="Arbeidsperiode fra EØS/Norden"
-              value={jaNeiEllerBlank(faktaMap.get('ARBPEOS')?.verdi)}
-              isChanged={erEndret('ARBPEOS')}
-            />
+            {faktaMap.get('ARBPEOS')?.verdi === 'J' && (
+              <FieldValue label="Arbeidsperiode fra EØS/Norden" value="Ja" isChanged={erEndret('ARBPEOS')} />
+            )}
             <FieldValue
               label="Ung ufør"
               value={jaNeiEllerBlank(faktaMap.get('AUNGFOR')?.verdi)}
