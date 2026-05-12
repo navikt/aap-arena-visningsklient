@@ -82,7 +82,7 @@ export function BeregningSeksjon({ faktaMap, relatertFaktaMap }: Props): React.R
               />
               <FieldValue
                 label="Yrkesskadegrad"
-                value={faktaMap.get('YSKADEGRD')?.verdi ?? '—'}
+                value={faktaMap.get('YSKADEGRD')?.verdi != null ? `${faktaMap.get('YSKADEGRD')?.verdi}%` : '—'}
                 isChanged={erEndret('YSKADEGRD')}
               />
               <FieldValue
@@ -122,16 +122,16 @@ export function BeregningSeksjon({ faktaMap, relatertFaktaMap }: Props): React.R
               value={faktaMap.get('BERREGEL')?.verdi ?? '—'}
               isChanged={erEndret('BERREGEL')}
             />
-            <FieldValue
-              label="Overgangstilfelle"
-              value={overgangstilfeller || '—'}
-              isChanged={relatertFaktaMap != null && overgangstilfeller !== relatertOvergangstilfeller}
-            />
-            <FieldValue
-              label="Arbeidsperiode fra EØS/Norden"
-              value={jaNeiEllerBlank(faktaMap.get('ARBPEOS')?.verdi)}
-              isChanged={erEndret('ARBPEOS')}
-            />
+            {overgangstilfeller && (
+              <FieldValue
+                label="Overgangstilfelle"
+                value={overgangstilfeller || '—'}
+                isChanged={relatertFaktaMap != null && overgangstilfeller !== relatertOvergangstilfeller}
+              />
+            )}
+            {faktaMap.get('ARBPEOS')?.verdi === 'J' && (
+              <FieldValue label="Arbeidsperiode fra EØS/Norden" value="Ja" isChanged={erEndret('ARBPEOS')} />
+            )}
             <FieldValue
               label="Ung ufør"
               value={jaNeiEllerBlank(faktaMap.get('AUNGFOR')?.verdi)}
