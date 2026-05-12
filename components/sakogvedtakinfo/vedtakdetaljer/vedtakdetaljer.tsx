@@ -79,7 +79,7 @@ export function Vedtakdetaljer({ vedtak, relatertVedtak }: Props): React.ReactEl
               isChanged={erFaktaEndret('OPPRTDATO')}
             />
             <FieldValue
-              label="Til-dato"
+              label="Gjelder til og med"
               value={formaterFaktaDato(faktaMap.get('TDATO')?.verdi) ?? '—'}
               isChanged={erFaktaEndret('TDATO')}
             />
