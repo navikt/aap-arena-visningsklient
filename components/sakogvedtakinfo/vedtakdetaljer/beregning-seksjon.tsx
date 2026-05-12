@@ -82,7 +82,7 @@ export function BeregningSeksjon({ faktaMap, relatertFaktaMap }: Props): React.R
               />
               <FieldValue
                 label="Yrkesskadegrad"
-                value={faktaMap.get('YSKADEGRD')?.verdi ?? '—'}
+                value={faktaMap.get('YSKADEGRD')?.verdi != null ? `${faktaMap.get('YSKADEGRD')?.verdi}%` : '—'}
                 isChanged={erEndret('YSKADEGRD')}
               />
               <FieldValue
