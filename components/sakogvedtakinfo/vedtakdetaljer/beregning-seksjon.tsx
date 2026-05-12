@@ -35,12 +35,26 @@ export function BeregningSeksjon({ faktaMap, relatertFaktaMap }: Props): React.R
     return faktaMap.get(kode)?.verdi !== relatertFaktaMap.get(kode)?.verdi;
   }
 
+  function beregningBelopOgAarString(verdiKode: string, aarKode: string): string {
+    const verdi = faktaMap.get(verdiKode)?.verdi;
+    const aar = faktaMap.get(aarKode)?.verdi;
+
+    if (verdi == null) return '—';
+    if (aar == null) return formaterFaktaNok(verdi);
+
+    return `${formaterFaktaNok(verdi)} (${aar})`;
+  }
+
   return (
     <div>
       <SeksjonHeading
         tittel="Beregning"
         action={
-          erManueltBeregnet ? <InlineMessage status="warning" size="small">Grunnlaget er beregnet manuelt</InlineMessage> : undefined
+          erManueltBeregnet ? (
+            <InlineMessage status="warning" size="small">
+              Grunnlaget er beregnet manuelt
+            </InlineMessage>
+          ) : undefined
         }
       />
       <VStack gap="space-16">
@@ -85,18 +99,18 @@ export function BeregningSeksjon({ faktaMap, relatertFaktaMap }: Props): React.R
           <HStack gap="space-32" wrap>
             <FieldValue
               label="Siste beregningsår"
-              value={formaterFaktaNok(faktaMap.get('INTARSISTE')?.verdi)}
-              isChanged={erEndret('INTARSISTE')}
+              value={beregningBelopOgAarString('INTSISTE', 'INTARSISTE')}
+              isChanged={erEndret('INTSISTE')}
             />
             <FieldValue
               label="Nest siste beregningsår"
-              value={formaterFaktaNok(faktaMap.get('INTARNESTS')?.verdi)}
-              isChanged={erEndret('INTARNESTS')}
+              value={beregningBelopOgAarString('INTNESTS', 'INTARNESTS')}
+              isChanged={erEndret('INTNESTS')}
             />
             <FieldValue
               label="Tredje siste beregningsår"
-              value={formaterFaktaNok(faktaMap.get('INTARTREDS')?.verdi)}
-              isChanged={erEndret('INTARTREDS')}
+              value={beregningBelopOgAarString('INTTREDS', 'INTARTREDS')}
+              isChanged={erEndret('INTTREDS')}
             />
             <FieldValue
               label="Grunnlag for beregning"
