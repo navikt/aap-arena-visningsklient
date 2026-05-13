@@ -7,6 +7,25 @@ import { SeksjonHeading } from 'components/sakogvedtakinfo/vedtakdetaljer/seksjo
 import { formaterFaktaDato } from 'lib/utils/date';
 import { formaterFaktaNok, jaNeiEllerBlank } from 'lib/utils/string';
 
+const BEREGNINGSREGEL_TEKST: Record<string, string> = {
+  ORDINAER_MINSTEYTELSE: 'Minsteytelse over 25 år',
+  ORDINAER_OVER_6G: 'Grunnlaget overstiger 6G',
+  MANUELL_UNDER_6G: 'Manuelt fastsatt grunnlag under 6 G',
+  ORDINAER_ETTAAR: '§ 11-19 Inntekt siste år',
+  YRKESSKADE_UNDER_6G: '§ 11-19/11-22 Grunnlaget er beregnet med yrkeskadefordel - under 6G',
+  MINSTEYTELSE_U25: 'Minsteytelse under 25 år',
+  MANUELL_OVER_6G: 'Manuelt fastsatt grunnlag over 6G',
+  YRKESSKADE_OVER_6G: '§ 11-19/11-22 Grunnlaget er beregnet med yrkeskadefordel - over 6G',
+  ORDINAER_TREAAR: '§ 11-19 Gjennomsnitt inntekt siste 3 år',
+  UNGUFOER_MINSTEYTELSE: 'Minsteytelse som ung ufør',
+  ORDINAER_OVER_6G_2018: 'Grunnlaget overstiger 6G',
+};
+
+function beregningsregelTekst(kode: string | null | undefined): string {
+  if (kode == null) return '—';
+  return BEREGNINGSREGEL_TEKST[kode] ?? kode;
+}
+
 type Props = {
   faktaMap: Map<string, ArenaVedtakfaktaDTO>;
   relatertFaktaMap: Map<string, ArenaVedtakfaktaDTO> | null;
@@ -119,7 +138,7 @@ export function BeregningSeksjon({ faktaMap, relatertFaktaMap }: Props): React.R
             />
             <FieldValue
               label="Beregningsregel"
-              value={faktaMap.get('BERREGEL')?.verdi ?? '—'}
+              value={beregningsregelTekst(faktaMap.get('BERREGEL')?.verdi)}
               isChanged={erEndret('BERREGEL')}
             />
             {overgangstilfeller && (
