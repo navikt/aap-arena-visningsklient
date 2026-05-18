@@ -37,7 +37,7 @@ export function VedtakTabell({ vedtak }: Props): React.ReactElement {
             <Table.HeaderCell scope="col">Aktivitetsfase</Table.HeaderCell>
             <Table.HeaderCell scope="col">Fra og med</Table.HeaderCell>
             <Table.HeaderCell scope="col">Til og med</Table.HeaderCell>
-            <Table.HeaderCell scope="col">Behandslingsstatus</Table.HeaderCell>
+            <Table.HeaderCell scope="col">Behandlingsstatus</Table.HeaderCell>
             <Table.HeaderCell scope="col">Utfall</Table.HeaderCell>
             <Table.HeaderCell scope="col"></Table.HeaderCell>
           </Table.Row>
