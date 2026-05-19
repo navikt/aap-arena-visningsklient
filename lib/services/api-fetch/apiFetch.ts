@@ -74,7 +74,9 @@ const fetchWithRetry = async <ResponseType>(
       return await fetchWithRetry(url, options, retries - 1);
     }
 
-    logger.warn(`For mange nettverksfeil (${options.method} ${url}): `, error);
+    if (NUMBER_OF_RETRIES > 1) {
+      logger.warn(`For mange nettverksfeil (${options.method} ${url}): `, error);
+    }
     return {
       type: 'ERROR',
       status: 503, // Service Unavailable
