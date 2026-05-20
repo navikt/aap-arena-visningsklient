@@ -14,7 +14,9 @@ export default defineConfig({
     },
   },
   test: {
+    globals: true,
     environment: 'node',
     exclude: [...configDefaults.exclude, '.next/**'],
+    setupFiles: ['./vitest.setup.ts'],
   },
 });

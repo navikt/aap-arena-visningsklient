@@ -6,7 +6,6 @@
   },
   "rules": {
     "react/display-name": "error",
-    "react/prop-types": "off",
     "@typescript-eslint/no-unused-vars": [
       "error",
       {

@@ -14,7 +14,7 @@ jobs:
       id-token: write
       packages: write
     steps:
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
         with:
           persist-credentials: false
       - name: Build and push docker image to GAR
@@ -31,3 +31,10 @@ jobs:
           IMAGE: ${{ steps.docker-push.outputs.image }}
           RESOURCE: .nais/nais.yaml
           VARS: .nais/dev.yaml
+      - name: Deploy to nais (prod)
+        uses: nais/deploy/actions/deploy@v2
+        env:
+          CLUSTER: prod-gcp
+          IMAGE: ${{ steps.docker-push.outputs.image }}
+          RESOURCE: .nais/nais.yaml
+          VARS: .nais/prod.yaml

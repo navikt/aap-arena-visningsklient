@@ -1,4 +1,5 @@
-import { compareAsc, compareDesc, format, parseISO } from 'date-fns';
+import { compareAsc, compareDesc, format, parse, parseISO } from 'date-fns';
+import { nb } from 'date-fns/locale';
 
 export type SortOrder = 'ASC' | 'DESC';
 
@@ -30,5 +31,23 @@ export function parseISOorNull(dateString: string | null | undefined): Date | nu
 }
 
 export function norsktDatoformat(date: Date): string {
-  return format(date, 'dd.MM.yyyy');
+  return format(date, 'dd.MM.yyyy', { locale: nb });
+}
+
+export function norsktDatoformatMedTid(dato: Date | string): string {
+  return format(dato, 'dd.MM.yyyy HH:mm:ss', { locale: nb });
+}
+
+export function parseFaktaDato(dateString: string): Date;
+export function parseFaktaDato(dateString: string | null | undefined): Date | null;
+export function parseFaktaDato(dateString: string | null | undefined): Date | null {
+  if (dateString == null) {
+    return null;
+  }
+  return parse(dateString, 'dd-MM-yyyy', new Date());
+}
+
+export function formaterFaktaDato(dateString: string | null | undefined): string | null {
+  const parsed = parseFaktaDato(dateString);
+  return parsed != null ? norsktDatoformat(parsed) : null;
 }

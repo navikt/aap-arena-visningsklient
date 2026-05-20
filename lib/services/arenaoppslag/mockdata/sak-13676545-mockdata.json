@@ -1,0 +1,5787 @@
+{
+  "sakId": "13676545",
+  "opprettetAar": 2023,
+  "lopenr": 15049,
+  "person": {
+    "personId": 4925695,
+    "fodselsnummer": "18818799469",
+    "fornavn": "LAV",
+    "etternavn": "KLIPPE"
+  },
+  "statuskode": "AKTIV",
+  "statusnavn": "Aktiv",
+  "registrertDato": "2024-03-16T07:00:23",
+  "avsluttetDato": null,
+  "vedtak": [
+    {
+      "vedtakId": 37194828,
+      "lopenrvedtak": 10,
+      "statusKode": "IVERK",
+      "statusNavn": "Iverksatt",
+      "vedtaktypeKode": "E",
+      "vedtaktypeNavn": "Endring",
+      "aktivitetsfaseKode": "UA",
+      "aktivitetsfaseNavn": "Under arbeidsavklaring",
+      "fraOgMed": "2026-01-01",
+      "tilDato": "2026-06-09",
+      "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
+      "utfallkode": "JA",
+      "begrunnelse": "Barnetillegget til AAP øker fra 37 til 38 kroner per barn fra 1. januar 2026. Dette går frem av folketrygdloven § 11- 20 tredje ledd og forskrift om arbeidsavklaringspenger § 8.\n\nDerfor har vi endret vedtaket ditt.",
+      "saksbehandler": "GRENSESN",
+      "beslutter": "GRENSESN",
+      "relatertVedtak": 37103740,
+      "fakta": [
+        {
+          "kode": "AAPBERDATO",
+          "navn": "Beregningsdato",
+          "verdi": "11-06-2022",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "AAPBERREGL",
+          "navn": "Beregningsregelverk",
+          "verdi": "Februar 2020",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "AAPFORSTD",
+          "navn": "Første dag med rett til ytelse",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "AAPMANBER",
+          "navn": "Arbeidsavklaringspenger manuelt beregnet",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "AAPVARIGHT",
+          "navn": "Varighet AAP-periode",
+          "verdi": "3",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "AAPVARIGKO",
+          "navn": "Varighet Korona-periode",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "AAPVARIGUN",
+          "navn": "Varighet AAP unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "AAPVILKUNN",
+          "navn": "Unntaksvilkår gjelder fra",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "AGRLAGMAN",
+          "navn": "Grunnlag er beregnet manuelt",
+          "verdi": "N",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "ANTB",
+          "navn": "Antall barn",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "ARBPEOS",
+          "navn": "Arbeidsperiode EØS/N i grunnlag",
+          "verdi": "N",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "ATIMTLTLON",
+          "navn": "Timer med tiltakslønn",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "ATIMUUTNIN",
+          "navn": "Timer uutnyttet inntekstevne",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "AUNGFOR",
+          "navn": "Ung ufør",
+          "verdi": "N",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "AUTOAARSAK",
+          "navn": "Årsak til automatisk vedtak",
+          "verdi": "BARNETILLEGG",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "AVSPTSANK",
+          "navn": "Avspaser tidligere sanksjon",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "AYRKESKADE",
+          "navn": "Yrkesskade",
+          "verdi": "N",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "BARNMSTON",
+          "navn": "Antall barn med stønad",
+          "verdi": "1",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "BARNTILL",
+          "navn": "Barnetillegg per uke",
+          "verdi": "38",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "BARNUSTON",
+          "navn": "Antall barn uten stønad",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "BEGRTELLER",
+          "navn": "Tellerjustering begrunnelse",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "BEGRTILAAP",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "BEGRTILUNN",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse AAP-unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "BEGRUNNTAK",
+          "navn": "Tellerjustering unntak begrunnelse",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "BERBESKR",
+          "navn": "Begrunnelse fra beregning",
+          "verdi": "Pensjonsgivende inntekt som er høyere enn seks ganger grunnbeløpet per kalenderår, blir ikke tatt med i beregningsgrunnlaget.\r Du har hatt inntekter som overstiger dette. Derfor har vi redusert grunnlaget ditt. Dette går fram av folketrygdloven § 11-19 andre ledd.\r\n\r\nGrunnbeløpet endres årlig, og du finner beløpet på nav.no/grunnbelop.\n",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "BERDAGS",
+          "navn": "Beregnet dagsats",
+          "verdi": "2020",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "BEREGNYS",
+          "navn": "Beregning ved gradert yrkesskade endret",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "BERREGEL",
+          "navn": "Kode for beregningsregel",
+          "verdi": "ORDINAER_OVER_6G_2018",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "BREVKLASSE",
+          "navn": "Klassifisering av type brev",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "DAGS",
+          "navn": "Dagsats",
+          "verdi": "1982",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "DAGSFSAM",
+          "navn": "Grunnsats før samordning",
+          "verdi": "1982",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "DAGSMBFSAM",
+          "navn": "Dagsats med barnetillegg før samordning",
+          "verdi": "2020",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "DAGSMBT",
+          "navn": "Dagsats med barnetillegg",
+          "verdi": "2020",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "ENDRPERAAP",
+          "navn": "Tellerjustering AAP periode",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "ENDRTILAAP",
+          "navn": "Tellerjustering tilleggsperiode i ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "ENDRTILUNN",
+          "navn": "Tellerjustering tilleggsperiode i AAP-unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "ENDRUNNAAP",
+          "navn": "Tellerjustering unntaksperiode AAP",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "FASTARBTFS",
+          "navn": "Fastsatt arbeidstid før samordning",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "FDATO",
+          "navn": "Gjelder fra",
+          "verdi": "01-01-2026",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "GRSATS",
+          "navn": "Grunnsats",
+          "verdi": "1982",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "GRUNN",
+          "navn": "Grunnlag",
+          "verdi": "780960",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "INNVF",
+          "navn": "Vedtaksdato",
+          "verdi": "02-01-2026",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "INSGRAD",
+          "navn": "Gradering pga institusjonsopphold",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "INSTOPP",
+          "navn": "Institusjonsopphold",
+          "verdi": "N",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "INTARNESTS",
+          "navn": "Nest siste beregningsår",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "INTARSISTE",
+          "navn": "Siste beregningsår",
+          "verdi": "2021",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "INTARTREDS",
+          "navn": "Tredje siste beregningsår",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "INTNESTS",
+          "navn": "Inntekt nest siste beregningsår/periode",
+          "verdi": "0",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "INTSISTE",
+          "navn": "Inntekt siste beregningsår/periode",
+          "verdi": "1048943",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "INTTREDS",
+          "navn": "Inntekt tredje siste beregningsår/periode",
+          "verdi": "0",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "JUSTERTG",
+          "navn": "Endring ved justering av G",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "KODE115",
+          "navn": "Relatert 11-5-vedtak",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "MASKVEDTAK",
+          "navn": "Maskinelt vedtak",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "MAXDATOAAP",
+          "navn": "Maksdato ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "MAXDATOUNT",
+          "navn": "Maksdato AAP unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "MAXDTAAPK",
+          "navn": "Skriptjustering maksdato AAP ordinær",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "MAXDTAAPKU",
+          "navn": "Skriptjustering maksdato AAP unntak",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "NORMARBT",
+          "navn": "Normalarbeidstid",
+          "verdi": "37.5",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "OPPRTDATO",
+          "navn": "Opprinnelig til-dato",
+          "verdi": "09-06-2026",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "OVERGTAT",
+          "navn": "Overgangstilfelle AT 2009",
+          "verdi": "N",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "OVERGTRP",
+          "navn": "Overgangstilfelle RP 2009",
+          "verdi": "N",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "OVERGTTU",
+          "navn": "Overgangstilfelle TU 2009",
+          "verdi": "N",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "PR90REGEL",
+          "navn": "90% regel",
+          "verdi": "N",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "SAM",
+          "navn": "Samordning er utført",
+          "verdi": "N",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "SAMKILDMAN",
+          "navn": "Samordningskilde manuelt lagt inn",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "SAMUKESAND",
+          "navn": "Sum samordning manuelt reg fra andre",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "SAMUKESRTV",
+          "navn": "Sum samordning manuelt reg folketrygdytelser/AFP",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "STUDENTBES",
+          "navn": "Vurdert studentbestemmelsen",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "TDATO",
+          "navn": "Gjelder til",
+          "verdi": "09-06-2026",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "TERSKMKBER",
+          "navn": "Terskelgrense Meldekortberegning",
+          "verdi": "40",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "TPDATO",
+          "navn": "TP-dato",
+          "verdi": "02-01-2026 19:11",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "TPRESULTAT",
+          "navn": "TP-nr(e)",
+          "verdi": "0",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "UKES",
+          "navn": "Ukesats",
+          "verdi": "10100",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "UKESFSAM",
+          "navn": "Ukesats før samordning",
+          "verdi": "10100",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "UNNTAKAAP",
+          "navn": "Unntak fra maksimal stønadsperiode AAP",
+          "verdi": "N",
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "VEDTAKSEND",
+          "navn": "Utskrift/sendt",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "YDATO",
+          "navn": "Yrkesskadetidspunkt",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "YINNT",
+          "navn": "Inntekt på skadetidspunkt",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        },
+        {
+          "kode": "YSKADEGRD",
+          "navn": "Yrkesskadegrad",
+          "verdi": null,
+          "registrertDato": "2026-01-02"
+        }
+      ],
+      "vilkårsvurderinger": [
+        {
+          "vilkårsvurderingId": 387710110,
+          "vilkårkode": "18-67AAR2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker er mellom 18 og 67 år",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-4#L19970228-19_P11-4",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-4++Alder.232187.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387710111,
+          "vilkårkode": "A11-52",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Godkjent vedtak om nedsatt arbeidsevne foreligger",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-4#L19970228-19_P11-5",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-5+Nedsatt+arbeidsevne.232189.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387710112,
+          "vilkårkode": "AAARBEID1",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Er i arbeid og anses nær ved å kunne øke arbeidsevnen. Må kunne oppnå minst 50% arbeidsevne.",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387710113,
+          "vilkårkode": "AAARBEID2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Er nær ved å bli satt i stand til å skaffe/gå tilbake i arbeid. Må kunne oppnå minst 50% arbeidsevne",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387710114,
+          "vilkårkode": "AAARBEID3",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker deltar på opplæringstiltak.",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387710115,
+          "vilkårkode": "AABEHGSTUD",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har avbrutt studiet og har behov for behandling for å kunne gjenoppta studiet",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387710116,
+          "vilkårkode": "AAFAARBIS2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker får bistand fra NAV for å komme i arbeid",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-6",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-6+Bistand+til+%C3%A5+skaffe+seg+eller+beholde+arbeid.232246.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387710117,
+          "vilkårkode": "AAIUBEGRF2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har ikke ubegrunnet fravær",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-9",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-9+Frav%C3%A6r+fra+fastsatt+aktivitet.232260.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387710118,
+          "vilkårkode": "AAMEDVPLA2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker medvirker i prosessen med å utarbeide en plan",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-8",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-8+Aktivitet+med+sikte+p%C3%A5+%C3%A5+komme+i+arbeid.232257.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387710119,
+          "vilkårkode": "ABIDRARAK2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker bidrar aktivt i prosessen med å komme i arbeid",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-8",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-8+Aktivitet+med+sikte+p%C3%A5+%C3%A5+komme+i+arbeid.232257.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387710120,
+          "vilkårkode": "AIANNEN2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har ikke rett til ytelser etter annen lovgivning",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-25",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-25+Forholdet+til+ytelser+etter+annen+lovgivning.232408.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387710121,
+          "vilkårkode": "AOINORGE3",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har opphold i Norge/avtaleland eller fyller vilkårene for unntak",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-3",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-3+Opphold+i+Norge.232089.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387710122,
+          "vilkårkode": "STRAFFGJF2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker utholder ikke varetekt, straff eller særreaksjon i anstalt",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-22",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-22+Arbeidsavklaringspenger+under+straffegjennomf%C3%B8ring.232405.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387710123,
+          "vilkårkode": "YTELARBGI2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker mottar ikke ytelser fra nåværende eller tidligere arbeidsgiver",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-19",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-19+Reduksjon+av+arbeidsavklaringspenger+p%C3%A5+grunn+av+ytelser+fra+arbeidsgiver.232401.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387710124,
+          "vilkårkode": "IVLGANNEN2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har ikke valgt annen full folketrygdytelse",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-23",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-23+Forholdet+til+andre+fulle+ytelser+fra+folketrygden.232406.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387710125,
+          "vilkårkode": "MEDLSKAP5",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker fyller vilkåret om forutgående medlemskap eller vilkår for unntak.",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        }
+      ]
+    },
+    {
+      "vedtakId": 37207117,
+      "lopenrvedtak": 11,
+      "statusKode": "REGIS",
+      "statusNavn": "Registrert",
+      "vedtaktypeKode": "E",
+      "vedtaktypeNavn": "Endring",
+      "aktivitetsfaseKode": "UA",
+      "aktivitetsfaseNavn": "Under arbeidsavklaring",
+      "fraOgMed": "2025-05-01",
+      "tilDato": null,
+      "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
+      "utfallkode": null,
+      "begrunnelse": null,
+      "saksbehandler": "TG0331",
+      "beslutter": null,
+      "relatertVedtak": 37194828,
+      "fakta": [
+        {
+          "kode": "AAPBERDATO",
+          "navn": "Beregningsdato",
+          "verdi": "11-06-2022",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "AAPBERREGL",
+          "navn": "Beregningsregelverk",
+          "verdi": "Februar 2020",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "AAPFORSTD",
+          "navn": "Første dag med rett til ytelse",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "AAPMANBER",
+          "navn": "Arbeidsavklaringspenger manuelt beregnet",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "AAPVARIGHT",
+          "navn": "Varighet AAP-periode",
+          "verdi": "3",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "AAPVARIGKO",
+          "navn": "Varighet Korona-periode",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "AAPVARIGUN",
+          "navn": "Varighet AAP unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "AAPVILKUNN",
+          "navn": "Unntaksvilkår gjelder fra",
+          "verdi": "12-06-2026",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "AGRLAGMAN",
+          "navn": "Grunnlag er beregnet manuelt",
+          "verdi": "N",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "ANTB",
+          "navn": "Antall barn",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "ARBPEOS",
+          "navn": "Arbeidsperiode EØS/N i grunnlag",
+          "verdi": "N",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "ATIMTLTLON",
+          "navn": "Timer med tiltakslønn",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "ATIMUUTNIN",
+          "navn": "Timer uutnyttet inntekstevne",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "AUNGFOR",
+          "navn": "Ung ufør",
+          "verdi": "N",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "AVSPTSANK",
+          "navn": "Avspaser tidligere sanksjon",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "AYRKESKADE",
+          "navn": "Yrkesskade",
+          "verdi": "N",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "BARNMSTON",
+          "navn": "Antall barn med stønad",
+          "verdi": "1",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "BARNTILL",
+          "navn": "Barnetillegg per uke",
+          "verdi": "38",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "BARNUSTON",
+          "navn": "Antall barn uten stønad",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "BEGRTELLER",
+          "navn": "Tellerjustering begrunnelse",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "BEGRTILAAP",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "BEGRTILUNN",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse AAP-unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "BEGRUNNTAK",
+          "navn": "Tellerjustering unntak begrunnelse",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "BERBESKR",
+          "navn": "Begrunnelse fra beregning",
+          "verdi": "Pensjonsgivende inntekt som er høyere enn seks ganger grunnbeløpet per kalenderår, blir ikke tatt med i beregningsgrunnlaget.\r Du har hatt inntekter som overstiger dette. Derfor har vi redusert grunnlaget ditt. Dette går fram av folketrygdloven § 11-19 andre ledd.\r\n\r\nGrunnbeløpet endres årlig, og du finner beløpet på nav.no/grunnbelop.\n",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "BERDAGS",
+          "navn": "Beregnet dagsats",
+          "verdi": "2020",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "BEREGNYS",
+          "navn": "Beregning ved gradert yrkesskade endret",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "BERREGEL",
+          "navn": "Kode for beregningsregel",
+          "verdi": "ORDINAER_OVER_6G_2018",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "BREVKLASSE",
+          "navn": "Klassifisering av type brev",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "DAGS",
+          "navn": "Dagsats",
+          "verdi": "1982",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "DAGSFSAM",
+          "navn": "Grunnsats før samordning",
+          "verdi": "1982",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "DAGSMBFSAM",
+          "navn": "Dagsats med barnetillegg før samordning",
+          "verdi": "2020",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "DAGSMBT",
+          "navn": "Dagsats med barnetillegg",
+          "verdi": "2020",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "ENDRPERAAP",
+          "navn": "Tellerjustering AAP periode",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "ENDRTILAAP",
+          "navn": "Tellerjustering tilleggsperiode i ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "ENDRTILUNN",
+          "navn": "Tellerjustering tilleggsperiode i AAP-unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "ENDRUNNAAP",
+          "navn": "Tellerjustering unntaksperiode AAP",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "FASTARBTFS",
+          "navn": "Fastsatt arbeidstid før samordning",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "FDATO",
+          "navn": "Gjelder fra",
+          "verdi": "01-05-2025",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "GRSATS",
+          "navn": "Grunnsats",
+          "verdi": "1982",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "GRUNN",
+          "navn": "Grunnlag",
+          "verdi": "780960",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "INNVF",
+          "navn": "Vedtaksdato",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "INSGRAD",
+          "navn": "Gradering pga institusjonsopphold",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "INSTOPP",
+          "navn": "Institusjonsopphold",
+          "verdi": "N",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "INTARNESTS",
+          "navn": "Nest siste beregningsår",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "INTARSISTE",
+          "navn": "Siste beregningsår",
+          "verdi": "2021",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "INTARTREDS",
+          "navn": "Tredje siste beregningsår",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "INTNESTS",
+          "navn": "Inntekt nest siste beregningsår/periode",
+          "verdi": "0",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "INTSISTE",
+          "navn": "Inntekt siste beregningsår/periode",
+          "verdi": "1048943",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "INTTREDS",
+          "navn": "Inntekt tredje siste beregningsår/periode",
+          "verdi": "0",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "JUSTERTG",
+          "navn": "Endring ved justering av G",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "KODE115",
+          "navn": "Relatert 11-5-vedtak",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "MASKVEDTAK",
+          "navn": "Maskinelt vedtak",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "MAXDATOAAP",
+          "navn": "Maksdato ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "MAXDATOUNT",
+          "navn": "Maksdato AAP unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "MAXDTAAPK",
+          "navn": "Skriptjustering maksdato AAP ordinær",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "MAXDTAAPKU",
+          "navn": "Skriptjustering maksdato AAP unntak",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "NORMARBT",
+          "navn": "Normalarbeidstid",
+          "verdi": "37.5",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "OPPRTDATO",
+          "navn": "Opprinnelig til-dato",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "OVERGTAT",
+          "navn": "Overgangstilfelle AT 2009",
+          "verdi": "N",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "OVERGTRP",
+          "navn": "Overgangstilfelle RP 2009",
+          "verdi": "N",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "OVERGTTU",
+          "navn": "Overgangstilfelle TU 2009",
+          "verdi": "N",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "PR90REGEL",
+          "navn": "90% regel",
+          "verdi": "N",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "SAM",
+          "navn": "Samordning er utført",
+          "verdi": "N",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "SAMKILDMAN",
+          "navn": "Samordningskilde manuelt lagt inn",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "SAMUKESAND",
+          "navn": "Sum samordning manuelt reg fra andre",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "SAMUKESRTV",
+          "navn": "Sum samordning manuelt reg folketrygdytelser/AFP",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "STUDENTBES",
+          "navn": "Vurdert studentbestemmelsen",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "TDATO",
+          "navn": "Gjelder til",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "TERSKMKBER",
+          "navn": "Terskelgrense Meldekortberegning",
+          "verdi": "40",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "TPDATO",
+          "navn": "TP-dato",
+          "verdi": "15-04-2026 14:15",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "TPRESULTAT",
+          "navn": "TP-nr(e)",
+          "verdi": "0",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "UKES",
+          "navn": "Ukesats",
+          "verdi": "10100",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "UKESFSAM",
+          "navn": "Ukesats før samordning",
+          "verdi": "10100",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "UNNTAKAAP",
+          "navn": "Unntak fra maksimal stønadsperiode AAP",
+          "verdi": "J",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "VEDTAKSEND",
+          "navn": "Utskrift/sendt",
+          "verdi": "J",
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "YDATO",
+          "navn": "Yrkesskadetidspunkt",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "YINNT",
+          "navn": "Inntekt på skadetidspunkt",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        },
+        {
+          "kode": "YSKADEGRD",
+          "navn": "Yrkesskadegrad",
+          "verdi": null,
+          "registrertDato": "2026-04-15"
+        }
+      ],
+      "vilkårsvurderinger": [
+        {
+          "vilkårsvurderingId": 387788727,
+          "vilkårkode": "18-67AAR2",
+          "begrunnelse": null,
+          "vurdertAv": "Arena",
+          "vilkårnavn": "Søker er mellom 18 og 67 år",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-4#L19970228-19_P11-4",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-4++Alder.232187.cms",
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 387788728,
+          "vilkårkode": "A11-52",
+          "begrunnelse": null,
+          "vurdertAv": "Arena",
+          "vilkårnavn": "Godkjent vedtak om nedsatt arbeidsevne foreligger",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-4#L19970228-19_P11-5",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-5+Nedsatt+arbeidsevne.232189.cms",
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 387788729,
+          "vilkårkode": "AAARBEID1",
+          "begrunnelse": null,
+          "vurdertAv": "TG0331",
+          "vilkårnavn": "Er i arbeid og anses nær ved å kunne øke arbeidsevnen. Må kunne oppnå minst 50% arbeidsevne.",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 387788730,
+          "vilkårkode": "AAARBEID2",
+          "begrunnelse": null,
+          "vurdertAv": "TG0331",
+          "vilkårnavn": "Er nær ved å bli satt i stand til å skaffe/gå tilbake i arbeid. Må kunne oppnå minst 50% arbeidsevne",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 387788731,
+          "vilkårkode": "AAARBEID3",
+          "begrunnelse": null,
+          "vurdertAv": "TG0331",
+          "vilkårnavn": "Søker deltar på opplæringstiltak.",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 387788732,
+          "vilkårkode": "AABEHGSTUD",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har avbrutt studiet og har behov for behandling for å kunne gjenoppta studiet",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387788733,
+          "vilkårkode": "AAFAARBIS2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker får bistand fra NAV for å komme i arbeid",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-6",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-6+Bistand+til+%C3%A5+skaffe+seg+eller+beholde+arbeid.232246.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387788734,
+          "vilkårkode": "AAIUBEGRF2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har ikke ubegrunnet fravær",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-9",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-9+Frav%C3%A6r+fra+fastsatt+aktivitet.232260.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387788735,
+          "vilkårkode": "AAMEDVPLA2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker medvirker i prosessen med å utarbeide en plan",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-8",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-8+Aktivitet+med+sikte+p%C3%A5+%C3%A5+komme+i+arbeid.232257.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387788736,
+          "vilkårkode": "ABIDRARAK2",
+          "begrunnelse": null,
+          "vurdertAv": "Arena",
+          "vilkårnavn": "Søker bidrar aktivt i prosessen med å komme i arbeid",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-8",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-8+Aktivitet+med+sikte+p%C3%A5+%C3%A5+komme+i+arbeid.232257.cms",
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 387788737,
+          "vilkårkode": "AIANNEN2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har ikke rett til ytelser etter annen lovgivning",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-25",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-25+Forholdet+til+ytelser+etter+annen+lovgivning.232408.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387788738,
+          "vilkårkode": "AOINORGE3",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har opphold i Norge/avtaleland eller fyller vilkårene for unntak",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-3",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-3+Opphold+i+Norge.232089.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387788739,
+          "vilkårkode": "STRAFFGJF2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker utholder ikke varetekt, straff eller særreaksjon i anstalt",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-22",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-22+Arbeidsavklaringspenger+under+straffegjennomf%C3%B8ring.232405.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387788740,
+          "vilkårkode": "YTELARBGI2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker mottar ikke ytelser fra nåværende eller tidligere arbeidsgiver",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-19",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-19+Reduksjon+av+arbeidsavklaringspenger+p%C3%A5+grunn+av+ytelser+fra+arbeidsgiver.232401.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387788741,
+          "vilkårkode": "IVLGANNEN2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har ikke valgt annen full folketrygdytelse",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-23",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-23+Forholdet+til+andre+fulle+ytelser+fra+folketrygden.232406.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387788742,
+          "vilkårkode": "MEDLSKAP5",
+          "begrunnelse": null,
+          "vurdertAv": "Arena",
+          "vilkårnavn": "Søker fyller vilkåret om forutgående medlemskap eller vilkår for unntak.",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        }
+      ]
+    },
+    {
+      "vedtakId": 37103705,
+      "lopenrvedtak": 8,
+      "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
+      "vedtaktypeKode": "E",
+      "vedtaktypeNavn": "Endring",
+      "aktivitetsfaseKode": "UA",
+      "aktivitetsfaseNavn": "Under arbeidsavklaring",
+      "fraOgMed": "2025-05-01",
+      "tilDato": "2025-06-09",
+      "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
+      "utfallkode": "JA",
+      "begrunnelse": "Endring på grunn av endret grunnbeløp",
+      "saksbehandler": "GRENSESN",
+      "beslutter": "GRENSESN",
+      "relatertVedtak": 37060494,
+      "fakta": [
+        {
+          "kode": "AAPBERDATO",
+          "navn": "Beregningsdato",
+          "verdi": "11-06-2022",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "AAPBERREGL",
+          "navn": "Beregningsregelverk",
+          "verdi": "Februar 2020",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "AAPMANBER",
+          "navn": "Arbeidsavklaringspenger manuelt beregnet",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "AAPVARIGHT",
+          "navn": "Varighet AAP-periode",
+          "verdi": "3",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "AAPVARIGKO",
+          "navn": "Varighet Korona-periode",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "AAPVARIGUN",
+          "navn": "Varighet AAP unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "AAPVILKUNN",
+          "navn": "Unntaksvilkår gjelder fra",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "AGRLAGMAN",
+          "navn": "Grunnlag er beregnet manuelt",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "ANTB",
+          "navn": "Antall barn",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "ARBPEOS",
+          "navn": "Arbeidsperiode EØS/N i grunnlag",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "ATIMTLTLON",
+          "navn": "Timer med tiltakslønn",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "ATIMUUTNIN",
+          "navn": "Timer uutnyttet inntekstevne",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "AUNGFOR",
+          "navn": "Ung ufør",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "AVSPTSANK",
+          "navn": "Avspaser tidligere sanksjon",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "AYRKESKADE",
+          "navn": "Yrkesskade",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "BARNMSTON",
+          "navn": "Antall barn med stønad",
+          "verdi": "1",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "BARNTILL",
+          "navn": "Barnetillegg per uke",
+          "verdi": "37",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "BARNUSTON",
+          "navn": "Antall barn uten stønad",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "BEGRTELLER",
+          "navn": "Tellerjustering begrunnelse",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "BEGRTILAAP",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "BEGRTILUNN",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse AAP-unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "BEGRUNNTAK",
+          "navn": "Tellerjustering unntak begrunnelse",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "BERBESKR",
+          "navn": "Begrunnelse fra beregning",
+          "verdi": "Pensjonsgivende inntekt som er høyere enn seks ganger grunnbeløpet per kalenderår, blir ikke tatt med i beregningsgrunnlaget.\r Du har hatt inntekter som overstiger dette. Derfor har vi redusert grunnlaget ditt. Dette går fram av folketrygdloven § 11-19 andre ledd.\r\n\r\nGrunnbeløpet endres årlig, og du finner beløpet på nav.no/grunnbelop.",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "BERDAGS",
+          "navn": "Beregnet dagsats",
+          "verdi": "2019",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "BERREGEL",
+          "navn": "Kode for beregningsregel",
+          "verdi": "ORDINAER_OVER_6G_2018",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "BREVKLASSE",
+          "navn": "Klassifisering av type brev",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "DAGS",
+          "navn": "Dagsats",
+          "verdi": "1982",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "DAGSFSAM",
+          "navn": "Grunnsats før samordning",
+          "verdi": "1982",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "DAGSMBFSAM",
+          "navn": "Dagsats med barnetillegg før samordning",
+          "verdi": "2019",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "DAGSMBT",
+          "navn": "Dagsats med barnetillegg",
+          "verdi": "2019",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "ENDRPERAAP",
+          "navn": "Tellerjustering AAP periode",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "ENDRTILAAP",
+          "navn": "Tellerjustering tilleggsperiode i ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "ENDRTILUNN",
+          "navn": "Tellerjustering tilleggsperiode i AAP-unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "ENDRUNNAAP",
+          "navn": "Tellerjustering unntaksperiode AAP",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "FASTARBTFS",
+          "navn": "Fastsatt arbeidstid før samordning",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "FDATO",
+          "navn": "Gjelder fra",
+          "verdi": "01-05-2025",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "GRSATS",
+          "navn": "Grunnsats",
+          "verdi": "1982",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "GRUNN",
+          "navn": "Grunnlag",
+          "verdi": "780960",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "INNVF",
+          "navn": "Vedtaksdato",
+          "verdi": "04-06-2025",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "INSGRAD",
+          "navn": "Gradering pga institusjonsopphold",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "INSTOPP",
+          "navn": "Institusjonsopphold",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "INTARNESTS",
+          "navn": "Nest siste beregningsår",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "INTARSISTE",
+          "navn": "Siste beregningsår",
+          "verdi": "2021",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "INTARTREDS",
+          "navn": "Tredje siste beregningsår",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "INTNESTS",
+          "navn": "Inntekt nest siste beregningsår/periode",
+          "verdi": "0",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "INTSISTE",
+          "navn": "Inntekt siste beregningsår/periode",
+          "verdi": "1048943",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "INTTREDS",
+          "navn": "Inntekt tredje siste beregningsår/periode",
+          "verdi": "0",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "JUSTERTG",
+          "navn": "Endring ved justering av G",
+          "verdi": "NyG2025",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "KODE115",
+          "navn": "Relatert 11-5-vedtak",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "MASKVEDTAK",
+          "navn": "Maskinelt vedtak",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "MAXDATOAAP",
+          "navn": "Maksdato ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "MAXDATOUNT",
+          "navn": "Maksdato AAP unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "MAXDTAAPK",
+          "navn": "Skriptjustering maksdato AAP ordinær",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "MAXDTAAPKU",
+          "navn": "Skriptjustering maksdato AAP unntak",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "NORMARBT",
+          "navn": "Normalarbeidstid",
+          "verdi": "37.5",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "OPPRTDATO",
+          "navn": "Opprinnelig til-dato",
+          "verdi": "09-06-2025",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "OVERGTAT",
+          "navn": "Overgangstilfelle AT 2009",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "OVERGTRP",
+          "navn": "Overgangstilfelle RP 2009",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "OVERGTTU",
+          "navn": "Overgangstilfelle TU 2009",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "PR90REGEL",
+          "navn": "90% regel",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "SAM",
+          "navn": "Samordning er utført",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "SAMKILDMAN",
+          "navn": "Samordningskilde manuelt lagt inn",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "SAMUKESAND",
+          "navn": "Sum samordning manuelt reg fra andre",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "SAMUKESRTV",
+          "navn": "Sum samordning manuelt reg folketrygdytelser/AFP",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "STUDENTBES",
+          "navn": "Vurdert studentbestemmelsen",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "TDATO",
+          "navn": "Gjelder til",
+          "verdi": "09-06-2025",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "TERSKMKBER",
+          "navn": "Terskelgrense Meldekortberegning",
+          "verdi": "40",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "TPDATO",
+          "navn": "TP-dato",
+          "verdi": "07-01-2025 08:44",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "TPRESULTAT",
+          "navn": "TP-nr(e)",
+          "verdi": "0",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "UKES",
+          "navn": "Ukesats",
+          "verdi": "10095",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "UKESFSAM",
+          "navn": "Ukesats før samordning",
+          "verdi": "10095",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "UNNTAKAAP",
+          "navn": "Unntak fra maksimal stønadsperiode AAP",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "VEDTAKSEND",
+          "navn": "Utskrift/sendt",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "YDATO",
+          "navn": "Yrkesskadetidspunkt",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "YINNT",
+          "navn": "Inntekt på skadetidspunkt",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "YSKADEGRD",
+          "navn": "Yrkesskadegrad",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        }
+      ],
+      "vilkårsvurderinger": [
+        {
+          "vilkårsvurderingId": 386640223,
+          "vilkårkode": "18-67AAR2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker er mellom 18 og 67 år",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-4#L19970228-19_P11-4",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-4++Alder.232187.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640224,
+          "vilkårkode": "A11-52",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Godkjent vedtak om nedsatt arbeidsevne foreligger",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-4#L19970228-19_P11-5",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-5+Nedsatt+arbeidsevne.232189.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640225,
+          "vilkårkode": "AAARBEID1",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Er i arbeid og anses nær ved å kunne øke arbeidsevnen. Må kunne oppnå minst 50% arbeidsevne.",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640226,
+          "vilkårkode": "AAARBEID2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Er nær ved å bli satt i stand til å skaffe/gå tilbake i arbeid. Må kunne oppnå minst 50% arbeidsevne",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640227,
+          "vilkårkode": "AAARBEID3",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker deltar på opplæringstiltak.",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640228,
+          "vilkårkode": "AABEHGSTUD",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har avbrutt studiet og har behov for behandling for å kunne gjenoppta studiet",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640229,
+          "vilkårkode": "AAFAARBIS2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker får bistand fra NAV for å komme i arbeid",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-6",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-6+Bistand+til+%C3%A5+skaffe+seg+eller+beholde+arbeid.232246.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640230,
+          "vilkårkode": "AAIUBEGRF2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har ikke ubegrunnet fravær",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-9",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-9+Frav%C3%A6r+fra+fastsatt+aktivitet.232260.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640231,
+          "vilkårkode": "AAMEDVPLA2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker medvirker i prosessen med å utarbeide en plan",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-8",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-8+Aktivitet+med+sikte+p%C3%A5+%C3%A5+komme+i+arbeid.232257.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640232,
+          "vilkårkode": "ABIDRARAK2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker bidrar aktivt i prosessen med å komme i arbeid",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-8",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-8+Aktivitet+med+sikte+p%C3%A5+%C3%A5+komme+i+arbeid.232257.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640233,
+          "vilkårkode": "AIANNEN2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har ikke rett til ytelser etter annen lovgivning",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-25",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-25+Forholdet+til+ytelser+etter+annen+lovgivning.232408.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640234,
+          "vilkårkode": "AOINORGE3",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har opphold i Norge/avtaleland eller fyller vilkårene for unntak",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-3",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-3+Opphold+i+Norge.232089.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640235,
+          "vilkårkode": "STRAFFGJF2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker utholder ikke varetekt, straff eller særreaksjon i anstalt",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-22",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-22+Arbeidsavklaringspenger+under+straffegjennomf%C3%B8ring.232405.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640236,
+          "vilkårkode": "YTELARBGI2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker mottar ikke ytelser fra nåværende eller tidligere arbeidsgiver",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-19",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-19+Reduksjon+av+arbeidsavklaringspenger+p%C3%A5+grunn+av+ytelser+fra+arbeidsgiver.232401.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640237,
+          "vilkårkode": "IVLGANNEN2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har ikke valgt annen full folketrygdytelse",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-23",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-23+Forholdet+til+andre+fulle+ytelser+fra+folketrygden.232406.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640238,
+          "vilkårkode": "MEDLSKAP5",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker fyller vilkåret om forutgående medlemskap eller vilkår for unntak.",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        }
+      ]
+    },
+    {
+      "vedtakId": 37103740,
+      "lopenrvedtak": 9,
+      "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
+      "vedtaktypeKode": "E",
+      "vedtaktypeNavn": "Endring",
+      "aktivitetsfaseKode": "UA",
+      "aktivitetsfaseNavn": "Under arbeidsavklaring",
+      "fraOgMed": "2025-06-10",
+      "tilDato": "2025-12-31",
+      "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
+      "utfallkode": "JA",
+      "begrunnelse": "Endring på grunn av endret grunnbeløp",
+      "saksbehandler": "GRENSESN",
+      "beslutter": "GRENSESN",
+      "relatertVedtak": 37090059,
+      "fakta": [
+        {
+          "kode": "AAPBERDATO",
+          "navn": "Beregningsdato",
+          "verdi": "11-06-2022",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "AAPBERREGL",
+          "navn": "Beregningsregelverk",
+          "verdi": "Februar 2020",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "AAPMANBER",
+          "navn": "Arbeidsavklaringspenger manuelt beregnet",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "AAPVARIGHT",
+          "navn": "Varighet AAP-periode",
+          "verdi": "3",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "AAPVARIGKO",
+          "navn": "Varighet Korona-periode",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "AAPVARIGUN",
+          "navn": "Varighet AAP unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "AAPVILKUNN",
+          "navn": "Unntaksvilkår gjelder fra",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "AGRLAGMAN",
+          "navn": "Grunnlag er beregnet manuelt",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "ANTB",
+          "navn": "Antall barn",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "ARBPEOS",
+          "navn": "Arbeidsperiode EØS/N i grunnlag",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "ATIMTLTLON",
+          "navn": "Timer med tiltakslønn",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "ATIMUUTNIN",
+          "navn": "Timer uutnyttet inntekstevne",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "AUNGFOR",
+          "navn": "Ung ufør",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "AVSPTSANK",
+          "navn": "Avspaser tidligere sanksjon",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "AYRKESKADE",
+          "navn": "Yrkesskade",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "BARNMSTON",
+          "navn": "Antall barn med stønad",
+          "verdi": "1",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "BARNTILL",
+          "navn": "Barnetillegg per uke",
+          "verdi": "37",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "BARNUSTON",
+          "navn": "Antall barn uten stønad",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "BEGRTELLER",
+          "navn": "Tellerjustering begrunnelse",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "BEGRTILAAP",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "BEGRTILUNN",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse AAP-unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "BEGRUNNTAK",
+          "navn": "Tellerjustering unntak begrunnelse",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "BERBESKR",
+          "navn": "Begrunnelse fra beregning",
+          "verdi": "Pensjonsgivende inntekt som er høyere enn seks ganger grunnbeløpet per kalenderår, blir ikke tatt med i beregningsgrunnlaget.\r Du har hatt inntekter som overstiger dette. Derfor har vi redusert grunnlaget ditt. Dette går fram av folketrygdloven § 11-19 andre ledd.\r\n\r\nGrunnbeløpet endres årlig, og du finner beløpet på nav.no/grunnbelop.",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "BERDAGS",
+          "navn": "Beregnet dagsats",
+          "verdi": "2019",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "BERREGEL",
+          "navn": "Kode for beregningsregel",
+          "verdi": "ORDINAER_OVER_6G_2018",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "BREVKLASSE",
+          "navn": "Klassifisering av type brev",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "DAGS",
+          "navn": "Dagsats",
+          "verdi": "1982",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "DAGSFSAM",
+          "navn": "Grunnsats før samordning",
+          "verdi": "1982",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "DAGSMBFSAM",
+          "navn": "Dagsats med barnetillegg før samordning",
+          "verdi": "2019",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "DAGSMBT",
+          "navn": "Dagsats med barnetillegg",
+          "verdi": "2019",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "ENDRPERAAP",
+          "navn": "Tellerjustering AAP periode",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "ENDRTILAAP",
+          "navn": "Tellerjustering tilleggsperiode i ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "ENDRTILUNN",
+          "navn": "Tellerjustering tilleggsperiode i AAP-unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "ENDRUNNAAP",
+          "navn": "Tellerjustering unntaksperiode AAP",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "FASTARBTFS",
+          "navn": "Fastsatt arbeidstid før samordning",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "FDATO",
+          "navn": "Gjelder fra",
+          "verdi": "10-06-2025",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "GRSATS",
+          "navn": "Grunnsats",
+          "verdi": "1982",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "GRUNN",
+          "navn": "Grunnlag",
+          "verdi": "780960",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "INNVF",
+          "navn": "Vedtaksdato",
+          "verdi": "04-06-2025",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "INSGRAD",
+          "navn": "Gradering pga institusjonsopphold",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "INSTOPP",
+          "navn": "Institusjonsopphold",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "INTARNESTS",
+          "navn": "Nest siste beregningsår",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "INTARSISTE",
+          "navn": "Siste beregningsår",
+          "verdi": "2021",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "INTARTREDS",
+          "navn": "Tredje siste beregningsår",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "INTNESTS",
+          "navn": "Inntekt nest siste beregningsår/periode",
+          "verdi": "0",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "INTSISTE",
+          "navn": "Inntekt siste beregningsår/periode",
+          "verdi": "1048943",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "INTTREDS",
+          "navn": "Inntekt tredje siste beregningsår/periode",
+          "verdi": "0",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "JUSTERTG",
+          "navn": "Endring ved justering av G",
+          "verdi": "NyG2025",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "KODE115",
+          "navn": "Relatert 11-5-vedtak",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "MASKVEDTAK",
+          "navn": "Maskinelt vedtak",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "MAXDATOAAP",
+          "navn": "Maksdato ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "MAXDATOUNT",
+          "navn": "Maksdato AAP unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "MAXDTAAPK",
+          "navn": "Skriptjustering maksdato AAP ordinær",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "MAXDTAAPKU",
+          "navn": "Skriptjustering maksdato AAP unntak",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "NORMARBT",
+          "navn": "Normalarbeidstid",
+          "verdi": "37.5",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "OPPRTDATO",
+          "navn": "Opprinnelig til-dato",
+          "verdi": "09-06-2026",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "OVERGTAT",
+          "navn": "Overgangstilfelle AT 2009",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "OVERGTRP",
+          "navn": "Overgangstilfelle RP 2009",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "OVERGTTU",
+          "navn": "Overgangstilfelle TU 2009",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "PR90REGEL",
+          "navn": "90% regel",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "SAM",
+          "navn": "Samordning er utført",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "SAMKILDMAN",
+          "navn": "Samordningskilde manuelt lagt inn",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "SAMUKESAND",
+          "navn": "Sum samordning manuelt reg fra andre",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "SAMUKESRTV",
+          "navn": "Sum samordning manuelt reg folketrygdytelser/AFP",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "STUDENTBES",
+          "navn": "Vurdert studentbestemmelsen",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "TDATO",
+          "navn": "Gjelder til",
+          "verdi": "31-12-2025",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "TERSKMKBER",
+          "navn": "Terskelgrense Meldekortberegning",
+          "verdi": "40",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "TPDATO",
+          "navn": "TP-dato",
+          "verdi": "11-05-2025 05:10",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "TPRESULTAT",
+          "navn": "TP-nr(e)",
+          "verdi": "0",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "UKES",
+          "navn": "Ukesats",
+          "verdi": "10095",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "UKESFSAM",
+          "navn": "Ukesats før samordning",
+          "verdi": "10095",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "UNNTAKAAP",
+          "navn": "Unntak fra maksimal stønadsperiode AAP",
+          "verdi": "N",
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "VEDTAKSEND",
+          "navn": "Utskrift/sendt",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "YDATO",
+          "navn": "Yrkesskadetidspunkt",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "YINNT",
+          "navn": "Inntekt på skadetidspunkt",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        },
+        {
+          "kode": "YSKADEGRD",
+          "navn": "Yrkesskadegrad",
+          "verdi": null,
+          "registrertDato": "2025-06-04"
+        }
+      ],
+      "vilkårsvurderinger": [
+        {
+          "vilkårsvurderingId": 386640783,
+          "vilkårkode": "18-67AAR2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker er mellom 18 og 67 år",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-4#L19970228-19_P11-4",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-4++Alder.232187.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640784,
+          "vilkårkode": "A11-52",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Godkjent vedtak om nedsatt arbeidsevne foreligger",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-4#L19970228-19_P11-5",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-5+Nedsatt+arbeidsevne.232189.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640785,
+          "vilkårkode": "AAARBEID1",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Er i arbeid og anses nær ved å kunne øke arbeidsevnen. Må kunne oppnå minst 50% arbeidsevne.",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640786,
+          "vilkårkode": "AAARBEID2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Er nær ved å bli satt i stand til å skaffe/gå tilbake i arbeid. Må kunne oppnå minst 50% arbeidsevne",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640787,
+          "vilkårkode": "AAARBEID3",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker deltar på opplæringstiltak.",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640788,
+          "vilkårkode": "AABEHGSTUD",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har avbrutt studiet og har behov for behandling for å kunne gjenoppta studiet",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640789,
+          "vilkårkode": "AAFAARBIS2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker får bistand fra NAV for å komme i arbeid",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-6",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-6+Bistand+til+%C3%A5+skaffe+seg+eller+beholde+arbeid.232246.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640790,
+          "vilkårkode": "AAIUBEGRF2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har ikke ubegrunnet fravær",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-9",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-9+Frav%C3%A6r+fra+fastsatt+aktivitet.232260.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640791,
+          "vilkårkode": "AAMEDVPLA2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker medvirker i prosessen med å utarbeide en plan",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-8",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-8+Aktivitet+med+sikte+p%C3%A5+%C3%A5+komme+i+arbeid.232257.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640792,
+          "vilkårkode": "ABIDRARAK2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker bidrar aktivt i prosessen med å komme i arbeid",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-8",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-8+Aktivitet+med+sikte+p%C3%A5+%C3%A5+komme+i+arbeid.232257.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640793,
+          "vilkårkode": "AIANNEN2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har ikke rett til ytelser etter annen lovgivning",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-25",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-25+Forholdet+til+ytelser+etter+annen+lovgivning.232408.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640794,
+          "vilkårkode": "AOINORGE3",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har opphold i Norge/avtaleland eller fyller vilkårene for unntak",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-3",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-3+Opphold+i+Norge.232089.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640795,
+          "vilkårkode": "STRAFFGJF2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker utholder ikke varetekt, straff eller særreaksjon i anstalt",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-22",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-22+Arbeidsavklaringspenger+under+straffegjennomf%C3%B8ring.232405.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640796,
+          "vilkårkode": "YTELARBGI2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker mottar ikke ytelser fra nåværende eller tidligere arbeidsgiver",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-19",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-19+Reduksjon+av+arbeidsavklaringspenger+p%C3%A5+grunn+av+ytelser+fra+arbeidsgiver.232401.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640797,
+          "vilkårkode": "IVLGANNEN2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har ikke valgt annen full folketrygdytelse",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-23",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-23+Forholdet+til+andre+fulle+ytelser+fra+folketrygden.232406.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386640798,
+          "vilkårkode": "MEDLSKAP5",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker fyller vilkåret om forutgående medlemskap eller vilkår for unntak.",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        }
+      ]
+    },
+    {
+      "vedtakId": 37060494,
+      "lopenrvedtak": 6,
+      "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
+      "vedtaktypeKode": "E",
+      "vedtaktypeNavn": "Endring",
+      "aktivitetsfaseKode": "UA",
+      "aktivitetsfaseNavn": "Under arbeidsavklaring",
+      "fraOgMed": "2025-01-01",
+      "tilDato": "2025-04-30",
+      "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
+      "utfallkode": "JA",
+      "begrunnelse": "Barnetillegget til AAP øker fra 36 til 37 kroner per barn fra 1. januar 2025. Dette går frem av folketrygdloven § 11- 20 tredje ledd og forskrift om arbeidsavklaringspenger § 8.\n\nDerfor har vi endret vedtaket ditt.",
+      "saksbehandler": "GRENSESN",
+      "beslutter": "GRENSESN",
+      "relatertVedtak": 37041811,
+      "fakta": [
+        {
+          "kode": "AAPBERDATO",
+          "navn": "Beregningsdato",
+          "verdi": "11-06-2022",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "AAPBERREGL",
+          "navn": "Beregningsregelverk",
+          "verdi": "Februar 2020",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "AAPMANBER",
+          "navn": "Arbeidsavklaringspenger manuelt beregnet",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "AAPVARIGHT",
+          "navn": "Varighet AAP-periode",
+          "verdi": "3",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "AAPVARIGKO",
+          "navn": "Varighet Korona-periode",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "AAPVARIGUN",
+          "navn": "Varighet AAP unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "AAPVILKUNN",
+          "navn": "Unntaksvilkår gjelder fra",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "AGRLAGMAN",
+          "navn": "Grunnlag er beregnet manuelt",
+          "verdi": "N",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "ANTB",
+          "navn": "Antall barn",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "ARBPEOS",
+          "navn": "Arbeidsperiode EØS/N i grunnlag",
+          "verdi": "N",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "ATIMTLTLON",
+          "navn": "Timer med tiltakslønn",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "ATIMUUTNIN",
+          "navn": "Timer uutnyttet inntekstevne",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "AUNGFOR",
+          "navn": "Ung ufør",
+          "verdi": "N",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "AUTOAARSAK",
+          "navn": "Årsak til automatisk vedtak",
+          "verdi": "BARNETILLEGG",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "AVSPTSANK",
+          "navn": "Avspaser tidligere sanksjon",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "AYRKESKADE",
+          "navn": "Yrkesskade",
+          "verdi": "N",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "BARNMSTON",
+          "navn": "Antall barn med stønad",
+          "verdi": "1",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "BARNTILL",
+          "navn": "Barnetillegg per uke",
+          "verdi": "37",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "BARNUSTON",
+          "navn": "Antall barn uten stønad",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "BEGRTELLER",
+          "navn": "Tellerjustering begrunnelse",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "BEGRTILAAP",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "BEGRTILUNN",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse AAP-unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "BEGRUNNTAK",
+          "navn": "Tellerjustering unntak begrunnelse",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "BERBESKR",
+          "navn": "Begrunnelse fra beregning",
+          "verdi": "Pensjonsgivende inntekt som er høyere enn seks ganger grunnbeløpet per kalenderår, blir ikke tatt med i beregningsgrunnlaget.\r Du har hatt inntekter som overstiger dette. Derfor har vi redusert grunnlaget ditt. Dette går fram av folketrygdloven § 11-19 andre ledd.\r\n\r\nGrunnbeløpet endres årlig, og du finner beløpet på nav.no/grunnbelop.\n",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "BERDAGS",
+          "navn": "Beregnet dagsats",
+          "verdi": "1926",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "BERREGEL",
+          "navn": "Kode for beregningsregel",
+          "verdi": "ORDINAER_OVER_6G_2018",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "BREVKLASSE",
+          "navn": "Klassifisering av type brev",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "DAGS",
+          "navn": "Dagsats",
+          "verdi": "1889",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "DAGSFSAM",
+          "navn": "Grunnsats før samordning",
+          "verdi": "1889",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "DAGSMBFSAM",
+          "navn": "Dagsats med barnetillegg før samordning",
+          "verdi": "1926",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "DAGSMBT",
+          "navn": "Dagsats med barnetillegg",
+          "verdi": "1926",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "ENDRPERAAP",
+          "navn": "Tellerjustering AAP periode",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "ENDRTILAAP",
+          "navn": "Tellerjustering tilleggsperiode i ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "ENDRTILUNN",
+          "navn": "Tellerjustering tilleggsperiode i AAP-unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "ENDRUNNAAP",
+          "navn": "Tellerjustering unntaksperiode AAP",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "FASTARBTFS",
+          "navn": "Fastsatt arbeidstid før samordning",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "FDATO",
+          "navn": "Gjelder fra",
+          "verdi": "01-01-2025",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "GRSATS",
+          "navn": "Grunnsats",
+          "verdi": "1889",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "GRUNN",
+          "navn": "Grunnlag",
+          "verdi": "744168",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "INNVF",
+          "navn": "Vedtaksdato",
+          "verdi": "07-01-2025",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "INSGRAD",
+          "navn": "Gradering pga institusjonsopphold",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "INSTOPP",
+          "navn": "Institusjonsopphold",
+          "verdi": "N",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "INTARNESTS",
+          "navn": "Nest siste beregningsår",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "INTARSISTE",
+          "navn": "Siste beregningsår",
+          "verdi": "2021",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "INTARTREDS",
+          "navn": "Tredje siste beregningsår",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "INTNESTS",
+          "navn": "Inntekt nest siste beregningsår/periode",
+          "verdi": "0",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "INTSISTE",
+          "navn": "Inntekt siste beregningsår/periode",
+          "verdi": "1048943",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "INTTREDS",
+          "navn": "Inntekt tredje siste beregningsår/periode",
+          "verdi": "0",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "JUSTERTG",
+          "navn": "Endring ved justering av G",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "KODE115",
+          "navn": "Relatert 11-5-vedtak",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "MASKVEDTAK",
+          "navn": "Maskinelt vedtak",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "MAXDATOAAP",
+          "navn": "Maksdato ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "MAXDATOUNT",
+          "navn": "Maksdato AAP unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "MAXDTAAPK",
+          "navn": "Skriptjustering maksdato AAP ordinær",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "MAXDTAAPKU",
+          "navn": "Skriptjustering maksdato AAP unntak",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "NORMARBT",
+          "navn": "Normalarbeidstid",
+          "verdi": "37.5",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "OPPRTDATO",
+          "navn": "Opprinnelig til-dato",
+          "verdi": "09-06-2025",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "OVERGTAT",
+          "navn": "Overgangstilfelle AT 2009",
+          "verdi": "N",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "OVERGTRP",
+          "navn": "Overgangstilfelle RP 2009",
+          "verdi": "N",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "OVERGTTU",
+          "navn": "Overgangstilfelle TU 2009",
+          "verdi": "N",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "PR90REGEL",
+          "navn": "90% regel",
+          "verdi": "N",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "SAM",
+          "navn": "Samordning er utført",
+          "verdi": "N",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "SAMKILDMAN",
+          "navn": "Samordningskilde manuelt lagt inn",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "SAMUKESAND",
+          "navn": "Sum samordning manuelt reg fra andre",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "SAMUKESRTV",
+          "navn": "Sum samordning manuelt reg folketrygdytelser/AFP",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "STUDENTBES",
+          "navn": "Vurdert studentbestemmelsen",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "TDATO",
+          "navn": "Gjelder til",
+          "verdi": "30-04-2025",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "TERSKMKBER",
+          "navn": "Terskelgrense Meldekortberegning",
+          "verdi": "40",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "TPDATO",
+          "navn": "TP-dato",
+          "verdi": "07-01-2025 08:44",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "TPRESULTAT",
+          "navn": "TP-nr(e)",
+          "verdi": "0",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "UKES",
+          "navn": "Ukesats",
+          "verdi": "9630",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "UKESFSAM",
+          "navn": "Ukesats før samordning",
+          "verdi": "9630",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "UNNTAKAAP",
+          "navn": "Unntak fra maksimal stønadsperiode AAP",
+          "verdi": "N",
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "VEDTAKSEND",
+          "navn": "Utskrift/sendt",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "YDATO",
+          "navn": "Yrkesskadetidspunkt",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "YINNT",
+          "navn": "Inntekt på skadetidspunkt",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        },
+        {
+          "kode": "YSKADEGRD",
+          "navn": "Yrkesskadegrad",
+          "verdi": null,
+          "registrertDato": "2025-01-07"
+        }
+      ],
+      "vilkårsvurderinger": [
+        {
+          "vilkårsvurderingId": 386164669,
+          "vilkårkode": "18-67AAR2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker er mellom 18 og 67 år",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-4#L19970228-19_P11-4",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-4++Alder.232187.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386164670,
+          "vilkårkode": "A11-52",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Godkjent vedtak om nedsatt arbeidsevne foreligger",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-4#L19970228-19_P11-5",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-5+Nedsatt+arbeidsevne.232189.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386164671,
+          "vilkårkode": "AAARBEID1",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Er i arbeid og anses nær ved å kunne øke arbeidsevnen. Må kunne oppnå minst 50% arbeidsevne.",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386164672,
+          "vilkårkode": "AAARBEID2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Er nær ved å bli satt i stand til å skaffe/gå tilbake i arbeid. Må kunne oppnå minst 50% arbeidsevne",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386164673,
+          "vilkårkode": "AAARBEID3",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker deltar på opplæringstiltak.",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386164674,
+          "vilkårkode": "AABEHGSTUD",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har avbrutt studiet og har behov for behandling for å kunne gjenoppta studiet",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386164675,
+          "vilkårkode": "AAFAARBIS2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker får bistand fra NAV for å komme i arbeid",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-6",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-6+Bistand+til+%C3%A5+skaffe+seg+eller+beholde+arbeid.232246.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386164676,
+          "vilkårkode": "AAIUBEGRF2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har ikke ubegrunnet fravær",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-9",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-9+Frav%C3%A6r+fra+fastsatt+aktivitet.232260.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386164677,
+          "vilkårkode": "AAMEDVPLA2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker medvirker i prosessen med å utarbeide en plan",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-8",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-8+Aktivitet+med+sikte+p%C3%A5+%C3%A5+komme+i+arbeid.232257.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386164678,
+          "vilkårkode": "ABIDRARAK2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker bidrar aktivt i prosessen med å komme i arbeid",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-8",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-8+Aktivitet+med+sikte+p%C3%A5+%C3%A5+komme+i+arbeid.232257.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386164679,
+          "vilkårkode": "AIANNEN2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har ikke rett til ytelser etter annen lovgivning",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-25",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-25+Forholdet+til+ytelser+etter+annen+lovgivning.232408.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386164680,
+          "vilkårkode": "AOINORGE3",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har opphold i Norge/avtaleland eller fyller vilkårene for unntak",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-3",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-3+Opphold+i+Norge.232089.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386164681,
+          "vilkårkode": "STRAFFGJF2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker utholder ikke varetekt, straff eller særreaksjon i anstalt",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-22",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-22+Arbeidsavklaringspenger+under+straffegjennomf%C3%B8ring.232405.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386164682,
+          "vilkårkode": "YTELARBGI2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker mottar ikke ytelser fra nåværende eller tidligere arbeidsgiver",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-19",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-19+Reduksjon+av+arbeidsavklaringspenger+p%C3%A5+grunn+av+ytelser+fra+arbeidsgiver.232401.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386164683,
+          "vilkårkode": "IVLGANNEN2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har ikke valgt annen full folketrygdytelse",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-23",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-23+Forholdet+til+andre+fulle+ytelser+fra+folketrygden.232406.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 386164684,
+          "vilkårkode": "MEDLSKAP5",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker fyller vilkåret om forutgående medlemskap eller vilkår for unntak.",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        }
+      ]
+    },
+    {
+      "vedtakId": 37041438,
+      "lopenrvedtak": 4,
+      "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
+      "vedtaktypeKode": "E",
+      "vedtaktypeNavn": "Endring",
+      "aktivitetsfaseKode": "UA",
+      "aktivitetsfaseNavn": "Under arbeidsavklaring",
+      "fraOgMed": "2024-05-01",
+      "tilDato": "2024-06-09",
+      "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
+      "utfallkode": "JA",
+      "begrunnelse": "Endring på grunn av endret grunnbeløp",
+      "saksbehandler": "GRENSESN",
+      "beslutter": "GRENSESN",
+      "relatertVedtak": 36997909,
+      "fakta": [
+        {
+          "kode": "AAPBERDATO",
+          "navn": "Beregningsdato",
+          "verdi": "11-06-2022",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "AAPBERREGL",
+          "navn": "Beregningsregelverk",
+          "verdi": "Februar 2020",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "AAPMANBER",
+          "navn": "Arbeidsavklaringspenger manuelt beregnet",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "AAPVARIGHT",
+          "navn": "Varighet AAP-periode",
+          "verdi": "3",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "AAPVARIGKO",
+          "navn": "Varighet Korona-periode",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "AAPVARIGUN",
+          "navn": "Varighet AAP unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "AAPVILKUNN",
+          "navn": "Unntaksvilkår gjelder fra",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "AGRLAGMAN",
+          "navn": "Grunnlag er beregnet manuelt",
+          "verdi": "N",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "ANTB",
+          "navn": "Antall barn",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "ARBPEOS",
+          "navn": "Arbeidsperiode EØS/N i grunnlag",
+          "verdi": "N",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "ATIMTLTLON",
+          "navn": "Timer med tiltakslønn",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "ATIMUUTNIN",
+          "navn": "Timer uutnyttet inntekstevne",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "AUNGFOR",
+          "navn": "Ung ufør",
+          "verdi": "N",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "AVSPTSANK",
+          "navn": "Avspaser tidligere sanksjon",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "AYRKESKADE",
+          "navn": "Yrkesskade",
+          "verdi": "N",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "BARNMSTON",
+          "navn": "Antall barn med stønad",
+          "verdi": "1",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "BARNTILL",
+          "navn": "Barnetillegg per uke",
+          "verdi": "35",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "BARNUSTON",
+          "navn": "Antall barn uten stønad",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "BEGRTELLER",
+          "navn": "Tellerjustering begrunnelse",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "BEGRTILAAP",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "BEGRTILUNN",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse AAP-unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "BEGRUNNTAK",
+          "navn": "Tellerjustering unntak begrunnelse",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "BERBESKR",
+          "navn": "Begrunnelse fra beregning",
+          "verdi": "Pensjonsgivende inntekt som er høyere enn seks ganger grunnbeløpet per kalenderår, blir ikke tatt med i beregningsgrunnlaget.\r Du har hatt inntekter som overstiger dette. Derfor har vi redusert grunnlaget ditt. Dette går fram av folketrygdloven § 11-19 andre ledd.\r\n\r\nGrunnbeløpet endres årlig, og du finner beløpet på nav.no/grunnbelop.",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "BERDAGS",
+          "navn": "Beregnet dagsats",
+          "verdi": "1925",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "BERREGEL",
+          "navn": "Kode for beregningsregel",
+          "verdi": "ORDINAER_OVER_6G_2018",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "BREVKLASSE",
+          "navn": "Klassifisering av type brev",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "DAGS",
+          "navn": "Dagsats",
+          "verdi": "1889",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "DAGSFSAM",
+          "navn": "Grunnsats før samordning",
+          "verdi": "1889",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "DAGSMBFSAM",
+          "navn": "Dagsats med barnetillegg før samordning",
+          "verdi": "1925",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "DAGSMBT",
+          "navn": "Dagsats med barnetillegg",
+          "verdi": "1925",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "ENDRPERAAP",
+          "navn": "Tellerjustering AAP periode",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "ENDRTILAAP",
+          "navn": "Tellerjustering tilleggsperiode i ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "ENDRTILUNN",
+          "navn": "Tellerjustering tilleggsperiode i AAP-unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "ENDRUNNAAP",
+          "navn": "Tellerjustering unntaksperiode AAP",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "FASTARBTFS",
+          "navn": "Fastsatt arbeidstid før samordning",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "FDATO",
+          "navn": "Gjelder fra",
+          "verdi": "01-05-2024",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "GRSATS",
+          "navn": "Grunnsats",
+          "verdi": "1889",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "GRUNN",
+          "navn": "Grunnlag",
+          "verdi": "744168",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "INNVF",
+          "navn": "Vedtaksdato",
+          "verdi": "10-06-2024",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "INSGRAD",
+          "navn": "Gradering pga institusjonsopphold",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "INSTOPP",
+          "navn": "Institusjonsopphold",
+          "verdi": "N",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "INTARNESTS",
+          "navn": "Nest siste beregningsår",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "INTARSISTE",
+          "navn": "Siste beregningsår",
+          "verdi": "2021",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "INTARTREDS",
+          "navn": "Tredje siste beregningsår",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "INTNESTS",
+          "navn": "Inntekt nest siste beregningsår/periode",
+          "verdi": "0",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "INTSISTE",
+          "navn": "Inntekt siste beregningsår/periode",
+          "verdi": "1048943",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "INTTREDS",
+          "navn": "Inntekt tredje siste beregningsår/periode",
+          "verdi": "0",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "JUSTERTG",
+          "navn": "Endring ved justering av G",
+          "verdi": "NyG2024",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "KODE115",
+          "navn": "Relatert 11-5-vedtak",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "MASKVEDTAK",
+          "navn": "Maskinelt vedtak",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "MAXDATOAAP",
+          "navn": "Maksdato ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "MAXDATOUNT",
+          "navn": "Maksdato AAP unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "MAXDTAAPK",
+          "navn": "Skriptjustering maksdato AAP ordinær",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "MAXDTAAPKU",
+          "navn": "Skriptjustering maksdato AAP unntak",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "NORMARBT",
+          "navn": "Normalarbeidstid",
+          "verdi": "37.5",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "OPPRTDATO",
+          "navn": "Opprinnelig til-dato",
+          "verdi": "09-06-2024",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "OVERGTAT",
+          "navn": "Overgangstilfelle AT 2009",
+          "verdi": "N",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "OVERGTRP",
+          "navn": "Overgangstilfelle RP 2009",
+          "verdi": "N",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "OVERGTTU",
+          "navn": "Overgangstilfelle TU 2009",
+          "verdi": "N",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "PR90REGEL",
+          "navn": "90% regel",
+          "verdi": "N",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "SAM",
+          "navn": "Samordning er utført",
+          "verdi": "N",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "SAMKILDMAN",
+          "navn": "Samordningskilde manuelt lagt inn",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "SAMUKESAND",
+          "navn": "Sum samordning manuelt reg fra andre",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "SAMUKESRTV",
+          "navn": "Sum samordning manuelt reg folketrygdytelser/AFP",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "STUDENTBES",
+          "navn": "Vurdert studentbestemmelsen",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "TDATO",
+          "navn": "Gjelder til",
+          "verdi": "09-06-2024",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "TERSKMKBER",
+          "navn": "Terskelgrense Meldekortberegning",
+          "verdi": "40",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "TPDATO",
+          "navn": "TP-dato",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "TPRESULTAT",
+          "navn": "TP-nr(e)",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "UKES",
+          "navn": "Ukesats",
+          "verdi": "9625",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "UKESFSAM",
+          "navn": "Ukesats før samordning",
+          "verdi": "9625",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "UNNTAKAAP",
+          "navn": "Unntak fra maksimal stønadsperiode AAP",
+          "verdi": "N",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "VEDTAKSEND",
+          "navn": "Utskrift/sendt",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "YDATO",
+          "navn": "Yrkesskadetidspunkt",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "YINNT",
+          "navn": "Inntekt på skadetidspunkt",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "YSKADEGRD",
+          "navn": "Yrkesskadegrad",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        }
+      ],
+      "vilkårsvurderinger": [
+        {
+          "vilkårsvurderingId": 385912472,
+          "vilkårkode": "18-67AAR2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker er mellom 18 og 67 år",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-4#L19970228-19_P11-4",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-4++Alder.232187.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385912475,
+          "vilkårkode": "A11-52",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Godkjent vedtak om nedsatt arbeidsevne foreligger",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-4#L19970228-19_P11-5",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-5+Nedsatt+arbeidsevne.232189.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385912477,
+          "vilkårkode": "AAARBEID1",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Er i arbeid og anses nær ved å kunne øke arbeidsevnen. Må kunne oppnå minst 50% arbeidsevne.",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385912478,
+          "vilkårkode": "AAARBEID2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Er nær ved å bli satt i stand til å skaffe/gå tilbake i arbeid. Må kunne oppnå minst 50% arbeidsevne",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385912479,
+          "vilkårkode": "AAARBEID3",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker deltar på opplæringstiltak.",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385912480,
+          "vilkårkode": "AABEHGSTUD",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har avbrutt studiet og har behov for behandling for å kunne gjenoppta studiet",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385912482,
+          "vilkårkode": "AAFAARBIS2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker får bistand fra NAV for å komme i arbeid",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-6",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-6+Bistand+til+%C3%A5+skaffe+seg+eller+beholde+arbeid.232246.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385912483,
+          "vilkårkode": "AAIUBEGRF2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har ikke ubegrunnet fravær",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-9",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-9+Frav%C3%A6r+fra+fastsatt+aktivitet.232260.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385912486,
+          "vilkårkode": "AAMEDVPLA2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker medvirker i prosessen med å utarbeide en plan",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-8",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-8+Aktivitet+med+sikte+p%C3%A5+%C3%A5+komme+i+arbeid.232257.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385912487,
+          "vilkårkode": "ABIDRARAK2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker bidrar aktivt i prosessen med å komme i arbeid",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-8",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-8+Aktivitet+med+sikte+p%C3%A5+%C3%A5+komme+i+arbeid.232257.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385912489,
+          "vilkårkode": "AIANNEN2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har ikke rett til ytelser etter annen lovgivning",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-25",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-25+Forholdet+til+ytelser+etter+annen+lovgivning.232408.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385912491,
+          "vilkårkode": "AOINORGE3",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har opphold i Norge/avtaleland eller fyller vilkårene for unntak",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-3",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-3+Opphold+i+Norge.232089.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385912494,
+          "vilkårkode": "STRAFFGJF2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker utholder ikke varetekt, straff eller særreaksjon i anstalt",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-22",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-22+Arbeidsavklaringspenger+under+straffegjennomf%C3%B8ring.232405.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385912496,
+          "vilkårkode": "YTELARBGI2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker mottar ikke ytelser fra nåværende eller tidligere arbeidsgiver",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-19",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-19+Reduksjon+av+arbeidsavklaringspenger+p%C3%A5+grunn+av+ytelser+fra+arbeidsgiver.232401.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385912498,
+          "vilkårkode": "IVLGANNEN2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har ikke valgt annen full folketrygdytelse",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-23",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-23+Forholdet+til+andre+fulle+ytelser+fra+folketrygden.232406.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385912499,
+          "vilkårkode": "MEDLSKAP5",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker fyller vilkåret om forutgående medlemskap eller vilkår for unntak.",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        }
+      ]
+    },
+    {
+      "vedtakId": 37041811,
+      "lopenrvedtak": 5,
+      "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
+      "vedtaktypeKode": "E",
+      "vedtaktypeNavn": "Endring",
+      "aktivitetsfaseKode": "UA",
+      "aktivitetsfaseNavn": "Under arbeidsavklaring",
+      "fraOgMed": "2024-06-10",
+      "tilDato": "2024-12-31",
+      "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
+      "utfallkode": "JA",
+      "begrunnelse": "Endring på grunn av endret grunnbeløp",
+      "saksbehandler": "GRENSESN",
+      "beslutter": "GRENSESN",
+      "relatertVedtak": 37025928,
+      "fakta": [
+        {
+          "kode": "AAPBERDATO",
+          "navn": "Beregningsdato",
+          "verdi": "11-06-2022",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "AAPBERREGL",
+          "navn": "Beregningsregelverk",
+          "verdi": "Februar 2020",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "AAPMANBER",
+          "navn": "Arbeidsavklaringspenger manuelt beregnet",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "AAPVARIGHT",
+          "navn": "Varighet AAP-periode",
+          "verdi": "3",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "AAPVARIGKO",
+          "navn": "Varighet Korona-periode",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "AAPVARIGUN",
+          "navn": "Varighet AAP unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "AAPVILKUNN",
+          "navn": "Unntaksvilkår gjelder fra",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "AGRLAGMAN",
+          "navn": "Grunnlag er beregnet manuelt",
+          "verdi": "N",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "ANTB",
+          "navn": "Antall barn",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "ARBPEOS",
+          "navn": "Arbeidsperiode EØS/N i grunnlag",
+          "verdi": "N",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "ATIMTLTLON",
+          "navn": "Timer med tiltakslønn",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "ATIMUUTNIN",
+          "navn": "Timer uutnyttet inntekstevne",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "AUNGFOR",
+          "navn": "Ung ufør",
+          "verdi": "N",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "AVSPTSANK",
+          "navn": "Avspaser tidligere sanksjon",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "AYRKESKADE",
+          "navn": "Yrkesskade",
+          "verdi": "N",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "BARNMSTON",
+          "navn": "Antall barn med stønad",
+          "verdi": "1",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "BARNTILL",
+          "navn": "Barnetillegg per uke",
+          "verdi": "35",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "BARNUSTON",
+          "navn": "Antall barn uten stønad",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "BEGRTELLER",
+          "navn": "Tellerjustering begrunnelse",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "BEGRTILAAP",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "BEGRTILUNN",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse AAP-unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "BEGRUNNTAK",
+          "navn": "Tellerjustering unntak begrunnelse",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "BERBESKR",
+          "navn": "Begrunnelse fra beregning",
+          "verdi": "Pensjonsgivende inntekt som er høyere enn seks ganger grunnbeløpet per kalenderår, blir ikke tatt med i beregningsgrunnlaget.\r Du har hatt inntekter som overstiger dette. Derfor har vi redusert grunnlaget ditt. Dette går fram av folketrygdloven § 11-19 andre ledd.\r\n\r\nGrunnbeløpet endres årlig, og du finner beløpet på nav.no/grunnbelop.",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "BERDAGS",
+          "navn": "Beregnet dagsats",
+          "verdi": "1925",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "BERREGEL",
+          "navn": "Kode for beregningsregel",
+          "verdi": "ORDINAER_OVER_6G_2018",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "BREVKLASSE",
+          "navn": "Klassifisering av type brev",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "DAGS",
+          "navn": "Dagsats",
+          "verdi": "1889",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "DAGSFSAM",
+          "navn": "Grunnsats før samordning",
+          "verdi": "1889",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "DAGSMBFSAM",
+          "navn": "Dagsats med barnetillegg før samordning",
+          "verdi": "1925",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "DAGSMBT",
+          "navn": "Dagsats med barnetillegg",
+          "verdi": "1925",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "ENDRPERAAP",
+          "navn": "Tellerjustering AAP periode",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "ENDRTILAAP",
+          "navn": "Tellerjustering tilleggsperiode i ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "ENDRTILUNN",
+          "navn": "Tellerjustering tilleggsperiode i AAP-unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "ENDRUNNAAP",
+          "navn": "Tellerjustering unntaksperiode AAP",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "FASTARBTFS",
+          "navn": "Fastsatt arbeidstid før samordning",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "FDATO",
+          "navn": "Gjelder fra",
+          "verdi": "10-06-2024",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "GRSATS",
+          "navn": "Grunnsats",
+          "verdi": "1889",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "GRUNN",
+          "navn": "Grunnlag",
+          "verdi": "744168",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "INNVF",
+          "navn": "Vedtaksdato",
+          "verdi": "10-06-2024",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "INSGRAD",
+          "navn": "Gradering pga institusjonsopphold",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "INSTOPP",
+          "navn": "Institusjonsopphold",
+          "verdi": "N",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "INTARNESTS",
+          "navn": "Nest siste beregningsår",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "INTARSISTE",
+          "navn": "Siste beregningsår",
+          "verdi": "2021",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "INTARTREDS",
+          "navn": "Tredje siste beregningsår",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "INTNESTS",
+          "navn": "Inntekt nest siste beregningsår/periode",
+          "verdi": "0",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "INTSISTE",
+          "navn": "Inntekt siste beregningsår/periode",
+          "verdi": "1048943",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "INTTREDS",
+          "navn": "Inntekt tredje siste beregningsår/periode",
+          "verdi": "0",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "JUSTERTG",
+          "navn": "Endring ved justering av G",
+          "verdi": "NyG2024",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "KODE115",
+          "navn": "Relatert 11-5-vedtak",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "MASKVEDTAK",
+          "navn": "Maskinelt vedtak",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "MAXDATOAAP",
+          "navn": "Maksdato ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "MAXDATOUNT",
+          "navn": "Maksdato AAP unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "MAXDTAAPK",
+          "navn": "Skriptjustering maksdato AAP ordinær",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "MAXDTAAPKU",
+          "navn": "Skriptjustering maksdato AAP unntak",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "NORMARBT",
+          "navn": "Normalarbeidstid",
+          "verdi": "37.5",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "OPPRTDATO",
+          "navn": "Opprinnelig til-dato",
+          "verdi": "09-06-2025",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "OVERGTAT",
+          "navn": "Overgangstilfelle AT 2009",
+          "verdi": "N",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "OVERGTRP",
+          "navn": "Overgangstilfelle RP 2009",
+          "verdi": "N",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "OVERGTTU",
+          "navn": "Overgangstilfelle TU 2009",
+          "verdi": "N",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "PR90REGEL",
+          "navn": "90% regel",
+          "verdi": "N",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "SAM",
+          "navn": "Samordning er utført",
+          "verdi": "N",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "SAMKILDMAN",
+          "navn": "Samordningskilde manuelt lagt inn",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "SAMUKESAND",
+          "navn": "Sum samordning manuelt reg fra andre",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "SAMUKESRTV",
+          "navn": "Sum samordning manuelt reg folketrygdytelser/AFP",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "STUDENTBES",
+          "navn": "Vurdert studentbestemmelsen",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "TDATO",
+          "navn": "Gjelder til",
+          "verdi": "31-12-2024",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "TERSKMKBER",
+          "navn": "Terskelgrense Meldekortberegning",
+          "verdi": "40",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "TPDATO",
+          "navn": "TP-dato",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "TPRESULTAT",
+          "navn": "TP-nr(e)",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "UKES",
+          "navn": "Ukesats",
+          "verdi": "9625",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "UKESFSAM",
+          "navn": "Ukesats før samordning",
+          "verdi": "9625",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "UNNTAKAAP",
+          "navn": "Unntak fra maksimal stønadsperiode AAP",
+          "verdi": "N",
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "VEDTAKSEND",
+          "navn": "Utskrift/sendt",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "YDATO",
+          "navn": "Yrkesskadetidspunkt",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "YINNT",
+          "navn": "Inntekt på skadetidspunkt",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        },
+        {
+          "kode": "YSKADEGRD",
+          "navn": "Yrkesskadegrad",
+          "verdi": null,
+          "registrertDato": "2024-06-10"
+        }
+      ],
+      "vilkårsvurderinger": [
+        {
+          "vilkårsvurderingId": 385918396,
+          "vilkårkode": "18-67AAR2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker er mellom 18 og 67 år",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-4#L19970228-19_P11-4",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-4++Alder.232187.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385918397,
+          "vilkårkode": "A11-52",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Godkjent vedtak om nedsatt arbeidsevne foreligger",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-4#L19970228-19_P11-5",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-5+Nedsatt+arbeidsevne.232189.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385918398,
+          "vilkårkode": "AAARBEID1",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Er i arbeid og anses nær ved å kunne øke arbeidsevnen. Må kunne oppnå minst 50% arbeidsevne.",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385918399,
+          "vilkårkode": "AAARBEID2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Er nær ved å bli satt i stand til å skaffe/gå tilbake i arbeid. Må kunne oppnå minst 50% arbeidsevne",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385918400,
+          "vilkårkode": "AAARBEID3",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker deltar på opplæringstiltak.",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385918401,
+          "vilkårkode": "AABEHGSTUD",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har avbrutt studiet og har behov for behandling for å kunne gjenoppta studiet",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385918402,
+          "vilkårkode": "AAFAARBIS2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker får bistand fra NAV for å komme i arbeid",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-6",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-6+Bistand+til+%C3%A5+skaffe+seg+eller+beholde+arbeid.232246.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385918403,
+          "vilkårkode": "AAIUBEGRF2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har ikke ubegrunnet fravær",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-9",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-9+Frav%C3%A6r+fra+fastsatt+aktivitet.232260.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385918404,
+          "vilkårkode": "AAMEDVPLA2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker medvirker i prosessen med å utarbeide en plan",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-8",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-8+Aktivitet+med+sikte+p%C3%A5+%C3%A5+komme+i+arbeid.232257.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385918405,
+          "vilkårkode": "ABIDRARAK2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker bidrar aktivt i prosessen med å komme i arbeid",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-8",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-8+Aktivitet+med+sikte+p%C3%A5+%C3%A5+komme+i+arbeid.232257.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385918406,
+          "vilkårkode": "AIANNEN2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har ikke rett til ytelser etter annen lovgivning",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-25",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-25+Forholdet+til+ytelser+etter+annen+lovgivning.232408.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385918407,
+          "vilkårkode": "AOINORGE3",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har opphold i Norge/avtaleland eller fyller vilkårene for unntak",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-3",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-3+Opphold+i+Norge.232089.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385918408,
+          "vilkårkode": "STRAFFGJF2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker utholder ikke varetekt, straff eller særreaksjon i anstalt",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-22",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-22+Arbeidsavklaringspenger+under+straffegjennomf%C3%B8ring.232405.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385918409,
+          "vilkårkode": "YTELARBGI2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker mottar ikke ytelser fra nåværende eller tidligere arbeidsgiver",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-19",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-19+Reduksjon+av+arbeidsavklaringspenger+p%C3%A5+grunn+av+ytelser+fra+arbeidsgiver.232401.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385918410,
+          "vilkårkode": "IVLGANNEN2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har ikke valgt annen full folketrygdytelse",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-23",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-23+Forholdet+til+andre+fulle+ytelser+fra+folketrygden.232406.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385918411,
+          "vilkårkode": "MEDLSKAP5",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker fyller vilkåret om forutgående medlemskap eller vilkår for unntak.",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        }
+      ]
+    },
+    {
+      "vedtakId": 36997903,
+      "lopenrvedtak": 1,
+      "statusKode": "IVERK",
+      "statusNavn": "Iverksatt",
+      "vedtaktypeKode": "O",
+      "vedtaktypeNavn": "Ny rettighet",
+      "aktivitetsfaseKode": "IKKE",
+      "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
+      "fraOgMed": "2023-05-22",
+      "tilDato": null,
+      "rettighetkode": "AA115",
+      "rettighetnavn": "§11-5 nedsatt arbeidsevne",
+      "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "FJX0331",
+      "beslutter": "KRO0331",
+      "relatertVedtak": null,
+      "fakta": [
+        {
+          "kode": "FDATO",
+          "navn": "Gjelder fra",
+          "verdi": "22-05-2023",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "INNVF",
+          "navn": "Vedtaksdato",
+          "verdi": "22-05-2023",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "TDATO",
+          "navn": "Gjelder til",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        }
+      ],
+      "vilkårsvurderinger": [
+        {
+          "vilkårsvurderingId": 385393798,
+          "vilkårkode": "AAARBEVNE",
+          "begrunnelse": null,
+          "vurdertAv": "FJX0331",
+          "vilkårnavn": "Søker har tapt minst halvparten av arbeidsevnen",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 385393797,
+          "vilkårkode": "18-67AAR",
+          "begrunnelse": null,
+          "vurdertAv": "FJX0331",
+          "vilkårnavn": "Søker er mellom 18 og 67 år",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-4#L19970228-19_P11-4",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-4++Alder.232187.cms",
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 385393799,
+          "vilkårkode": "AAMOTTSAMT",
+          "begrunnelse": null,
+          "vurdertAv": "FJX0331",
+          "vilkårnavn": "Søker har møtt til samtale",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385393800,
+          "vilkårkode": "AANAAVJOBB",
+          "begrunnelse": null,
+          "vurdertAv": "FJX0331",
+          "vilkårnavn": "Søker har ikke mulighet til å fortsette i nåværende jobb",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385393801,
+          "vilkårkode": "AANODVDOKU",
+          "begrunnelse": null,
+          "vurdertAv": "FJX0331",
+          "vilkårnavn": "Søker har sendt inn nødvendig dokumentasjon",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385393802,
+          "vilkårkode": "AANORSKFER",
+          "begrunnelse": null,
+          "vurdertAv": "FJX0331",
+          "vilkårnavn": "Manglende norskferdigheter er ikke årsak til at søker ikke får jobb",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385393803,
+          "vilkårkode": "AASNARARBG",
+          "begrunnelse": null,
+          "vurdertAv": "FJX0331",
+          "vilkårnavn": "Søker kan ikke snart begynne å arbeide igjen hos arbeidsgiveren",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385393804,
+          "vilkårkode": "AASNARTARB",
+          "begrunnelse": null,
+          "vurdertAv": "FJX0331",
+          "vilkårnavn": "Søker kan ikke snart begynne å arbeide igjen",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385393805,
+          "vilkårkode": "AATYPEJOBB",
+          "begrunnelse": null,
+          "vurdertAv": "FJX0331",
+          "vilkårnavn": "Søker kan ikke klare en annen type jobb",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385393806,
+          "vilkårkode": "INNTNEDS",
+          "begrunnelse": null,
+          "vurdertAv": "FJX0331",
+          "vilkårnavn": "Søkers evne til å utføre inntektsgivende arbeid er nedsatt",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 385393807,
+          "vilkårkode": "SYKSKADLYT",
+          "begrunnelse": null,
+          "vurdertAv": "FJX0331",
+          "vilkårnavn": "Arbeidsevnen er nedsatt på grunn av sykdom, skade eller lyte",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        }
+      ]
+    },
+    {
+      "vedtakId": 36997909,
+      "lopenrvedtak": 2,
+      "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
+      "vedtaktypeKode": "O",
+      "vedtaktypeNavn": "Ny rettighet",
+      "aktivitetsfaseKode": "UA",
+      "aktivitetsfaseNavn": "Under arbeidsavklaring",
+      "fraOgMed": "2023-06-11",
+      "tilDato": "2024-04-30",
+      "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
+      "utfallkode": "JA",
+      "begrunnelse": "Syntetisert rettighet",
+      "saksbehandler": "KJH4416",
+      "beslutter": "JI4416",
+      "relatertVedtak": null,
+      "fakta": [
+        {
+          "kode": "AAPBERDATO",
+          "navn": "Beregningsdato",
+          "verdi": "11-06-2022",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "AAPBERREGL",
+          "navn": "Beregningsregelverk",
+          "verdi": "Februar 2020",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "AAPMANBER",
+          "navn": "Arbeidsavklaringspenger manuelt beregnet",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "AAPVARIGHT",
+          "navn": "Varighet AAP-periode",
+          "verdi": "3",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "AAPVARIGKO",
+          "navn": "Varighet Korona-periode",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "AAPVARIGUN",
+          "navn": "Varighet AAP unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "AAPVILKUNN",
+          "navn": "Unntaksvilkår gjelder fra",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "AGRLAGMAN",
+          "navn": "Grunnlag er beregnet manuelt",
+          "verdi": "N",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "ANTB",
+          "navn": "Antall barn",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "ARBPEOS",
+          "navn": "Arbeidsperiode EØS/N i grunnlag",
+          "verdi": "N",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "ATIMTLTLON",
+          "navn": "Timer med tiltakslønn",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "ATIMUUTNIN",
+          "navn": "Timer uutnyttet inntekstevne",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "AUNGFOR",
+          "navn": "Ung ufør",
+          "verdi": "N",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "AVSPTSANK",
+          "navn": "Avspaser tidligere sanksjon",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "AYRKESKADE",
+          "navn": "Yrkesskade",
+          "verdi": "N",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "BARNMSTON",
+          "navn": "Antall barn med stønad",
+          "verdi": "1",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "BARNTILL",
+          "navn": "Barnetillegg per uke",
+          "verdi": "35",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "BARNUSTON",
+          "navn": "Antall barn uten stønad",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "BEGRTELLER",
+          "navn": "Tellerjustering begrunnelse",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "BEGRTILAAP",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "BEGRTILUNN",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse AAP-unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "BEGRUNNTAK",
+          "navn": "Tellerjustering unntak begrunnelse",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "BERBESKR",
+          "navn": "Begrunnelse fra beregning",
+          "verdi": "Pensjonsgivende inntekt som er høyere enn seks ganger grunnbeløpet per kalenderår, blir ikke tatt med i beregningsgrunnlaget.\r Du har hatt inntekter som overstiger dette. Derfor har vi redusert grunnlaget ditt. Dette går fram av folketrygdloven § 11-19 andre ledd.\r\n\r\nGrunnbeløpet endres årlig, og du finner beløpet på nav.no/grunnbelop.\n",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "BERDAGS",
+          "navn": "Beregnet dagsats",
+          "verdi": "1842",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "BERREGEL",
+          "navn": "Kode for beregningsregel",
+          "verdi": "ORDINAER_OVER_6G_2018",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "BREVKLASSE",
+          "navn": "Klassifisering av type brev",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "DAGS",
+          "navn": "Dagsats",
+          "verdi": "1807",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "DAGSFSAM",
+          "navn": "Grunnsats før samordning",
+          "verdi": "1807",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "DAGSMBFSAM",
+          "navn": "Dagsats med barnetillegg før samordning",
+          "verdi": "1807",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "DAGSMBT",
+          "navn": "Dagsats med barnetillegg",
+          "verdi": "1842",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "ENDRPERAAP",
+          "navn": "Tellerjustering AAP periode",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "ENDRTILAAP",
+          "navn": "Tellerjustering tilleggsperiode i ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "ENDRTILUNN",
+          "navn": "Tellerjustering tilleggsperiode i AAP-unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "ENDRUNNAAP",
+          "navn": "Tellerjustering unntaksperiode AAP",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "ENDVARIGHT",
+          "navn": "Varighet endret fra tidligere periode",
+          "verdi": null,
+          "registrertDato": "2024-03-16"
+        },
+        {
+          "kode": "FASTARBTFS",
+          "navn": "Fastsatt arbeidstid før samordning",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "FDATO",
+          "navn": "Gjelder fra",
+          "verdi": "11-06-2023",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "GRSATS",
+          "navn": "Grunnsats",
+          "verdi": "1807",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "GRUNN",
+          "navn": "Grunnlag",
+          "verdi": "711720",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "INNVF",
+          "navn": "Vedtaksdato",
+          "verdi": "22-05-2023",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "INSGRAD",
+          "navn": "Gradering pga institusjonsopphold",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "INSTOPP",
+          "navn": "Institusjonsopphold",
+          "verdi": "N",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "INTARNESTS",
+          "navn": "Nest siste beregningsår",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "INTARSISTE",
+          "navn": "Siste beregningsår",
+          "verdi": "2021",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "INTARTREDS",
+          "navn": "Tredje siste beregningsår",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "INTNESTS",
+          "navn": "Inntekt nest siste beregningsår/periode",
+          "verdi": "0",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "INTSISTE",
+          "navn": "Inntekt siste beregningsår/periode",
+          "verdi": "1048943",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "INTTREDS",
+          "navn": "Inntekt tredje siste beregningsår/periode",
+          "verdi": "0",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "KODE115",
+          "navn": "Relatert 11-5-vedtak",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "MAXAAP",
+          "navn": "Info om periode for AAP",
+          "verdi": "15680",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "MAXDATOAAP",
+          "navn": "Maksdato ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "MAXDATOUNT",
+          "navn": "Maksdato AAP unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "MAXDTAAPK",
+          "navn": "Skriptjustering maksdato AAP ordinær",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "MAXDTAAPKU",
+          "navn": "Skriptjustering maksdato AAP unntak",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "MAXUNNTAAP",
+          "navn": "Info om unntaksperiode for AAP",
+          "verdi": "10460",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "NORMARBT",
+          "navn": "Normalarbeidstid",
+          "verdi": "37.5",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "NULLEAAP",
+          "navn": "Nullstilling periodeteller for AAP",
+          "verdi": "J",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "NULLEAAPUN",
+          "navn": "Nullstilling periodeteller for unntak AAP",
+          "verdi": "J",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "OPPRTDATO",
+          "navn": "Opprinnelig til-dato",
+          "verdi": "09-06-2024",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "OVERGTAT",
+          "navn": "Overgangstilfelle AT 2009",
+          "verdi": "N",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "OVERGTRP",
+          "navn": "Overgangstilfelle RP 2009",
+          "verdi": "N",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "OVERGTTU",
+          "navn": "Overgangstilfelle TU 2009",
+          "verdi": "N",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "PR90REGEL",
+          "navn": "90% regel",
+          "verdi": "N",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "SAM",
+          "navn": "Samordning er utført",
+          "verdi": "N",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "SAMKILDMAN",
+          "navn": "Samordningskilde manuelt lagt inn",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "SAMUKESAND",
+          "navn": "Sum samordning manuelt reg fra andre",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "SAMUKESRTV",
+          "navn": "Sum samordning manuelt reg folketrygdytelser/AFP",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "STUDENTBES",
+          "navn": "Vurdert studentbestemmelsen",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "TDATO",
+          "navn": "Gjelder til",
+          "verdi": "30-04-2024",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "TEKSTVAR",
+          "navn": "Brev-/vedtaksvariant",
+          "verdi": "O_INNV_SOKNAD",
+          "registrertDato": "2024-03-16"
+        },
+        {
+          "kode": "TERSKMKBER",
+          "navn": "Terskelgrense Meldekortberegning",
+          "verdi": "40",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "TPDATO",
+          "navn": "TP-dato",
+          "verdi": "16-03-2024 07:00",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "TPRESULTAT",
+          "navn": "TP-nr(e)",
+          "verdi": "0",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "UKES",
+          "navn": "Ukesats",
+          "verdi": "9210",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "UKESFSAM",
+          "navn": "Ukesats før samordning",
+          "verdi": "9210",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "UNNTAKAAP",
+          "navn": "Unntak fra maksimal stønadsperiode AAP",
+          "verdi": "N",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "VEDTAKSEND",
+          "navn": "Utskrift/sendt",
+          "verdi": "N",
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "YDATO",
+          "navn": "Yrkesskadetidspunkt",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "YINNT",
+          "navn": "Inntekt på skadetidspunkt",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        },
+        {
+          "kode": "YSKADEGRD",
+          "navn": "Yrkesskadegrad",
+          "verdi": null,
+          "registrertDato": "2023-05-22"
+        }
+      ],
+      "vilkårsvurderinger": [
+        {
+          "vilkårsvurderingId": 385393884,
+          "vilkårkode": "18-67AAR2",
+          "begrunnelse": null,
+          "vurdertAv": "KJH4416",
+          "vilkårnavn": "Søker er mellom 18 og 67 år",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-4#L19970228-19_P11-4",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-4++Alder.232187.cms",
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 385393885,
+          "vilkårkode": "A11-52",
+          "begrunnelse": null,
+          "vurdertAv": "KJH4416",
+          "vilkårnavn": "Godkjent vedtak om nedsatt arbeidsevne foreligger",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-4#L19970228-19_P11-5",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-5+Nedsatt+arbeidsevne.232189.cms",
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 385393886,
+          "vilkårkode": "AAARBEID1",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Er i arbeid og anses nær ved å kunne øke arbeidsevnen. Må kunne oppnå minst 50% arbeidsevne.",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385393887,
+          "vilkårkode": "AAARBEID2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Er nær ved å bli satt i stand til å skaffe/gå tilbake i arbeid. Må kunne oppnå minst 50% arbeidsevne",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385393888,
+          "vilkårkode": "AAARBEID3",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker deltar på opplæringstiltak.",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385393889,
+          "vilkårkode": "AABEHGSTUD",
+          "begrunnelse": null,
+          "vurdertAv": "KJH4416",
+          "vilkårnavn": "Søker har avbrutt studiet og har behov for behandling for å kunne gjenoppta studiet",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385393890,
+          "vilkårkode": "AAFAARBIS2",
+          "begrunnelse": null,
+          "vurdertAv": "KJH4416",
+          "vilkårnavn": "Søker får bistand fra NAV for å komme i arbeid",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-6",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-6+Bistand+til+%C3%A5+skaffe+seg+eller+beholde+arbeid.232246.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385393891,
+          "vilkårkode": "AAIUBEGRF2",
+          "begrunnelse": null,
+          "vurdertAv": "KJH4416",
+          "vilkårnavn": "Søker har ikke ubegrunnet fravær",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-9",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-9+Frav%C3%A6r+fra+fastsatt+aktivitet.232260.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385393892,
+          "vilkårkode": "AAMEDVPLA2",
+          "begrunnelse": null,
+          "vurdertAv": "KJH4416",
+          "vilkårnavn": "Søker medvirker i prosessen med å utarbeide en plan",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-8",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-8+Aktivitet+med+sikte+p%C3%A5+%C3%A5+komme+i+arbeid.232257.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385393893,
+          "vilkårkode": "AASYKSKADE",
+          "begrunnelse": null,
+          "vurdertAv": "KJH4416",
+          "vilkårnavn": "Søker har mottatt AAP siste 52 uker, men er alvorlig syk eller skadet",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385393894,
+          "vilkårkode": "ABIDRARAK2",
+          "begrunnelse": null,
+          "vurdertAv": "KJH4416",
+          "vilkårnavn": "Søker bidrar aktivt i prosessen med å komme i arbeid",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-8",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-8+Aktivitet+med+sikte+p%C3%A5+%C3%A5+komme+i+arbeid.232257.cms",
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 385393895,
+          "vilkårkode": "AIANNEN2",
+          "begrunnelse": null,
+          "vurdertAv": "KJH4416",
+          "vilkårnavn": "Søker har ikke rett til ytelser etter annen lovgivning",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-25",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-25+Forholdet+til+ytelser+etter+annen+lovgivning.232408.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385393896,
+          "vilkårkode": "AOINORGE3",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har opphold i Norge/avtaleland eller fyller vilkårene for unntak",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-3",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-3+Opphold+i+Norge.232089.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385393897,
+          "vilkårkode": "STRAFFGJF2",
+          "begrunnelse": null,
+          "vurdertAv": "KJH4416",
+          "vilkårnavn": "Søker utholder ikke varetekt, straff eller særreaksjon i anstalt",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-22",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-22+Arbeidsavklaringspenger+under+straffegjennomf%C3%B8ring.232405.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385393898,
+          "vilkårkode": "YTELARBGI2",
+          "begrunnelse": null,
+          "vurdertAv": "KJH4416",
+          "vilkårnavn": "Søker mottar ikke ytelser fra nåværende eller tidligere arbeidsgiver",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-19",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-19+Reduksjon+av+arbeidsavklaringspenger+p%C3%A5+grunn+av+ytelser+fra+arbeidsgiver.232401.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385393899,
+          "vilkårkode": "INTKTBFAL2",
+          "begrunnelse": null,
+          "vurdertAv": "KJH4416",
+          "vilkårnavn": "Over 62 år og tapt inntekt",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-4",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-4++Alder.232187.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385393900,
+          "vilkårkode": "IVLGANNEN2",
+          "begrunnelse": null,
+          "vurdertAv": "KJH4416",
+          "vilkårnavn": "Søker har ikke valgt annen full folketrygdytelse",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-23",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-23+Forholdet+til+andre+fulle+ytelser+fra+folketrygden.232406.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 385393901,
+          "vilkårkode": "MEDLSKAP5",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker fyller vilkåret om forutgående medlemskap eller vilkår for unntak.",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        }
+      ]
+    }
+  ],
+  "telleverkForPerson": {
+    "ordineerAAPKvote": 3780,
+    "utvidetAAPKvote": 10460
+  }
+}

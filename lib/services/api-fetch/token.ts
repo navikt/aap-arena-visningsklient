@@ -6,10 +6,9 @@ import { redirect } from 'next/navigation';
 import { getMockedOboToken, getOboTokenForAudienceFromEnvironmentVariable } from 'lib/services/api-fetch/token-mock';
 import { NAVJWTPayload, TokenType } from 'lib/services/api-fetch/token-types';
 
-const NUMBER_OF_RETRIES = 3;
 const logger = getLogger('lib.services.api-fetch.token');
 
-export const getOboToken = async (audience: string, retries: number = 3): Promise<string> => {
+export const getOboToken = async (audience: string): Promise<string> => {
   if (usesLocalWonderwall()) {
     const oboToken = getOboTokenForAudienceFromEnvironmentVariable(audience);
     if (oboToken == null) {
@@ -35,12 +34,8 @@ export const getOboToken = async (audience: string, retries: number = 3): Promis
     return onBehalfOf.token;
   }
 
-  logger.warn(`Henting av oboToken for ${audience} feilet`, { response: onBehalfOf });
-
-  if (retries === 0) {
-    throw new Error(`Henting av oboToken for ${audience} feilet etter ${NUMBER_OF_RETRIES} forsøk`);
-  }
-  return await getOboToken(audience, retries - 1);
+  logger.error(`Henting av oboToken for ${audience} feilet`, { response: onBehalfOf });
+  throw new Error(`Henting av oboToken for ${audience} feilet.`);
 };
 
 export const getValidatedToken = async (): Promise<TokenType> => {

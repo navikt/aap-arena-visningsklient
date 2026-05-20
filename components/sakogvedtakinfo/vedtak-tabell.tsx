@@ -1,10 +1,13 @@
 'use client';
 
+import styles from './sakogvedtak.module.css';
 import { ArenaVedtakMedFaktaDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
-import { BodyShort, Heading, Table } from '@navikt/ds-react';
+import { BodyShort, Heading, HStack, Table } from '@navikt/ds-react';
 import { format } from 'date-fns';
-import { Vedtakfakta } from 'components/sakogvedtakinfo/vedtakfakta';
-import { dateComperator, parseISOorNull } from 'lib/utils/date';
+import { Vedtakdetaljer } from 'components/sakogvedtakinfo/vedtakdetaljer/vedtakdetaljer';
+import { CheckmarkCircleIcon } from '@navikt/aksel-icons';
+import { XMarkOctagonIcon } from '@navikt/aksel-icons';
+import { storForbokstav } from 'lib/utils/string';
 
 type Props = {
   vedtak: ArenaVedtakMedFaktaDTO[];
@@ -20,54 +23,61 @@ export function VedtakTabell({ vedtak }: Props): React.ReactElement {
     );
   }
 
-  const sortedVedtak = vedtak.sort((v1, v2) =>
-    dateComperator(parseISOorNull(v1.fraOgMed), parseISOorNull(v2.fraOgMed), 'DESC')
-  );
+  const sortedVedtak = [...vedtak].sort((v1, v2) => v2.lopenrvedtak - v1.lopenrvedtak);
 
   return (
     <div>
       <Heading size="small">Vedtak på saken ({vedtak.length})</Heading>
-      <Table zebraStripes>
+      <Table>
         <Table.Header>
           <Table.Row>
-            <Table.HeaderCell scope="col">Rettighetskode</Table.HeaderCell>
+            <Table.HeaderCell scope="col">Nr.</Table.HeaderCell>
+            <Table.HeaderCell scope="col">Rettighet</Table.HeaderCell>
             <Table.HeaderCell scope="col">Vedtakstype</Table.HeaderCell>
+            <Table.HeaderCell scope="col">Aktivitetsfase</Table.HeaderCell>
             <Table.HeaderCell scope="col">Fra og med</Table.HeaderCell>
             <Table.HeaderCell scope="col">Til og med</Table.HeaderCell>
-            <Table.HeaderCell scope="col">Status</Table.HeaderCell>
+            <Table.HeaderCell scope="col">Behandlingsstatus</Table.HeaderCell>
             <Table.HeaderCell scope="col">Utfall</Table.HeaderCell>
             <Table.HeaderCell scope="col"></Table.HeaderCell>
           </Table.Row>
         </Table.Header>
         <Table.Body>
-          {sortedVedtak.map(
-            ({
-              rettighetkode,
+          {sortedVedtak.map((vedtak) => {
+            const {
+              rettighetnavn,
               vedtaktypeNavn,
-              vedtaktypeKode,
+              lopenrvedtak,
+              aktivitetsfaseNavn,
               fraOgMed,
               tilDato,
               statusNavn,
               utfallkode,
               vedtakId,
-              fakta,
-            }) => {
-              return (
-                <Table.ExpandableRow
-                  key={vedtakId}
-                  togglePlacement="right"
-                  content={<Vedtakfakta vedtakfakta={fakta} />}
-                >
-                  <Table.HeaderCell scope="row">{rettighetkode}</Table.HeaderCell>
-                  <Table.DataCell>{`${vedtaktypeNavn} (${vedtaktypeKode})`}</Table.DataCell>
-                  <Table.DataCell>{dateOrBlank(fraOgMed)}</Table.DataCell>
-                  <Table.DataCell>{dateOrBlank(tilDato)}</Table.DataCell>
-                  <Table.DataCell>{statusNavn}</Table.DataCell>
-                  <Table.DataCell>{utfallkode}</Table.DataCell>
-                </Table.ExpandableRow>
-              );
-            }
-          )}
+            } = vedtak;
+            const relatertVedtak =
+              vedtak.relatertVedtak != null
+                ? (sortedVedtak.find((v) => v.vedtakId === vedtak.relatertVedtak) ?? null)
+                : null;
+            return (
+              <Table.ExpandableRow
+                key={vedtakId}
+                togglePlacement="right"
+                content={<Vedtakdetaljer vedtak={vedtak} relatertVedtak={relatertVedtak} />}
+              >
+                <Table.DataCell>{lopenrvedtak}</Table.DataCell>
+                <Table.DataCell scope="row">{rettighetnavn}</Table.DataCell>
+                <Table.DataCell>{vedtaktypeNavn}</Table.DataCell>
+                <Table.DataCell>{aktivitetsfaseNavn}</Table.DataCell>
+                <Table.DataCell>{dateOrBlank(fraOgMed)}</Table.DataCell>
+                <Table.DataCell>{dateOrBlank(tilDato)}</Table.DataCell>
+                <Table.DataCell>{statusNavn}</Table.DataCell>
+                <Table.DataCell>
+                  <JaNeiStatus status={utfallkode} />
+                </Table.DataCell>
+              </Table.ExpandableRow>
+            );
+          })}
         </Table.Body>
       </Table>
     </div>
@@ -79,4 +89,32 @@ function dateOrBlank(datostring: string | null | undefined): string {
     return '—';
   }
   return format(new Date(datostring), 'dd.MM.yyyy');
+}
+
+type JaNeiStatusProps = {
+  status: string | null | undefined;
+};
+
+function JaNeiStatus({ status }: JaNeiStatusProps): React.ReactElement {
+  if (status == null) {
+    return <div>—</div>;
+  }
+  if (status.toLowerCase() === 'ja') {
+    return (
+      <HStack align="center" gap="space-4">
+        <CheckmarkCircleIcon className={styles.successIcon} />
+        <BodyShort size="medium">Ja</BodyShort>
+      </HStack>
+    );
+  }
+  if (status.toLowerCase() === 'nei') {
+    return (
+      <HStack align="center" gap="space-4">
+        <XMarkOctagonIcon className={styles.errorIcon} />
+        <BodyShort size="medium">Nei</BodyShort>
+      </HStack>
+    );
+  }
+
+  return <div>{storForbokstav(status)}</div>;
 }

@@ -9,7 +9,7 @@ Dette er en enkel visningsklient for Arena etter arena er skrudd av. Den har lit
 Dette oppsettet forutsetter at du har følgende programvare installert:
 
 - Node.js
-- Corepack (Kommer med Node.js og håndterer riktig versjon av yarn for deg, må aktiveres med `corepack enable`)
+- Corepack (Kommer med Node.js og håndterer riktig versjon av pnpm for deg, må aktiveres med `corepack enable`)
 - Docker med colima og docker-compose
 
 ### Sett opp GitHub token
@@ -25,17 +25,35 @@ Dette oppsettet forutsetter at du har følgende programvare installert:
    ```
    Husk å kjøre `source ~/.bashrc` eller `source ~/.zshrc` etterpå for å laste inn endringene, evt start terminal på nytt.
 
-### Prettier og linting
+### Linting og formattering
 
-Prosjektet bruker prettier og eslint. Skru gjerne på "Automatic configuration" for disse i din IDE.
+Prosjektet bruker oxlint og oxfmt. Skru gjerne på støtte for disse i din IDE.
+
+#### Autoformatering i IntelliJ med File Watchers
+
+For å kjøre oxfmt automatisk ved lagring, sett opp en File Watcher:
+
+1. Åpne **Settings → Tools → File Watchers** og klikk **+** for å legge til en ny.
+2. Fyll inn feltene:
+   - **Name:** `oxfmt`
+   - **File type:** `TypeScript` (legg til en watcher til for `TypeScript JSX` om ønskelig)
+   - **Scope:** `Current File`
+   - **Program:** `pnpm`
+   - **Arguments:** `exec oxfmt "$FilePath$"`
+   - **Output paths to refresh:** `$FilePath$`
+   - **Working directory:** `$ProjectFileDir$`
+3. Huk av for **Auto-save edited files to trigger the watcher** og fjern haken for **Create output file from stdout**.
+4. Klikk **OK** og lagre innstillingene.
+
+oxfmt vil nå formatere filen automatisk hver gang du lagrer.
 
 
 ## Kjøre opp lokalt mot lokal backend
 
 1. Installer avhengigheter og start applikasjonen:
    ```bash
-   yarn install
-   yarn dev:local
+   pnpm install
+   pnpm dev:local
    ```
    Applikasjonen skal nå være tilgjengelig i nettleseren på http://localhost:3000 \
    **OBS:** Husk å starte backend-tjenestene lokalt også, etter egen oppskrift.
@@ -59,8 +77,8 @@ Prosjektet bruker prettier og eslint. Skru gjerne på "Automatic configuration" 
 
 4. Installer avhengigheter og start applikasjonen:
    ```bash
-    yarn install
-    yarn dev:dev-gcp
+    pnpm install
+    pnpm dev:dev-gcp
    ```
    Applikasjonen skal nå være tilgjengelig i nettleseren på http://localhost:4000
 
@@ -96,17 +114,33 @@ Disse kommandoene kan hjelpe deg med å rydde opp før du prøver på nytt:
 For å kjøre tester lokalt, bruk følgende kommando:
 
 ```bash
-  yarn test
+  pnpm test
 ```
 
 ### Oppdatere avhengigheter
 
-For å forhindre utilsiktede endringer i `yarn.lock` er man tvunget til å alltid kjøre følgende kommando når man vil oppdatere avhengigheter:
+For å forhindre utilsiktede endringer i `pnpm-lock.yaml` er man tvunget til å alltid kjøre følgende kommando når man vil oppdatere avhengigheter:
 
 ```bash
-  yarn install --no-immutable
+  pnpm install --no-frozen-lockfile
 ```
 
+## Kode generert av GitHub Copilot
+
+Dette repoet bruker GitHub Copilot til å generere kode.
+
+Dette repoet er satt opp for AI-agenter med tydelige instruksjoner:
+
+- `AGENTS.md` er hovedkilden for regler og prioritering av instruksjoner.
+- `.github/copilot-instructions.md` skal holdes minimal og bare peke til `AGENTS.md`.
+- `docs/ai/agent-guidelines-template.md` brukes kun for scope-spesifikke tillegg (ikke duplisering av globale regler).
+
+Tips for nye oppgaver til AI:
+
+- Beskriv hva som skal endres (konkret scope).
+- Nevn om atferd skal bevares eller endres.
+- Be om testoppdateringer ved logikkendringer.
+- Be AI følge styling-kontrakten (Aksel-først, CSS Modules, kun Aksel-tokens).
 
 ## Henvendelser
 

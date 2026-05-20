@@ -1,4 +1,4 @@
-type NIL = null | undefined;
+import { NIL } from 'lib/utils/types';
 
 export type ArenaVedtakfaktaDTO = {
   kode: string;
@@ -7,17 +7,40 @@ export type ArenaVedtakfaktaDTO = {
   registrertDato: string;
 };
 
+export type VilkårsvurderingDTO = {
+  vilkårsvurderingId: number;
+  vilkårkode: string;
+  begrunnelse: string | NIL;
+  vurdertAv: string | NIL;
+  vilkårnavn: string;
+  erObligatorisk: boolean;
+  hjelpetekstUrl: string | NIL;
+  lovtekstUrl: string | NIL;
+  rundskrivUrl: string | NIL;
+  statuskode: 'J' | 'N' | 'V';
+  statusnavn: string;
+};
+
 export type ArenaVedtakMedFaktaDTO = {
   vedtakId: number;
+  lopenrvedtak: number;
   statusKode: string;
   statusNavn: string;
   vedtaktypeKode: string;
   vedtaktypeNavn: string;
+  aktivitetsfaseKode: string;
+  aktivitetsfaseNavn: string;
   fraOgMed: string | NIL;
   tilDato: string | NIL;
   rettighetkode: string;
+  rettighetnavn: string;
+  begrunnelse: string | NIL;
+  saksbehandler: string | NIL;
+  beslutter: string | NIL;
   utfallkode: string | NIL;
+  relatertVedtak: number | NIL;
   fakta: ArenaVedtakfaktaDTO[];
+  vilkårsvurderinger: VilkårsvurderingDTO[];
 };
 
 export type SakPersonDTO = {
@@ -27,7 +50,7 @@ export type SakPersonDTO = {
   etternavn: string;
 };
 
-export type TellerverkDTO = {
+export type TelleverkDTO = {
   ordineerAAPKvote: number;
   utvidetAAPKvote: number;
 };
@@ -42,5 +65,5 @@ export type SakDTO = {
   registrertDato: string;
   avsluttetDato: string | NIL;
   vedtak: ArenaVedtakMedFaktaDTO[];
-  tellerverk: TellerverkDTO | NIL;
+  telleverkForPerson: TelleverkDTO | NIL;
 };

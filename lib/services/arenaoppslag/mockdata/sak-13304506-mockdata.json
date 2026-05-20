@@ -1,0 +1,710 @@
+{
+  "sakId": "13304506",
+  "opprettetAar": 2021,
+  "lopenr": 112540,
+  "person": {
+    "personId": 4784814,
+    "fodselsnummer": "17085820311",
+    "fornavn": "DYR HÅRSÅR",
+    "etternavn": "KRÅKE"
+  },
+  "statuskode": "AKTIV",
+  "statusnavn": "Aktiv",
+  "registrertDato": "2021-03-11T11:41:03",
+  "avsluttetDato": null,
+  "vedtak": [
+    {
+      "vedtakId": 36489423,
+      "lopenrvedtak": 1,
+      "statusKode": "IVERK",
+      "statusNavn": "Iverksatt",
+      "vedtaktypeKode": "O",
+      "vedtaktypeNavn": "Ny rettighet",
+      "aktivitetsfaseKode": "IKKE",
+      "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
+      "fraOgMed": null,
+      "tilDato": null,
+      "rettighetkode": "KLAG1",
+      "rettighetnavn": "Klage underinstans",
+      "utfallkode": "NEI",
+      "begrunnelse": null,
+      "saksbehandler": "AHF4405S",
+      "beslutter": "AHF4405B",
+      "relatertVedtak": null,
+      "fakta": [
+        {
+          "kode": "BESLUTTER",
+          "navn": "Beslutter for klage/anke vedtaket",
+          "verdi": "AHF4405B",
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "FULLMEKT",
+          "navn": "Registrert fullmektig i saken",
+          "verdi": "J",
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "FULLMID",
+          "navn": "Id til fullmektig dersom en slik finnes for klagen/anken",
+          "verdi": "113478",
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "INNVF",
+          "navn": "Vedtaksdato",
+          "verdi": "11-03-2021",
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "KLAGEFRIST",
+          "navn": "Frist for innlevering av klage",
+          "verdi": "06-05-2021",
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "KLAGETVID",
+          "navn": "Id for påklaget vedtak",
+          "verdi": "36475067",
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "K_AKTFASE",
+          "navn": "Aktivitetfase for påklaget vedtak",
+          "verdi": "UA",
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "K_FDATO",
+          "navn": "Fra-dato for påklaget vedtak",
+          "verdi": "11-01-2021",
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "K_FEILUTBT",
+          "navn": "Feilutbetalt ytelse/stønad for påklaget vedtak",
+          "verdi": null,
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "K_INNVF",
+          "navn": "Vedtaksdato for påklaget vedtak",
+          "verdi": "11-03-2021",
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "K_PER",
+          "navn": "Periode for påklaget vedtak",
+          "verdi": null,
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "K_RETTIGH",
+          "navn": "Rettighetkode for påklaget vedtak",
+          "verdi": "AAP",
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "K_SAKSTYPE",
+          "navn": "Sakstype for påklaget vedtak",
+          "verdi": "AA",
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "K_TDATO",
+          "navn": "Til-dato for påklaget vedtak",
+          "verdi": "10-01-2022",
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "K_UTFALL",
+          "navn": "Utfall av påklaget vedtak",
+          "verdi": "JA",
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "K_VEDTAKT",
+          "navn": "Vedtaktype for påklaget vedtak",
+          "verdi": "O",
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "OMGJGRKODE",
+          "navn": "Omgjøringsgrunn kodeverdi",
+          "verdi": null,
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "OMGJGRUNN",
+          "navn": "Omgjøringsgrunn",
+          "verdi": null,
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "OPPRTDATO",
+          "navn": "Opprinnelig til-dato",
+          "verdi": null,
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "REDIWORD",
+          "navn": "Sakfremstilling/ankeskriv er redigert i word",
+          "verdi": null,
+          "registrertDato": "2021-03-11"
+        }
+      ],
+      "vilkårsvurderinger": [
+        {
+          "vilkårsvurderingId": 379611383,
+          "vilkårkode": "KLAGEFRIST",
+          "begrunnelse": null,
+          "vurdertAv": "AHF4405S",
+          "vilkårnavn": "Klager har klaget innen fristen",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": "Regeltekst for generelle vilkår",
+          "lovtekstUrl": "http://www.lovdata.no/all/tl-19470627-009-005.html#33",
+          "rundskrivUrl": "http://navet/ansatt/1073744242.cms?index=6",
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 379611384,
+          "vilkårkode": "KLAGENDRIN",
+          "begrunnelse": null,
+          "vurdertAv": "AHF4405S",
+          "vilkårnavn": "Klagen nevner den endring som kreves",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": "Regeltekst for generelle vilkår",
+          "lovtekstUrl": "http://www.lovdata.no/all/tl-19670210-000-006.html#32",
+          "rundskrivUrl": "http://navet/ansatt/1073744242.cms?index=6",
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 379611385,
+          "vilkårkode": "KLAGESIGN",
+          "begrunnelse": null,
+          "vurdertAv": "AHF4405S",
+          "vilkårnavn": "Klagen er underskrevet",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": "Regeltekst for generelle vilkår",
+          "lovtekstUrl": "http://www.lovdata.no/all/tl-19670210-000-006.html#32",
+          "rundskrivUrl": "http://navet/ansatt/1073744242.cms?index=6",
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 379611386,
+          "vilkårkode": "KLAGSKRIFT",
+          "begrunnelse": null,
+          "vurdertAv": "AHF4405S",
+          "vilkårnavn": "Klagen foreligger skriftlig",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": "Regeltekst for generelle vilkår",
+          "lovtekstUrl": "http://www.lovdata.no/all/tl-19670210-000-006.html#32",
+          "rundskrivUrl": "http://navet/ansatt/1073744242.cms?index=6",
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 379611387,
+          "vilkårkode": "KLAN_2A",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "2 a. Stønadsområde og hjemmel",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 379611388,
+          "vilkårkode": "KLAN_2B",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "2 b. Aktuelle problemstillinger",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 379611389,
+          "vilkårkode": "KLAN_3",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "3. Klagers anførsler",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 379611390,
+          "vilkårkode": "KLAN_4A",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "4 a. Innhold i de relevante rettsreglene",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 379611391,
+          "vilkårkode": "KLAN_4B",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "4 b. Det faktum underinstansen legger til grunn ved vurderingen",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 379611392,
+          "vilkårkode": "KLAN_4C",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "4 c. Begrunnelse og konklusjon",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 379611393,
+          "vilkårkode": "KLAN_5",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "5. Underinstansens innstilling",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 379611394,
+          "vilkårkode": "OPPREIS",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Klager gis oppreisning for oversittet frist",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": "Regeltekst for generelle vilkår",
+          "lovtekstUrl": "http://www.lovdata.no/all/tl-19670210-000-006.html#31",
+          "rundskrivUrl": "http://navet/ansatt/1073744242.cms?index=6",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 379611395,
+          "vilkårkode": "RETKLAGINT",
+          "begrunnelse": null,
+          "vurdertAv": "AHF4405S",
+          "vilkårnavn": "Klager har rettslig klageinteresse",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": "Regeltekst for generelle vilkår",
+          "lovtekstUrl": "http://www.lovdata.no/all/tl-19670210-000-006.html#32",
+          "rundskrivUrl": "http://navet/ansatt/1073744242.cms?index=6",
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        }
+      ]
+    },
+    {
+      "vedtakId": 36489439,
+      "lopenrvedtak": 2,
+      "statusKode": "MOTAT",
+      "statusNavn": "Mottatt",
+      "vedtaktypeKode": "O",
+      "vedtaktypeNavn": "Ny rettighet",
+      "aktivitetsfaseKode": "IKKE",
+      "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
+      "fraOgMed": null,
+      "tilDato": null,
+      "rettighetkode": "KLAG2",
+      "rettighetnavn": "Klage klageinstans",
+      "utfallkode": null,
+      "begrunnelse": null,
+      "saksbehandler": "4260",
+      "beslutter": null,
+      "relatertVedtak": 36489423,
+      "fakta": [
+        {
+          "kode": "BESLUTTER",
+          "navn": "Beslutter for klage/anke vedtaket",
+          "verdi": null,
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "FULLMEKT",
+          "navn": "Registrert fullmektig i saken",
+          "verdi": "J",
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "FULLMID",
+          "navn": "Id til fullmektig dersom en slik finnes for klagen/anken",
+          "verdi": "113478",
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "INNVF",
+          "navn": "Vedtaksdato",
+          "verdi": null,
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "KLAGEFRIST",
+          "navn": "Frist for innlevering av klage",
+          "verdi": "06-05-2021",
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "KLAGETVID",
+          "navn": "Id for påklaget vedtak",
+          "verdi": "36475067",
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "K_AKTFASE",
+          "navn": "Aktivitetfase for påklaget vedtak",
+          "verdi": "UA",
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "K_FDATO",
+          "navn": "Fra-dato for påklaget vedtak",
+          "verdi": "11-01-2021",
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "K_FEILUTBT",
+          "navn": "Feilutbetalt ytelse/stønad for påklaget vedtak",
+          "verdi": null,
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "K_INNVF",
+          "navn": "Vedtaksdato for påklaget vedtak",
+          "verdi": "11-03-2021",
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "K_PER",
+          "navn": "Periode for påklaget vedtak",
+          "verdi": null,
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "K_RETTIGH",
+          "navn": "Rettighetkode for påklaget vedtak",
+          "verdi": "AAP",
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "K_SAKSTYPE",
+          "navn": "Sakstype for påklaget vedtak",
+          "verdi": "AA",
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "K_TDATO",
+          "navn": "Til-dato for påklaget vedtak",
+          "verdi": "10-01-2022",
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "K_UTFALL",
+          "navn": "Utfall av påklaget vedtak",
+          "verdi": "JA",
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "K_VEDTAKT",
+          "navn": "Vedtaktype for påklaget vedtak",
+          "verdi": "O",
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "OMGJGRKODE",
+          "navn": "Omgjøringsgrunn kodeverdi",
+          "verdi": null,
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "OMGJGRUNN",
+          "navn": "Omgjøringsgrunn",
+          "verdi": null,
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "OPPRTDATO",
+          "navn": "Opprinnelig til-dato",
+          "verdi": null,
+          "registrertDato": "2021-03-11"
+        },
+        {
+          "kode": "REDIWORD",
+          "navn": "Sakfremstilling/ankeskriv er redigert i word",
+          "verdi": null,
+          "registrertDato": "2021-03-11"
+        }
+      ],
+      "vilkårsvurderinger": [
+        {
+          "vilkårsvurderingId": 379611523,
+          "vilkårkode": "KLAGEFRIST",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Klager har klaget innen fristen",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": "Regeltekst for generelle vilkår",
+          "lovtekstUrl": "http://www.lovdata.no/all/tl-19470627-009-005.html#33",
+          "rundskrivUrl": "http://navet/ansatt/1073744242.cms?index=6",
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 379611524,
+          "vilkårkode": "KLAGENDRIN",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Klagen nevner den endring som kreves",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": "Regeltekst for generelle vilkår",
+          "lovtekstUrl": "http://www.lovdata.no/all/tl-19670210-000-006.html#32",
+          "rundskrivUrl": "http://navet/ansatt/1073744242.cms?index=6",
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 379611525,
+          "vilkårkode": "KLAGESIGN",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Klagen er underskrevet",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": "Regeltekst for generelle vilkår",
+          "lovtekstUrl": "http://www.lovdata.no/all/tl-19670210-000-006.html#32",
+          "rundskrivUrl": "http://navet/ansatt/1073744242.cms?index=6",
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 379611526,
+          "vilkårkode": "KLAGSKRIFT",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Klagen foreligger skriftlig",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": "Regeltekst for generelle vilkår",
+          "lovtekstUrl": "http://www.lovdata.no/all/tl-19670210-000-006.html#32",
+          "rundskrivUrl": "http://navet/ansatt/1073744242.cms?index=6",
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 379611527,
+          "vilkårkode": "KLAN_2A",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "2 a. Stønadsområde og hjemmel",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 379611528,
+          "vilkårkode": "KLAN_2B",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "2 b. Aktuelle problemstillinger",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 379611529,
+          "vilkårkode": "KLAN_3",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "3. Klagers anførsler",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 379611530,
+          "vilkårkode": "KLAN_4A",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "4 a. Innhold i de relevante rettsreglene",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 379611531,
+          "vilkårkode": "KLAN_4B",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "4 b. Det faktum underinstansen legger til grunn ved vurderingen",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 379611532,
+          "vilkårkode": "KLAN_4C",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "4 c. Begrunnelse og konklusjon",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 379611533,
+          "vilkårkode": "KLAN_5",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "5. Underinstansens innstilling",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 379611534,
+          "vilkårkode": "OPPREIS",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Klager gis oppreisning for oversittet frist",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": "Regeltekst for generelle vilkår",
+          "lovtekstUrl": "http://www.lovdata.no/all/tl-19670210-000-006.html#31",
+          "rundskrivUrl": "http://navet/ansatt/1073744242.cms?index=6",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 379611535,
+          "vilkårkode": "RETKLAGINT",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Klager har rettslig klageinteresse",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": "Regeltekst for generelle vilkår",
+          "lovtekstUrl": "http://www.lovdata.no/all/tl-19670210-000-006.html#32",
+          "rundskrivUrl": "http://navet/ansatt/1073744242.cms?index=6",
+          "statuskode": "J",
+          "statusnavn": "Oppfylt"
+        },
+        {
+          "vilkårsvurderingId": 379611521,
+          "vilkårkode": "DROFTELSE2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Klageinstansens drøftelse og vurdering - Klage 2",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": "Regeltekst for generelle vilkår",
+          "lovtekstUrl": null,
+          "rundskrivUrl": "http://navet/ansatt/1073744242.cms?index=6",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 379611522,
+          "vilkårkode": "KLAGANF",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Klagers anførsler - Klage 2",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": "Regeltekst for generelle vilkår",
+          "lovtekstUrl": null,
+          "rundskrivUrl": "http://navet/ansatt/1073744242.cms?index=6",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 379611536,
+          "vilkårkode": "RETTSREG2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Aktuelle rettsregler - Klage 2",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": "Regeltekst for generelle vilkår",
+          "lovtekstUrl": null,
+          "rundskrivUrl": "http://navet/ansatt/1073744242.cms?index=6",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 379611537,
+          "vilkårkode": "SAKFAKT2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Sakens fakta - Klage 2",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": "Regeltekst for generelle vilkår",
+          "lovtekstUrl": null,
+          "rundskrivUrl": "http://navet/ansatt/1073744242.cms?index=6",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 379611538,
+          "vilkårkode": "VEDTAKET",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Vedtaket - Klage 2\t ",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": "Regeltekst for generelle vilkår",
+          "lovtekstUrl": null,
+          "rundskrivUrl": "http://navet/ansatt/1073744242.cms?index=6",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        }
+      ]
+    }
+  ],
+  "telleverkForPerson": {
+    "ordineerAAPKvote": 14480,
+    "utvidetAAPKvote": 10460
+  }
+}
