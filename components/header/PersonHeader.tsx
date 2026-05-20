@@ -6,6 +6,7 @@ import { storForbokstavIHvertOrd } from 'lib/utils/string';
 import { SakDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { ClockDashedIcon } from '@navikt/aksel-icons';
 import { FieldValue } from 'components/felleskomponenter/field-value/field-value';
+import {norsktDatoformat} from "lib/utils/date";
 
 type Props = {
   sak: SakDTO;
@@ -13,12 +14,12 @@ type Props = {
 
 export function PersonHeader({ sak }: Props): React.ReactElement {
   const { fornavn, etternavn, fodselsnummer } = sak.person;
-  const ordineerAAPKvote = sak.tellerverk?.ordineerAAPKvote;
-  const utvidetAAPKvote = sak.tellerverk?.utvidetAAPKvote;
+  const ordineerAAPKvote = sak.telleverkForPerson?.ordineerAAPKvote;
+  const utvidetAAPKvote = sak.telleverkForPerson?.utvidetAAPKvote;
 
   const telleverkTekst =
-    sak.tellerverk == null
-      ? '-'
+    sak.telleverkForPerson == null
+      ? '—'
       : ordineerAAPKvote != null && ordineerAAPKvote > 0
         ? `${ordineerAAPKvote} dager (Ordinær)`
         : utvidetAAPKvote != null && utvidetAAPKvote > 0
@@ -38,8 +39,8 @@ export function PersonHeader({ sak }: Props): React.ReactElement {
           className={styles.copybutton}
         />
         <Spacer />
-        <FieldValue label="Siste utbetaling" value="Ikke implementert" />
-        <FieldValue label="Maksdato" value="Ikke implementert" />
+        <FieldValue label="Siste utbetaling" value={ sak.sisteUtbetalingsDato != null ? norsktDatoformat(sak.sisteUtbetalingsDato) : '—'} />
+        <FieldValue label="Maksdato" value={ sak.maksDato != null ? norsktDatoformat(sak.maksDato) : '—'} />
         <FieldValue label="Gjenstående" value={telleverkTekst} />
         <Button variant="tertiary" size="small" iconPosition="left" icon={<ClockDashedIcon />}>
           Historikk

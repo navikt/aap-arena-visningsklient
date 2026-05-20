@@ -66,4 +66,6 @@ export type SakDTO = {
   avsluttetDato: string | NIL;
   vedtak: ArenaVedtakMedFaktaDTO[];
   telleverkForPerson: TelleverkDTO | NIL;
+  maksDato: string | NIL;
+  sisteUtbetalingsDato: string | NIL;
 };
