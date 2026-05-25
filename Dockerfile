@@ -14,7 +14,7 @@ RUN pnpm run lint
 RUN pnpm run test
 RUN pnpm run build
 
-FROM europe-north1-docker.pkg.dev/cgr-nav/pull-through/nav.no/node:25-slim AS runtime
+FROM europe-north1-docker.pkg.dev/cgr-nav/pull-through/nav.no/node:26-slim AS runtime
 
 WORKDIR /app
 
