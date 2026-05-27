@@ -55,6 +55,21 @@ export type TelleverkDTO = {
   utvidetAAPKvote: number;
 };
 
+export type KvoteHistorikkDTO = {
+  kvoteBrukId: number;
+  kvoteTypeKode: string;
+  tabellnavnAliasGrunnlag: string;
+  objektIdGrunnlag: number;
+  antallBevegelse: number;
+  posteringTypeKode: string;
+  datoHendelse: string;
+  modDato: string;
+  resterende: number;
+  modUser: string;
+  personId: number;
+  begrunnelse: string | NIL;
+};
+
 export type SakDTO = {
   sakId: string;
   opprettetAar: number;
@@ -66,4 +81,5 @@ export type SakDTO = {
   avsluttetDato: string | NIL;
   vedtak: ArenaVedtakMedFaktaDTO[];
   telleverkForPerson: TelleverkDTO | NIL;
+  kvoteHistorikk: KvoteHistorikkDTO[];
 };

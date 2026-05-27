@@ -5,6 +5,7 @@ import { SakDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { PersonHeader } from 'components/header/PersonHeader';
 import { InfoCard, Tabs } from '@navikt/ds-react';
 import { Sakogvedtakinfo } from 'components/sakogvedtakinfo/sakogvedtakinfo';
+import { Kvote } from 'components/kvote/kvote';
 
 type Props = {
   sak: SakDTO;
@@ -20,6 +21,7 @@ export function SakPageClient({ sak }: Props): React.ReactElement {
             <Tabs.List>
               <Tabs.Tab value="sak" label={`Sak ${sak.opprettetAar} ${sak.lopenr}`} />
               <Tabs.Tab value="tilkjent-ytelse" label="Tilkjent ytelse" />
+              <Tabs.Tab value="kvote" label="Kvote" />
               <Tabs.Tab value="notater" label="Notater" />
             </Tabs.List>
             <Tabs.Panel value="sak">
@@ -29,6 +31,9 @@ export function SakPageClient({ sak }: Props): React.ReactElement {
             </Tabs.Panel>
             <Tabs.Panel value="tilkjent-ytelse">
               <IkkeImplementertEnda />
+            </Tabs.Panel>
+            <Tabs.Panel value="kvote">
+              <Kvote sak={sak} />
             </Tabs.Panel>
             <Tabs.Panel value="notater">
               <IkkeImplementertEnda />

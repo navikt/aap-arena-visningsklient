@@ -706,5 +706,91 @@
   "telleverkForPerson": {
     "ordineerAAPKvote": 14480,
     "utvidetAAPKvote": 10460
-  }
+  },
+  "kvoteHistorikk": [
+    {
+      "kvoteBrukId": 254788865,
+      "kvoteTypeKode": "AAP",
+      "tabellnavnAliasGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1538504448,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2021-03-11",
+      "modDato": "2021-03-11",
+      "resterende": 15280,
+      "modUser": "GRENSESN",
+      "personId": 4784814,
+      "begrunnelse": null
+    },
+    {
+      "kvoteBrukId": 254788873,
+      "kvoteTypeKode": "AAP",
+      "tabellnavnAliasGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1538504463,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2021-03-11",
+      "modDato": "2021-03-11",
+      "resterende": 14880,
+      "modUser": "GRENSESN",
+      "personId": 4784814,
+      "begrunnelse": null
+    },
+    {
+      "kvoteBrukId": 254788861,
+      "kvoteTypeKode": "AAP",
+      "tabellnavnAliasGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1538504430,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2021-03-11",
+      "modDato": "2021-03-11",
+      "resterende": 15480,
+      "modUser": "GRENSESN",
+      "personId": 4784814,
+      "begrunnelse": null
+    },
+    {
+      "kvoteBrukId": 254788869,
+      "kvoteTypeKode": "AAP",
+      "tabellnavnAliasGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1538504455,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2021-03-11",
+      "modDato": "2021-03-11",
+      "resterende": 15080,
+      "modUser": "GRENSESN",
+      "personId": 4784814,
+      "begrunnelse": null
+    },
+    {
+      "kvoteBrukId": 255075935,
+      "kvoteTypeKode": "AAP",
+      "tabellnavnAliasGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1538504471,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2021-03-23",
+      "modDato": "2021-03-23",
+      "resterende": 14680,
+      "modUser": "GRENSESN",
+      "personId": 4784814,
+      "begrunnelse": null
+    },
+    {
+      "kvoteBrukId": 255377265,
+      "kvoteTypeKode": "AAP",
+      "tabellnavnAliasGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1538504489,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2021-04-06",
+      "modDato": "2021-04-06",
+      "resterende": 14480,
+      "modUser": "GRENSESN",
+      "personId": 4784814,
+      "begrunnelse": null
+    }
+  ]
 }

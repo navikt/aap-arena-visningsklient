@@ -8,22 +8,22 @@
     "fornavn": "LYSEGRØNN",
     "etternavn": "KORRIDOR"
   },
-  "statuskode": "AKTIV",
-  "statusnavn": "Aktiv",
+  "statuskode": "INAKT",
+  "statusnavn": "Inaktiv",
   "registrertDato": "2026-05-11T10:59:49",
   "avsluttetDato": null,
   "vedtak": [
     {
       "vedtakId": 37208172,
       "lopenrvedtak": 5,
-      "statusKode": "IVERK",
-      "statusNavn": "Iverksatt",
+      "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "O",
       "vedtaktypeNavn": "Ny rettighet",
       "aktivitetsfaseKode": "IKKE",
       "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
       "fraOgMed": "2026-05-12",
-      "tilDato": null,
+      "tilDato": "2026-05-12",
       "rettighetkode": "FRI_MK_AAP",
       "rettighetnavn": "Fritak fra å sende meldekort AAP",
       "utfallkode": "JA",
@@ -65,7 +65,7 @@
         {
           "kode": "TDATO",
           "navn": "Gjelder til",
-          "verdi": null,
+          "verdi": "12-05-2026",
           "registrertDato": "2026-05-12"
         },
         {
@@ -1832,6 +1832,156 @@
       ]
     },
     {
+      "vedtakId": 37208189,
+      "lopenrvedtak": 6,
+      "statusKode": "IVERK",
+      "statusNavn": "Iverksatt",
+      "vedtaktypeKode": "S",
+      "vedtaktypeNavn": "Stans",
+      "aktivitetsfaseKode": "IKKE",
+      "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
+      "fraOgMed": "2026-05-13",
+      "tilDato": null,
+      "rettighetkode": "FRI_MK_AAP",
+      "rettighetnavn": "Fritak fra å sende meldekort AAP",
+      "utfallkode": "JA",
+      "begrunnelse": "Vedtak om fritak fra meldeplikt er stanset fordi ytelsen din er stanset",
+      "saksbehandler": "GRENSESN",
+      "beslutter": "GRENSESN",
+      "relatertVedtak": 37208172,
+      "fakta": [
+        {
+          "kode": "FDATO",
+          "navn": "Gjelder fra",
+          "verdi": "13-05-2026",
+          "registrertDato": "2026-05-13"
+        },
+        {
+          "kode": "INNVF",
+          "navn": "Vedtaksdato",
+          "verdi": "13-05-2026",
+          "registrertDato": "2026-05-13"
+        },
+        {
+          "kode": "MELDEFORM",
+          "navn": "Fritak fra meldeplikt",
+          "verdi": "MANU",
+          "registrertDato": "2026-05-13"
+        },
+        {
+          "kode": "OPPRTDATO",
+          "navn": "Opprinnelig til-dato",
+          "verdi": null,
+          "registrertDato": "2026-05-13"
+        },
+        {
+          "kode": "TDATO",
+          "navn": "Gjelder til",
+          "verdi": null,
+          "registrertDato": "2026-05-13"
+        },
+        {
+          "kode": "VEDTAKSEND",
+          "navn": "Utskrift/sendt",
+          "verdi": null,
+          "registrertDato": "2026-05-13"
+        }
+      ],
+      "vilkårsvurderinger": [
+        {
+          "vilkårsvurderingId": 387801793,
+          "vilkårkode": "FRI_MAAI",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Arbeider ikke?",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": "Regeltekst for fritak",
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387801794,
+          "vilkårkode": "FRI_MABH",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Er bistand/hjelpemidler vurdert uten å fjerne hinderet?",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": "Regeltekst for fritak",
+          "lovtekstUrl": "http://navet/rettskildene/lov/L19970228-19_P11-7#L19970228-19_P11-7",
+          "rundskrivUrl": "http://navet/rettskildene/Rundskriv/%C2%A7+11-7+Meldeplikt.232251.cms#fritak-fra-plikten-til-selv-aa-sende-meldekort-11-7-tredje-ledd",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387801795,
+          "vilkårkode": "FRI_MAPL",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Er plikten til selv å sende meldekort tyngre for denne brukeren enn andre?",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": "Regeltekst for fritak",
+          "lovtekstUrl": "http://navet/rettskildene/lov/L19970228-19_P11-7#L19970228-19_P11-7",
+          "rundskrivUrl": "http://navet/rettskildene/Rundskriv/%C2%A7+11-7+Meldeplikt.232251.cms#fritak-fra-plikten-til-selv-aa-sende-meldekort-11-7-tredje-ledd",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387801796,
+          "vilkårkode": "FRI_MARY",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Vil ikke ha fravær fra avtalt aktivitet som vil redusere ytelsen?",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": "Regeltekst for fritak",
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387801797,
+          "vilkårkode": "FRI_MATI",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Trenger ikke oppfølging hver 14. dag?",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": "Regeltekst for fritak",
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387801798,
+          "vilkårkode": "FRI_MAVI",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Er det hindre som vanskeliggjør innsending?",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": "Regeltekst for fritak",
+          "lovtekstUrl": "http://navet/rettskildene/lov/L19970228-19_P11-7#L19970228-19_P11-7",
+          "rundskrivUrl": "http://navet/rettskildene/Rundskriv/%C2%A7+11-7+Meldeplikt.232251.cms#fritak-fra-plikten-til-selv-aa-sende-meldekort-11-7-tredje-ledd",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387801799,
+          "vilkårkode": "FRI_MAVU",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Er det hindre som vanskeliggjør utfylling?",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": "Regeltekst for fritak",
+          "lovtekstUrl": "http://navet/rettskildene/lov/L19970228-19_P11-7#L19970228-19_P11-7",
+          "rundskrivUrl": "http://navet/rettskildene/Rundskriv/%C2%A7+11-7+Meldeplikt.232251.cms#fritak-fra-plikten-til-selv-aa-sende-meldekort-11-7-tredje-ledd",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        }
+      ]
+    },
+    {
       "vedtakId": 37208170,
       "lopenrvedtak": 4,
       "statusKode": "IVERK",
@@ -2492,5 +2642,6 @@
   "telleverkForPerson": {
     "ordineerAAPKvote": 15680,
     "utvidetAAPKvote": 10460
-  }
+  },
+  "kvoteHistorikk": []
 }
