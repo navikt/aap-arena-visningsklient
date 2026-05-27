@@ -7689,7 +7689,7 @@
   },
   "kvoteHistorikk": [
     {
-      "kvoteBrukId": 258479183,
+      "id": 258479183,
       "kvoteTypeKode": "AAP",
       "tabellnavnAliasGrunnlag": "MKORT",
       "objektIdGrunnlag": 1558430151,
@@ -7703,7 +7703,7 @@
       "begrunnelse": null
     },
     {
-      "kvoteBrukId": 258482231,
+      "id": 258482231,
       "kvoteTypeKode": "AAP",
       "tabellnavnAliasGrunnlag": "MKORT",
       "objektIdGrunnlag": 1558430169,
@@ -7717,7 +7717,7 @@
       "begrunnelse": null
     },
     {
-      "kvoteBrukId": 258485100,
+      "id": 258485100,
       "kvoteTypeKode": "AAP",
       "tabellnavnAliasGrunnlag": "MKORT",
       "objektIdGrunnlag": 1558430177,
@@ -7731,7 +7731,7 @@
       "begrunnelse": null
     },
     {
-      "kvoteBrukId": 258488044,
+      "id": 258488044,
       "kvoteTypeKode": "AAP",
       "tabellnavnAliasGrunnlag": "MKORT",
       "objektIdGrunnlag": 1558430185,
@@ -7745,7 +7745,7 @@
       "begrunnelse": null
     },
     {
-      "kvoteBrukId": 258490717,
+      "id": 258490717,
       "kvoteTypeKode": "AAP",
       "tabellnavnAliasGrunnlag": "MKORT",
       "objektIdGrunnlag": 1558430193,
@@ -7759,7 +7759,7 @@
       "begrunnelse": null
     },
     {
-      "kvoteBrukId": 258493589,
+      "id": 258493589,
       "kvoteTypeKode": "AAP",
       "tabellnavnAliasGrunnlag": "MKORT",
       "objektIdGrunnlag": 1558430201,
@@ -7773,7 +7773,7 @@
       "begrunnelse": null
     },
     {
-      "kvoteBrukId": 258496987,
+      "id": 258496987,
       "kvoteTypeKode": "AAP",
       "tabellnavnAliasGrunnlag": "MKORT",
       "objektIdGrunnlag": 1558430219,
@@ -7787,7 +7787,7 @@
       "begrunnelse": null
     },
     {
-      "kvoteBrukId": 258499804,
+      "id": 258499804,
       "kvoteTypeKode": "AAP",
       "tabellnavnAliasGrunnlag": "MKORT",
       "objektIdGrunnlag": 1558430227,
@@ -7801,7 +7801,7 @@
       "begrunnelse": null
     },
     {
-      "kvoteBrukId": 258502613,
+      "id": 258502613,
       "kvoteTypeKode": "AAP",
       "tabellnavnAliasGrunnlag": "MKORT",
       "objektIdGrunnlag": 1558430235,
@@ -7815,7 +7815,7 @@
       "begrunnelse": null
     },
     {
-      "kvoteBrukId": 258505826,
+      "id": 258505826,
       "kvoteTypeKode": "AAP",
       "tabellnavnAliasGrunnlag": "MKORT",
       "objektIdGrunnlag": 1558430243,
@@ -7829,7 +7829,7 @@
       "begrunnelse": null
     },
     {
-      "kvoteBrukId": 258508819,
+      "id": 258508819,
       "kvoteTypeKode": "AAP",
       "tabellnavnAliasGrunnlag": "MKORT",
       "objektIdGrunnlag": 1558430250,
@@ -7843,7 +7843,7 @@
       "begrunnelse": null
     },
     {
-      "kvoteBrukId": 258511714,
+      "id": 258511714,
       "kvoteTypeKode": "AAP",
       "tabellnavnAliasGrunnlag": "MKORT",
       "objektIdGrunnlag": 1558430268,
@@ -7857,7 +7857,7 @@
       "begrunnelse": null
     },
     {
-      "kvoteBrukId": 258514567,
+      "id": 258514567,
       "kvoteTypeKode": "AAP",
       "tabellnavnAliasGrunnlag": "MKORT",
       "objektIdGrunnlag": 1558430276,
@@ -7871,7 +7871,7 @@
       "begrunnelse": null
     },
     {
-      "kvoteBrukId": 258517404,
+      "id": 258517404,
       "kvoteTypeKode": "AAP",
       "tabellnavnAliasGrunnlag": "MKORT",
       "objektIdGrunnlag": 1558430284,
@@ -7885,7 +7885,7 @@
       "begrunnelse": null
     },
     {
-      "kvoteBrukId": 258520366,
+      "id": 258520366,
       "kvoteTypeKode": "AAP",
       "tabellnavnAliasGrunnlag": "MKORT",
       "objektIdGrunnlag": 1558430292,
@@ -7899,7 +7899,7 @@
       "begrunnelse": null
     },
     {
-      "kvoteBrukId": 258523202,
+      "id": 258523202,
       "kvoteTypeKode": "AAP",
       "tabellnavnAliasGrunnlag": "MKORT",
       "objektIdGrunnlag": 1558430300,
@@ -7913,7 +7913,7 @@
       "begrunnelse": null
     },
     {
-      "kvoteBrukId": 258526037,
+      "id": 258526037,
       "kvoteTypeKode": "AAP",
       "tabellnavnAliasGrunnlag": "MKORT",
       "objektIdGrunnlag": 1558430318,
@@ -7927,7 +7927,7 @@
       "begrunnelse": null
     },
     {
-      "kvoteBrukId": 258529022,
+      "id": 258529022,
       "kvoteTypeKode": "AAP",
       "tabellnavnAliasGrunnlag": "MKORT",
       "objektIdGrunnlag": 1558430326,
@@ -7941,7 +7941,7 @@
       "begrunnelse": null
     },
     {
-      "kvoteBrukId": 258531908,
+      "id": 258531908,
       "kvoteTypeKode": "AAP",
       "tabellnavnAliasGrunnlag": "MKORT",
       "objektIdGrunnlag": 1558430334,
@@ -7955,7 +7955,7 @@
       "begrunnelse": null
     },
     {
-      "kvoteBrukId": 258534490,
+      "id": 258534490,
       "kvoteTypeKode": "AAP",
       "tabellnavnAliasGrunnlag": "MKORT",
       "objektIdGrunnlag": 1558430342,
@@ -7969,7 +7969,7 @@
       "begrunnelse": null
     },
     {
-      "kvoteBrukId": 258537095,
+      "id": 258537095,
       "kvoteTypeKode": "AAP",
       "tabellnavnAliasGrunnlag": "MKORT",
       "objektIdGrunnlag": 1558430359,
@@ -7983,7 +7983,7 @@
       "begrunnelse": null
     },
     {
-      "kvoteBrukId": 258539638,
+      "id": 258539638,
       "kvoteTypeKode": "AAP",
       "tabellnavnAliasGrunnlag": "MKORT",
       "objektIdGrunnlag": 1558430367,
