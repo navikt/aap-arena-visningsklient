@@ -13226,7 +13226,7 @@
     {
       "id": 256635372,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540451612,
       "antallBevegelse": -100,
       "posteringTypeKode": "OPPD",
@@ -13240,7 +13240,7 @@
     {
       "id": 256638611,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540451620,
       "antallBevegelse": -120,
       "posteringTypeKode": "OPPD",
@@ -13254,7 +13254,7 @@
     {
       "id": 256645874,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453337,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13268,7 +13268,7 @@
     {
       "id": 256645295,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453311,
       "antallBevegelse": -40,
       "posteringTypeKode": "OPPD",
@@ -13282,7 +13282,7 @@
     {
       "id": 256645555,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453329,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13296,7 +13296,7 @@
     {
       "id": 256646716,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453360,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13310,7 +13310,7 @@
     {
       "id": 256646139,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453345,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13324,7 +13324,7 @@
     {
       "id": 256646968,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453378,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13338,7 +13338,7 @@
     {
       "id": 256646398,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453352,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13352,7 +13352,7 @@
     {
       "id": 256647556,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453394,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13366,7 +13366,7 @@
     {
       "id": 256648162,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453410,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13380,7 +13380,7 @@
     {
       "id": 256647258,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453386,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13394,7 +13394,7 @@
     {
       "id": 256647843,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453402,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13408,7 +13408,7 @@
     {
       "id": 256649610,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453469,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13422,7 +13422,7 @@
     {
       "id": 256648980,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453444,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13436,7 +13436,7 @@
     {
       "id": 256648703,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453436,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13450,7 +13450,7 @@
     {
       "id": 256648424,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453428,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13464,7 +13464,7 @@
     {
       "id": 256649318,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453451,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13478,7 +13478,7 @@
     {
       "id": 256650463,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453493,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13492,7 +13492,7 @@
     {
       "id": 256649911,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453477,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13506,7 +13506,7 @@
     {
       "id": 256650175,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453485,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13520,7 +13520,7 @@
     {
       "id": 256651335,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453527,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13534,7 +13534,7 @@
     {
       "id": 256651036,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453519,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13548,7 +13548,7 @@
     {
       "id": 256650752,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453501,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13562,7 +13562,7 @@
     {
       "id": 256651601,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453535,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13576,7 +13576,7 @@
     {
       "id": 256651924,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453543,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13590,7 +13590,7 @@
     {
       "id": 256652377,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453568,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13604,7 +13604,7 @@
     {
       "id": 256652157,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453550,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13618,7 +13618,7 @@
     {
       "id": 256652655,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453576,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13632,7 +13632,7 @@
     {
       "id": 256652898,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453584,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13646,7 +13646,7 @@
     {
       "id": 256653159,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453592,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13660,7 +13660,7 @@
     {
       "id": 256653397,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453600,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13674,7 +13674,7 @@
     {
       "id": 256654089,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453634,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13688,7 +13688,7 @@
     {
       "id": 256653906,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453626,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13702,7 +13702,7 @@
     {
       "id": 256653656,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453618,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13716,7 +13716,7 @@
     {
       "id": 256654280,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453642,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13730,7 +13730,7 @@
     {
       "id": 256654490,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453659,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13744,7 +13744,7 @@
     {
       "id": 256654672,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453667,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13758,7 +13758,7 @@
     {
       "id": 256654834,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453675,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13772,7 +13772,7 @@
     {
       "id": 256655002,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453683,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13786,7 +13786,7 @@
     {
       "id": 256655196,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453691,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13800,7 +13800,7 @@
     {
       "id": 256655337,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453709,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13814,7 +13814,7 @@
     {
       "id": 256655486,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453717,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13828,7 +13828,7 @@
     {
       "id": 256655681,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453725,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13842,7 +13842,7 @@
     {
       "id": 256655857,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453733,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13856,7 +13856,7 @@
     {
       "id": 256655996,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453741,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13870,7 +13870,7 @@
     {
       "id": 256656446,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453774,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13884,7 +13884,7 @@
     {
       "id": 256656598,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453782,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13898,7 +13898,7 @@
     {
       "id": 256656150,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453758,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13912,7 +13912,7 @@
     {
       "id": 256656302,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453766,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13926,7 +13926,7 @@
     {
       "id": 256657006,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453816,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13940,7 +13940,7 @@
     {
       "id": 256657157,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453824,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13954,7 +13954,7 @@
     {
       "id": 256656882,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453808,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13968,7 +13968,7 @@
     {
       "id": 256656744,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453790,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13982,7 +13982,7 @@
     {
       "id": 256657318,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453832,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -13996,7 +13996,7 @@
     {
       "id": 256657444,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453840,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14010,7 +14010,7 @@
     {
       "id": 256657582,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453857,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14024,7 +14024,7 @@
     {
       "id": 256657718,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453865,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14038,7 +14038,7 @@
     {
       "id": 256657848,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453873,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14052,7 +14052,7 @@
     {
       "id": 256657981,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453881,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14066,7 +14066,7 @@
     {
       "id": 256658198,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453907,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14080,7 +14080,7 @@
     {
       "id": 256658106,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453899,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14094,7 +14094,7 @@
     {
       "id": 256658299,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453915,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14108,7 +14108,7 @@
     {
       "id": 256658500,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453931,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14122,7 +14122,7 @@
     {
       "id": 256658402,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453923,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14136,7 +14136,7 @@
     {
       "id": 256658595,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453949,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14150,7 +14150,7 @@
     {
       "id": 256658676,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453956,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14164,7 +14164,7 @@
     {
       "id": 256658755,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453964,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14178,7 +14178,7 @@
     {
       "id": 256658841,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453972,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14192,7 +14192,7 @@
     {
       "id": 256658922,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453980,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14206,7 +14206,7 @@
     {
       "id": 256659012,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540453998,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14220,7 +14220,7 @@
     {
       "id": 256659094,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454004,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14234,7 +14234,7 @@
     {
       "id": 256659232,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454020,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14248,7 +14248,7 @@
     {
       "id": 256659164,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454012,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14262,7 +14262,7 @@
     {
       "id": 256659302,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454038,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14276,7 +14276,7 @@
     {
       "id": 256659566,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454079,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14290,7 +14290,7 @@
     {
       "id": 256659496,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454061,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14304,7 +14304,7 @@
     {
       "id": 256659442,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454053,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14318,7 +14318,7 @@
     {
       "id": 256659378,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454046,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14332,7 +14332,7 @@
     {
       "id": 256659624,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454087,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14346,7 +14346,7 @@
     {
       "id": 256659694,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454095,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14360,7 +14360,7 @@
     {
       "id": 256659764,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454103,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14374,7 +14374,7 @@
     {
       "id": 256660848,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454111,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14388,7 +14388,7 @@
     {
       "id": 256662713,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454129,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14402,7 +14402,7 @@
     {
       "id": 256663803,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454145,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14416,7 +14416,7 @@
     {
       "id": 256663232,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454137,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14430,7 +14430,7 @@
     {
       "id": 256664558,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454152,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14444,7 +14444,7 @@
     {
       "id": 256666439,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454160,
       "antallBevegelse": -180,
       "posteringTypeKode": "OPPD",
@@ -14458,7 +14458,7 @@
     {
       "id": 256667977,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454186,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14472,7 +14472,7 @@
     {
       "id": 256667388,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454178,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14486,7 +14486,7 @@
     {
       "id": 256668685,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454194,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14500,7 +14500,7 @@
     {
       "id": 256669270,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454202,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14514,7 +14514,7 @@
     {
       "id": 256670108,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454210,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14528,7 +14528,7 @@
     {
       "id": 256670657,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454228,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14542,7 +14542,7 @@
     {
       "id": 256671314,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454236,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14556,7 +14556,7 @@
     {
       "id": 256671880,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454244,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14570,7 +14570,7 @@
     {
       "id": 256672586,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454251,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14584,7 +14584,7 @@
     {
       "id": 256673115,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454269,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14598,7 +14598,7 @@
     {
       "id": 256675170,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454293,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14612,7 +14612,7 @@
     {
       "id": 256674623,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454285,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14626,7 +14626,7 @@
     {
       "id": 256674175,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454277,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14640,7 +14640,7 @@
     {
       "id": 256675669,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454301,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14654,7 +14654,7 @@
     {
       "id": 256676175,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454319,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14668,7 +14668,7 @@
     {
       "id": 256676626,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454327,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14682,7 +14682,7 @@
     {
       "id": 256677149,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454335,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14696,7 +14696,7 @@
     {
       "id": 256677720,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1540454343,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14710,7 +14710,7 @@
     {
       "id": 256678374,
       "kvoteTypeKode": "MAAPU",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1542932205,
       "antallBevegelse": -140,
       "posteringTypeKode": "OPPD",
@@ -14724,7 +14724,7 @@
     {
       "id": 256678369,
       "kvoteTypeKode": "AAP",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1542932205,
       "antallBevegelse": -60,
       "posteringTypeKode": "OPPD",
@@ -14738,7 +14738,7 @@
     {
       "id": 256763598,
       "kvoteTypeKode": "MAAPU",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1542932213,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14752,7 +14752,7 @@
     {
       "id": 257098415,
       "kvoteTypeKode": "MAAPU",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1545137109,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14766,7 +14766,7 @@
     {
       "id": 257677736,
       "kvoteTypeKode": "MAAPU",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1545137117,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14780,7 +14780,7 @@
     {
       "id": 257869489,
       "kvoteTypeKode": "MAAPU",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1548408317,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14794,7 +14794,7 @@
     {
       "id": 258284984,
       "kvoteTypeKode": "MAAPU",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1548408325,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14808,7 +14808,7 @@
     {
       "id": 258983996,
       "kvoteTypeKode": "MAAPU",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1554850741,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14822,7 +14822,7 @@
     {
       "id": 258984796,
       "kvoteTypeKode": "MAAPU",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1554850758,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14836,7 +14836,7 @@
     {
       "id": 259062899,
       "kvoteTypeKode": "MAAPU",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1560862193,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14850,7 +14850,7 @@
     {
       "id": 259408284,
       "kvoteTypeKode": "MAAPU",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1560862201,
       "antallBevegelse": -200,
       "posteringTypeKode": "OPPD",
@@ -14864,7 +14864,7 @@
     {
       "id": 259843015,
       "kvoteTypeKode": "MAAPU",
-      "tabellnavnAliasGrunnlag": "MKORT",
+      "endringsGrunnlag": "MKORT",
       "objektIdGrunnlag": 1563064110,
       "antallBevegelse": -80,
       "posteringTypeKode": "OPPD",

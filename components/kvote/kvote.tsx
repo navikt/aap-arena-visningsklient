@@ -20,9 +20,7 @@ function mapTilKvoteEndring(dto: KvoteHistorikkDTO): KvoteEndring {
     id: dto.id,
     dato: parsedDato != null ? norsktDatoformat(parsedDato) : '–',
     type: posteringTypeNavn[dto.posteringTypeKode] ?? dto.posteringTypeKode,
-    endretAv: tabellnavnAliasNavn[dto.tabellnavnAliasGrunnlag]
-      ? tabellnavnAliasNavn[dto.tabellnavnAliasGrunnlag]
-      : dto.modUser,
+    endretAv: tabellnavnAliasNavn[dto.endringsGrunnlag] ? tabellnavnAliasNavn[dto.endringsGrunnlag] : dto.modUser,
     endring: `${dto.antallBevegelse > 0 ? '' : '–'}${Math.abs(dto.antallBevegelse / 20)} dager`,
     gjenvaerende: `${dto.resterende / 20} dager`,
     begrunnelse: dto.begrunnelse ?? undefined,

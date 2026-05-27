@@ -58,7 +58,7 @@ export type TelleverkDTO = {
 export type KvoteHistorikkDTO = {
   id: number;
   kvoteTypeKode: string;
-  tabellnavnAliasGrunnlag: string;
+  endringsGrunnlag: string;
   antallBevegelse: number;
   posteringTypeKode: string;
   datoHendelse: string;
