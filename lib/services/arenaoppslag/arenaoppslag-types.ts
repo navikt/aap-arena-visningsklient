@@ -56,17 +56,13 @@ export type TelleverkDTO = {
 };
 
 export type KvoteHistorikkDTO = {
-  kvoteBrukId: number;
   kvoteTypeKode: string;
   tabellnavnAliasGrunnlag: string;
-  objektIdGrunnlag: number;
   antallBevegelse: number;
   posteringTypeKode: string;
   datoHendelse: string;
-  modDato: string;
   resterende: number;
   modUser: string;
-  personId: number;
   begrunnelse: string | NIL;
 };
 
