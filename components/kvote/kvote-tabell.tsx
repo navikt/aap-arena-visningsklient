@@ -41,8 +41,9 @@ export function KvoteTabell({tittel, endringer}: Props): React.ReactElement {
                             <Table.DataCell>{endring.endring}</Table.DataCell>
                             <Table.DataCell>{endring.gjenvaerende}</Table.DataCell>
                             <Table.DataCell>
-                                {endring.begrunnelse != null ?
-                                    <ReadMore header="Begrunnelse">{endring.begrunnelse}</ReadMore> : null}
+                                {endring.begrunnelse != null && (
+                                    <ReadMore header="Begrunnelse">{endring.begrunnelse}</ReadMore>
+                                )}
                             </Table.DataCell>
                         </Table.Row>
                     ))}
