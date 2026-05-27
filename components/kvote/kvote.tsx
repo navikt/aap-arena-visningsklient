@@ -17,6 +17,7 @@ const tabellnavnAliasNavn: Record<string, string> = {
 function mapTilKvoteEndring(dto: KvoteHistorikkDTO): KvoteEndring {
   const parsedDato = parseISOorNull(dto.datoHendelse);
   return {
+    id: dto.id,
     dato: parsedDato != null ? norsktDatoformat(parsedDato) : dto.datoHendelse,
     type: posteringTypeNavn[dto.posteringTypeKode] ?? dto.posteringTypeKode,
     endretAv: tabellnavnAliasNavn[dto.tabellnavnAliasGrunnlag]

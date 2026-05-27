@@ -3,6 +3,7 @@
 import { Label, ReadMore, Table, VStack } from '@navikt/ds-react';
 
 export type KvoteEndring = {
+  id: number;
   dato: string;
   type: string;
   endretAv: string;
@@ -32,8 +33,8 @@ export function KvoteTabell({ tittel, endringer }: Props): React.ReactElement {
           </Table.Row>
         </Table.Header>
         <Table.Body>
-          {endringer.map((endring, index) => (
-            <Table.Row key={index}>
+          {endringer.map((endring) => (
+            <Table.Row key={endring.id}>
               <Table.DataCell>{endring.dato}</Table.DataCell>
               <Table.DataCell>{endring.type}</Table.DataCell>
               <Table.DataCell>{endring.endretAv}</Table.DataCell>
