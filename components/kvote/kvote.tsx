@@ -10,9 +10,18 @@ const posteringTypeNavn: Record<string, string> = {
   NULL: 'Nullstillling',
 };
 
-const tabellnavnAliasNavn: Record<string, string> = {
+const endringsGrunnlagNavn: Record<string, string> = {
   MKORT: 'Meldekort',
 };
+
+function formaterEndring(antallBevegelse: number): string {
+  const dager = Math.abs(antallBevegelse / 20);
+  return antallBevegelse < 0 ? `– ${dager} dager` : `${dager} dager`;
+}
+
+function formaterGjenvaerende(resterende: number): string {
+  return `${resterende / 20} dager`;
+}
 
 function mapTilKvoteEndring(dto: KvoteHistorikkDTO): KvoteEndring {
   const parsedDato = parseISOorNull(dto.datoHendelse);
@@ -20,9 +29,9 @@ function mapTilKvoteEndring(dto: KvoteHistorikkDTO): KvoteEndring {
     id: dto.id,
     dato: parsedDato != null ? norsktDatoformat(parsedDato) : '–',
     type: posteringTypeNavn[dto.posteringTypeKode] ?? dto.posteringTypeKode,
-    endretAv: tabellnavnAliasNavn[dto.endringsGrunnlag] ? tabellnavnAliasNavn[dto.endringsGrunnlag] : dto.modUser,
-    endring: `${dto.antallBevegelse > 0 ? '' : '–'}${Math.abs(dto.antallBevegelse / 20)} dager`,
-    gjenvaerende: `${dto.resterende / 20} dager`,
+    endretAv: endringsGrunnlagNavn[dto.endringsGrunnlag] ?? dto.modUser,
+    endring: formaterEndring(dto.antallBevegelse),
+    gjenvaerende: formaterGjenvaerende(dto.resterende),
     begrunnelse: dto.begrunnelse ?? undefined,
   };
 }
