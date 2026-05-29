@@ -10,21 +10,22 @@ type SaksData = {
 
 export function DevContent(): React.ReactElement {
   const brukere: SaksData[] = [
-    { sakId: '13721953', info: 'Ny AAP-sak med mange vedtak' },
-    { sakId: '13725526', info: 'Ny AAP-sak med mange vedtak' },
-    { sakId: '13322363', info: 'Medium gammel AAP-sak med mange vedtak' },
-    { sakId: '13361135', info: 'Medium gammel AAP-sak med mange vedtak' },
-    { sakId: '13397613', info: 'Gammel AAP-sak med mange vedtak' },
-    { sakId: '13409999', info: 'Gammel AAP-sak med mange vedtak' },
-    { sakId: '13697921', info: 'Gammel AAP-sak med gamle rettigheter' },
-    { sakId: '13469475', info: 'Gammel AAP-sak med gamle rettigheter' },
-    { sakId: '13335922', info: 'AAP-sak uten vedtak' },
-    { sakId: '13339857', info: 'AAP-sak uten vedtak' },
-    { sakId: '13676545', info: 'Sak med 11-5 vedtak' },
-    { sakId: '13691130', info: 'Sak med 11-5 vedtak' },
-    { sakId: '13304506', info: 'Klagesak' },
-    { sakId: '13782028', info: 'Testsak med manuelt grunnlag' },
-    { sakId: '13781846', info: 'Testsak hvor Asle har lagt inn litt vedtak' },
+    { sakId: '2017-707799', info: 'AAP-sak med mange vedtak' },
+    { sakId: '2021-331674', info: 'AAP-sak med mange vedtak' },
+    { sakId: '2015-630813', info: 'Medium gammel AAP-sak med mange vedtak' },
+    { sakId: '2015-631494', info: 'Medium gammel AAP-sak med mange vedtak' },
+    { sakId: '2016-766458', info: 'Gammel AAP-sak med mange vedtak' },
+    { sakId: '2015-635780', info: 'Gammel AAP-sak med mange vedtak' },
+    { sakId: '2024-28531', info: 'AAP-sak med en del ulike vedtak' },
+    { sakId: '2016-770618', info: 'Gammel AAP-sak hvor et vedtak fikk utfall NEI' },
+    { sakId: '2021-143265', info: 'AAP-sak uten vedtak' },
+    { sakId: '2021-147132', info: 'AAP-sak uten vedtak' },
+    { sakId: '2023-15049', info: 'Sak med 11-5 vedtak' },
+    { sakId: '2023-16217', info: 'Sak med 11-5 vedtak' },
+    { sakId: '2021-112540', info: 'Klagesak' },
+    { sakId: '2026-12639', info: 'Testsak med manuelt grunnlag' },
+    { sakId: '2023-19822', info: 'Testsak1 hvor Asle har lagt inn litt vedtak' },
+    { sakId: '2026-12663', info: 'Testsak2 hvor Asle har lagt inn litt vedtak' },
   ];
 
   return (
