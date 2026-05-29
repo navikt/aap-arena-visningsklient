@@ -15,7 +15,7 @@ export function ProdContent(): React.ReactElement {
       return;
     }
 
-    router.push(`/sak/${sakId}`);
+    router.push(`/sak/${sakId.replace(' ', '-')}`);
   };
 
   return (
@@ -24,19 +24,20 @@ export function ProdContent(): React.ReactElement {
         Visningsklient for AAP-arenasaker
       </Heading>
       <BodyLong size="medium">
-        Her kan man slå opp saker som ligger i arena. Ved å skrive inn en saksid under så vil du bli navigert til en ny
-        side for denne saken. Dette er ikke et søk, så man kan fint skrive inn ugyldige IDer og så vil den gå til ny
-        side hvor den prøver å vise en sak som da ikke eksisterer (og dermed gir feilmelding).
+        Her kan man slå opp saker som ligger i arena. Ved å skrive inn et saksnummer under så vil du bli navigert til en
+        ny side for denne saken. Dette er ikke et søk, så man kan fint skrive inn ugyldige saksnummer og så vil den gå
+        til ny side hvor den prøver å vise en sak som da ikke eksisterer (og dermed gir feilmelding).
       </BodyLong>
       <form onSubmit={handleSubmit}>
         <HStack gap="space-8" align="end">
           <TextField
-            label="Skriv inn saksid på arenasak"
+            label="Skriv inn saksnummer på arenasak"
             size="small"
+            placeholder="XXXX-XXXXXXX"
             value={sakId}
-            onChange={(event) => setSakId(event.target.value.replace(/\D/g, ''))}
-            inputMode="numeric"
-            pattern="[0-9]*"
+            onChange={(event) => setSakId(event.target.value)}
+            inputMode="text"
+            pattern="[0-9]{4}\-[0-9]+"
             autoComplete="off"
           />
           <Button type="submit" size="small" style={{ alignSelf: 'flex-end' }}>

@@ -79,11 +79,13 @@ startMockdataGenerator() {
   scriptDir=$(cd "$(dirname "$0")" && pwd)
   configPath="${scriptDir}/${jsonConfig}"
 
+  outputFile="${scriptDir}/mockdata.json"
+  mapJson='{}'
+
   # Loop through sak IDs and fetch mockdata
   for sakId in $(jq -r '.[]' "${configPath}"); do
     echo -e "${Cyan}Henter data for sak: ${UGreen}${sakId}"
 
-    outputFile="${scriptDir}/sak-${sakId}-mockdata.json"
     response=$(curl -s -H "Authorization: Bearer ${accessToken}" "${baseUrl}/${sakId}/detaljert")
 
     if [[ -z "${response}" || "${response}" == "null" ]]; then
@@ -91,11 +93,12 @@ startMockdataGenerator() {
       exit 1
     fi
 
-    echo "${response}" | jq '.' > "${outputFile}"
-    echo -e "✅ ${Yellow}sak-${sakId}${Cyan} updated"
+    mapJson=$(echo "${mapJson}" | jq --arg id "${sakId}" --argjson data "${response}" '. + {($id): $data}')
+    echo -e "✅ ${Yellow}sak-${sakId}${Cyan} hentet"
   done
 
-  echo -e "\n"
+  echo "${mapJson}" | jq '.' > "${outputFile}"
+  echo -e "✅ ${Purple}mockdata.json${Cyan} oppdatert\n"
 }
 
 # Start script

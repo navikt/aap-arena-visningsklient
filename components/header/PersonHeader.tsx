@@ -1,10 +1,9 @@
 'use client';
 
 import styles from './header.module.css';
-import { Button, CopyButton, HStack, Label, Spacer } from '@navikt/ds-react';
+import { CopyButton, HStack, Label, Spacer } from '@navikt/ds-react';
 import { storForbokstavIHvertOrd } from 'lib/utils/string';
 import { SakDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
-import { ClockDashedIcon } from '@navikt/aksel-icons';
 import { FieldValue } from 'components/felleskomponenter/field-value/field-value';
 import {norsktDatoformat} from "lib/utils/date";
 
@@ -42,9 +41,6 @@ export function PersonHeader({ sak }: Props): React.ReactElement {
         <FieldValue label="Siste utbetaling" value={ sak.sisteUtbetalingsDato != null ? norsktDatoformat(sak.sisteUtbetalingsDato) : '—'} />
         <FieldValue label="Maksdato" value={ sak.maksDato != null ? norsktDatoformat(sak.maksDato) : '—'} />
         <FieldValue label="Gjenstående" value={telleverkTekst} />
-        <Button variant="tertiary" size="small" iconPosition="left" icon={<ClockDashedIcon />}>
-          Historikk
-        </Button>
       </HStack>
     </section>
   );
