@@ -13,5 +13,6 @@
   "registrertDato": "2021-05-03T12:41:25",
   "avsluttetDato": null,
   "vedtak": [],
-  "telleverkForPerson": null
+  "telleverkForPerson": null,
+  "kvoteHistorikk": []
 }

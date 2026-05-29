@@ -16,14 +16,14 @@
     {
       "vedtakId": 37194882,
       "lopenrvedtak": 8,
-      "statusKode": "IVERK",
-      "statusNavn": "Iverksatt",
+      "statusKode": "AVSLU",
+      "statusNavn": "Avsluttet",
       "vedtaktypeKode": "E",
       "vedtaktypeNavn": "Endring",
       "aktivitetsfaseKode": "UA",
       "aktivitetsfaseNavn": "Under arbeidsavklaring",
       "fraOgMed": "2026-01-01",
-      "tilDato": "2026-10-06",
+      "tilDato": "2026-04-30",
       "rettighetkode": "AAP",
       "rettighetnavn": "Arbeidsavklaringspenger",
       "utfallkode": "JA",
@@ -443,7 +443,7 @@
         {
           "kode": "TDATO",
           "navn": "Gjelder til",
-          "verdi": "06-10-2026",
+          "verdi": "30-04-2026",
           "registrertDato": "2026-01-02"
         },
         {
@@ -1438,6 +1438,705 @@
           "rundskrivUrl": null,
           "statuskode": "J",
           "statusnavn": "Oppfylt"
+        }
+      ]
+    },
+    {
+      "vedtakId": 37209516,
+      "lopenrvedtak": 10,
+      "statusKode": "IVERK",
+      "statusNavn": "Iverksatt",
+      "vedtaktypeKode": "E",
+      "vedtaktypeNavn": "Endring",
+      "aktivitetsfaseKode": "UA",
+      "aktivitetsfaseNavn": "Under arbeidsavklaring",
+      "fraOgMed": "2026-05-01",
+      "tilDato": "2026-10-06",
+      "rettighetkode": "AAP",
+      "rettighetnavn": "Arbeidsavklaringspenger",
+      "utfallkode": "JA",
+      "begrunnelse": "Endring på grunn av endret grunnbeløp",
+      "saksbehandler": "GRENSESN",
+      "beslutter": "GRENSESN",
+      "relatertVedtak": 37194882,
+      "fakta": [
+        {
+          "kode": "AAPBERDATO",
+          "navn": "Beregningsdato",
+          "verdi": "08-10-2022",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "AAPBERREGL",
+          "navn": "Beregningsregelverk",
+          "verdi": "Februar 2020",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "AAPFORSTD",
+          "navn": "Første dag med rett til ytelse",
+          "verdi": "08-10-2023",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "AAPMANBER",
+          "navn": "Arbeidsavklaringspenger manuelt beregnet",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "AAPVARIGHT",
+          "navn": "Varighet AAP-periode",
+          "verdi": "3",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "AAPVARIGKO",
+          "navn": "Varighet Korona-periode",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "AAPVARIGUN",
+          "navn": "Varighet AAP unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "AAPVILKUNN",
+          "navn": "Unntaksvilkår gjelder fra",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "AGRLAGMAN",
+          "navn": "Grunnlag er beregnet manuelt",
+          "verdi": "N",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "ANTB",
+          "navn": "Antall barn",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "ARBPEOS",
+          "navn": "Arbeidsperiode EØS/N i grunnlag",
+          "verdi": "N",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "ATIMTLTLON",
+          "navn": "Timer med tiltakslønn",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "ATIMUUTNIN",
+          "navn": "Timer uutnyttet inntekstevne",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "AUNGFOR",
+          "navn": "Ung ufør",
+          "verdi": "N",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "AVSPTSANK",
+          "navn": "Avspaser tidligere sanksjon",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "AYRKESKADE",
+          "navn": "Yrkesskade",
+          "verdi": "N",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "BARNMSTON",
+          "navn": "Antall barn med stønad",
+          "verdi": "1",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "BARNTILL",
+          "navn": "Barnetillegg per uke",
+          "verdi": "38",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "BARNUSTON",
+          "navn": "Antall barn uten stønad",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "BEGRTELLER",
+          "navn": "Tellerjustering begrunnelse",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "BEGRTILAAP",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "BEGRTILUNN",
+          "navn": "Tellerjustering tilleggsperiode begrunnelse AAP-unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "BEGRUNNTAK",
+          "navn": "Tellerjustering unntak begrunnelse",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "BERBESKR",
+          "navn": "Begrunnelse fra beregning",
+          "verdi": "Arbeidsavklaringspengene er beregnet ut fra den pensjonsgivende inntekten du hadde det siste året før beregningstidspunktet.\r\n\r\nBeregningen er gjort etter folketrygdloven §§ 11-19 og 11-20.",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "BERDAGS",
+          "navn": "Beregnet dagsats",
+          "verdi": "1960",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "BEREGNYS",
+          "navn": "Beregning ved gradert yrkesskade endret",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "BERREGEL",
+          "navn": "Kode for beregningsregel",
+          "verdi": "ORDINAER_ETTAAR",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "BREVKLASSE",
+          "navn": "Klassifisering av type brev",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "DAGS",
+          "navn": "Dagsats",
+          "verdi": "1922",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "DAGSFSAM",
+          "navn": "Grunnsats før samordning",
+          "verdi": "1922",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "DAGSMBFSAM",
+          "navn": "Dagsats med barnetillegg før samordning",
+          "verdi": "1960",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "DAGSMBT",
+          "navn": "Dagsats med barnetillegg",
+          "verdi": "1960",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "ENDRPERAAP",
+          "navn": "Tellerjustering AAP periode",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "ENDRTILAAP",
+          "navn": "Tellerjustering tilleggsperiode i ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "ENDRTILUNN",
+          "navn": "Tellerjustering tilleggsperiode i AAP-unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "ENDRUNNAAP",
+          "navn": "Tellerjustering unntaksperiode AAP",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "FASTARBTFS",
+          "navn": "Fastsatt arbeidstid før samordning",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "FDATO",
+          "navn": "Gjelder fra",
+          "verdi": "01-05-2026",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "GRSATS",
+          "navn": "Grunnsats",
+          "verdi": "1922",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "GRUNN",
+          "navn": "Grunnlag",
+          "verdi": "756983",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "INNVF",
+          "navn": "Vedtaksdato",
+          "verdi": "26-05-2026",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "INSGRAD",
+          "navn": "Gradering pga institusjonsopphold",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "INSTOPP",
+          "navn": "Institusjonsopphold",
+          "verdi": "N",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "INTARNESTS",
+          "navn": "Nest siste beregningsår",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "INTARSISTE",
+          "navn": "Siste beregningsår",
+          "verdi": "2021",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "INTARTREDS",
+          "navn": "Tredje siste beregningsår",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "INTNESTS",
+          "navn": "Inntekt nest siste beregningsår/periode",
+          "verdi": "0",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "INTSISTE",
+          "navn": "Inntekt siste beregningsår/periode",
+          "verdi": "580511",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "INTTREDS",
+          "navn": "Inntekt tredje siste beregningsår/periode",
+          "verdi": "0",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "JUSTERTG",
+          "navn": "Endring ved justering av G",
+          "verdi": "NyG2026",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "KODE115",
+          "navn": "Relatert 11-5-vedtak",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "MASKVEDTAK",
+          "navn": "Maskinelt vedtak",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "MAXDATOAAP",
+          "navn": "Maksdato ordinær AAP-periode",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "MAXDATOUNT",
+          "navn": "Maksdato AAP unntaksperiode",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "MAXDTAAPK",
+          "navn": "Skriptjustering maksdato AAP ordinær",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "MAXDTAAPKU",
+          "navn": "Skriptjustering maksdato AAP unntak",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "NORMARBT",
+          "navn": "Normalarbeidstid",
+          "verdi": "37.5",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "OPPRTDATO",
+          "navn": "Opprinnelig til-dato",
+          "verdi": "06-10-2026",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "OVERGTAT",
+          "navn": "Overgangstilfelle AT 2009",
+          "verdi": "N",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "OVERGTRP",
+          "navn": "Overgangstilfelle RP 2009",
+          "verdi": "N",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "OVERGTTU",
+          "navn": "Overgangstilfelle TU 2009",
+          "verdi": "N",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "PR90REGEL",
+          "navn": "90% regel",
+          "verdi": "N",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "SAM",
+          "navn": "Samordning er utført",
+          "verdi": "N",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "SAMKILDMAN",
+          "navn": "Samordningskilde manuelt lagt inn",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "SAMUKESAND",
+          "navn": "Sum samordning manuelt reg fra andre",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "SAMUKESRTV",
+          "navn": "Sum samordning manuelt reg folketrygdytelser/AFP",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "STUDENTBES",
+          "navn": "Vurdert studentbestemmelsen",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "TDATO",
+          "navn": "Gjelder til",
+          "verdi": "06-10-2026",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "TERSKMKBER",
+          "navn": "Terskelgrense Meldekortberegning",
+          "verdi": "40",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "TPDATO",
+          "navn": "TP-dato",
+          "verdi": "02-01-2026 19:11",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "TPRESULTAT",
+          "navn": "TP-nr(e)",
+          "verdi": "0",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "UKES",
+          "navn": "Ukesats",
+          "verdi": "9800",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "UKESFSAM",
+          "navn": "Ukesats før samordning",
+          "verdi": "9800",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "UNNTAKAAP",
+          "navn": "Unntak fra maksimal stønadsperiode AAP",
+          "verdi": "N",
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "VEDTAKSEND",
+          "navn": "Utskrift/sendt",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "YDATO",
+          "navn": "Yrkesskadetidspunkt",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "YINNT",
+          "navn": "Inntekt på skadetidspunkt",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        },
+        {
+          "kode": "YSKADEGRD",
+          "navn": "Yrkesskadegrad",
+          "verdi": null,
+          "registrertDato": "2026-05-26"
+        }
+      ],
+      "vilkårsvurderinger": [
+        {
+          "vilkårsvurderingId": 387824017,
+          "vilkårkode": "18-67AAR2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker er mellom 18 og 67 år",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-4#L19970228-19_P11-4",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-4++Alder.232187.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387824018,
+          "vilkårkode": "A11-52",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Godkjent vedtak om nedsatt arbeidsevne foreligger",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-4#L19970228-19_P11-5",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-5+Nedsatt+arbeidsevne.232189.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387824019,
+          "vilkårkode": "AAARBEID1",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Er i arbeid og anses nær ved å kunne øke arbeidsevnen. Må kunne oppnå minst 50% arbeidsevne.",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387824020,
+          "vilkårkode": "AAARBEID2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Er nær ved å bli satt i stand til å skaffe/gå tilbake i arbeid. Må kunne oppnå minst 50% arbeidsevne",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387824021,
+          "vilkårkode": "AAARBEID3",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker deltar på opplæringstiltak.",
+          "erObligatorisk": false,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387824022,
+          "vilkårkode": "AABEHGSTUD",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har avbrutt studiet og har behov for behandling for å kunne gjenoppta studiet",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387824023,
+          "vilkårkode": "AAFAARBIS2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker får bistand fra NAV for å komme i arbeid",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-6",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-6+Bistand+til+%C3%A5+skaffe+seg+eller+beholde+arbeid.232246.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387824024,
+          "vilkårkode": "AAIUBEGRF2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har ikke ubegrunnet fravær",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-9",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-9+Frav%C3%A6r+fra+fastsatt+aktivitet.232260.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387824025,
+          "vilkårkode": "AAMEDVPLA2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker medvirker i prosessen med å utarbeide en plan",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-8",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-8+Aktivitet+med+sikte+p%C3%A5+%C3%A5+komme+i+arbeid.232257.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387824026,
+          "vilkårkode": "ABIDRARAK2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker bidrar aktivt i prosessen med å komme i arbeid",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-8",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-8+Aktivitet+med+sikte+p%C3%A5+%C3%A5+komme+i+arbeid.232257.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387824027,
+          "vilkårkode": "AIANNEN2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har ikke rett til ytelser etter annen lovgivning",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-25",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-25+Forholdet+til+ytelser+etter+annen+lovgivning.232408.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387824028,
+          "vilkårkode": "AOINORGE3",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har opphold i Norge/avtaleland eller fyller vilkårene for unntak",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-3",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-3+Opphold+i+Norge.232089.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387824029,
+          "vilkårkode": "STRAFFGJF2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker utholder ikke varetekt, straff eller særreaksjon i anstalt",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-22",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-22+Arbeidsavklaringspenger+under+straffegjennomf%C3%B8ring.232405.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387824030,
+          "vilkårkode": "YTELARBGI2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker mottar ikke ytelser fra nåværende eller tidligere arbeidsgiver",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-19",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-19+Reduksjon+av+arbeidsavklaringspenger+p%C3%A5+grunn+av+ytelser+fra+arbeidsgiver.232401.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387824031,
+          "vilkårkode": "IVLGANNEN2",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker har ikke valgt annen full folketrygdytelse",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": "http://navet.adeo.no/rettskildene/lov/L19970228-19_P11-6#L19970228-19_P11-23",
+          "rundskrivUrl": "http://navet.adeo.no/rettskildene/Rundskriv/%C2%A7+11-23+Forholdet+til+andre+fulle+ytelser+fra+folketrygden.232406.cms",
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
+        },
+        {
+          "vilkårsvurderingId": 387824032,
+          "vilkårkode": "MEDLSKAP5",
+          "begrunnelse": null,
+          "vurdertAv": null,
+          "vilkårnavn": "Søker fyller vilkåret om forutgående medlemskap eller vilkår for unntak.",
+          "erObligatorisk": true,
+          "hjelpetekstUrl": null,
+          "lovtekstUrl": null,
+          "rundskrivUrl": null,
+          "statuskode": "V",
+          "statusnavn": "Ikke vurdert"
         }
       ]
     },
@@ -5813,5 +6512,777 @@
   "telleverkForPerson": {
     "ordineerAAPKvote": 20380,
     "utvidetAAPKvote": 10460
-  }
+  },
+  "kvoteHistorikk": [
+    {
+      "id": 268025538,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1671462065,
+      "antallBevegelse": -100,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-08-15",
+      "modDato": "2024-08-15",
+      "resterende": 15580,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268051995,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1671462073,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-08-15",
+      "modDato": "2024-08-15",
+      "resterende": 15380,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268075965,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1671462081,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-08-15",
+      "modDato": "2024-08-15",
+      "resterende": 15180,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268098115,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1671462099,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-08-15",
+      "modDato": "2024-08-15",
+      "resterende": 14980,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268121051,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1671462107,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-08-15",
+      "modDato": "2024-08-15",
+      "resterende": 14780,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268143627,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1671462115,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-08-15",
+      "modDato": "2024-08-15",
+      "resterende": 14580,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268166312,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1671462123,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-08-15",
+      "modDato": "2024-08-15",
+      "resterende": 14380,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268188517,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1671462131,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-08-15",
+      "modDato": "2024-08-15",
+      "resterende": 14180,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268208972,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1671462149,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-08-15",
+      "modDato": "2024-08-15",
+      "resterende": 13980,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268228001,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1671462156,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-08-15",
+      "modDato": "2024-08-15",
+      "resterende": 13780,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268247608,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1671462164,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-08-15",
+      "modDato": "2024-08-15",
+      "resterende": 13580,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268266581,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1671462172,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-08-15",
+      "modDato": "2024-08-15",
+      "resterende": 13380,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268281525,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1671462180,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-08-15",
+      "modDato": "2024-08-15",
+      "resterende": 13180,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268288935,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1671462198,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-08-15",
+      "modDato": "2024-08-15",
+      "resterende": 12980,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268295469,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1671462206,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-08-15",
+      "modDato": "2024-08-15",
+      "resterende": 12780,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268301505,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1671462214,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-08-15",
+      "modDato": "2024-08-15",
+      "resterende": 12580,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268313396,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1671462222,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-08-16",
+      "modDato": "2024-08-16",
+      "resterende": 12380,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268324345,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1671464806,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-08-16",
+      "modDato": "2024-08-16",
+      "resterende": 12180,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268335511,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1671464814,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-08-16",
+      "modDato": "2024-08-16",
+      "resterende": 11980,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268346490,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1673821326,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-08-16",
+      "modDato": "2024-08-16",
+      "resterende": 11780,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268356599,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1673821334,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-08-16",
+      "modDato": "2024-08-16",
+      "resterende": 11580,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268366963,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1675419921,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-08-16",
+      "modDato": "2024-08-16",
+      "resterende": 11380,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268593868,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1675419939,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-08-19",
+      "modDato": "2024-08-19",
+      "resterende": 11180,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268606486,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1676928284,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-09-02",
+      "modDato": "2024-09-02",
+      "resterende": 10980,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268615905,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1676928292,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-10-08",
+      "modDato": "2024-10-08",
+      "resterende": 10780,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268617422,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1678468057,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-10-08",
+      "modDato": "2024-10-08",
+      "resterende": 10580,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268620802,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1678468065,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-10-14",
+      "modDato": "2024-10-14",
+      "resterende": 10380,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268626230,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1679930469,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-10-28",
+      "modDato": "2024-10-28",
+      "resterende": 10180,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268632409,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1679930477,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-11-11",
+      "modDato": "2024-11-11",
+      "resterende": 9980,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268636658,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1681632251,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-11-25",
+      "modDato": "2024-11-25",
+      "resterende": 9780,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268639304,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1681632269,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-12-09",
+      "modDato": "2024-12-09",
+      "resterende": 9580,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268644959,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1683211948,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2024-12-23",
+      "modDato": "2024-12-23",
+      "resterende": 9380,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268655897,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1683211955,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2025-01-06",
+      "modDato": "2025-01-06",
+      "resterende": 9180,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268660022,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1684778853,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2025-01-20",
+      "modDato": "2025-01-20",
+      "resterende": 8980,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268666217,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1684778861,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2025-02-03",
+      "modDato": "2025-02-03",
+      "resterende": 8780,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268670417,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1686333772,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2025-02-17",
+      "modDato": "2025-02-17",
+      "resterende": 8580,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268675850,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1686333780,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2025-03-03",
+      "modDato": "2025-03-03",
+      "resterende": 8380,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268682096,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1687973170,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2025-03-17",
+      "modDato": "2025-03-17",
+      "resterende": 8180,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268688611,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1687973188,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2025-03-31",
+      "modDato": "2025-03-31",
+      "resterende": 7980,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268767796,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1690056831,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2025-04-14",
+      "modDato": "2025-04-14",
+      "resterende": 7780,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 268914666,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1690056849,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2025-04-28",
+      "modDato": "2025-04-28",
+      "resterende": 7580,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 269056460,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1692042268,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2025-05-12",
+      "modDato": "2025-05-12",
+      "resterende": 7380,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 269181822,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1692042276,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2025-05-26",
+      "modDato": "2025-05-26",
+      "resterende": 7180,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 269326142,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1692829565,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2025-06-09",
+      "modDato": "2025-06-09",
+      "resterende": 6980,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 269470147,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1692829573,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2025-06-23",
+      "modDato": "2025-06-23",
+      "resterende": 6780,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 269606652,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1693594937,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2025-07-07",
+      "modDato": "2025-07-07",
+      "resterende": 6580,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 269751170,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1693594945,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2025-07-21",
+      "modDato": "2025-07-21",
+      "resterende": 6380,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 269901500,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1694365410,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2025-08-04",
+      "modDato": "2025-08-04",
+      "resterende": 6180,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 270043066,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1694365428,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2025-08-18",
+      "modDato": "2025-08-18",
+      "resterende": 5980,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 270188435,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1695165421,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2025-09-01",
+      "modDato": "2025-09-01",
+      "resterende": 5780,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 270335074,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1695165439,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2025-09-15",
+      "modDato": "2025-09-15",
+      "resterende": 5580,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 270494410,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1695965630,
+      "antallBevegelse": -200,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2025-09-29",
+      "modDato": "2025-09-29",
+      "resterende": 5380,
+      "modUser": "GRENSESN",
+      "personId": 4933697,
+      "begrunnelse": null
+    },
+    {
+      "id": 270910868,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1695965630,
+      "antallBevegelse": -5000,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2026-04-30",
+      "modDato": "2026-04-30",
+      "resterende": 380,
+      "modUser": "TG0331",
+      "personId": 4933697,
+      "begrunnelse": "ggfdfgd"
+    },
+    {
+      "id": 270910869,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1695965630,
+      "antallBevegelse": 30000,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2026-04-30",
+      "modDato": "2026-04-30",
+      "resterende": 30380,
+      "modUser": "TG0331",
+      "personId": 4933697,
+      "begrunnelse": "rrrrrrrrrrrrrrrr"
+    },
+    {
+      "id": 270910870,
+      "kvoteTypeKode": "AAP",
+      "endringsGrunnlag": "MKORT",
+      "objektIdGrunnlag": 1695965630,
+      "antallBevegelse": -10000,
+      "posteringTypeKode": "OPPD",
+      "datoHendelse": "2026-04-30",
+      "modDato": "2026-04-30",
+      "resterende": 20380,
+      "modUser": "TG0331",
+      "personId": 4933697,
+      "begrunnelse": "sss"
+    }
+  ]
 }
