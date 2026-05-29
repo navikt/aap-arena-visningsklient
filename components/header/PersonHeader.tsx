@@ -5,7 +5,7 @@ import { CopyButton, HStack, Label, Spacer } from '@navikt/ds-react';
 import { storForbokstavIHvertOrd } from 'lib/utils/string';
 import { SakDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { FieldValue } from 'components/felleskomponenter/field-value/field-value';
-import {norsktDatoformat} from "lib/utils/date";
+import { norsktDatoformat } from 'lib/utils/date';
 
 type Props = {
   sak: SakDTO;
@@ -38,8 +38,14 @@ export function PersonHeader({ sak }: Props): React.ReactElement {
           className={styles.copybutton}
         />
         <Spacer />
-        <FieldValue label="Siste utbetaling" value={ sak.sisteUtbetalingsDato != null ? norsktDatoformat(sak.sisteUtbetalingsDato) : '—'} />
-        <FieldValue label="Maksdato" value={ sak.maksDato != null ? norsktDatoformat(sak.maksDato) : '—'} />
+        <FieldValue
+          label="Siste utbetaling"
+          value={sak.sisteUtbetalingsDato != null ? norsktDatoformat(new Date(sak.sisteUtbetalingsDato)) : '—'}
+        />
+        <FieldValue
+          label="Maksdato"
+          value={sak.maksDato != null ? norsktDatoformat(new Date(sak.maksDato)) : '—'}
+        />
         <FieldValue label="Gjenstående" value={telleverkTekst} />
       </HStack>
     </section>

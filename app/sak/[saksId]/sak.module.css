@@ -1,5 +1,5 @@
 .container {
-  margin: var(--ax-space-24) auto;
+  margin: var(--ax-space-24);
   padding: 0 var(--ax-space-24);
   max-width: var(--ax-breakpoint-2xl);
   width: 100%;
