@@ -9451,6 +9451,8 @@
       "ordineerAAPKvote": 20900,
       "utvidetAAPKvote": 10460
     },
+    "maksDato": null,
+    "sisteUtbetalingsDato": "2026-02-24",
     "kvoteHistorikk": []
   },
   "2021-331674": {
@@ -20038,6 +20040,8 @@
       "ordineerAAPKvote": 10580,
       "utvidetAAPKvote": 10460
     },
+    "maksDato": "2025-08-07",
+    "sisteUtbetalingsDato": "2025-05-30",
     "kvoteHistorikk": [
       {
         "id": 269221345,
@@ -33848,6 +33852,8 @@
       "ordineerAAPKvote": 0,
       "utvidetAAPKvote": 9140
     },
+    "maksDato": null,
+    "sisteUtbetalingsDato": "2021-10-16",
     "kvoteHistorikk": [
       {
         "id": 256635372,
@@ -46147,6 +46153,8 @@
       "ordineerAAPKvote": 4200,
       "utvidetAAPKvote": 10460
     },
+    "maksDato": null,
+    "sisteUtbetalingsDato": "2021-05-22",
     "kvoteHistorikk": [
       {
         "id": 255945890,
@@ -54763,6 +54771,8 @@
       "ordineerAAPKvote": 16640,
       "utvidetAAPKvote": 10460
     },
+    "maksDato": null,
+    "sisteUtbetalingsDato": "2021-08-13",
     "kvoteHistorikk": [
       {
         "id": 258479183,
@@ -61892,6 +61902,8 @@
       "ordineerAAPKvote": 12260,
       "utvidetAAPKvote": 10460
     },
+    "maksDato": null,
+    "sisteUtbetalingsDato": "2021-09-29",
     "kvoteHistorikk": [
       {
         "id": 259263657,
@@ -64734,6 +64746,8 @@
       "ordineerAAPKvote": 14040,
       "utvidetAAPKvote": 10460
     },
+    "maksDato": null,
+    "sisteUtbetalingsDato": "2025-01-15",
     "kvoteHistorikk": [
       {
         "id": 268611294,
@@ -67193,6 +67207,8 @@
       "ordineerAAPKvote": 18800,
       "utvidetAAPKvote": 10460
     },
+    "maksDato": null,
+    "sisteUtbetalingsDato": "2022-04-26",
     "kvoteHistorikk": [
       {
         "id": 262644304,
@@ -67344,6 +67360,8 @@
     "avsluttetDato": null,
     "vedtak": [],
     "telleverkForPerson": null,
+    "maksDato": null,
+    "sisteUtbetalingsDato": null,
     "kvoteHistorikk": []
   },
   "2021-147132": {
@@ -67362,6 +67380,8 @@
     "avsluttetDato": null,
     "vedtak": [],
     "telleverkForPerson": null,
+    "maksDato": null,
+    "sisteUtbetalingsDato": null,
     "kvoteHistorikk": []
   },
   "2023-15049": {
@@ -73849,6 +73869,8 @@
       "ordineerAAPKvote": 3780,
       "utvidetAAPKvote": 10460
     },
+    "maksDato": "2028-06-13",
+    "sisteUtbetalingsDato": "2025-09-22",
     "kvoteHistorikk": [
       {
         "id": 268007857,
@@ -81027,6 +81049,8 @@
       "ordineerAAPKvote": 20380,
       "utvidetAAPKvote": 10460
     },
+    "maksDato": "2031-08-26",
+    "sisteUtbetalingsDato": "2026-02-24",
     "kvoteHistorikk": [
       {
         "id": 268025538,
@@ -82344,6 +82368,8 @@
       "ordineerAAPKvote": 14480,
       "utvidetAAPKvote": 10460
     },
+    "maksDato": null,
+    "sisteUtbetalingsDato": "2021-04-06",
     "kvoteHistorikk": [
       {
         "id": 254788865,
@@ -85749,6 +85775,8 @@
       "ordineerAAPKvote": 15680,
       "utvidetAAPKvote": 10460
     },
+    "maksDato": "2028-05-02",
+    "sisteUtbetalingsDato": null,
     "kvoteHistorikk": []
   },
   "2023-19822": {
@@ -95723,6 +95751,8 @@
       "ordineerAAPKvote": 0,
       "utvidetAAPKvote": 10460
     },
+    "maksDato": "2028-03-05",
+    "sisteUtbetalingsDato": "2026-05-21",
     "kvoteHistorikk": [
       {
         "id": 270910978,
@@ -97948,6 +97978,8 @@
       "ordineerAAPKvote": 15680,
       "utvidetAAPKvote": 10460
     },
+    "maksDato": null,
+    "sisteUtbetalingsDato": null,
     "kvoteHistorikk": []
   }
 }
