@@ -30,7 +30,7 @@ export function parseISOorNull(dateString: string | null | undefined): Date | nu
   return parseISO(dateString);
 }
 
-export function norsktDatoformat(date: Date): string {
+export function norsktDatoformat(date: Date | string): string {
   return format(date, 'dd.MM.yyyy', { locale: nb });
 }
 

@@ -5,6 +5,7 @@ import { CopyButton, HStack, Label, Spacer } from '@navikt/ds-react';
 import { storForbokstavIHvertOrd } from 'lib/utils/string';
 import { SakDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { FieldValue } from 'components/felleskomponenter/field-value/field-value';
+import { norsktDatoformat } from 'lib/utils/date';
 
 type Props = {
   sak: SakDTO;
@@ -12,6 +13,17 @@ type Props = {
 
 export function PersonHeader({ sak }: Props): React.ReactElement {
   const { fornavn, etternavn, fodselsnummer } = sak.person;
+  const ordineerAAPKvote = sak.telleverkForPerson?.ordineerAAPKvote;
+  const utvidetAAPKvote = sak.telleverkForPerson?.utvidetAAPKvote;
+
+  const telleverkTekst =
+    sak.telleverkForPerson == null
+      ? '—'
+      : ordineerAAPKvote != null && ordineerAAPKvote > 0
+        ? `${ordineerAAPKvote} dager (Ordinær)`
+        : utvidetAAPKvote != null && utvidetAAPKvote > 0
+          ? `${utvidetAAPKvote} dager (Utvidet)`
+          : '0';
 
   return (
     <section className={styles.personheader}>
@@ -26,9 +38,12 @@ export function PersonHeader({ sak }: Props): React.ReactElement {
           className={styles.copybutton}
         />
         <Spacer />
-        <FieldValue label="Siste utbetaling" value="Ikke implementert" />
-        <FieldValue label="Maksdato" value="Ikke implementert" />
-        <FieldValue label="Gjenstående" value="Ikke implementert" />
+        <FieldValue
+          label="Siste utbetaling"
+          value={sak.sisteUtbetalingsDato != null ? norsktDatoformat(new Date(sak.sisteUtbetalingsDato)) : '—'}
+        />
+        <FieldValue label="Maksdato" value={sak.maksDato != null ? norsktDatoformat(new Date(sak.maksDato)) : '—'} />
+        <FieldValue label="Gjenstående" value={telleverkTekst} />
       </HStack>
     </section>
   );
