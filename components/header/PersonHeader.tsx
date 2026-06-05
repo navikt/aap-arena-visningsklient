@@ -20,9 +20,9 @@ export function PersonHeader({ sak }: Props): React.ReactElement {
     sak.telleverkForPerson == null
       ? '—'
       : ordineerAAPKvote != null && ordineerAAPKvote > 0
-        ? `${ordineerAAPKvote} dager (Ordinær)`
+        ? `${ordineerAAPKvote / 20} dager (Ordinær)`
         : utvidetAAPKvote != null && utvidetAAPKvote > 0
-          ? `${utvidetAAPKvote} dager (Utvidet)`
+          ? `${utvidetAAPKvote / 20} dager (Utvidet)`
           : '0';
 
   return (
