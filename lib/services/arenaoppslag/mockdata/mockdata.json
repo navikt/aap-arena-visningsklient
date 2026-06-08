@@ -9451,9 +9451,9 @@
       "ordineerAAPKvote": 20900,
       "utvidetAAPKvote": 10460
     },
-    "maksDato": null,
-    "sisteUtbetalingsDato": "2026-02-24",
-    "kvoteHistorikk": []
+    "kvoteHistorikk": [],
+    "maksdato": null,
+    "sisteUtbetalingDato": "2026-02-24"
   },
   "2021-331674": {
     "sakId": "13725526",
@@ -20040,8 +20040,6 @@
       "ordineerAAPKvote": 10580,
       "utvidetAAPKvote": 10460
     },
-    "maksDato": "2025-08-07",
-    "sisteUtbetalingsDato": "2025-05-30",
     "kvoteHistorikk": [
       {
         "id": 269221345,
@@ -20626,7 +20624,9 @@
         "modUser": "GRENSESN",
         "begrunnelse": null
       }
-    ]
+    ],
+    "maksdato": "2023-08-07",
+    "sisteUtbetalingDato": "2025-05-30"
   },
   "2015-630813": {
     "sakId": "13322363",
@@ -31787,18 +31787,18 @@
       {
         "vedtakId": 36525732,
         "lopenrvedtak": 1,
-        "statusKode": "IVERK",
-        "statusNavn": "Iverksatt",
+        "statusKode": "AVSLU",
+        "statusNavn": "Avsluttet",
         "vedtaktypeKode": "O",
         "vedtaktypeNavn": "Ny rettighet",
         "aktivitetsfaseKode": "IKKE",
         "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
         "fraOgMed": "2015-05-07",
-        "tilDato": null,
+        "tilDato": "2026-06-02",
         "rettighetkode": "AA115",
         "rettighetnavn": "§11-5 nedsatt arbeidsevne",
         "utfallkode": "JA",
-        "begrunnelse": "Syntetisert rettighet",
+        "begrunnelse": "Avsluttet i forbindelse med stenging av Arena.\nSyntetisert rettighet",
         "saksbehandler": "LG0315",
         "beslutter": "EKA0315",
         "relatertVedtak": null,
@@ -31818,7 +31818,7 @@
           {
             "kode": "TDATO",
             "navn": "Gjelder til",
-            "verdi": null,
+            "verdi": "02-06-2026",
             "registrertDato": "2015-03-18"
           }
         ],
@@ -33852,8 +33852,6 @@
       "ordineerAAPKvote": 0,
       "utvidetAAPKvote": 9140
     },
-    "maksDato": null,
-    "sisteUtbetalingsDato": "2021-10-16",
     "kvoteHistorikk": [
       {
         "id": 256635372,
@@ -35153,7 +35151,9 @@
         "modUser": "GRENSESN",
         "begrunnelse": null
       }
-    ]
+    ],
+    "maksdato": null,
+    "sisteUtbetalingDato": "2021-10-16"
   },
   "2015-631494": {
     "sakId": "13361135",
@@ -41975,18 +41975,18 @@
       {
         "vedtakId": 36567083,
         "lopenrvedtak": 1,
-        "statusKode": "IVERK",
-        "statusNavn": "Iverksatt",
+        "statusKode": "AVSLU",
+        "statusNavn": "Avsluttet",
         "vedtaktypeKode": "O",
         "vedtaktypeNavn": "Ny rettighet",
         "aktivitetsfaseKode": "IKKE",
         "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
         "fraOgMed": "2015-02-24",
-        "tilDato": null,
+        "tilDato": "2026-06-02",
         "rettighetkode": "AA115",
         "rettighetnavn": "§11-5 nedsatt arbeidsevne",
         "utfallkode": "JA",
-        "begrunnelse": "Syntetisert rettighet",
+        "begrunnelse": "Avsluttet i forbindelse med stenging av Arena.\nSyntetisert rettighet",
         "saksbehandler": "1532",
         "beslutter": "KN1532",
         "relatertVedtak": null,
@@ -42006,7 +42006,7 @@
           {
             "kode": "TDATO",
             "navn": "Gjelder til",
-            "verdi": null,
+            "verdi": "02-06-2026",
             "registrertDato": "2015-02-19"
           }
         ],
@@ -46153,8 +46153,6 @@
       "ordineerAAPKvote": 4200,
       "utvidetAAPKvote": 10460
     },
-    "maksDato": null,
-    "sisteUtbetalingsDato": "2021-05-22",
     "kvoteHistorikk": [
       {
         "id": 255945890,
@@ -47080,7 +47078,9 @@
         "modUser": "GRENSESN",
         "begrunnelse": null
       }
-    ]
+    ],
+    "maksdato": null,
+    "sisteUtbetalingDato": "2021-05-22"
   },
   "2016-766458": {
     "sakId": "13397613",
@@ -49197,18 +49197,18 @@
       {
         "vedtakId": 36653620,
         "lopenrvedtak": 1,
-        "statusKode": "IVERK",
-        "statusNavn": "Iverksatt",
+        "statusKode": "AVSLU",
+        "statusNavn": "Avsluttet",
         "vedtaktypeKode": "O",
         "vedtaktypeNavn": "Ny rettighet",
         "aktivitetsfaseKode": "IKKE",
         "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
         "fraOgMed": "2016-03-11",
-        "tilDato": null,
+        "tilDato": "2026-06-02",
         "rettighetkode": "AA115",
         "rettighetnavn": "§11-5 nedsatt arbeidsevne",
         "utfallkode": "JA",
-        "begrunnelse": "Syntetisert rettighet",
+        "begrunnelse": "Avsluttet i forbindelse med stenging av Arena.\nSyntetisert rettighet",
         "saksbehandler": "HSK5303",
         "beslutter": "GC5303",
         "relatertVedtak": null,
@@ -49228,7 +49228,7 @@
           {
             "kode": "TDATO",
             "navn": "Gjelder til",
-            "verdi": null,
+            "verdi": "02-06-2026",
             "registrertDato": "2016-02-05"
           }
         ],
@@ -54771,8 +54771,6 @@
       "ordineerAAPKvote": 16640,
       "utvidetAAPKvote": 10460
     },
-    "maksDato": null,
-    "sisteUtbetalingsDato": "2021-08-13",
     "kvoteHistorikk": [
       {
         "id": 258479183,
@@ -55016,7 +55014,9 @@
         "modUser": "GRENSESN",
         "begrunnelse": null
       }
-    ]
+    ],
+    "maksdato": null,
+    "sisteUtbetalingDato": "2021-08-13"
   },
   "2015-635780": {
     "sakId": "13409999",
@@ -55716,18 +55716,18 @@
       {
         "vedtakId": 36682547,
         "lopenrvedtak": 1,
-        "statusKode": "IVERK",
-        "statusNavn": "Iverksatt",
+        "statusKode": "AVSLU",
+        "statusNavn": "Avsluttet",
         "vedtaktypeKode": "O",
         "vedtaktypeNavn": "Ny rettighet",
         "aktivitetsfaseKode": "IKKE",
         "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
         "fraOgMed": "2015-09-19",
-        "tilDato": null,
+        "tilDato": "2026-06-02",
         "rettighetkode": "AA115",
         "rettighetnavn": "§11-5 nedsatt arbeidsevne",
         "utfallkode": "JA",
-        "begrunnelse": "Syntetisert rettighet",
+        "begrunnelse": "Avsluttet i forbindelse med stenging av Arena.\nSyntetisert rettighet",
         "saksbehandler": "ENG1805",
         "beslutter": "NH1805",
         "relatertVedtak": null,
@@ -55747,7 +55747,7 @@
           {
             "kode": "TDATO",
             "navn": "Gjelder til",
-            "verdi": null,
+            "verdi": "02-06-2026",
             "registrertDato": "2015-08-15"
           }
         ],
@@ -61902,8 +61902,6 @@
       "ordineerAAPKvote": 12260,
       "utvidetAAPKvote": 10460
     },
-    "maksDato": null,
-    "sisteUtbetalingsDato": "2021-09-29",
     "kvoteHistorikk": [
       {
         "id": 259263657,
@@ -62389,7 +62387,9 @@
         "modUser": "GRENSESN",
         "begrunnelse": null
       }
-    ]
+    ],
+    "maksdato": null,
+    "sisteUtbetalingDato": "2021-09-29"
   },
   "2024-28531": {
     "sakId": "13697921",
@@ -63817,18 +63817,18 @@
       {
         "vedtakId": 37054123,
         "lopenrvedtak": 1,
-        "statusKode": "IVERK",
-        "statusNavn": "Iverksatt",
+        "statusKode": "AVSLU",
+        "statusNavn": "Avsluttet",
         "vedtaktypeKode": "O",
         "vedtaktypeNavn": "Ny rettighet",
         "aktivitetsfaseKode": "IKKE",
         "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
         "fraOgMed": "2024-09-01",
-        "tilDato": null,
+        "tilDato": "2026-06-02",
         "rettighetkode": "AA115",
         "rettighetnavn": "§11-5 nedsatt arbeidsevne",
         "utfallkode": "JA",
-        "begrunnelse": "Dolly legger til grunn at du er arbeidsufør på grunn av sykdom.",
+        "begrunnelse": "Avsluttet i forbindelse med stenging av Arena.\nDolly legger til grunn at du er arbeidsufør på grunn av sykdom.",
         "saksbehandler": "HAK0315",
         "beslutter": "FTZ0315",
         "relatertVedtak": null,
@@ -63848,7 +63848,7 @@
           {
             "kode": "TDATO",
             "navn": "Gjelder til",
-            "verdi": null,
+            "verdi": "02-06-2026",
             "registrertDato": "2024-09-05"
           }
         ],
@@ -64746,8 +64746,6 @@
       "ordineerAAPKvote": 14040,
       "utvidetAAPKvote": 10460
     },
-    "maksDato": null,
-    "sisteUtbetalingsDato": "2025-01-15",
     "kvoteHistorikk": [
       {
         "id": 268611294,
@@ -64859,7 +64857,9 @@
         "modUser": "GRENSESN",
         "begrunnelse": null
       }
-    ]
+    ],
+    "maksdato": null,
+    "sisteUtbetalingDato": "2025-01-15"
   },
   "2016-770618": {
     "sakId": "13469475",
@@ -67207,8 +67207,6 @@
       "ordineerAAPKvote": 18800,
       "utvidetAAPKvote": 10460
     },
-    "maksDato": null,
-    "sisteUtbetalingsDato": "2022-04-26",
     "kvoteHistorikk": [
       {
         "id": 262644304,
@@ -67342,7 +67340,9 @@
         "modUser": "GRENSESN",
         "begrunnelse": null
       }
-    ]
+    ],
+    "maksdato": null,
+    "sisteUtbetalingDato": "2022-04-26"
   },
   "2021-143265": {
     "sakId": "13335922",
@@ -67360,9 +67360,9 @@
     "avsluttetDato": null,
     "vedtak": [],
     "telleverkForPerson": null,
-    "maksDato": null,
-    "sisteUtbetalingsDato": null,
-    "kvoteHistorikk": []
+    "kvoteHistorikk": [],
+    "maksdato": null,
+    "sisteUtbetalingDato": null
   },
   "2021-147132": {
     "sakId": "13339857",
@@ -67380,9 +67380,9 @@
     "avsluttetDato": null,
     "vedtak": [],
     "telleverkForPerson": null,
-    "maksDato": null,
-    "sisteUtbetalingsDato": null,
-    "kvoteHistorikk": []
+    "kvoteHistorikk": [],
+    "maksdato": null,
+    "sisteUtbetalingDato": null
   },
   "2023-15049": {
     "sakId": "13676545",
@@ -73869,8 +73869,6 @@
       "ordineerAAPKvote": 3780,
       "utvidetAAPKvote": 10460
     },
-    "maksDato": "2028-06-13",
-    "sisteUtbetalingsDato": "2025-09-22",
     "kvoteHistorikk": [
       {
         "id": 268007857,
@@ -74532,7 +74530,9 @@
         "modUser": "GRENSESN",
         "begrunnelse": null
       }
-    ]
+    ],
+    "maksdato": "2026-06-11",
+    "sisteUtbetalingDato": "2025-09-22"
   },
   "2023-16217": {
     "sakId": "13691130",
@@ -81049,8 +81049,6 @@
       "ordineerAAPKvote": 20380,
       "utvidetAAPKvote": 10460
     },
-    "maksDato": "2031-08-26",
-    "sisteUtbetalingsDato": "2026-02-24",
     "kvoteHistorikk": [
       {
         "id": 268025538,
@@ -81657,7 +81655,9 @@
         "modUser": "TG0331",
         "begrunnelse": "sss"
       }
-    ]
+    ],
+    "maksdato": "2029-08-23",
+    "sisteUtbetalingDato": "2026-02-24"
   },
   "2021-112540": {
     "sakId": "13304506",
@@ -82368,8 +82368,6 @@
       "ordineerAAPKvote": 14480,
       "utvidetAAPKvote": 10460
     },
-    "maksDato": null,
-    "sisteUtbetalingsDato": "2021-04-06",
     "kvoteHistorikk": [
       {
         "id": 254788865,
@@ -82437,7 +82435,9 @@
         "modUser": "GRENSESN",
         "begrunnelse": null
       }
-    ]
+    ],
+    "maksdato": null,
+    "sisteUtbetalingDato": "2021-04-06"
   },
   "2026-12639": {
     "sakId": "13782028",
@@ -82449,8 +82449,8 @@
       "fornavn": "LYSEGRØNN",
       "etternavn": "KORRIDOR"
     },
-    "statuskode": "AKTIV",
-    "statusnavn": "Aktiv",
+    "statuskode": "INAKT",
+    "statusnavn": "Inaktiv",
     "registrertDato": "2026-05-11T10:59:49",
     "avsluttetDato": null,
     "vedtak": [
@@ -82613,18 +82613,18 @@
       {
         "vedtakId": 37208119,
         "lopenrvedtak": 1,
-        "statusKode": "IVERK",
-        "statusNavn": "Iverksatt",
+        "statusKode": "AVSLU",
+        "statusNavn": "Avsluttet",
         "vedtaktypeKode": "O",
         "vedtaktypeNavn": "Ny rettighet",
         "aktivitetsfaseKode": "IKKE",
         "aktivitetsfaseNavn": "Ikke spesif. aktivitetsfase",
         "fraOgMed": "2023-05-01",
-        "tilDato": null,
+        "tilDato": "2026-06-02",
         "rettighetkode": "AA115",
         "rettighetnavn": "§11-5 nedsatt arbeidsevne",
         "utfallkode": "JA",
-        "begrunnelse": "Du har feber, og trenger behandling for å komme i jobb.",
+        "begrunnelse": "Avsluttet i forbindelse med stenging av Arena.\nDu har feber, og trenger behandling for å komme i jobb.",
         "saksbehandler": "AEA4411",
         "beslutter": "ESC4411",
         "relatertVedtak": null,
@@ -82644,7 +82644,7 @@
           {
             "kode": "TDATO",
             "navn": "Gjelder til",
-            "verdi": null,
+            "verdi": "02-06-2026",
             "registrertDato": "2026-05-11"
           }
         ],
@@ -85775,9 +85775,9 @@
       "ordineerAAPKvote": 15680,
       "utvidetAAPKvote": 10460
     },
-    "maksDato": "2028-05-02",
-    "sisteUtbetalingsDato": null,
-    "kvoteHistorikk": []
+    "kvoteHistorikk": [],
+    "maksdato": null,
+    "sisteUtbetalingDato": null
   },
   "2023-19822": {
     "sakId": "13781846",
@@ -85789,8 +85789,8 @@
       "fornavn": "UNDERDANIG",
       "etternavn": "BUSSTOPP"
     },
-    "statuskode": "AKTIV",
-    "statusnavn": "Aktiv",
+    "statuskode": "INAKT",
+    "statusnavn": "Inaktiv",
     "registrertDato": "2026-04-29T12:34:05",
     "avsluttetDato": null,
     "vedtak": [
@@ -92995,8 +92995,8 @@
       {
         "vedtakId": 37208336,
         "lopenrvedtak": 16,
-        "statusKode": "REGIS",
-        "statusNavn": "Registrert",
+        "statusKode": "AVSLU",
+        "statusNavn": "Avsluttet",
         "vedtaktypeKode": "G",
         "vedtaktypeNavn": "Gjenopptak",
         "aktivitetsfaseKode": "UA",
@@ -93008,7 +93008,7 @@
         "utfallkode": "NEI",
         "begrunnelse": "aa",
         "saksbehandler": "AEA4411",
-        "beslutter": null,
+        "beslutter": "ESC4411",
         "relatertVedtak": 37208222,
         "fakta": [
           {
@@ -93260,7 +93260,7 @@
           {
             "kode": "INNVF",
             "navn": "Vedtaksdato",
-            "verdi": null,
+            "verdi": "01-06-2026",
             "registrertDato": "2026-05-20"
           },
           {
@@ -95751,8 +95751,6 @@
       "ordineerAAPKvote": 0,
       "utvidetAAPKvote": 10460
     },
-    "maksDato": "2028-03-05",
-    "sisteUtbetalingsDato": "2026-05-21",
     "kvoteHistorikk": [
       {
         "id": 270910978,
@@ -96667,7 +96665,9 @@
         "modUser": "GRENSESN",
         "begrunnelse": null
       }
-    ]
+    ],
+    "maksdato": null,
+    "sisteUtbetalingDato": "2026-05-21"
   },
   "2026-12663": {
     "sakId": "13782052",
@@ -97978,8 +97978,8 @@
       "ordineerAAPKvote": 15680,
       "utvidetAAPKvote": 10460
     },
-    "maksDato": null,
-    "sisteUtbetalingsDato": null,
-    "kvoteHistorikk": []
+    "kvoteHistorikk": [],
+    "maksdato": null,
+    "sisteUtbetalingDato": null
   }
 }

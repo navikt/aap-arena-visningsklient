@@ -79,6 +79,6 @@ export type SakDTO = {
   vedtak: ArenaVedtakMedFaktaDTO[];
   telleverkForPerson: TelleverkDTO | NIL;
   kvoteHistorikk: KvoteHistorikkDTO[];
-  maksDato: string | NIL;
-  sisteUtbetalingsDato: string | NIL;
+  maksdato: string | NIL;
+  sisteUtbetalingDato: string | NIL;
 };

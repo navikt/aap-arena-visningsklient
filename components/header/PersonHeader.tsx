@@ -40,9 +40,9 @@ export function PersonHeader({ sak }: Props): React.ReactElement {
         <Spacer />
         <FieldValue
           label="Siste utbetaling"
-          value={sak.sisteUtbetalingsDato != null ? norsktDatoformat(new Date(sak.sisteUtbetalingsDato)) : '—'}
+          value={sak.sisteUtbetalingDato != null ? norsktDatoformat(new Date(sak.sisteUtbetalingDato)) : '—'}
         />
-        <FieldValue label="Maksdato" value={sak.maksDato != null ? norsktDatoformat(new Date(sak.maksDato)) : '—'} />
+        <FieldValue label="Maksdato" value={sak.maksdato != null ? norsktDatoformat(new Date(sak.maksdato)) : '—'} />
         <FieldValue label="Gjenstående" value={telleverkTekst} />
       </HStack>
     </section>
