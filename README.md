@@ -151,4 +151,5 @@ Spørsmål knyttet til koden eller prosjektet kan stilles som issues her på Git
 Interne henvendelser kan sendes via Slack i kanalen #team-aap-åpen
 
 
-PEtter tester PR 
+PEtter tester PR men det er noe som er rart
+
