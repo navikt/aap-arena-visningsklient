@@ -149,3 +149,7 @@ Spørsmål knyttet til koden eller prosjektet kan stilles som issues her på Git
 ## For Nav-ansatte
 
 Interne henvendelser kan sendes via Slack i kanalen #team-aap-åpen
+
+
+PEtter tester PR men det er noe som er rart
+
