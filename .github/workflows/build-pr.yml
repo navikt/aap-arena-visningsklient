@@ -2,9 +2,7 @@ name: Build PR
 on:
   workflow_dispatch:
   pull_request:
-    paths-ignore:
-      - '**.md'
-
+    
 jobs:
   build:
     name: build
