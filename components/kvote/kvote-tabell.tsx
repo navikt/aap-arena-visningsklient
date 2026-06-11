@@ -1,6 +1,7 @@
 'use client';
 
-import { Label, ReadMore, Table, VStack } from '@navikt/ds-react';
+import { useId, useState } from 'react';
+import { Button, Label, Popover, Table, VStack } from '@navikt/ds-react';
 
 export type KvoteEndring = {
   id: number;
@@ -16,6 +17,31 @@ type Props = {
   tittel: string;
   endringer: KvoteEndring[];
 };
+
+function BegrunnelsePopover({ begrunnelse }: { begrunnelse: string }): React.ReactElement {
+  const [anchorEl, setAnchorEl] = useState<HTMLElement | null>(null);
+  const [openState, setOpenState] = useState(false);
+  const popoverId = useId();
+
+  return (
+    <>
+      <Button
+        ref={setAnchorEl}
+        onClick={() => setOpenState(!openState)}
+        aria-expanded={openState}
+        aria-controls={openState ? popoverId : undefined}
+        variant="tertiary"
+        size="small"
+      >
+        Vis begrunnelse
+      </Button>
+
+      <Popover open={openState} onClose={() => setOpenState(false)} anchorEl={anchorEl} id={popoverId}>
+        <Popover.Content>{begrunnelse}</Popover.Content>
+      </Popover>
+    </>
+  );
+}
 
 export function KvoteTabell({ tittel, endringer }: Props): React.ReactElement {
   return (
@@ -41,7 +67,7 @@ export function KvoteTabell({ tittel, endringer }: Props): React.ReactElement {
               <Table.DataCell>{endring.endring}</Table.DataCell>
               <Table.DataCell>{endring.gjenvaerende}</Table.DataCell>
               <Table.DataCell>
-                {endring.begrunnelse != null && <ReadMore header="Begrunnelse">{endring.begrunnelse}</ReadMore>}
+                {endring.begrunnelse != null && <BegrunnelsePopover begrunnelse={endring.begrunnelse} />}
               </Table.DataCell>
             </Table.Row>
           ))}
