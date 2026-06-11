@@ -7,7 +7,8 @@ import { norsktDatoformat, parseISOorNull } from 'lib/utils/date';
 
 const posteringTypeNavn: Record<string, string> = {
   OPPD: 'Oppdatering',
-  NULL: 'Nullstillling',
+  NULLE: 'Nullstillling',
+  INIT: 'Initialisering',
 };
 
 const endringsGrunnlagNavn: Record<string, string> = {
