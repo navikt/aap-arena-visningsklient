@@ -108,17 +108,13 @@ export function Vedtakdetaljer({ vedtak, relatertVedtak, samordningRelatertVedta
               <ForholdTilAndreYtelserSeksjon
                 andreYtelser={vedtak.samordningOgInstitusjon.andreYtelser}
                 relatertAndreYtelser={
-                  visEndringer
-                    ? (samordningRelatertVedtak?.samordningOgInstitusjon?.andreYtelser ?? null)
-                    : null
+                  visEndringer ? (samordningRelatertVedtak?.samordningOgInstitusjon?.andreYtelser ?? null) : null
                 }
               />
               <InstitusjonSeksjon
                 institusjonOpphold={vedtak.samordningOgInstitusjon.institusjonOpphold}
                 relatertInstitusjonOpphold={
-                  visEndringer
-                    ? (samordningRelatertVedtak?.samordningOgInstitusjon?.institusjonOpphold ?? null)
-                    : null
+                  visEndringer ? (samordningRelatertVedtak?.samordningOgInstitusjon?.institusjonOpphold ?? null) : null
                 }
               />
             </>

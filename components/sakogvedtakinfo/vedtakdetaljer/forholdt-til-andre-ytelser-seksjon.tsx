@@ -41,8 +41,7 @@ export function ForholdTilAndreYtelserSeksjon({
 }: Props): React.ReactElement | null {
   if (andreYtelser.length === 0) return null;
 
-  const relatertMap =
-    relatertAndreYtelser != null ? new Map(relatertAndreYtelser.map((y) => [y.type, y])) : null;
+  const relatertMap = relatertAndreYtelser != null ? new Map(relatertAndreYtelser.map((y) => [y.type, y])) : null;
 
   function erEndret(ytelse: AndreYtelseDTO, felt: keyof AndreYtelseDTO): boolean {
     if (relatertMap == null) return false;
@@ -80,4 +79,3 @@ export function ForholdTilAndreYtelserSeksjon({
     </div>
   );
 }
-

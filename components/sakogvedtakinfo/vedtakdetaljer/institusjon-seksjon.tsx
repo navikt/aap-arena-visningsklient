@@ -46,9 +46,7 @@ export function InstitusjonSeksjon({
   if (institusjonOpphold.length === 0) return null;
 
   const relatertMap =
-    relatertInstitusjonOpphold != null
-      ? new Map(relatertInstitusjonOpphold.map((o) => [o.type, o]))
-      : null;
+    relatertInstitusjonOpphold != null ? new Map(relatertInstitusjonOpphold.map((o) => [o.type, o])) : null;
 
   function erEndret(opphold: InstitusjonOppholdDTO, felt: keyof InstitusjonOppholdDTO): boolean {
     if (relatertMap == null) return false;
@@ -86,4 +84,3 @@ export function InstitusjonSeksjon({
     </div>
   );
 }
-
