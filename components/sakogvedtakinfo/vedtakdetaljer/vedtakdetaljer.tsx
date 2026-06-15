@@ -8,13 +8,16 @@ import { formaterFaktaDato } from 'lib/utils/date';
 import { Vilkar } from 'components/sakogvedtakinfo/vedtakdetaljer/vilkar';
 import { SatsSeksjon } from 'components/sakogvedtakinfo/vedtakdetaljer/sats-seksjon';
 import { BeregningSeksjon } from 'components/sakogvedtakinfo/vedtakdetaljer/beregning-seksjon';
+import { ForholdTilAndreYtelserSeksjon } from 'components/sakogvedtakinfo/vedtakdetaljer/forholdt-til-andre-ytelser-seksjon';
+import { InstitusjonSeksjon } from 'components/sakogvedtakinfo/vedtakdetaljer/institusjon-seksjon';
 
 type Props = {
   vedtak: ArenaVedtakMedFaktaDTO;
   relatertVedtak: ArenaVedtakMedFaktaDTO | null;
+  samordningRelatertVedtak: ArenaVedtakMedFaktaDTO | null;
 };
 
-export function Vedtakdetaljer({ vedtak, relatertVedtak }: Props): React.ReactElement {
+export function Vedtakdetaljer({ vedtak, relatertVedtak, samordningRelatertVedtak }: Props): React.ReactElement {
   const faktaMap = useMemo(() => new Map(vedtak.fakta.map((f) => [f.kode, f])), [vedtak.vedtakId]);
 
   const relatertFaktaMap = useMemo(
@@ -100,6 +103,26 @@ export function Vedtakdetaljer({ vedtak, relatertVedtak }: Props): React.ReactEl
         <>
           <SatsSeksjon faktaMap={faktaMap} relatertFaktaMap={visEndringer ? relatertFaktaMap : null} />
           <BeregningSeksjon faktaMap={faktaMap} relatertFaktaMap={visEndringer ? relatertFaktaMap : null} />
+          {vedtak.samordningOgInstitusjon != null && (
+            <>
+              <ForholdTilAndreYtelserSeksjon
+                andreYtelser={vedtak.samordningOgInstitusjon.andreYtelser}
+                relatertAndreYtelser={
+                  visEndringer
+                    ? (samordningRelatertVedtak?.samordningOgInstitusjon?.andreYtelser ?? null)
+                    : null
+                }
+              />
+              <InstitusjonSeksjon
+                institusjonOpphold={vedtak.samordningOgInstitusjon.institusjonOpphold}
+                relatertInstitusjonOpphold={
+                  visEndringer
+                    ? (samordningRelatertVedtak?.samordningOgInstitusjon?.institusjonOpphold ?? null)
+                    : null
+                }
+              />
+            </>
+          )}
         </>
       )}
       <Vilkar vedtak={vedtak} />
