@@ -26,27 +26,32 @@ const lagVedtak = (overrides: Partial<ArenaVedtakMedFaktaDTO> = {}): ArenaVedtak
   relatertVedtak: null,
   fakta: [],
   vilkårsvurderinger: [],
+  samordningOgInstitusjon: null,
   ...overrides,
-});
+}) as ArenaVedtakMedFaktaDTO;
 
-const lagSak = (overrides: Partial<SakDTO> = {}): SakDTO => ({
-  sakId: '123',
-  opprettetAar: 2024,
-  lopenr: 1,
-  statuskode: 'AKTIV',
-  statusnavn: 'Aktiv',
-  registrertDato: '2024-01-01',
-  avsluttetDato: null,
-  vedtak: [lagVedtak()],
-  tellerverk: null,
-  person: {
-    personId: 1,
-    fodselsnummer: '01010101010',
-    fornavn: 'Test',
-    etternavn: 'Testesen',
-  },
-  ...overrides,
-});
+const lagSak = (overrides: Partial<SakDTO> = {}): SakDTO =>
+  ({
+    sakId: '123',
+    opprettetAar: 2024,
+    lopenr: 1,
+    statuskode: 'AKTIV',
+    statusnavn: 'Aktiv',
+    registrertDato: '2024-01-01',
+    avsluttetDato: null,
+    vedtak: [lagVedtak()],
+    telleverkForPerson: null,
+    kvoteHistorikk: [],
+    maksdato: null,
+    sisteUtbetalingDato: null,
+    person: {
+      personId: 1,
+      fodselsnummer: '01010101010',
+      fornavn: 'Test',
+      etternavn: 'Testesen',
+    },
+    ...overrides,
+  }) as SakDTO;
 
 describe('Sakogvedtakinfo datovisning', () => {
   it('viser ikke dato når ingen vedtak har fradato', () => {

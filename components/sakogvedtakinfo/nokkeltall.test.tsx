@@ -4,24 +4,28 @@ import { render, screen } from '@testing-library/react';
 import { Nokkeltall } from 'components/sakogvedtakinfo/nokkeltall';
 import { SakDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 
-const lagSak = (overrides: Partial<SakDTO> = {}): SakDTO => ({
-  sakId: '123',
-  opprettetAar: 2024,
-  lopenr: 1,
-  statuskode: 'AKTIV',
-  statusnavn: 'Aktiv',
-  registrertDato: '2024-01-01',
-  avsluttetDato: null,
-  vedtak: [],
-  tellerverk: null,
-  person: {
-    personId: 1,
-    fodselsnummer: '01010101010',
-    fornavn: 'Test',
-    etternavn: 'Testesen',
-  },
-  ...overrides,
-});
+const lagSak = (overrides: Partial<SakDTO> = {}): SakDTO =>
+  ({
+    sakId: '123',
+    opprettetAar: 2024,
+    lopenr: 1,
+    statuskode: 'AKTIV',
+    statusnavn: 'Aktiv',
+    registrertDato: '2024-01-01',
+    avsluttetDato: null,
+    vedtak: [],
+    telleverkForPerson: null,
+    kvoteHistorikk: [],
+    maksdato: null,
+    sisteUtbetalingDato: null,
+    person: {
+      personId: 1,
+      fodselsnummer: '01010101010',
+      fornavn: 'Test',
+      etternavn: 'Testesen',
+    },
+    ...overrides,
+  }) as SakDTO;
 
 describe('Nokkeltall', () => {
   it('skal ikke krasje og returnere null når sak ikke har noen vedtak', () => {
@@ -48,6 +52,8 @@ describe('Nokkeltall', () => {
           saksbehandler: 'SAK1234',
           beslutter: 'BES5678',
           utfallkode: 'JA',
+          begrunnelse: null,
+          relatertVedtak: null,
           fakta: [
             { kode: 'AAPBERDATO', navn: 'Beregningsdato', verdi: '01-01-2024', registrertDato: '2024-01-01' },
             { kode: 'GRUNN', navn: 'Grunnlag', verdi: '500000', registrertDato: '2024-01-01' },
@@ -56,6 +62,7 @@ describe('Nokkeltall', () => {
             { kode: 'BARNMSTON', navn: 'Antall barn', verdi: '2', registrertDato: '2024-01-01' },
           ],
           vilkårsvurderinger: [],
+          samordningOgInstitusjon: null,
         },
       ],
     });
