@@ -21,7 +21,7 @@ Each service subfolder should contain the following files:
 | `{name}-service.ts` | Exported async functions. Must start with `'use server'`. See rules below. |
 | `{name}-types.ts`   | TypeScript DTOs and response types. No runtime code — types only.          |
 | `{name}-mock.ts`    | Mock data resolver used during local development.                          |
-| `mockdata/`         | Real JSON responses fetched from the dev environment. One file per entity. |
+| `mockdata/`         | Real JSON responses fetched from the dev environment. See rules below.     |
 
 ## Rules for `{name}-service.ts`
 
@@ -84,30 +84,28 @@ export type MyResponseDTO = {
 ## Rules for `{name}-mock.ts`
 
 - Export a function that accepts the same arguments as the real service function.
-- Switch on the ID or key and return the matching imported JSON fixture.
+- Import `mockdata.json` and look up by ID using a map access.
 - Return `null` for unknown IDs.
-- Import fixture files from the `mockdata/` subfolder.
 
 ```ts
 import { MyResponseDTO } from 'lib/services/my-service/my-service-types';
-import Fixture123 from 'lib/services/my-service/mockdata/thing-123-mockdata.json';
+import allFixtures from 'lib/services/my-service/mockdata/mockdata.json';
 
 export function getMockData(id: string): MyResponseDTO | null {
-  switch (id) {
-    case '123':
-      return Fixture123;
-    default:
-      return null;
-  }
+  return (allFixtures as Record<string, MyResponseDTO>)[id] ?? null;
 }
 ```
 
 ## Rules for `mockdata/`
 
-- JSON files contain real responses captured from the dev environment.
-- One file per entity, named `{entity}-{id}-mockdata.json`.
-- `mockdata.config.json` lists the IDs that have fixture files.
-- `mockdata-generator.sh` fetches and writes fixture files from the dev API — run it to refresh.
+- `mockdata.json` — a single map of `{ id: data }` containing real responses for all IDs listed in
+  `mockdata.config.json`. This is what the mock resolver imports and what is used for local testing.
+- `mockdata-example.json` — a single unwrapped entry for a pinned ID. Kept in source control as a
+  readable reference of the full data structure for developers and AI agents. Do not import this
+  file in application code.
+- `mockdata.config.json` — lists the IDs to fetch. Add new IDs here, then re-run the generator.
+- `mockdata-generator.sh` — fetches real responses from the dev API and writes both `mockdata.json`
+  and `mockdata-example.json`. Run it to refresh data after API changes or when adding new IDs.
 
 ## Shared infrastructure in `api-fetch/`
 

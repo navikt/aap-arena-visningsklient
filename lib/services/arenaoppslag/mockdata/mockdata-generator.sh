@@ -80,6 +80,9 @@ startMockdataGenerator() {
   configPath="${scriptDir}/${jsonConfig}"
 
   outputFile="${scriptDir}/mockdata.json"
+  # Én sak brukes som lesbart eksempel for AI-agenter og utviklere
+  exampleSakId='2023-19822'
+  exampleFile="${scriptDir}/mockdata-example.json"
   mapJson='{}'
 
   # Loop through sak IDs and fetch mockdata
@@ -99,6 +102,9 @@ startMockdataGenerator() {
 
   echo "${mapJson}" | jq '.' > "${outputFile}"
   echo -e "✅ ${Purple}mockdata.json${Cyan} oppdatert\n"
+
+  echo "${mapJson}" | jq --arg id "${exampleSakId}" '.[$id]' > "${exampleFile}"
+  echo -e "✅ ${Purple}mockdata-example.json${Cyan} oppdatert (eksempel for sak ${Yellow}${exampleSakId}${Cyan})\n"
 }
 
 # Start script
