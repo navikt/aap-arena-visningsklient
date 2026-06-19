@@ -566,10 +566,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37104009,
@@ -1153,10 +1151,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37091484,
@@ -1764,10 +1760,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37091482,
@@ -2375,10 +2369,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37091479,
@@ -2986,10 +2978,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37091476,
@@ -3597,10 +3587,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37091486,
@@ -4208,10 +4196,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37091472,
@@ -4819,10 +4805,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37091475,
@@ -5430,10 +5414,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37091488,
@@ -6041,10 +6023,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37091487,
@@ -6652,10 +6632,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37091470,
@@ -7289,10 +7267,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37091481,
@@ -7900,10 +7876,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37091485,
@@ -8511,10 +8485,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37091465,
@@ -8699,10 +8671,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37091469,
@@ -9505,10 +9475,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       }
     ],
     "telleverkForPerson": {
@@ -9740,10 +9708,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37099051,
@@ -10481,10 +10447,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37099057,
@@ -11105,10 +11069,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37099061,
@@ -11729,10 +11691,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37099062,
@@ -12353,10 +12313,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37099063,
@@ -12977,10 +12935,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37099066,
@@ -13692,10 +13648,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37099067,
@@ -14365,10 +14319,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37099069,
@@ -15038,10 +14990,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37099064,
@@ -15620,10 +15570,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37099065,
@@ -16297,10 +16245,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37099068,
@@ -16974,10 +16920,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37099056,
@@ -17598,10 +17542,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37099058,
@@ -18222,10 +18164,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37099059,
@@ -18846,10 +18786,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37099060,
@@ -19470,10 +19408,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37099052,
@@ -20185,10 +20121,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       }
     ],
     "telleverkForPerson": {
@@ -21482,10 +21416,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36525745,
@@ -22160,10 +22092,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36525755,
@@ -22760,10 +22690,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36525759,
@@ -23451,10 +23379,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36525764,
@@ -24142,10 +24068,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36525767,
@@ -24833,10 +24757,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36525770,
@@ -25482,10 +25404,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36525757,
@@ -26040,10 +25960,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36525763,
@@ -26718,10 +26636,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36525765,
@@ -27396,10 +27312,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36525769,
@@ -28087,10 +28001,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36525762,
@@ -28765,10 +28677,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36525753,
@@ -29353,10 +29263,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36525766,
@@ -30044,10 +29952,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36525768,
@@ -30735,10 +30641,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36525771,
@@ -31388,10 +31292,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36525749,
@@ -32024,10 +31926,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36525732,
@@ -32108,10 +32008,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36525733,
@@ -32799,10 +32697,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36689241,
@@ -33430,10 +33326,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36615755,
@@ -34103,10 +33997,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       }
     ],
     "telleverkForPerson": {
@@ -36148,10 +36040,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36567087,
@@ -36826,10 +36716,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36567097,
@@ -37517,10 +37405,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36567098,
@@ -38208,10 +38094,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36567100,
@@ -38899,10 +38783,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36567103,
@@ -39590,10 +39472,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36567104,
@@ -40281,10 +40161,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36567105,
@@ -40972,10 +40850,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36567099,
@@ -41663,10 +41539,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36567106,
@@ -42312,10 +42186,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36567083,
@@ -42396,10 +42268,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36567084,
@@ -43087,10 +42957,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36567101,
@@ -43778,10 +43646,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36567090,
@@ -44456,10 +44322,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36567091,
@@ -45134,10 +44998,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36567096,
@@ -45825,10 +45687,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36567102,
@@ -46516,10 +46376,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       }
     ],
     "telleverkForPerson": {
@@ -48171,10 +48029,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36653675,
@@ -48813,10 +48669,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36653673,
@@ -49497,10 +49351,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36653677,
@@ -49600,10 +49452,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36653620,
@@ -49684,10 +49534,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36653621,
@@ -50381,10 +50229,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36653640,
@@ -51065,10 +50911,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36653662,
@@ -51749,10 +51593,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36653667,
@@ -52433,10 +52275,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36653648,
@@ -53117,10 +52957,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36653655,
@@ -53801,10 +53639,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36653670,
@@ -54485,10 +54321,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36653676,
@@ -55208,10 +55042,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       }
     ],
     "telleverkForPerson": {
@@ -56181,10 +56013,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36682547,
@@ -56265,10 +56095,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36682548,
@@ -56962,10 +56790,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36682551,
@@ -57659,10 +57485,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36682558,
@@ -58343,10 +58167,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36682553,
@@ -59027,10 +58849,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36682554,
@@ -59711,10 +59531,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36682556,
@@ -60395,10 +60213,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36682557,
@@ -61079,10 +60895,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36682559,
@@ -61721,10 +61535,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36682555,
@@ -62405,10 +62217,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       }
     ],
     "telleverkForPerson": {
@@ -63585,10 +63395,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37054538,
@@ -63855,10 +63663,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37054539,
@@ -64098,10 +63904,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37054540,
@@ -64360,10 +64164,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37054123,
@@ -64548,10 +64350,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37054125,
@@ -65295,10 +65095,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       }
     ],
     "telleverkForPerson": {
@@ -65554,10 +65352,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36754678,
@@ -66277,10 +66073,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36754675,
@@ -66361,10 +66155,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36754676,
@@ -67058,10 +66850,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36754679,
@@ -67160,10 +66950,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36754677,
@@ -67802,10 +67590,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       }
     ],
     "telleverkForPerson": {
@@ -68730,10 +68516,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37207117,
@@ -69433,10 +69217,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37208897,
@@ -70136,10 +69918,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37210436,
@@ -70797,10 +70577,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37103705,
@@ -71488,10 +71266,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37103740,
@@ -72179,10 +71955,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37060494,
@@ -72876,10 +72650,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37041438,
@@ -73567,10 +73339,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37041811,
@@ -74258,10 +74028,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36997903,
@@ -74446,10 +74214,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36997909,
@@ -75187,10 +74953,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       }
     ],
     "telleverkForPerson": {
@@ -76603,10 +76367,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37207902,
@@ -77330,10 +77092,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37209516,
@@ -78033,10 +77793,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37151931,
@@ -78730,10 +78488,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37104024,
@@ -79421,10 +79177,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37060526,
@@ -80118,10 +79872,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37043517,
@@ -80809,10 +80561,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37031167,
@@ -80997,10 +80747,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37031169,
@@ -81738,10 +81486,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37054303,
@@ -82429,10 +82175,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       }
     ],
     "telleverkForPerson": {
@@ -83397,10 +83141,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 36489439,
@@ -83778,10 +83520,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       }
     ],
     "telleverkForPerson": {
@@ -84051,10 +83791,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37208119,
@@ -84239,10 +83977,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37208121,
@@ -84966,17 +84702,15 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": [
-            {
-              "type": "UFORETRYGD",
-              "belopPeriode": "MND",
-              "grad": "50",
-              "beløp": "0"
-            }
-          ]
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": [
+          {
+            "type": "UFORETRYGD",
+            "belopPeriode": "MND",
+            "grad": "50",
+            "belop": "0"
+          }
+        ]
       },
       {
         "vedtakId": 37208120,
@@ -85732,25 +85466,21 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [
-            {
-              "type": "HELSEINSTITUSJON",
-              "fra": "2023-05-01",
-              "til": "2023-07-31",
-              "friKostOgLosji": true,
-              "reduksjonsType": "HALV"
-            }
-          ],
-          "andreYtelser": [
-            {
-              "type": "UFORETRYGD",
-              "belopPeriode": "MND",
-              "grad": "50",
-              "beløp": "0"
-            }
-          ]
-        }
+        "institusjonOpphold": {
+          "type": "HELSEINSTITUSJON",
+          "fra": "2023-05-01",
+          "til": "2023-07-31",
+          "friKostOgLosji": true,
+          "reduksjonsType": "HALV"
+        },
+        "andreYtelser": [
+          {
+            "type": "UFORETRYGD",
+            "belopPeriode": "MND",
+            "grad": "50",
+            "belop": "0"
+          }
+        ]
       },
       {
         "vedtakId": 37210237,
@@ -86408,17 +86138,15 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": [
-            {
-              "type": "UFORETRYGD",
-              "belopPeriode": "MND",
-              "grad": "50",
-              "beløp": "0"
-            }
-          ]
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": [
+          {
+            "type": "UFORETRYGD",
+            "belopPeriode": "MND",
+            "grad": "50",
+            "belop": "0"
+          }
+        ]
       },
       {
         "vedtakId": 37210223,
@@ -87110,17 +86838,15 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": [
-            {
-              "type": "UFORETRYGD",
-              "belopPeriode": "MND",
-              "grad": "50",
-              "beløp": "0"
-            }
-          ]
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": [
+          {
+            "type": "UFORETRYGD",
+            "belopPeriode": "MND",
+            "grad": "50",
+            "belop": "0"
+          }
+        ]
       },
       {
         "vedtakId": 37208189,
@@ -87271,10 +86997,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       }
     ],
     "telleverkForPerson": {
@@ -88059,10 +87783,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37208197,
@@ -88682,17 +88404,15 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": [
-            {
-              "type": "UFORETRYGD",
-              "belopPeriode": "MND",
-              "grad": "50",
-              "beløp": "0"
-            }
-          ]
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": [
+          {
+            "type": "UFORETRYGD",
+            "belopPeriode": "MND",
+            "grad": "50",
+            "belop": "0"
+          }
+        ]
       },
       {
         "vedtakId": 37208195,
@@ -89350,17 +89070,15 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": [
-            {
-              "type": "UFORETRYGD",
-              "belopPeriode": "MND",
-              "grad": "50",
-              "beløp": "0"
-            }
-          ]
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": [
+          {
+            "type": "UFORETRYGD",
+            "belopPeriode": "MND",
+            "grad": "50",
+            "belop": "0"
+          }
+        ]
       },
       {
         "vedtakId": 37208053,
@@ -90052,18 +89770,14 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [
-            {
-              "type": "HELSEINSTITUSJON",
-              "fra": "2024-01-01",
-              "til": "2024-12-31",
-              "friKostOgLosji": true,
-              "reduksjonsType": null
-            }
-          ],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": {
+          "type": "HELSEINSTITUSJON",
+          "fra": "2024-01-01",
+          "til": "2024-12-31",
+          "friKostOgLosji": true,
+          "reduksjonsType": null
+        },
+        "andreYtelser": []
       },
       {
         "vedtakId": 37208055,
@@ -90248,10 +89962,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37208057,
@@ -90939,18 +90651,14 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [
-            {
-              "type": "FENGSEL",
-              "fra": "2024-01-01",
-              "til": "2024-12-31",
-              "friKostOgLosji": true,
-              "reduksjonsType": null
-            }
-          ],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": {
+          "type": "FENGSEL",
+          "fra": "2024-01-01",
+          "til": "2024-12-31",
+          "friKostOgLosji": true,
+          "reduksjonsType": null
+        },
+        "andreYtelser": []
       },
       {
         "vedtakId": 37208061,
@@ -91706,10 +91414,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37208062,
@@ -92426,10 +92132,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37208063,
@@ -93104,10 +92808,8 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37208198,
@@ -93831,17 +93533,15 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": [
-            {
-              "type": "UFORETRYGD",
-              "belopPeriode": "MND",
-              "grad": "50",
-              "beløp": "0"
-            }
-          ]
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": [
+          {
+            "type": "UFORETRYGD",
+            "belopPeriode": "MND",
+            "grad": "50",
+            "belop": "0"
+          }
+        ]
       },
       {
         "vedtakId": 37208199,
@@ -94597,17 +94297,15 @@
             "statusnavn": "Oppfylt"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": [
-            {
-              "type": "UFORETRYGD",
-              "belopPeriode": "MND",
-              "grad": "50",
-              "beløp": "0"
-            }
-          ]
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": [
+          {
+            "type": "UFORETRYGD",
+            "belopPeriode": "MND",
+            "grad": "50",
+            "belop": "0"
+          }
+        ]
       },
       {
         "vedtakId": 37208336,
@@ -95299,17 +94997,15 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": [
-            {
-              "type": "UFORETRYGD",
-              "belopPeriode": "MND",
-              "grad": "50",
-              "beløp": "0"
-            }
-          ]
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": [
+          {
+            "type": "UFORETRYGD",
+            "belopPeriode": "MND",
+            "grad": "50",
+            "belop": "0"
+          }
+        ]
       },
       {
         "vedtakId": 37207879,
@@ -95967,10 +95663,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37208222,
@@ -96628,17 +96322,15 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": [
-            {
-              "type": "UFORETRYGD",
-              "belopPeriode": "MND",
-              "grad": "50",
-              "beløp": "0"
-            }
-          ]
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": [
+          {
+            "type": "UFORETRYGD",
+            "belopPeriode": "MND",
+            "grad": "50",
+            "belop": "0"
+          }
+        ]
       },
       {
         "vedtakId": 37207869,
@@ -97388,10 +97080,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       }
     ],
     "telleverkForPerson": {
@@ -99086,10 +98776,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       },
       {
         "vedtakId": 37208165,
@@ -99656,10 +99344,8 @@
             "statusnavn": "Ikke vurdert"
           }
         ],
-        "samordningOgInstitusjon": {
-          "institusjonOpphold": [],
-          "andreYtelser": []
-        }
+        "institusjonOpphold": null,
+        "andreYtelser": []
       }
     ],
     "telleverkForPerson": {

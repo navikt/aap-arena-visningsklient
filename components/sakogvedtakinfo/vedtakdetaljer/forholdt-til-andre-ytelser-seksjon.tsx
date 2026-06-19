@@ -4,7 +4,7 @@ import { HStack, VStack } from '@navikt/ds-react';
 import { AndreYtelseDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { FieldValue } from 'components/felleskomponenter/field-value/field-value';
 import { SeksjonHeading } from 'components/sakogvedtakinfo/vedtakdetaljer/seksjon-heading';
-import { formaterTilNok, storForbokstavOgMellomromForUnderstrek } from 'lib/utils/string';
+import { formaterFaktaNok, storForbokstavOgMellomromForUnderstrek } from 'lib/utils/string';
 
 const YTELSE_TYPE_TEKST: Record<string, string> = {
   UFORETRYGD: 'Uføretrygd',
@@ -70,7 +70,7 @@ export function ForholdTilAndreYtelserSeksjon({
             />
             <FieldValue
               label="Beløp"
-              value={ytelse.belop != null ? formaterTilNok(ytelse.belop) : '—'}
+              value={ytelse.belop != null ? formaterFaktaNok(ytelse.belop) : '—'}
               isChanged={erEndret(ytelse, 'belop')}
             />
           </HStack>

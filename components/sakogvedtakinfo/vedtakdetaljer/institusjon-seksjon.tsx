@@ -1,6 +1,6 @@
 'use client';
 
-import { HStack, VStack } from '@navikt/ds-react';
+import { HStack } from '@navikt/ds-react';
 import { InstitusjonOppholdDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { FieldValue } from 'components/felleskomponenter/field-value/field-value';
 import { SeksjonHeading } from 'components/sakogvedtakinfo/vedtakdetaljer/seksjon-heading';
@@ -35,52 +35,44 @@ function formaterPeriode(fra: string | null | undefined, til: string | null | un
 }
 
 type Props = {
-  institusjonOpphold: InstitusjonOppholdDTO[];
-  relatertInstitusjonOpphold: InstitusjonOppholdDTO[] | null;
+  institusjonOpphold: InstitusjonOppholdDTO | null;
+  relatertInstitusjonOpphold: InstitusjonOppholdDTO | null;
 };
 
 export function InstitusjonSeksjon({
   institusjonOpphold,
   relatertInstitusjonOpphold,
 }: Props): React.ReactElement | null {
-  if (institusjonOpphold.length === 0) return null;
+  if (institusjonOpphold == null) return null;
 
-  const relatertMap =
-    relatertInstitusjonOpphold != null ? new Map(relatertInstitusjonOpphold.map((o) => [o.type, o])) : null;
+  const opphold = institusjonOpphold;
 
-  function erEndret(opphold: InstitusjonOppholdDTO, felt: keyof InstitusjonOppholdDTO): boolean {
-    if (relatertMap == null) return false;
-    const relatert = relatertMap.get(opphold.type);
-    // Rad finnes ikke i relatert vedtak → alt er nytt, marker som endret
-    if (relatert == null) return true;
-    return opphold[felt] !== relatert[felt];
+  function erEndret(felt: keyof InstitusjonOppholdDTO): boolean {
+    if (relatertInstitusjonOpphold == null) return false;
+    return opphold[felt] !== relatertInstitusjonOpphold[felt];
   }
 
   return (
     <div>
       <SeksjonHeading tittel="Institusjon" />
-      <VStack gap="space-16">
-        {institusjonOpphold.map((opphold, index) => (
-          <HStack key={index} gap="space-32" wrap>
-            <FieldValue label="Type" value={institusjonTypeTekst(opphold.type)} isChanged={erEndret(opphold, 'type')} />
-            <FieldValue
-              label="Periode"
-              value={formaterPeriode(opphold.fra, opphold.til)}
-              isChanged={erEndret(opphold, 'fra') || erEndret(opphold, 'til')}
-            />
-            <FieldValue
-              label="Fri kost og losji"
-              value={opphold.friKostOgLosji ? 'Ja' : 'Nei'}
-              isChanged={erEndret(opphold, 'friKostOgLosji')}
-            />
-            <FieldValue
-              label="Reduksjon"
-              value={reduksjonTekst(opphold.reduksjonsType)}
-              isChanged={erEndret(opphold, 'reduksjonsType')}
-            />
-          </HStack>
-        ))}
-      </VStack>
+      <HStack gap="space-32" wrap>
+        <FieldValue label="Type" value={institusjonTypeTekst(opphold.type)} isChanged={erEndret('type')} />
+        <FieldValue
+          label="Periode"
+          value={formaterPeriode(opphold.fra, opphold.til)}
+          isChanged={erEndret('fra') || erEndret('til')}
+        />
+        <FieldValue
+          label="Fri kost og losji"
+          value={opphold.friKostOgLosji ? 'Ja' : 'Nei'}
+          isChanged={erEndret('friKostOgLosji')}
+        />
+        <FieldValue
+          label="Reduksjon"
+          value={reduksjonTekst(opphold.reduksjonsType)}
+          isChanged={erEndret('reduksjonsType')}
+        />
+      </HStack>
     </div>
   );
 }

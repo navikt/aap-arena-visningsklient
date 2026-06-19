@@ -26,7 +26,8 @@ const lagVedtak = (overrides: Partial<ArenaVedtakMedFaktaDTO> = {}): ArenaVedtak
   relatertVedtak: null,
   fakta: [],
   vilkårsvurderinger: [],
-  samordningOgInstitusjon: null,
+  andreYtelser: [],
+  institusjonOpphold: null,
   ...overrides,
 }) as ArenaVedtakMedFaktaDTO;
 

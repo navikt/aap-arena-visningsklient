@@ -62,7 +62,8 @@ describe('Nokkeltall', () => {
             { kode: 'BARNMSTON', navn: 'Antall barn', verdi: '2', registrertDato: '2024-01-01' },
           ],
           vilkårsvurderinger: [],
-          samordningOgInstitusjon: null,
+          andreYtelser: [],
+          institusjonOpphold: null,
         },
       ],
     });

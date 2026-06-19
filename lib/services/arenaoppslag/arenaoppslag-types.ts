@@ -25,7 +25,7 @@ export type AndreYtelseDTO = {
   type: string;
   belopPeriode: string | NIL;
   grad: string | NIL;
-  belop: number | NIL;
+  belop: string | NIL;
 };
 
 export type InstitusjonOppholdDTO = {
@@ -36,10 +36,6 @@ export type InstitusjonOppholdDTO = {
   reduksjonsType: string | NIL;
 };
 
-export type SamordningOgInstitusjonDTO = {
-  andreYtelser: AndreYtelseDTO[];
-  institusjonOpphold: InstitusjonOppholdDTO[];
-};
 
 export type ArenaVedtakMedFaktaDTO = {
   vedtakId: number;
@@ -61,7 +57,8 @@ export type ArenaVedtakMedFaktaDTO = {
   relatertVedtak: number | NIL;
   fakta: ArenaVedtakfaktaDTO[];
   vilkårsvurderinger: VilkårsvurderingDTO[];
-  samordningOgInstitusjon: SamordningOgInstitusjonDTO | NIL;
+  andreYtelser: AndreYtelseDTO[];
+  institusjonOpphold: InstitusjonOppholdDTO | NIL;
 };
 
 export type SakPersonDTO = {

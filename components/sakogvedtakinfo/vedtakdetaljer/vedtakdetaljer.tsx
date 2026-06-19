@@ -103,22 +103,16 @@ export function Vedtakdetaljer({ vedtak, relatertVedtak, samordningRelatertVedta
         <>
           <SatsSeksjon faktaMap={faktaMap} relatertFaktaMap={visEndringer ? relatertFaktaMap : null} />
           <BeregningSeksjon faktaMap={faktaMap} relatertFaktaMap={visEndringer ? relatertFaktaMap : null} />
-          {vedtak.samordningOgInstitusjon != null && (
-            <>
-              <ForholdTilAndreYtelserSeksjon
-                andreYtelser={vedtak.samordningOgInstitusjon.andreYtelser}
-                relatertAndreYtelser={
-                  visEndringer ? (samordningRelatertVedtak?.samordningOgInstitusjon?.andreYtelser ?? null) : null
-                }
-              />
-              <InstitusjonSeksjon
-                institusjonOpphold={vedtak.samordningOgInstitusjon.institusjonOpphold}
-                relatertInstitusjonOpphold={
-                  visEndringer ? (samordningRelatertVedtak?.samordningOgInstitusjon?.institusjonOpphold ?? null) : null
-                }
-              />
-            </>
-          )}
+          <ForholdTilAndreYtelserSeksjon
+            andreYtelser={vedtak.andreYtelser}
+            relatertAndreYtelser={visEndringer ? (samordningRelatertVedtak?.andreYtelser ?? null) : null}
+          />
+          <InstitusjonSeksjon
+            institusjonOpphold={vedtak.institusjonOpphold ?? null}
+            relatertInstitusjonOpphold={
+              visEndringer ? (samordningRelatertVedtak?.institusjonOpphold ?? null) : null
+            }
+          />
         </>
       )}
       <Vilkar vedtak={vedtak} />
