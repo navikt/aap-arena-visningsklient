@@ -36,7 +36,6 @@ export type InstitusjonOppholdDTO = {
   reduksjonsType: string | NIL;
 };
 
-
 export type ArenaVedtakMedFaktaDTO = {
   vedtakId: number;
   lopenrvedtak: number;

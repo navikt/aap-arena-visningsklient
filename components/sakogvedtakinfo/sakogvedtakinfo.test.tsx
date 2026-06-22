@@ -6,30 +6,31 @@ import { ArenaVedtakMedFaktaDTO, SakDTO } from 'lib/services/arenaoppslag/arenao
 
 const lagFakta = (kode: string, verdi: string) => ({ kode, navn: kode, verdi, registrertDato: '2024-01-01' });
 
-const lagVedtak = (overrides: Partial<ArenaVedtakMedFaktaDTO> = {}): ArenaVedtakMedFaktaDTO => ({
-  vedtakId: 1,
-  lopenrvedtak: 1,
-  statusKode: 'IVERK',
-  statusNavn: 'Iverksatt',
-  vedtaktypeKode: 'O',
-  vedtaktypeNavn: 'Ny rettighet',
-  aktivitetsfaseKode: 'UA',
-  aktivitetsfaseNavn: 'Under arbeidsavklaring',
-  fraOgMed: '2024-01-01',
-  tilDato: null,
-  rettighetkode: 'AAP',
-  rettighetnavn: 'Arbeidsavklaringspenger',
-  begrunnelse: null,
-  saksbehandler: null,
-  beslutter: null,
-  utfallkode: null,
-  relatertVedtak: null,
-  fakta: [],
-  vilkårsvurderinger: [],
-  andreYtelser: [],
-  institusjonOpphold: null,
-  ...overrides,
-}) as ArenaVedtakMedFaktaDTO;
+const lagVedtak = (overrides: Partial<ArenaVedtakMedFaktaDTO> = {}): ArenaVedtakMedFaktaDTO =>
+  ({
+    vedtakId: 1,
+    lopenrvedtak: 1,
+    statusKode: 'IVERK',
+    statusNavn: 'Iverksatt',
+    vedtaktypeKode: 'O',
+    vedtaktypeNavn: 'Ny rettighet',
+    aktivitetsfaseKode: 'UA',
+    aktivitetsfaseNavn: 'Under arbeidsavklaring',
+    fraOgMed: '2024-01-01',
+    tilDato: null,
+    rettighetkode: 'AAP',
+    rettighetnavn: 'Arbeidsavklaringspenger',
+    begrunnelse: null,
+    saksbehandler: null,
+    beslutter: null,
+    utfallkode: null,
+    relatertVedtak: null,
+    fakta: [],
+    vilkårsvurderinger: [],
+    andreYtelser: [],
+    institusjonOpphold: null,
+    ...overrides,
+  }) as ArenaVedtakMedFaktaDTO;
 
 const lagSak = (overrides: Partial<SakDTO> = {}): SakDTO =>
   ({

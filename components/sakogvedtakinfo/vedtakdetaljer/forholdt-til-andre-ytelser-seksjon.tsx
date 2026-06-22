@@ -7,12 +7,15 @@ import { SeksjonHeading } from 'components/sakogvedtakinfo/vedtakdetaljer/seksjo
 import { formaterFaktaNok, storForbokstavOgMellomromForUnderstrek } from 'lib/utils/string';
 
 const YTELSE_TYPE_TEKST: Record<string, string> = {
-  UFORETRYGD: 'Uføretrygd',
-  ALDERSPENSJON: 'Alderspensjon',
-  AFP: 'AFP',
-  SYKEPENGER: 'Sykepenger',
-  FORELDREPENGER: 'Foreldrepenger',
+  FORELDREPENGER_ADOPSJON: 'Foreldrepenger adopsjon',
+  BARNEPENSJON: 'Barnepensjon',
   OMSORGSPENGER: 'Omsorgspenger',
+  FORELDREPENGER_FODSEL: 'Foreldrepenger fødsel',
+  LONN_FRA_ARBEIDSGIVER: 'Lønn fra arbeidsgiver',
+  OPPLARINGSPENGER: 'Opplæringspenger',
+  PLEIEPENGER: 'Pleiepenger',
+  SVANGERSKAPSPENGER: 'Svangerskapspenger',
+  UFORETRYGD: 'Uføretrygd',
 };
 
 const BELOP_PERIODE_TEKST: Record<string, string> = {
@@ -32,23 +35,18 @@ function belopPeriodeTekst(kode: string | null | undefined): string {
 
 type Props = {
   andreYtelser: AndreYtelseDTO[];
-  relatertAndreYtelser: AndreYtelseDTO[] | null;
+  relatertAndreYtelserMap: Map<string, AndreYtelseDTO> | null;
 };
 
 export function ForholdTilAndreYtelserSeksjon({
   andreYtelser,
-  relatertAndreYtelser,
+  relatertAndreYtelserMap,
 }: Props): React.ReactElement | null {
   if (andreYtelser.length === 0) return null;
 
-  const relatertMap = relatertAndreYtelser != null ? new Map(relatertAndreYtelser.map((y) => [y.type, y])) : null;
-
   function erEndret(ytelse: AndreYtelseDTO, felt: keyof AndreYtelseDTO): boolean {
-    if (relatertMap == null) return false;
-    const relatert = relatertMap.get(ytelse.type);
-    // Rad finnes ikke i relatert vedtak → alt er nytt, marker som endret
-    if (relatert == null) return true;
-    return ytelse[felt] !== relatert[felt];
+    if (relatertAndreYtelserMap == null) return false;
+    return ytelse[felt] !== relatertAndreYtelserMap.get(ytelse.type)?.[felt];
   }
 
   return (
@@ -68,11 +66,13 @@ export function ForholdTilAndreYtelserSeksjon({
               value={ytelse.grad != null ? `${ytelse.grad}%` : '—'}
               isChanged={erEndret(ytelse, 'grad')}
             />
-            <FieldValue
-              label="Beløp"
-              value={ytelse.belop != null ? formaterFaktaNok(ytelse.belop) : '—'}
-              isChanged={erEndret(ytelse, 'belop')}
-            />
+            {!(ytelse.grad != null && ytelse.belop != null && Number(ytelse.belop) === 0) && (
+              <FieldValue
+                label="Beløp"
+                value={ytelse.belop != null ? formaterFaktaNok(ytelse.belop) : '—'}
+                isChanged={erEndret(ytelse, 'belop')}
+              />
+            )}
           </HStack>
         ))}
       </VStack>

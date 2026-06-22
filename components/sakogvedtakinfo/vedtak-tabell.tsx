@@ -60,21 +60,11 @@ export function VedtakTabell({ vedtak }: Props): React.ReactElement {
                 ? (sortedVedtak.find((v) => v.vedtakId === vedtak.relatertVedtak) ?? null)
                 : null;
 
-            // Dersom vedtaket ikke har eksplisitt relatert vedtak, bruk det forrige i
-            // lopenr-rekken som sammenligningspunkt for samordning-seksjoner.
-            const samordningRelatertVedtak =
-              relatertVedtak ?? sortedVedtak.find((v) => v.lopenrvedtak < vedtak.lopenrvedtak) ?? null;
             return (
               <Table.ExpandableRow
                 key={vedtakId}
                 togglePlacement="right"
-                content={
-                  <Vedtakdetaljer
-                    vedtak={vedtak}
-                    relatertVedtak={relatertVedtak}
-                    samordningRelatertVedtak={samordningRelatertVedtak}
-                  />
-                }
+                content={<Vedtakdetaljer vedtak={vedtak} relatertVedtak={relatertVedtak} />}
               >
                 <Table.DataCell>{lopenrvedtak}</Table.DataCell>
                 <Table.DataCell scope="row">{rettighetnavn}</Table.DataCell>

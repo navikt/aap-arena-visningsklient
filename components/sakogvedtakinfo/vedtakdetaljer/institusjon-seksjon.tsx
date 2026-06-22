@@ -36,7 +36,9 @@ function formaterPeriode(fra: string | null | undefined, til: string | null | un
 
 type Props = {
   institusjonOpphold: InstitusjonOppholdDTO | null;
-  relatertInstitusjonOpphold: InstitusjonOppholdDTO | null;
+  // undefined = ingen sammenlikning aktiv (ikke relatert vedtak, eller "vis endringer" er av)
+  // null = relatert vedtak finnes, men hadde ingen institusjon → alle felt skal markeres
+  relatertInstitusjonOpphold: InstitusjonOppholdDTO | null | undefined;
 };
 
 export function InstitusjonSeksjon({
@@ -48,7 +50,8 @@ export function InstitusjonSeksjon({
   const opphold = institusjonOpphold;
 
   function erEndret(felt: keyof InstitusjonOppholdDTO): boolean {
-    if (relatertInstitusjonOpphold == null) return false;
+    if (relatertInstitusjonOpphold === undefined) return false;
+    if (relatertInstitusjonOpphold === null) return true;
     return opphold[felt] !== relatertInstitusjonOpphold[felt];
   }
 

@@ -14,18 +14,27 @@ import { InstitusjonSeksjon } from 'components/sakogvedtakinfo/vedtakdetaljer/in
 type Props = {
   vedtak: ArenaVedtakMedFaktaDTO;
   relatertVedtak: ArenaVedtakMedFaktaDTO | null;
-  samordningRelatertVedtak: ArenaVedtakMedFaktaDTO | null;
 };
 
-export function Vedtakdetaljer({ vedtak, relatertVedtak, samordningRelatertVedtak }: Props): React.ReactElement {
+export function Vedtakdetaljer({ vedtak, relatertVedtak }: Props): React.ReactElement {
   const faktaMap = useMemo(() => new Map(vedtak.fakta.map((f) => [f.kode, f])), [vedtak.vedtakId]);
 
-  const relatertFaktaMap = useMemo(
-    () => (relatertVedtak != null ? new Map(relatertVedtak.fakta.map((f) => [f.kode, f])) : null),
-    [relatertVedtak]
-  );
+  // Bygg alle oppslag for relatert vedtak én gang. Gating på visEndringer skjer i de avledede verdiene under.
+  const relatert = useMemo(() => {
+    if (relatertVedtak == null) return null;
+    return {
+      faktaMap: new Map(relatertVedtak.fakta.map((f) => [f.kode, f])),
+      andreYtelserMap: new Map(relatertVedtak.andreYtelser.map((y) => [y.type, y])),
+      institusjonOpphold: relatertVedtak.institusjonOpphold ?? null,
+    };
+  }, [relatertVedtak]);
 
   const [visEndringer, setVisEndringer] = useState(true);
+
+  const relatertFaktaMap = visEndringer ? (relatert?.faktaMap ?? null) : null;
+  const relatertAndreYtelserMap = visEndringer ? (relatert?.andreYtelserMap ?? null) : null;
+  // undefined = ingen sammenlikning aktiv. null = relatert vedtak hadde ingen institusjon (marker alle felt).
+  const relatertInstitusjonOpphold = visEndringer ? relatert?.institusjonOpphold : undefined;
 
   function erEndret(verdi: string | null | undefined, relatertVerdi: string | null | undefined): boolean {
     if (relatertVedtak == null || !visEndringer) return false;
@@ -33,7 +42,7 @@ export function Vedtakdetaljer({ vedtak, relatertVedtak, samordningRelatertVedta
   }
 
   function erFaktaEndret(kode: string): boolean {
-    if (relatertFaktaMap == null || !visEndringer) return false;
+    if (relatertFaktaMap == null) return false;
     return faktaMap.get(kode)?.verdi !== relatertFaktaMap.get(kode)?.verdi;
   }
 
@@ -101,17 +110,15 @@ export function Vedtakdetaljer({ vedtak, relatertVedtak, samordningRelatertVedta
       </HStack>
       {vedtak.rettighetkode === 'AAP' && (
         <>
-          <SatsSeksjon faktaMap={faktaMap} relatertFaktaMap={visEndringer ? relatertFaktaMap : null} />
-          <BeregningSeksjon faktaMap={faktaMap} relatertFaktaMap={visEndringer ? relatertFaktaMap : null} />
+          <SatsSeksjon faktaMap={faktaMap} relatertFaktaMap={relatertFaktaMap} />
+          <BeregningSeksjon faktaMap={faktaMap} relatertFaktaMap={relatertFaktaMap} />
           <ForholdTilAndreYtelserSeksjon
             andreYtelser={vedtak.andreYtelser}
-            relatertAndreYtelser={visEndringer ? (samordningRelatertVedtak?.andreYtelser ?? null) : null}
+            relatertAndreYtelserMap={relatertAndreYtelserMap}
           />
           <InstitusjonSeksjon
             institusjonOpphold={vedtak.institusjonOpphold ?? null}
-            relatertInstitusjonOpphold={
-              visEndringer ? (samordningRelatertVedtak?.institusjonOpphold ?? null) : null
-            }
+            relatertInstitusjonOpphold={relatertInstitusjonOpphold}
           />
         </>
       )}
