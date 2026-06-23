@@ -29,8 +29,8 @@ function reduksjonTekst(reduksjonsType: string | null | undefined): string {
 function formaterPeriode(fra: string | null | undefined, til: string | null | undefined): string {
   const fraDate = parseISOorNull(fra);
   const tilDate = parseISOorNull(til);
-  const fraFormatert = fraDate != null ? norsktDatoformat(fraDate) : 'dd.mm.åååå';
-  const tilFormatert = tilDate != null ? norsktDatoformat(tilDate) : 'dd.mm.åååå';
+  const fraFormatert = fraDate != null ? norsktDatoformat(fraDate) : '—';
+  const tilFormatert = tilDate != null ? norsktDatoformat(tilDate) : '—';
   return `${fraFormatert} – ${tilFormatert}`;
 }
 

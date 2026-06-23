@@ -28,6 +28,10 @@ function ytelseTypeTekst(type: string): string {
   return YTELSE_TYPE_TEKST[type] ?? storForbokstavOgMellomromForUnderstrek(type);
 }
 
+function skalViseBelopFelt(ytelse: AndreYtelseDTO): boolean {
+  return !(ytelse.grad != null && ytelse.belop != null && Number(ytelse.belop) === 0);
+}
+
 function belopPeriodeTekst(kode: string | null | undefined): string {
   if (kode == null) return '—';
   return BELOP_PERIODE_TEKST[kode] ?? kode;
@@ -53,8 +57,8 @@ export function ForholdTilAndreYtelserSeksjon({
     <div>
       <SeksjonHeading tittel="Forhold til andre ytelser" />
       <VStack gap="space-16">
-        {andreYtelser.map((ytelse, index) => (
-          <HStack key={index} gap="space-32" wrap>
+        {andreYtelser.map((ytelse) => (
+          <HStack key={ytelse.type} gap="space-32" wrap>
             <FieldValue label="Type" value={ytelseTypeTekst(ytelse.type)} isChanged={erEndret(ytelse, 'type')} />
             <FieldValue
               label="Beløpsperiode"
@@ -66,7 +70,7 @@ export function ForholdTilAndreYtelserSeksjon({
               value={ytelse.grad != null ? `${ytelse.grad}%` : '—'}
               isChanged={erEndret(ytelse, 'grad')}
             />
-            {!(ytelse.grad != null && ytelse.belop != null && Number(ytelse.belop) === 0) && (
+            {skalViseBelopFelt(ytelse) && (
               <FieldValue
                 label="Beløp"
                 value={ytelse.belop != null ? formaterFaktaNok(ytelse.belop) : '—'}
