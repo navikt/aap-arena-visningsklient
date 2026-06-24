@@ -21,6 +21,21 @@ export type VilkårsvurderingDTO = {
   statusnavn: string;
 };
 
+export type AndreYtelseDTO = {
+  type: string;
+  belopPeriode: string | NIL;
+  grad: string | NIL;
+  belop: string | NIL;
+};
+
+export type InstitusjonOppholdDTO = {
+  type: string;
+  fra: string | NIL;
+  til: string | NIL;
+  friKostOgLosji: boolean;
+  reduksjonsType: string | NIL;
+};
+
 export type ArenaVedtakMedFaktaDTO = {
   vedtakId: number;
   lopenrvedtak: number;
@@ -41,6 +56,8 @@ export type ArenaVedtakMedFaktaDTO = {
   relatertVedtak: number | NIL;
   fakta: ArenaVedtakfaktaDTO[];
   vilkårsvurderinger: VilkårsvurderingDTO[];
+  andreYtelser: AndreYtelseDTO[];
+  institusjonOpphold: InstitusjonOppholdDTO | NIL;
 };
 
 export type SakPersonDTO = {

@@ -59,6 +59,7 @@ export function VedtakTabell({ vedtak }: Props): React.ReactElement {
               vedtak.relatertVedtak != null
                 ? (sortedVedtak.find((v) => v.vedtakId === vedtak.relatertVedtak) ?? null)
                 : null;
+
             return (
               <Table.ExpandableRow
                 key={vedtakId}
