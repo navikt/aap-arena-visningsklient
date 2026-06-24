@@ -1,15 +1,16 @@
 # Visningklient for arena og arena-migrering
 
 Dette er en enkel visningsklient for Arena etter arena er skrudd av. Den har litt ulike ting den skal fungere for:
-* Innsyk i historiske data fra arena etter saker er migrert til Kelvin
-* Visning av diverse støtte-funksjonalitet i forbindelse med migrerinngen
+
+- Innsyk i historiske data fra arena etter saker er migrert til Kelvin
+- Visning av diverse støtte-funksjonalitet i forbindelse med migrerinngen
 
 ## Førstegangsoppsett
 
 Dette oppsettet forutsetter at du har følgende programvare installert:
 
 - Node.js
-- Corepack (Kommer med Node.js og håndterer riktig versjon av pnpm for deg, må aktiveres med `corepack enable`)
+- pnpm (`npm install -g pnpm@11.0.9`)
 - Docker med colima og docker-compose
 
 ### Sett opp GitHub token
@@ -47,7 +48,6 @@ For å kjøre oxfmt automatisk ved lagring, sett opp en File Watcher:
 
 oxfmt vil nå formatere filen automatisk hver gang du lagrer.
 
-
 ## Kjøre opp lokalt mot lokal backend
 
 1. Installer avhengigheter og start applikasjonen:
@@ -65,12 +65,14 @@ oxfmt vil nå formatere filen automatisk hver gang du lagrer.
    get-secret
    ```
 2. Start Wonderwall:
+
    ```bash
    colima start
    docker-compose up -d
    ```
 
 3. Hent ned OBO-tokens
+
    ```bash
    ./token-generator.sh
    ```
@@ -82,17 +84,16 @@ oxfmt vil nå formatere filen automatisk hver gang du lagrer.
    ```
    Applikasjonen skal nå være tilgjengelig i nettleseren på http://localhost:4000
 
-
 ## Legge til nye integrasjoner
 
 Om man legger til nye integrasjoner må man husle å oppdatere følgende
-* Legge til accessPolicy i `nais.yaml`
-* Legge til miljøviabler for baseUrl og Scope i `dev.yaml` og `prod.yaml`
-* Legg til URL for å hente ut mock-obo-token lokalt i `token-generator.config.json`
-* Legg til scope og base-url for tjenesten i dev i `.env.dev-gcp-extra`
-* Legg til scope, base-url og endepunkt for å hente ut mock-token lokalt i `.env.local-backend`
-* Lage en mock-implementasjon av service, som returnerer mock-data om `mocksEnabled()` er true
 
+- Legge til accessPolicy i `nais.yaml`
+- Legge til miljøviabler for baseUrl og Scope i `dev.yaml` og `prod.yaml`
+- Legg til URL for å hente ut mock-obo-token lokalt i `token-generator.config.json`
+- Legg til scope og base-url for tjenesten i dev i `.env.dev-gcp-extra`
+- Legg til scope, base-url og endepunkt for å hente ut mock-token lokalt i `.env.local-backend`
+- Lage en mock-implementasjon av service, som returnerer mock-data om `mocksEnabled()` er true
 
 ## Rydd opp før ny oppstart
 
@@ -150,6 +151,4 @@ Spørsmål knyttet til koden eller prosjektet kan stilles som issues her på Git
 
 Interne henvendelser kan sendes via Slack i kanalen #team-aap-åpen
 
-
 PEtter tester PR men det er noe som er rart
-

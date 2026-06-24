@@ -1,9 +1,9 @@
-FROM node:24-alpine AS builder
+FROM node:26-alpine AS builder
 WORKDIR /app
 
 COPY package.json .npmrc pnpm-lock.yaml pnpm-workspace.yaml ./
 
-RUN corepack enable
+RUN npm install -g pnpm@11.0.9
 
 RUN --mount=type=secret,id=NPM_AUTH_TOKEN \
     NPM_AUTH_TOKEN=$(cat /run/secrets/NPM_AUTH_TOKEN) pnpm install --frozen-lockfile
@@ -14,7 +14,7 @@ RUN pnpm run lint
 RUN pnpm run test
 RUN pnpm run build
 
-FROM europe-north1-docker.pkg.dev/cgr-nav/pull-through/nav.no/node:25-slim AS runtime
+FROM europe-north1-docker.pkg.dev/cgr-nav/pull-through/nav.no/node:26-slim AS runtime
 
 WORKDIR /app
 
