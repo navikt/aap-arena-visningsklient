@@ -1,7 +1,7 @@
 // @vitest-environment happy-dom
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import { ForholdTilAndreYtelserSeksjon } from 'components/sakogvedtakinfo/vedtakdetaljer/forholdt-til-andre-ytelser-seksjon';
+import { ForholdTilAndreYtelserSeksjon } from 'components/sakogvedtakinfo/vedtakdetaljer/forhold-til-andre-ytelser-seksjon';
 import { AndreYtelseDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 
 const lagYtelse = (overstyr: Partial<AndreYtelseDTO> = {}): AndreYtelseDTO => ({

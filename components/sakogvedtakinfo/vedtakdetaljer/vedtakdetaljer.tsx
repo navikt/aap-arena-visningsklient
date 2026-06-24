@@ -8,7 +8,7 @@ import { formaterFaktaDato } from 'lib/utils/date';
 import { Vilkar } from 'components/sakogvedtakinfo/vedtakdetaljer/vilkar';
 import { SatsSeksjon } from 'components/sakogvedtakinfo/vedtakdetaljer/sats-seksjon';
 import { BeregningSeksjon } from 'components/sakogvedtakinfo/vedtakdetaljer/beregning-seksjon';
-import { ForholdTilAndreYtelserSeksjon } from 'components/sakogvedtakinfo/vedtakdetaljer/forholdt-til-andre-ytelser-seksjon';
+import { ForholdTilAndreYtelserSeksjon } from 'components/sakogvedtakinfo/vedtakdetaljer/forhold-til-andre-ytelser-seksjon';
 import { InstitusjonSeksjon } from 'components/sakogvedtakinfo/vedtakdetaljer/institusjon-seksjon';
 
 type Props = {
