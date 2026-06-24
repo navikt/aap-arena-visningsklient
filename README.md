@@ -9,7 +9,7 @@ Dette er en enkel visningsklient for Arena etter arena er skrudd av. Den har lit
 
 Dette oppsettet forutsetter at du har følgende programvare installert:
 
-- Node.js
+- Node.js 26 (NVM anbefales: `nvm install` / `nvm use` leser `.nvmrc` automatisk)
 - pnpm (`npm install -g pnpm@11.0.9`)
 - Docker med colima og docker-compose
 
