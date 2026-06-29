@@ -67,6 +67,51 @@ export type KvoteHistorikkDTO = {
   begrunnelse: string | NIL;
 };
 
+export type TilkjentYtelseDagDTO = {
+  dato: string | NIL;
+  timerArbeidet: number | NIL;
+  annetFravaer: boolean;
+};
+
+export type TilkjentYtelseUkeDTO = {
+  ukenr: number;
+  dager: TilkjentYtelseDagDTO[];
+};
+
+export type TilkjentYtelseMeldekortDTO = {
+  meldekortId: number;
+  meldedato: string | NIL;
+  meldeform: string | NIL;
+  fortsattRegistrertArbeidssoker: boolean;
+  kommentar: string | NIL;
+  uker: TilkjentYtelseUkeDTO[];
+};
+
+export type TilkjentYtelseReduksjonDTO = {
+  sykedager: number;
+  levertForSent: boolean;
+  fravaer: number;
+};
+
+export type TilkjentYtelseRadDTO = {
+  fraOgMedDato: string | NIL;
+  tilOgMedDato: string | NIL;
+  uke: string | NIL;
+  kilde: string;
+  dagsatsMedBarnetillegg: number | NIL;
+  beregnetBrutto: number | NIL;
+  timerArbeidet: number | NIL;
+  reduksjon: TilkjentYtelseReduksjonDTO | NIL;
+  meldekort: TilkjentYtelseMeldekortDTO | NIL;
+};
+
+export type TilkjentYtelseDTO = {
+  sakId: number;
+  gjenstaaendeOrdinaerDager: number;
+  gjenstaaendeUnntakDager: number;
+  rader: TilkjentYtelseRadDTO[];
+};
+
 export type SakDTO = {
   sakId: string;
   opprettetAar: number;
@@ -81,4 +126,5 @@ export type SakDTO = {
   kvoteHistorikk: KvoteHistorikkDTO[];
   maksdato: string | NIL;
   sisteUtbetalingDato: string | NIL;
+  tilkjentYtelse: TilkjentYtelseDTO | NIL;
 };

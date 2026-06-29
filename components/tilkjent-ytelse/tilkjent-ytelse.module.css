@@ -1,0 +1,17 @@
+.detaljer {
+  padding-block: var(--ax-space-8) var(--ax-space-16);
+}
+
+.ukeTabell {
+  width: auto;
+}
+
+.checkmarkIcon {
+  color: var(--ax-text-success-decoration);
+  font-size: var(--ax-font-size-heading-small);
+}
+
+.deaktivert {
+  opacity: var(--ax-opacity-disabled);
+  pointer-events: none;
+}

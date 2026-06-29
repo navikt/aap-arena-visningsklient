@@ -6,6 +6,7 @@ import { PersonHeader } from 'components/header/PersonHeader';
 import { InfoCard, Tabs } from '@navikt/ds-react';
 import { Sakogvedtakinfo } from 'components/sakogvedtakinfo/sakogvedtakinfo';
 import { Kvote } from 'components/kvote/kvote';
+import { TilkjentYtelse } from 'components/tilkjent-ytelse/tilkjent-ytelse';
 
 type Props = {
   sak: SakDTO;
@@ -30,7 +31,9 @@ export function SakPageClient({ sak }: Props): React.ReactElement {
               </div>
             </Tabs.Panel>
             <Tabs.Panel value="tilkjent-ytelse">
-              <IkkeImplementertEnda />
+              <div className={styles.tabcontent}>
+                <TilkjentYtelse sak={sak} />
+              </div>
             </Tabs.Panel>
             <Tabs.Panel value="kvote">
               <Kvote sak={sak} />
