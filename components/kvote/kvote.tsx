@@ -42,9 +42,7 @@ type Props = {
 };
 
 function harUnntakAAP(sak: SakDTO): boolean {
-  return sak.vedtak.some((vedtak) =>
-    vedtak.fakta.some((fakta) => fakta.kode === 'UNNTAKAAP' && fakta.verdi === 'J')
-  );
+  return sak.vedtak.some((vedtak) => vedtak.fakta.some((fakta) => fakta.kode === 'UNNTAKAAP' && fakta.verdi === 'J'));
 }
 
 export function Kvote({ sak }: Props): React.ReactElement {
