@@ -5,7 +5,7 @@ import { InstitusjonSeksjon } from 'components/sakogvedtakinfo/vedtakdetaljer/in
 import { InstitusjonOppholdDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 
 const lagOpphold = (overstyr: Partial<InstitusjonOppholdDTO> = {}): InstitusjonOppholdDTO => ({
-  type: 'FENGSEL',
+  type: 'HELSEINSTITUSJON',
   fra: '2024-01-01',
   til: '2024-06-30',
   friKostOgLosji: true,
@@ -22,7 +22,7 @@ describe('InstitusjonSeksjon endringsmarkering', () => {
   it('markerer ingenting når det ikke finnes et relatert opphold', () => {
     render(<InstitusjonSeksjon institusjonOpphold={lagOpphold()} relatertInstitusjonOpphold={undefined} />);
 
-    expect(erMarkert('Fengsel')).toBe(false);
+    expect(erMarkert('Helseinstitusjon')).toBe(false);
     expect(erMarkert('Ja')).toBe(false);
     expect(erMarkert('50 %')).toBe(false);
   });
@@ -30,7 +30,7 @@ describe('InstitusjonSeksjon endringsmarkering', () => {
   it('markerer alle felt når relatert vedtak ikke hadde institusjon', () => {
     render(<InstitusjonSeksjon institusjonOpphold={lagOpphold()} relatertInstitusjonOpphold={null} />);
 
-    expect(erMarkert('Fengsel')).toBe(true);
+    expect(erMarkert('Helseinstitusjon')).toBe(true);
     expect(erMarkert('Ja')).toBe(true);
     expect(erMarkert('50 %')).toBe(true);
   });
@@ -38,7 +38,7 @@ describe('InstitusjonSeksjon endringsmarkering', () => {
   it('markerer ingenting når opphold er uendret', () => {
     render(<InstitusjonSeksjon institusjonOpphold={lagOpphold()} relatertInstitusjonOpphold={lagOpphold()} />);
 
-    expect(erMarkert('Fengsel')).toBe(false);
+    expect(erMarkert('Helseinstitusjon')).toBe(false);
     expect(erMarkert('Ja')).toBe(false);
     expect(erMarkert('50 %')).toBe(false);
   });
@@ -52,7 +52,19 @@ describe('InstitusjonSeksjon endringsmarkering', () => {
     );
 
     expect(erMarkert('50 %')).toBe(true);
-    expect(erMarkert('Fengsel')).toBe(false);
+    expect(erMarkert('Helseinstitusjon')).toBe(false);
     expect(erMarkert('Ja')).toBe(false);
+  });
+});
+
+describe('InstitusjonSeksjon fengsel', () => {
+  it('skjuler fri kost og losji og reduksjon for fengsel', () => {
+    render(
+      <InstitusjonSeksjon institusjonOpphold={lagOpphold({ type: 'FENGSEL' })} relatertInstitusjonOpphold={undefined} />
+    );
+
+    expect(screen.getByText('Fengsel')).toBeTruthy();
+    expect(screen.queryByText('Fri kost og losji')).toBeNull();
+    expect(screen.queryByText('Reduksjon')).toBeNull();
   });
 });
