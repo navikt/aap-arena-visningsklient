@@ -48,6 +48,7 @@ export function InstitusjonSeksjon({
   if (institusjonOpphold == null) return null;
 
   const opphold = institusjonOpphold;
+  const erFengsel = opphold.type === 'FENGSEL';
 
   function erEndret(felt: keyof InstitusjonOppholdDTO): boolean {
     if (relatertInstitusjonOpphold === undefined) return false;
@@ -65,16 +66,20 @@ export function InstitusjonSeksjon({
           value={formaterPeriode(opphold.fra, opphold.til)}
           isChanged={erEndret('fra') || erEndret('til')}
         />
-        <FieldValue
-          label="Fri kost og losji"
-          value={opphold.friKostOgLosji ? 'Ja' : 'Nei'}
-          isChanged={erEndret('friKostOgLosji')}
-        />
-        <FieldValue
-          label="Reduksjon"
-          value={reduksjonTekst(opphold.reduksjonsType)}
-          isChanged={erEndret('reduksjonsType')}
-        />
+        {!erFengsel && (
+          <>
+            <FieldValue
+              label="Fri kost og losji"
+              value={opphold.friKostOgLosji ? 'Ja' : 'Nei'}
+              isChanged={erEndret('friKostOgLosji')}
+            />
+            <FieldValue
+              label="Reduksjon"
+              value={reduksjonTekst(opphold.reduksjonsType)}
+              isChanged={erEndret('reduksjonsType')}
+            />
+          </>
+        )}
       </HStack>
     </div>
   );
