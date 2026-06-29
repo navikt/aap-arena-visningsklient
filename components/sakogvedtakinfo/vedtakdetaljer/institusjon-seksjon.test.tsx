@@ -68,4 +68,3 @@ describe('InstitusjonSeksjon fengsel', () => {
     expect(screen.queryByText('Reduksjon')).toBeNull();
   });
 });
-
