@@ -41,6 +41,12 @@ type Props = {
   sak: SakDTO;
 };
 
+function harUnntakAAP(sak: SakDTO): boolean {
+  return sak.vedtak.some((vedtak) =>
+    vedtak.fakta.some((fakta) => fakta.kode === 'UNNTAKAAP' && fakta.verdi === 'J')
+  );
+}
+
 export function Kvote({ sak }: Props): React.ReactElement {
   const ordinaerEndringer = sak.kvoteHistorikk.filter((h) => h.kvoteTypeKode === 'AAP').map(mapTilKvoteEndring);
 
@@ -50,7 +56,9 @@ export function Kvote({ sak }: Props): React.ReactElement {
     <VStack paddingBlock="space-40" gap="space-24">
       <HGrid gap="space-40" columns={2}>
         <KvoteTabell tittel="Historikk ordinær periode" endringer={ordinaerEndringer} />
-        <KvoteTabell tittel="Historikk unntaksperiode §11-12 andre og tredje ledd" endringer={utvidetEndringer} />
+        {harUnntakAAP(sak) && (
+          <KvoteTabell tittel="Historikk unntaksperiode §11-12 andre og tredje ledd" endringer={utvidetEndringer} />
+        )}
       </HGrid>
     </VStack>
   );
