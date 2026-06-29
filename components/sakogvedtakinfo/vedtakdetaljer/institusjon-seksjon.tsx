@@ -48,7 +48,7 @@ export function InstitusjonSeksjon({
   if (institusjonOpphold == null) return null;
 
   const opphold = institusjonOpphold;
-  const erFengsel = opphold.type === 'FENGSEL';
+  const erHelseinstitusjon = opphold.type === 'HELSEINSTITUSJON';
 
   function erEndret(felt: keyof InstitusjonOppholdDTO): boolean {
     if (relatertInstitusjonOpphold === undefined) return false;
@@ -66,7 +66,7 @@ export function InstitusjonSeksjon({
           value={formaterPeriode(opphold.fra, opphold.til)}
           isChanged={erEndret('fra') || erEndret('til')}
         />
-        {!erFengsel && (
+        {erHelseinstitusjon && (
           <>
             <FieldValue
               label="Fri kost og losji"
