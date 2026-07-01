@@ -11,6 +11,7 @@ import {
   IKKE_FUNNET,
   jaNeiEllerIkkeFunnet,
   kronerEllerIkkeFunnet,
+  prosentEllerIkkeFunnet,
   sorterRaderEtterTilOgMedDesc,
   tekstEllerIkkeFunnet,
 } from 'components/tilkjent-ytelse/tilkjent-ytelse-utils';
@@ -21,6 +22,7 @@ const lagRad = (overrides: Partial<TilkjentYtelseRadDTO> = {}): TilkjentYtelseRa
   uke: '30-31',
   kilde: 'Meldekort',
   dagsatsMedBarnetillegg: 1426,
+  dagsats: 1426,
   beregnetBrutto: 8556,
   timerArbeidet: 0,
   reduksjon: null,
@@ -109,6 +111,23 @@ describe('formaterGjenstaaendeDager', () => {
   it('returnerer "Ikke funnet" for null og undefined', () => {
     expect(formaterGjenstaaendeDager(null)).toBe(IKKE_FUNNET);
     expect(formaterGjenstaaendeDager(undefined)).toBe(IKKE_FUNNET);
+  });
+});
+
+describe('prosentEllerIkkeFunnet', () => {
+  it('formaterer heltall som prosent med norsk lokale', () => {
+    expect(prosentEllerIkkeFunnet(50)).toBe('50\u00a0%');
+    expect(prosentEllerIkkeFunnet(0)).toBe('0\u00a0%');
+    expect(prosentEllerIkkeFunnet(100)).toBe('100\u00a0%');
+  });
+
+  it('formaterer desimaltall med norsk desimaltegn', () => {
+    expect(prosentEllerIkkeFunnet(50.5)).toBe('50,5\u00a0%');
+  });
+
+  it('returnerer "Ikke funnet" for null og undefined', () => {
+    expect(prosentEllerIkkeFunnet(null)).toBe(IKKE_FUNNET);
+    expect(prosentEllerIkkeFunnet(undefined)).toBe(IKKE_FUNNET);
   });
 });
 

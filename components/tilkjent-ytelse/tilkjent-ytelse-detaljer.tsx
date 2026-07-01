@@ -14,6 +14,7 @@ import {
   formaterTimer,
   IKKE_FUNNET,
   jaNeiEllerIkkeFunnet,
+  prosentEllerIkkeFunnet,
   tekstEllerIkkeFunnet,
 } from './tilkjent-ytelse-utils';
 
@@ -34,11 +35,11 @@ export function TilkjentYtelseDetaljer({
     <VStack gap="space-24" className={styles.detaljer}>
       <HStack gap="space-32" wrap>
         <FieldValue label="Arbeid" value={formaterTimer(timerArbeidet)} />
-        <FieldValue label="Sykedager" value={reduksjon != null ? formaterTimer(reduksjon.sykedager) : IKKE_FUNNET} />
-        <FieldValue label="Fravær" value={reduksjon != null ? formaterTimer(reduksjon.fravaer) : IKKE_FUNNET} />
-        <FieldValue label="Samordning" value={IKKE_FUNNET} />
-        <FieldValue label="Institusjon" value={IKKE_FUNNET} />
-        <FieldValue label="Trekk for sent innsendt meldekort" value={jaNeiEllerIkkeFunnet(reduksjon?.levertForSent)} />
+        <FieldValue label="Sykedager" value={reduksjon != null ? formaterGjenstaaendeDager(reduksjon.sykedager) : "0 %"} />
+        <FieldValue label="Fravær" value={reduksjon != null ? formaterTimer(reduksjon.levertForSentDager) : IKKE_FUNNET} />
+        <FieldValue label="Samordning" value={prosentEllerIkkeFunnet( reduksjon?.samordningsProsent)} />
+        <FieldValue label="Institusjon" value={prosentEllerIkkeFunnet( reduksjon?.institusjonsProsent)} />
+        <FieldValue label="Trekk for sent innsendt meldekort" value={formaterGjenstaaendeDager(reduksjon?.levertForSentDager)} />
         <FieldValue label="Gjenstående ordinær periode" value={formaterGjenstaaendeDager(gjenstaaendeOrdinaerDager)} />
         <FieldValue
           label="Gjenstående unntaksperiode §11-12 andre og tredje ledd"
@@ -50,7 +51,7 @@ export function TilkjentYtelseDetaljer({
         <VStack gap="space-16">
           <HStack gap="space-12" align="center" wrap>
             <Heading size="small">Meldekort</Heading>
-            {reduksjon?.levertForSent && (
+            {reduksjon?.levertForSentDager && (
               <InlineMessage status="warning" size="small">
                 Det er trukket dager fordi forrige meldekort ble levert for sent
               </InlineMessage>

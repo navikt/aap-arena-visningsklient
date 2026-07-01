@@ -8,6 +8,7 @@ import {
   formaterUke,
   IKKE_FUNNET,
   kronerEllerIkkeFunnet,
+  prosentEllerIkkeFunnet,
   tekstEllerIkkeFunnet,
 } from './tilkjent-ytelse-utils';
 
@@ -59,9 +60,9 @@ export function TilkjentYtelseTabell({
             <Table.DataCell>{formaterUke(rad)}</Table.DataCell>
             <Table.DataCell>{tekstEllerIkkeFunnet(rad.kilde)}</Table.DataCell>
             <Table.DataCell>{kronerEllerIkkeFunnet(rad.dagsatsMedBarnetillegg)}</Table.DataCell>
+            <Table.DataCell>{prosentEllerIkkeFunnet(rad.reduksjon?.totalReduksjonProsent)}</Table.DataCell>
             <Table.DataCell>{IKKE_FUNNET}</Table.DataCell>
-            <Table.DataCell>{IKKE_FUNNET}</Table.DataCell>
-            <Table.DataCell>{IKKE_FUNNET}</Table.DataCell>
+            <Table.DataCell>{kronerEllerIkkeFunnet(rad.dagsats)}</Table.DataCell>
             <Table.DataCell>{kronerEllerIkkeFunnet(rad.beregnetBrutto)}</Table.DataCell>
           </Table.ExpandableRow>
         ))}

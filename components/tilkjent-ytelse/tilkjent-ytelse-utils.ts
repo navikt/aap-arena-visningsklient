@@ -38,6 +38,10 @@ export function formaterTimer(timer: number | null | undefined): string {
   return timer != null ? timer.toLocaleString('nb-NO') : IKKE_FUNNET;
 }
 
+export function prosentEllerIkkeFunnet(verdi: number | null | undefined): string {
+  return verdi != null ? `${verdi.toLocaleString('nb-NO')}\u00a0%` : "0 %";
+}
+
 export function formaterGjenstaaendeDager(antallEnheter: number | null | undefined): string {
   if (antallEnheter == null) return IKKE_FUNNET;
   const dager = antallEnheter / DAGER_PER_ENHET;

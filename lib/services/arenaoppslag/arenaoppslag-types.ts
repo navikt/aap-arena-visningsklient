@@ -88,9 +88,13 @@ export type TilkjentYtelseMeldekortDTO = {
 };
 
 export type TilkjentYtelseReduksjonDTO = {
-  sykedager: number;
-  levertForSent: boolean;
-  fravaer: number;
+  levertForSentDager: number | NIL,
+  timerArbeidetProsent: number | NIL,
+  samordningsProsent: number | NIL,
+  totalReduksjonProsent: number | NIL,
+  fravar:  number | NIL,
+  sykedager:  number | NIL,
+  institusjonsProsent:  number | NIL
 };
 
 export type TilkjentYtelseRadDTO = {
@@ -99,6 +103,7 @@ export type TilkjentYtelseRadDTO = {
   uke: string | NIL;
   kilde: string;
   dagsatsMedBarnetillegg: number | NIL;
+  dagsats: number | NIL;
   beregnetBrutto: number | NIL;
   timerArbeidet: number | NIL;
   reduksjon: TilkjentYtelseReduksjonDTO | NIL;
