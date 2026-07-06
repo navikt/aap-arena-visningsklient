@@ -3,8 +3,10 @@ import { describe, expect, it } from 'vitest';
 import { TilkjentYtelseRadDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { formaterTilNok } from 'lib/utils/string';
 import {
+  beregnAnvistProsent,
   datoEllerIkkeFunnet,
   filtrerRader,
+  formaterAnvistProsent,
   formaterGjenstaaendeDager,
   formaterTimer,
   formaterUke,
@@ -190,3 +192,42 @@ describe('sorterRaderEtterTilOgMedDesc', () => {
     expect(original).toEqual([eldst, nyest, midterst]);
   });
 });
+
+describe('beregnAnvistProsent', () => {
+  it('returnerer 200 ved 0 % reduksjon (full 2-ukersperiode)', () => {
+    expect(beregnAnvistProsent(0)).toBe(200);
+  });
+
+  it('returnerer 100 ved 50 % reduksjon', () => {
+    expect(beregnAnvistProsent(50)).toBe(100);
+  });
+
+  it('returnerer 0 ved 100 % reduksjon', () => {
+    expect(beregnAnvistProsent(100)).toBe(0);
+  });
+
+  it('runder til nærmeste heltall', () => {
+    // 33,33 % reduksjon → (1 - 0.3333) × 200 ≈ 133,33 → avrunder til 133
+    expect(beregnAnvistProsent(33.33)).toBe(133);
+  });
+
+  it('returnerer null for null og undefined', () => {
+    expect(beregnAnvistProsent(null)).toBeNull();
+    expect(beregnAnvistProsent(undefined)).toBeNull();
+  });
+});
+
+describe('formaterAnvistProsent', () => {
+  it('formaterer prosent korrekt for rad med reduksjon', () => {
+    expect(formaterAnvistProsent(lagRad({ reduksjon: { totalReduksjonProsent: 50, timerArbeidetProsent: null, samordningsProsent: null, fravar: null, sykedager: null, institusjonsProsent: null, levertForSentDager: null } }))).toBe('100\u00a0%');
+  });
+
+  it('returnerer tom streng for rad uten reduksjon', () => {
+    expect(formaterAnvistProsent(lagRad({ reduksjon: null }))).toBe('');
+  });
+
+  it('returnerer tom streng når totalReduksjonProsent er null', () => {
+    expect(formaterAnvistProsent(lagRad({ reduksjon: { totalReduksjonProsent: null, timerArbeidetProsent: null, samordningsProsent: null, fravar: null, sykedager: null, institusjonsProsent: null, levertForSentDager: null } }))).toBe('');
+  });
+});
+

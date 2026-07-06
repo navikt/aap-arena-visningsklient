@@ -39,7 +39,20 @@ export function formaterTimer(timer: number | null | undefined): string {
 }
 
 export function prosentEllerIkkeFunnet(verdi: number | null | undefined): string {
-  return verdi != null ? `${verdi.toLocaleString('nb-NO')}\u00a0%` : "0 %";
+  return verdi != null ? `${verdi.toLocaleString('nb-NO')}\u00a0%` : IKKE_FUNNET;
+}
+
+// 200 % tilsvarer full 2-ukersperiode (10 dager × 7,5 timer).
+// Anvist prosent er det inverse av totalReduksjonProsent skalert til 200-base.
+export function beregnAnvistProsent(totalReduksjonProsent: number | null | undefined): number | null {
+  if (totalReduksjonProsent == null) return null;
+  return Math.round((1 - totalReduksjonProsent / 100) * 200);
+}
+
+export function formaterAnvistProsent(rad: TilkjentYtelseRadDTO): string {
+  const prosent = beregnAnvistProsent(rad.reduksjon?.totalReduksjonProsent);
+  if (prosent == null) return '';
+  return `${prosent.toLocaleString('nb-NO')}\u00a0%`;
 }
 
 export function formaterGjenstaaendeDager(antallEnheter: number | null | undefined): string {

@@ -5,8 +5,8 @@ import { BodyShort, Table } from '@navikt/ds-react';
 import { TilkjentYtelseDetaljer } from './tilkjent-ytelse-detaljer';
 import {
   datoEllerIkkeFunnet,
+  formaterAnvistProsent,
   formaterUke,
-  IKKE_FUNNET,
   kronerEllerIkkeFunnet,
   prosentEllerIkkeFunnet,
   tekstEllerIkkeFunnet,
@@ -61,7 +61,7 @@ export function TilkjentYtelseTabell({
             <Table.DataCell>{tekstEllerIkkeFunnet(rad.kilde)}</Table.DataCell>
             <Table.DataCell>{kronerEllerIkkeFunnet(rad.dagsatsMedBarnetillegg)}</Table.DataCell>
             <Table.DataCell>{prosentEllerIkkeFunnet(rad.reduksjon?.totalReduksjonProsent)}</Table.DataCell>
-            <Table.DataCell>{IKKE_FUNNET}</Table.DataCell>
+            <Table.DataCell>{formaterAnvistProsent(rad)}</Table.DataCell>
             <Table.DataCell>{kronerEllerIkkeFunnet(rad.dagsats)}</Table.DataCell>
             <Table.DataCell>{kronerEllerIkkeFunnet(rad.beregnetBrutto)}</Table.DataCell>
           </Table.ExpandableRow>
