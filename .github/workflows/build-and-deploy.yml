@@ -23,7 +23,7 @@ jobs:
         with:
           target: runtime
           team: aap
-          build_secrets: NPM_AUTH_TOKEN=${{ secrets.READER_TOKEN }}
+          build_secrets: NODE_AUTH_TOKEN=${{ secrets.READER_TOKEN }}
       - name: Deploy to nais (dev)
         uses: nais/deploy/actions/deploy@v2
         env:

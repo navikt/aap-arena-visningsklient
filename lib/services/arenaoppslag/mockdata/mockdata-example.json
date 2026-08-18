@@ -11003,5 +11003,117 @@
     }
   ],
   "maksdato": "2026-03-03",
-  "sisteUtbetalingDato": "2026-05-21"
+  "sisteUtbetalingDato": "2026-05-21",
+  "oppgaver": [
+    {
+      "beskrivelse": "Planlegg oppfølging - person",
+      "sakskontekst": "30519244698",
+      "visningsnavn": "Planlegg oppfølging - person",
+      "fristDato": "2026-06-05",
+      "arbeidsbenk": "AEA4411",
+      "oppgaveEnhet": "4411",
+      "navEnhet": "0220",
+      "notat": null
+    },
+    {
+      "beskrivelse": "Start vedtaksbehandling",
+      "sakskontekst": "AA:30519244698",
+      "visningsnavn": "Start vedtaksbehandling",
+      "fristDato": "2026-05-21",
+      "arbeidsbenk": "AEA4411",
+      "oppgaveEnhet": "4411",
+      "navEnhet": "0220",
+      "notat": null
+    },
+    {
+      "beskrivelse": "Registrer henvendelse - Person",
+      "sakskontekst": "30519244698",
+      "visningsnavn": "Registrer henvendelse - Person",
+      "fristDato": "2026-05-20",
+      "arbeidsbenk": "AEA4411",
+      "oppgaveEnhet": "4411",
+      "navEnhet": "0220",
+      "notat": null
+    },
+    {
+      "beskrivelse": "Forbered vedtak - Tilbakebetaling - Ny rettighet",
+      "sakskontekst": "FU:30519244698",
+      "visningsnavn": "Forbered vedtak - Feilutbetaling",
+      "fristDato": "2026-05-19",
+      "arbeidsbenk": "AEA4411",
+      "oppgaveEnhet": "4411",
+      "navEnhet": "0220",
+      "notat": null
+    },
+    {
+      "beskrivelse": "Registrer meldeopplysninger",
+      "sakskontekst": "30519244698",
+      "visningsnavn": "Registrer meldeopplysninger",
+      "fristDato": "2026-05-14",
+      "arbeidsbenk": "0220",
+      "oppgaveEnhet": "0220",
+      "navEnhet": "0220",
+      "notat": "27-05-2026: Flyttet fra 4154 i forbindelse med avvik på kontortilhørighet mellom Arena og Modia.\n15-05-2026: Flyttet fra 0220 i forbindelse med aktivering av bruker med gode muligheter.\nVedtak er fattet tilbake i tid. Det er opprettet 9 manuelle meldekort for perioden 01-12-2025 - 05-04-2026. Disse meldekortene må registreres for å bli beregnet. Dersom det er opprettet 1000 eller færre kort, kan bruker sende disse på nav.no. Ved mer enn 1000 kort må meldekortene registreres av saksbehandler."
+    },
+    {
+      "beskrivelse": "Registrer meldeopplysninger",
+      "sakskontekst": "30519244698",
+      "visningsnavn": "Registrer meldeopplysninger",
+      "fristDato": "2026-05-12",
+      "arbeidsbenk": "0220",
+      "oppgaveEnhet": "0220",
+      "navEnhet": "0220",
+      "notat": "27-05-2026: Flyttet fra 4154 i forbindelse med avvik på kontortilhørighet mellom Arena og Modia.\n15-05-2026: Flyttet fra 0220 i forbindelse med aktivering av bruker med gode muligheter.\nVedtak er fattet tilbake i tid. Det er opprettet 25 manuelle meldekort for perioden 28-01-2008 - 11-01-2009. Disse meldekortene må registreres for å bli beregnet. Dersom det er opprettet 1000 eller færre kort, kan bruker sende disse på nav.no. Ved mer enn 1000 kort må meldekortene registreres av saksbehandler."
+    },
+    {
+      "beskrivelse": "Oppfølging - Medhold i klagesak",
+      "sakskontekst": "AA:30519244698",
+      "visningsnavn": "Oppfølging",
+      "fristDato": "2026-05-11",
+      "arbeidsbenk": "4491",
+      "oppgaveEnhet": "4491",
+      "navEnhet": "0220",
+      "notat": "Det er gitt fullt medhold i klage på sak 2026 12647"
+    },
+    {
+      "beskrivelse": "Registrer meldeopplysninger",
+      "sakskontekst": "30519244698",
+      "visningsnavn": "Registrer meldeopplysninger",
+      "fristDato": "2026-05-08",
+      "arbeidsbenk": "0220",
+      "oppgaveEnhet": "0220",
+      "navEnhet": "0220",
+      "notat": "27-05-2026: Flyttet fra 4154 i forbindelse med avvik på kontortilhørighet mellom Arena og Modia.\n15-05-2026: Flyttet fra 0220 i forbindelse med aktivering av bruker med gode muligheter.\nVedtak er fattet tilbake i tid. Det er opprettet 27 manuelle meldekort for perioden 25-11-2024 - 07-12-2025. Disse meldekortene må registreres for å bli beregnet. Dersom det er opprettet 1000 eller færre kort, kan bruker sende disse på nav.no. Ved mer enn 1000 kort må meldekortene registreres av saksbehandler."
+    },
+    {
+      "beskrivelse": "Registrer meldeopplysninger",
+      "sakskontekst": "30519244698",
+      "visningsnavn": "Registrer meldeopplysninger",
+      "fristDato": "2026-05-08",
+      "arbeidsbenk": "0220",
+      "oppgaveEnhet": "0220",
+      "navEnhet": "0220",
+      "notat": "27-05-2026: Flyttet fra 4154 i forbindelse med avvik på kontortilhørighet mellom Arena og Modia.\n15-05-2026: Flyttet fra 0220 i forbindelse med aktivering av bruker med gode muligheter.\nVedtak er fattet tilbake i tid. Det er opprettet 2 manuelle meldekort for perioden 08-12-2025 - 04-01-2026. Disse meldekortene må registreres for å bli beregnet. Dersom det er opprettet 1000 eller færre kort, kan bruker sende disse på nav.no. Ved mer enn 1000 kort må meldekortene registreres av saksbehandler."
+    },
+    {
+      "beskrivelse": "Registrer meldeopplysninger",
+      "sakskontekst": "30519244698",
+      "visningsnavn": "Registrer meldeopplysninger",
+      "fristDato": "2026-05-08",
+      "arbeidsbenk": "0220",
+      "oppgaveEnhet": "0220",
+      "navEnhet": "0220",
+      "notat": "27-05-2026: Flyttet fra 4154 i forbindelse med avvik på kontortilhørighet mellom Arena og Modia.\n15-05-2026: Flyttet fra 0220 i forbindelse med aktivering av bruker med gode muligheter.\nVedtak er fattet tilbake i tid. Det er opprettet 24 manuelle meldekort for perioden 01-01-2024 - 01-12-2024. Disse meldekortene må registreres for å bli beregnet. Dersom det er opprettet 1000 eller færre kort, kan bruker sende disse på nav.no. Ved mer enn 1000 kort må meldekortene registreres av saksbehandler."
+    },
+    {
+      "beskrivelse": "Registrer meldeopplysninger",
+      "sakskontekst": "30519244698",
+      "visningsnavn": "Registrer meldeopplysninger",
+      "fristDato": "2026-04-30",
+      "arbeidsbenk": "0220",
+      "oppgaveEnhet": "0220",
+      "navEnhet": "0220",
+      "notat": "27-05-2026: Flyttet fra 4154 i forbindelse med avvik på kontortilhørighet mellom Arena og Modia.\n15-05-2026: Flyttet fra 0220 i forbindelse med aktivering av bruker med gode muligheter.\nVedtak er fattet tilbake i tid. Det er opprettet 24 manuelle meldekort for perioden 02-01-2023 - 03-12-2023. Disse meldekortene må registreres for å bli beregnet. Dersom det er opprettet 1000 eller færre kort, kan bruker sende disse på nav.no. Ved mer enn 1000 kort må meldekortene registreres av saksbehandler."
+    }
+  ]
 }

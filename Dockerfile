@@ -5,8 +5,8 @@ COPY package.json .npmrc pnpm-lock.yaml pnpm-workspace.yaml ./
 
 RUN npm install -g pnpm@11.0.9
 
-RUN --mount=type=secret,id=NPM_AUTH_TOKEN \
-    NPM_AUTH_TOKEN=$(cat /run/secrets/NPM_AUTH_TOKEN) pnpm install --frozen-lockfile
+RUN --mount=type=secret,id=NODE_AUTH_TOKEN \
+    NODE_AUTH_TOKEN=$(cat /run/secrets/NODE_AUTH_TOKEN) pnpm install --frozen-lockfile
 
 COPY . .
 
