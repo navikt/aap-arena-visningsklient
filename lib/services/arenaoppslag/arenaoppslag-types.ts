@@ -84,6 +84,17 @@ export type KvoteHistorikkDTO = {
   begrunnelse: string | NIL;
 };
 
+export type OppgaveDTO = {
+  beskrivelse: string;
+  sakskontekst: string | NIL;
+  visningsnavn: string;
+  fristDato: string | NIL;
+  arbeidsbenk: string | NIL;
+  oppgaveEnhet: string | NIL;
+  navEnhet: string | NIL;
+  notat: string | NIL;
+};
+
 export type SakDTO = {
   sakId: string;
   opprettetAar: number;
@@ -98,4 +109,5 @@ export type SakDTO = {
   kvoteHistorikk: KvoteHistorikkDTO[];
   maksdato: string | NIL;
   sisteUtbetalingDato: string | NIL;
+  oppgaver: OppgaveDTO[];
 };
