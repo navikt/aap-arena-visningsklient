@@ -6,12 +6,15 @@ import { PersonHeader } from 'components/header/PersonHeader';
 import { InfoCard, Tabs } from '@navikt/ds-react';
 import { Sakogvedtakinfo } from 'components/sakogvedtakinfo/sakogvedtakinfo';
 import { Kvote } from 'components/kvote/kvote';
+import { Oppgaver } from 'components/oppgaver/oppgaver';
 
 type Props = {
   sak: SakDTO;
 };
 
 export function SakPageClient({ sak }: Props): React.ReactElement {
+  const antallOppgaver = sak.oppgaver?.length ?? 0;
+
   return (
     <>
       <PersonHeader sak={sak} />
@@ -23,6 +26,7 @@ export function SakPageClient({ sak }: Props): React.ReactElement {
               <Tabs.Tab value="tilkjent-ytelse" label="Tilkjent ytelse" />
               <Tabs.Tab value="kvote" label="Kvote" />
               <Tabs.Tab value="notater" label="Notater" />
+              <Tabs.Tab value="oppgaver" label={`Oppgaver (${antallOppgaver})`} />
             </Tabs.List>
             <Tabs.Panel value="sak">
               <div className={styles.tabcontent}>
@@ -37,6 +41,9 @@ export function SakPageClient({ sak }: Props): React.ReactElement {
             </Tabs.Panel>
             <Tabs.Panel value="notater">
               <IkkeImplementertEnda />
+            </Tabs.Panel>
+            <Tabs.Panel value="oppgaver">
+              <Oppgaver sak={sak} />
             </Tabs.Panel>
           </Tabs>
         </div>
