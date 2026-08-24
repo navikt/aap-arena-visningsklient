@@ -6,47 +6,54 @@ import { ArenaVedtakMedFaktaDTO, SakDTO } from 'lib/services/arenaoppslag/arenao
 
 const lagFakta = (kode: string, verdi: string) => ({ kode, navn: kode, verdi, registrertDato: '2024-01-01' });
 
-const lagVedtak = (overrides: Partial<ArenaVedtakMedFaktaDTO> = {}): ArenaVedtakMedFaktaDTO => ({
-  vedtakId: 1,
-  lopenrvedtak: 1,
-  statusKode: 'IVERK',
-  statusNavn: 'Iverksatt',
-  vedtaktypeKode: 'O',
-  vedtaktypeNavn: 'Ny rettighet',
-  aktivitetsfaseKode: 'UA',
-  aktivitetsfaseNavn: 'Under arbeidsavklaring',
-  fraOgMed: '2024-01-01',
-  tilDato: null,
-  rettighetkode: 'AAP',
-  rettighetnavn: 'Arbeidsavklaringspenger',
-  begrunnelse: null,
-  saksbehandler: null,
-  beslutter: null,
-  utfallkode: null,
-  relatertVedtak: null,
-  fakta: [],
-  vilkårsvurderinger: [],
-  ...overrides,
-});
+const lagVedtak = (overrides: Partial<ArenaVedtakMedFaktaDTO> = {}): ArenaVedtakMedFaktaDTO =>
+  ({
+    vedtakId: 1,
+    lopenrvedtak: 1,
+    statusKode: 'IVERK',
+    statusNavn: 'Iverksatt',
+    vedtaktypeKode: 'O',
+    vedtaktypeNavn: 'Ny rettighet',
+    aktivitetsfaseKode: 'UA',
+    aktivitetsfaseNavn: 'Under arbeidsavklaring',
+    fraOgMed: '2024-01-01',
+    tilDato: null,
+    rettighetkode: 'AAP',
+    rettighetnavn: 'Arbeidsavklaringspenger',
+    begrunnelse: null,
+    saksbehandler: null,
+    beslutter: null,
+    utfallkode: null,
+    relatertVedtak: null,
+    fakta: [],
+    vilkårsvurderinger: [],
+    andreYtelser: [],
+    institusjonOpphold: null,
+    ...overrides,
+  }) as ArenaVedtakMedFaktaDTO;
 
-const lagSak = (overrides: Partial<SakDTO> = {}): SakDTO => ({
-  sakId: '123',
-  opprettetAar: 2024,
-  lopenr: 1,
-  statuskode: 'AKTIV',
-  statusnavn: 'Aktiv',
-  registrertDato: '2024-01-01',
-  avsluttetDato: null,
-  vedtak: [lagVedtak()],
-  tellerverk: null,
-  person: {
-    personId: 1,
-    fodselsnummer: '01010101010',
-    fornavn: 'Test',
-    etternavn: 'Testesen',
-  },
-  ...overrides,
-});
+const lagSak = (overrides: Partial<SakDTO> = {}): SakDTO =>
+  ({
+    sakId: '123',
+    opprettetAar: 2024,
+    lopenr: 1,
+    statuskode: 'AKTIV',
+    statusnavn: 'Aktiv',
+    registrertDato: '2024-01-01',
+    avsluttetDato: null,
+    vedtak: [lagVedtak()],
+    telleverkForPerson: null,
+    kvoteHistorikk: [],
+    maksdato: null,
+    sisteUtbetalingDato: null,
+    person: {
+      personId: 1,
+      fodselsnummer: '01010101010',
+      fornavn: 'Test',
+      etternavn: 'Testesen',
+    },
+    ...overrides,
+  }) as SakDTO;
 
 describe('Sakogvedtakinfo datovisning', () => {
   it('viser ikke dato når ingen vedtak har fradato', () => {

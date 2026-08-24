@@ -21,6 +21,21 @@ export type VilkårsvurderingDTO = {
   statusnavn: string;
 };
 
+export type AndreYtelseDTO = {
+  type: string;
+  belopPeriode: string | NIL;
+  grad: string | NIL;
+  belop: string | NIL;
+};
+
+export type InstitusjonOppholdDTO = {
+  type: string;
+  fra: string | NIL;
+  til: string | NIL;
+  friKostOgLosji: boolean;
+  reduksjonsType: string | NIL;
+};
+
 export type ArenaVedtakMedFaktaDTO = {
   vedtakId: number;
   lopenrvedtak: number;
@@ -41,6 +56,8 @@ export type ArenaVedtakMedFaktaDTO = {
   relatertVedtak: number | NIL;
   fakta: ArenaVedtakfaktaDTO[];
   vilkårsvurderinger: VilkårsvurderingDTO[];
+  andreYtelser: AndreYtelseDTO[];
+  institusjonOpphold: InstitusjonOppholdDTO | NIL;
 };
 
 export type SakPersonDTO = {
@@ -65,6 +82,17 @@ export type KvoteHistorikkDTO = {
   resterende: number;
   modUser: string;
   begrunnelse: string | NIL;
+};
+
+export type OppgaveDTO = {
+  beskrivelse: string;
+  sakskontekst: string | NIL;
+  visningsnavn: string;
+  fristDato: string | NIL;
+  arbeidsbenk: string | NIL;
+  oppgaveEnhet: string | NIL;
+  navEnhet: string | NIL;
+  notat: string | NIL;
 };
 
 export type TilkjentYtelseDagDTO = {
@@ -132,4 +160,5 @@ export type SakDTO = {
   maksdato: string | NIL;
   sisteUtbetalingDato: string | NIL;
   tilkjentYtelse: TilkjentYtelseDTO | NIL;
+  oppgaver: OppgaveDTO[];
 };

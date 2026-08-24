@@ -8,6 +8,8 @@ import { formaterFaktaDato } from 'lib/utils/date';
 import { Vilkar } from 'components/sakogvedtakinfo/vedtakdetaljer/vilkar';
 import { SatsSeksjon } from 'components/sakogvedtakinfo/vedtakdetaljer/sats-seksjon';
 import { BeregningSeksjon } from 'components/sakogvedtakinfo/vedtakdetaljer/beregning-seksjon';
+import { ForholdTilAndreYtelserSeksjon } from 'components/sakogvedtakinfo/vedtakdetaljer/forhold-til-andre-ytelser-seksjon';
+import { InstitusjonSeksjon } from 'components/sakogvedtakinfo/vedtakdetaljer/institusjon-seksjon';
 
 type Props = {
   vedtak: ArenaVedtakMedFaktaDTO;
@@ -17,12 +19,22 @@ type Props = {
 export function Vedtakdetaljer({ vedtak, relatertVedtak }: Props): React.ReactElement {
   const faktaMap = useMemo(() => new Map(vedtak.fakta.map((f) => [f.kode, f])), [vedtak.vedtakId]);
 
-  const relatertFaktaMap = useMemo(
-    () => (relatertVedtak != null ? new Map(relatertVedtak.fakta.map((f) => [f.kode, f])) : null),
-    [relatertVedtak]
-  );
+  // Bygg alle oppslag for relatert vedtak én gang. Gating på visEndringer skjer i de avledede verdiene under.
+  const relatert = useMemo(() => {
+    if (relatertVedtak == null) return null;
+    return {
+      faktaMap: new Map(relatertVedtak.fakta.map((f) => [f.kode, f])),
+      andreYtelserMap: new Map(relatertVedtak.andreYtelser.map((y) => [y.type, y])),
+      institusjonOpphold: relatertVedtak.institusjonOpphold ?? null,
+    };
+  }, [relatertVedtak]);
 
   const [visEndringer, setVisEndringer] = useState(true);
+
+  const relatertFaktaMap = visEndringer ? (relatert?.faktaMap ?? null) : null;
+  const relatertAndreYtelserMap = visEndringer ? (relatert?.andreYtelserMap ?? null) : null;
+  // undefined = ingen sammenlikning aktiv. null = relatert vedtak hadde ingen institusjon (marker alle felt).
+  const relatertInstitusjonOpphold = visEndringer ? relatert?.institusjonOpphold : undefined;
 
   function erEndret(verdi: string | null | undefined, relatertVerdi: string | null | undefined): boolean {
     if (relatertVedtak == null || !visEndringer) return false;
@@ -30,7 +42,7 @@ export function Vedtakdetaljer({ vedtak, relatertVedtak }: Props): React.ReactEl
   }
 
   function erFaktaEndret(kode: string): boolean {
-    if (relatertFaktaMap == null || !visEndringer) return false;
+    if (relatertFaktaMap == null) return false;
     return faktaMap.get(kode)?.verdi !== relatertFaktaMap.get(kode)?.verdi;
   }
 
@@ -98,8 +110,16 @@ export function Vedtakdetaljer({ vedtak, relatertVedtak }: Props): React.ReactEl
       </HStack>
       {vedtak.rettighetkode === 'AAP' && (
         <>
-          <SatsSeksjon faktaMap={faktaMap} relatertFaktaMap={visEndringer ? relatertFaktaMap : null} />
-          <BeregningSeksjon faktaMap={faktaMap} relatertFaktaMap={visEndringer ? relatertFaktaMap : null} />
+          <SatsSeksjon faktaMap={faktaMap} relatertFaktaMap={relatertFaktaMap} />
+          <BeregningSeksjon faktaMap={faktaMap} relatertFaktaMap={relatertFaktaMap} />
+          <ForholdTilAndreYtelserSeksjon
+            andreYtelser={vedtak.andreYtelser}
+            relatertAndreYtelserMap={relatertAndreYtelserMap}
+          />
+          <InstitusjonSeksjon
+            institusjonOpphold={vedtak.institusjonOpphold ?? null}
+            relatertInstitusjonOpphold={relatertInstitusjonOpphold}
+          />
         </>
       )}
       <Vilkar vedtak={vedtak} />
