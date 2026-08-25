@@ -3,43 +3,56 @@
 import { TilkjentYtelseRadDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { BodyShort, Table } from '@navikt/ds-react';
 import { TilkjentYtelseDetaljer } from './tilkjent-ytelse-detaljer';
+import styles from './tilkjent-ytelse.module.css';
 import {
   datoEllerIkkeFunnet,
   formaterAnvistProsent,
+  formaterTotalReduksjon,
   formaterUke,
   kronerEllerIkkeFunnet,
-  prosentEllerIkkeFunnet,
   tekstEllerIkkeFunnet,
 } from './tilkjent-ytelse-utils';
 
 type Props = {
   rader: TilkjentYtelseRadDTO[];
-  gjenstaaendeOrdinaerDager: number;
-  gjenstaaendeUnntakDager: number;
 };
 
-export function TilkjentYtelseTabell({
-  rader,
-  gjenstaaendeOrdinaerDager,
-  gjenstaaendeUnntakDager,
-}: Props): React.ReactElement {
+export function TilkjentYtelseTabell({ rader }: Props): React.ReactElement {
   if (rader.length === 0) {
     return <BodyShort>Det er ingen perioder å vise.</BodyShort>;
   }
 
   return (
-    <Table>
+    <Table zebraStripes size="small">
       <Table.Header>
-        <Table.Row>
-          <Table.HeaderCell scope="col">Fra og med</Table.HeaderCell>
-          <Table.HeaderCell scope="col">Til og med</Table.HeaderCell>
-          <Table.HeaderCell scope="col">Uke</Table.HeaderCell>
-          <Table.HeaderCell scope="col">Kilde</Table.HeaderCell>
-          <Table.HeaderCell scope="col">Dagsats m/barnetillegg</Table.HeaderCell>
-          <Table.HeaderCell scope="col">Total reduksjon</Table.HeaderCell>
-          <Table.HeaderCell scope="col">Anvist prosent</Table.HeaderCell>
-          <Table.HeaderCell scope="col">Effektiv dagsats</Table.HeaderCell>
-          <Table.HeaderCell scope="col">Beregnet brutto</Table.HeaderCell>
+        <Table.Row className={styles.headRow}>
+          <Table.HeaderCell scope="col" textSize="small" className={styles.headerCell}>
+            Fra og med
+          </Table.HeaderCell>
+          <Table.HeaderCell scope="col" textSize="small" className={styles.headerCell}>
+            Til og med
+          </Table.HeaderCell>
+          <Table.HeaderCell scope="col" textSize="small" className={styles.headerCell}>
+            Uke
+          </Table.HeaderCell>
+          <Table.HeaderCell scope="col" textSize="small" className={styles.headerCell}>
+            Kilde
+          </Table.HeaderCell>
+          <Table.HeaderCell scope="col" textSize="small" className={styles.headerCell}>
+            Dagsats m/barnetillegg
+          </Table.HeaderCell>
+          <Table.HeaderCell scope="col" textSize="small" className={styles.headerCell}>
+            Total reduksjon
+          </Table.HeaderCell>
+          <Table.HeaderCell scope="col" textSize="small" className={styles.headerCell}>
+            Anvist prosent
+          </Table.HeaderCell>
+          <Table.HeaderCell scope="col" textSize="small" className={styles.headerCell}>
+            Effektiv dagsats
+          </Table.HeaderCell>
+          <Table.HeaderCell scope="col" textSize="small" className={styles.headerCell}>
+            Beregnet brutto
+          </Table.HeaderCell>
         </Table.Row>
       </Table.Header>
       <Table.Body>
@@ -47,23 +60,17 @@ export function TilkjentYtelseTabell({
           <Table.ExpandableRow
             key={`${rad.meldekort?.meldekortId ?? rad.kilde}-${index}`}
             togglePlacement="right"
-            content={
-              <TilkjentYtelseDetaljer
-                rad={rad}
-                gjenstaaendeOrdinaerDager={gjenstaaendeOrdinaerDager}
-                gjenstaaendeUnntakDager={gjenstaaendeUnntakDager}
-              />
-            }
+            content={<TilkjentYtelseDetaljer rad={rad} />}
           >
-            <Table.DataCell>{datoEllerIkkeFunnet(rad.fraOgMedDato)}</Table.DataCell>
-            <Table.DataCell>{datoEllerIkkeFunnet(rad.tilOgMedDato)}</Table.DataCell>
-            <Table.DataCell>{formaterUke(rad)}</Table.DataCell>
-            <Table.DataCell>{tekstEllerIkkeFunnet(rad.kilde)}</Table.DataCell>
-            <Table.DataCell>{kronerEllerIkkeFunnet(rad.dagsatsMedBarnetillegg)}</Table.DataCell>
-            <Table.DataCell>{prosentEllerIkkeFunnet(rad.reduksjon?.totalReduksjonProsent)}</Table.DataCell>
-            <Table.DataCell>{formaterAnvistProsent(rad)}</Table.DataCell>
-            <Table.DataCell>{kronerEllerIkkeFunnet(rad.dagsats)}</Table.DataCell>
-            <Table.DataCell>{kronerEllerIkkeFunnet(rad.beregnetBrutto)}</Table.DataCell>
+            <Table.DataCell textSize="small">{datoEllerIkkeFunnet(rad.fraOgMedDato)}</Table.DataCell>
+            <Table.DataCell textSize="small">{datoEllerIkkeFunnet(rad.tilOgMedDato)}</Table.DataCell>
+            <Table.DataCell textSize="small">{formaterUke(rad)}</Table.DataCell>
+            <Table.DataCell textSize="small">{tekstEllerIkkeFunnet(rad.kilde)}</Table.DataCell>
+            <Table.DataCell textSize="small">{kronerEllerIkkeFunnet(rad.dagsatsMedBarnetillegg)}</Table.DataCell>
+            <Table.DataCell textSize="small">{formaterTotalReduksjon(rad)}</Table.DataCell>
+            <Table.DataCell textSize="small">{formaterAnvistProsent(rad)}</Table.DataCell>
+            <Table.DataCell textSize="small">{kronerEllerIkkeFunnet(rad.dagsats)}</Table.DataCell>
+            <Table.DataCell textSize="small">{kronerEllerIkkeFunnet(rad.beregnetBrutto)}</Table.DataCell>
           </Table.ExpandableRow>
         ))}
       </Table.Body>

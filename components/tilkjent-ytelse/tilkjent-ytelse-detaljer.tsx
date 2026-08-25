@@ -10,40 +10,39 @@ import { FieldValue } from 'components/felleskomponenter/field-value/field-value
 import { parseISOorNull } from 'lib/utils/date';
 import {
   datoEllerIkkeFunnet,
+  formaterArbeid,
+  formaterDager,
   formaterGjenstaaendeDager,
+  formaterInstitusjon,
+  formaterSamordning,
   formaterTimer,
   IKKE_FUNNET,
   jaNeiEllerIkkeFunnet,
-  prosentEllerIkkeFunnet,
   tekstEllerIkkeFunnet,
 } from './tilkjent-ytelse-utils';
 
 type Props = {
   rad: TilkjentYtelseRadDTO;
-  gjenstaaendeOrdinaerDager: number;
-  gjenstaaendeUnntakDager: number;
 };
 
-export function TilkjentYtelseDetaljer({
-  rad,
-  gjenstaaendeOrdinaerDager,
-  gjenstaaendeUnntakDager,
-}: Props): React.ReactElement {
-  const { reduksjon, meldekort, timerArbeidet } = rad;
+export function TilkjentYtelseDetaljer({ rad }: Props): React.ReactElement {
+  const { reduksjon, meldekort } = rad;
+  const erTrukketForSentLevertMeldekort = (reduksjon?.levertForSentDager ?? 0) > 0;
 
   return (
     <VStack gap="space-24" className={styles.detaljer}>
       <HStack gap="space-32" wrap>
-        <FieldValue label="Arbeid" value={formaterTimer(timerArbeidet)} />
-        <FieldValue label="Sykedager" value={reduksjon != null ? formaterGjenstaaendeDager(reduksjon.sykedager) : "0 %"} />
-        <FieldValue label="Fravær" value={reduksjon != null ? formaterTimer(reduksjon.levertForSentDager) : IKKE_FUNNET} />
-        <FieldValue label="Samordning" value={prosentEllerIkkeFunnet( reduksjon?.samordningsProsent)} />
-        <FieldValue label="Institusjon" value={prosentEllerIkkeFunnet( reduksjon?.institusjonsProsent)} />
-        <FieldValue label="Trekk for sent innsendt meldekort" value={formaterGjenstaaendeDager(reduksjon?.levertForSentDager)} />
-        <FieldValue label="Gjenstående ordinær periode" value={formaterGjenstaaendeDager(gjenstaaendeOrdinaerDager)} />
+        <FieldValue label="Arbeid" value={formaterArbeid(rad)} />
+        <FieldValue label="Samordning" value={formaterSamordning(rad)} />
+        <FieldValue label="Institusjon" value={formaterInstitusjon(rad)} />
+        <FieldValue label="Trekk for sent innsendt meldekort" value={formaterDager(reduksjon?.levertForSentDager)} />
+        <FieldValue
+          label="Gjenstående ordinær periode"
+          value={formaterGjenstaaendeDager(rad.gjenstaaendeOrdinaerDager)}
+        />
         <FieldValue
           label="Gjenstående unntaksperiode §11-12 andre og tredje ledd"
-          value={formaterGjenstaaendeDager(gjenstaaendeUnntakDager)}
+          value={formaterGjenstaaendeDager(rad.gjenstaaendeUnntakDager)}
         />
       </HStack>
 
@@ -51,7 +50,7 @@ export function TilkjentYtelseDetaljer({
         <VStack gap="space-16">
           <HStack gap="space-12" align="center" wrap>
             <Heading size="small">Meldekort</Heading>
-            {reduksjon?.levertForSentDager && (
+            {erTrukketForSentLevertMeldekort && (
               <InlineMessage status="warning" size="small">
                 Det er trukket dager fordi forrige meldekort ble levert for sent
               </InlineMessage>
@@ -67,11 +66,11 @@ export function TilkjentYtelseDetaljer({
             />
           </HStack>
 
-          <VStack gap="space-16">
+          <div className={styles.ukerRamme}>
             {meldekort.uker.map((uke) => (
               <MeldekortUkeTabell key={uke.ukenr} uke={uke} />
             ))}
-          </VStack>
+          </div>
 
           <HStack gap="space-32" wrap>
             <FieldValue label="Kommentar" value={tekstEllerIkkeFunnet(meldekort.kommentar)} />

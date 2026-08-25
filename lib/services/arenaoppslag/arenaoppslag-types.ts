@@ -116,13 +116,13 @@ export type TilkjentYtelseMeldekortDTO = {
 };
 
 export type TilkjentYtelseReduksjonDTO = {
-  levertForSentDager: number | NIL,
-  timerArbeidetProsent: number | NIL,
-  samordningsProsent: number | NIL,
-  totalReduksjonProsent: number | NIL,
-  fravar:  number | NIL,
-  sykedager:  number | NIL,
-  institusjonsProsent:  number | NIL
+  levertForSentDager: number | NIL;
+  timerArbeidetProsent: number | NIL;
+  samordningsProsent: number | NIL;
+  totalReduksjonProsent: number | NIL;
+  fravar: number | NIL;
+  sykedager: number | NIL;
+  institusjonsProsent: number | NIL;
 };
 
 export type TilkjentYtelseRadDTO = {
@@ -136,6 +136,9 @@ export type TilkjentYtelseRadDTO = {
   timerArbeidet: number | NIL;
   reduksjon: TilkjentYtelseReduksjonDTO | NIL;
   meldekort: TilkjentYtelseMeldekortDTO | NIL;
+  // Gjenstående saldo etter denne perioden. Mangler på eldre rader fra før Arena begynte å telle.
+  gjenstaaendeOrdinaerDager: number | NIL;
+  gjenstaaendeUnntakDager: number | NIL;
 };
 
 export type TilkjentYtelseDTO = {

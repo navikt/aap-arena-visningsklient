@@ -55,11 +55,7 @@ export function TilkjentYtelse({ sak }: Props): React.ReactElement {
         </Chips>
       </HStack>
 
-      <TilkjentYtelseTabell
-        rader={synligeRader}
-        gjenstaaendeOrdinaerDager={tilkjentYtelse.gjenstaaendeOrdinaerDager}
-        gjenstaaendeUnntakDager={tilkjentYtelse.gjenstaaendeUnntakDager}
-      />
+      <TilkjentYtelseTabell rader={synligeRader} />
     </VStack>
   );
 }
