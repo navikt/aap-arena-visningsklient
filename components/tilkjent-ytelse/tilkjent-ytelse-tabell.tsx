@@ -15,9 +15,10 @@ import {
 
 type Props = {
   rader: TilkjentYtelseRadDTO[];
+  visUnntaksperiode: boolean;
 };
 
-export function TilkjentYtelseTabell({ rader }: Props): React.ReactElement {
+export function TilkjentYtelseTabell({ rader, visUnntaksperiode }: Props): React.ReactElement {
   if (rader.length === 0) {
     return <BodyShort>Det er ingen perioder å vise.</BodyShort>;
   }
@@ -60,7 +61,7 @@ export function TilkjentYtelseTabell({ rader }: Props): React.ReactElement {
           <Table.ExpandableRow
             key={`${rad.meldekort?.meldekortId ?? rad.kilde}-${index}`}
             togglePlacement="right"
-            content={<TilkjentYtelseDetaljer rad={rad} />}
+            content={<TilkjentYtelseDetaljer rad={rad} visUnntaksperiode={visUnntaksperiode} />}
           >
             <Table.DataCell textSize="small">{datoEllerIkkeFunnet(rad.fraOgMedDato)}</Table.DataCell>
             <Table.DataCell textSize="small">{datoEllerIkkeFunnet(rad.tilOgMedDato)}</Table.DataCell>

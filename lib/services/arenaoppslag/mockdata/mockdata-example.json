@@ -11200,7 +11200,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 15280,
         "gjenstaaendeUnntakDager": 10460
@@ -11310,7 +11311,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 15080,
         "gjenstaaendeUnntakDager": 10460
@@ -11419,6 +11421,16 @@
                   "annetFravaer": false
                 }
               ]
+            }
+          ],
+          "anmerkninger": [
+            {
+              "kode": "IFD",
+              "navn": "Innvilget fra dato",
+              "beskrivelse": "Innvilget fra dato er i perioden",
+              "beskrivelseFlettet": "Innvilget fra dato er i perioden",
+              "verdi": null,
+              "verdi2": null
             }
           ]
         },
@@ -11530,7 +11542,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 10580,
         "gjenstaaendeUnntakDager": 10460
@@ -11640,7 +11653,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 10180,
         "gjenstaaendeUnntakDager": 10460
@@ -11750,7 +11764,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 9780,
         "gjenstaaendeUnntakDager": 10460
@@ -11860,7 +11875,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 8780,
         "gjenstaaendeUnntakDager": 10460
@@ -11970,7 +11986,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 8580,
         "gjenstaaendeUnntakDager": 10460
@@ -12080,7 +12097,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 8380,
         "gjenstaaendeUnntakDager": 10460
@@ -12190,7 +12208,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 8180,
         "gjenstaaendeUnntakDager": 10460
@@ -12300,7 +12319,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 7980,
         "gjenstaaendeUnntakDager": 10460
@@ -12410,7 +12430,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 7780,
         "gjenstaaendeUnntakDager": 10460
@@ -12520,7 +12541,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 7580,
         "gjenstaaendeUnntakDager": 10460
@@ -12630,7 +12652,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 7380,
         "gjenstaaendeUnntakDager": 10460
@@ -12740,7 +12763,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 7180,
         "gjenstaaendeUnntakDager": 10460
@@ -12850,7 +12874,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 6980,
         "gjenstaaendeUnntakDager": 10460
@@ -12960,7 +12985,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 6780,
         "gjenstaaendeUnntakDager": 10460
@@ -13070,7 +13096,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 6580,
         "gjenstaaendeUnntakDager": 10460
@@ -13180,7 +13207,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 6380,
         "gjenstaaendeUnntakDager": 10460
@@ -13289,6 +13317,40 @@
                   "annetFravaer": false
                 }
               ]
+            }
+          ],
+          "anmerkninger": [
+            {
+              "kode": "US",
+              "navn": "Dagpenger er ikke utbetalt",
+              "beskrivelse": "Ukesats er endret i perioden",
+              "beskrivelseFlettet": "Ukesats er endret i perioden",
+              "verdi": null,
+              "verdi2": null
+            },
+            {
+              "kode": "US",
+              "navn": "Dagpenger er ikke utbetalt",
+              "beskrivelse": "Ukesats er endret i perioden",
+              "beskrivelseFlettet": "Ukesats er endret i perioden",
+              "verdi": null,
+              "verdi2": null
+            },
+            {
+              "kode": "STD",
+              "navn": "Siste trygdedato",
+              "beskrivelse": "Tildato er i perioden",
+              "beskrivelseFlettet": "Tildato er i perioden",
+              "verdi": null,
+              "verdi2": null
+            },
+            {
+              "kode": "IFD",
+              "navn": "Innvilget fra dato",
+              "beskrivelse": "Innvilget fra dato er i perioden",
+              "beskrivelseFlettet": "Innvilget fra dato er i perioden",
+              "verdi": null,
+              "verdi2": null
             }
           ]
         },
@@ -13400,7 +13462,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 6240,
         "gjenstaaendeUnntakDager": 10460
@@ -13510,7 +13573,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 6040,
         "gjenstaaendeUnntakDager": 10460
@@ -13620,7 +13684,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 5840,
         "gjenstaaendeUnntakDager": 10460
@@ -13730,7 +13795,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 5640,
         "gjenstaaendeUnntakDager": 10460
@@ -13840,7 +13906,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 5440,
         "gjenstaaendeUnntakDager": 10460
@@ -13950,7 +14017,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 5240,
         "gjenstaaendeUnntakDager": 10460
@@ -14060,7 +14128,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 5040,
         "gjenstaaendeUnntakDager": 10460
@@ -14170,7 +14239,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 4840,
         "gjenstaaendeUnntakDager": 10460
@@ -14280,7 +14350,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 4640,
         "gjenstaaendeUnntakDager": 10460
@@ -14390,7 +14461,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 4440,
         "gjenstaaendeUnntakDager": 10460
@@ -14500,7 +14572,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 4240,
         "gjenstaaendeUnntakDager": 10460
@@ -14609,6 +14682,40 @@
                   "annetFravaer": false
                 }
               ]
+            }
+          ],
+          "anmerkninger": [
+            {
+              "kode": "US",
+              "navn": "Dagpenger er ikke utbetalt",
+              "beskrivelse": "Ukesats er endret i perioden",
+              "beskrivelseFlettet": "Ukesats er endret i perioden",
+              "verdi": null,
+              "verdi2": null
+            },
+            {
+              "kode": "US",
+              "navn": "Dagpenger er ikke utbetalt",
+              "beskrivelse": "Ukesats er endret i perioden",
+              "beskrivelseFlettet": "Ukesats er endret i perioden",
+              "verdi": null,
+              "verdi2": null
+            },
+            {
+              "kode": "STD",
+              "navn": "Siste trygdedato",
+              "beskrivelse": "Tildato er i perioden",
+              "beskrivelseFlettet": "Tildato er i perioden",
+              "verdi": null,
+              "verdi2": null
+            },
+            {
+              "kode": "IFD",
+              "navn": "Innvilget fra dato",
+              "beskrivelse": "Innvilget fra dato er i perioden",
+              "beskrivelseFlettet": "Innvilget fra dato er i perioden",
+              "verdi": null,
+              "verdi2": null
             }
           ]
         },
@@ -14720,6 +14827,40 @@
                 }
               ]
             }
+          ],
+          "anmerkninger": [
+            {
+              "kode": "US",
+              "navn": "Dagpenger er ikke utbetalt",
+              "beskrivelse": "Ukesats er endret i perioden",
+              "beskrivelseFlettet": "Ukesats er endret i perioden",
+              "verdi": null,
+              "verdi2": null
+            },
+            {
+              "kode": "US",
+              "navn": "Dagpenger er ikke utbetalt",
+              "beskrivelse": "Ukesats er endret i perioden",
+              "beskrivelseFlettet": "Ukesats er endret i perioden",
+              "verdi": null,
+              "verdi2": null
+            },
+            {
+              "kode": "STD",
+              "navn": "Siste trygdedato",
+              "beskrivelse": "Tildato er i perioden",
+              "beskrivelseFlettet": "Tildato er i perioden",
+              "verdi": null,
+              "verdi2": null
+            },
+            {
+              "kode": "IFD",
+              "navn": "Innvilget fra dato",
+              "beskrivelse": "Innvilget fra dato er i perioden",
+              "beskrivelseFlettet": "Innvilget fra dato er i perioden",
+              "verdi": null,
+              "verdi2": null
+            }
           ]
         },
         "gjenstaaendeOrdinaerDager": 4040,
@@ -14830,7 +14971,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 3840,
         "gjenstaaendeUnntakDager": 10460
@@ -14940,7 +15082,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 3640,
         "gjenstaaendeUnntakDager": 10460
@@ -15050,7 +15193,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 3440,
         "gjenstaaendeUnntakDager": 10460
@@ -15160,7 +15304,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 3240,
         "gjenstaaendeUnntakDager": 10460
@@ -15270,7 +15415,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 3040,
         "gjenstaaendeUnntakDager": 10460
@@ -15380,7 +15526,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 2840,
         "gjenstaaendeUnntakDager": 10460
@@ -15490,7 +15637,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 2640,
         "gjenstaaendeUnntakDager": 10460
@@ -15600,7 +15748,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 2440,
         "gjenstaaendeUnntakDager": 10460
@@ -15710,7 +15859,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 2240,
         "gjenstaaendeUnntakDager": 10460
@@ -15820,7 +15970,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 2040,
         "gjenstaaendeUnntakDager": 10460
@@ -15930,7 +16081,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 1840,
         "gjenstaaendeUnntakDager": 10460
@@ -16040,7 +16192,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 1640,
         "gjenstaaendeUnntakDager": 10460
@@ -16150,7 +16303,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 1440,
         "gjenstaaendeUnntakDager": 10460
@@ -16260,7 +16414,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 1240,
         "gjenstaaendeUnntakDager": 10460
@@ -16369,6 +16524,32 @@
                   "annetFravaer": false
                 }
               ]
+            }
+          ],
+          "anmerkninger": [
+            {
+              "kode": "STD",
+              "navn": "Siste trygdedato",
+              "beskrivelse": "Tildato er i perioden",
+              "beskrivelseFlettet": "Tildato er i perioden",
+              "verdi": null,
+              "verdi2": null
+            },
+            {
+              "kode": "IFD",
+              "navn": "Innvilget fra dato",
+              "beskrivelse": "Innvilget fra dato er i perioden",
+              "beskrivelseFlettet": "Innvilget fra dato er i perioden",
+              "verdi": null,
+              "verdi2": null
+            },
+            {
+              "kode": "TE140",
+              "navn": "140%-terskel",
+              "beskrivelse": "Yrkesskadd, arbeidet mer enn 70% i perioden som er sett under ett",
+              "beskrivelseFlettet": "Yrkesskadd, arbeidet mer enn 70% i perioden som er sett under ett",
+              "verdi": null,
+              "verdi2": null
             }
           ]
         },
@@ -16480,6 +16661,16 @@
                 }
               ]
             }
+          ],
+          "anmerkninger": [
+            {
+              "kode": "STD",
+              "navn": "Siste trygdedato",
+              "beskrivelse": "Tildato er i perioden",
+              "beskrivelseFlettet": "Tildato er i perioden",
+              "verdi": null,
+              "verdi2": null
+            }
           ]
         },
         "gjenstaaendeOrdinaerDager": null,
@@ -16589,6 +16780,16 @@
                   "annetFravaer": false
                 }
               ]
+            }
+          ],
+          "anmerkninger": [
+            {
+              "kode": "IFD",
+              "navn": "Innvilget fra dato",
+              "beskrivelse": "Innvilget fra dato er i perioden",
+              "beskrivelseFlettet": "Innvilget fra dato er i perioden",
+              "verdi": null,
+              "verdi2": null
             }
           ]
         },
@@ -16700,7 +16901,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 940,
         "gjenstaaendeUnntakDager": 10460
@@ -16810,7 +17012,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 840,
         "gjenstaaendeUnntakDager": 10460
@@ -16920,7 +17123,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 740,
         "gjenstaaendeUnntakDager": 10460
@@ -17030,7 +17234,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 540,
         "gjenstaaendeUnntakDager": 10460
@@ -17140,7 +17345,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 340,
         "gjenstaaendeUnntakDager": 10460
@@ -17250,7 +17456,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "anmerkninger": []
         },
         "gjenstaaendeOrdinaerDager": 140,
         "gjenstaaendeUnntakDager": 10460
@@ -17360,6 +17567,24 @@
                 }
               ]
             }
+          ],
+          "anmerkninger": [
+            {
+              "kode": "STD",
+              "navn": "Siste trygdedato",
+              "beskrivelse": "Tildato er i perioden",
+              "beskrivelseFlettet": "Tildato er i perioden",
+              "verdi": null,
+              "verdi2": null
+            },
+            {
+              "kode": "MAXAA",
+              "navn": "Maks periode AAP",
+              "beskrivelse": "Maksimal stønadsperiode AAP er nådd",
+              "beskrivelseFlettet": "Maksimal stønadsperiode AAP er nådd",
+              "verdi": null,
+              "verdi2": null
+            }
           ]
         },
         "gjenstaaendeOrdinaerDager": 0,
@@ -17413,6 +17638,17 @@
       "notat": "Det er gitt fullt medhold i klage på sak 2026 12647"
     },
     {
+      "oppgaveId": 241063640,
+      "beskrivelse": "Registrer meldeopplysninger",
+      "sakskontekst": "30519244698",
+      "visningsnavn": "Registrer meldeopplysninger",
+      "fristDato": "2026-05-08",
+      "arbeidsbenk": "0220",
+      "oppgaveEnhet": "0220",
+      "navEnhet": "0220",
+      "notat": "27-05-2026: Flyttet fra 4154 i forbindelse med avvik på kontortilhørighet mellom Arena og Modia.\n15-05-2026: Flyttet fra 0220 i forbindelse med aktivering av bruker med gode muligheter.\nVedtak er fattet tilbake i tid. Det er opprettet 24 manuelle meldekort for perioden 01-01-2024 - 01-12-2024. Disse meldekortene må registreres for å bli beregnet. Dersom det er opprettet 1000 eller færre kort, kan bruker sende disse på nav.no. Ved mer enn 1000 kort må meldekortene registreres av saksbehandler."
+    },
+    {
       "oppgaveId": 241063671,
       "beskrivelse": "Registrer meldeopplysninger",
       "sakskontekst": "30519244698",
@@ -17433,17 +17669,6 @@
       "oppgaveEnhet": "0220",
       "navEnhet": "0220",
       "notat": "27-05-2026: Flyttet fra 4154 i forbindelse med avvik på kontortilhørighet mellom Arena og Modia.\n15-05-2026: Flyttet fra 0220 i forbindelse med aktivering av bruker med gode muligheter.\nVedtak er fattet tilbake i tid. Det er opprettet 2 manuelle meldekort for perioden 08-12-2025 - 04-01-2026. Disse meldekortene må registreres for å bli beregnet. Dersom det er opprettet 1000 eller færre kort, kan bruker sende disse på nav.no. Ved mer enn 1000 kort må meldekortene registreres av saksbehandler."
-    },
-    {
-      "oppgaveId": 241063640,
-      "beskrivelse": "Registrer meldeopplysninger",
-      "sakskontekst": "30519244698",
-      "visningsnavn": "Registrer meldeopplysninger",
-      "fristDato": "2026-05-08",
-      "arbeidsbenk": "0220",
-      "oppgaveEnhet": "0220",
-      "navEnhet": "0220",
-      "notat": "27-05-2026: Flyttet fra 4154 i forbindelse med avvik på kontortilhørighet mellom Arena og Modia.\n15-05-2026: Flyttet fra 0220 i forbindelse med aktivering av bruker med gode muligheter.\nVedtak er fattet tilbake i tid. Det er opprettet 24 manuelle meldekort for perioden 01-01-2024 - 01-12-2024. Disse meldekortene må registreres for å bli beregnet. Dersom det er opprettet 1000 eller færre kort, kan bruker sende disse på nav.no. Ved mer enn 1000 kort må meldekortene registreres av saksbehandler."
     },
     {
       "oppgaveId": 241062902,

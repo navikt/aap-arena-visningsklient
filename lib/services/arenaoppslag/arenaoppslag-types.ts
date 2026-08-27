@@ -106,6 +106,16 @@ export type TilkjentYtelseUkeDTO = {
   dager: TilkjentYtelseDagDTO[];
 };
 
+export type TilkjentYtelseAnmerkningDTO = {
+  kode: string;
+  navn: string | NIL;
+  beskrivelse: string | NIL;
+  // Beskrivelsen med &1/&2 erstattet av verdi/verdi2, og er teksten som skal vises.
+  beskrivelseFlettet: string | NIL;
+  verdi: number | NIL;
+  verdi2: number | NIL;
+};
+
 export type TilkjentYtelseMeldekortDTO = {
   meldekortId: number;
   meldedato: string | NIL;
@@ -113,6 +123,7 @@ export type TilkjentYtelseMeldekortDTO = {
   fortsattRegistrertArbeidssoker: boolean;
   kommentar: string | NIL;
   uker: TilkjentYtelseUkeDTO[];
+  anmerkninger: TilkjentYtelseAnmerkningDTO[] | NIL;
 };
 
 export type TilkjentYtelseReduksjonDTO = {

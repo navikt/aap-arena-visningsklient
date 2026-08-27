@@ -2,7 +2,7 @@
 
 import styles from './tilkjent-ytelse.module.css';
 import { TilkjentYtelseRadDTO, TilkjentYtelseUkeDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
-import { BodyShort, Heading, HStack, InlineMessage, Table, VStack } from '@navikt/ds-react';
+import { BodyShort, Heading, HStack, InlineMessage, List, Table, VStack } from '@navikt/ds-react';
 import { CheckmarkIcon } from '@navikt/aksel-icons';
 import { format } from 'date-fns';
 import { nb } from 'date-fns/locale';
@@ -10,6 +10,7 @@ import { FieldValue } from 'components/felleskomponenter/field-value/field-value
 import { parseISOorNull } from 'lib/utils/date';
 import {
   datoEllerIkkeFunnet,
+  formaterAnmerkning,
   formaterArbeid,
   formaterDager,
   formaterGjenstaaendeDager,
@@ -23,11 +24,13 @@ import {
 
 type Props = {
   rad: TilkjentYtelseRadDTO;
+  visUnntaksperiode: boolean;
 };
 
-export function TilkjentYtelseDetaljer({ rad }: Props): React.ReactElement {
+export function TilkjentYtelseDetaljer({ rad, visUnntaksperiode }: Props): React.ReactElement {
   const { reduksjon, meldekort } = rad;
   const erTrukketForSentLevertMeldekort = (reduksjon?.levertForSentDager ?? 0) > 0;
+  const anmerkninger = meldekort?.anmerkninger ?? [];
 
   return (
     <VStack gap="space-24" className={styles.detaljer}>
@@ -40,10 +43,12 @@ export function TilkjentYtelseDetaljer({ rad }: Props): React.ReactElement {
           label="Gjenstående ordinær periode"
           value={formaterGjenstaaendeDager(rad.gjenstaaendeOrdinaerDager)}
         />
-        <FieldValue
-          label="Gjenstående unntaksperiode §11-12 andre og tredje ledd"
-          value={formaterGjenstaaendeDager(rad.gjenstaaendeUnntakDager)}
-        />
+        {visUnntaksperiode && (
+          <FieldValue
+            label="Gjenstående unntaksperiode §11-12 andre og tredje ledd"
+            value={formaterGjenstaaendeDager(rad.gjenstaaendeUnntakDager)}
+          />
+        )}
       </HStack>
 
       {meldekort != null ? (
@@ -71,6 +76,19 @@ export function TilkjentYtelseDetaljer({ rad }: Props): React.ReactElement {
               <MeldekortUkeTabell key={uke.ukenr} uke={uke} />
             ))}
           </div>
+
+          {anmerkninger.length > 0 && (
+            <VStack gap="space-8">
+              <Heading size="xsmall" level="4">
+                Anmerkninger
+              </Heading>
+              <List size="small">
+                {anmerkninger.map((anmerkning, index) => (
+                  <List.Item key={`${anmerkning.kode}-${index}`}>{formaterAnmerkning(anmerkning)}</List.Item>
+                ))}
+              </List>
+            </VStack>
+          )}
 
           <HStack gap="space-32" wrap>
             <FieldValue label="Kommentar" value={tekstEllerIkkeFunnet(meldekort.kommentar)} />

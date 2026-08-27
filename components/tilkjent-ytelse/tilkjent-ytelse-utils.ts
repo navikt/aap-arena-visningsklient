@@ -1,6 +1,7 @@
 import { differenceInCalendarDays } from 'date-fns';
-import { TilkjentYtelseRadDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
+import { TilkjentYtelseAnmerkningDTO, TilkjentYtelseRadDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { dateComperator, norsktDatoformat, parseISOorNull } from 'lib/utils/date';
+import { harSaksperiode, overlapperSaksperiode, Saksperiode } from 'lib/utils/saksperiode';
 import { formaterTilNok } from 'lib/utils/string';
 
 export const IKKE_FUNNET = 'Ikke funnet';
@@ -151,10 +152,12 @@ export function formaterGjenstaaendeDager(antallEnheter: number | null | undefin
   return `${dager.toLocaleString('nb-NO')} dager`;
 }
 
-export type RadFilter = {
-  visMeldekort: boolean;
-  visSpesialutbetaling: boolean;
-};
+// Arena leverer ferdig flettet tekst, men faller tilbake til råteksten og til slutt koden.
+export function formaterAnmerkning(anmerkning: TilkjentYtelseAnmerkningDTO): string {
+  return anmerkning.beskrivelseFlettet || anmerkning.beskrivelse || anmerkning.navn || anmerkning.kode;
+}
+
+export type RadFilter = { visMeldekort: boolean; visSpesialutbetaling: boolean };
 
 export function filtrerRader(rader: TilkjentYtelseRadDTO[], filter: RadFilter): TilkjentYtelseRadDTO[] {
   return rader.filter((rad) => {
@@ -162,6 +165,17 @@ export function filtrerRader(rader: TilkjentYtelseRadDTO[], filter: RadFilter): 
     if (rad.kilde === KILDE_MELDEKORT) return filter.visMeldekort;
     return true;
   });
+}
+
+export function filtrerRaderPaaSaksperiode(
+  rader: TilkjentYtelseRadDTO[],
+  saksperiode: Saksperiode
+): TilkjentYtelseRadDTO[] {
+  if (!harSaksperiode(saksperiode)) return rader;
+
+  return rader.filter((rad) =>
+    overlapperSaksperiode(parseISOorNull(rad.fraOgMedDato), parseISOorNull(rad.tilOgMedDato), saksperiode)
+  );
 }
 
 export function sorterRaderEtterTilOgMedDesc(rader: TilkjentYtelseRadDTO[]): TilkjentYtelseRadDTO[] {

@@ -5,23 +5,33 @@ import { SakDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { BodyShort, Chips, HStack, ToggleGroup, VStack } from '@navikt/ds-react';
 import { useMemo, useState } from 'react';
 import { TilkjentYtelseTabell } from './tilkjent-ytelse-tabell';
-import { filtrerRader, sorterRaderEtterTilOgMedDesc } from './tilkjent-ytelse-utils';
+import { filtrerRader, filtrerRaderPaaSaksperiode, sorterRaderEtterTilOgMedDesc } from './tilkjent-ytelse-utils';
+import { finnSaksperiode, formaterSaksperiode, harSaksperiode } from 'lib/utils/saksperiode';
+import { harUnntakAAP } from 'lib/utils/vedtaksfakta';
 
 type Props = {
   sak: SakDTO;
 };
 
+type PeriodeValg = 'saksperiode' | 'alle';
+
 export function TilkjentYtelse({ sak }: Props): React.ReactElement {
   const [visMeldekort, setVisMeldekort] = useState(true);
   const [visSpesialutbetaling, setVisSpesialutbetaling] = useState(true);
+  const [periodeValg, setPeriodeValg] = useState<PeriodeValg>('saksperiode');
 
   const tilkjentYtelse = sak.tilkjentYtelse;
   const rader = useMemo(() => tilkjentYtelse?.rader ?? [], [tilkjentYtelse]);
 
-  const synligeRader = useMemo(
-    () => sorterRaderEtterTilOgMedDesc(filtrerRader(rader, { visMeldekort, visSpesialutbetaling })),
-    [rader, visMeldekort, visSpesialutbetaling]
-  );
+  const saksperiode = useMemo(() => finnSaksperiode(sak.vedtak), [sak.vedtak]);
+  const kanFiltrerePaaSaksperiode = harSaksperiode(saksperiode);
+  const saksperiodeTekst = formaterSaksperiode(saksperiode);
+  const visUnntaksperiode = harUnntakAAP(sak.vedtak);
+
+  const synligeRader = useMemo(() => {
+    const raderIPerioden = periodeValg === 'saksperiode' ? filtrerRaderPaaSaksperiode(rader, saksperiode) : rader;
+    return sorterRaderEtterTilOgMedDesc(filtrerRader(raderIPerioden, { visMeldekort, visSpesialutbetaling }));
+  }, [rader, saksperiode, periodeValg, visMeldekort, visSpesialutbetaling]);
 
   if (tilkjentYtelse == null) {
     return (
@@ -34,13 +44,21 @@ export function TilkjentYtelse({ sak }: Props): React.ReactElement {
   return (
     <VStack paddingBlock="space-24" gap="space-24">
       <HStack gap="space-16" align="center" wrap>
-        {/* Saksperiode/Alle perioder er ikke implementert enda fordi vi mangler data til å skille periodene */}
-        <div className={styles.deaktivert} aria-disabled="true">
-          <ToggleGroup value="saksperiode" onChange={() => {}} size="small">
+        {/* Uten datoer på vedtakene finnes det ingen saksperiode å filtrere på, og valget deaktiveres. */}
+        <div
+          className={kanFiltrerePaaSaksperiode ? undefined : styles.deaktivert}
+          aria-disabled={kanFiltrerePaaSaksperiode ? undefined : 'true'}
+        >
+          <ToggleGroup value={periodeValg} onChange={(verdi) => setPeriodeValg(verdi as PeriodeValg)} size="small">
             <ToggleGroup.Item value="saksperiode" label="Saksperiode" />
             <ToggleGroup.Item value="alle" label="Alle perioder" />
           </ToggleGroup>
         </div>
+        {saksperiodeTekst != null && (
+          <BodyShort size="small" textColor="subtle" data-testid="tilkjent-ytelse-saksperiode">
+            {saksperiodeTekst}
+          </BodyShort>
+        )}
         <Chips>
           <Chips.Toggle selected={visMeldekort} checkmark onClick={() => setVisMeldekort((forrige) => !forrige)}>
             Vis meldekort
@@ -55,7 +73,7 @@ export function TilkjentYtelse({ sak }: Props): React.ReactElement {
         </Chips>
       </HStack>
 
-      <TilkjentYtelseTabell rader={synligeRader} />
+      <TilkjentYtelseTabell rader={synligeRader} visUnntaksperiode={visUnntaksperiode} />
     </VStack>
   );
 }

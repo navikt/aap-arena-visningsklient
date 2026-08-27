@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { TilkjentYtelseRadDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
+import { TilkjentYtelseAnmerkningDTO, TilkjentYtelseRadDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { formaterTilNok } from 'lib/utils/string';
 import {
   beregnAntallDagerIPerioden,
@@ -11,6 +11,8 @@ import {
   beregnTotaleTimerIPerioden,
   datoEllerIkkeFunnet,
   filtrerRader,
+  filtrerRaderPaaSaksperiode,
+  formaterAnmerkning,
   formaterAnvistProsent,
   formaterArbeid,
   formaterDager,
@@ -304,6 +306,36 @@ describe('formaterSamordning', () => {
   });
 });
 
+describe('formaterAnmerkning', () => {
+  const lagAnmerkning = (overrides: Partial<TilkjentYtelseAnmerkningDTO> = {}): TilkjentYtelseAnmerkningDTO => ({
+    kode: 'IFD',
+    navn: 'Innvilget fra dato',
+    beskrivelse: 'Innvilget fra dato er i perioden',
+    beskrivelseFlettet: 'Innvilget fra dato er i perioden',
+    verdi: null,
+    verdi2: null,
+    ...overrides,
+  });
+
+  it('foretrekker den flettede beskrivelsen, der &1 er byttet ut med verdien', () => {
+    const anmerkning = lagAnmerkning({
+      kode: 'FXNN',
+      beskrivelse: 'Utbetalingen er redusert pga fravær av type X &1 dager',
+      beskrivelseFlettet: 'Utbetalingen er redusert pga fravær av type X 2 dager',
+      verdi: 2,
+    });
+    expect(formaterAnmerkning(anmerkning)).toBe('Utbetalingen er redusert pga fravær av type X 2 dager');
+  });
+
+  it('faller tilbake til beskrivelse, så navn, så kode', () => {
+    expect(formaterAnmerkning(lagAnmerkning({ beskrivelseFlettet: null }))).toBe('Innvilget fra dato er i perioden');
+    expect(formaterAnmerkning(lagAnmerkning({ beskrivelseFlettet: null, beskrivelse: null }))).toBe(
+      'Innvilget fra dato'
+    );
+    expect(formaterAnmerkning(lagAnmerkning({ beskrivelseFlettet: '', beskrivelse: '', navn: '' }))).toBe('IFD');
+  });
+});
+
 describe('formaterInstitusjon', () => {
   it('viser institusjonsprosenten når den finnes', () => {
     expect(formaterInstitusjon(lagRad({ reduksjon: lagReduksjon({ institusjonsProsent: 50 }) }))).toBe('50\u00a0%');
@@ -349,6 +381,41 @@ describe('filtrerRader', () => {
       visSpesialutbetaling: false,
     });
     expect(resultat).toHaveLength(0);
+  });
+});
+
+describe('filtrerRaderPaaSaksperiode', () => {
+  const saksperiode = { startdato: new Date('2024-01-01'), sluttdato: new Date('2024-12-31') };
+  const foerPerioden = lagRad({ fraOgMedDato: '2023-11-06', tilOgMedDato: '2023-11-19' });
+  const iPerioden = lagRad({ fraOgMedDato: '2024-03-04', tilOgMedDato: '2024-03-17' });
+  const etterPerioden = lagRad({ fraOgMedDato: '2025-01-06', tilOgMedDato: '2025-01-19' });
+  const utenDatoer = lagRad({ fraOgMedDato: null, tilOgMedDato: null });
+
+  it('beholder bare rader som overlapper saksperioden', () => {
+    const resultat = filtrerRaderPaaSaksperiode([foerPerioden, iPerioden, etterPerioden], saksperiode);
+    expect(resultat).toEqual([iPerioden]);
+  });
+
+  it('beholder rader som delvis overlapper saksperioden', () => {
+    const overlapper = lagRad({ fraOgMedDato: '2023-12-25', tilOgMedDato: '2024-01-07' });
+    expect(filtrerRaderPaaSaksperiode([overlapper], saksperiode)).toEqual([overlapper]);
+  });
+
+  it('beholder rader uten datoer', () => {
+    expect(filtrerRaderPaaSaksperiode([utenDatoer], saksperiode)).toEqual([utenDatoer]);
+  });
+
+  it('returnerer alle rader når saksperioden mangler datoer', () => {
+    const rader = [foerPerioden, iPerioden, etterPerioden];
+    expect(filtrerRaderPaaSaksperiode(rader, { startdato: null, sluttdato: null })).toEqual(rader);
+  });
+
+  it('filtrerer bare på startdato når saken er løpende', () => {
+    const resultat = filtrerRaderPaaSaksperiode([foerPerioden, iPerioden, etterPerioden], {
+      startdato: new Date('2024-01-01'),
+      sluttdato: null,
+    });
+    expect(resultat).toEqual([iPerioden, etterPerioden]);
   });
 });
 
