@@ -155,8 +155,6 @@ export type TilkjentYtelseRadDTO = {
 
 export type TilkjentYtelseDTO = {
   sakId: number;
-  gjenstaaendeOrdinaerDager: number;
-  gjenstaaendeUnntakDager: number;
   rader: TilkjentYtelseRadDTO[];
 };
 
