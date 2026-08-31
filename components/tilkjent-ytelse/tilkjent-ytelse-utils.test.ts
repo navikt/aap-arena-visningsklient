@@ -4,7 +4,6 @@ import { TilkjentYtelseAnmerkningDTO, TilkjentYtelseRadDTO } from 'lib/services/
 import { formaterTilNok } from 'lib/utils/string';
 import {
   beregnAntallDagerIPerioden,
-  beregnAnvistProsent,
   beregnArbeidProsent,
   beregnBelopAvPeriodegrunnlag,
   beregnPeriodegrunnlag,
@@ -40,6 +39,7 @@ const lagReduksjon = (
   fravar: 0,
   sykedager: 0,
   institusjonsProsent: null,
+  anvistProsent: null,
   ...overrides,
 });
 
@@ -442,42 +442,20 @@ describe('sorterRaderEtterTilOgMedDesc', () => {
   });
 });
 
-describe('beregnAnvistProsent', () => {
-  it('returnerer 200 ved 0 % reduksjon (full 2-ukersperiode)', () => {
-    expect(beregnAnvistProsent(0)).toBe(200);
-  });
-
-  it('returnerer 100 ved 50 % reduksjon', () => {
-    expect(beregnAnvistProsent(50)).toBe(100);
-  });
-
-  it('returnerer 0 ved 100 % reduksjon', () => {
-    expect(beregnAnvistProsent(100)).toBe(0);
-  });
-
-  it('runder til nærmeste heltall', () => {
-    // 33,33 % reduksjon → (1 - 0.3333) × 200 ≈ 133,33 → avrunder til 133
-    expect(beregnAnvistProsent(33.33)).toBe(133);
-  });
-
-  it('returnerer null for null og undefined', () => {
-    expect(beregnAnvistProsent(null)).toBeNull();
-    expect(beregnAnvistProsent(undefined)).toBeNull();
-  });
-});
-
 describe('formaterAnvistProsent', () => {
-  it('formaterer prosent korrekt for rad med reduksjon', () => {
-    expect(formaterAnvistProsent(lagRad({ reduksjon: lagReduksjon({ totalReduksjonProsent: 50 }) }))).toBe(
-      '100\u00a0%'
-    );
+  it('formaterer anvist prosent fra backend', () => {
+    expect(formaterAnvistProsent(lagRad({ reduksjon: lagReduksjon({ anvistProsent: 100 }) }))).toBe('100\u00a0%');
+  });
+
+  it('formaterer full 2-ukersperiode', () => {
+    expect(formaterAnvistProsent(lagRad({ reduksjon: lagReduksjon({ anvistProsent: 200 }) }))).toBe('200\u00a0%');
   });
 
   it('returnerer tom streng for rad uten reduksjon', () => {
     expect(formaterAnvistProsent(lagRad({ reduksjon: null }))).toBe('');
   });
 
-  it('returnerer tom streng når totalReduksjonProsent er null', () => {
-    expect(formaterAnvistProsent(lagRad({ reduksjon: lagReduksjon({ totalReduksjonProsent: null }) }))).toBe('');
+  it('returnerer tom streng når anvistProsent er null', () => {
+    expect(formaterAnvistProsent(lagRad({ reduksjon: lagReduksjon({ anvistProsent: null }) }))).toBe('');
   });
 });

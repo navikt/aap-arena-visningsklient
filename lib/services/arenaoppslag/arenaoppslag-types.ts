@@ -134,6 +134,7 @@ export type TilkjentYtelseReduksjonDTO = {
   fravar: number | NIL;
   sykedager: number | NIL;
   institusjonsProsent: number | NIL;
+  anvistProsent: number | NIL;
 };
 
 export type TilkjentYtelseRadDTO = {

@@ -133,15 +133,9 @@ export function formaterInstitusjon(rad: TilkjentYtelseRadDTO): string {
   return prosentEllerIkkeFunnet(rad.reduksjon?.institusjonsProsent ?? 0);
 }
 
-// 200 % tilsvarer full 2-ukersperiode (10 dager × 7,5 timer).
-// Anvist prosent er det inverse av totalReduksjonProsent skalert til 200-base.
-export function beregnAnvistProsent(totalReduksjonProsent: number | null | undefined): number | null {
-  if (totalReduksjonProsent == null) return null;
-  return Math.round((1 - totalReduksjonProsent / 100) * 200);
-}
-
+// Arena oppgir anvist prosent i 200-basis, der 200 % tilsvarer full 2-ukersperiode.
 export function formaterAnvistProsent(rad: TilkjentYtelseRadDTO): string {
-  const prosent = beregnAnvistProsent(rad.reduksjon?.totalReduksjonProsent);
+  const prosent = rad.reduksjon?.anvistProsent;
   if (prosent == null) return '';
   return `${prosent.toLocaleString('nb-NO')}\u00a0%`;
 }
