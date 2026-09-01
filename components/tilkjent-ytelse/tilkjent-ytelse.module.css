@@ -1,0 +1,77 @@
+.detaljer {
+  padding-block: var(--ax-space-8) var(--ax-space-16);
+}
+
+.headRow {
+  table-layout: fixed;
+}
+
+.headerCell {
+  color: var(--ax-text-neutral-subtle);
+  font-feature-settings:
+    'liga' off,
+    'clig' off;
+  font-family: var(--ax-font-family);
+  font-size: var(--ax-font-size-small);
+  font-style: normal;
+  font-weight: var(--ax-font-weight-regular);
+  line-height: var(--ax-font-line-height-medium);
+}
+
+/* Uketabellene deler én felles ytterramme, slik at ukene framstår som én sammenhengende boks. */
+.ukerRamme {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ax-space-16);
+  border: 1px solid var(--ax-border-neutral-subtle);
+  border-radius: var(--ax-radius-4);
+  overflow: hidden;
+}
+
+.ukeTabell {
+  /* Jevnbrede kolonner, som tilsvarer flex: 1 0 0 på cellene i designet. */
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* Zebrastripene til den ytre tabellen treffer nøstede rader via descendant-selektor.
+   To klasser trengs for å slå ut Aksel-regelen, som har spesifisitet 0-2-0. */
+.ukerRamme .ukeTabell tr {
+  background-color: transparent;
+}
+
+/* Alle celler bruker Detail/Regular, også overskriftscellene som Aksel ellers setter i halvfet. */
+.ukeTabell :is(th, td) {
+  padding: var(--ax-space-4) var(--ax-space-8);
+  text-align: left;
+  vertical-align: middle;
+  color: var(--ax-text-neutral);
+  font-feature-settings:
+    'liga' off,
+    'clig' off;
+  font-family: var(--ax-font-family);
+  font-size: var(--ax-font-size-small);
+  font-style: normal;
+  font-weight: var(--ax-font-weight-regular);
+  line-height: var(--ax-font-line-height-medium);
+}
+
+/* Eneste streker inne i rammen er loddrette, og bare i datacellene (timer og «annet fravær»-ikon).
+   Label- og datocellene er th, og skal stå uten strek. */
+.ukerRamme .ukeTabell :is(th, td) {
+  border-bottom: none;
+}
+
+.ukeTabell td {
+  border-left: 1px solid var(--ax-border-neutral-subtle);
+}
+
+.checkmarkIcon {
+  color: var(--ax-text-success-decoration);
+  font-size: var(--ax-font-size-heading-small);
+}
+
+.deaktivert {
+  opacity: var(--ax-opacity-disabled);
+  pointer-events: none;
+}

@@ -4,6 +4,7 @@ import { HGrid, VStack } from '@navikt/ds-react';
 import { KvoteHistorikkDTO, SakDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { KvoteTabell, KvoteEndring } from 'components/kvote/kvote-tabell';
 import { norsktDatoformat, parseISOorNull } from 'lib/utils/date';
+import { harUnntakAAP } from 'lib/utils/vedtaksfakta';
 
 const posteringTypeNavn: Record<string, string> = {
   OPPD: 'Oppdatering',
@@ -50,7 +51,9 @@ export function Kvote({ sak }: Props): React.ReactElement {
     <VStack paddingBlock="space-40" gap="space-24">
       <HGrid gap="space-40" columns={2}>
         <KvoteTabell tittel="Historikk ordinær periode" endringer={ordinaerEndringer} />
-        <KvoteTabell tittel="Historikk unntaksperiode §11-12 andre og tredje ledd" endringer={utvidetEndringer} />
+        {harUnntakAAP(sak.vedtak) && (
+          <KvoteTabell tittel="Historikk unntaksperiode §11-12 andre og tredje ledd" endringer={utvidetEndringer} />
+        )}
       </HGrid>
     </VStack>
   );
