@@ -1,26 +1,29 @@
 'use client';
 
 import styles from './tilkjent-ytelse.module.css';
-import { SakDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
-import { BodyShort, Chips, HStack, ToggleGroup, VStack } from '@navikt/ds-react';
+import { SakDTO, TilkjentYtelseDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
+import { Alert, BodyShort, Button, Chips, HStack, Loader, ToggleGroup, VStack } from '@navikt/ds-react';
 import { useMemo, useState } from 'react';
 import { TilkjentYtelseTabell } from './tilkjent-ytelse-tabell';
 import { filtrerRader, filtrerRaderPaaSaksperiode, sorterRaderEtterTilOgMedDesc } from './tilkjent-ytelse-utils';
 import { finnSaksperiode, formaterSaksperiode, harSaksperiode } from 'lib/utils/saksperiode';
 import { harUnntakAAP } from 'lib/utils/vedtaksfakta';
+import { TilkjentYtelseStatus } from './tilkjent-ytelse-types';
 
 type Props = {
   sak: SakDTO;
+  tilkjentYtelse: TilkjentYtelseDTO | null;
+  status: TilkjentYtelseStatus;
+  hentPaaNytt: () => void;
 };
 
 type PeriodeValg = 'saksperiode' | 'alle';
 
-export function TilkjentYtelse({ sak }: Props): React.ReactElement {
+export function TilkjentYtelse({ sak, tilkjentYtelse, status, hentPaaNytt }: Props): React.ReactElement {
   const [visMeldekort, setVisMeldekort] = useState(true);
   const [visSpesialutbetaling, setVisSpesialutbetaling] = useState(true);
   const [periodeValg, setPeriodeValg] = useState<PeriodeValg>('saksperiode');
 
-  const tilkjentYtelse = sak.tilkjentYtelse;
   const rader = useMemo(() => tilkjentYtelse?.rader ?? [], [tilkjentYtelse]);
 
   const saksperiode = useMemo(() => finnSaksperiode(sak.vedtak), [sak.vedtak]);
@@ -32,6 +35,25 @@ export function TilkjentYtelse({ sak }: Props): React.ReactElement {
     const raderIPerioden = periodeValg === 'saksperiode' ? filtrerRaderPaaSaksperiode(rader, saksperiode) : rader;
     return sorterRaderEtterTilOgMedDesc(filtrerRader(raderIPerioden, { visMeldekort, visSpesialutbetaling }));
   }, [rader, saksperiode, periodeValg, visMeldekort, visSpesialutbetaling]);
+
+  if (status === 'ikkeHentet' || status === 'laster') {
+    return (
+      <VStack paddingBlock="space-40" align="center">
+        <Loader size="2xlarge" title="Henter tilkjent ytelse" />
+      </VStack>
+    );
+  }
+
+  if (status === 'feilet') {
+    return (
+      <VStack paddingBlock="space-40" gap="space-16" align="start">
+        <Alert variant="error">Klarte ikke å hente tilkjent ytelse for denne saken.</Alert>
+        <Button variant="secondary" size="small" onClick={hentPaaNytt}>
+          Prøv igjen
+        </Button>
+      </VStack>
+    );
+  }
 
   if (tilkjentYtelse == null) {
     return (

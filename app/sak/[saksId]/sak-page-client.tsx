@@ -8,23 +8,31 @@ import { Sakogvedtakinfo } from 'components/sakogvedtakinfo/sakogvedtakinfo';
 import { Kvote } from 'components/kvote/kvote';
 import { Oppgaver } from 'components/oppgaver/oppgaver';
 import { TilkjentYtelse } from 'components/tilkjent-ytelse/tilkjent-ytelse';
+import { useTilkjentYtelse } from 'components/tilkjent-ytelse/use-tilkjent-ytelse';
+import { useState } from 'react';
 
 type Props = {
   sak: SakDTO;
 };
 
+const TILKJENT_YTELSE_TAB = 'tilkjent-ytelse';
+
 export function SakPageClient({ sak }: Props): React.ReactElement {
   const antallOppgaver = sak.oppgaver?.length ?? 0;
+  const [aktivTab, setAktivTab] = useState('sak');
+
+  // Hooken bor her fordi Tabs.Panel avmonteres ved fanebytte, og hentet data skal caches.
+  const { tilkjentYtelse, status, hentPaaNytt } = useTilkjentYtelse(sak.sakId, aktivTab === TILKJENT_YTELSE_TAB);
 
   return (
     <>
       <PersonHeader sak={sak} />
       <div className={styles.container}>
         <div>
-          <Tabs defaultValue="sak">
+          <Tabs value={aktivTab} onChange={setAktivTab}>
             <Tabs.List>
               <Tabs.Tab value="sak" label={`Sak ${sak.opprettetAar} ${sak.lopenr}`} />
-              <Tabs.Tab value="tilkjent-ytelse" label="Tilkjent ytelse" />
+              <Tabs.Tab value={TILKJENT_YTELSE_TAB} label="Tilkjent ytelse" />
               <Tabs.Tab value="kvote" label="Kvote" />
               <Tabs.Tab value="notater" label="Notater" />
               <Tabs.Tab value="oppgaver" label={`Oppgaver (${antallOppgaver})`} />
@@ -34,9 +42,9 @@ export function SakPageClient({ sak }: Props): React.ReactElement {
                 <Sakogvedtakinfo sak={sak} />
               </div>
             </Tabs.Panel>
-            <Tabs.Panel value="tilkjent-ytelse">
+            <Tabs.Panel value={TILKJENT_YTELSE_TAB}>
               <div className={styles.tabcontent}>
-                <TilkjentYtelse sak={sak} />
+                <TilkjentYtelse sak={sak} tilkjentYtelse={tilkjentYtelse} status={status} hentPaaNytt={hentPaaNytt} />
               </div>
             </Tabs.Panel>
             <Tabs.Panel value="kvote">

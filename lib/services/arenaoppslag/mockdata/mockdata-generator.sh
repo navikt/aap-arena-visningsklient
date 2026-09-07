@@ -80,10 +80,12 @@ startMockdataGenerator() {
   configPath="${scriptDir}/${jsonConfig}"
 
   outputFile="${scriptDir}/mockdata.json"
+  tilkjentYtelseFile="${scriptDir}/mockdata-tilkjent-ytelse.json"
   # Én sak brukes som lesbart eksempel for AI-agenter og utviklere
   exampleSakId='2023-19822'
   exampleFile="${scriptDir}/mockdata-example.json"
   mapJson='{}'
+  tilkjentYtelseJson='{}'
 
   # Loop through sak IDs and fetch mockdata
   for sakId in $(jq -r '.[]' "${configPath}"); do
@@ -98,10 +100,22 @@ startMockdataGenerator() {
 
     mapJson=$(echo "${mapJson}" | jq --arg id "${sakId}" --argjson data "${response}" '. + {($id): $data}')
     echo -e "✅ ${Yellow}sak-${sakId}${Cyan} hentet"
+
+    tilkjentYtelseResponse=$(curl -s -H "Authorization: Bearer ${accessToken}" "${baseUrl}/${sakId}/tilkjent-ytelse")
+
+    if [[ -z "${tilkjentYtelseResponse}" ]]; then
+      tilkjentYtelseResponse='null'
+    fi
+
+    tilkjentYtelseJson=$(echo "${tilkjentYtelseJson}" | jq --arg id "${sakId}" --argjson data "${tilkjentYtelseResponse}" '. + {($id): $data}')
+    echo -e "✅ ${Yellow}tilkjent-ytelse-${sakId}${Cyan} hentet"
   done
 
   echo "${mapJson}" | jq '.' > "${outputFile}"
   echo -e "✅ ${Purple}mockdata.json${Cyan} oppdatert\n"
+
+  echo "${tilkjentYtelseJson}" | jq '.' > "${tilkjentYtelseFile}"
+  echo -e "✅ ${Purple}mockdata-tilkjent-ytelse.json${Cyan} oppdatert\n"
 
   echo "${mapJson}" | jq --arg id "${exampleSakId}" '.[$id]' > "${exampleFile}"
   echo -e "✅ ${Purple}mockdata-example.json${Cyan} oppdatert (eksempel for sak ${Yellow}${exampleSakId}${Cyan})\n"
