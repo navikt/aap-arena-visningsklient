@@ -165360,10 +165360,10 @@
         "notat": "Bruker har ikke meldt seg innen fristen, men skal ikke inaktiveres maskinelt fordi personen skal ha mild behandling."
       },
       {
-        "oppgaveId": 241061175,
-        "beskrivelse": "Registrer henvendelse - Person",
+        "oppgaveId": 241061178,
+        "beskrivelse": "Forbered vedtak - AAP - Endring",
         "sakskontekst": "AA:18818799469",
-        "visningsnavn": "Registrer henvendelse - Person",
+        "visningsnavn": "Forbered vedtak - AAP",
         "fristDato": "2026-04-15",
         "arbeidsbenk": "TG0331",
         "oppgaveEnhet": "0331",
@@ -165371,10 +165371,10 @@
         "notat": null
       },
       {
-        "oppgaveId": 241061178,
-        "beskrivelse": "Forbered vedtak - AAP - Endring",
+        "oppgaveId": 241061175,
+        "beskrivelse": "Registrer henvendelse - Person",
         "sakskontekst": "AA:18818799469",
-        "visningsnavn": "Forbered vedtak - AAP",
+        "visningsnavn": "Registrer henvendelse - Person",
         "fristDato": "2026-04-15",
         "arbeidsbenk": "TG0331",
         "oppgaveEnhet": "0331",
@@ -167587,7 +167587,7 @@
           {
             "kode": "UNNTAKAAP",
             "navn": "Unntak fra maksimal stønadsperiode AAP",
-            "verdi": "N",
+            "verdi": null,
             "registrertDato": "2026-05-26"
           },
           {
@@ -179854,10 +179854,96 @@
           },
           "gjenstaaendeOrdinaerDager": null,
           "gjenstaaendeUnntakDager": null
+        },
+        {
+          "fraOgMedDato": "2026-09-14",
+          "tilOgMedDato": "2026-09-27",
+          "uke": "38-39",
+          "kilde": "MELDEKORT",
+          "dagsatsMedBarnetillegg": null,
+          "dagsats": null,
+          "beregnetBrutto": null,
+          "timerArbeidet": 0.0,
+          "reduksjon": {
+            "levertForSentDager": 0,
+            "timerArbeidetProsent": 0,
+            "samordningsProsent": 0,
+            "totalReduksjonProsent": 0,
+            "fravar": 0.0,
+            "sykedager": 0.0,
+            "institusjonsProsent": null,
+            "anvistProsent": null
+          },
+          "meldekort": {
+            "meldekortId": 1699330450,
+            "meldedato": null,
+            "meldeform": "05",
+            "fortsattRegistrertArbeidssoker": null,
+            "kommentar": null,
+            "beregningStatusKode": "OPPRE",
+            "uker": [],
+            "anmerkninger": []
+          },
+          "gjenstaaendeOrdinaerDager": null,
+          "gjenstaaendeUnntakDager": null
+        },
+        {
+          "fraOgMedDato": "2026-09-28",
+          "tilOgMedDato": "2026-10-11",
+          "uke": "40-41",
+          "kilde": "MELDEKORT",
+          "dagsatsMedBarnetillegg": null,
+          "dagsats": null,
+          "beregnetBrutto": null,
+          "timerArbeidet": 0.0,
+          "reduksjon": {
+            "levertForSentDager": 0,
+            "timerArbeidetProsent": 0,
+            "samordningsProsent": 0,
+            "totalReduksjonProsent": 0,
+            "fravar": 0.0,
+            "sykedager": 0.0,
+            "institusjonsProsent": null,
+            "anvistProsent": null
+          },
+          "meldekort": {
+            "meldekortId": 1699330468,
+            "meldedato": null,
+            "meldeform": "05",
+            "fortsattRegistrertArbeidssoker": null,
+            "kommentar": null,
+            "beregningStatusKode": "OPPRE",
+            "uker": [],
+            "anmerkninger": []
+          },
+          "gjenstaaendeOrdinaerDager": null,
+          "gjenstaaendeUnntakDager": null
         }
       ]
     },
     "oppgaver": [
+      {
+        "oppgaveId": 241075186,
+        "beskrivelse": "Oppfølging - AAP-Bruker har ikke meldt seg",
+        "sakskontekst": "14927799937",
+        "visningsnavn": "Oppfølging",
+        "fristDato": "2026-09-11",
+        "arbeidsbenk": "0331",
+        "oppgaveEnhet": "0331",
+        "navEnhet": "0331",
+        "notat": "Bruker har ikke meldt seg innen fristen, men skal ikke inaktiveres maskinelt fordi personen skal ha mild behandling."
+      },
+      {
+        "oppgaveId": 241073312,
+        "beskrivelse": "Oppfølging - AAP-Bruker har ikke meldt seg",
+        "sakskontekst": "14927799937",
+        "visningsnavn": "Oppfølging",
+        "fristDato": "2026-09-04",
+        "arbeidsbenk": "0331",
+        "oppgaveEnhet": "0331",
+        "navEnhet": "0331",
+        "notat": "Bruker har ikke meldt seg innen fristen, men skal ikke inaktiveres maskinelt fordi personen skal ha mild behandling."
+      },
       {
         "oppgaveId": 241072894,
         "beskrivelse": "Oppfølging - AAP-Bruker har ikke meldt seg",
@@ -180057,17 +180143,6 @@
         "notat": "Bruker har ikke meldt seg innen fristen, men skal ikke inaktiveres maskinelt fordi personen skal ha mild behandling."
       },
       {
-        "oppgaveId": 241062980,
-        "beskrivelse": "Registrer meldeopplysninger",
-        "sakskontekst": "14927799937",
-        "visningsnavn": "Registrer meldeopplysninger",
-        "fristDato": "2026-04-30",
-        "arbeidsbenk": "TG0331",
-        "oppgaveEnhet": "0331",
-        "navEnhet": "0331",
-        "notat": "Manuelt meldekort skal registreres etter kontakt med bruker. Dato og hovedinnholdet i brukerkontakten skal dokumenteres på det manuelle meldekortet du registrerer."
-      },
-      {
         "oppgaveId": 241062981,
         "beskrivelse": "Oppdater meldestatus",
         "sakskontekst": "14927799937",
@@ -180099,6 +180174,17 @@
         "oppgaveEnhet": "0331",
         "navEnhet": "0331",
         "notat": null
+      },
+      {
+        "oppgaveId": 241062980,
+        "beskrivelse": "Registrer meldeopplysninger",
+        "sakskontekst": "14927799937",
+        "visningsnavn": "Registrer meldeopplysninger",
+        "fristDato": "2026-04-30",
+        "arbeidsbenk": "TG0331",
+        "oppgaveEnhet": "0331",
+        "navEnhet": "0331",
+        "notat": "Manuelt meldekort skal registreres etter kontakt med bruker. Dato og hovedinnholdet i brukerkontakten skal dokumenteres på det manuelle meldekortet du registrerer."
       },
       {
         "oppgaveId": 241061533,
@@ -215651,17 +215737,6 @@
         "notat": "Det er gitt fullt medhold i klage på sak 2026 12647"
       },
       {
-        "oppgaveId": 241063640,
-        "beskrivelse": "Registrer meldeopplysninger",
-        "sakskontekst": "30519244698",
-        "visningsnavn": "Registrer meldeopplysninger",
-        "fristDato": "2026-05-08",
-        "arbeidsbenk": "0220",
-        "oppgaveEnhet": "0220",
-        "navEnhet": "0220",
-        "notat": "27-05-2026: Flyttet fra 4154 i forbindelse med avvik på kontortilhørighet mellom Arena og Modia.\n15-05-2026: Flyttet fra 0220 i forbindelse med aktivering av bruker med gode muligheter.\nVedtak er fattet tilbake i tid. Det er opprettet 24 manuelle meldekort for perioden 01-01-2024 - 01-12-2024. Disse meldekortene må registreres for å bli beregnet. Dersom det er opprettet 1000 eller færre kort, kan bruker sende disse på nav.no. Ved mer enn 1000 kort må meldekortene registreres av saksbehandler."
-      },
-      {
         "oppgaveId": 241063671,
         "beskrivelse": "Registrer meldeopplysninger",
         "sakskontekst": "30519244698",
@@ -215682,6 +215757,17 @@
         "oppgaveEnhet": "0220",
         "navEnhet": "0220",
         "notat": "27-05-2026: Flyttet fra 4154 i forbindelse med avvik på kontortilhørighet mellom Arena og Modia.\n15-05-2026: Flyttet fra 0220 i forbindelse med aktivering av bruker med gode muligheter.\nVedtak er fattet tilbake i tid. Det er opprettet 2 manuelle meldekort for perioden 08-12-2025 - 04-01-2026. Disse meldekortene må registreres for å bli beregnet. Dersom det er opprettet 1000 eller færre kort, kan bruker sende disse på nav.no. Ved mer enn 1000 kort må meldekortene registreres av saksbehandler."
+      },
+      {
+        "oppgaveId": 241063640,
+        "beskrivelse": "Registrer meldeopplysninger",
+        "sakskontekst": "30519244698",
+        "visningsnavn": "Registrer meldeopplysninger",
+        "fristDato": "2026-05-08",
+        "arbeidsbenk": "0220",
+        "oppgaveEnhet": "0220",
+        "navEnhet": "0220",
+        "notat": "27-05-2026: Flyttet fra 4154 i forbindelse med avvik på kontortilhørighet mellom Arena og Modia.\n15-05-2026: Flyttet fra 0220 i forbindelse med aktivering av bruker med gode muligheter.\nVedtak er fattet tilbake i tid. Det er opprettet 24 manuelle meldekort for perioden 01-01-2024 - 01-12-2024. Disse meldekortene må registreres for å bli beregnet. Dersom det er opprettet 1000 eller færre kort, kan bruker sende disse på nav.no. Ved mer enn 1000 kort må meldekortene registreres av saksbehandler."
       },
       {
         "oppgaveId": 241062902,

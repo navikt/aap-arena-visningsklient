@@ -77369,8 +77369,14 @@
       }
     ]
   },
-  "2021-143265": null,
-  "2021-147132": null,
+  "2021-143265": {
+    "sakId": 13335922,
+    "rader": []
+  },
+  "2021-147132": {
+    "sakId": 13339857,
+    "rader": []
+  },
   "2023-15049": {
     "sakId": 13676545,
     "rader": [
@@ -92123,10 +92129,77 @@
         },
         "gjenstaaendeOrdinaerDager": null,
         "gjenstaaendeUnntakDager": null
+      },
+      {
+        "fraOgMedDato": "2026-09-14",
+        "tilOgMedDato": "2026-09-27",
+        "uke": "38-39",
+        "kilde": "MELDEKORT",
+        "dagsatsMedBarnetillegg": null,
+        "dagsats": null,
+        "beregnetBrutto": null,
+        "timerArbeidet": 0.0,
+        "reduksjon": {
+          "levertForSentDager": 0,
+          "timerArbeidetProsent": 0,
+          "samordningsProsent": 0,
+          "totalReduksjonProsent": 0,
+          "fravar": 0.0,
+          "sykedager": 0.0,
+          "institusjonsProsent": null,
+          "anvistProsent": null
+        },
+        "meldekort": {
+          "meldekortId": 1699330450,
+          "meldedato": null,
+          "meldeform": "05",
+          "fortsattRegistrertArbeidssoker": null,
+          "kommentar": null,
+          "beregningStatusKode": "OPPRE",
+          "uker": [],
+          "anmerkninger": []
+        },
+        "gjenstaaendeOrdinaerDager": null,
+        "gjenstaaendeUnntakDager": null
+      },
+      {
+        "fraOgMedDato": "2026-09-28",
+        "tilOgMedDato": "2026-10-11",
+        "uke": "40-41",
+        "kilde": "MELDEKORT",
+        "dagsatsMedBarnetillegg": null,
+        "dagsats": null,
+        "beregnetBrutto": null,
+        "timerArbeidet": 0.0,
+        "reduksjon": {
+          "levertForSentDager": 0,
+          "timerArbeidetProsent": 0,
+          "samordningsProsent": 0,
+          "totalReduksjonProsent": 0,
+          "fravar": 0.0,
+          "sykedager": 0.0,
+          "institusjonsProsent": null,
+          "anvistProsent": null
+        },
+        "meldekort": {
+          "meldekortId": 1699330468,
+          "meldedato": null,
+          "meldeform": "05",
+          "fortsattRegistrertArbeidssoker": null,
+          "kommentar": null,
+          "beregningStatusKode": "OPPRE",
+          "uker": [],
+          "anmerkninger": []
+        },
+        "gjenstaaendeOrdinaerDager": null,
+        "gjenstaaendeUnntakDager": null
       }
     ]
   },
-  "2021-112540": null,
+  "2021-112540": {
+    "sakId": 13304506,
+    "rader": []
+  },
   "2026-12639": {
     "sakId": 13782028,
     "rader": [
