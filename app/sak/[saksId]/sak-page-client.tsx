@@ -13,16 +13,18 @@ import { useState } from 'react';
 
 type Props = {
   sak: SakDTO;
+  // Arena-API-et slår opp saker på «år-løpenummer», ikke på den interne sak.sakId.
+  saksId: string;
 };
 
 const TILKJENT_YTELSE_TAB = 'tilkjent-ytelse';
 
-export function SakPageClient({ sak }: Props): React.ReactElement {
+export function SakPageClient({ sak, saksId }: Props): React.ReactElement {
   const antallOppgaver = sak.oppgaver?.length ?? 0;
   const [aktivTab, setAktivTab] = useState('sak');
 
   // Hooken bor her fordi Tabs.Panel avmonteres ved fanebytte, og hentet data skal caches.
-  const { tilkjentYtelse, status, hentPaaNytt } = useTilkjentYtelse(sak.sakId, aktivTab === TILKJENT_YTELSE_TAB);
+  const { tilkjentYtelse, status, hentPaaNytt } = useTilkjentYtelse(saksId, aktivTab === TILKJENT_YTELSE_TAB);
 
   return (
     <>

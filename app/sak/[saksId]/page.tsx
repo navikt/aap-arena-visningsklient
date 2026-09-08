@@ -26,5 +26,5 @@ export default async function SaksPage(props: { params: Promise<{ saksId: string
   // data om en bestemt bruker. Viktig at man sørger for at den ikke logged mange ganger.
   logAudit(`Åpnet arenasak ${sak.sakId}`, 'audit:access', sak.person.fodselsnummer);
 
-  return <SakPageClient sak={sak} />;
+  return <SakPageClient sak={sak} saksId={saksId} />;
 }
