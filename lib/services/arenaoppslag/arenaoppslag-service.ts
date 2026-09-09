@@ -4,9 +4,13 @@ import { cache } from 'react';
 import { apiFetch } from 'lib/services/api-fetch/apiFetch';
 import { isError } from 'lib/utils/api';
 import { mocksEnabled } from 'lib/utils/environment';
-import { SakDTO, TilkjentYtelseDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
+import { OppgaveDTO, SakDTO, TilkjentYtelseDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { getLogger, logAudit } from 'lib/serverutlis/logger';
-import { getMockSakFraArena, getMockTilkjentYtelse } from 'lib/services/arenaoppslag/arenaoppslag-mock';
+import {
+  getMockOppgaver,
+  getMockSakFraArena,
+  getMockTilkjentYtelse,
+} from 'lib/services/arenaoppslag/arenaoppslag-mock';
 import { harTilgangTilBruker } from 'lib/services/tilgang/tilgang-service';
 
 const baseUrl = process.env.ARENAOPPSLAG_API_BASE_URL;
@@ -104,4 +108,54 @@ export const hentTilkjentYtelseHvisTilgang = cache(async (saksId: string): Promi
   }
 
   return hentTilkjentYtelse(saksId);
+});
+
+// Cachet per request på samme måte som hentSak, slik at flere kall i samme rendering
+// ikke gir flere kall mot arenaoppslag.
+export const hentOppgaver = cache(async (saksId: string): Promise<OppgaveDTO[] | null> => {
+  // Fødselsnummeret hentes på serveren og ikke fra klienten, slik at tilgangssjekken ikke kan omgås.
+  const sak = await hentSak(saksId);
+  if (sak == null) {
+    return null;
+  }
+
+  const harTilgang = await harTilgangTilBruker(sak.person.fodselsnummer);
+  if (!harTilgang) {
+    logger.warn('Bruker har ikke tilgang til oppgaver for sak', { saksId });
+    throw Error('Ingen tilgang til oppgaver for sak');
+  }
+
+  logAudit(`Åpnet oppgaver for arenasak ${sak.sakId}`, 'audit:access', sak.person.fodselsnummer);
+
+  if (mocksEnabled()) {
+    return getMockOppgaver(saksId);
+  }
+
+  const response = await apiFetch<OppgaveDTO[]>(`${baseUrl}/api/intern/sak/${saksId}/oppgaver`, scope, 'GET');
+  if (isError(response)) {
+    if (response.status === 404) {
+      return null;
+    }
+    logger.error('Noe gikk galt ved henting av oppgaver fra arenaoppslag', { response });
+    throw Error('Noe gikk galt ved henting av oppgaver fra arenaoppslag', { cause: response });
+  }
+
+  return response.data;
+});
+
+// Sider skal bruke denne i stedet for hentOppgaver, slik at manglende tilgang gir null i stedet
+// for en feilside. Layouten viser allerede IkkeTilgang, men kan ikke hindre at den nestede siden
+// rendres - se https://nextjs.org/docs/app/guides/authentication#layouts-and-auth-checks.
+export const hentOppgaverHvisTilgang = cache(async (saksId: string): Promise<OppgaveDTO[] | null> => {
+  const sak = await hentSak(saksId);
+  if (sak == null) {
+    return null;
+  }
+
+  const harTilgang = await harTilgangTilBruker(sak.person.fodselsnummer);
+  if (!harTilgang) {
+    return null;
+  }
+
+  return hentOppgaver(saksId);
 });

@@ -173,5 +173,6 @@ export type SakDTO = {
   maksdato: string | NIL;
   sisteUtbetalingDato: string | NIL;
   // Tilkjent ytelse hentes fra eget endepunkt, selv om /detaljert fortsatt leverer feltet.
+  // Oppgaver hentes også fra eget endepunkt, selv om /detaljert fortsatt leverer feltet.
   oppgaver: OppgaveDTO[];
 };
