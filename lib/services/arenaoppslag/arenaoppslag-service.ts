@@ -1,17 +1,21 @@
 'use server';
 
+import { cache } from 'react';
 import { apiFetch } from 'lib/services/api-fetch/apiFetch';
 import { isError } from 'lib/utils/api';
 import { mocksEnabled } from 'lib/utils/environment';
 import { SakDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { getLogger } from 'lib/serverutlis/logger';
 import { getMockSakFraArena } from 'lib/services/arenaoppslag/arenaoppslag-mock';
+import { harTilgangTilBruker } from 'lib/services/tilgang/tilgang-service';
 
 const baseUrl = process.env.ARENAOPPSLAG_API_BASE_URL;
 const scope = process.env.ARENAOPPSLAG_API_SCOPE || '';
 const logger = getLogger('lib.services.arenaoppslag');
 
-export async function hentSak(saksId: string): Promise<SakDTO | null> {
+// Cachet per request slik at layout og sub-sidene under /sak/[saksId] kan hente samme sak
+// uavhengig av hverandre uten å utløse flere kall mot arenaoppslag (eller mock-dataene).
+export const hentSak = cache(async (saksId: string): Promise<SakDTO | null> => {
   if (mocksEnabled()) {
     return getMockSakFraArena(saksId);
   }
@@ -26,4 +30,24 @@ export async function hentSak(saksId: string): Promise<SakDTO | null> {
   }
 
   return response.data;
-}
+});
+
+// Sider/komponenter som viser arenaoppslag-data for en sak skal bruke denne i stedet for hentSak
+// direkte, slik at tilgangssjekken alltid følger med. Layouten under /sak/[saksId] kan ikke garantere
+// at en nestet side lar være å rendres/sendes til klienten selv om layouten ikke viser {children} for
+// en bruker uten tilgang - se https://nextjs.org/docs/app/guides/authentication#layouts-and-auth-checks.
+// Returnerer null både når saken ikke finnes og når bruker mangler tilgang, slik at ingen sak-data
+// noensinne lekkes til en klient uten tilgang. Cachet per request på samme måte som hentSak.
+export const hentSakHvisTilgang = cache(async (saksId: string): Promise<SakDTO | null> => {
+  const sak = await hentSak(saksId);
+  if (sak == null) {
+    return null;
+  }
+
+  const harTilgang = await harTilgangTilBruker(sak.person.fodselsnummer);
+  if (!harTilgang) {
+    return null;
+  }
+
+  return sak;
+});
