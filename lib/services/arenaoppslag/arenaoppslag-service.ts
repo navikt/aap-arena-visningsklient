@@ -4,9 +4,9 @@ import { cache } from 'react';
 import { apiFetch } from 'lib/services/api-fetch/apiFetch';
 import { isError } from 'lib/utils/api';
 import { mocksEnabled } from 'lib/utils/environment';
-import { SakDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
-import { getLogger } from 'lib/serverutlis/logger';
-import { getMockSakFraArena } from 'lib/services/arenaoppslag/arenaoppslag-mock';
+import { SakDTO, TilkjentYtelseDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
+import { getLogger, logAudit } from 'lib/serverutlis/logger';
+import { getMockSakFraArena, getMockTilkjentYtelse } from 'lib/services/arenaoppslag/arenaoppslag-mock';
 import { harTilgangTilBruker } from 'lib/services/tilgang/tilgang-service';
 
 const baseUrl = process.env.ARENAOPPSLAG_API_BASE_URL;
@@ -52,7 +52,9 @@ export const hentSakHvisTilgang = cache(async (saksId: string): Promise<SakDTO |
   return sak;
 });
 
-export async function hentTilkjentYtelse(saksId: string): Promise<TilkjentYtelseDTO | null> {
+// Cachet per request på samme måte som hentSak, slik at flere kall i samme rendering
+// ikke gir flere kall mot arenaoppslag.
+export const hentTilkjentYtelse = cache(async (saksId: string): Promise<TilkjentYtelseDTO | null> => {
   // Fødselsnummeret hentes på serveren og ikke fra klienten, slik at tilgangssjekken ikke kan omgås.
   const sak = await hentSak(saksId);
   if (sak == null) {
@@ -85,4 +87,21 @@ export async function hentTilkjentYtelse(saksId: string): Promise<TilkjentYtelse
   }
 
   return response.data;
-}
+});
+
+// Sider skal bruke denne i stedet for hentTilkjentYtelse, slik at manglende tilgang gir null i
+// stedet for en feilside. Layouten viser allerede IkkeTilgang, men kan ikke hindre at den nestede
+// siden rendres - se https://nextjs.org/docs/app/guides/authentication#layouts-and-auth-checks.
+export const hentTilkjentYtelseHvisTilgang = cache(async (saksId: string): Promise<TilkjentYtelseDTO | null> => {
+  const sak = await hentSak(saksId);
+  if (sak == null) {
+    return null;
+  }
+
+  const harTilgang = await harTilgangTilBruker(sak.person.fodselsnummer);
+  if (!harTilgang) {
+    return null;
+  }
+
+  return hentTilkjentYtelse(saksId);
+});

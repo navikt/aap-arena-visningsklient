@@ -1,0 +1,10 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: var(--ax-space-32);
+}
+
+.alert {
+  max-width: 650px;
+}
