@@ -1,7 +1,7 @@
 import { hentSakHvisTilgang } from 'lib/services/arenaoppslag/arenaoppslag-service';
-import { Sakogvedtakinfo } from 'components/sakogvedtakinfo/sakogvedtakinfo';
+import { Oppgaver } from 'components/oppgaver/oppgaver';
 
-export default async function SakPage(props: { params: Promise<{ saksId: string }> }) {
+export default async function OppgaverPage(props: { params: Promise<{ saksId: string }> }) {
   const { saksId } = await props.params;
 
   const sak = await hentSakHvisTilgang(saksId);
@@ -9,5 +9,5 @@ export default async function SakPage(props: { params: Promise<{ saksId: string 
     return null;
   }
 
-  return <Sakogvedtakinfo sak={sak} />;
+  return <Oppgaver sak={sak} />;
 }
