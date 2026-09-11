@@ -56,9 +56,18 @@ export const hentSakHvisTilgang = cache(async (saksId: string): Promise<SakDTO |
   return sak;
 });
 
-// Cachet per request på samme måte som hentSak, slik at flere kall i samme rendering
-// ikke gir flere kall mot arenaoppslag.
-export const hentTilkjentYtelse = cache(async (saksId: string): Promise<TilkjentYtelseDTO | null> => {
+type Sakressurs<T> = {
+  // Brukes i logg- og feilmeldinger, f.eks. "tilkjent ytelse".
+  navn: string;
+  sti: string;
+  hentMock: (saksId: string) => T | null;
+};
+
+// Felles flyt for underressurser til en sak: tilgangssjekk, audit-logging, mock og feilhåndtering.
+// Returnerer null både når saken ikke finnes og når bruker mangler tilgang, i stedet for å kaste.
+// Layouten viser allerede IkkeTilgang, men kan ikke hindre at den nestede siden rendres
+// - se https://nextjs.org/docs/app/guides/authentication#layouts-and-auth-checks.
+async function hentSakressursHvisTilgang<T>(saksId: string, ressurs: Sakressurs<T>): Promise<T | null> {
   // Fødselsnummeret hentes på serveren og ikke fra klienten, slik at tilgangssjekken ikke kan omgås.
   const sak = await hentSak(saksId);
   if (sak == null) {
@@ -67,95 +76,44 @@ export const hentTilkjentYtelse = cache(async (saksId: string): Promise<Tilkjent
 
   const harTilgang = await harTilgangTilBruker(sak.person.fodselsnummer);
   if (!harTilgang) {
-    logger.warn('Bruker har ikke tilgang til tilkjent ytelse for sak', { saksId });
-    throw Error('Ingen tilgang til tilkjent ytelse for sak');
+    logger.warn('Bruker har ikke tilgang til ressurs for sak', { saksId, ressurs: ressurs.navn });
+    return null;
   }
 
-  logAudit(`Åpnet tilkjent ytelse for arenasak ${sak.sakId}`, 'audit:access', sak.person.fodselsnummer);
+  logAudit(`Åpnet ${ressurs.navn} for arenasak ${sak.sakId}`, 'audit:access', sak.person.fodselsnummer);
 
   if (mocksEnabled()) {
-    return getMockTilkjentYtelse(saksId);
+    return ressurs.hentMock(saksId);
   }
 
-  const response = await apiFetch<TilkjentYtelseDTO>(
-    `${baseUrl}/api/intern/sak/${saksId}/tilkjent-ytelse`,
-    scope,
-    'GET'
-  );
+  const response = await apiFetch<T>(`${baseUrl}/api/intern/sak/${saksId}/${ressurs.sti}`, scope, 'GET');
   if (isError(response)) {
     if (response.status === 404) {
       return null;
     }
-    logger.error('Noe gikk galt ved henting av tilkjent ytelse fra arenaoppslag', { response });
-    throw Error('Noe gikk galt ved henting av tilkjent ytelse fra arenaoppslag', { cause: response });
+    logger.error('Noe gikk galt ved henting av ressurs fra arenaoppslag', { response, ressurs: ressurs.navn });
+    throw Error(`Noe gikk galt ved henting av ${ressurs.navn} fra arenaoppslag`, { cause: response });
   }
 
   return response.data;
-});
-
-// Sider skal bruke denne i stedet for hentTilkjentYtelse, slik at manglende tilgang gir null i
-// stedet for en feilside. Layouten viser allerede IkkeTilgang, men kan ikke hindre at den nestede
-// siden rendres - se https://nextjs.org/docs/app/guides/authentication#layouts-and-auth-checks.
-export const hentTilkjentYtelseHvisTilgang = cache(async (saksId: string): Promise<TilkjentYtelseDTO | null> => {
-  const sak = await hentSak(saksId);
-  if (sak == null) {
-    return null;
-  }
-
-  const harTilgang = await harTilgangTilBruker(sak.person.fodselsnummer);
-  if (!harTilgang) {
-    return null;
-  }
-
-  return hentTilkjentYtelse(saksId);
-});
+}
 
 // Cachet per request på samme måte som hentSak, slik at flere kall i samme rendering
 // ikke gir flere kall mot arenaoppslag.
-export const hentOppgaver = cache(async (saksId: string): Promise<OppgaveDTO[] | null> => {
-  // Fødselsnummeret hentes på serveren og ikke fra klienten, slik at tilgangssjekken ikke kan omgås.
-  const sak = await hentSak(saksId);
-  if (sak == null) {
-    return null;
-  }
+export const hentTilkjentYtelseHvisTilgang = cache(
+  async (saksId: string): Promise<TilkjentYtelseDTO | null> =>
+    hentSakressursHvisTilgang<TilkjentYtelseDTO>(saksId, {
+      navn: 'tilkjent ytelse',
+      sti: 'tilkjent-ytelse',
+      hentMock: getMockTilkjentYtelse,
+    })
+);
 
-  const harTilgang = await harTilgangTilBruker(sak.person.fodselsnummer);
-  if (!harTilgang) {
-    logger.warn('Bruker har ikke tilgang til oppgaver for sak', { saksId });
-    throw Error('Ingen tilgang til oppgaver for sak');
-  }
-
-  logAudit(`Åpnet oppgaver for arenasak ${sak.sakId}`, 'audit:access', sak.person.fodselsnummer);
-
-  if (mocksEnabled()) {
-    return getMockOppgaver(saksId);
-  }
-
-  const response = await apiFetch<OppgaveDTO[]>(`${baseUrl}/api/intern/sak/${saksId}/oppgaver`, scope, 'GET');
-  if (isError(response)) {
-    if (response.status === 404) {
-      return null;
-    }
-    logger.error('Noe gikk galt ved henting av oppgaver fra arenaoppslag', { response });
-    throw Error('Noe gikk galt ved henting av oppgaver fra arenaoppslag', { cause: response });
-  }
-
-  return response.data;
-});
-
-// Sider skal bruke denne i stedet for hentOppgaver, slik at manglende tilgang gir null i stedet
-// for en feilside. Layouten viser allerede IkkeTilgang, men kan ikke hindre at den nestede siden
-// rendres - se https://nextjs.org/docs/app/guides/authentication#layouts-and-auth-checks.
-export const hentOppgaverHvisTilgang = cache(async (saksId: string): Promise<OppgaveDTO[] | null> => {
-  const sak = await hentSak(saksId);
-  if (sak == null) {
-    return null;
-  }
-
-  const harTilgang = await harTilgangTilBruker(sak.person.fodselsnummer);
-  if (!harTilgang) {
-    return null;
-  }
-
-  return hentOppgaver(saksId);
-});
+export const hentOppgaverHvisTilgang = cache(
+  async (saksId: string): Promise<OppgaveDTO[] | null> =>
+    hentSakressursHvisTilgang<OppgaveDTO[]>(saksId, {
+      navn: 'oppgaver',
+      sti: 'oppgaver',
+      hentMock: getMockOppgaver,
+    })
+);
