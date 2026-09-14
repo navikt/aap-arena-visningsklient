@@ -1,6 +1,10 @@
 import styles from './sak.module.css';
 import { logAudit } from 'lib/serverutlis/logger';
-import { hentSak } from 'lib/services/arenaoppslag/arenaoppslag-service';
+import {
+  hentOppgaverHvisTilgang,
+  hentSak,
+  hentTelleverkHvisTilgang,
+} from 'lib/services/arenaoppslag/arenaoppslag-service';
 import { harTilgangTilBruker } from 'lib/services/tilgang/tilgang-service';
 import { IkkeTilgang } from 'components/ikke-tilgang/ikke-tilgang';
 import { SakIkkeFunnet } from 'components/sak-ikke-funnet/sak-ikke-funnet';
@@ -26,14 +30,16 @@ export default async function SakLayout(props: { params: Promise<{ saksId: strin
   // data om en bestemt bruker. Viktig at man sørger for at den ikke logged mange ganger.
   logAudit(`Åpnet arenasak ${sak.sakId}`, 'audit:access', sak.person.fodselsnummer);
 
+  const [telleverk, oppgaver] = await Promise.all([hentTelleverkHvisTilgang(saksId), hentOppgaverHvisTilgang(saksId)]);
+
   return (
     <>
-      <PersonHeader sak={sak} />
+      <PersonHeader sak={sak} telleverk={telleverk} />
       <div className={styles.container}>
         <SakTabsNav
           saksId={saksId}
           sakLabel={`Sak ${sak.opprettetAar} ${sak.lopenr}`}
-          antallOppgaver={sak.oppgaver?.length ?? 0}
+          antallOppgaver={oppgaver?.length ?? 0}
         />
         <div className={styles.tabcontent}>{props.children}</div>
       </div>
