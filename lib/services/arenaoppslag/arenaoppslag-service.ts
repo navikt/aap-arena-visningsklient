@@ -34,7 +34,6 @@ export const hentSak = cache(async (saksId: string): Promise<SakDTO | null> => {
   return response.data;
 });
 
-
 export const hentSakHvisTilgang = cache(async (saksId: string): Promise<SakDTO | null> => {
   const sak = await hentSak(saksId);
   if (sak == null) {
