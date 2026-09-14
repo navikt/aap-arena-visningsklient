@@ -42,10 +42,6 @@ const lagSak = (overrides: Partial<SakDTO> = {}): SakDTO =>
     registrertDato: '2024-01-01',
     avsluttetDato: null,
     vedtak: [lagVedtak()],
-    telleverkForPerson: null,
-    kvoteHistorikk: [],
-    maksdato: null,
-    sisteUtbetalingDato: null,
     person: {
       personId: 1,
       fodselsnummer: '01010101010',

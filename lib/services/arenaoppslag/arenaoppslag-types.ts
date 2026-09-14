@@ -72,6 +72,12 @@ export type TelleverkDTO = {
   utvidetAAPKvote: number;
 };
 
+export type TelleverkResponseDTO = {
+  telleverk: TelleverkDTO | NIL;
+  maksdato: string | NIL;
+  sisteUtbetalingDato: string | NIL;
+};
+
 export type KvoteHistorikkDTO = {
   id: number;
   kvoteTypeKode: string;
@@ -168,11 +174,4 @@ export type SakDTO = {
   registrertDato: string;
   avsluttetDato: string | NIL;
   vedtak: ArenaVedtakMedFaktaDTO[];
-  telleverkForPerson: TelleverkDTO | NIL;
-  kvoteHistorikk: KvoteHistorikkDTO[];
-  maksdato: string | NIL;
-  sisteUtbetalingDato: string | NIL;
-  // Tilkjent ytelse hentes fra eget endepunkt, selv om /detaljert fortsatt leverer feltet.
-  // Oppgaver hentes også fra eget endepunkt, selv om /detaljert fortsatt leverer feltet.
-  oppgaver: OppgaveDTO[];
 };

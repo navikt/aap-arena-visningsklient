@@ -82,12 +82,16 @@ startMockdataGenerator() {
   outputFile="${scriptDir}/mockdata.json"
   tilkjentYtelseFile="${scriptDir}/mockdata-tilkjent-ytelse.json"
   oppgaverFile="${scriptDir}/mockdata-oppgaver.json"
+  kvotehistorikkFile="${scriptDir}/mockdata-kvotehistorikk.json"
+  telleverkFile="${scriptDir}/mockdata-telleverk.json"
   # Én sak brukes som lesbart eksempel for AI-agenter og utviklere
   exampleSakId='2023-19822'
   exampleFile="${scriptDir}/mockdata-example.json"
   mapJson='{}'
   tilkjentYtelseJson='{}'
   oppgaverJson='{}'
+  kvotehistorikkJson='{}'
+  telleverkJson='{}'
 
   # Loop through sak IDs and fetch mockdata
   for sakId in $(jq -r '.[]' "${configPath}"); do
@@ -120,6 +124,24 @@ startMockdataGenerator() {
 
     oppgaverJson=$(echo "${oppgaverJson}" | jq --arg id "${sakId}" --argjson data "${oppgaverResponse}" '. + {($id): $data}')
     echo -e "✅ ${Yellow}oppgaver-${sakId}${Cyan} hentet"
+
+    kvotehistorikkResponse=$(curl -s -H "Authorization: Bearer ${accessToken}" "${baseUrl}/${sakId}/kvotehistorikk")
+
+    if [[ -z "${kvotehistorikkResponse}" ]]; then
+      kvotehistorikkResponse='null'
+    fi
+
+    kvotehistorikkJson=$(echo "${kvotehistorikkJson}" | jq --arg id "${sakId}" --argjson data "${kvotehistorikkResponse}" '. + {($id): $data}')
+    echo -e "✅ ${Yellow}kvotehistorikk-${sakId}${Cyan} hentet"
+
+    telleverkResponse=$(curl -s -H "Authorization: Bearer ${accessToken}" "${baseUrl}/${sakId}/telleverk")
+
+    if [[ -z "${telleverkResponse}" ]]; then
+      telleverkResponse='null'
+    fi
+
+    telleverkJson=$(echo "${telleverkJson}" | jq --arg id "${sakId}" --argjson data "${telleverkResponse}" '. + {($id): $data}')
+    echo -e "✅ ${Yellow}telleverk-${sakId}${Cyan} hentet"
   done
 
   echo "${mapJson}" | jq '.' > "${outputFile}"
@@ -130,6 +152,12 @@ startMockdataGenerator() {
 
   echo "${oppgaverJson}" | jq '.' > "${oppgaverFile}"
   echo -e "✅ ${Purple}mockdata-oppgaver.json${Cyan} oppdatert\n"
+
+  echo "${kvotehistorikkJson}" | jq '.' > "${kvotehistorikkFile}"
+  echo -e "✅ ${Purple}mockdata-kvotehistorikk.json${Cyan} oppdatert\n"
+
+  echo "${telleverkJson}" | jq '.' > "${telleverkFile}"
+  echo -e "✅ ${Purple}mockdata-telleverk.json${Cyan} oppdatert\n"
 
   echo "${mapJson}" | jq --arg id "${exampleSakId}" '.[$id]' > "${exampleFile}"
   echo -e "✅ ${Purple}mockdata-example.json${Cyan} oppdatert (eksempel for sak ${Yellow}${exampleSakId}${Cyan})\n"

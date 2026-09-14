@@ -15,11 +15,6 @@ const lagSak = (): SakDTO =>
     registrertDato: '2024-01-01',
     avsluttetDato: null,
     vedtak: [],
-    telleverkForPerson: null,
-    kvoteHistorikk: [],
-    maksdato: null,
-    sisteUtbetalingDato: null,
-    oppgaver: [],
     person: {
       personId: 1,
       fodselsnummer: '01010101010',

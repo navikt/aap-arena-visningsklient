@@ -40,12 +40,15 @@ function mapTilKvoteEndring(dto: KvoteHistorikkDTO): KvoteEndring {
 
 type Props = {
   sak: SakDTO;
+  kvotehistorikk: KvoteHistorikkDTO[] | null;
 };
 
-export function Kvote({ sak }: Props): React.ReactElement {
-  const ordinaerEndringer = sak.kvoteHistorikk.filter((h) => h.kvoteTypeKode === 'AAP').map(mapTilKvoteEndring);
+export function Kvote({ sak, kvotehistorikk }: Props): React.ReactElement {
+  const endringer = kvotehistorikk ?? [];
 
-  const utvidetEndringer = sak.kvoteHistorikk.filter((h) => h.kvoteTypeKode !== 'AAP').map(mapTilKvoteEndring);
+  const ordinaerEndringer = endringer.filter((h) => h.kvoteTypeKode === 'AAP').map(mapTilKvoteEndring);
+
+  const utvidetEndringer = endringer.filter((h) => h.kvoteTypeKode !== 'AAP').map(mapTilKvoteEndring);
 
   return (
     <VStack paddingBlock="space-40" gap="space-24">

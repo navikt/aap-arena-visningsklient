@@ -3,21 +3,23 @@
 import styles from './header.module.css';
 import { CopyButton, HStack, Label, Spacer } from '@navikt/ds-react';
 import { storForbokstavIHvertOrd } from 'lib/utils/string';
-import { SakDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
+import { SakDTO, TelleverkResponseDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { FieldValue } from 'components/felleskomponenter/field-value/field-value';
 import { norsktDatoformat } from 'lib/utils/date';
 
 type Props = {
   sak: SakDTO;
+  telleverk: TelleverkResponseDTO | null;
 };
 
-export function PersonHeader({ sak }: Props): React.ReactElement {
+export function PersonHeader({ sak, telleverk }: Props): React.ReactElement {
   const { fornavn, etternavn, fodselsnummer } = sak.person;
-  const ordineerAAPKvote = sak.telleverkForPerson?.ordineerAAPKvote;
-  const utvidetAAPKvote = sak.telleverkForPerson?.utvidetAAPKvote;
+  const telleverkForPerson = telleverk?.telleverk;
+  const ordineerAAPKvote = telleverkForPerson?.ordineerAAPKvote;
+  const utvidetAAPKvote = telleverkForPerson?.utvidetAAPKvote;
 
   const telleverkTekst =
-    sak.telleverkForPerson == null
+    telleverkForPerson == null
       ? '—'
       : ordineerAAPKvote != null && ordineerAAPKvote > 0
         ? `${ordineerAAPKvote / 20} dager (Ordinær)`
@@ -40,9 +42,14 @@ export function PersonHeader({ sak }: Props): React.ReactElement {
         <Spacer />
         <FieldValue
           label="Siste utbetaling"
-          value={sak.sisteUtbetalingDato != null ? norsktDatoformat(new Date(sak.sisteUtbetalingDato)) : '—'}
+          value={
+            telleverk?.sisteUtbetalingDato != null ? norsktDatoformat(new Date(telleverk.sisteUtbetalingDato)) : '—'
+          }
         />
-        <FieldValue label="Maksdato" value={sak.maksdato != null ? norsktDatoformat(new Date(sak.maksdato)) : '—'} />
+        <FieldValue
+          label="Maksdato"
+          value={telleverk?.maksdato != null ? norsktDatoformat(new Date(telleverk.maksdato)) : '—'}
+        />
         <FieldValue label="Gjenstående" value={telleverkTekst} />
       </HStack>
     </section>

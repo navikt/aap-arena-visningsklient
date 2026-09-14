@@ -1,0 +1,124 @@
+{
+  "2017-707799": {
+    "telleverk": {
+      "ordineerAAPKvote": 20900,
+      "utvidetAAPKvote": 10460
+    },
+    "maksdato": null,
+    "sisteUtbetalingDato": "2026-02-24"
+  },
+  "2021-331674": {
+    "telleverk": {
+      "ordineerAAPKvote": 10580,
+      "utvidetAAPKvote": 10460
+    },
+    "maksdato": null,
+    "sisteUtbetalingDato": "2025-05-30"
+  },
+  "2015-630813": {
+    "telleverk": {
+      "ordineerAAPKvote": 0,
+      "utvidetAAPKvote": 9140
+    },
+    "maksdato": null,
+    "sisteUtbetalingDato": "2021-10-16"
+  },
+  "2015-631494": {
+    "telleverk": {
+      "ordineerAAPKvote": 4200,
+      "utvidetAAPKvote": 10460
+    },
+    "maksdato": null,
+    "sisteUtbetalingDato": "2021-05-22"
+  },
+  "2016-766458": {
+    "telleverk": {
+      "ordineerAAPKvote": 16640,
+      "utvidetAAPKvote": 10460
+    },
+    "maksdato": null,
+    "sisteUtbetalingDato": "2021-08-13"
+  },
+  "2015-635780": {
+    "telleverk": {
+      "ordineerAAPKvote": 12260,
+      "utvidetAAPKvote": 10460
+    },
+    "maksdato": null,
+    "sisteUtbetalingDato": "2021-09-29"
+  },
+  "2024-28531": {
+    "telleverk": {
+      "ordineerAAPKvote": 14040,
+      "utvidetAAPKvote": 10460
+    },
+    "maksdato": null,
+    "sisteUtbetalingDato": "2025-01-15"
+  },
+  "2016-770618": {
+    "telleverk": {
+      "ordineerAAPKvote": 18800,
+      "utvidetAAPKvote": 10460
+    },
+    "maksdato": null,
+    "sisteUtbetalingDato": "2022-04-26"
+  },
+  "2021-143265": {
+    "telleverk": null,
+    "maksdato": null,
+    "sisteUtbetalingDato": null
+  },
+  "2021-147132": {
+    "telleverk": null,
+    "maksdato": null,
+    "sisteUtbetalingDato": null
+  },
+  "2023-15049": {
+    "telleverk": {
+      "ordineerAAPKvote": 3780,
+      "utvidetAAPKvote": 10460
+    },
+    "maksdato": null,
+    "sisteUtbetalingDato": "2025-09-22"
+  },
+  "2023-16217": {
+    "telleverk": {
+      "ordineerAAPKvote": 20380,
+      "utvidetAAPKvote": 10460
+    },
+    "maksdato": "2029-08-23",
+    "sisteUtbetalingDato": "2026-02-24"
+  },
+  "2021-112540": {
+    "telleverk": {
+      "ordineerAAPKvote": 14480,
+      "utvidetAAPKvote": 10460
+    },
+    "maksdato": null,
+    "sisteUtbetalingDato": "2021-04-06"
+  },
+  "2026-12639": {
+    "telleverk": {
+      "ordineerAAPKvote": 4540,
+      "utvidetAAPKvote": 10460
+    },
+    "maksdato": null,
+    "sisteUtbetalingDato": "2026-08-27"
+  },
+  "2023-19822": {
+    "telleverk": {
+      "ordineerAAPKvote": 0,
+      "utvidetAAPKvote": 10460
+    },
+    "maksdato": null,
+    "sisteUtbetalingDato": "2026-05-21"
+  },
+  "2026-12663": {
+    "telleverk": {
+      "ordineerAAPKvote": 15680,
+      "utvidetAAPKvote": 10460
+    },
+    "maksdato": null,
+    "sisteUtbetalingDato": "2026-08-06"
+  }
+}

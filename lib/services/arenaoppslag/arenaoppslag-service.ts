@@ -4,11 +4,19 @@ import { cache } from 'react';
 import { apiFetch } from 'lib/services/api-fetch/apiFetch';
 import { isError } from 'lib/utils/api';
 import { mocksEnabled } from 'lib/utils/environment';
-import { OppgaveDTO, SakDTO, TilkjentYtelseDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
-import { getLogger, logAudit } from 'lib/serverutlis/logger';
 import {
+  KvoteHistorikkDTO,
+  OppgaveDTO,
+  SakDTO,
+  TelleverkResponseDTO,
+  TilkjentYtelseDTO,
+} from 'lib/services/arenaoppslag/arenaoppslag-types';
+import { getLogger } from 'lib/serverutlis/logger';
+import {
+  getMockKvotehistorikk,
   getMockOppgaver,
   getMockSakFraArena,
+  getMockTelleverk,
   getMockTilkjentYtelse,
 } from 'lib/services/arenaoppslag/arenaoppslag-mock';
 import { harTilgangTilBruker } from 'lib/services/tilgang/tilgang-service';
@@ -56,6 +64,7 @@ type Sakressurs<T> = {
 };
 
 async function hentSakressursHvisTilgang<T>(saksId: string, ressurs: Sakressurs<T>): Promise<T | null> {
+  // Audit-logging for saken gjøres én gang i app/sak/[saksId]/layout.tsx, og gjentas derfor ikke her.
   // Fødselsnummeret hentes på serveren og ikke fra klienten, slik at tilgangssjekken ikke kan omgås.
   const sak = await hentSak(saksId);
   if (sak == null) {
@@ -67,8 +76,6 @@ async function hentSakressursHvisTilgang<T>(saksId: string, ressurs: Sakressurs<
     logger.warn('Bruker har ikke tilgang til ressurs for sak', { saksId, ressurs: ressurs.navn });
     return null;
   }
-
-  logAudit(`Åpnet ${ressurs.navn} for arenasak ${sak.sakId}`, 'audit:access', sak.person.fodselsnummer);
 
   if (mocksEnabled()) {
     return ressurs.hentMock(saksId);
@@ -103,5 +110,23 @@ export const hentOppgaverHvisTilgang = cache(
       navn: 'oppgaver',
       sti: 'oppgaver',
       hentMock: getMockOppgaver,
+    })
+);
+
+export const hentKvotehistorikkHvisTilgang = cache(
+  async (saksId: string): Promise<KvoteHistorikkDTO[] | null> =>
+    hentSakressursHvisTilgang<KvoteHistorikkDTO[]>(saksId, {
+      navn: 'kvotehistorikk',
+      sti: 'kvotehistorikk',
+      hentMock: getMockKvotehistorikk,
+    })
+);
+
+export const hentTelleverkHvisTilgang = cache(
+  async (saksId: string): Promise<TelleverkResponseDTO | null> =>
+    hentSakressursHvisTilgang<TelleverkResponseDTO>(saksId, {
+      navn: 'telleverk',
+      sti: 'telleverk',
+      hentMock: getMockTelleverk,
     })
 );
