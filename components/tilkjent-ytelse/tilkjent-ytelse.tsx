@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './tilkjent-ytelse.module.css';
-import { SakDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
+import { SakDTO, TilkjentYtelseDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { BodyShort, Chips, HStack, ToggleGroup, VStack } from '@navikt/ds-react';
 import { useMemo, useState } from 'react';
 import { TilkjentYtelseTabell } from './tilkjent-ytelse-tabell';
@@ -11,16 +11,16 @@ import { harUnntakAAP } from 'lib/utils/vedtaksfakta';
 
 type Props = {
   sak: SakDTO;
+  tilkjentYtelse: TilkjentYtelseDTO | null;
 };
 
 type PeriodeValg = 'saksperiode' | 'alle';
 
-export function TilkjentYtelse({ sak }: Props): React.ReactElement {
+export function TilkjentYtelse({ sak, tilkjentYtelse }: Props): React.ReactElement {
   const [visMeldekort, setVisMeldekort] = useState(true);
   const [visSpesialutbetaling, setVisSpesialutbetaling] = useState(true);
   const [periodeValg, setPeriodeValg] = useState<PeriodeValg>('saksperiode');
 
-  const tilkjentYtelse = sak.tilkjentYtelse;
   const rader = useMemo(() => tilkjentYtelse?.rader ?? [], [tilkjentYtelse]);
 
   const saksperiode = useMemo(() => finnSaksperiode(sak.vedtak), [sak.vedtak]);

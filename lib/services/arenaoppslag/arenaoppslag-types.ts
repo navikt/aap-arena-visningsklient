@@ -172,6 +172,7 @@ export type SakDTO = {
   kvoteHistorikk: KvoteHistorikkDTO[];
   maksdato: string | NIL;
   sisteUtbetalingDato: string | NIL;
-  tilkjentYtelse: TilkjentYtelseDTO | NIL;
+  // Tilkjent ytelse hentes fra eget endepunkt, selv om /detaljert fortsatt leverer feltet.
+  // Oppgaver hentes også fra eget endepunkt, selv om /detaljert fortsatt leverer feltet.
   oppgaver: OppgaveDTO[];
 };

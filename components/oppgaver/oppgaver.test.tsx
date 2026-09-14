@@ -3,7 +3,7 @@ import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import { Oppgaver } from 'components/oppgaver/oppgaver';
 import { formaterFrist, INGEN_VERDI, sorterPaaFristSynkende } from 'components/oppgaver/oppgave-utils';
-import { OppgaveDTO, SakDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
+import { OppgaveDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 
 const lagOppgave = (overrides: Partial<OppgaveDTO> = {}): OppgaveDTO => ({
   beskrivelse: 'Vurder dokument',
@@ -16,29 +16,6 @@ const lagOppgave = (overrides: Partial<OppgaveDTO> = {}): OppgaveDTO => ({
   notat: null,
   ...overrides,
 });
-
-const lagSak = (oppgaver: OppgaveDTO[]): SakDTO =>
-  ({
-    sakId: '123',
-    opprettetAar: 2024,
-    lopenr: 1,
-    statuskode: 'AKTIV',
-    statusnavn: 'Aktiv',
-    registrertDato: '2024-01-01',
-    avsluttetDato: null,
-    vedtak: [],
-    telleverkForPerson: null,
-    kvoteHistorikk: [],
-    maksdato: null,
-    sisteUtbetalingDato: null,
-    oppgaver,
-    person: {
-      personId: 1,
-      fodselsnummer: '01010101010',
-      fornavn: 'Test',
-      etternavn: 'Testesen',
-    },
-  }) as SakDTO;
 
 describe('formaterFrist', () => {
   it('formaterer dato på norsk format', () => {
@@ -71,13 +48,19 @@ describe('sorterPaaFristSynkende', () => {
 
 describe('Oppgaver', () => {
   it('viser tomtilstand når saken ikke har oppgaver', () => {
-    render(<Oppgaver sak={lagSak([])} />);
+    render(<Oppgaver oppgaver={[]} />);
+    expect(screen.getByTestId('ingen-oppgaver')).toBeInTheDocument();
+    expect(screen.queryByRole('table')).toBeNull();
+  });
+
+  it('viser tomtilstand når oppgaver mangler helt', () => {
+    render(<Oppgaver oppgaver={null} />);
     expect(screen.getByTestId('ingen-oppgaver')).toBeInTheDocument();
     expect(screen.queryByRole('table')).toBeNull();
   });
 
   it('viser frist, beskrivelse, arbeidsbenk og tema i tabellen', () => {
-    render(<Oppgaver sak={lagSak([lagOppgave()])} />);
+    render(<Oppgaver oppgaver={[lagOppgave()]} />);
 
     expect(screen.getByText('20.05.2026')).toBeInTheDocument();
     expect(screen.getByText('Vurder dokument')).toBeInTheDocument();
@@ -86,12 +69,12 @@ describe('Oppgaver', () => {
   });
 
   it('viser kommentarknapp kun når oppgaven har notat', () => {
-    render(<Oppgaver sak={lagSak([lagOppgave({ notat: 'Må følges opp' })])} />);
+    render(<Oppgaver oppgaver={[lagOppgave({ notat: 'Må følges opp' })]} />);
     expect(screen.getByRole('button', { name: 'Kommentar' })).toBeInTheDocument();
   });
 
   it('viser ingen kommentarknapp når notat mangler', () => {
-    render(<Oppgaver sak={lagSak([lagOppgave({ notat: null })])} />);
+    render(<Oppgaver oppgaver={[lagOppgave({ notat: null })]} />);
     expect(screen.queryByRole('button', { name: 'Kommentar' })).toBeNull();
   });
 });

@@ -1,12 +1,12 @@
 'use client';
 
 import { BodyShort, Label, Table, VStack } from '@navikt/ds-react';
-import { OppgaveDTO, SakDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
+import { OppgaveDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { TekstPopover } from 'components/felleskomponenter/tekst-popover/tekst-popover';
 import { formaterFrist, INGEN_VERDI, sorterPaaFristSynkende } from 'components/oppgaver/oppgave-utils';
 
 type Props = {
-  sak: SakDTO;
+  oppgaver: OppgaveDTO[] | null;
 };
 
 function OppgaveRad({ oppgave }: { oppgave: OppgaveDTO }): React.ReactElement {
@@ -23,15 +23,15 @@ function OppgaveRad({ oppgave }: { oppgave: OppgaveDTO }): React.ReactElement {
   );
 }
 
-export function Oppgaver({ sak }: Props): React.ReactElement {
-  const oppgaver = sorterPaaFristSynkende(sak.oppgaver ?? []);
+export function Oppgaver({ oppgaver }: Props): React.ReactElement {
+  const sorterteOppgaver = sorterPaaFristSynkende(oppgaver ?? []);
 
   return (
     <VStack paddingBlock="space-40" gap="space-16">
       <Label size="medium">
         Oppgaver i Arena registrert på tema AAP, oppfølging, feilutbetaling, klage/anke og person
       </Label>
-      {oppgaver.length === 0 ? (
+      {sorterteOppgaver.length === 0 ? (
         <BodyShort data-testid="ingen-oppgaver">Det er ingen oppgaver på denne saken.</BodyShort>
       ) : (
         <Table>
@@ -45,7 +45,7 @@ export function Oppgaver({ sak }: Props): React.ReactElement {
             </Table.Row>
           </Table.Header>
           <Table.Body>
-            {oppgaver.map((oppgave, index) => (
+            {sorterteOppgaver.map((oppgave, index) => (
               <OppgaveRad key={`${oppgave.beskrivelse}-${oppgave.fristDato}-${index}`} oppgave={oppgave} />
             ))}
           </Table.Body>
