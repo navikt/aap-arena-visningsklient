@@ -7,7 +7,8 @@ import { Tabs } from '@navikt/ds-react';
 type Props = {
   saksId: string;
   sakLabel: string;
-  antallOppgaver: number;
+  // null mens oppgavene fortsatt hentes, slik at fanene kan vises og klikkes med en gang.
+  antallOppgaver: number | null;
 };
 
 const TAB_SEGMENTER = ['tilkjent-ytelse', 'kvote', 'notater', 'oppgaver'] as const;
@@ -25,7 +26,12 @@ export function SakTabsNav({ saksId, sakLabel, antallOppgaver }: Props): React.R
         <Tabs.Tab as={Link} href={`/sak/${saksId}/tilkjent-ytelse`} value="tilkjent-ytelse" label="Tilkjent ytelse" />
         <Tabs.Tab as={Link} href={`/sak/${saksId}/kvote`} value="kvote" label="Kvote" />
         <Tabs.Tab as={Link} href={`/sak/${saksId}/notater`} value="notater" label="Notater" />
-        <Tabs.Tab as={Link} href={`/sak/${saksId}/oppgaver`} value="oppgaver" label={`Oppgaver (${antallOppgaver})`} />
+        <Tabs.Tab
+          as={Link}
+          href={`/sak/${saksId}/oppgaver`}
+          value="oppgaver"
+          label={antallOppgaver != null ? `Oppgaver (${antallOppgaver})` : 'Oppgaver'}
+        />
       </Tabs.List>
     </Tabs>
   );

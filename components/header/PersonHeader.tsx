@@ -3,29 +3,17 @@
 import styles from './header.module.css';
 import { CopyButton, HStack, Label, Spacer } from '@navikt/ds-react';
 import { storForbokstavIHvertOrd } from 'lib/utils/string';
-import { SakDTO, TelleverkResponseDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
-import { FieldValue } from 'components/felleskomponenter/field-value/field-value';
-import { norsktDatoformat } from 'lib/utils/date';
+import { SakDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 
 type Props = {
   sak: SakDTO;
-  telleverk: TelleverkResponseDTO | null;
+  // Telleverk hentes fra et eget, tregere endepunkt og sendes inn som en Suspense-grense,
+  // slik at navn og fødselsnummer kan vises før telleverket er klart.
+  children: React.ReactNode;
 };
 
-export function PersonHeader({ sak, telleverk }: Props): React.ReactElement {
+export function PersonHeader({ sak, children }: Props): React.ReactElement {
   const { fornavn, etternavn, fodselsnummer } = sak.person;
-  const telleverkForPerson = telleverk?.telleverk;
-  const ordineerAAPKvote = telleverkForPerson?.ordineerAAPKvote;
-  const utvidetAAPKvote = telleverkForPerson?.utvidetAAPKvote;
-
-  const telleverkTekst =
-    telleverkForPerson == null
-      ? '—'
-      : ordineerAAPKvote != null && ordineerAAPKvote > 0
-        ? `${ordineerAAPKvote / 20} dager (Ordinær)`
-        : utvidetAAPKvote != null && utvidetAAPKvote > 0
-          ? `${utvidetAAPKvote / 20} dager (Utvidet)`
-          : '0';
 
   return (
     <section className={styles.personheader}>
@@ -40,17 +28,7 @@ export function PersonHeader({ sak, telleverk }: Props): React.ReactElement {
           className={styles.copybutton}
         />
         <Spacer />
-        <FieldValue
-          label="Siste utbetaling"
-          value={
-            telleverk?.sisteUtbetalingDato != null ? norsktDatoformat(new Date(telleverk.sisteUtbetalingDato)) : '—'
-          }
-        />
-        <FieldValue
-          label="Maksdato"
-          value={telleverk?.maksdato != null ? norsktDatoformat(new Date(telleverk.maksdato)) : '—'}
-        />
-        <FieldValue label="Gjenstående" value={telleverkTekst} />
+        {children}
       </HStack>
     </section>
   );
