@@ -10,7 +10,6 @@ import {
   SakDTO,
   TelleverkResponseDTO,
   TilkjentYtelseDTO,
-  VedtakfaktaResponseDTO,
 } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { getLogger } from 'lib/serverutlis/logger';
 import {
@@ -19,7 +18,6 @@ import {
   getMockSakFraArena,
   getMockTelleverk,
   getMockTilkjentYtelse,
-  getMockVedtakfakta,
 } from 'lib/services/arenaoppslag/arenaoppslag-mock';
 import { harTilgangTilBruker } from 'lib/services/tilgang/tilgang-service';
 
@@ -131,38 +129,4 @@ export const hentTelleverkHvisTilgang = cache(
       sti: 'telleverk',
       hentMock: getMockTelleverk,
     })
-);
-
-export const hentVedtakfaktaHvisTilgang = cache(
-  async (saksId: string, vedtakId: string): Promise<VedtakfaktaResponseDTO | null> => {
-    // Tilgangen sjekkes mot saken, så vedtaket må tilhøre saken for å hindre oppslag av vedtak på andre personer.
-    const sak = await hentSakHvisTilgang(saksId);
-    if (sak == null) {
-      return null;
-    }
-
-    if (!sak.vedtak.some((vedtak) => vedtak.vedtakId.toString() === vedtakId)) {
-      logger.warn('Vedtak tilhører ikke saken', { saksId, vedtakId });
-      return null;
-    }
-
-    if (mocksEnabled()) {
-      return getMockVedtakfakta(vedtakId);
-    }
-
-    const response = await apiFetch<VedtakfaktaResponseDTO>(
-      `${baseUrl}/api/intern/vedtak/${vedtakId}/fakta`,
-      scope,
-      'GET'
-    );
-    if (isError(response)) {
-      if (response.status === 404) {
-        return null;
-      }
-      logger.error('Noe gikk galt ved henting av vedtaksfakta fra arenaoppslag', { response, saksId, vedtakId });
-      throw Error('Noe gikk galt ved henting av vedtaksfakta fra arenaoppslag', { cause: response });
-    }
-
-    return response.data;
-  }
 );

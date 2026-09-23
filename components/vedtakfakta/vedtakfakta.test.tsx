@@ -26,16 +26,16 @@ const lagVedtak = (overrides: Partial<ArenaVedtakMedFaktaDTO> = {}): ArenaVedtak
 
 describe('Vedtakfakta', () => {
   it('viser vedtaksnummer og rettighet i overskriften', () => {
-    render(<Vedtakfakta vedtak={lagVedtak()} fakta={[]} />);
+    render(<Vedtakfakta vedtak={lagVedtak()} />);
 
     expect(screen.getByRole('heading', { name: 'Vedtaksfakta' })).toBeInTheDocument();
     expect(screen.getByText('Vedtak nr. 3 – Arbeidsavklaringspenger')).toBeInTheDocument();
   });
 
-  it('viser fakta i samme rekkefølge som de kommer fra API-et', () => {
+  it('viser fakta i samme rekkefølge som de ligger på vedtaket', () => {
     const fakta = [lagFakta('TDATO', 'Til dato', '2024-12-31'), lagFakta('FDATO', 'Fra dato', '2024-01-01')];
 
-    render(<Vedtakfakta vedtak={lagVedtak()} fakta={fakta} />);
+    render(<Vedtakfakta vedtak={lagVedtak({ fakta })} />);
 
     const rader = screen.getAllByRole('row').slice(1);
     expect(rader).toHaveLength(2);
@@ -46,7 +46,7 @@ describe('Vedtakfakta', () => {
   });
 
   it('viser tankestrek når verdi mangler', () => {
-    render(<Vedtakfakta vedtak={lagVedtak()} fakta={[lagFakta('BARN', 'Antall barn', null)]} />);
+    render(<Vedtakfakta vedtak={lagVedtak({ fakta: [lagFakta('BARN', 'Antall barn', null)] })} />);
 
     const rad = screen.getAllByRole('row')[1];
     expect(within(rad).getByText('Antall barn')).toBeInTheDocument();
@@ -54,7 +54,7 @@ describe('Vedtakfakta', () => {
   });
 
   it('viser melding når vedtaket ikke har fakta', () => {
-    render(<Vedtakfakta vedtak={lagVedtak()} fakta={[]} />);
+    render(<Vedtakfakta vedtak={lagVedtak({ fakta: [] })} />);
 
     expect(screen.getByText('Det er ingen vedtaksfakta på vedtaket')).toBeInTheDocument();
     expect(screen.queryByRole('table')).not.toBeInTheDocument();

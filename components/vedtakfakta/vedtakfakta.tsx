@@ -1,16 +1,16 @@
 'use client';
 
 import { BodyShort, Heading, HStack, Table, VStack } from '@navikt/ds-react';
-import { ArenaVedtakfaktaDTO, ArenaVedtakMedFaktaDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
+import { ArenaVedtakMedFaktaDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { formaterFaktaDato } from 'lib/utils/date';
 
 type Props = {
   vedtak: ArenaVedtakMedFaktaDTO;
-  fakta: ArenaVedtakfaktaDTO[];
 };
 
-export function Vedtakfakta({ vedtak, fakta }: Props): React.ReactElement {
-  const vedtaksdato = formaterFaktaDato(vedtak.fakta.find((f) => f.kode === 'INNVF')?.verdi);
+export function Vedtakfakta({ vedtak }: Props): React.ReactElement {
+  const { fakta } = vedtak;
+  const vedtaksdato = formaterFaktaDato(fakta.find((f) => f.kode === 'INNVF')?.verdi);
 
   return (
     <VStack gap="space-24">
