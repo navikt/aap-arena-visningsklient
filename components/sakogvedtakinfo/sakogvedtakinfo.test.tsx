@@ -54,7 +54,7 @@ const lagSak = (overrides: Partial<SakDTO> = {}): SakDTO =>
 describe('Sakogvedtakinfo datovisning', () => {
   it('viser ikke dato når ingen vedtak har fradato', () => {
     const sak = lagSak({ vedtak: [lagVedtak({ fakta: [] })] });
-    render(<Sakogvedtakinfo sak={sak} />);
+    render(<Sakogvedtakinfo saksId="2024-1" sak={sak} />);
     expect(screen.queryByTestId('sak-datoperiode')).toBeNull();
   });
 
@@ -62,7 +62,7 @@ describe('Sakogvedtakinfo datovisning', () => {
     const sak = lagSak({
       vedtak: [lagVedtak({ fakta: [lagFakta('FDATO', '01-01-2024')] })],
     });
-    render(<Sakogvedtakinfo sak={sak} />);
+    render(<Sakogvedtakinfo saksId="2024-1" sak={sak} />);
     expect(screen.getByTestId('sak-datoperiode')).toHaveTextContent('01.01.2024');
   });
 
@@ -74,7 +74,7 @@ describe('Sakogvedtakinfo datovisning', () => {
         }),
       ],
     });
-    render(<Sakogvedtakinfo sak={sak} />);
+    render(<Sakogvedtakinfo saksId="2024-1" sak={sak} />);
     const datoperiode = screen.getByTestId('sak-datoperiode');
     expect(datoperiode).toHaveTextContent('15.03.2024');
     expect(datoperiode).not.toHaveTextContent('01.01.2024');
@@ -88,7 +88,7 @@ describe('Sakogvedtakinfo datovisning', () => {
         }),
       ],
     });
-    render(<Sakogvedtakinfo sak={sak} />);
+    render(<Sakogvedtakinfo saksId="2024-1" sak={sak} />);
     const datoperiode = screen.getByTestId('sak-datoperiode');
     expect(datoperiode).toHaveTextContent('01.01.2024');
     expect(datoperiode).toHaveTextContent('31.12.2024');
@@ -107,7 +107,7 @@ describe('Sakogvedtakinfo datovisning', () => {
         }),
       ],
     });
-    render(<Sakogvedtakinfo sak={sak} />);
+    render(<Sakogvedtakinfo saksId="2024-1" sak={sak} />);
     const datoperiode = screen.getByTestId('sak-datoperiode');
     expect(datoperiode).toHaveTextContent('01.01.2023');
     expect(datoperiode).toHaveTextContent('31.12.2024');
@@ -121,7 +121,7 @@ describe('Sakogvedtakinfo uker-tag', () => {
 
   it('viser ingen tag når sluttdato mangler', () => {
     const sak = lagSak({ vedtak: [lagVedtak({ fakta: [lagFakta('FDATO', '01-01-2024')] })] });
-    render(<Sakogvedtakinfo sak={sak} />);
+    render(<Sakogvedtakinfo saksId="2024-1" sak={sak} />);
     expect(screen.queryByTestId('sak-over-52-uker')).toBeNull();
     expect(screen.queryByTestId('sak-under-52-uker')).toBeNull();
   });
@@ -133,7 +133,7 @@ describe('Sakogvedtakinfo uker-tag', () => {
     const sak = lagSak({
       vedtak: [lagVedtak({ fakta: [lagFakta('FDATO', '01-01-2023'), lagFakta('TDATO', '01-01-2024')] })],
     });
-    render(<Sakogvedtakinfo sak={sak} />);
+    render(<Sakogvedtakinfo saksId="2024-1" sak={sak} />);
     expect(screen.queryByTestId('sak-over-52-uker')).toBeNull();
     expect(screen.getByTestId('sak-under-52-uker')).toBeInTheDocument();
   });
@@ -144,7 +144,7 @@ describe('Sakogvedtakinfo uker-tag', () => {
     const sak = lagSak({
       vedtak: [lagVedtak({ fakta: [lagFakta('FDATO', '01-01-2024'), lagFakta('TDATO', '01-06-2024')] })],
     });
-    render(<Sakogvedtakinfo sak={sak} />);
+    render(<Sakogvedtakinfo saksId="2024-1" sak={sak} />);
     expect(screen.queryByTestId('sak-over-52-uker')).toBeNull();
     expect(screen.getByTestId('sak-under-52-uker')).toBeInTheDocument();
   });
@@ -155,7 +155,7 @@ describe('Sakogvedtakinfo uker-tag', () => {
     const sak = lagSak({
       vedtak: [lagVedtak({ fakta: [lagFakta('FDATO', '01-01-2023'), lagFakta('TDATO', '27-12-2023')] })],
     });
-    render(<Sakogvedtakinfo sak={sak} />);
+    render(<Sakogvedtakinfo saksId="2024-1" sak={sak} />);
     expect(screen.getByTestId('sak-over-52-uker')).toBeInTheDocument();
     expect(screen.queryByTestId('sak-under-52-uker')).toBeNull();
   });

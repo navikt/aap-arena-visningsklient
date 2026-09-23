@@ -1,7 +1,8 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import { BodyShort, HStack, Label, Switch, VStack } from '@navikt/ds-react';
+import { BodyShort, HStack, Label, Link, Switch, VStack } from '@navikt/ds-react';
+import { ExternalLinkIcon } from '@navikt/aksel-icons';
 import { ArenaVedtakMedFaktaDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
 import { FieldValue } from 'components/felleskomponenter/field-value/field-value';
 import { formaterFaktaDato } from 'lib/utils/date';
@@ -12,11 +13,12 @@ import { ForholdTilAndreYtelserSeksjon } from 'components/sakogvedtakinfo/vedtak
 import { InstitusjonSeksjon } from 'components/sakogvedtakinfo/vedtakdetaljer/institusjon-seksjon';
 
 type Props = {
+  saksId: string;
   vedtak: ArenaVedtakMedFaktaDTO;
   relatertVedtak: ArenaVedtakMedFaktaDTO | null;
 };
 
-export function Vedtakdetaljer({ vedtak, relatertVedtak }: Props): React.ReactElement {
+export function Vedtakdetaljer({ saksId, vedtak, relatertVedtak }: Props): React.ReactElement {
   const faktaMap = useMemo(() => new Map(vedtak.fakta.map((f) => [f.kode, f])), [vedtak.vedtakId]);
 
   // Bygg alle oppslag for relatert vedtak én gang. Gating på visEndringer skjer i de avledede verdiene under.
@@ -60,9 +62,13 @@ export function Vedtakdetaljer({ vedtak, relatertVedtak }: Props): React.ReactEl
 
   return (
     <VStack gap="space-32" marginInline="space-32" marginBlock="space-8">
-      <HStack gap="space-16">
+      <HStack gap="space-16" align="center">
         <Label size="medium">Vedtak {vedtak.rettighetnavn}</Label>
         {vedtaksdatoFormatert != null && <BodyShort size="medium">{vedtaksdatoFormatert}</BodyShort>}
+        <Link href={`/sak/${saksId}/vedtakfakta/${vedtak.vedtakId}`} target="_blank" rel="noopener noreferrer">
+          Vis alle vedtaksfakta
+          <ExternalLinkIcon title="Åpnes i ny fane" />
+        </Link>
       </HStack>
       {relatertVedtak != null && (
         <HStack gap="space-32">

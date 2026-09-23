@@ -4,7 +4,3 @@
   max-width: var(--ax-breakpoint-2xl);
   width: 100%;
 }
-
-.tabcontent {
-  margin: var(--ax-space-16) 0;
-}
