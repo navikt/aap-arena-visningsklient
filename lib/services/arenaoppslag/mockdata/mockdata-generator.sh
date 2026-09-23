@@ -13,6 +13,7 @@ jsonConfig='mockdata.config.json'
 
 # Base URL for mockdata fetch
 baseUrl='https://arenaoppslag.dev-fss-pub.nais.io/api/intern/sak'
+vedtakBaseUrl='https://arenaoppslag.dev-fss-pub.nais.io/api/intern/vedtak'
 
 # Main script
 init() {
@@ -84,6 +85,7 @@ startMockdataGenerator() {
   oppgaverFile="${scriptDir}/mockdata-oppgaver.json"
   kvotehistorikkFile="${scriptDir}/mockdata-kvotehistorikk.json"
   telleverkFile="${scriptDir}/mockdata-telleverk.json"
+  vedtakfaktaFile="${scriptDir}/mockdata-vedtakfakta.json"
   # Én sak brukes som lesbart eksempel for AI-agenter og utviklere
   exampleSakId='2023-19822'
   exampleFile="${scriptDir}/mockdata-example.json"
@@ -92,6 +94,7 @@ startMockdataGenerator() {
   oppgaverJson='{}'
   kvotehistorikkJson='{}'
   telleverkJson='{}'
+  vedtakfaktaJson='{}'
 
   # Loop through sak IDs and fetch mockdata
   for sakId in $(jq -r '.[]' "${configPath}"); do
@@ -142,6 +145,17 @@ startMockdataGenerator() {
 
     telleverkJson=$(echo "${telleverkJson}" | jq --arg id "${sakId}" --argjson data "${telleverkResponse}" '. + {($id): $data}')
     echo -e "✅ ${Yellow}telleverk-${sakId}${Cyan} hentet"
+
+    for vedtakId in $(echo "${response}" | jq -r '.vedtak[].vedtakId'); do
+      vedtakfaktaResponse=$(curl -s -H "Authorization: Bearer ${accessToken}" "${vedtakBaseUrl}/${vedtakId}/fakta")
+
+      if [[ -z "${vedtakfaktaResponse}" ]]; then
+        vedtakfaktaResponse='null'
+      fi
+
+      vedtakfaktaJson=$(echo "${vedtakfaktaJson}" | jq --arg id "${vedtakId}" --argjson data "${vedtakfaktaResponse}" '. + {($id): $data}')
+    done
+    echo -e "✅ ${Yellow}vedtakfakta-${sakId}${Cyan} hentet"
   done
 
   echo "${mapJson}" | jq '.' > "${outputFile}"
@@ -158,6 +172,9 @@ startMockdataGenerator() {
 
   echo "${telleverkJson}" | jq '.' > "${telleverkFile}"
   echo -e "✅ ${Purple}mockdata-telleverk.json${Cyan} oppdatert\n"
+
+  echo "${vedtakfaktaJson}" | jq '.' > "${vedtakfaktaFile}"
+  echo -e "✅ ${Purple}mockdata-vedtakfakta.json${Cyan} oppdatert\n"
 
   echo "${mapJson}" | jq --arg id "${exampleSakId}" '.[$id]' > "${exampleFile}"
   echo -e "✅ ${Purple}mockdata-example.json${Cyan} oppdatert (eksempel for sak ${Yellow}${exampleSakId}${Cyan})\n"

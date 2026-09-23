@@ -9,6 +9,7 @@ import { finnSaksperiode } from 'lib/utils/saksperiode';
 import { differenceInWeeks } from 'date-fns';
 
 type Props = {
+  saksId: string;
   sak: SakDTO;
 };
 
@@ -27,7 +28,7 @@ function SluttdatoTag({ sluttdato }: { sluttdato: Date }): React.ReactElement {
   );
 }
 
-export function Sakogvedtakinfo({ sak }: Props): React.ReactElement {
+export function Sakogvedtakinfo({ saksId, sak }: Props): React.ReactElement {
   const nyesteVedtak = sak.vedtak.sort((a, b) => b.lopenrvedtak - a.lopenrvedtak)[0];
 
   const { startdato, sluttdato } = finnSaksperiode(sak.vedtak);
@@ -53,7 +54,7 @@ export function Sakogvedtakinfo({ sak }: Props): React.ReactElement {
         </HStack>
       </HStack>
       <Nokkeltall sak={sak} />
-      <VedtakTabell vedtak={sak.vedtak} />
+      <VedtakTabell saksId={saksId} vedtak={sak.vedtak} />
     </VStack>
   );
 }

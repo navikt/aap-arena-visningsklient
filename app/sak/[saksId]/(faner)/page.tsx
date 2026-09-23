@@ -9,5 +9,5 @@ export default async function SakPage(props: { params: Promise<{ saksId: string 
     return null;
   }
 
-  return <Sakogvedtakinfo sak={sak} />;
+  return <Sakogvedtakinfo saksId={saksId} sak={sak} />;
 }

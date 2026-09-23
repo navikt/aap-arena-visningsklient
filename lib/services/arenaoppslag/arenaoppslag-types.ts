@@ -7,6 +7,10 @@ export type ArenaVedtakfaktaDTO = {
   registrertDato: string;
 };
 
+export type VedtakfaktaResponseDTO = {
+  fakta: ArenaVedtakfaktaDTO[];
+};
+
 export type VilkårsvurderingDTO = {
   vilkårsvurderingId: number;
   vilkårkode: string;

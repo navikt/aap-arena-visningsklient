@@ -8,8 +8,6 @@ import { SakIkkeFunnet } from 'components/sak-ikke-funnet/sak-ikke-funnet';
 import { PersonHeader } from 'components/header/PersonHeader';
 import { TelleverkFelter } from 'components/header/telleverk-felter';
 import { TelleverkSkeleton } from 'components/header/telleverk-skeleton';
-import { SakTabsNav } from 'app/sak/[saksId]/sak-tabs-nav';
-import { SakTabsNavData } from 'app/sak/[saksId]/sak-tabs-nav-data';
 
 export default async function SakLayout(props: { params: Promise<{ saksId: string }>; children: React.ReactNode }) {
   const { saksId } = await props.params;
@@ -30,9 +28,8 @@ export default async function SakLayout(props: { params: Promise<{ saksId: strin
   // data om en bestemt bruker. Viktig at man sørger for at den ikke logged mange ganger.
   logAudit(`Åpnet arenasak ${sak.sakId}`, 'audit:access', sak.person.fodselsnummer);
 
-  const sakLabel = `Sak ${sak.opprettetAar} ${sak.lopenr}`;
-
-  // Telleverk og oppgaver hentes i egne Suspense-grenser slik at de ikke forsinker selve saksinnholdet.
+  // Telleverk hentes i egen Suspense-grense slik at det ikke forsinker selve saksinnholdet.
+  // Fanene ligger i (faner)/layout.tsx, slik at sider som vedtaksfakta kan vises med banner men uten faner.
   return (
     <>
       <PersonHeader sak={sak}>
@@ -40,12 +37,7 @@ export default async function SakLayout(props: { params: Promise<{ saksId: strin
           <TelleverkFelter saksId={saksId} />
         </Suspense>
       </PersonHeader>
-      <div className={styles.container}>
-        <Suspense fallback={<SakTabsNav saksId={saksId} sakLabel={sakLabel} antallOppgaver={null} />}>
-          <SakTabsNavData saksId={saksId} sakLabel={sakLabel} />
-        </Suspense>
-        <div className={styles.tabcontent}>{props.children}</div>
-      </div>
+      <div className={styles.container}>{props.children}</div>
     </>
   );
 }

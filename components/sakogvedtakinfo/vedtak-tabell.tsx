@@ -10,10 +10,11 @@ import { XMarkOctagonIcon } from '@navikt/aksel-icons';
 import { storForbokstav } from 'lib/utils/string';
 
 type Props = {
+  saksId: string;
   vedtak: ArenaVedtakMedFaktaDTO[];
 };
 
-export function VedtakTabell({ vedtak }: Props): React.ReactElement {
+export function VedtakTabell({ saksId, vedtak }: Props): React.ReactElement {
   if (vedtak.length === 0) {
     return (
       <div>
@@ -64,7 +65,7 @@ export function VedtakTabell({ vedtak }: Props): React.ReactElement {
               <Table.ExpandableRow
                 key={vedtakId}
                 togglePlacement="right"
-                content={<Vedtakdetaljer vedtak={vedtak} relatertVedtak={relatertVedtak} />}
+                content={<Vedtakdetaljer saksId={saksId} vedtak={vedtak} relatertVedtak={relatertVedtak} />}
               >
                 <Table.DataCell>{lopenrvedtak}</Table.DataCell>
                 <Table.DataCell scope="row">{rettighetnavn}</Table.DataCell>
