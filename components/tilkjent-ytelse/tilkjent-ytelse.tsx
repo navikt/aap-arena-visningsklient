@@ -28,6 +28,13 @@ export function TilkjentYtelse({ sak, tilkjentYtelse }: Props): React.ReactEleme
   const saksperiodeTekst = formaterSaksperiode(saksperiode);
   const visUnntaksperiode = harUnntakAAP(sak.vedtak);
 
+  // Aksel sitt ToggleGroup.Item støtter ikke disabled, så "Alle perioder" må også sperres her,
+  // ellers kan det fortsatt velges med tastaturet.
+  const velgPeriode = (verdi: string) => {
+    if (verdi === 'alle') return;
+    setPeriodeValg(verdi as PeriodeValg);
+  };
+
   const synligeRader = useMemo(() => {
     const raderIPerioden = periodeValg === 'saksperiode' ? filtrerRaderPaaSaksperiode(rader, saksperiode) : rader;
     return sorterRaderEtterTilOgMedDesc(filtrerRader(raderIPerioden, { visMeldekort, visSpesialutbetaling }));
@@ -49,9 +56,9 @@ export function TilkjentYtelse({ sak, tilkjentYtelse }: Props): React.ReactEleme
           className={kanFiltrerePaaSaksperiode ? undefined : styles.deaktivert}
           aria-disabled={kanFiltrerePaaSaksperiode ? undefined : 'true'}
         >
-          <ToggleGroup value={periodeValg} onChange={(verdi) => setPeriodeValg(verdi as PeriodeValg)} size="small">
+          <ToggleGroup value={periodeValg} onChange={velgPeriode} size="small">
             <ToggleGroup.Item value="saksperiode" label="Saksperiode" />
-            <ToggleGroup.Item value="alle" label="Alle perioder" />
+            <ToggleGroup.Item value="alle" label="Alle perioder" className={styles.deaktivert} aria-disabled="true" />
           </ToggleGroup>
         </div>
         {saksperiodeTekst != null && (
