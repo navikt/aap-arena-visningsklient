@@ -58,6 +58,25 @@ const lagSpesialutbetalingRad = (begrunnelse: string | null): TilkjentYtelseRadD
 });
 
 describe('TilkjentYtelseDetaljer spesialutbetaling', () => {
+  it('viser vedtaksstatus sammen med begrunnelsen', () => {
+    render(<TilkjentYtelseDetaljer rad={lagSpesialutbetalingRad('Begrunnelsetekst')} visUnntaksperiode={false} />);
+
+    expect(screen.getByText('Vedtaksstatus')).toBeInTheDocument();
+    expect(screen.getByText('IVERK')).toBeInTheDocument();
+  });
+
+  it('viser "Ikke funnet" når vedtaksstatus mangler', () => {
+    const rad = lagSpesialutbetalingRad('Begrunnelsetekst');
+    const utenStatus: TilkjentYtelseRadDTO = {
+      ...rad,
+      spesialutbetaling: { ...rad.spesialutbetaling!, vedtakStatusKode: null },
+    };
+
+    render(<TilkjentYtelseDetaljer rad={utenStatus} visUnntaksperiode={false} />);
+
+    expect(screen.getByText('Ikke funnet')).toBeInTheDocument();
+  });
+
   it('viser begrunnelsen som tekst', () => {
     render(
       <TilkjentYtelseDetaljer
