@@ -7,9 +7,11 @@ import styles from './tilkjent-ytelse.module.css';
 import {
   datoEllerIkkeFunnet,
   formaterAnvistProsent,
+  formaterBeregnetBrutto,
+  formaterDagsatsMedBarnetillegg,
+  formaterEffektivDagsats,
   formaterTotalReduksjon,
   formaterUke,
-  kronerEllerIkkeFunnet,
   tekstEllerIkkeFunnet,
 } from './tilkjent-ytelse-utils';
 
@@ -67,11 +69,11 @@ export function TilkjentYtelseTabell({ rader, visUnntaksperiode }: Props): React
             <Table.DataCell textSize="small">{datoEllerIkkeFunnet(rad.tilOgMedDato)}</Table.DataCell>
             <Table.DataCell textSize="small">{formaterUke(rad)}</Table.DataCell>
             <Table.DataCell textSize="small">{tekstEllerIkkeFunnet(rad.kilde)}</Table.DataCell>
-            <Table.DataCell textSize="small">{kronerEllerIkkeFunnet(rad.dagsatsMedBarnetillegg)}</Table.DataCell>
+            <Table.DataCell textSize="small">{formaterDagsatsMedBarnetillegg(rad)}</Table.DataCell>
             <Table.DataCell textSize="small">{formaterTotalReduksjon(rad)}</Table.DataCell>
             <Table.DataCell textSize="small">{formaterAnvistProsent(rad)}</Table.DataCell>
-            <Table.DataCell textSize="small">{kronerEllerIkkeFunnet(rad.dagsats)}</Table.DataCell>
-            <Table.DataCell textSize="small">{kronerEllerIkkeFunnet(rad.beregnetBrutto)}</Table.DataCell>
+            <Table.DataCell textSize="small">{formaterEffektivDagsats(rad)}</Table.DataCell>
+            <Table.DataCell textSize="small">{formaterBeregnetBrutto(rad)}</Table.DataCell>
           </Table.ExpandableRow>
         ))}
       </Table.Body>

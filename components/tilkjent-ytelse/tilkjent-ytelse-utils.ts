@@ -19,14 +19,44 @@ export function tekstEllerIkkeFunnet(verdi: string | null | undefined): string {
   return verdi != null && verdi !== '' ? verdi : IKKE_FUNNET;
 }
 
+// Arena leverer kilde med store bokstaver, så sammenligningen må tåle ulik skrivemåte.
+function harKilde(rad: TilkjentYtelseRadDTO, kilde: string): boolean {
+  return rad.kilde?.toLowerCase() === kilde.toLowerCase();
+}
+
+export function erSpesialutbetaling(rad: TilkjentYtelseRadDTO): boolean {
+  return harKilde(rad, KILDE_SPESIALUTBETALING);
+}
+
+export function erMeldekort(rad: TilkjentYtelseRadDTO): boolean {
+  return harKilde(rad, KILDE_MELDEKORT);
+}
+
 // Spesialutbetalinger har ikke ukedata, så feltet skal stå tomt fremfor å vise "Ikke funnet".
 export function formaterUke(rad: TilkjentYtelseRadDTO): string {
-  if (rad.kilde === KILDE_SPESIALUTBETALING) return '';
+  if (erSpesialutbetaling(rad)) return '';
   return tekstEllerIkkeFunnet(rad.uke);
 }
 
 export function kronerEllerIkkeFunnet(verdi: number | null | undefined): string {
   return verdi != null ? formaterTilNok(verdi) : IKKE_FUNNET;
+}
+
+// Spesialutbetalinger er engangsbeløp uten dagsats, så feltet skal stå tomt fremfor å vise "Ikke funnet".
+export function formaterDagsatsMedBarnetillegg(rad: TilkjentYtelseRadDTO): string {
+  if (erSpesialutbetaling(rad)) return '';
+  return kronerEllerIkkeFunnet(rad.dagsatsMedBarnetillegg);
+}
+
+export function formaterEffektivDagsats(rad: TilkjentYtelseRadDTO): string {
+  if (erSpesialutbetaling(rad)) return '';
+  return kronerEllerIkkeFunnet(rad.dagsats);
+}
+
+// For spesialutbetalinger ligger det utbetalte beløpet på spesialutbetalingen, ikke på raden.
+export function formaterBeregnetBrutto(rad: TilkjentYtelseRadDTO): string {
+  if (erSpesialutbetaling(rad)) return kronerEllerIkkeFunnet(rad.spesialutbetaling?.belop);
+  return kronerEllerIkkeFunnet(rad.beregnetBrutto);
 }
 
 export function datoEllerIkkeFunnet(datostring: string | null | undefined): string {
@@ -120,7 +150,7 @@ export function formaterProsentMedBelop(rad: TilkjentYtelseRadDTO, prosent: numb
 
 // Spesialutbetalinger har ikke reduksjonsdata, så feltet skal stå tomt fremfor å vise "Ikke funnet".
 export function formaterTotalReduksjon(rad: TilkjentYtelseRadDTO): string {
-  if (rad.kilde === KILDE_SPESIALUTBETALING) return '';
+  if (erSpesialutbetaling(rad)) return '';
   return formaterProsentMedBelop(rad, rad.reduksjon?.totalReduksjonProsent);
 }
 
@@ -135,6 +165,7 @@ export function formaterInstitusjon(rad: TilkjentYtelseRadDTO): string {
 
 // Arena oppgir anvist prosent i 200-basis, der 200 % tilsvarer full 2-ukersperiode.
 export function formaterAnvistProsent(rad: TilkjentYtelseRadDTO): string {
+  if (erSpesialutbetaling(rad)) return '';
   const prosent = rad.reduksjon?.anvistProsent;
   if (prosent == null) return '';
   return `${prosent.toLocaleString('nb-NO')}\u00a0%`;
@@ -155,8 +186,8 @@ export type RadFilter = { visMeldekort: boolean; visSpesialutbetaling: boolean }
 
 export function filtrerRader(rader: TilkjentYtelseRadDTO[], filter: RadFilter): TilkjentYtelseRadDTO[] {
   return rader.filter((rad) => {
-    if (rad.kilde === KILDE_SPESIALUTBETALING) return filter.visSpesialutbetaling;
-    if (rad.kilde === KILDE_MELDEKORT) return filter.visMeldekort;
+    if (erSpesialutbetaling(rad)) return filter.visSpesialutbetaling;
+    if (erMeldekort(rad)) return filter.visMeldekort;
     return true;
   });
 }

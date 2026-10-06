@@ -13,6 +13,7 @@ jsonConfig='mockdata.config.json'
 
 # Base URL for mockdata fetch
 baseUrl='https://arenaoppslag.dev-fss-pub.nais.io/api/intern/sak'
+personBaseUrl='https://arenaoppslag.dev-fss-pub.nais.io/api/intern/person'
 
 # Main script
 init() {
@@ -84,6 +85,7 @@ startMockdataGenerator() {
   oppgaverFile="${scriptDir}/mockdata-oppgaver.json"
   kvotehistorikkFile="${scriptDir}/mockdata-kvotehistorikk.json"
   telleverkFile="${scriptDir}/mockdata-telleverk.json"
+  meldekortStartukeFile="${scriptDir}/mockdata-meldekort-startuke.json"
   # Én sak brukes som lesbart eksempel for AI-agenter og utviklere
   exampleSakId='2023-19822'
   exampleFile="${scriptDir}/mockdata-example.json"
@@ -92,6 +94,7 @@ startMockdataGenerator() {
   oppgaverJson='{}'
   kvotehistorikkJson='{}'
   telleverkJson='{}'
+  meldekortStartukeJson='{}'
 
   # Loop through sak IDs and fetch mockdata
   for sakId in $(jq -r '.[]' "${configPath}"); do
@@ -142,6 +145,30 @@ startMockdataGenerator() {
 
     telleverkJson=$(echo "${telleverkJson}" | jq --arg id "${sakId}" --argjson data "${telleverkResponse}" '. + {($id): $data}')
     echo -e "✅ ${Yellow}telleverk-${sakId}${Cyan} hentet"
+
+    fodselsnummer=$(echo "${response}" | jq -r '.person.fodselsnummer // empty')
+
+    if [[ -z "${fodselsnummer}" ]]; then
+      echo -e "🟡 ${Yellow}meldekort-startuke-${sakId}${Cyan} hoppet over (mangler fødselsnummer)"
+    elif echo "${meldekortStartukeJson}" | jq -e --arg fnr "${fodselsnummer}" 'has($fnr)' > /dev/null; then
+      # Flere saker kan tilhøre samme person, og startuke er per person
+      echo -e "🟡 ${Yellow}meldekort-startuke-${sakId}${Cyan} allerede hentet for personen"
+    else
+      meldekortStartukeBody=$(jq -n --arg fnr "${fodselsnummer}" '{personidentifikator: $fnr}')
+      meldekortStartukeResponse=$(curl -s -X POST \
+        -H "Authorization: Bearer ${accessToken}" \
+        -H "Content-Type: application/json" \
+        -d "${meldekortStartukeBody}" \
+        "${personBaseUrl}/meldekort/startuke")
+
+      # 404 svarer med ren tekst, som ikke kan lagres med --argjson
+      if [[ -z "${meldekortStartukeResponse}" ]] || ! echo "${meldekortStartukeResponse}" | jq empty > /dev/null 2>&1; then
+        meldekortStartukeResponse='null'
+      fi
+
+      meldekortStartukeJson=$(echo "${meldekortStartukeJson}" | jq --arg fnr "${fodselsnummer}" --argjson data "${meldekortStartukeResponse}" '. + {($fnr): $data}')
+      echo -e "✅ ${Yellow}meldekort-startuke-${sakId}${Cyan} hentet"
+    fi
   done
 
   echo "${mapJson}" | jq '.' > "${outputFile}"
@@ -158,6 +185,9 @@ startMockdataGenerator() {
 
   echo "${telleverkJson}" | jq '.' > "${telleverkFile}"
   echo -e "✅ ${Purple}mockdata-telleverk.json${Cyan} oppdatert\n"
+
+  echo "${meldekortStartukeJson}" | jq '.' > "${meldekortStartukeFile}"
+  echo -e "✅ ${Purple}mockdata-meldekort-startuke.json${Cyan} oppdatert\n"
 
   echo "${mapJson}" | jq --arg id "${exampleSakId}" '.[$id]' > "${exampleFile}"
   echo -e "✅ ${Purple}mockdata-example.json${Cyan} oppdatert (eksempel for sak ${Yellow}${exampleSakId}${Cyan})\n"

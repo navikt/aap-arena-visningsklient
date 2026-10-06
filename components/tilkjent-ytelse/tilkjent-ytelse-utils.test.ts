@@ -9,12 +9,17 @@ import {
   beregnPeriodegrunnlag,
   beregnTotaleTimerIPerioden,
   datoEllerIkkeFunnet,
+  erMeldekort,
+  erSpesialutbetaling,
   filtrerRader,
   filtrerRaderPaaSaksperiode,
   formaterAnmerkning,
   formaterAnvistProsent,
   formaterArbeid,
+  formaterBeregnetBrutto,
+  formaterDagsatsMedBarnetillegg,
   formaterDager,
+  formaterEffektivDagsats,
   formaterGjenstaaendeDager,
   formaterInstitusjon,
   formaterSamordning,
@@ -54,9 +59,80 @@ const lagRad = (overrides: Partial<TilkjentYtelseRadDTO> = {}): TilkjentYtelseRa
   timerArbeidet: 0,
   reduksjon: null,
   meldekort: null,
+  spesialutbetaling: null,
   gjenstaaendeOrdinaerDager: null,
   gjenstaaendeUnntakDager: null,
   ...overrides,
+});
+
+const lagSpesialutbetaling = (
+  overrides: Partial<NonNullable<TilkjentYtelseRadDTO['spesialutbetaling']>> = {}
+): NonNullable<TilkjentYtelseRadDTO['spesialutbetaling']> => ({
+  begrunnelse: 'Maskinell etterbetaling på grunn av endret grunnbeløp',
+  belop: 1581,
+  belopKode: 'AAP',
+  datoUtbetaling: '2025-06-04',
+  fraOgMedDato: '2025-05-01',
+  tilOgMedDato: '2025-05-25',
+  vedtakStatusKode: 'IVERK',
+  posteringTypeKode: 'INIT',
+  statusBilag: null,
+  statusAnvistBilag: null,
+  kategori: null,
+  valgtUtbetalingType: null,
+  saksbehandler: '4491',
+  beslutter: 'GRENSESN',
+  ...overrides,
+});
+
+describe('erSpesialutbetaling og erMeldekort', () => {
+  it('gjenkjenner kilde uavhengig av store og små bokstaver', () => {
+    expect(erSpesialutbetaling(lagRad({ kilde: 'SPESIALUTBETALING' }))).toBe(true);
+    expect(erSpesialutbetaling(lagRad({ kilde: 'Spesialutbetaling' }))).toBe(true);
+    expect(erMeldekort(lagRad({ kilde: 'MELDEKORT' }))).toBe(true);
+    expect(erMeldekort(lagRad({ kilde: 'Meldekort' }))).toBe(true);
+  });
+
+  it('returnerer false for andre kilder', () => {
+    expect(erSpesialutbetaling(lagRad({ kilde: 'MELDEKORT' }))).toBe(false);
+    expect(erMeldekort(lagRad({ kilde: 'SPESIALUTBETALING' }))).toBe(false);
+  });
+});
+
+describe('formaterDagsatsMedBarnetillegg og formaterEffektivDagsats', () => {
+  it('viser kronebeløp for meldekortrader', () => {
+    const rad = lagRad({ kilde: 'MELDEKORT', dagsatsMedBarnetillegg: 1500, dagsats: 1426 });
+    expect(formaterDagsatsMedBarnetillegg(rad)).toBe(formaterTilNok(1500));
+    expect(formaterEffektivDagsats(rad)).toBe(formaterTilNok(1426));
+  });
+
+  it('returnerer tom streng for spesialutbetalinger', () => {
+    const rad = lagRad({ kilde: 'SPESIALUTBETALING', dagsatsMedBarnetillegg: 1500, dagsats: 1426 });
+    expect(formaterDagsatsMedBarnetillegg(rad)).toBe('');
+    expect(formaterEffektivDagsats(rad)).toBe('');
+  });
+});
+
+describe('formaterBeregnetBrutto', () => {
+  it('viser beregnet brutto for meldekortrader', () => {
+    expect(formaterBeregnetBrutto(lagRad({ kilde: 'MELDEKORT', beregnetBrutto: 8556 }))).toBe(formaterTilNok(8556));
+  });
+
+  it('viser beløpet fra spesialutbetalingen for spesialutbetalinger', () => {
+    const rad = lagRad({
+      kilde: 'SPESIALUTBETALING',
+      beregnetBrutto: 8556,
+      spesialutbetaling: lagSpesialutbetaling({ belop: 1581 }),
+    });
+    expect(formaterBeregnetBrutto(rad)).toBe(formaterTilNok(1581));
+  });
+
+  it('returnerer "Ikke funnet" når spesialutbetalingen mangler beløp', () => {
+    const utenBelop = lagRad({ kilde: 'SPESIALUTBETALING', spesialutbetaling: lagSpesialutbetaling({ belop: null }) });
+    const utenObjekt = lagRad({ kilde: 'SPESIALUTBETALING', spesialutbetaling: null });
+    expect(formaterBeregnetBrutto(utenBelop)).toBe(IKKE_FUNNET);
+    expect(formaterBeregnetBrutto(utenObjekt)).toBe(IKKE_FUNNET);
+  });
 });
 
 describe('tekstEllerIkkeFunnet', () => {
@@ -457,5 +533,10 @@ describe('formaterAnvistProsent', () => {
 
   it('returnerer tom streng når anvistProsent er null', () => {
     expect(formaterAnvistProsent(lagRad({ reduksjon: lagReduksjon({ anvistProsent: null }) }))).toBe('');
+  });
+
+  it('returnerer tom streng for spesialutbetalinger selv om reduksjon finnes', () => {
+    const rad = lagRad({ kilde: 'SPESIALUTBETALING', reduksjon: lagReduksjon({ anvistProsent: 200 }) });
+    expect(formaterAnvistProsent(rad)).toBe('');
   });
 });

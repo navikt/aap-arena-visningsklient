@@ -143,6 +143,23 @@ export type TilkjentYtelseReduksjonDTO = {
   anvistProsent: number | NIL;
 };
 
+export type TilkjentYtelseSpesialutbetalingDTO = {
+  begrunnelse: string | NIL;
+  belop: number | NIL;
+  belopKode: string | NIL;
+  datoUtbetaling: string | NIL;
+  fraOgMedDato: string | NIL;
+  tilOgMedDato: string | NIL;
+  vedtakStatusKode: string | NIL;
+  posteringTypeKode: string | NIL;
+  statusBilag: string | NIL;
+  statusAnvistBilag: string | NIL;
+  kategori: string | NIL;
+  valgtUtbetalingType: string | NIL;
+  saksbehandler: string | NIL;
+  beslutter: string | NIL;
+};
+
 export type TilkjentYtelseRadDTO = {
   fraOgMedDato: string | NIL;
   tilOgMedDato: string | NIL;
@@ -154,6 +171,7 @@ export type TilkjentYtelseRadDTO = {
   timerArbeidet: number | NIL;
   reduksjon: TilkjentYtelseReduksjonDTO | NIL;
   meldekort: TilkjentYtelseMeldekortDTO | NIL;
+  spesialutbetaling: TilkjentYtelseSpesialutbetalingDTO | NIL;
   // Gjenstående saldo etter denne perioden. Mangler på eldre rader fra før Arena begynte å telle.
   gjenstaaendeOrdinaerDager: number | NIL;
   gjenstaaendeUnntakDager: number | NIL;
