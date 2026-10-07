@@ -12,6 +12,7 @@ import {
   formaterEffektivDagsats,
   formaterTotalReduksjon,
   formaterUke,
+  lagRadNokkel,
   tekstEllerIkkeFunnet,
 } from './tilkjent-ytelse-utils';
 
@@ -61,7 +62,7 @@ export function TilkjentYtelseTabell({ rader, visUnntaksperiode }: Props): React
       <Table.Body>
         {rader.map((rad, index) => (
           <Table.ExpandableRow
-            key={`${rad.meldekort?.meldekortId ?? rad.kilde}-${index}`}
+            key={lagRadNokkel(rad, index)}
             togglePlacement="right"
             content={<TilkjentYtelseDetaljer rad={rad} visUnntaksperiode={visUnntaksperiode} />}
           >

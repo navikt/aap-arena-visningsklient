@@ -5,7 +5,7 @@ import { SakDTO, TilkjentYtelseDTO } from 'lib/services/arenaoppslag/arenaoppsla
 import { BodyShort, Chips, HStack, ToggleGroup, VStack } from '@navikt/ds-react';
 import { useMemo, useState } from 'react';
 import { TilkjentYtelseTabell } from './tilkjent-ytelse-tabell';
-import { filtrerRader, filtrerRaderPaaSaksperiode, sorterRaderEtterTilOgMedDesc } from './tilkjent-ytelse-utils';
+import { filtrerRader, filtrerRaderPaaSaksperiode, sorterRaderNyestForst } from './tilkjent-ytelse-utils';
 import { finnSaksperiode, formaterSaksperiode, harSaksperiode } from 'lib/utils/saksperiode';
 import { harUnntakAAP } from 'lib/utils/vedtaksfakta';
 
@@ -37,7 +37,7 @@ export function TilkjentYtelse({ sak, tilkjentYtelse }: Props): React.ReactEleme
 
   const synligeRader = useMemo(() => {
     const raderIPerioden = periodeValg === 'saksperiode' ? filtrerRaderPaaSaksperiode(rader, saksperiode) : rader;
-    return sorterRaderEtterTilOgMedDesc(filtrerRader(raderIPerioden, { visMeldekort, visSpesialutbetaling }));
+    return sorterRaderNyestForst(filtrerRader(raderIPerioden, { visMeldekort, visSpesialutbetaling }));
   }, [rader, saksperiode, periodeValg, visMeldekort, visSpesialutbetaling]);
 
   if (tilkjentYtelse == null) {

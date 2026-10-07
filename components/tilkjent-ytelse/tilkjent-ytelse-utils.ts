@@ -32,6 +32,13 @@ export function erMeldekort(rad: TilkjentYtelseRadDTO): boolean {
   return harKilde(rad, KILDE_MELDEKORT);
 }
 
+// Meldekort som ikke er postert ennå mangler posteringId, og må derfor falle tilbake på meldekortId.
+export function lagRadNokkel(rad: TilkjentYtelseRadDTO, index: number): string {
+  if (rad.posteringId != null) return `postering-${rad.posteringId}`;
+  if (rad.meldekort?.meldekortId != null) return `meldekort-${rad.meldekort.meldekortId}`;
+  return `rad-${index}`;
+}
+
 // Spesialutbetalinger har ikke ukedata, så feltet skal stå tomt fremfor å vise "Ikke funnet".
 export function formaterUke(rad: TilkjentYtelseRadDTO): string {
   if (erSpesialutbetaling(rad)) return '';
@@ -203,8 +210,31 @@ export function filtrerRaderPaaSaksperiode(
   );
 }
 
-export function sorterRaderEtterTilOgMedDesc(rader: TilkjentYtelseRadDTO[]): TilkjentYtelseRadDTO[] {
-  return [...rader].sort((a, b) =>
-    dateComperator(parseISOorNull(a.tilOgMedDato), parseISOorNull(b.tilOgMedDato), 'DESC')
+const MAKS_UKER_I_AAR = 53;
+
+function hentStartuke(rad: TilkjentYtelseRadDTO): number | null {
+  const startuke = Number.parseInt(rad.uke?.split('-')[0] ?? '', 10);
+  return Number.isNaN(startuke) ? null : startuke;
+}
+
+// Ukene sammenlignes sirkulært slik at uke 1 regnes som senere enn uke 52 ved årsskifte.
+function sammenlignUkeDesc(a: TilkjentYtelseRadDTO, b: TilkjentYtelseRadDTO): number {
+  const ukeA = hentStartuke(a);
+  const ukeB = hentStartuke(b);
+  if (ukeA == null && ukeB == null) return 0;
+  if (ukeA == null) return 1;
+  if (ukeB == null) return -1;
+  if (ukeA === ukeB) return 0;
+
+  const ukerFraBTilA = (ukeA - ukeB + MAKS_UKER_I_AAR) % MAKS_UKER_I_AAR;
+  return ukerFraBTilA < MAKS_UKER_I_AAR / 2 ? -1 : 1;
+}
+
+export function sorterRaderNyestForst(rader: TilkjentYtelseRadDTO[]): TilkjentYtelseRadDTO[] {
+  return [...rader].sort(
+    (a, b) =>
+      dateComperator(parseISOorNull(a.tilOgMedDato), parseISOorNull(b.tilOgMedDato), 'DESC') ||
+      dateComperator(parseISOorNull(a.fraOgMedDato), parseISOorNull(b.fraOgMedDato), 'DESC') ||
+      sammenlignUkeDesc(a, b)
   );
 }

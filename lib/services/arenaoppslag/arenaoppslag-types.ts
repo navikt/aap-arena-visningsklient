@@ -161,6 +161,9 @@ export type TilkjentYtelseSpesialutbetalingDTO = {
 };
 
 export type TilkjentYtelseRadDTO = {
+  // Mangler på meldekort-rader som ikke har blitt postert ennå.
+  posteringId: number | NIL;
+  posteringTypeKode: string | NIL;
   fraOgMedDato: string | NIL;
   tilOgMedDato: string | NIL;
   uke: string | NIL;

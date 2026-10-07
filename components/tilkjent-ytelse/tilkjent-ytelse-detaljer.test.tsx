@@ -20,6 +20,8 @@ const lagMeldekort = (anmerkninger: TilkjentYtelseAnmerkningDTO[]): TilkjentYtel
 });
 
 const lagRad = (meldekort: TilkjentYtelseMeldekortDTO | null): TilkjentYtelseRadDTO => ({
+  posteringId: 119655945,
+  posteringTypeKode: 'OK',
   fraOgMedDato: '2017-07-28',
   tilOgMedDato: '2017-08-10',
   uke: '30-31',
