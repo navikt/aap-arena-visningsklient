@@ -1,6 +1,6 @@
 // @vitest-environment happy-dom
 import { describe, expect, it } from 'vitest';
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 
 import { TilkjentYtelse } from 'components/tilkjent-ytelse/tilkjent-ytelse';
 import { SakDTO, TilkjentYtelseDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
@@ -36,5 +36,20 @@ describe('TilkjentYtelse', () => {
     render(<TilkjentYtelse sak={lagSak()} tilkjentYtelse={tomTilkjentYtelse} />);
 
     expect(screen.getByRole('button', { name: 'Vis meldekort' })).toBeInTheDocument();
+  });
+
+  it('har saksperiode som standardvalg og "Alle perioder" deaktivert', () => {
+    render(<TilkjentYtelse sak={lagSak()} tilkjentYtelse={tomTilkjentYtelse} />);
+
+    const saksperiode = screen.getByRole('radio', { name: 'Saksperiode' });
+    const allePerioder = screen.getByRole('radio', { name: 'Alle perioder' });
+
+    expect(saksperiode).toHaveAttribute('aria-checked', 'true');
+    expect(allePerioder).toHaveAttribute('aria-disabled', 'true');
+
+    fireEvent.click(allePerioder);
+
+    expect(saksperiode).toHaveAttribute('aria-checked', 'true');
+    expect(allePerioder).toHaveAttribute('aria-checked', 'false');
   });
 });

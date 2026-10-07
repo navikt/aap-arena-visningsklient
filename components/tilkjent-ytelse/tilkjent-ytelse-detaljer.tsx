@@ -8,8 +8,10 @@ import { format } from 'date-fns';
 import { nb } from 'date-fns/locale';
 import { FieldValue } from 'components/felleskomponenter/field-value/field-value';
 import { parseISOorNull } from 'lib/utils/date';
+import { SpesialutbetalingDetaljer } from './spesialutbetaling-detaljer';
 import {
   datoEllerIkkeFunnet,
+  erSpesialutbetaling,
   formaterAnmerkning,
   formaterArbeid,
   formaterDager,
@@ -28,6 +30,14 @@ type Props = {
 };
 
 export function TilkjentYtelseDetaljer({ rad, visUnntaksperiode }: Props): React.ReactElement {
+  if (erSpesialutbetaling(rad)) {
+    return (
+      <VStack gap="space-24" className={styles.detaljer}>
+        <SpesialutbetalingDetaljer spesialutbetaling={rad.spesialutbetaling} />
+      </VStack>
+    );
+  }
+
   const { reduksjon, meldekort } = rad;
   const erTrukketForSentLevertMeldekort = (reduksjon?.levertForSentDager ?? 0) > 0;
   const anmerkninger = meldekort?.anmerkninger ?? [];

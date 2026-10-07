@@ -20,6 +20,8 @@ const lagMeldekort = (anmerkninger: TilkjentYtelseAnmerkningDTO[]): TilkjentYtel
 });
 
 const lagRad = (meldekort: TilkjentYtelseMeldekortDTO | null): TilkjentYtelseRadDTO => ({
+  posteringId: 119655945,
+  posteringTypeKode: 'OK',
   fraOgMedDato: '2017-07-28',
   tilOgMedDato: '2017-08-10',
   uke: '30-31',
@@ -30,8 +32,85 @@ const lagRad = (meldekort: TilkjentYtelseMeldekortDTO | null): TilkjentYtelseRad
   timerArbeidet: 0,
   reduksjon: null,
   meldekort,
+  spesialutbetaling: null,
   gjenstaaendeOrdinaerDager: null,
   gjenstaaendeUnntakDager: null,
+});
+
+const lagSpesialutbetalingRad = (begrunnelse: string | null): TilkjentYtelseRadDTO => ({
+  ...lagRad(null),
+  uke: null,
+  kilde: 'SPESIALUTBETALING',
+  spesialutbetaling: {
+    begrunnelse,
+    belop: 1581,
+    belopKode: 'AAP',
+    datoUtbetaling: '2025-06-04',
+    fraOgMedDato: '2025-05-01',
+    tilOgMedDato: '2025-05-25',
+    vedtakStatusKode: 'IVERK',
+    posteringTypeKode: 'INIT',
+    statusBilag: null,
+    statusAnvistBilag: null,
+    kategori: null,
+    valgtUtbetalingType: null,
+    saksbehandler: '4491',
+    beslutter: 'GRENSESN',
+  },
+});
+
+describe('TilkjentYtelseDetaljer spesialutbetaling', () => {
+  it('viser vedtaksstatus sammen med begrunnelsen', () => {
+    render(<TilkjentYtelseDetaljer rad={lagSpesialutbetalingRad('Begrunnelsetekst')} visUnntaksperiode={false} />);
+
+    expect(screen.getByText('Vedtaksstatus')).toBeInTheDocument();
+    expect(screen.getByText('IVERK')).toBeInTheDocument();
+  });
+
+  it('viser "Ikke funnet" når vedtaksstatus mangler', () => {
+    const rad = lagSpesialutbetalingRad('Begrunnelsetekst');
+    const utenStatus: TilkjentYtelseRadDTO = {
+      ...rad,
+      spesialutbetaling: { ...rad.spesialutbetaling!, vedtakStatusKode: null },
+    };
+
+    render(<TilkjentYtelseDetaljer rad={utenStatus} visUnntaksperiode={false} />);
+
+    expect(screen.getByText('Ikke funnet')).toBeInTheDocument();
+  });
+
+  it('viser begrunnelsen som tekst', () => {
+    render(
+      <TilkjentYtelseDetaljer
+        rad={lagSpesialutbetalingRad('Maskinell etterbetaling på grunn av endret grunnbeløp')}
+        visUnntaksperiode={false}
+      />
+    );
+
+    expect(screen.getByText('Begrunnelse')).toBeInTheDocument();
+    expect(screen.getByText('Maskinell etterbetaling på grunn av endret grunnbeløp')).toBeInTheDocument();
+    expect(screen.queryByRole('textbox')).not.toBeInTheDocument();
+  });
+
+  it('viser "Ikke funnet" når begrunnelsen mangler eller er tom', () => {
+    const { unmount } = render(
+      <TilkjentYtelseDetaljer rad={lagSpesialutbetalingRad(null)} visUnntaksperiode={false} />
+    );
+    expect(screen.getByText('Ikke funnet')).toBeInTheDocument();
+    unmount();
+
+    render(<TilkjentYtelseDetaljer rad={lagSpesialutbetalingRad('')} visUnntaksperiode={false} />);
+    expect(screen.getByText('Ikke funnet')).toBeInTheDocument();
+  });
+
+  it('viser ikke meldekortfeltene for spesialutbetalinger', () => {
+    render(<TilkjentYtelseDetaljer rad={lagSpesialutbetalingRad('Begrunnelse')} visUnntaksperiode={true} />);
+
+    expect(screen.queryByText('Arbeid')).not.toBeInTheDocument();
+    expect(screen.queryByText('Samordning')).not.toBeInTheDocument();
+    expect(screen.queryByText('Gjenstående ordinær periode')).not.toBeInTheDocument();
+    expect(screen.queryByText('Ingen meldekortdetaljer for denne raden.')).not.toBeInTheDocument();
+  });
 });
 
 describe('TilkjentYtelseDetaljer anmerkninger', () => {

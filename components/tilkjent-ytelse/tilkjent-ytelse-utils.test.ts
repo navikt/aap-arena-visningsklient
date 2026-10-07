@@ -9,12 +9,17 @@ import {
   beregnPeriodegrunnlag,
   beregnTotaleTimerIPerioden,
   datoEllerIkkeFunnet,
+  erMeldekort,
+  erSpesialutbetaling,
   filtrerRader,
   filtrerRaderPaaSaksperiode,
   formaterAnmerkning,
   formaterAnvistProsent,
   formaterArbeid,
+  formaterBeregnetBrutto,
+  formaterDagsatsMedBarnetillegg,
   formaterDager,
+  formaterEffektivDagsats,
   formaterGjenstaaendeDager,
   formaterInstitusjon,
   formaterSamordning,
@@ -24,8 +29,9 @@ import {
   IKKE_FUNNET,
   jaNeiEllerIkkeFunnet,
   kronerEllerIkkeFunnet,
+  lagRadNokkel,
   prosentEllerIkkeFunnet,
-  sorterRaderEtterTilOgMedDesc,
+  sorterRaderNyestForst,
   tekstEllerIkkeFunnet,
 } from 'components/tilkjent-ytelse/tilkjent-ytelse-utils';
 
@@ -44,6 +50,8 @@ const lagReduksjon = (
 });
 
 const lagRad = (overrides: Partial<TilkjentYtelseRadDTO> = {}): TilkjentYtelseRadDTO => ({
+  posteringId: 119655945,
+  posteringTypeKode: 'OK',
   fraOgMedDato: '2017-07-28',
   tilOgMedDato: '2017-08-06',
   uke: '30-31',
@@ -54,9 +62,105 @@ const lagRad = (overrides: Partial<TilkjentYtelseRadDTO> = {}): TilkjentYtelseRa
   timerArbeidet: 0,
   reduksjon: null,
   meldekort: null,
+  spesialutbetaling: null,
   gjenstaaendeOrdinaerDager: null,
   gjenstaaendeUnntakDager: null,
   ...overrides,
+});
+
+const lagSpesialutbetaling = (
+  overrides: Partial<NonNullable<TilkjentYtelseRadDTO['spesialutbetaling']>> = {}
+): NonNullable<TilkjentYtelseRadDTO['spesialutbetaling']> => ({
+  begrunnelse: 'Maskinell etterbetaling på grunn av endret grunnbeløp',
+  belop: 1581,
+  belopKode: 'AAP',
+  datoUtbetaling: '2025-06-04',
+  fraOgMedDato: '2025-05-01',
+  tilOgMedDato: '2025-05-25',
+  vedtakStatusKode: 'IVERK',
+  posteringTypeKode: 'INIT',
+  statusBilag: null,
+  statusAnvistBilag: null,
+  kategori: null,
+  valgtUtbetalingType: null,
+  saksbehandler: '4491',
+  beslutter: 'GRENSESN',
+  ...overrides,
+});
+
+describe('erSpesialutbetaling og erMeldekort', () => {
+  it('gjenkjenner kilde uavhengig av store og små bokstaver', () => {
+    expect(erSpesialutbetaling(lagRad({ kilde: 'SPESIALUTBETALING' }))).toBe(true);
+    expect(erSpesialutbetaling(lagRad({ kilde: 'Spesialutbetaling' }))).toBe(true);
+    expect(erMeldekort(lagRad({ kilde: 'MELDEKORT' }))).toBe(true);
+    expect(erMeldekort(lagRad({ kilde: 'Meldekort' }))).toBe(true);
+  });
+
+  it('returnerer false for andre kilder', () => {
+    expect(erSpesialutbetaling(lagRad({ kilde: 'MELDEKORT' }))).toBe(false);
+    expect(erMeldekort(lagRad({ kilde: 'SPESIALUTBETALING' }))).toBe(false);
+  });
+});
+
+describe('lagRadNokkel', () => {
+  const meldekort: NonNullable<TilkjentYtelseRadDTO['meldekort']> = {
+    meldekortId: 555,
+    meldedato: null,
+    meldeform: null,
+    fortsattRegistrertArbeidssoker: true,
+    kommentar: null,
+    uker: [],
+    anmerkninger: null,
+  };
+
+  it('bruker posteringId når den finnes', () => {
+    expect(lagRadNokkel(lagRad({ posteringId: 120121851, meldekort }), 0)).toBe('postering-120121851');
+  });
+
+  it('faller tilbake på meldekortId når posteringId mangler', () => {
+    expect(lagRadNokkel(lagRad({ posteringId: null, meldekort }), 0)).toBe('meldekort-555');
+    expect(lagRadNokkel(lagRad({ posteringId: undefined, meldekort }), 0)).toBe('meldekort-555');
+  });
+
+  it('faller tilbake på indeks når både posteringId og meldekort mangler', () => {
+    expect(lagRadNokkel(lagRad({ posteringId: null, meldekort: null }), 3)).toBe('rad-3');
+  });
+});
+
+describe('formaterDagsatsMedBarnetillegg og formaterEffektivDagsats', () => {
+  it('viser kronebeløp for meldekortrader', () => {
+    const rad = lagRad({ kilde: 'MELDEKORT', dagsatsMedBarnetillegg: 1500, dagsats: 1426 });
+    expect(formaterDagsatsMedBarnetillegg(rad)).toBe(formaterTilNok(1500));
+    expect(formaterEffektivDagsats(rad)).toBe(formaterTilNok(1426));
+  });
+
+  it('returnerer tom streng for spesialutbetalinger', () => {
+    const rad = lagRad({ kilde: 'SPESIALUTBETALING', dagsatsMedBarnetillegg: 1500, dagsats: 1426 });
+    expect(formaterDagsatsMedBarnetillegg(rad)).toBe('');
+    expect(formaterEffektivDagsats(rad)).toBe('');
+  });
+});
+
+describe('formaterBeregnetBrutto', () => {
+  it('viser beregnet brutto for meldekortrader', () => {
+    expect(formaterBeregnetBrutto(lagRad({ kilde: 'MELDEKORT', beregnetBrutto: 8556 }))).toBe(formaterTilNok(8556));
+  });
+
+  it('viser beløpet fra spesialutbetalingen for spesialutbetalinger', () => {
+    const rad = lagRad({
+      kilde: 'SPESIALUTBETALING',
+      beregnetBrutto: 8556,
+      spesialutbetaling: lagSpesialutbetaling({ belop: 1581 }),
+    });
+    expect(formaterBeregnetBrutto(rad)).toBe(formaterTilNok(1581));
+  });
+
+  it('returnerer "Ikke funnet" når spesialutbetalingen mangler beløp', () => {
+    const utenBelop = lagRad({ kilde: 'SPESIALUTBETALING', spesialutbetaling: lagSpesialutbetaling({ belop: null }) });
+    const utenObjekt = lagRad({ kilde: 'SPESIALUTBETALING', spesialutbetaling: null });
+    expect(formaterBeregnetBrutto(utenBelop)).toBe(IKKE_FUNNET);
+    expect(formaterBeregnetBrutto(utenObjekt)).toBe(IKKE_FUNNET);
+  });
 });
 
 describe('tekstEllerIkkeFunnet', () => {
@@ -419,25 +523,51 @@ describe('filtrerRaderPaaSaksperiode', () => {
   });
 });
 
-describe('sorterRaderEtterTilOgMedDesc', () => {
+describe('sorterRaderNyestForst', () => {
   const eldst = lagRad({ tilOgMedDato: '2017-08-06' });
   const midterst = lagRad({ tilOgMedDato: '2017-08-20' });
   const nyest = lagRad({ tilOgMedDato: '2017-09-03' });
   const utenDato = lagRad({ tilOgMedDato: null });
 
   it('sorterer rader synkende på til og med-dato', () => {
-    const resultat = sorterRaderEtterTilOgMedDesc([eldst, nyest, midterst]);
+    const resultat = sorterRaderNyestForst([eldst, nyest, midterst]);
     expect(resultat).toEqual([nyest, midterst, eldst]);
   });
 
   it('plasserer rader uten til og med-dato sist', () => {
-    const resultat = sorterRaderEtterTilOgMedDesc([utenDato, eldst, nyest]);
+    const resultat = sorterRaderNyestForst([utenDato, eldst, nyest]);
     expect(resultat).toEqual([nyest, eldst, utenDato]);
+  });
+
+  it('sorterer synkende på fra og med-dato når til og med-dato er lik', () => {
+    const kortPeriode = lagRad({ fraOgMedDato: '2017-08-14', tilOgMedDato: '2017-08-20' });
+    const langPeriode = lagRad({ fraOgMedDato: '2017-08-07', tilOgMedDato: '2017-08-20' });
+    expect(sorterRaderNyestForst([langPeriode, kortPeriode])).toEqual([kortPeriode, langPeriode]);
+  });
+
+  it('sorterer synkende på uke når datoene er like', () => {
+    const datoer = { fraOgMedDato: '2025-12-15', tilOgMedDato: '2025-12-21' };
+    const uke50 = lagRad({ ...datoer, uke: '50-51' });
+    const uke51 = lagRad({ ...datoer, uke: '51-52' });
+    expect(sorterRaderNyestForst([uke50, uke51])).toEqual([uke51, uke50]);
+  });
+
+  it('regner uke 1 som nyere enn uke 52 ved årsskifte', () => {
+    const datoer = { fraOgMedDato: '2025-12-29', tilOgMedDato: '2026-01-04' };
+    const uke52 = lagRad({ ...datoer, uke: '52-1' });
+    const uke1 = lagRad({ ...datoer, uke: '1-2' });
+    expect(sorterRaderNyestForst([uke52, uke1])).toEqual([uke1, uke52]);
+  });
+
+  it('plasserer rader uten uke sist når datoene er like', () => {
+    const utenUke = lagRad({ uke: null });
+    const medUke = lagRad({ uke: '30-31' });
+    expect(sorterRaderNyestForst([utenUke, medUke])).toEqual([medUke, utenUke]);
   });
 
   it('muterer ikke den opprinnelige listen', () => {
     const original = [eldst, nyest, midterst];
-    sorterRaderEtterTilOgMedDesc(original);
+    sorterRaderNyestForst(original);
     expect(original).toEqual([eldst, nyest, midterst]);
   });
 });
@@ -457,5 +587,10 @@ describe('formaterAnvistProsent', () => {
 
   it('returnerer tom streng når anvistProsent er null', () => {
     expect(formaterAnvistProsent(lagRad({ reduksjon: lagReduksjon({ anvistProsent: null }) }))).toBe('');
+  });
+
+  it('returnerer tom streng for spesialutbetalinger selv om reduksjon finnes', () => {
+    const rad = lagRad({ kilde: 'SPESIALUTBETALING', reduksjon: lagReduksjon({ anvistProsent: 200 }) });
+    expect(formaterAnvistProsent(rad)).toBe('');
   });
 });

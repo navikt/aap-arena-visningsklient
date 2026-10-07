@@ -5,7 +5,7 @@ import { SakDTO, TilkjentYtelseDTO } from 'lib/services/arenaoppslag/arenaoppsla
 import { BodyShort, Chips, HStack, ToggleGroup, VStack } from '@navikt/ds-react';
 import { useMemo, useState } from 'react';
 import { TilkjentYtelseTabell } from './tilkjent-ytelse-tabell';
-import { filtrerRader, filtrerRaderPaaSaksperiode, sorterRaderEtterTilOgMedDesc } from './tilkjent-ytelse-utils';
+import { filtrerRader, filtrerRaderPaaSaksperiode, sorterRaderNyestForst } from './tilkjent-ytelse-utils';
 import { finnSaksperiode, formaterSaksperiode, harSaksperiode } from 'lib/utils/saksperiode';
 import { harUnntakAAP } from 'lib/utils/vedtaksfakta';
 
@@ -28,9 +28,16 @@ export function TilkjentYtelse({ sak, tilkjentYtelse }: Props): React.ReactEleme
   const saksperiodeTekst = formaterSaksperiode(saksperiode);
   const visUnntaksperiode = harUnntakAAP(sak.vedtak);
 
+  // Aksel sitt ToggleGroup.Item støtter ikke disabled, så "Alle perioder" må også sperres her,
+  // ellers kan det fortsatt velges med tastaturet.
+  const velgPeriode = (verdi: string) => {
+    if (verdi === 'alle') return;
+    setPeriodeValg(verdi as PeriodeValg);
+  };
+
   const synligeRader = useMemo(() => {
     const raderIPerioden = periodeValg === 'saksperiode' ? filtrerRaderPaaSaksperiode(rader, saksperiode) : rader;
-    return sorterRaderEtterTilOgMedDesc(filtrerRader(raderIPerioden, { visMeldekort, visSpesialutbetaling }));
+    return sorterRaderNyestForst(filtrerRader(raderIPerioden, { visMeldekort, visSpesialutbetaling }));
   }, [rader, saksperiode, periodeValg, visMeldekort, visSpesialutbetaling]);
 
   if (tilkjentYtelse == null) {
@@ -49,9 +56,9 @@ export function TilkjentYtelse({ sak, tilkjentYtelse }: Props): React.ReactEleme
           className={kanFiltrerePaaSaksperiode ? undefined : styles.deaktivert}
           aria-disabled={kanFiltrerePaaSaksperiode ? undefined : 'true'}
         >
-          <ToggleGroup value={periodeValg} onChange={(verdi) => setPeriodeValg(verdi as PeriodeValg)} size="small">
+          <ToggleGroup value={periodeValg} onChange={velgPeriode} size="small">
             <ToggleGroup.Item value="saksperiode" label="Saksperiode" />
-            <ToggleGroup.Item value="alle" label="Alle perioder" />
+            <ToggleGroup.Item value="alle" label="Alle perioder" className={styles.deaktivert} aria-disabled="true" />
           </ToggleGroup>
         </div>
         {saksperiodeTekst != null && (

@@ -19,14 +19,51 @@ export function tekstEllerIkkeFunnet(verdi: string | null | undefined): string {
   return verdi != null && verdi !== '' ? verdi : IKKE_FUNNET;
 }
 
+// Arena leverer kilde med store bokstaver, så sammenligningen må tåle ulik skrivemåte.
+function harKilde(rad: TilkjentYtelseRadDTO, kilde: string): boolean {
+  return rad.kilde?.toLowerCase() === kilde.toLowerCase();
+}
+
+export function erSpesialutbetaling(rad: TilkjentYtelseRadDTO): boolean {
+  return harKilde(rad, KILDE_SPESIALUTBETALING);
+}
+
+export function erMeldekort(rad: TilkjentYtelseRadDTO): boolean {
+  return harKilde(rad, KILDE_MELDEKORT);
+}
+
+// Meldekort som ikke er postert ennå mangler posteringId, og må derfor falle tilbake på meldekortId.
+export function lagRadNokkel(rad: TilkjentYtelseRadDTO, index: number): string {
+  if (rad.posteringId != null) return `postering-${rad.posteringId}`;
+  if (rad.meldekort?.meldekortId != null) return `meldekort-${rad.meldekort.meldekortId}`;
+  return `rad-${index}`;
+}
+
 // Spesialutbetalinger har ikke ukedata, så feltet skal stå tomt fremfor å vise "Ikke funnet".
 export function formaterUke(rad: TilkjentYtelseRadDTO): string {
-  if (rad.kilde === KILDE_SPESIALUTBETALING) return '';
+  if (erSpesialutbetaling(rad)) return '';
   return tekstEllerIkkeFunnet(rad.uke);
 }
 
 export function kronerEllerIkkeFunnet(verdi: number | null | undefined): string {
   return verdi != null ? formaterTilNok(verdi) : IKKE_FUNNET;
+}
+
+// Spesialutbetalinger er engangsbeløp uten dagsats, så feltet skal stå tomt fremfor å vise "Ikke funnet".
+export function formaterDagsatsMedBarnetillegg(rad: TilkjentYtelseRadDTO): string {
+  if (erSpesialutbetaling(rad)) return '';
+  return kronerEllerIkkeFunnet(rad.dagsatsMedBarnetillegg);
+}
+
+export function formaterEffektivDagsats(rad: TilkjentYtelseRadDTO): string {
+  if (erSpesialutbetaling(rad)) return '';
+  return kronerEllerIkkeFunnet(rad.dagsats);
+}
+
+// For spesialutbetalinger ligger det utbetalte beløpet på spesialutbetalingen, ikke på raden.
+export function formaterBeregnetBrutto(rad: TilkjentYtelseRadDTO): string {
+  if (erSpesialutbetaling(rad)) return kronerEllerIkkeFunnet(rad.spesialutbetaling?.belop);
+  return kronerEllerIkkeFunnet(rad.beregnetBrutto);
 }
 
 export function datoEllerIkkeFunnet(datostring: string | null | undefined): string {
@@ -120,7 +157,7 @@ export function formaterProsentMedBelop(rad: TilkjentYtelseRadDTO, prosent: numb
 
 // Spesialutbetalinger har ikke reduksjonsdata, så feltet skal stå tomt fremfor å vise "Ikke funnet".
 export function formaterTotalReduksjon(rad: TilkjentYtelseRadDTO): string {
-  if (rad.kilde === KILDE_SPESIALUTBETALING) return '';
+  if (erSpesialutbetaling(rad)) return '';
   return formaterProsentMedBelop(rad, rad.reduksjon?.totalReduksjonProsent);
 }
 
@@ -135,6 +172,7 @@ export function formaterInstitusjon(rad: TilkjentYtelseRadDTO): string {
 
 // Arena oppgir anvist prosent i 200-basis, der 200 % tilsvarer full 2-ukersperiode.
 export function formaterAnvistProsent(rad: TilkjentYtelseRadDTO): string {
+  if (erSpesialutbetaling(rad)) return '';
   const prosent = rad.reduksjon?.anvistProsent;
   if (prosent == null) return '';
   return `${prosent.toLocaleString('nb-NO')}\u00a0%`;
@@ -155,8 +193,8 @@ export type RadFilter = { visMeldekort: boolean; visSpesialutbetaling: boolean }
 
 export function filtrerRader(rader: TilkjentYtelseRadDTO[], filter: RadFilter): TilkjentYtelseRadDTO[] {
   return rader.filter((rad) => {
-    if (rad.kilde === KILDE_SPESIALUTBETALING) return filter.visSpesialutbetaling;
-    if (rad.kilde === KILDE_MELDEKORT) return filter.visMeldekort;
+    if (erSpesialutbetaling(rad)) return filter.visSpesialutbetaling;
+    if (erMeldekort(rad)) return filter.visMeldekort;
     return true;
   });
 }
@@ -172,8 +210,31 @@ export function filtrerRaderPaaSaksperiode(
   );
 }
 
-export function sorterRaderEtterTilOgMedDesc(rader: TilkjentYtelseRadDTO[]): TilkjentYtelseRadDTO[] {
-  return [...rader].sort((a, b) =>
-    dateComperator(parseISOorNull(a.tilOgMedDato), parseISOorNull(b.tilOgMedDato), 'DESC')
+const MAKS_UKER_I_AAR = 53;
+
+function hentStartuke(rad: TilkjentYtelseRadDTO): number | null {
+  const startuke = Number.parseInt(rad.uke?.split('-')[0] ?? '', 10);
+  return Number.isNaN(startuke) ? null : startuke;
+}
+
+// Ukene sammenlignes sirkulært slik at uke 1 regnes som senere enn uke 52 ved årsskifte.
+function sammenlignUkeDesc(a: TilkjentYtelseRadDTO, b: TilkjentYtelseRadDTO): number {
+  const ukeA = hentStartuke(a);
+  const ukeB = hentStartuke(b);
+  if (ukeA == null && ukeB == null) return 0;
+  if (ukeA == null) return 1;
+  if (ukeB == null) return -1;
+  if (ukeA === ukeB) return 0;
+
+  const ukerFraBTilA = (ukeA - ukeB + MAKS_UKER_I_AAR) % MAKS_UKER_I_AAR;
+  return ukerFraBTilA < MAKS_UKER_I_AAR / 2 ? -1 : 1;
+}
+
+export function sorterRaderNyestForst(rader: TilkjentYtelseRadDTO[]): TilkjentYtelseRadDTO[] {
+  return [...rader].sort(
+    (a, b) =>
+      dateComperator(parseISOorNull(a.tilOgMedDato), parseISOorNull(b.tilOgMedDato), 'DESC') ||
+      dateComperator(parseISOorNull(a.fraOgMedDato), parseISOorNull(b.fraOgMedDato), 'DESC') ||
+      sammenlignUkeDesc(a, b)
   );
 }
