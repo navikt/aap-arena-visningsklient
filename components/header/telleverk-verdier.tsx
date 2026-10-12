@@ -6,9 +6,10 @@ import { norsktDatoformat } from 'lib/utils/date';
 
 type Props = {
   telleverk: TelleverkResponseDTO | null;
+  harUnntaksperiode: boolean;
 };
 
-function gjenstaaendeTekst(telleverk: TelleverkResponseDTO | null): string {
+function gjenstaaendeTekst(telleverk: TelleverkResponseDTO | null, harUnntaksperiode: boolean): string {
   const telleverkForPerson = telleverk?.telleverk;
   if (telleverkForPerson == null) {
     return '—';
@@ -20,14 +21,14 @@ function gjenstaaendeTekst(telleverk: TelleverkResponseDTO | null): string {
     return `${ordineerAAPKvote / 20} dager (Ordinær)`;
   }
 
-  if (utvidetAAPKvote != null && utvidetAAPKvote > 0) {
-    return `${utvidetAAPKvote / 20} dager (Utvidet)`;
+  if (harUnntaksperiode && utvidetAAPKvote != null) {
+    return `${utvidetAAPKvote / 20} dager (Unntaksperiode)`;
   }
 
-  return '0';
+  return '0 dager (Ordinær)';
 }
 
-export function TelleverkVerdier({ telleverk }: Props): React.ReactElement {
+export function TelleverkVerdier({ telleverk, harUnntaksperiode }: Props): React.ReactElement {
   return (
     <>
       <FieldValue
@@ -38,7 +39,7 @@ export function TelleverkVerdier({ telleverk }: Props): React.ReactElement {
         label="Maksdato"
         value={telleverk?.maksdato != null ? norsktDatoformat(new Date(telleverk.maksdato)) : '—'}
       />
-      <FieldValue label="Gjenstående" value={gjenstaaendeTekst(telleverk)} />
+      <FieldValue label="Gjenstående" value={gjenstaaendeTekst(telleverk, harUnntaksperiode)} />
     </>
   );
 }

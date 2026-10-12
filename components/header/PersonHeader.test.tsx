@@ -46,7 +46,7 @@ describe('PersonHeader', () => {
   it('viser telleverkverdiene når de er hentet', () => {
     render(
       <PersonHeader sak={lagSak()}>
-        <TelleverkVerdier telleverk={telleverk} />
+        <TelleverkVerdier telleverk={telleverk} harUnntaksperiode={false} />
       </PersonHeader>
     );
 
@@ -57,23 +57,34 @@ describe('PersonHeader', () => {
 });
 
 describe('TelleverkVerdier', () => {
+  const telleverkUtenOrdinaerKvote: TelleverkResponseDTO = {
+    telleverk: { ordineerAAPKvote: 0, utvidetAAPKvote: 200 },
+    maksdato: null,
+    sisteUtbetalingDato: null,
+  };
+
   it('viser tomme verdier når telleverk mangler', () => {
-    render(<TelleverkVerdier telleverk={null} />);
+    render(<TelleverkVerdier telleverk={null} harUnntaksperiode={false} />);
 
     expect(screen.getAllByText('—')).toHaveLength(3);
   });
 
-  it('viser utvidet kvote når ordinær kvote er brukt opp', () => {
-    render(
-      <TelleverkVerdier
-        telleverk={{
-          telleverk: { ordineerAAPKvote: 0, utvidetAAPKvote: 200 },
-          maksdato: null,
-          sisteUtbetalingDato: null,
-        }}
-      />
-    );
+  it('viser unntaksperiode når ordinær kvote er brukt opp og unntak er innvilget', () => {
+    render(<TelleverkVerdier telleverk={telleverkUtenOrdinaerKvote} harUnntaksperiode={true} />);
 
-    expect(screen.getByText('10 dager (Utvidet)')).toBeInTheDocument();
+    expect(screen.getByText('10 dager (Unntaksperiode)')).toBeInTheDocument();
+  });
+
+  it('viser 0 dager ordinær når ordinær kvote er brukt opp og unntak ikke er innvilget', () => {
+    render(<TelleverkVerdier telleverk={telleverkUtenOrdinaerKvote} harUnntaksperiode={false} />);
+
+    expect(screen.getByText('0 dager (Ordinær)')).toBeInTheDocument();
+    expect(screen.queryByText(/Unntaksperiode/)).not.toBeInTheDocument();
+  });
+
+  it('viser ordinær kvote når det er ordinære dager igjen, selv om unntak er innvilget', () => {
+    render(<TelleverkVerdier telleverk={telleverk} harUnntaksperiode={true} />);
+
+    expect(screen.getByText('200 dager (Ordinær)')).toBeInTheDocument();
   });
 });
