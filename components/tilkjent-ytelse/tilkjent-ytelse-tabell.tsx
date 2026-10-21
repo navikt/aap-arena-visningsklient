@@ -8,7 +8,7 @@ import {
   datoEllerIkkeFunnet,
   formaterAnvistProsent,
   formaterBeregnetBrutto,
-  formaterDagsatsMedBarnetillegg,
+  formaterDagsatsMedBarnetilleggForSamordning,
   formaterEffektivDagsats,
   formaterTotalReduksjon,
   formaterUke,
@@ -70,7 +70,7 @@ export function TilkjentYtelseTabell({ rader, visUnntaksperiode }: Props): React
             <Table.DataCell textSize="small">{datoEllerIkkeFunnet(rad.tilOgMedDato)}</Table.DataCell>
             <Table.DataCell textSize="small">{formaterUke(rad)}</Table.DataCell>
             <Table.DataCell textSize="small">{tekstEllerIkkeFunnet(rad.kilde)}</Table.DataCell>
-            <Table.DataCell textSize="small">{formaterDagsatsMedBarnetillegg(rad)}</Table.DataCell>
+            <Table.DataCell textSize="small">{formaterDagsatsMedBarnetilleggForSamordning(rad)}</Table.DataCell>
             <Table.DataCell textSize="small">{formaterTotalReduksjon(rad)}</Table.DataCell>
             <Table.DataCell textSize="small">{formaterAnvistProsent(rad)}</Table.DataCell>
             <Table.DataCell textSize="small">{formaterEffektivDagsats(rad)}</Table.DataCell>

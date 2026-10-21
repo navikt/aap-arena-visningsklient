@@ -50,14 +50,14 @@ export function kronerEllerIkkeFunnet(verdi: number | null | undefined): string 
 }
 
 // Spesialutbetalinger er engangsbeløp uten dagsats, så feltet skal stå tomt fremfor å vise "Ikke funnet".
-export function formaterDagsatsMedBarnetillegg(rad: TilkjentYtelseRadDTO): string {
+export function formaterDagsatsMedBarnetilleggForSamordning(rad: TilkjentYtelseRadDTO): string {
   if (erSpesialutbetaling(rad)) return '';
-  return kronerEllerIkkeFunnet(rad.dagsatsMedBarnetillegg);
+  return kronerEllerIkkeFunnet(rad.dagsatsMedBarnetilleggForSamordning);
 }
 
 export function formaterEffektivDagsats(rad: TilkjentYtelseRadDTO): string {
   if (erSpesialutbetaling(rad)) return '';
-  return kronerEllerIkkeFunnet(rad.dagsats);
+  return kronerEllerIkkeFunnet(rad.effektivDagsats);
 }
 
 // For spesialutbetalinger ligger det utbetalte beløpet på spesialutbetalingen, ikke på raden.
@@ -93,6 +93,15 @@ export function beregnAntallDagerIPerioden(rad: TilkjentYtelseRadDTO): number | 
 
   const antallDager = differenceInCalendarDays(tilOgMed, fraOgMed) + 1;
   return antallDager > 0 ? antallDager : null;
+}
+
+export function erDatoIPerioden(datostring: string | null | undefined, rad: TilkjentYtelseRadDTO): boolean {
+  const dato = parseISOorNull(datostring);
+  const fraOgMed = parseISOorNull(rad.fraOgMedDato);
+  const tilOgMed = parseISOorNull(rad.tilOgMedDato);
+  if (dato == null || fraOgMed == null || tilOgMed == null) return false;
+
+  return differenceInCalendarDays(dato, fraOgMed) >= 0 && differenceInCalendarDays(tilOgMed, dato) >= 0;
 }
 
 // Grunnlaget arbeidsprosenten måles mot: full stilling i hele perioden.

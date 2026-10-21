@@ -66,6 +66,20 @@
   border-left: 1px solid var(--ax-border-neutral-subtle);
 }
 
+/* Ekstra klasse i selektoren slik at markeringen vinner over Aksels bakgrunn på cellene. */
+.ukerRamme .ukeTabell .iPerioden {
+  background-color: var(--ax-bg-success-moderate);
+}
+
+.periodeFargeforklaring {
+  flex-shrink: 0;
+  width: var(--ax-space-16);
+  height: var(--ax-space-16);
+  background-color: var(--ax-bg-success-moderate);
+  border: 1px solid var(--ax-border-success-subtle);
+  border-radius: var(--ax-radius-4);
+}
+
 .checkmarkIcon {
   color: var(--ax-text-success-decoration);
   font-size: var(--ax-font-size-heading-small);

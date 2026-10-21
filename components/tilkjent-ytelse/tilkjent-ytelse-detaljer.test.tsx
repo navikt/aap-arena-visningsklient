@@ -27,7 +27,9 @@ const lagRad = (meldekort: TilkjentYtelseMeldekortDTO | null): TilkjentYtelseRad
   uke: '30-31',
   kilde: 'Meldekort',
   dagsatsMedBarnetillegg: 1426,
+  dagsatsMedBarnetilleggForSamordning: 1426,
   dagsats: 1426,
+  effektivDagsats: 1426,
   beregnetBrutto: 8556,
   timerArbeidet: 0,
   reduksjon: null,
@@ -169,6 +171,30 @@ describe('TilkjentYtelseDetaljer anmerkninger', () => {
     render(<TilkjentYtelseDetaljer rad={lagRad(null)} visUnntaksperiode={false} />);
 
     expect(screen.queryByText('Anmerkninger')).not.toBeInTheDocument();
+  });
+});
+
+describe('TilkjentYtelseDetaljer meldekortuker', () => {
+  const uke = {
+    ukenr: 30,
+    dager: [
+      { dato: '2017-07-27', timerArbeidet: 0, annetFravaer: false },
+      { dato: '2017-07-28', timerArbeidet: 0, annetFravaer: false },
+    ],
+  };
+
+  it('forklarer at grønn farge viser dagene i perioden', () => {
+    render(<TilkjentYtelseDetaljer rad={lagRad({ ...lagMeldekort([]), uker: [uke] })} visUnntaksperiode={false} />);
+
+    expect(
+      screen.getByText('Grønn farge viser dagene som er med i perioden 28.07.2017–10.08.2017.')
+    ).toBeInTheDocument();
+  });
+
+  it('viser ingen forklaring når meldekortet mangler uker', () => {
+    render(<TilkjentYtelseDetaljer rad={lagRad(lagMeldekort([]))} visUnntaksperiode={false} />);
+
+    expect(screen.queryByText(/Grønn farge/)).not.toBeInTheDocument();
   });
 });
 

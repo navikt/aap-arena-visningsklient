@@ -9,6 +9,7 @@ import {
   beregnPeriodegrunnlag,
   beregnTotaleTimerIPerioden,
   datoEllerIkkeFunnet,
+  erDatoIPerioden,
   erMeldekort,
   erSpesialutbetaling,
   filtrerRader,
@@ -17,7 +18,7 @@ import {
   formaterAnvistProsent,
   formaterArbeid,
   formaterBeregnetBrutto,
-  formaterDagsatsMedBarnetillegg,
+  formaterDagsatsMedBarnetilleggForSamordning,
   formaterDager,
   formaterEffektivDagsats,
   formaterGjenstaaendeDager,
@@ -57,7 +58,9 @@ const lagRad = (overrides: Partial<TilkjentYtelseRadDTO> = {}): TilkjentYtelseRa
   uke: '30-31',
   kilde: 'Meldekort',
   dagsatsMedBarnetillegg: 1426,
+  dagsatsMedBarnetilleggForSamordning: 1426,
   dagsats: 1426,
+  effektivDagsats: 1426,
   beregnetBrutto: 8556,
   timerArbeidet: 0,
   reduksjon: null,
@@ -127,16 +130,36 @@ describe('lagRadNokkel', () => {
   });
 });
 
-describe('formaterDagsatsMedBarnetillegg og formaterEffektivDagsats', () => {
+describe('formaterDagsatsMedBarnetilleggForSamordning og formaterEffektivDagsats', () => {
   it('viser kronebeløp for meldekortrader', () => {
-    const rad = lagRad({ kilde: 'MELDEKORT', dagsatsMedBarnetillegg: 1500, dagsats: 1426 });
-    expect(formaterDagsatsMedBarnetillegg(rad)).toBe(formaterTilNok(1500));
-    expect(formaterEffektivDagsats(rad)).toBe(formaterTilNok(1426));
+    const rad = lagRad({
+      kilde: 'MELDEKORT',
+      dagsatsMedBarnetillegg: 1200,
+      dagsatsMedBarnetilleggForSamordning: 1500,
+      dagsats: 1426,
+      effektivDagsats: 1100,
+    });
+    expect(formaterDagsatsMedBarnetilleggForSamordning(rad)).toBe(formaterTilNok(1500));
+    expect(formaterEffektivDagsats(rad)).toBe(formaterTilNok(1100));
+  });
+
+  it('returnerer "Ikke funnet" når dagsats før samordning mangler', () => {
+    const rad = lagRad({ kilde: 'MELDEKORT', dagsatsMedBarnetillegg: 1200, dagsatsMedBarnetilleggForSamordning: null });
+    expect(formaterDagsatsMedBarnetilleggForSamordning(rad)).toBe(IKKE_FUNNET);
+  });
+
+  it('returnerer "Ikke funnet" når effektiv dagsats mangler', () => {
+    const rad = lagRad({ kilde: 'MELDEKORT', dagsats: 1426, effektivDagsats: null });
+    expect(formaterEffektivDagsats(rad)).toBe(IKKE_FUNNET);
   });
 
   it('returnerer tom streng for spesialutbetalinger', () => {
-    const rad = lagRad({ kilde: 'SPESIALUTBETALING', dagsatsMedBarnetillegg: 1500, dagsats: 1426 });
-    expect(formaterDagsatsMedBarnetillegg(rad)).toBe('');
+    const rad = lagRad({
+      kilde: 'SPESIALUTBETALING',
+      dagsatsMedBarnetilleggForSamordning: 1500,
+      effektivDagsats: 1100,
+    });
+    expect(formaterDagsatsMedBarnetilleggForSamordning(rad)).toBe('');
     expect(formaterEffektivDagsats(rad)).toBe('');
   });
 });
@@ -287,6 +310,28 @@ describe('beregnAntallDagerIPerioden', () => {
     expect(beregnAntallDagerIPerioden(lagRad({ fraOgMedDato: null }))).toBeNull();
     expect(beregnAntallDagerIPerioden(lagRad({ tilOgMedDato: null }))).toBeNull();
     expect(beregnAntallDagerIPerioden(lagRad({ fraOgMedDato: '2017-08-10', tilOgMedDato: '2017-07-28' }))).toBeNull();
+  });
+});
+
+describe('erDatoIPerioden', () => {
+  const rad = lagRad({ fraOgMedDato: '2017-07-28', tilOgMedDato: '2017-08-10' });
+
+  it('regner både første og siste dag i perioden som innenfor', () => {
+    expect(erDatoIPerioden('2017-07-28', rad)).toBe(true);
+    expect(erDatoIPerioden('2017-08-01', rad)).toBe(true);
+    expect(erDatoIPerioden('2017-08-10', rad)).toBe(true);
+  });
+
+  it('regner dager før og etter perioden som utenfor', () => {
+    expect(erDatoIPerioden('2017-07-27', rad)).toBe(false);
+    expect(erDatoIPerioden('2017-08-11', rad)).toBe(false);
+  });
+
+  it('returnerer false når dato eller periode mangler', () => {
+    expect(erDatoIPerioden(null, rad)).toBe(false);
+    expect(erDatoIPerioden(undefined, rad)).toBe(false);
+    expect(erDatoIPerioden('2017-08-01', lagRad({ fraOgMedDato: null }))).toBe(false);
+    expect(erDatoIPerioden('2017-08-01', lagRad({ tilOgMedDato: null }))).toBe(false);
   });
 });
 

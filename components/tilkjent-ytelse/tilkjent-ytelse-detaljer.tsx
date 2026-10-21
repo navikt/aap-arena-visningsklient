@@ -11,6 +11,7 @@ import { parseISOorNull } from 'lib/utils/date';
 import { SpesialutbetalingDetaljer } from './spesialutbetaling-detaljer';
 import {
   datoEllerIkkeFunnet,
+  erDatoIPerioden,
   erSpesialutbetaling,
   formaterAnmerkning,
   formaterArbeid,
@@ -81,11 +82,21 @@ export function TilkjentYtelseDetaljer({ rad, visUnntaksperiode }: Props): React
             />
           </HStack>
 
-          <div className={styles.ukerRamme}>
-            {meldekort.uker.map((uke) => (
-              <MeldekortUkeTabell key={uke.ukenr} uke={uke} />
-            ))}
-          </div>
+          <VStack gap="space-8">
+            <div className={styles.ukerRamme}>
+              {meldekort.uker.map((uke) => (
+                <MeldekortUkeTabell key={uke.ukenr} uke={uke} rad={rad} />
+              ))}
+            </div>
+            {meldekort.uker.length > 0 && rad.fraOgMedDato != null && rad.tilOgMedDato != null && (
+              <HStack gap="space-8" align="center">
+                <span className={styles.periodeFargeforklaring} aria-hidden />
+                <BodyShort size="small" textColor="subtle">
+                  {`Grønn farge viser dagene som er med i perioden ${datoEllerIkkeFunnet(rad.fraOgMedDato)}–${datoEllerIkkeFunnet(rad.tilOgMedDato)}.`}
+                </BodyShort>
+              </HStack>
+            )}
+          </VStack>
 
           {anmerkninger.length > 0 && (
             <VStack gap="space-8">
@@ -112,14 +123,26 @@ export function TilkjentYtelseDetaljer({ rad, visUnntaksperiode }: Props): React
   );
 }
 
-function MeldekortUkeTabell({ uke }: { uke: TilkjentYtelseUkeDTO }): React.ReactElement {
+function MeldekortUkeTabell({
+  uke,
+  rad,
+}: {
+  uke: TilkjentYtelseUkeDTO;
+  rad: TilkjentYtelseRadDTO;
+}): React.ReactElement {
+  const dager = uke.dager.map((dag, index) => ({
+    ...dag,
+    nokkel: dag.dato ?? index,
+    className: erDatoIPerioden(dag.dato, rad) ? styles.iPerioden : undefined,
+  }));
+
   return (
     <Table size="small" className={styles.ukeTabell}>
       <Table.Header>
         <Table.Row>
           <Table.HeaderCell scope="col">{`UKE ${uke.ukenr}`}</Table.HeaderCell>
-          {uke.dager.map((dag, index) => (
-            <Table.HeaderCell key={dag.dato ?? index} scope="col">
+          {dager.map((dag) => (
+            <Table.HeaderCell key={dag.nokkel} scope="col" className={dag.className}>
               {formaterUkedag(dag.dato)}
             </Table.HeaderCell>
           ))}
@@ -128,14 +151,16 @@ function MeldekortUkeTabell({ uke }: { uke: TilkjentYtelseUkeDTO }): React.React
       <Table.Body>
         <Table.Row>
           <Table.HeaderCell scope="row">Arbeid</Table.HeaderCell>
-          {uke.dager.map((dag, index) => (
-            <Table.DataCell key={dag.dato ?? index}>{formaterTimer(dag.timerArbeidet)}</Table.DataCell>
+          {dager.map((dag) => (
+            <Table.DataCell key={dag.nokkel} className={dag.className}>
+              {formaterTimer(dag.timerArbeidet)}
+            </Table.DataCell>
           ))}
         </Table.Row>
         <Table.Row>
           <Table.HeaderCell scope="row">Annet fravær</Table.HeaderCell>
-          {uke.dager.map((dag, index) => (
-            <Table.DataCell key={dag.dato ?? index}>
+          {dager.map((dag) => (
+            <Table.DataCell key={dag.nokkel} className={dag.className}>
               {dag.annetFravaer && <CheckmarkIcon className={styles.checkmarkIcon} title="Annet fravær" />}
             </Table.DataCell>
           ))}
