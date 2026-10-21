@@ -37,4 +37,3 @@ export const harTilgangTilBrukerPåSak = cache(async (saksId: string): Promise<b
 
   return harTilgangTilBruker(sak.person.fodselsnummer);
 });
-1
