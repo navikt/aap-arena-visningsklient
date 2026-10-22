@@ -9,6 +9,7 @@ import { PersonHeader } from 'components/header/PersonHeader';
 import { TelleverkFelter } from 'components/header/telleverk-felter';
 import { TelleverkSkeleton } from 'components/header/telleverk-skeleton';
 import { harUnntakAAP } from 'lib/utils/vedtaksfakta';
+import { ArenaInfo } from 'components/felleskomponenter/arena-info/arena-info';
 
 export default async function SakLayout(props: { params: Promise<{ saksId: string }>; children: React.ReactNode }) {
   const { saksId } = await props.params;
@@ -38,7 +39,10 @@ export default async function SakLayout(props: { params: Promise<{ saksId: strin
           <TelleverkFelter saksId={saksId} harUnntaksperiode={harUnntakAAP(sak.vedtak)} />
         </Suspense>
       </PersonHeader>
-      <div className={styles.container}>{props.children}</div>
+      <div className={styles.container}>
+        <ArenaInfo />
+        {props.children}
+      </div>
     </>
   );
 }
