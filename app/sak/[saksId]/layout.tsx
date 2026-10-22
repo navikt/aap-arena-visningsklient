@@ -8,6 +8,7 @@ import { SakIkkeFunnet } from 'components/sak-ikke-funnet/sak-ikke-funnet';
 import { PersonHeader } from 'components/header/PersonHeader';
 import { TelleverkFelter } from 'components/header/telleverk-felter';
 import { TelleverkSkeleton } from 'components/header/telleverk-skeleton';
+import { harUnntakAAP } from 'lib/utils/vedtaksfakta';
 import { ArenaInfo } from 'components/felleskomponenter/arena-info/arena-info';
 
 export default async function SakLayout(props: { params: Promise<{ saksId: string }>; children: React.ReactNode }) {
@@ -35,7 +36,7 @@ export default async function SakLayout(props: { params: Promise<{ saksId: strin
     <>
       <PersonHeader sak={sak}>
         <Suspense fallback={<TelleverkSkeleton />}>
-          <TelleverkFelter saksId={saksId} />
+          <TelleverkFelter saksId={saksId} harUnntaksperiode={harUnntakAAP(sak.vedtak)} />
         </Suspense>
       </PersonHeader>
       <div className={styles.container}>

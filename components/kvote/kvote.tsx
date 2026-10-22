@@ -48,14 +48,17 @@ export function Kvote({ sak, kvotehistorikk }: Props): React.ReactElement {
 
   const ordinaerEndringer = endringer.filter((h) => h.kvoteTypeKode === 'AAP').map(mapTilKvoteEndring);
 
-  const utvidetEndringer = endringer.filter((h) => h.kvoteTypeKode !== 'AAP').map(mapTilKvoteEndring);
+  const unntaksperiodeEndringer = endringer.filter((h) => h.kvoteTypeKode !== 'AAP').map(mapTilKvoteEndring);
 
   return (
     <VStack paddingBlock="space-40" gap="space-24">
       <HGrid gap="space-40" columns={2}>
         <KvoteTabell tittel="Historikk ordinær periode" endringer={ordinaerEndringer} />
         {harUnntakAAP(sak.vedtak) && (
-          <KvoteTabell tittel="Historikk unntaksperiode §11-12 andre og tredje ledd" endringer={utvidetEndringer} />
+          <KvoteTabell
+            tittel="Historikk unntaksperiode §11-12 andre og tredje ledd"
+            endringer={unntaksperiodeEndringer}
+          />
         )}
       </HGrid>
     </VStack>
