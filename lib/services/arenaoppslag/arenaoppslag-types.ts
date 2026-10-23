@@ -169,7 +169,9 @@ export type TilkjentYtelseRadDTO = {
   uke: string | NIL;
   kilde: string;
   dagsatsMedBarnetillegg: number | NIL;
+  dagsatsMedBarnetilleggForSamordning: number | NIL;
   dagsats: number | NIL;
+  effektivDagsats: number | NIL;
   beregnetBrutto: number | NIL;
   timerArbeidet: number | NIL;
   reduksjon: TilkjentYtelseReduksjonDTO | NIL;
