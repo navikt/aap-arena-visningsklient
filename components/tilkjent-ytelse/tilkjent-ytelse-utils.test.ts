@@ -5,8 +5,6 @@ import { formaterTilNok } from 'lib/utils/string';
 import {
   beregnAntallDagerIPerioden,
   beregnArbeidProsent,
-  beregnBelopAvPeriodegrunnlag,
-  beregnPeriodegrunnlag,
   beregnTotaleTimerIPerioden,
   datoEllerIkkeFunnet,
   erDatoIPerioden,
@@ -47,6 +45,8 @@ const lagReduksjon = (
   sykedager: 0,
   institusjonsProsent: null,
   anvistProsent: null,
+  samordningReduksjonKroner: null,
+  totalReduksjonKroner: null,
   ...overrides,
 });
 
@@ -389,50 +389,28 @@ describe('formaterArbeid', () => {
   });
 });
 
-describe('beregnPeriodegrunnlag', () => {
-  it('ganger dagsats med barnetillegg med antall kalenderdager i perioden', () => {
-    const rad = lagRad({ fraOgMedDato: '2017-07-28', tilOgMedDato: '2017-08-10', dagsatsMedBarnetillegg: 1426 });
-    expect(beregnPeriodegrunnlag(rad)).toBe(1426 * 14);
-  });
-
-  it('returnerer null når dagsats eller periode mangler', () => {
-    expect(beregnPeriodegrunnlag(lagRad({ dagsatsMedBarnetillegg: null }))).toBeNull();
-    expect(beregnPeriodegrunnlag(lagRad({ fraOgMedDato: null }))).toBeNull();
-  });
-});
-
-describe('beregnBelopAvPeriodegrunnlag', () => {
-  const rad = lagRad({ fraOgMedDato: '2017-07-28', tilOgMedDato: '2017-08-10', dagsatsMedBarnetillegg: 1426 });
-
-  it('regner ut prosentandelen av periodegrunnlaget og runder til hele kroner', () => {
-    expect(beregnBelopAvPeriodegrunnlag(rad, 50)).toBe(9982);
-    expect(beregnBelopAvPeriodegrunnlag(rad, 0)).toBe(0);
-  });
-
-  it('returnerer null når prosent eller grunnlag mangler', () => {
-    expect(beregnBelopAvPeriodegrunnlag(rad, null)).toBeNull();
-    expect(beregnBelopAvPeriodegrunnlag(lagRad({ dagsatsMedBarnetillegg: null }), 50)).toBeNull();
-  });
-});
-
 describe('formaterTotalReduksjon', () => {
-  const rad = lagRad({ fraOgMedDato: '2017-07-28', tilOgMedDato: '2017-08-10', dagsatsMedBarnetillegg: 1426 });
-
-  it('viser prosent med kronebeløp for meldekortrader', () => {
-    const medReduksjon = { ...rad, kilde: 'Meldekort', reduksjon: lagReduksjon({ totalReduksjonProsent: 50 }) };
-    expect(formaterTotalReduksjon(medReduksjon)).toBe(`50\u00a0% (${formaterTilNok(9982)})`);
-  });
-
-  it('viser bare prosent når periodegrunnlaget ikke kan beregnes', () => {
-    const utenGrunnlag = lagRad({
+  it('viser prosent med kronebeløpet fra Arena for meldekortrader', () => {
+    const rad = lagRad({
       kilde: 'Meldekort',
-      dagsatsMedBarnetillegg: null,
-      reduksjon: lagReduksjon({ totalReduksjonProsent: 50 }),
+      reduksjon: lagReduksjon({ totalReduksjonProsent: 87, totalReduksjonKroner: 2922 }),
     });
-    expect(formaterTotalReduksjon(utenGrunnlag)).toBe('50\u00a0%');
+    expect(formaterTotalReduksjon(rad)).toBe(`87\u00a0% (${formaterTilNok(2922)})`);
   });
 
-  it('returnerer "Ikke funnet" for meldekortrader uten reduksjon', () => {
+  it('viser 0 kr når Arena oppgir 0 kr', () => {
+    const rad = lagRad({ reduksjon: lagReduksjon({ totalReduksjonProsent: 0, totalReduksjonKroner: 0 }) });
+    expect(formaterTotalReduksjon(rad)).toBe(`0\u00a0% (${formaterTilNok(0)})`);
+  });
+
+  it('viser bare prosent når Arena ikke oppgir kronebeløp', () => {
+    const rad = lagRad({ reduksjon: lagReduksjon({ totalReduksjonProsent: 50, totalReduksjonKroner: null }) });
+    expect(formaterTotalReduksjon(rad)).toBe('50\u00a0%');
+  });
+
+  it('returnerer "Ikke funnet" når prosent eller reduksjon mangler', () => {
+    const utenProsent = lagRad({ reduksjon: lagReduksjon({ totalReduksjonProsent: null, totalReduksjonKroner: 100 }) });
+    expect(formaterTotalReduksjon(utenProsent)).toBe(IKKE_FUNNET);
     expect(formaterTotalReduksjon(lagRad({ kilde: 'Meldekort', reduksjon: null }))).toBe(IKKE_FUNNET);
   });
 
@@ -442,11 +420,19 @@ describe('formaterTotalReduksjon', () => {
 });
 
 describe('formaterSamordning', () => {
-  const rad = lagRad({ fraOgMedDato: '2017-07-28', tilOgMedDato: '2017-08-10', dagsatsMedBarnetillegg: 1426 });
+  it('viser prosent med kronebeløpet fra Arena', () => {
+    const rad = lagRad({ reduksjon: lagReduksjon({ samordningsProsent: 20, samordningReduksjonKroner: 3000 }) });
+    expect(formaterSamordning(rad)).toBe(`20\u00a0% (${formaterTilNok(3000)})`);
+  });
 
-  it('viser prosent med kronebeløp', () => {
-    const medSamordning = { ...rad, reduksjon: lagReduksjon({ samordningsProsent: 50 }) };
-    expect(formaterSamordning(medSamordning)).toBe(`50\u00a0% (${formaterTilNok(9982)})`);
+  it('viser 0 kr når Arena oppgir 0 kr', () => {
+    const rad = lagRad({ reduksjon: lagReduksjon({ samordningsProsent: 0, samordningReduksjonKroner: 0 }) });
+    expect(formaterSamordning(rad)).toBe(`0\u00a0% (${formaterTilNok(0)})`);
+  });
+
+  it('viser bare prosent når Arena ikke oppgir kronebeløp', () => {
+    const rad = lagRad({ reduksjon: lagReduksjon({ samordningsProsent: 20, samordningReduksjonKroner: null }) });
+    expect(formaterSamordning(rad)).toBe('20\u00a0%');
   });
 
   it('returnerer "Ikke funnet" når samordningsprosent mangler', () => {

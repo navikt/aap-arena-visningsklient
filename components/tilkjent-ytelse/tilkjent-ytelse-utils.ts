@@ -136,29 +136,9 @@ export function prosentEllerIkkeFunnet(verdi: number | null | undefined): string
   return verdi != null ? `${verdi.toLocaleString('nb-NO')}\u00a0%` : IKKE_FUNNET;
 }
 
-// Fullt beløp for perioden før reduksjon: dagsats med barnetillegg for hver kalenderdag i perioden.
-export function beregnPeriodegrunnlag(rad: TilkjentYtelseRadDTO): number | null {
-  const antallDager = beregnAntallDagerIPerioden(rad);
-  if (antallDager == null || rad.dagsatsMedBarnetillegg == null) return null;
-
-  return rad.dagsatsMedBarnetillegg * antallDager;
-}
-
-export function beregnBelopAvPeriodegrunnlag(
-  rad: TilkjentYtelseRadDTO,
-  prosent: number | null | undefined
-): number | null {
-  const grunnlag = beregnPeriodegrunnlag(rad);
-  if (grunnlag == null || prosent == null) return null;
-
-  return Math.round((grunnlag * prosent) / 100);
-}
-
 // Viser prosenten med tilhørende kronebeløp, for eksempel "70 % (3 450 kr)".
-export function formaterProsentMedBelop(rad: TilkjentYtelseRadDTO, prosent: number | null | undefined): string {
+export function formaterProsentMedBelop(prosent: number | null | undefined, belop: number | null | undefined): string {
   if (prosent == null) return IKKE_FUNNET;
-
-  const belop = beregnBelopAvPeriodegrunnlag(rad, prosent);
   if (belop == null) return prosentEllerIkkeFunnet(prosent);
 
   return `${prosentEllerIkkeFunnet(prosent)} (${formaterTilNok(belop)})`;
@@ -167,11 +147,11 @@ export function formaterProsentMedBelop(rad: TilkjentYtelseRadDTO, prosent: numb
 // Spesialutbetalinger har ikke reduksjonsdata, så feltet skal stå tomt fremfor å vise "Ikke funnet".
 export function formaterTotalReduksjon(rad: TilkjentYtelseRadDTO): string {
   if (erSpesialutbetaling(rad)) return '';
-  return formaterProsentMedBelop(rad, rad.reduksjon?.totalReduksjonProsent);
+  return formaterProsentMedBelop(rad.reduksjon?.totalReduksjonProsent, rad.reduksjon?.totalReduksjonKroner);
 }
 
 export function formaterSamordning(rad: TilkjentYtelseRadDTO): string {
-  return formaterProsentMedBelop(rad, rad.reduksjon?.samordningsProsent);
+  return formaterProsentMedBelop(rad.reduksjon?.samordningsProsent, rad.reduksjon?.samordningReduksjonKroner);
 }
 
 // Arena setter institusjonsProsent til null når det ikke er institusjonsopphold, som i praksis betyr 0 %.
