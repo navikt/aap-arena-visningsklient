@@ -136,7 +136,6 @@ export function prosentEllerIkkeFunnet(verdi: number | null | undefined): string
   return verdi != null ? `${verdi.toLocaleString('nb-NO')}\u00a0%` : IKKE_FUNNET;
 }
 
-
 // Viser prosenten med tilhørende kronebeløp, for eksempel "70 % (3 450 kr)".
 export function formaterProsentMedBelop(prosent: number | null | undefined, belop: number | null | undefined): string {
   if (prosent == null) return IKKE_FUNNET;
