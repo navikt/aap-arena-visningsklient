@@ -141,6 +141,8 @@ export type TilkjentYtelseReduksjonDTO = {
   sykedager: number | NIL;
   institusjonsProsent: number | NIL;
   anvistProsent: number | NIL;
+  samordningReduksjonKroner: number | NIL;
+  totalReduksjonKroner: number | NIL;
 };
 
 export type TilkjentYtelseSpesialutbetalingDTO = {
