@@ -25,14 +25,14 @@ jobs:
           team: aap
           build_secrets: NODE_AUTH_TOKEN=${{ secrets.READER_TOKEN }}
       - name: Deploy to nais (dev)
-        uses: nais/deploy/actions/deploy@v2
+        uses: nais/deploy/actions/deploy@v3
         env:
           CLUSTER: dev-gcp
           IMAGE: ${{ steps.docker-push.outputs.image }}
           RESOURCE: .nais/nais.yaml
           VARS: .nais/dev.yaml
       - name: Deploy to nais (prod)
-        uses: nais/deploy/actions/deploy@v2
+        uses: nais/deploy/actions/deploy@v3
         env:
           CLUSTER: prod-gcp
           IMAGE: ${{ steps.docker-push.outputs.image }}
