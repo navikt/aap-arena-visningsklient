@@ -20,7 +20,7 @@
     "@navikt/ds-react": "8.21.0",
     "@navikt/oasis": "4.2.2",
     "@prometheus-io/client": "0.16.1",
-    "date-fns": "4.1.0",
+    "date-fns": "4.4.0",
     "graphql": "16.14.0",
     "graphql-request": "7.4.0",
     "jose": "6.2.15",
