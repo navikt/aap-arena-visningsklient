@@ -43,7 +43,7 @@ function getSysLogger(): winston.Logger {
 
   const cefFormat = winston.format.printf(({ timestamp, message, auditType, suid, duid }) => {
     const { NAIS_APP_NAME } = process.env;
-    return `CEF:0|AAP|${NAIS_APP_NAME}|1.0|${auditType || 'audit:access'}|Sporingslogg|INFO|suid=${suid} duid=${duid} end=${timestamp} msg=${message}`;
+    return `CEF:0|KELVIN|${NAIS_APP_NAME}|1.0|${auditType || 'audit:access'}|Sporingslogg|INFO|suid=${suid} duid=${duid} end=${timestamp} msg=${message}`;
   });
 
   const transportSyslog = new winstonSyslog.Syslog({
