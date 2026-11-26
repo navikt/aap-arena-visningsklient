@@ -27,6 +27,7 @@
     "next": "16.2.6",
     "react": "19.3.1",
     "react-dom": "19.3.1",
+    "unleash-client": "6.12.2",
     "winston": "3.19.0",
     "winston-syslog": "2.7.1"
   },
