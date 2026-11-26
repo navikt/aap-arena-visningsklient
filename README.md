@@ -131,10 +131,11 @@ Nais-manifestet henter disse fra secreten `kelvin-unleash-api-token` og tillater
 Når Unleash-flagget `AutoriserteEndepunkterHosArenaoppslag` er `false`, brukes `autorisert = true` for kvotehistorikk.
 Når flagget er `true`, brukes ressursens konfigurerte verdi. Den er nå `true`, så kvotehistorikk bruker det
 autoriserte endpointet i begge tilfeller. Andre sakressurser påvirkes ikke.
-Uten Unleash-konfigurasjon lokalt er flagget `false`.
-
-Hvis Arenaoppslag returnerer `403` for kvotehistorikk, viser klienten «Ikke tilgang til kvotehistorikk».
-Dette er et forventet svar ved manglende tilgang. Andre feil viser fortsatt feilmeldingen med «Prøv igjen».
+Alle Arenaoppslag-endepunkter kan returnere `403`. Tjenestene returnerer da `TilgangAvvist`.
+Saksoppslagets tilgangsresultat styrer den felles meldingen «Ikke tilgang til sak» i saks-layouten.
+Hvis bare kvotehistorikk avviser tilgang, viser kvotesiden den samme meldingen i stedet for en tom side.
+Bare kvotehistorikk velger mellom autorisert og ordinært endpoint. Foreløpig er det bare backend-endpointet for
+kvotehistorikk som håndhever tilgangskontrollen. Andre feil viser fortsatt den vanlige feilmeldingen.
 
 ### Kjøring av tester
 

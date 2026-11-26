@@ -2,10 +2,9 @@
 
 import { cache } from 'react';
 import { apiFetch } from 'lib/services/api-fetch/apiFetch';
-import { isError } from 'lib/utils/api';
+import { TilgangAvvist, isError } from 'lib/utils/api';
 import { mocksEnabled } from 'lib/utils/environment';
 import {
-  IngenTilgang,
   KvoteHistorikkDTO,
   OppgaveDTO,
   SakDTO,
@@ -27,13 +26,17 @@ const baseUrl = process.env.ARENAOPPSLAG_API_BASE_URL;
 const scope = process.env.ARENAOPPSLAG_API_SCOPE || '';
 const logger = getLogger('lib.services.arenaoppslag');
 
-export const hentSak = cache(async (saksId: string): Promise<SakDTO | null> => {
+export const hentSak = cache(async (saksId: string): Promise<SakDTO | typeof TilgangAvvist | null> => {
   if (mocksEnabled()) {
     return getMockSakFraArena(saksId);
   }
 
   const response = await apiFetch<SakDTO>(`${baseUrl}/api/intern/sak/${saksId}/detaljert`, scope, 'GET');
   if (isError(response)) {
+    if (response.status === 403) {
+      logger.warn('Bruker har ikke tilgang til sak', { saksId });
+      return TilgangAvvist;
+    }
     if (response.status === 404) {
       return null;
     }
@@ -44,15 +47,15 @@ export const hentSak = cache(async (saksId: string): Promise<SakDTO | null> => {
   return response.data;
 });
 
-export const hentSakHvisTilgang = cache(async (saksId: string): Promise<SakDTO | null> => {
+export const hentSakHvisTilgang = cache(async (saksId: string): Promise<SakDTO | typeof TilgangAvvist | null> => {
   const sak = await hentSak(saksId);
-  if (sak == null) {
-    return null;
+  if (sak == null || sak === TilgangAvvist) {
+    return sak;
   }
 
   const harTilgang = await harTilgangTilBruker(sak.person.fodselsnummer);
   if (!harTilgang) {
-    return null;
+    return TilgangAvvist;
   }
 
   return sak;
@@ -66,20 +69,15 @@ type Sakressurs<T> = {
   hentMock: (saksId: string) => T | null;
 };
 
-function hentSakressursHvisTilgang<T>(
+async function hentSakressursHvisTilgang<T>(
   saksId: string,
-  ressurs: Sakressurs<T> & { autorisert: boolean }
-): Promise<T | IngenTilgang | null>;
-function hentSakressursHvisTilgang<T>(
-  saksId: string,
-  ressurs: Sakressurs<T> & { autorisert?: never }
-): Promise<T | null>;
-async function hentSakressursHvisTilgang<T>(saksId: string, ressurs: Sakressurs<T>): Promise<T | IngenTilgang | null> {
+  ressurs: Sakressurs<T>
+): Promise<T | typeof TilgangAvvist | null> {
   // Audit-logging for saken gjøres én gang i app/sak/[saksId]/layout.tsx, og gjentas derfor ikke her.
   // Fødselsnummeret hentes på serveren og ikke fra klienten, slik at tilgangssjekken ikke kan omgås.
-  const sak = await hentSak(saksId);
-  if (sak == null) {
-    return null;
+  const sak = await hentSakHvisTilgang(saksId);
+  if (sak == null || sak === TilgangAvvist) {
+    return sak;
   }
 
   let autorisert = ressurs.autorisert ?? false;
@@ -87,12 +85,6 @@ async function hentSakressursHvisTilgang<T>(saksId: string, ressurs: Sakressurs<
     const flaggAktivert = await erFeatureFlaggAktivert('AutoriserteEndepunkterHosArenaoppslag');
     autorisert = flaggAktivert ? autorisert : true;
   }
-  const harTilgang = await harTilgangTilBruker(sak.person.fodselsnummer);
-  if (!harTilgang) {
-    logger.warn('Bruker har ikke tilgang til ressurs for sak', { saksId, ressurs: ressurs.navn });
-    return autorisert ? { type: 'INGEN_TILGANG' } : null;
-  }
-
   if (mocksEnabled()) {
     return ressurs.hentMock(saksId);
   }
@@ -100,9 +92,9 @@ async function hentSakressursHvisTilgang<T>(saksId: string, ressurs: Sakressurs<
   const apiSti = autorisert ? '/api/intern/autorisert' : '/api/intern';
   const response = await apiFetch<T>(`${baseUrl}${apiSti}/sak/${saksId}/${ressurs.sti}`, scope, 'GET');
   if (isError(response)) {
-    if (response.status === 403 && autorisert) {
+    if (response.status === 403) {
       logger.warn('Bruker har ikke tilgang til ressurs for sak', { saksId, ressurs: ressurs.navn });
-      return { type: 'INGEN_TILGANG' };
+      return TilgangAvvist;
     }
     if (response.status === 404) {
       return null;
@@ -117,7 +109,7 @@ async function hentSakressursHvisTilgang<T>(saksId: string, ressurs: Sakressurs<
 // Cachet per request på samme måte som hentSak, slik at flere kall i samme rendering
 // ikke gir flere kall mot arenaoppslag.
 export const hentTilkjentYtelseHvisTilgang = cache(
-  async (saksId: string): Promise<TilkjentYtelseDTO | null> =>
+  async (saksId: string): Promise<TilkjentYtelseDTO | typeof TilgangAvvist | null> =>
     hentSakressursHvisTilgang<TilkjentYtelseDTO>(saksId, {
       navn: 'tilkjent ytelse',
       sti: 'tilkjent-ytelse',
@@ -126,7 +118,7 @@ export const hentTilkjentYtelseHvisTilgang = cache(
 );
 
 export const hentOppgaverHvisTilgang = cache(
-  async (saksId: string): Promise<OppgaveDTO[] | null> =>
+  async (saksId: string): Promise<OppgaveDTO[] | typeof TilgangAvvist | null> =>
     hentSakressursHvisTilgang<OppgaveDTO[]>(saksId, {
       navn: 'oppgaver',
       sti: 'oppgaver',
@@ -135,7 +127,7 @@ export const hentOppgaverHvisTilgang = cache(
 );
 
 export const hentKvotehistorikkHvisTilgang = cache(
-  async (saksId: string): Promise<KvoteHistorikkDTO[] | IngenTilgang | null> =>
+  async (saksId: string): Promise<KvoteHistorikkDTO[] | typeof TilgangAvvist | null> =>
     hentSakressursHvisTilgang<KvoteHistorikkDTO[]>(saksId, {
       navn: 'kvotehistorikk',
       sti: 'kvotehistorikk',
@@ -145,7 +137,7 @@ export const hentKvotehistorikkHvisTilgang = cache(
 );
 
 export const hentTelleverkHvisTilgang = cache(
-  async (saksId: string): Promise<TelleverkResponseDTO | null> =>
+  async (saksId: string): Promise<TelleverkResponseDTO | typeof TilgangAvvist | null> =>
     hentSakressursHvisTilgang<TelleverkResponseDTO>(saksId, {
       navn: 'telleverk',
       sti: 'telleverk',

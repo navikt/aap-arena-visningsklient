@@ -2,9 +2,12 @@ import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { apiFetch } from 'lib/services/api-fetch/apiFetch';
 import { harTilgangTilBruker } from 'lib/services/tilgang/tilgang-service';
 import { erFeatureFlaggAktivert } from 'lib/services/unleash/unleash-service';
+import { TilgangAvvist } from 'lib/utils/api';
 import {
   hentKvotehistorikkHvisTilgang,
   hentOppgaverHvisTilgang,
+  hentSak,
+  hentSakHvisTilgang,
   hentTelleverkHvisTilgang,
   hentTilkjentYtelseHvisTilgang,
 } from './arenaoppslag-service';
@@ -46,9 +49,10 @@ describe('arenaoppslag resource endpoints', () => {
     );
     expect(apiFetch).toHaveBeenNthCalledWith(2, expect.stringContaining(sti), expect.any(String), 'GET');
     expect(harTilgangTilBruker).toHaveBeenCalledWith('test-person');
-    expect(erFeatureFlaggAktivert).toHaveBeenCalledTimes(
-      hentRessurs === hentKvotehistorikkHvisTilgang ? 1 : 0
-    );
+    expect(erFeatureFlaggAktivert).toHaveBeenCalledTimes(hentRessurs === hentKvotehistorikkHvisTilgang ? 1 : 0);
+    if (hentRessurs === hentKvotehistorikkHvisTilgang) {
+      expect(erFeatureFlaggAktivert).toHaveBeenCalledWith('AutoriserteEndepunkterHosArenaoppslag');
+    }
   });
 
   it('forces the authorized kvotehistorikk endpoint when the flag is disabled', async () => {
@@ -71,7 +75,7 @@ describe('arenaoppslag resource endpoints', () => {
       .mockResolvedValueOnce({ type: 'SUCCESS', data: { person: { fodselsnummer: 'test-person' } } })
       .mockResolvedValueOnce({ type: 'ERROR', status: 403 });
 
-    expect(await hentKvotehistorikkHvisTilgang('test-sak')).toEqual({ type: 'INGEN_TILGANG' });
+    expect(await hentKvotehistorikkHvisTilgang('test-sak')).toBe(TilgangAvvist);
     expect(logger.error).not.toHaveBeenCalled();
     expect(apiFetch).toHaveBeenCalledTimes(2);
   });
@@ -87,24 +91,6 @@ describe('arenaoppslag resource endpoints', () => {
 
     expect(apiFetch).toHaveBeenNthCalledWith(2, expect.stringContaining(sti), expect.any(String), 'GET');
     expect(erFeatureFlaggAktivert).not.toHaveBeenCalled();
-  });
-
-  it('does not fetch kvotehistorikk when access is denied', async () => {
-    vi.mocked(harTilgangTilBruker).mockResolvedValue(false);
-
-    expect(await hentKvotehistorikkHvisTilgang('test-sak')).toEqual({ type: 'INGEN_TILGANG' });
-    expect(apiFetch).toHaveBeenCalledTimes(1);
-  });
-
-  it('returns permission denied for kvotehistorikk when the backend returns 403', async () => {
-    vi.mocked(apiFetch)
-      .mockReset()
-      .mockResolvedValueOnce({ type: 'SUCCESS', data: { person: { fodselsnummer: 'test-person' } } })
-      .mockResolvedValueOnce({ type: 'ERROR', status: 403 });
-
-    expect(await hentKvotehistorikkHvisTilgang('test-sak')).toEqual({ type: 'INGEN_TILGANG' });
-    expect(logger.warn).toHaveBeenCalled();
-    expect(logger.error).not.toHaveBeenCalled();
   });
 
   it('preserves missing kvotehistorikk on 404', async () => {
@@ -128,18 +114,87 @@ describe('arenaoppslag resource endpoints', () => {
     expect(logger.error).toHaveBeenCalled();
   });
 
-  it.each([hentOppgaverHvisTilgang, hentTelleverkHvisTilgang, hentTilkjentYtelseHvisTilgang])(
-    'preserves existing 403 handling for %s',
-    async (hentRessurs) => {
+  describe.each([
+    hentKvotehistorikkHvisTilgang,
+    hentOppgaverHvisTilgang,
+    hentTelleverkHvisTilgang,
+    hentTilkjentYtelseHvisTilgang,
+  ])('%s', (hentRessurs) => {
+    it('returns permission denied when the resource returns 403', async () => {
       vi.mocked(apiFetch)
         .mockReset()
         .mockResolvedValueOnce({ type: 'SUCCESS', data: { person: { fodselsnummer: 'test-person' } } })
         .mockResolvedValueOnce({ type: 'ERROR', status: 403 });
 
+      expect(await hentRessurs('test-sak')).toBe(TilgangAvvist);
+      expect(logger.warn).toHaveBeenCalled();
+      expect(logger.error).not.toHaveBeenCalled();
+    });
+
+    it('does not fetch the resource when the case returns 403', async () => {
+      vi.mocked(apiFetch).mockReset().mockResolvedValueOnce({ type: 'ERROR', status: 403 });
+
+      expect(await hentRessurs('test-sak')).toBe(TilgangAvvist);
+      expect(apiFetch).toHaveBeenCalledTimes(1);
+      expect(harTilgangTilBruker).not.toHaveBeenCalled();
+    });
+
+    it('does not fetch the resource when local access is denied', async () => {
+      vi.mocked(harTilgangTilBruker).mockResolvedValue(false);
+
+      expect(await hentRessurs('test-sak')).toBe(TilgangAvvist);
+      expect(apiFetch).toHaveBeenCalledTimes(1);
+    });
+
+    it('returns null when the resource returns 404', async () => {
+      vi.mocked(apiFetch)
+        .mockReset()
+        .mockResolvedValueOnce({ type: 'SUCCESS', data: { person: { fodselsnummer: 'test-person' } } })
+        .mockResolvedValueOnce({ type: 'ERROR', status: 404 });
+
+      expect(await hentRessurs('test-sak')).toBeNull();
+    });
+
+    it('throws for unexpected resource errors', async () => {
+      vi.mocked(apiFetch)
+        .mockReset()
+        .mockResolvedValueOnce({ type: 'SUCCESS', data: { person: { fodselsnummer: 'test-person' } } })
+        .mockResolvedValueOnce({ type: 'ERROR', status: 500 });
+
       await expect(hentRessurs('test-sak')).rejects.toThrow();
       expect(logger.error).toHaveBeenCalled();
-    }
-  );
+    });
+  });
+
+  describe.each([hentSak, hentSakHvisTilgang])('%s', (hent) => {
+    it('returns permission denied for a backend 403', async () => {
+      vi.mocked(apiFetch).mockReset().mockResolvedValueOnce({ type: 'ERROR', status: 403 });
+
+      expect(await hent('test-sak')).toBe(TilgangAvvist);
+      expect(harTilgangTilBruker).not.toHaveBeenCalled();
+      expect(logger.warn).toHaveBeenCalled();
+      expect(logger.error).not.toHaveBeenCalled();
+    });
+
+    it('returns null for a missing case', async () => {
+      vi.mocked(apiFetch).mockReset().mockResolvedValueOnce({ type: 'ERROR', status: 404 });
+
+      expect(await hent('test-sak')).toBeNull();
+    });
+
+    it('throws for unexpected case errors', async () => {
+      vi.mocked(apiFetch).mockReset().mockResolvedValueOnce({ type: 'ERROR', status: 500 });
+
+      await expect(hent('test-sak')).rejects.toThrow('Noe gikk galt ved henting av sak fra arenaoppslag');
+      expect(logger.error).toHaveBeenCalled();
+    });
+  });
+
+  it('returns permission denied when the local case access check fails', async () => {
+    vi.mocked(harTilgangTilBruker).mockResolvedValue(false);
+
+    expect(await hentSakHvisTilgang('test-sak')).toBe(TilgangAvvist);
+  });
 
   it('preserves missing case handling', async () => {
     vi.mocked(apiFetch).mockReset().mockResolvedValueOnce({ type: 'ERROR', status: 404 });

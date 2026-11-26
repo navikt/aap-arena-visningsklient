@@ -3,6 +3,7 @@ import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import { hentKvotehistorikkHvisTilgang, hentSakHvisTilgang } from 'lib/services/arenaoppslag/arenaoppslag-service';
 import { SakDTO } from 'lib/services/arenaoppslag/arenaoppslag-types';
+import { TilgangAvvist } from 'lib/utils/api';
 import KvotePage from './page';
 
 vi.mock('lib/services/arenaoppslag/arenaoppslag-service', () => ({
@@ -35,17 +36,26 @@ describe('KvotePage', () => {
     vi.mocked(hentSakHvisTilgang).mockResolvedValue(sak);
   });
 
-  it('viser tilgangsmeldingen i stedet for kvotetabellen ved avvist tilgang', async () => {
-    vi.mocked(hentKvotehistorikkHvisTilgang).mockResolvedValue({ type: 'INGEN_TILGANG' });
+  it('viser felles tilgangsmelding når bare kvotehistorikk avviser tilgang', async () => {
+    vi.mocked(hentKvotehistorikkHvisTilgang).mockResolvedValue(TilgangAvvist);
 
     render(await KvotePage(props()));
 
-    expect(screen.getByRole('heading', { name: 'Advarsel: Ikke tilgang til kvotehistorikk' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Advarsel: Ikke tilgang til sak' })).toBeInTheDocument();
     expect(
-      screen.getByText('Du har ikke tilgang til å se denne saken. Ta kontakt med brukerstøtte hvis feilen vedvarer.')
+      screen.getByText(
+        'Du har ikke tilgang til å se denne saken. Hvis du mener dette er feil, kan du ta kontakt med brukerstøtte.'
+      )
     ).toBeInTheDocument();
     expect(screen.queryByText('Historikk ordinær periode')).not.toBeInTheDocument();
     expect(screen.queryByRole('button', { name: 'Prøv igjen' })).not.toBeInTheDocument();
+  });
+
+  it('viser ingenting ved avvist tilgang til saken', async () => {
+    vi.mocked(hentSakHvisTilgang).mockResolvedValue(TilgangAvvist);
+    vi.mocked(hentKvotehistorikkHvisTilgang).mockResolvedValue([]);
+
+    expect(await KvotePage(props())).toBeNull();
   });
 
   it.each([[], null])('beholder kvotetabellen når historikken er %s', async (kvotehistorikk) => {
@@ -54,7 +64,7 @@ describe('KvotePage', () => {
     render(await KvotePage(props()));
 
     expect(screen.getByText('Historikk ordinær periode')).toBeInTheDocument();
-    expect(screen.queryByText('Ikke tilgang til kvotehistorikk')).not.toBeInTheDocument();
+    expect(screen.queryByRole('heading', { name: 'Advarsel: Ikke tilgang til sak' })).not.toBeInTheDocument();
   });
 
   it('beholder uventede feil for feilgrensen', async () => {

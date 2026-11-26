@@ -78,10 +78,6 @@ export type TelleverkResponseDTO = {
   sisteUtbetalingDato: string | NIL;
 };
 
-export type IngenTilgang = {
-  type: 'INGEN_TILGANG';
-};
-
 export type KvoteHistorikkDTO = {
   id: number;
   kvoteTypeKode: string;

@@ -3,13 +3,14 @@ import { Suspense } from 'react';
 import { hentSakHvisTilgang } from 'lib/services/arenaoppslag/arenaoppslag-service';
 import { SakTabsNav } from 'app/sak/[saksId]/sak-tabs-nav';
 import { SakTabsNavData } from 'app/sak/[saksId]/sak-tabs-nav-data';
+import { TilgangAvvist } from 'lib/utils/api';
 
 export default async function FanerLayout(props: { params: Promise<{ saksId: string }>; children: React.ReactNode }) {
   const { saksId } = await props.params;
 
   // Tilgangssjekk og feilvisning gjøres i app/sak/[saksId]/layout.tsx.
   const sak = await hentSakHvisTilgang(saksId);
-  if (sak == null) {
+  if (sak == null || sak === TilgangAvvist) {
     return null;
   }
 
