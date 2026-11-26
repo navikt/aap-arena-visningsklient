@@ -11,7 +11,8 @@ Dette oppsettet forutsetter at du har følgende programvare installert:
 
 - Node.js 26 (NVM anbefales: `nvm install` / `nvm use` leser `.nvmrc` automatisk)
 - pnpm (`npm install -g pnpm@11.0.9`)
-- Docker med colima og docker-compose
+- dotenv (`npm install -g dotenv-cli`)
+- Docker med colima og docker-compose, dotenv
 
 ### Sett opp GitHub token
 
@@ -25,6 +26,11 @@ Dette oppsettet forutsetter at du har følgende programvare installert:
    export NODE_AUTH_TOKEN=<token-her>
    ```
    Husk å kjøre `source ~/.bashrc` eller `source ~/.zshrc` etterpå for å laste inn endringene, evt start terminal på nytt.
+
+### Bruke eksisterende token
+
+Har du Kelvin sitt oppsett for NPM, kan du gjøre
+`export NODE_AUTH_TOKEN=$NPM_AUTH_TOKEN` i ~/.zshrc
 
 ### Linting og formattering
 
@@ -119,6 +125,11 @@ Hvis `UNLEASH_SERVER_API_URL` mangler eller er tom, brukes en mock som aktiverer
 Når URL-en er satt, må også `UNLEASH_SERVER_API_TOKEN` og `UNLEASH_SERVER_API_ENV` være konfigurert.
 Nais-manifestet henter disse fra secreten `kelvin-unleash-api-token` og tillater utgående trafikk til
 `aap-unleash-api.nav.cloud.nais.io`.
+
+### Tilgang til kvotehistorikk
+
+Hvis Arenaoppslag returnerer `403` for kvotehistorikk, viser klienten «Ikke tilgang til kvotehistorikk».
+Dette er et forventet svar ved manglende tilgang. Andre feil viser fortsatt feilmeldingen med «Prøv igjen».
 
 ### Kjøring av tester
 

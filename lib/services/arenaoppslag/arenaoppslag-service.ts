@@ -5,6 +5,7 @@ import { apiFetch } from 'lib/services/api-fetch/apiFetch';
 import { isError } from 'lib/utils/api';
 import { mocksEnabled } from 'lib/utils/environment';
 import {
+  IngenTilgang,
   KvoteHistorikkDTO,
   OppgaveDTO,
   SakDTO,
@@ -60,10 +61,19 @@ type Sakressurs<T> = {
   // Brukes i logg- og feilmeldinger, f.eks. "tilkjent ytelse".
   navn: string;
   sti: string;
+  autorisert?: boolean;
   hentMock: (saksId: string) => T | null;
 };
 
-async function hentSakressursHvisTilgang<T>(saksId: string, ressurs: Sakressurs<T>): Promise<T | null> {
+function hentSakressursHvisTilgang<T>(
+  saksId: string,
+  ressurs: Sakressurs<T> & { autorisert: true }
+): Promise<T | IngenTilgang | null>;
+function hentSakressursHvisTilgang<T>(
+  saksId: string,
+  ressurs: Sakressurs<T> & { autorisert?: false }
+): Promise<T | null>;
+async function hentSakressursHvisTilgang<T>(saksId: string, ressurs: Sakressurs<T>): Promise<T | IngenTilgang | null> {
   // Audit-logging for saken gjøres én gang i app/sak/[saksId]/layout.tsx, og gjentas derfor ikke her.
   // Fødselsnummeret hentes på serveren og ikke fra klienten, slik at tilgangssjekken ikke kan omgås.
   const sak = await hentSak(saksId);
@@ -74,15 +84,20 @@ async function hentSakressursHvisTilgang<T>(saksId: string, ressurs: Sakressurs<
   const harTilgang = await harTilgangTilBruker(sak.person.fodselsnummer);
   if (!harTilgang) {
     logger.warn('Bruker har ikke tilgang til ressurs for sak', { saksId, ressurs: ressurs.navn });
-    return null;
+    return ressurs.autorisert ? { type: 'INGEN_TILGANG' } : null;
   }
 
   if (mocksEnabled()) {
     return ressurs.hentMock(saksId);
   }
 
-  const response = await apiFetch<T>(`${baseUrl}/api/intern/sak/${saksId}/${ressurs.sti}`, scope, 'GET');
+  const apiSti = ressurs.autorisert ? '/api/intern/autorisert' : '/api/intern';
+  const response = await apiFetch<T>(`${baseUrl}${apiSti}/sak/${saksId}/${ressurs.sti}`, scope, 'GET');
   if (isError(response)) {
+    if (response.status === 403 && ressurs.autorisert) {
+      logger.warn('Bruker har ikke tilgang til ressurs for sak', { saksId, ressurs: ressurs.navn });
+      return { type: 'INGEN_TILGANG' };
+    }
     if (response.status === 404) {
       return null;
     }
@@ -114,10 +129,11 @@ export const hentOppgaverHvisTilgang = cache(
 );
 
 export const hentKvotehistorikkHvisTilgang = cache(
-  async (saksId: string): Promise<KvoteHistorikkDTO[] | null> =>
+  async (saksId: string): Promise<KvoteHistorikkDTO[] | IngenTilgang | null> =>
     hentSakressursHvisTilgang<KvoteHistorikkDTO[]>(saksId, {
       navn: 'kvotehistorikk',
       sti: 'kvotehistorikk',
+      autorisert: true,
       hentMock: getMockKvotehistorikk,
     })
 );
