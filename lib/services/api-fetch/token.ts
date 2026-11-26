@@ -1,24 +1,14 @@
 import { requestAzureOboToken, validateToken, getToken } from '@navikt/oasis';
 import { getLogger } from 'lib/serverutlis/logger';
-import { loginMocked, usesLocalWonderwall } from 'lib/utils/environment';
+import { loginMocked } from 'lib/utils/environment';
 import { headers } from 'next/headers';
 import { redirect } from 'next/navigation';
-import { getMockedOboToken, getOboTokenForAudienceFromEnvironmentVariable } from 'lib/services/api-fetch/token-mock';
+import { getMockedOboToken } from 'lib/services/api-fetch/token-mock';
 import { NAVJWTPayload, TokenType } from 'lib/services/api-fetch/token-types';
 
 const logger = getLogger('lib.services.api-fetch.token');
 
 export const getOboToken = async (audience: string): Promise<string> => {
-  if (usesLocalWonderwall()) {
-    const oboToken = getOboTokenForAudienceFromEnvironmentVariable(audience);
-    if (oboToken == null) {
-      throw new Error(
-        'Klarte ikke hente OBO-token fra miljøvariabel, miljøvariabel må være satt når man kjører med lokal winderwall'
-      );
-    }
-    return oboToken;
-  }
-
   if (loginMocked()) {
     const oboToken = await getMockedOboToken(audience);
     if (oboToken == null) {
@@ -34,7 +24,7 @@ export const getOboToken = async (audience: string): Promise<string> => {
     return onBehalfOf.token;
   }
 
-  logger.error(`Henting av oboToken for ${audience} feilet`, { response: onBehalfOf });
+  logger.error(`Henting av oboToken for ${audience} feilet`, { error: onBehalfOf.error.message });
   throw new Error(`Henting av oboToken for ${audience} feilet.`);
 };
 
@@ -49,11 +39,16 @@ export const getValidatedToken = async (): Promise<TokenType> => {
   const token = getToken(requestHeaders);
 
   if (!token) {
+    logger.warn('Fant ikke token i request, sender til innlogging');
     redirect(`/oauth2/login?redirect=${redirectPath}`);
   }
 
   const validation = await validateToken(token);
   if (!validation.ok) {
+    logger.warn('Validering av token feilet, sender til innlogging', {
+      errorType: validation.errorType,
+      error: validation.error.message,
+    });
     redirect(`/oauth2/login?redirect=${redirectPath}`);
   }
 
