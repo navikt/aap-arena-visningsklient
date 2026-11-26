@@ -21,6 +21,7 @@ import {
   getMockTilkjentYtelse,
 } from 'lib/services/arenaoppslag/arenaoppslag-mock';
 import { harTilgangTilBruker } from 'lib/services/tilgang/tilgang-service';
+import { erFeatureFlaggAktivert } from 'lib/services/unleash/unleash-service';
 
 const baseUrl = process.env.ARENAOPPSLAG_API_BASE_URL;
 const scope = process.env.ARENAOPPSLAG_API_SCOPE || '';
@@ -67,11 +68,11 @@ type Sakressurs<T> = {
 
 function hentSakressursHvisTilgang<T>(
   saksId: string,
-  ressurs: Sakressurs<T> & { autorisert: true }
+  ressurs: Sakressurs<T> & { autorisert: boolean }
 ): Promise<T | IngenTilgang | null>;
 function hentSakressursHvisTilgang<T>(
   saksId: string,
-  ressurs: Sakressurs<T> & { autorisert?: false }
+  ressurs: Sakressurs<T> & { autorisert?: never }
 ): Promise<T | null>;
 async function hentSakressursHvisTilgang<T>(saksId: string, ressurs: Sakressurs<T>): Promise<T | IngenTilgang | null> {
   // Audit-logging for saken gjøres én gang i app/sak/[saksId]/layout.tsx, og gjentas derfor ikke her.
@@ -81,20 +82,25 @@ async function hentSakressursHvisTilgang<T>(saksId: string, ressurs: Sakressurs<
     return null;
   }
 
+  let autorisert = ressurs.autorisert ?? false;
+  if (ressurs.autorisert !== undefined) {
+    const flaggAktivert = await erFeatureFlaggAktivert('AutoriserteEndepunkterHosArenaoppslag');
+    autorisert = flaggAktivert ? autorisert : true;
+  }
   const harTilgang = await harTilgangTilBruker(sak.person.fodselsnummer);
   if (!harTilgang) {
     logger.warn('Bruker har ikke tilgang til ressurs for sak', { saksId, ressurs: ressurs.navn });
-    return ressurs.autorisert ? { type: 'INGEN_TILGANG' } : null;
+    return autorisert ? { type: 'INGEN_TILGANG' } : null;
   }
 
   if (mocksEnabled()) {
     return ressurs.hentMock(saksId);
   }
 
-  const apiSti = ressurs.autorisert ? '/api/intern/autorisert' : '/api/intern';
+  const apiSti = autorisert ? '/api/intern/autorisert' : '/api/intern';
   const response = await apiFetch<T>(`${baseUrl}${apiSti}/sak/${saksId}/${ressurs.sti}`, scope, 'GET');
   if (isError(response)) {
-    if (response.status === 403 && ressurs.autorisert) {
+    if (response.status === 403 && autorisert) {
       logger.warn('Bruker har ikke tilgang til ressurs for sak', { saksId, ressurs: ressurs.navn });
       return { type: 'INGEN_TILGANG' };
     }
