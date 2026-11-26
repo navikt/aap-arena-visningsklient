@@ -1,3 +1,5 @@
+export const TilgangAvvist = 'INGEN_TILGANG';
+
 export type FetchResponse<ResponseType> = SuccessResponseBody<ResponseType> | ErrorResponseBody;
 
 export type ErrorResponseBody = {

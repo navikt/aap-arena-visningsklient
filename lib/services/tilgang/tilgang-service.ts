@@ -2,7 +2,7 @@
 
 import { cache } from 'react';
 import { apiFetch } from 'lib/services/api-fetch/apiFetch';
-import { isError } from 'lib/utils/api';
+import { TilgangAvvist, isError } from 'lib/utils/api';
 import { mocksEnabled } from 'lib/utils/environment';
 import { getLogger } from 'lib/serverutlis/logger';
 import { TilgangResponseDTO } from 'lib/services/tilgang/tilgang-types';
@@ -31,7 +31,7 @@ export const harTilgangTilBruker = cache(async (brukerIdent: string): Promise<bo
 
 export const harTilgangTilBrukerPåSak = cache(async (saksId: string): Promise<boolean> => {
   const sak = await hentSak(saksId);
-  if (sak == null) {
+  if (sak == null || sak === TilgangAvvist) {
     return false;
   }
 
