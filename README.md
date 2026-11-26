@@ -110,6 +110,16 @@ Disse kommandoene kan hjelpe deg med å rydde opp før du prøver på nytt:
 
 ## Diverse nyttige kommandoer
 
+### Unleash
+
+Serverkode kan sjekke feature-flagg med `erFeatureFlaggAktivert(flaggNavn)` fra
+`lib/services/unleash/unleash-service.ts`. Tjenesten gjenbruker én Unleash-klient.
+
+Hvis `UNLEASH_SERVER_API_URL` mangler eller er tom, brukes en mock som aktiverer alle flagg.
+Når URL-en er satt, må også `UNLEASH_SERVER_API_TOKEN` og `UNLEASH_SERVER_API_ENV` være konfigurert.
+Nais-manifestet henter disse fra secreten `kelvin-unleash-api-token` og tillater utgående trafikk til
+`aap-unleash-api.nav.cloud.nais.io`.
+
 ### Kjøring av tester
 
 For å kjøre tester lokalt, bruk følgende kommando:
