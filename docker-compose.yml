@@ -1,6 +1,8 @@
+# Wonderwall og Texas mot teamets localauth-instans. Ingen ekte secrets trengs lokalt.
+# .env.localauth lages med: curl -s https://localauth-aap.intern.dev.nav.no/entraid/env > .env.localauth
 services:
-  wonderwall-dev-gcp:
-    container_name: wonderwall-dev-gcp-visningsklient
+  wonderwall:
+    container_name: wonderwall-arenavisningsklient
     image: ghcr.io/nais/wonderwall:latest
     restart: on-failure
     ports:
@@ -11,6 +13,19 @@ services:
       WONDERWALL_BIND_ADDRESS: 0.0.0.0:4000
       WONDERWALL_UPSTREAM_HOST: host.docker.internal:3000
       WONDERWALL_AUTO_LOGIN: true
+      WONDERWALL_COOKIE_SECURE: false
       WONDERWALL_LOG_FORMAT: text
     env_file:
-      - .env.dev-gcp # Opprettes med script get-secret.sh. Les README
+      - .env.localauth
+
+  texas:
+    container_name: texas-arenavisningsklient
+    image: ghcr.io/nais/texas:latest
+    restart: on-failure
+    ports:
+      - "3001:3000"
+    environment:
+      BIND_ADDRESS: 0.0.0.0:3000
+      AZURE_ENABLED: true
+    env_file:
+      - .env.localauth

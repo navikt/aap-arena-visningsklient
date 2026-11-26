@@ -60,29 +60,29 @@ oxfmt vil nå formatere filen automatisk hver gang du lagrer.
 
 ## Kjøre opp lokalt mot devmiljø
 
-1. Hent secret (se: https://github.com/navikt/aap-cli)
+Oppsettet bruker [localauth](https://github.com/navikt/localauth), så du trenger ingen secrets lokalt. Wonderwall håndterer innlogging og Texas veksler til OBO-tokens, begge mot teamets localauth-instans.
+
+1. Hent konfigurasjon fra localauth (krever naisdevice):
+
    ```bash
-   get-secret
+   curl -s https://localauth-aap.intern.dev.nav.no/entraid/env > .env.localauth
    ```
-2. Start Wonderwall:
+
+2. Start Wonderwall og Texas:
 
    ```bash
    colima start
    docker-compose up -d
    ```
 
-3. Hent ned OBO-tokens
-
+3. Installer avhengigheter og start applikasjonen:
    ```bash
-   ./token-generator.sh
-   ```
-
-4. Installer avhengigheter og start applikasjonen:
-   ```bash
-    pnpm install
-    pnpm dev:dev-gcp
+   pnpm install
+   pnpm dev:dev-gcp
    ```
    Applikasjonen skal nå være tilgjengelig i nettleseren på http://localhost:4000
+
+Tjenestene appen kaller (for eksempel `tilgang` og `arenaoppslag`) må tillate innkommende kall fra `localauth` i sin `accessPolicy`.
 
 ## Legge til nye integrasjoner
 
@@ -90,8 +90,8 @@ Om man legger til nye integrasjoner må man husle å oppdatere følgende
 
 - Legge til accessPolicy i `nais.yaml`
 - Legge til miljøviabler for baseUrl og Scope i `dev.yaml` og `prod.yaml`
-- Legg til URL for å hente ut mock-obo-token lokalt i `token-generator.config.json`
 - Legg til scope og base-url for tjenesten i dev i `.env.dev-gcp-extra`
+- Legge til `localauth` som inbound i tjenestens `accessPolicy` (i dev)
 - Legg til scope, base-url og endepunkt for å hente ut mock-token lokalt i `.env.local-backend`
 - Lage en mock-implementasjon av service, som returnerer mock-data om `mocksEnabled()` er true
 
