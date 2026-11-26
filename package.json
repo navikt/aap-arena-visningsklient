@@ -15,9 +15,9 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@navikt/aksel-icons": "8.21.0",
-    "@navikt/ds-css": "8.21.0",
-    "@navikt/ds-react": "8.21.0",
+    "@navikt/aksel-icons": "8.23.0",
+    "@navikt/ds-css": "8.23.0",
+    "@navikt/ds-react": "8.23.0",
     "@navikt/oasis": "4.2.2",
     "@prometheus-io/client": "0.16.1",
     "date-fns": "4.4.0",
